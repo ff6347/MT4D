@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Mehr Zeit für Gestaltung</title>
+   <meta name="author" content="fabiantheblind" />
+<!--    <link href="http://feeds.feedburner.com/tom-preston-werner" rel="alternate" title="Tom Preston-Werner" type="application/atom+xml" /> -->
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+
+   <!-- Typekit -->
+ <!--  <script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>
+   <script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
+</head>
+<body>
+
+<!-- ClickTale Top part 
+<script type="text/javascript">
+var WRInitTime=(new Date()).getTime();
+</script>
+ ClickTale end of Top part -->
+
+
+<div class="site">
+   <div id="printfriendly">
+<script src="http://cdn.printfriendly.com/printfriendly.js" type="text/javascript"></script><a href="http://www.printfriendly.com" style=" color:#6D9F00; text-decoration:none;" class="printfriendly" onclick="window.print(); return false;" title="Printer Friendly and PDF"><img style="border:none;" src="http://cdn.printfriendly.com/button-print-gry20.png" alt="Print Friendly and PDF"/></a>
+  </div> 
+  <div class="title">
+    <a href="/">Home</a>
+    <!-- <a class="extra" href="/">home</a> -->
+  </div>
+
+  <h1>BA von Fabian Morón Zirfas</h1>
+
+<h2>Mehr Zeit für Gestaltung</h2>
+
+<h1>Einleitung</h1>
+
+<p>Diese Arbeit setzt sich mit der Automation von Design-Prozessen auseinander. Sie ist keinen komplette Anleitung zum Erlernen von Programmier-Grundkenntissen, diese können für viele verschieden Sprachen im "World Wide Web" gefunden werden, sondern eine Auseinandersetzung was Automation durch Programmierung für Designer leisten kann und welche Bereiche sie nicht abdeckt. Dies wird durch einige kurze aber mächtige Beispiele illustriert.
+Sie, die Arbeit, ist der versuch die Mystik und nebulösen Vorstellungen die sich um Computerprogramme ranken zu brechen und den die Schnitstellen die aktuelle Grafikprogramme bieten auf zu zeigen.<br/>
+Im ersten Teil soll dem Leser ein Verständnis für die Herkunft und Unterschiede von Computersprachen und den in ihrem Kontext verwendeten Vokablen vermittelt werden. Dadurch lassen sich die im zweiten Teil betrachteten Anwendungsgebiete unterschiedlicher Sprachen besser verstehen.  Hier wird auch aufgezeigt wo Grenzen liegen und wann es sinnig, unnötig und unerlässlich ist. Im dritten Teil werden dann die Einsatzmöglichkeiten innerhalb von Grafiksoftware beleuchtet und anhand von einfachen und dennoch mächtigen Automationen der Nutzen dargestellt den sie liefern. Im vierten Teil soll dann ergründet werden wo die Abwehrhaltung her rührt wenn das Thema auf das Erlernen von Programmiersprachen fällt und warum diese unbegründet sind beziehungsweise sogar schädlich sein können.<br/>
+Der fünfte Teil versucht dann an einem komplexerem Beispiel den Aufbau eines solchen Werkzeuges zu durchdringen die Methodik die dahinter steht zu erläutern.<br/>
+Abschliessend soll im Fazit der Erkenntniszuwachs aus alledem nochmals zusammengefasst werden.</p>
+
+<h2>Teil 1 Herkunft, Unterschiede und kleine Terminologie</h2>
+
+<p>[NOCH NICHT GESCHRIEBEN]</p>
+
+<h3>Herkunft von Computersprachen</h3>
+
+<p>[NOCH NICHT GESCHRIEBEN]</p>
+
+<h3>(Einige) Unterschiede von Computersprachen</h3>
+
+<p>[NOCH NICHT GESCHRIEBEN]</p>
+
+<h3>Was ist Code?</h3>
+
+<p>Als Code bezeichen wir in der Regelin Informationen die verschlüsselt (encoding) werden um dann an einer weiteren Stelle wieder entschlüsselt zu werden (decoding). Zum Beispiel stellt Morse-Code Buchstaben dar indem ein einziges unmoduliertes Signal, zum Beispiel ein Ton, in kurze und lange Sequenzen unterteilt wird. Der Rezipient kann dann, wenn er des Systems machtig ist, diese Informationen entschlüsseln und zu der originalen Nachricht wieder zusammensetzen. Ein weiters Bespiel ist der Abakus. Dieser erlaubt es wenn der Benutzer des Systems machtig ist Rechenoperationen auszuführen. Und als drittes die Knotenschrift der Inkas die wie der Name bereits besagt aus einem System von Knoten auf einem Satz Schnüren bestand. Heutzutage findet das Wort "Code" im Computerbereich oft Verwendung als Kurzform des Ausdrucks "Source-Code" also Quellkode eines Programms.</p>
+
+<h3>Was ist ein Programm?</h3>
+
+<p>Das Bild das wir im Kopf haben wenn wir das Wort Programm hören ist stark durch Film beeinflusst. Wir sehen junge, meist übergewichtig und verpickelte Menschen vor uns die in abgedunkelten Räumen zwischen Monitoren, Kabeln und Pizzapackungen auf ewige grün leuchtende Zahlenkolonnen blicken die für uns keinerlei Sinn ergeben. Diese oder ähnliche Bilder sind inspiriert aus einer Zeit in der Computer nur einfarbige Pixel hatten und Grafische Benutzeroberflächen wie Windows noch aus der Kommandozeile gestartet wurde. Als Hommage an diese Vorstellung hat "Duiker101" das Programm <a href="http://hackertyper.net/">HackerTyper</a> entworfen welches mit bereits vorgegebenem Text allein über Tastendruck den Bildschirm mit kompliziertem Quellkode füllt. Dabei ist es irrelevant welche Tasten der Benutzer drückt.
+Verwerfen sie diese Vorstellung (Es ist nicht so das es dies nicht gibt dennoch entspricht es nicht der Regel). Ein Programm ist lt. <a href="http://www.duden.de/rechtschreibung/Programm">Duden</a>: "die nach einem Plan genau festgelegten Einzelheiten eines Vorhabens"*. Unter dieser Betrachtungsweise ist jede Bauanleitung zu Möbelstücken, eine Beschreibung des Weges von hier zum Bahnhof oder das Rezept für Sahnetörtchen ein Programm. Bloß das in letzterem Fall nicht ein Computer die Anweisungen ausführt sondern ein Mensch. Die Sprache in der dieses Programm geschrieben ist, ist Deutsch. Der grosse Unterschied zu einem Computersprache/-programm liegt hier ein der Möglichkeit der Interpretation. Die Ausführende "Maschiene" (in diesem Fall der Mensch) kann solche Angaben wie "eine Priese Salz" oder "eine Messerspitze Merrettich" verarbeiten. Ein Computer ist hierzu (noch) nicht fähig. Er bräuchte eine eindeutigere Angabe wie 50 Gramm.<br/>
+Das Programm muss an dieser Stelle noch von dem Begriff des Algorithmus abgetrennt werden.</p>
+
+<h3>Was ist ein Algorithmus?</h3>
+
+<p>Auch wenn sich diese beiden Begriffe in ihrer Bedeutung teilweise überschneiden sollten diese auf folgende weise unterschieden werden. Der Algorithmus für Milch holen wäre in Pseudocode:<br/>
+<code>wenn (Aussage (kein Milch ist im Kühlschrank) wahr ist): hole neue Milch! wenn nicht: tue nichts!</code><br/>
+Das Programm für Milch holen würde vorraussetzen das alle Schritte und Notwendigkeiten bis zum Übergang der Milch in das Eigentum der Holenden bekannt und definiert sind. Also so etwas wie:</p>
+
+<pre><code>Person fabian ist gleich neu Person;
+Kühlschrank schrank ist gleich neuer Kühlschrank;
+Kühlschrank Menge Milch ist gleich 1;
+jeden morgen fabian trinke Milch aus Kühlschrank, Menge 0.2;
+jeden morgen fabian beobachte Menge Milch;
+wenn Milch kleiner gleich 0.1 ist fabian hohle Milch im Supermarkt;
+</code></pre>
+
+<p>Und so weiter und so weiter. Diese Funktionsanweisungen könnten noch detailierter ausgearbeitet werden. Hierbei sei zu beachten das solche Objekte wie Kühlschrank und Person bereits implemetiert also bekannt sind. Das Programm im Vergleich zum Algorithmus muss alle eingesetzten Mittel kennen und oder selber beschreiben.</p>
+
+<h3>Was ist die Syntax?</h3>
+
+<p>Die Syntax ist die Form in der die Programmiersprache ausgestalltet ist. Die Syntax einer Programmiersprache besteht aus reservierten Worten wie zum Beispiel in Java <code>"new","while","null","true"</code>, Operatoren wie <code>"+","-","*","."</code> und Kontrollstrukturen wie <code>"if(){}else{}"</code> oder <code>"for(int i = 0; i &lt; x;i++)"</code>. Diese Konstrukte dürfen nur für bestimmte Aufgaben verwendet werden. Wenn also ein Programmierer seine Variable `"null" nennet, wird das Programm beim ausführen eine Fehler auswerfen. Die obig genannten Strukturen, Operatoren und reservierten Worte müssen erlernt werden. Eine vollständige Beschreibung aller würde jedoch den Rahmen dieser Arbeit sprengen. Weiterhin ist beim schreiben von Programmen auch auf die Groß- und Kleinschreibung zu achten. Eine Variable die mit dem Namen "myValue" initiert wird muss auch mit diesem Namen aufgerufen werden. Bei einer falschen schreibweise "MyValue" oder "myvalue" würde das Programm warnen das die gewünschte Variable nicht existiert. Es gibt Sprachen die versuchen ihre Syntax so weit wie möglich an unseren Sprachen zu orientieren, zum Beispiel Applescript:</p>
+
+<pre><code>tell application "Safari" to activate
+</code></pre>
+
+<p>und wieder andere wie die esoterische Programmiersprache*** "Brainfuck" die mit ihren acht Zeichen <code>+-&lt;&gt;[],.</code> voll funktionsfähig, aber nicht für das schreiben von Programmen gedacht ist sondern eher ein Gedankenmodell darstellt.
+Das Brainfuck Hello World (aus wiki <a href="http://en.wikipedia.org/wiki/Brainfuck">http://en.wikipedia.org/wiki/Brainfuck</a>):</p>
+
+<pre><code>+++++ +++++             initialize counter (cell #0) to 10
+[                       use loop to set the next four cells to 70/100/30/10
+    &gt; +++++ ++              add  7 to cell #1
+    &gt; +++++ +++++           add 10 to cell #2 
+    &gt; +++                   add  3 to cell #3
+    &gt; +                     add  1 to cell #4
+    &lt;&lt;&lt;&lt; -                  decrement counter (cell #0)
+]                   
+&gt; ++ .                  print 'H'
+&gt; + .                   print 'e'
++++++ ++ .              print 'l'
+.                       print 'l'
++++ .                   print 'o'
+&gt; ++ .                  print ' '
+&lt;&lt; +++++ +++++ +++++ .  print 'W'
+&gt; .                     print 'o'
++++ .                   print 'r'
+----- - .               print 'l'
+----- --- .             print 'd'
+&gt; + .                   print '!'
+&gt; .                     print '\n'  
+</code></pre>
+
+<p>Wie bereits oben in der Beschreibung des Milchalgorithmus zu sehen ist verwendet selbst Pseudocode ein nicht genau definierte Syntax lehnt sich jedoch mit konstruktionen wie "ist gleich" an die Mathematik an. Andere Sprachen mit denen wir uns noch später Auseinandersetzen wie C++, Processing oder JavaScript sind zwischen diesen Extrema angesiedelt und vereinen in einer für das geübte Auge lesbaren und dennoch kompakte Art die Befehlsufrufe.</p>
+
+<h3>Was ist Hello World?</h3>
+
+<p>Das "Hello World" Programm hat sich als standard Beispiel etabliert um die Syntax einer Sprache zu erklären. Exerzieren wir das einmal kurz durch. Um für Adobe InDesign, After Effects, Illustrator, Photoshop, Photoshop Elements, Photoshop Elements Organizer, Bridge, Audition, Media Encoder und Premiere Pro Skripte zu schreiben liefert Adobe eine eigene IDE, eine Integrierte Entwicklungs Umgebung, mit. Das ExtendScript Toolkit. Dies ist nicht der schönste Editor. Er hat jedoch einige Vorteile die die Entwicklung von Skripten sehr einfach macht. Die wichtigste Eigenschaft ist dabei folgende. Es kann ein Skript ohne es zu speichern ausführen. Probier es aus. Das Toolkit wird bei der Installation von Adobe Produkten direkt mit  geliefert. Suche es in deinen Dienstprogrammen dort solltest du fündig werden. Wenn nicht gehe zu diesem Webseite <a href="http://www.adobe.com/devnet/scripting.html">http://www.adobe.com/devnet/scripting.html</a> und lade und installiere es.<br/>
+Wenn es dann installiert ist gib folgende Text ein:</p>
+
+<pre><code>alert("Hello World")
+</code></pre>
+
+<p>und drücke auf den "Play/Run" Knopf oben rechts oder drücke CMD-r oder CTRL-r, abhängig von deiner Platform. Herzlichen Glückwunsch. Dein erstes Javascript.<br/>
+Um dieses Skript in InDesign oder Photoshop auszuführen muss die Ziel Applikation aus dem PullDown Menü auf der oberen Leiste gewählt werden. Beim öffenen ist es auf ExtendScript Toolkit gestellt. Wähle InDesign aus. Das Toolkit wird sofort fragen ob InDesign auch gestartet werden soll. Bestätige das und führe das Skript noch einmal aus. Du wirst sehen das der Computer zu InDesign überwechselt und den gleichen Hinweis gibt.<br/>
+Probiere weiter Skripte und Kalkulationen aus. Zum Beispiel</p>
+
+<pre><code>var h = "Hello";
+var w = "World";
+var calc = (10*50)/23 - 1;
+alert(h + " " + w +"! Your result is: "+ clac );  
+</code></pre>
+
+<h3>Was ist Pseudocode?</h3>
+
+<p>Im Verlaufe dieser Arbeit werde ich immer wieder auf die Darstellung von Alogrithmen in "Pseudocode" zurückgreifen. Pseudocode besteht nicht aus einer bereits definierten Syntax und kann auch nicht von einem Compiler übersetzt werden sondern dient nur zur Darstellung eines logischen Ablaufs. Wie bereits in dem Milchalgorithmus zu sehen war versucht Pseudocode einen Programmablauf in menschenlesbarer Form darzustellen.</p>
+
+<h3>Was ist ein Compiler?</h3>
+
+<p>Der Vollständigkeit halber soll dieser hier erklärt werden auch wenn er uns kaum mehr im weiteren Verlauf der Arbeit begegen wird. Der Compiler ist ebenfalls ein Programm das aus menschenlesbaren Hochsprachen wie zum Beispiel C++ maschienenlesbaren Quellkode erzeugt (Assemblercode). Diesen Prozess bezeichnet man auch als Kompilierung.</p>
+
+<h3>Was ist eine IDE (Integrated Development Envoirement)?</h3>
+
+<p>Um Quellkode zu schreiben bedarf es nicht viel. Ein einfacher Texteditor reicht aus um komplette Programme zu schreiben. Im Laufe der Zeit wurde jedoch viel Software programmiert um das schreiben von Quelltext zu erleichtern. Dies geht los bei einfachem Syntax-Highlighting bis hinzu kompletten Entwicklungsumgebungen die noch vor dem Kompilieren beziehungweise während des schreibens die Syntax auf ihre Validität prüfen und gegebenfalls Vorschläge machen was gemeint sein könnte oder bei nicht verwendeten Programmteilen warnen das diese derzeit unnütz sind. In unserem Fallbeispieln werden wir noch mit diesen Programmen zu tuen kriegen. Es sei jedoch bereits gesagt das wir die einfachste Möglichkeit nutzen werden die sich uns bietet und die auf beiden Platformen (Windows und Mac OS X) zur Verfügung steht. Das ExtendScript Toolkit (Mehr dazu ist im Abschnitt: Was ist Hello World? zu finden).</p>
+
+<h1>Was ist Syntax-Highlighting?</h1>
+
+<p>Syntax Highlighting ist eine Hilfestellung für Programmierer um ihren Quellkode übersichtlicher zu gestalten. Hierbei werden bestimmte Teile wie Operatoren,Kommentare, Funktionsdeklarationen oder Reservierte Worte farblich hervorgehoben beziehungsweise zurückgenommen um das Lesen zu erleichtern.</p>
+
+<h3>Was ist eine API (Application Programming Interface)?</h3>
+
+<p>Dies ist die Schnittstelle die ein Programm bietet um auf sein Funktionen zugreifen zu können. Dies wird beim Schreiben von Programmen wie InDesign von den Programmierern definiert. Diese Schnittstelle ist wie ein Baum mit Querverweisen aufgebaut. Um in InDesign einem bestehendem Dokument auf der ersten Seite eine Textbox hinzuzufügen muss durch diesen Baum manövriert werden.</p>
+
+<pre><code>app.activeDocument.pages.item(0).textFrames.add();
+</code></pre>
+
+<p>Diese Zeile erzeugt in der linken oberen Ecken eine Textkiste.<br/>
+All diese Befehle und Eigenschaften müssen nicht auswendig gelernt werden sondern können nachgeschlagen werden. Im ExtendScript Toolkit kann unter Hilfe / ObjektModell Viewer ein Hilfsprogramm aufgerufen werden das alle Befehle mit einer kurzen Erklärung enthält. Oder es kann auf der Seite von jongware eine .chm Datei heruntergeladen werden die die gleichen Informationen enthält und mit einem .chm Viewer durchsucht werden kann. <a href="http://www.jongware.com/idjshelp.html">http://www.jongware.com/idjshelp.html</a></p>
+
+<h3>Was ist Objektorientierung?</h3>
+
+<p>Als Objektorientierung (ach als OO abgekürzt) versteht man ein bestimmte Art wie Programme aufgebaut sind. Ein Objekt ist ein gekapselter Teil des Programmcodes der Schnittstellen und Methoden bietet und seine Eigenschaften an weiter Objekte vererben kann. Um dies besser zu verstehen möchte ein hervorragendes Beispiel aus "Processing: A Programming Handbook for Visual Designers and Artists" von Casey Reas and Ben Fry bemühen.</p>
+
+<h4>Klammer auf!</h4>
+
+<p>{
+Der Proto-Apfel (Der Proto-Apfel existiert eingentlich nicht. Unsere Sprache lässt solche Ungenauigkeiten zu. Es gibt einen Apfel und einen Anderen. Aber nicht "DEN" Apfel. ) hat bestimmte Eigenschaften wie Gewicht und Farbe. Hinzu kommen bestimmte Methoden wie Fallen, Wachsen und Verrotten die durch die Eigenschaften beeinflusste werden können.<br/>
+(Abb 01)<br/>
+ Wenn nun ein Baum wächst und Äpfel produziert erzeugt er nach dem Bauplan des Proto-Apfels neue Äpfel und jedem werden bestimmte Werte übergeben.<br/>
+(Abb 02)<br/>
+Der Baum erzeugt den Apfel und ruft kontinuierlich die Methode Wachsen auf. Hierbei wird der Wert des Gewichtes inkrementiert. Sind die Früchte dann reif wird abhängig vom Gewicht des einzelnen Apfels die Methode Fallen ausgelösst. Wenn der Apfel dann auf dem Boden liegt und die Methode Fallen beendet ist beginnt die Methode Verroten ihre Arbeit. Die Farbe des Apfels verändert sich und das Gewicht wird wieder verringert.
+Das bedeutet der Proto-Apfel selber wird nicht angerührt sondern Instanzen von diesem. Um dies noch auf die Spitze zu treiben haben wir nicht nur eine Art Apfel sondern verschieden Sorten. Also ist die Klasse Granny Smith und ein "Kind"-Klasse der Basisklasse Apfel. Granny Smith erbt alle Eigenschaften der Klasse Apfel ohne das sie neu implemntiert werden müssen und bekommt noch eine weitere Eigenschaft: den Namen.
+}</p>
+
+<h4>Klammer zu.</h4>
+
+<p>Dieses Konstruktionsweise spiegelt sich in nicht nur in der Programmierung wieder. Die Benutzung einiger Komponenten in unseren Werkzeugen ist genau nach diesem Prinzip organisiert.</p>
+
+<h4>Eine weiter Klammer auf</h4>
+
+<p>{
+In InDesign hat der Benutzer die Möglichkeit Absatz- und Zeichenformate anzulegen ohne die das setzen eines Buches eine wirklich Zeitraubende Angelegenheit wäre. Eine einfache Gruppe von Absatzformaten kann wie folgt aufgebaut sein.
+- [Einfacher Absatz]<br/>
+- TextKörper<br/>
+- Überschrift 1<br/>
+- Überschrift 2<br/>
+- Überschrift 3<br/>
+- Bild Unterschrift<br/>
+- Pagina<br/>
+In dem Format "[Einfacher Absatz]" wird eine Schriftart und eine Schriftgrösse definiert. Dieses Format ist das Proto-Format von dem sich alle weiteren Formate ableiten. Sie erben also alle die Eigenschaften Schrift (appliedFont) und die Schriftgrösse (pointSize). Das Format "Überschrift 1" (Ü1) bekommt dann eine eigene Schriftgrösse und einen fetten Schnitt der Schriftart. Im dem Format "Überschrift 2" (Ü2) wird dann festgelegt das nicht mehr das "[Einfacher Absatz]" Format als Basis Klasse benutzt wird sondern Ü1. Damit erbt Ü2 alle Eigenschaften von Ü1. In Ü2 wird dann nurnoch eine neue Schriftgrösse festgelegt. Das gleiche kann dann mit "Überschrift 3" (Ü3) passieren. Ü3 basiert auf Ü2 und bekommt ebenfalls eine eigene Schriftgrösse. Jetzt basiert Ü3 auf Ü2, das auf Ü1 und das auf "[Einfacher Absatz]". Ähnlich verfahren wir mit den weiteren Formaten. "Textkörper" basiert auf "[Einfacher Absatz]", "Bildunterschrift" auf "Textkörper" nur kleiner und "Pagina" auf "Bildunterschrift" aber mit 70% Deckkraft. Wenn der Gestalter nun entscheidet dass eine andere Schriftart von Nöten ist, ändert er sie nur in "[Einfacher Absatz]" und alle Kinder werden entsprechend angepasst. Dies ist ebenfalls Objektorientiert.<br/>
+}</p>
+
+<h4>Klammer zu</h4>
+
+<h3>Was sind Funktionen/Methoden?</h3>
+
+<p>Eine Funktion oder eine Methode sind gekapselte Programmteile and die Parameter übergeben werden können und die aus den gegebenen Parametern eine Kalkulation durchführen. Sie können dann Werte zurückgeben. Dies ist nützlich wenn bestimmte Tätigkeiten an unterschiedlichen Positionen eins Programms oder Skripts mehr mals aufgerufen werden müssen.</p>
+
+<h3>Was ist ein Bug?</h3>
+
+<p>Ein Bug ist ein Fehler der das Programm von seiner einwandfreien Ausführung abhält. Dies kann nur ein Rechenfehler sein oder ein Fehler der das gesamte Programm zum Absturz bringt.</p>
+
+<h3>Was ist Debugging?</h3>
+
+<p>Dies ist der Prozess des Findens und korrigeren von Fehlern.</p>
+
+<h3>Was ist ein Workaround?</h3>
+
+<p>Ein Workaround ist eine kreative Lösung um ein Problem zu umgehen. Wenn zum Beispiel eine API ein bestimmte Funktion nicht anbietet muss ein Weg um dieses Problem drumherum gefunden werden.</p>
+
+<h3>Welche Konventionen gibt es?</h3>
+
+<p>Neben den Bestimmungen der Syntax gibt es verschiedene Konventionen die das lesen von Skripten einfacher machen sollen. Zum Beispiel ist es gang und gebe dass die Funktionsweise am Beginn eines Skripts in einem Kommentar erklärt wird. Oder die Verwendung der Variable i (für Iterator) als Zähler in Schleifen.</p>
+
+<h1>Was ist Scripting?</h1>
+
+<blockquote><p>Scripting languages assume that there already exists a collection of useful components written in other languages. Scripting languages aren't intended for writing applications from scratch; they are intended primarily for plugging together components<br/>
+Scripting: Higher Level Programming
+for the 21st Century by John K. Ousterhout</p></blockquote>
+
+<h3>Was ist der Unterschied zwischen Javascript und ExtendScript?</h3>
+
+<p>JavaScript oder EcmaScript ist das was uns täglich in Webbrowsern solche Dinge bescherte wie Scrollen auf Knopfdruck oder Warnhinweise und ähnliches. ExtendScript ist ein Dialekt von JavaScript der von Adobe entwickelt wurde. Das bedeutet InDesign versteht JavaScript und ExtendScript aber ein Browser kann mit ExtendScript Befehlen nichts anfangen.</p>
+
+<h2>Teil 2 Anwendungsgebiete</h2>
+
+<p>Auch wenn Aufgaben auf unterschiedliche Weise mit verschiedenen Programmiersprachen gelöst werden können haben sich spezielle Anwendungsgebiete für die einzelnen Sprachen ergeben. Ganz unabhängig davon, dass sich in unserem Fall Adobe Anwendungen nur mit AppleScript, VisualBasic oder JavaScript ansprechen lassen macht es Sinn eine Scriptsprache zu verwenden um die bereits in höheren Sprachen implemetierten Funktionen zu verbinden.</p>
+
+<p>Zur Veranschaulichung was das in der Anwendung bedeutet zur hier ein Programm das folgende Aufgaben erledigt.
+Ein Objekt erzeugen mit folgenden Eigenschaften<br/>
+- Einem Namen<br/>
+- Einer Funktion die 2 Zahlen mit einander vergleicht und feststellt welche die grössere von beiden ist.
+Dann gibt das Programm eine Meldung mit dem Ergebnis zurück.</p>
+
+<p>Dieses Programm liegt hier in verschiedenen Sprachen vor.<br/>
+Ich werde hier kurz auf die Unterschiede eingehen. Eine tiefere Erklärung des Quellcodes findet sich in den Kommentaren der einzelnen Programme.</p>
+
+<h4>Assembler (anObject.s)</h4>
+
+<p>Aus Platzgründen werde ich hier nur die ersten 29 Zeilen zeigen. Das gesamte Programm in Assembler Code ist über 700 Zeilen lang.</p>
+
+<pre><code>    .section    __TEXT,__text,regular,pure_instructions
+    .globl  __ZN6Object7compareEii
+    .align  1, 0x90
+__ZN6Object7compareEii:
+Leh_func_begin1:
+    pushq   %rbp
+Ltmp0:
+    movq    %rsp, %rbp
+Ltmp1:
+    movq    %rdi, -8(%rbp)
+    movl    %esi, -12(%rbp)
+    movl    %edx, -16(%rbp)
+    movl    -12(%rbp), %eax
+    movl    -16(%rbp), %ecx
+    cmpl    %ecx, %eax
+    jle LBB1_2
+    movl    -12(%rbp), %eax
+    movl    %eax, -24(%rbp)
+    jmp LBB1_3
+LBB1_2:
+    movl    -16(%rbp), %eax
+    movl    %eax, -24(%rbp)
+LBB1_3:
+    movl    -24(%rbp), %eax
+    movl    %eax, -20(%rbp)
+    movl    -20(%rbp), %eax
+    popq    %rbp
+    ret
+Leh_func_end1:
+</code></pre>
+
+<p>Dies ist die Variente die die Maschiene versteht. Es wurde jedoch nicht von mir geschrieben sondern ist das Ergebnis des Kompilierungsprozesses des C++ Programms. Näher wäre nur noch Nullen und Einsen zu schrieben.</p>
+
+<h4>ANSI C anObject.c</h4>
+
+<pre><code>//based on Phil's guide to object-oriented ANSI C
+// http://www.bolthole.com/OO-C-programming.html
+// and some stackoverflow.com questions about Object orientation in ANSI C
+
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+// this is something like the class
+typedef struct OBJECT {
+  int res; // the object knows it result
+  char *name; // the char array for the name
+} OBJECT
+
+typedef OBJECT* Object;
+ // ------------ now the methods of the "class" ------------ 
+
+//Create a new objact based on struct OBJECT
+Object obj_create() {
+  Object s;
+  s = (Object) malloc(sizeof(OBJECT));
+  // set the fields to inital values
+  s-&gt;res = 0;
+  s-&gt;name = "undefined";
+
+  return(s);// gibe back the object
+}
+// need to remove this object again
+void obj_destroy(Object s) { free(s); }
+// this is the compare method
+int obj_compare(Object s, int a, int b){
+        if(a&gt;b){
+            s-&gt;res = a;
+        }else if (b&gt;a){
+            s-&gt;res = b;
+        }else if(b == a){
+        s-&gt;res = 0;
+    }
+    return s-&gt;res;
+}
+
+void obj_set_name(Object s, char *n){
+s-&gt;name = n;
+}
+
+
+int main(void) {
+  Object s = obj_create();
+
+    s.compare_ptr = compare;
+
+  obj_set_name(s,"Hello ANSI C");
+  int a = 23, b = 5;
+
+  printf("The Object named \"%s\" compared %d with %d. The result is %d \n",s-&gt;name, a,b, obj_compare(s, a, b));
+obj_destroy(s);
+  return 0;
+}
+</code></pre>
+
+<h4>ANSI C anObject.c</h4>
+
+<pre><code>#include&lt;stdio.h&gt;
+
+compare(int a, int b){
+    if(a&gt;b){return a;}else{return b;}
+    }
+
+int main(void){
+    char name[11] = "Hello World";
+    int a = 23,b = 5;
+    printf("The Object named: %s\nCompared: %d with %d.\n%d is bigger!\n",name,a,b,compare(a,b));
+
+    return 0;
+}
+</code></pre>
+
+<p>Für die C Implementation gibt es zwei Beispiele. Im Unterschied zu C++ und JS ist die Sprache C von grundsätzlich nicht für eine Objektorientierung ausgelegt. Deshalb hier einmal das Beispiel noObject.c welches ebnfalls die gestellte Aufgabe des Vergleich lösst aber kein Objekt erzeugt und die Variante anObject.c. In Diesem Beispiel wird ein Objekt erzeugt. Im Vergleich zu der C++ Version anObject.cpp ist in diesem Objekt das Objekt Orientierungs Paradigma Vererbung nicht enthalten.</p>
+
+<h4>C++ (anObject.cpp)</h4>
+
+<pre><code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+// using namespace std; // if you use this you can remove all "std::"
+class Object{
+
+public:
+    std::string name;
+    Object(){}// basis constructor
+    Object(std::string in){name = in;}// another constructor
+    int compare(int a, int b);//Prototype
+    void setName(std::string in){name = in;}
+};
+
+int Object::compare(int a, int b){
+    if(a&gt;b){return a;}else{return b;}
+}
+
+int main(){
+    Object* myObject = new Object("Hello World");
+
+    int a = 23,b = 5;
+
+    std::cout &lt;&lt; "The Object named: "&lt;&lt; 
+    myObject-&gt;name &lt;&lt; "\nCompared: "
+    &lt;&lt; a &lt;&lt; " with "
+    &lt;&lt; b &lt;&lt; "\n" 
+    &lt;&lt; myObject-&gt;compare(a,b) &lt;&lt;" is bigger\n" 
+    &lt;&lt; std::endl;
+    /* code */
+    delete myObject;
+    return 0;
+}
+</code></pre>
+
+<p>In diesem Beispiel ist bereits zu sehen, dass die Menge an Code die geschrieben werden muss geringer wird. Wobei hier wie auch im C Beispiel bedacht werden muss dass, bereits vorhandene Programmteile eingebunden werden. Mit der Aussage:</p>
+
+<pre><code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+</code></pre>
+
+<p>werden fertige Klassen und Methoden eingebunden. "iostream" um die Ein- und Ausgabe des Programms zu handhaben und "string" um Zeichenketten zu verarbeiten. Der Unterschied ist enorm. Während in C eine Zeichenkette noch eine Liste einzelner Zeichen ist wird in C++ ein Zeichenkette als ein einziges Objekt gehandhabt und bringt viele Funktionen mit zur Verarbeitung dieser.</p>
+
+<h4>JavaScript (anObject.js)</h4>
+
+<pre><code>main();
+
+function main(){
+
+    var obj = build_new_object("Hello Javascript");
+    var a = 23, b = 5;
+    obj.compare(a,b);
+    alert("The Object named: "+ obj.name +"\nCompared: "+ a +" with "+ b +"\n" + obj.result + " is bigger\n");
+    obj = null;
+    return 0;
+}
+
+function build_new_object(n){
+    var obj = {
+    name:n,
+    result:0,
+    compare : function(a,b){if(a&gt;b){return a;}else{return b;}}
+    };
+    return obj;
+}
+</code></pre>
+
+<p>Mit JavaScript gehen wir noch einen Schritt weiter. Hier sind das Objekt, die Ein-/Ausgabe, der String bereits existent und müssen nicht neu implementiert noch eingebunden werden. Der massgebende  Unterschied ist dass, die vorherigen Programme wirklich vollwertige Programme sind die nach dem Kompilieren aus der Kommandozeile ausgeführt werden können. Die JavaScript Variante benötigit ein Programm in dem es ausgeführt wird. Es ist also alleine nicht lauffähig.</p>
+
+<p>Dies ist der Punkt wo wir als Gestalter ansetzen können. Wir müssen das Rad nicht neu erfinden. Wir können jedoch unseren Arbeitsablauf durch gezielte Befehlsketten von repetitive Aufgaben befreien. Ich bin mir sicher dass ein grossteil aller Gestalter die vorgefertigte Software für ihre Arbeit verwenden schon einmal an den Punkt kamen wo sie sich dachten: "Warum kann mein Programm DAS nicht," (DAS steht hier für eine gewünschte Funktionsweise)  "es ist doch alles da. Der Knopf und danach Knopf!". Scripting erlaubt es uns diese beiden Knöpfe mit eineander zu verbinden. Das bedeutet dann das wir unsere Arbeit um einen "Klick" reduziert haben. Wir haben zwei Knöpfe durch Verkettung auf einen neuen Knopf gelegt. Natürlich klingt die Reduktion um einen Klick vernachlässigbar. Wenn Jedoch diese zwei Klicks 100 mal ausgeführt werden müssen und wir durch logische Anweisung diese ebenfalls auf nur einen Knopf zusammenführen können ist der Zeitgewinn enorm. Ebenfalls muss hier erwähnt werden das viele der Probleme die in einem Gestlatungsprozess auftreten nicht zum erstenmal bei eben dieser Person auftreten. Für den Bereich Scripting von Adobe Anwendungen gibt es im Netz viele Seiten und Foren die sich mit diesem Thema befassen. Im Bereich JavaScript gibt es noch viele mehr, da JavaScript auch verwendet wird beziehungsweise entwichelt wurde um Browser zu steuern. Dementsprechend ist die Dokumentation für JavaScript mehr als ausgiebig. Es Bedarf nur einiger Übung um die gefundenen Beispiele auf die eigene Problemstellung zu abstrahieren.</p>
+
+<h4>Hierbei sei zu beachten!</h4>
+
+<p>Scripting kann keine Entscheidungen fällen. Es existiert kein Algorithmus der Ästhetik simuliert. Um eine spannende Komposition zu schaffen braucht der Gestalter "nur" drei geometrische Grundformen zu erzeugen und diese im richtigen Verhältnis zu einander anzuordnen. Um dies programmatisch zu lösen müsste ein Skript mehrere hundert mal ausgeführt werden. Jedesmal mit einer kleinen Veränderung der Koordinaten der obig genannten drei Objekte. Daher sollte bevor der Author in die Tiefen von JavaScript abtaucht endschieden werden:</p>
+
+<ul>
+<li>Wie komplex sind die Operationen?</li>
+<li>Wie ist das Zeitfenster und wann muss das Produkt fertig sein?</li>
+<li>Wie oft muss diese Tätigkeit ausgeführt werden?</li>
+<li>Lässt sich die Automation auch auf andere ähnliche Bereiche anwenden bzw mit geringen Aufwand abstrahieren?</li>
+<li>Wie sehr ist sie von Umgebungsvariablen abhängig?</li>
+<li>Soll die Automation von dritten Benutzt werden?</li>
+<li>Ist der Prozess linear oder bedarf es einer Rückkopplung zum Benutzer?</li>
+</ul>
+
+
+<p>Und einige Punkte die sich hauptsächlich durch Recherche abarbeiten lassen</p>
+
+<ul>
+<li>Existieren bereits Automationen in dem Sektor und wenn ja lassen sich diese abwandeln?</li>
+<li>Bietet die API direkten Zugriff auf die benötigten Funktionen oder bedarf es eines Workarounds?</li>
+</ul>
+
+
+<p>Diese Analyse kann keine genauen Angaben über Zeit und Aufwand machen da dies immer auch vom Erfindungsreichtum des Authors abhängig ist. Der Kreative kommt hier schneller zum Ziel.</p>
+
+<ul>
+<li>Wie komplex sind die Operationen?</li>
+</ul>
+
+
+<p>Wenn eine fülle von unterschiedlichen Operationen ausgeführt werden soll, müssen auch ensprechend viele Anweisungen an das Programm erfolgen und der Author muss sich auf eine längere Entwicklungszeit einstellen. Wenn es im Gegensatz darum geht eine Hand voll Operationen sagen wir 1000 mal auszuführen kann es sein das sich der Kern des Skriptes auf ca 10 Zeile reduziert. Das bedeutet auch das die Zeit für Entwicklung und Debugging relativ gering sein können und sich der Zeitaufwand lohnen kann.</p>
+
+<ul>
+<li>Wie ist das Zeitfenster und wann muss das Produkt fertig sein?</li>
+</ul>
+
+
+<p>Auch hier muss abhängig von der Komplexität des Skriptes und dem eigenem Vermögen geurteilt werden ob dies in dem gegebenen Zeitraum Recherchiert, Entworfen, Geschrieben und Debugged werden kann. Hinzukommt das das Ergebnis meist nur ein Teilergebnis ist und noch weiterverabeitet werden muss. Es ist davon auszugehen das etwaige tiefere Fehler erst während des vollem Einsatzes auftreten. Wenn dies in dem entsprechendem Zeitraum nicht zu bewerkstelligen ist sollte von einer Entwicklung abgesehen werden.</p>
+
+<ul>
+<li>Wie oft muss diese Tätigkeit ausgeführt werden?</li>
+</ul>
+
+
+<p>Wenn das Skript nur ein einziges mal ausgeführt werden soll ist sollte man sich fragen wo darin der Nutzen liegt. Es kann natürlich sein das dies Sinn und Zweck hat und sollte nur bedingt ausschlaggebend sein. Hierbei gilt es zu Unterscheiden das einmalig 1000 mal einen Knopf drücken bereits eine Hilfe sein kann. Einmalig 1000 mal unterschiedliche Knöpfe drücken ist eine Aufgabe die doch besser manuell geschieht.</p>
+
+<ul>
+<li>Lässt sich die Automation auch auf andere ähnliche Bereiche anwenden bzw mit geringen Aufwand abstrahieren?</li>
+</ul>
+
+
+<p>Wenn dies der Fall ist steigt der Nutzen der Arbeit. Der einmalige Aufwand ein Programm oder Skript für eine immer wieder kehrende beziehungsweise ähnliche Aufgabe zu schreiben reduziert sich im "nachhinein" durch jede Ausführung. Dies soll heissen: Durch das schreiben des Programms das ich immer wieder verwende spare ich Zeit in der Zukunft.</p>
+
+<ul>
+<li>Wie sehr ist sie (Die Aufgabe) von Umgebungsvariablen abhängig?</li>
+</ul>
+
+
+<p>(Das selbstgeschriebene Programm ist in diesem Fall aussen vor. Wie bereits oben erwähnt setzt das Programm alle Möglichkeiten vorraus. Das Skript hingegen greift auf bestehende Komponenten zu.) Kann das Skript unabhängig von allen Variablen die der Benutzer setzen kann ausgeführt werden vereinfacht das den Aufwand. Bei einer Abhängigkeit Bedarf es immer erst einer Abfrage des ist Status und einer Evaluierung. In Illustrator oder InDesign wird die aktuelle Auswahl des aktiven Dokuments in einer Liste genannt "selection" geführt.</p>
+
+<pre><code>app.activeDocument.selection;
+</code></pre>
+
+<p>In dieser Liste liegen Einzelne Objekte die Text sein können oder eine Vektorform oder ein Bild. All diese haben gemeinsame Eigenschaften aber auch spezielle. Es muss also befor eine Eigenschaft genutzt oder verändert werden kann eine Abfrage stattfinden welche Art von Objekt einthalten ist.</p>
+
+<pre><code>var firstListItem = app.activeDocument.selection[0]; // first object in selection 
+    if(firstListItem instanceof TextFrame){ /* check the type */
+    alert("I am a " + firstListItem.typename);    // and name it
+}  
+</code></pre>
+
+<p>Viele solcher Abfrage können ein Skript schnell komplex werden lassen. Oder anders ausgedrückt je universeller der Nutzen sein soll desto mehr Umgebungsvariablen müssen beachtet werden. Dies bedarf natülich Zeit.</p>
+
+<ul>
+<li>Soll die Automation von dritten Benutzt werden?</li>
+</ul>
+
+
+<p>Dies ist ein wichtiger Faktor. Wenn nur der Author selber die Automation verwendet kann er seine vorhergehenden Aktionen auf die Bedürfnisse und Beschränkungen des Skriptes anpassen. Wenn jedoch eine unbedarfte oder schlimmer noch eine dem Skripten nicht mä(ö)chtige Person dieses Werkzeug nutzen soll müssen wie bereits oben erwähnt viele Umgebungsvariablen abgefragt oder selber bestimmt werden. Im Programmier-Slang sagt man: "Man muss vom DAU* ausgehen." (Dümmster Anzunehmender User). Dies ist nicht als Beleidigung gedacht. Es soll eher sagen dass alle Benutzerfehler die auftreten können auftreten werden. In diesem Fall bekommt ein Nicht des Programmierens Mächtiger wenn er Glück hat nur eine Fehlermeldung, wenn er Pech hat einen Programmabsturz. In beiden Fällen steigt die Hemmung des Nutzer ungemein das Skript noch einmal zu verwenden. Wenn also Dritte mit ins Spiel kommen bedarf es noch längerer Test- und Debug-Phasen.</p>
+
+<ul>
+<li>Ist der Prozess linear oder bedarf es einer Rückkopplung zum Benutzer?</li>
+</ul>
+
+
+<p>Wenn dem so ist sollte der Prozess vielleicht in mehrere Skripte zerlegt werden. Für den Fall das Variablen von einem Skript an das nächste übergeben werden müssen kann dies die Komplexität weiter erhöhen. In diesem Fall gibt es die Möglichkeit eigene Textdateien vom Skript kreieren zu lassen in dem Werte abgelegt werden können, Eine Script Panel zu erzeugen oder eine eigene #targetengine zu erzeugen in der solange das Programm aktiv ist Daten gespeichert werden. Die letzten bieden sind jedoch bereits eine sehr forgeschrittene Methode die ebenfalls viele Stolpersteine beherbergen kann.</p>
+
+<h4>Das Beispiel targetengine</h4>
+
+<p>Skript 1:</p>
+
+<pre><code>#targetengine "session01"
+var myValue = 0; // new value
+alert(myValue); // result is 0
+myValue++; // increment by 1
+</code></pre>
+
+<p>Skript 2:</p>
+
+<pre><code>#targetengine "session01"
+alert(myValue); // result is 1
+</code></pre>
+
+<p>Der Algorithmus is wie folgt</p>
+
+<pre><code>Start  
+Sitzung 1
+definiere Variable meinWert und speicher 0 in ihr
+zeige Wert von meinWert
+erhöhe meinWert im eins
+Stop  
+
+Start  
+Sitzung 1
+zeige Wert von meinWert
+Stop  
+</code></pre>
+
+<p>Dies bedeutet dass das Programm (nicht das Skript) sich den Wert für die Variable myValue gemerkt hat und ihn solange in targetengine "session01" speichert bis es beendet wird. Hier liegt die Gefahr darin Variablen Namen doppelt zu vergeben. In vielen meiner Skripte speichere ich das aktive Dokument in der variable doc. Wenn diese nun in einer targetengine liegen wird das Programm immer auf das zuletzt "doc" gleichgesetzte Objekt zugreifen auch wenn dies vielleicht nicht gewünscht ist sondern vom Benutzer nicht beachtet wurde. Auch die Verwendung von Textdateien kann ihre Tücken haben. Auf unterschiedlichen Betriebsystemen werden Dateipfade unterschiedlich gehandhabt. Wenn das Skript von dritten verwendet werde soll kommen wir wieder zum vorherigen Punkt zurück. Auch dies will abgefragt und getestet werden. "Last but not least" gibt es noch die Möglichkeit eigene Grafische Benutzeroberflächen zu erzeugen. Dies ist ebenfalls eine Variante für erfahrenere Authoren.</p>
+
+<p>Die Recherchearbeiten sollten bereits vor dem ersten Entwurf erledigt sein.</p>
+
+<ul>
+<li>Existieren bereits Automationen in dem Sektor und wenn ja lassen sich diese abwandeln?</li>
+</ul>
+
+
+<p>Wie bereits oben erwähnt sind viele Probleme bereits einmal aufgetreten am Ende dieser Arbeit ist eine Liste zu finden wo für welchen Zweck nach Informationen gesucht werden kann. Wenn das Problem nicht all zu speziell ist kann es gut sein, dass es bereits ein Skript gibt das entweder genau diese Funktion enthält und wenn nicht auf die eigenen Bedürfnisse angepasst werden kann oder was meist der Fall es mehrere Skripte gibt die Teilprozesse der eigenen Idee beinhalten und als Referenz benutzt werden können. In den seltesten Fällen entsteht ein Skript von Scratch*(aus einem blanken Textdokument).</p>
+
+<ul>
+<li>Bietet die API direkten Zugriff auf die benötigten Funktionen oder bedarf es eines Workarounds?</li>
+</ul>
+
+
+<p>Dies Bedarf eines Beispiels. InDesign kann nicht erfragen ob ein Zeichen in einer Schriftart enthalten ist. Es gibt als kein Feld das so etwas wie "Font has Character" beinhaltet. Um dieses Abfrage zu simulieren hat Peter Kahrel für InDesign die Funktion  try_char geschrieben die hier in einer etwas abgewandelten Form folgt.</p>
+
+<pre><code>function try_char (theChar){  
+try {  
+    // save the character 
+var storage = theChar.contents; 
+    // create outline  
+    theChar.createOutlines();  
+    // if we got here it worked, so delete the outline
+    // if not the next line will be within the catch block  
+    // if not it will cause an error  
+    theChar.remove();  
+    // insert the character (again)  
+    theChar.contents = storage;  
+    } catch(e){  
+    alert("The character "+theChar + "could not be converted into an Outline");
+    }  
+}  
+</code></pre>
+
+<p>Solche Lösungen setzen nicht nur ein kreativen Umgang mit Code vorraus sondern auch ein tiefes Wissen über die Funktionsweise und Möglichkeiten innerhalb von, in diesem Falle, InDesign.</p>
+
+<p>Die obig genannten Hindernisse schrecken ab. Es klingt alles sehr komplex. Es ist jedoch alles sehr allgemein gehalten und manche Fragen stelle sich auch erst gar nicht. Bei Aufgaben die ein Normal Nutzer niemals manuell machen würde muss sogar ein Skript geschrieben werden wenn sie erledigt werden soll.<br/>
+Auch wenn der Prozess des Skript schriebens eine Kreative Arbeit ist, ist das Ziel des Skriptes nicht der Kreative Output sondern die Optimierung der eigenen Arbeitsabläufe. Das Skript oder Programm kann niemals die Idee liefern. Es unterstützt den Prozess indem es repetitive Aufgaben erledigt die entweder niemals gemacht worden wären oder aber vom eigentlichen Kreativem Prozess ablenken.</p>
+
+<h2>Teil 3 Der Einsatz</h2>
+
+<p>Die Fragen die sich jetzt stellen sind folgende: "Wie kommt dies zum Einsaz?", "Wie kann ich dies nutzen?".
+Es folgt nun das InDesign Skript image_matrix.jsx mit etwas mehr als 40 Zeilen Code. Dieses Skript beinhaltet eine Benutzer Interaktion, Dateihandhabung, das Math Objekt*(ein bereits bestehnder Teil von Javascript. Es erledigt solche Aufgaben wie Rundung von Werten oder das Berechnen einer Quadratwurzel), Conditionen, eine Schleife, Funktionen, Variablen und es hat einen Generativen Character. Das Skript erledigt folgende Schritte (in Pseudocode).
+Frage den Benutzer nach einem Ordner mit jpg Dateien.<br/>
+Erzeuge ein Quadratisches Dokument dessen Grösse auf der Quadratwurzel der Menge der Bilder bassiert und alle Bilder fast.<br/>
+Platziere alle Bilder.</p>
+
+<p>Kopiere den nachstehenden Code. Bereite dir einen Ordner mit einigen Jpg-Bildern vor. Es sollten um die 15 bis 30 sein. Die genau Menge ist irelevant. Lies nochmal den Abschnitt Hello World und wie Skripte ausgeführt werden können und führe das Skript aus. Wenn der Ordnerauswahl Dialog sich öffnet wähle deinen Ordner mit den Bildern an.
+Das gesamte Skript:</p>
+
+<pre><code>{// START SCRIPT
+main(); // you need a function to be able to cancel a script
+
+function main(){// all is in here
+
+var w = 25; // the image sizes
+var allImages = loadFiles("*.jpg");// opens a prompt and lets the user choose a folder
+if(allImages == null) return; // if that what the function returns null is - cancel
+
+var pw = Math.round(Math.sqrt(allImages.length)) * w + (w*2); // this will hold the page width
+var ph = pw;
+
+if(Math.round(Math.sqrt(allImages.length)) != Math.sqrt(allImages.length)){
+        ph = pw + w;
+        }
+
+var doc = app.documents.add(); //build a basic document
+doc.documentPreferences.pageWidth = pw;// set the width
+doc.documentPreferences.pageHeight = ph; // set the height
+var page = doc.pages.item(0);// finally - get the first page
+
+var y = w; // the upper left corner
+var x = w; // the upper left corner
+
+for(var i in allImages){// loop thru all images
+
+var rect = page.rectangles.add({geometricBounds:[y,x,y + w,x + w]});// add a rectangle to the page
+rect.place(allImages[i] );// place the image
+rect.fit(FitOptions.CONTENT_TO_FRAME);// fit it to the frame
+x +=w; // increase x by an image width
+
+if(x &gt;= pw - (w)){ // if x is the width minus an image width
+        x = w; // reset x
+        y+= w; // and increment y by an image width
+        };//end increase x and y conditional
+
+    };//close allImages loop
+
+};// end main function
+
+function loadFiles(type){// the function that loads the files
+
+var theFolder = Folder.selectDialog ("Choose the FOLDER");// user select a folder
+
+if(!theFolder){// if the folder is not a folder cancel the script
+    return;// this cancels the whole function image_loadFiles
+        }; // end foldr check
+
+var allImages = theFolder.getFiles(type);// get the files by type
+if((allImages.length &lt; 1)||(allImages == null) ){// again if check if there are images
+    alert("There are no images");// hm something went wrong? User error
+    return null;// so we cancel the function
+       }else{
+    return allImages;// give back the images. Success!
+        };// end all images check
+
+    };// end function loadFiles
+} // END OF SCRIPT
+</code></pre>
+
+<h3>Das Skript Schritt für Schritt.</h3>
+
+<p>Ein Skript sollte immer in geschwungenen Klammern engefasst sein. Dies ist nicht zwingend jedoch nützlich falls das Skript von einem anderem Skript evaluiert werden muss. Innerhalb dieser Klammern folgt der gesamte Quellcode.</p>
+
+<pre><code>{}
+</code></pre>
+
+<p>Als nächstes definieren wir eine Funktion die einmalig aufgerufen wird. Hierbei ist es irrelevant ob der Aufruf vor oder nach der Funktionsdefinition stattfindet. Aus Gründen der Übersichtlicheit steht hier der Aufruf vor der definition. Diese Funktion erhält keine Parameter. Später wird auch ein Funktion mit Parametern eingesetzt. Der Zweck den gesamten Code in einer Funktion zu kapseln ist folgender: Wenn es eine hirarchisch höhere Ebene gibt, unsere <code>{}</code> Klammern, kann eine Funktion mit dem Befehl <code>return;</code> beendet werden. Dies ist nützlich um bei Fehlern oder falscher Benutzer Eingabe die Ausführung zu stoppen. Mit diesem Befehl kann nicht nur ein Funktion beendet werden sondern auch ein Wert zurückgegben werden. Wenn wir also schreiben <code>return 1;</code> am Ende einer Funktion wäre das Ergebniss 1. <code>var myValue = main();</code> Wenn die Funktion main nun einen Wert zurückgeben würde, wäre <code>myValue</code> 1. In unserem Fall benötigt die <code>main()</code> keinen Rückgabewert.</p>
+
+<pre><code>main();
+function main(){
+}
+</code></pre>
+
+<p>Wir befinden uns nun in der Funktion <code>main();</code>.<br/>
+Es folgt die deklaration der ersten Variable. Sie beinhaltet die  Breite (und Höhe) unserer Bilder.</p>
+
+<pre><code>var w = 25;
+</code></pre>
+
+<p>Wie zu sehen ist entspricht die Variable <code>w</code>*(steht für width) nun 25. <code>w</code> wird im Verlauf des Skriptes mehrmals verwendet. Der Vorteil  daran Variablen zu verwenden anstatt immer 25 zu schreiben ist, dass wenn wir die Breite verändern wollen wir dies nur ein einziges mal an <code>w</code> erledigen müssen und alle weiteren Verwendungen von <code>w</code> werden angepasst.<br/>
+Als nächstes folgt bereits die nächste Subfunktion mit einem Parameter und einem Rückgabewert. In Javascript werden alle Variablen mit <code>var</code> deklariert. Die Unterscheidung des Types findet erst bei der Verwendung statt. Deshalb können wir schreiben.</p>
+
+<pre><code>var allImages = loadFiles("*.jpg");
+</code></pre>
+
+<p>Damit die Funktion auch vorhanden ist fügen wir sie hinter <code>main()</code> an.
+Unser Code sieht also wie folgt aus.</p>
+
+<pre><code>{
+main();
+function main(){
+var w = 25;
+var allImages = loadFiles("*.jpg");
+}
+function loadFiles(type){
+return 0;
+}
+}
+</code></pre>
+
+<p>Den Rückgabewert werden wir noch verändern, denn wir wollen Bilder laden und nicht 0. Wie oben zu sehen ist erhält <code>loadFiles</code> den Parameter <code>type</code>. Dies ist der Dateityp der später geladen werden soll. <code>type</code> is genau wie <code>w</code> und <code>allImages</code> eine Variable nur das wir im Parameter Block der Funktion das <code>var</code> weglassen können.<br/>
+Wenn wir <code>*.*</code> schreiben würden würde unsere Funktion jeden Dateityp laden. Der Einfachheit halber beschränken wir uns auf jpg da wir wissen das InDesign jpg-Dateien laden und platzieren kann.<br/>
+Als nächstes begeben wir uns in die Funktion <code>loadFiles</code> und betrachten die Dateihandhabung und eine Benutzerinteraktion. Basierend auf dem Ergebnis der Interaktion fällt das Skript eine konditionale Entscheidung ob es weiter arbeiten soll oder ob es die Funktion <code>loadFiles</code> beendet.</p>
+
+<pre><code>var theFolder = Folder.selectDialog ("Choose the FOLDER");
+if(!theFolder){ 
+        return;
+        };
+</code></pre>
+
+<p>Bisher waren alle Befehle JavaScript Befehle. Der Befehl <code>Folder.selectDialog ("Choose the FOLDER")</code> jedoch ist ExtendScript. das Objekt <code>Folder</code> hat eine eigene Funktion <code>selectDialog(parameter)</code>. Wir müssen diese Funktion nicht betrachten. Wir müssen nur wissen, dass sie ein Interface öffnet und dem Benutzer die Möglichkeit gibt einen beliebigen Ordner auszuwählen. Der Parameter ist der Text der auf dem Auswahldialog oben zu sehen ist. Der gewählte Ordner wird dann in der neuen Variable <code>theFolder</code> für eine spätere Referenzierung gespeichert. Dann folgt das Konstrukt der Konditionalen Abfrage <code>if(Statment){Do Something}</code>. Sie besagt, dass wenn die Aussage in der runden Klammer war ist die geschwungene Klammer ausgeführt wird. in unserem Fall wird durch das <code>!</code> die Aussage negiert. Ausgeschrieben könnte dort stehen <code>if(theFolder == false)</code> oder <code>if(theFolder != true)</code> die Schreibweise <code>if(!theFolder)</code> ist einfach nur verkürzt. Wenn wir  <code>if(theFolder)</code> schreiben würden würde das <code>if(theFolder==true)</code> entsprechen. Zu Beachten ist nicht <code>=</code> zu schreiben. Dies bedeutet "ist gleich", <code>==</code> bedeutet "entspricht". Gesprochen wäre unsere Aussage: "Wenn der Ordner nicht wahr ist beende die Funktion".<br/>
+Als nächstes betrachten wir was das Laden der Dateien aus unserem Ordner.</p>
+
+<pre><code>var allImages = theFolder.getFiles(type);
+</code></pre>
+
+<p>Ordner Objekte (Folder) haben eine weiter enigebaute Funktion: <code>getFiles(parameter)</code>. Diese hat auch einen Parameter den Dateityp. Hierbei wird nicht nur eine einzelne Datei zurückgegebn sondern eine Sammlung aller Dateien des angegebenen Typs. Dies ist ein Array. Ein Array sollte man sich als eine Liste vorstellen deren Positionen über einen Index aufgerufen werden können. Hierbei ist zu beachten das das erste Objekt in der Liste nicht mit 1 sondern mit 0 angesprochen wird. Also ist <code>allImages[0]</code> das erste Bild unserer Liste.
+Nun folgt ein weitere Sicherheitscheck ob wir Bilder gefunden haben und die Bestimmung des Rückgabewerts unsere Funktion. Ebenfalls wird der Nutzer wenn es keine Bilder gibt darauf hingewiesen.</p>
+
+<pre><code>if((allImages.length &lt; 1) || (allImages == null) ){     alert("There are no images");
+return null;       
+}else{
+return allImages;
+};
+</code></pre>
+
+<p>Wie wir oben sehen benutzen wir nochmals die Konditionale Entscheidung <code>if()</code>. jedoch mit einer Erweiterung dem <code>else</code>. Dies bedeutet das auf jeden Fall eine er beiden geschwungene Blöcke ausgeführt wird. Um es im Pseudocode darszustellen: "Wenn Aussage zutrifft mach dies ansonsten mach dass". Innerhalb unsere runden Aussage Klammer haben wir mehrere Aussagen verknüpft. wir haben also 2 Aussagen. Mit dem <code>||</code> sagen wir entweder oder. In unserem Fall ist das einmal der Check ob wir mindestens ein Bild haben <code>(allImages.length &lt; 1)</code>. <code>length</code> ist eine Eigenschaft jedes Arrays und gibt wenn wir ein Bild haben 1 zurück. Wenn es einhundert sind 100. Wir fragen also ob die länge von unserer Liste kleiner als 1 ist. Diese Aussage verbinden wir mit <code>||</code> dies bedeutet "oder". Wenn also Aussage 1 oder Aussage 2 zutreffen führe den ersten Block aus. Wenn wir beide Aussagen Abfragen wollten müssten wir <code>&amp;&amp;</code> schreiben. Dies würde nur den ersten Block ausführen wenn beide Aussagen zutreffen. In unserem zweiten Aussage fragen wir nach <code>null</code>, dies ist etwas ähnliches wie nichts. Also wenn wir einen Fehler beim Laden der Bilder hatten oder <code>allImages</code> nicht existiert. Im ersten Block beenden wir nur die Funktion. Wenn keine der beiden Aussagen zutrifft sollten wir eine Liste von Bildern haben und diese geben wir mit <code>return allImages</code> an unsere Funktion <code>main</code> zurück.</p>
+
+<p>Wir befinden uns wieder in der Funktion main und werden einen weiter Abfrage starten.</p>
+
+<pre><code>if(allImages == null) return;
+</code></pre>
+
+<p>Wenn <code>loadImages</code> <code>null</code> zurückgibt brich das Skript ab. Dies ist nötig da <code>loadImages</code> in der Funktion <code>main</code> statfindet. Also führt ein <code>return</code> in <code>loadImages</code> nur zurück nach <code>main</code> und nicht zum beenden des Skripts. Hier ist ebenfalls eine verkürzte schreibweise zu sehen. Wir können uns die geschwungenen Klammern sparen wenn wir nur einen einzigen Befehl haben. Das heisst <code>if(statement){doSomething;}</code> enspricht <code>if(statement) doSomething</code>. Ebenfalls könnte <code>if(statement){doSomething;}else{doSomethingElse;}</code> als <code>if(statement) doSomething; else doSomethingElse;</code> abgekürzt werden. Dies geht jedoch nur bei jeweils einem Befehl nach der Aussage.<br/>
+Als nächstes folgt die Berechnung unserer Seiten Weite und Seiten Höhe. Die Höhe wird nochmals mit einer Kondition überprüft. Wenn die Menge an Bildern nicht in ein Matrix passt, also 3 mal 3 oder 4 mal 4 oder 100 mal 100 müss die Höhe nochmals um eine Zeile erweitert werden. Hier kommt das JavaScript Objekt <code>Math</code> zum Einsatz.</p>
+
+<pre><code>var pw = Math.round(Math.sqrt(allImages.length)) * w + (w*2);
+var ph = pw;
+if(Math.round(Math.sqrt(allImages.length)) != Math.sqrt(allImages.length)){
+        ph = pw + w;
+}
+</code></pre>
+
+<p>Dies wirkt komplizert. Um es zu Verstehen lösen wir den ersten Satz einmal auf.
+a ist gleich 16. Die Menge an Bildern.<br/>
+b ist die Wurzel aus a. Wir wollen es rechteckig. Also 4.<br/>
+c ist b gerundet. Falls es eine Kommazahl ist. Bleibt in diesem Fall 4, wenn a 16 ist.<br/>
+d ist 25. Die Breite der Bilder.<br/>
+e ist c mal d. Wir staffeln die Bilder nach rechts. 4×25 also 100<br/>
+f ist d mal 2. Das ist Links und Rechts der Abstand zum Seitenrand.Jeweils eine Bildbreite. Also 50</p>
+
+<p>Also ist unsere Seitenweite 150<br/>
+Die Breite der Bilder mal der auf- oder abgerundeten Wurzel aus der Menge an Bildern plus eine Bildbreite links und eine rechts.<br/>
+oder  <br/>
+g = [√a] × d + (d × 2)<br/>
+oder</p>
+
+<pre><code>var pw = Math.round(Math.sqrt(allImages.length)) * w + (w*2);  
+</code></pre>
+
+<p>Danach setzen wir die Höhe der Seite gleich der Breite.
+Für den Fall das b eine Fliesskommazahl ist und wir eine nicht rechteckige Matrix erzeugen wollen, also alle Bilder platziert werden sollen, müssen wir die Höhe der Seite um eine Zeile Bilder erweitern. Deshalb vergleichen wir in dem <code>if(statement)</code> ob die gerundete Quadratwurzel kleiner als die Quadratwurzel ist. <code>(Math.round(Math.sqrt(allImages.length)) &lt; Math.sqrt(allImages.length)</code><br/>
+oder<br/>
+[√a] ≠ √a<br/>
+oder<br/>
+Wenn die Wurzel aus der Menge an Bilder nicht der gerundeten Wurzel aus der Menge an Bildern entspricht ist die Seitenhöhe die Seitenbreite plus eine Bildbreite. Wenn a also 17 ist wäre die Seite 150 breit und 175 hoch.</p>
+
+<p>ich vermeide hier um es nicht noch weiter zu verkomplizieren jede Art von Maßeinheit. Das lassen wir InDesign selber regeln. In der Standarteinstellung sind es Millimeter. Dies könnten wir defineren müssen wir aber nicht. Da InDesign immer eine Grundeinstellung hat.<br/>
+Als nächstes folgen das erzeugen des Dokuments, das einstellen der Seite auf unsere errechneten Werte und das überführen der ersten Seite im Dokument in eine Variable.</p>
+
+<pre><code>var doc = app.documents.add();
+    doc.documentPreferences.pageWidth = pw;
+    doc.documentPreferences.pageHeight = ph;
+var page = doc.pages.item(0);
+var y = w;
+var x = w;
+</code></pre>
+
+<p>Diese Zeilen sind fast selbst erklärend. Wir fügen der Sammlung an Dokumenten ein neues hinzu. Dabei ist irrelevant ob bereits ein Dokument existiert oder nicht. Dann stellen wir die Weite und Höhe der Seite ein. Dann nehmen wir aus der Sammlung and Seiten in dem neuem Dokument die Erste. Der Aufruf <code>item(0)</code> ist ebenfalls ein ExtendScript Befehl der nur in InDesign funktioniert. wir könnten auch <code>var page = doc.pages[0]</code> schreiben. Hier funktioniert beides gleich. Das ist jedoch nicht immer der Fall. Es gibt zum Beispiel die Möglichkeit <code>doc.pages.middleItem()</code> oder <code>doc.pages.lastItem()</code> abzufragen. Bei einem normalen Array wie unserem <code>allImages</code> würde <code>lastItem()</code> nicht funktionieren. Danach erzeugen wir die Startpunkt unseres ersten Bildes. x und y sind jeweils eine Bildbreite.
+Ebenfalls gäbe es noch die Möglichkeit die ersten drei Zeilen abzukürzen.<br/>
+<code>var doc = app.documents.add({documentPreferences:{pageWidth:pw,pageHeight:ph}});</code>
+Aber zu dieser Schachtelung kommen wir noch. Wir sind bereits halb durch. Es folgt nochmals ein Weiteres Konstrukt. die Schleife.</p>
+
+<pre><code>for(var i in allImages){
+var rect = page.rectangles.add({geometricBounds:[y, x, y + w,x + w]});
+rect.place(allImages[i] );
+rect.fit(FitOptions.CONTENT_TO_FRAME);
+x +=w;
+}
+</code></pre>
+
+<p>Mit dieser Schleife würden wir nur Bilder nach rechts weiter setzen. Den "Zeilenumbruch" fügen wir später ein. Ersteinmal die Aussage der Schleife ähnelt der Kondition <code>for(statment){doSomething}</code> nur mit <code>for</code> anstatt <code>if</code>. Es könnte als an solange übersetzt werden. Solange du durch die Liste der Bilder zählen kannst.Die Aussage <code>for(var i in allImages)</code> ist  eine verkürzte schreibweise für <code>for(var i = 0; i &lt; allImages.length; i = i + 1 )</code> oder <code>for(var i = 0; i &lt; allImages.length; i++ )</code>. Der Große Unterschied ist nur das mit der von mir verwendeten Variante wir die Möglichkeit einbüßen das wir zum Beispiel nicht bei 0 starten sondern bei 5 und wir grössere schritte machen könnten. Es wäre also auch möglich <code>for(var i = 5; i &lt; 100; i= i +5)</code> zu schreiben. Das Bedeutet. Zähler i ist 5. Solange i kleiner als 100 ist, erhöhe i um 5. Im ersten durchlauf ist i 5 im zweiten 10 im dritten 15. Wir würden dann nur das 5te ,10te und 15te Bild erhalten anstatt alle. Unsere Variante ist ein bisschen schmucker. <em>FEHLER</em>
+Es folgt:</p>
+
+<pre><code>var rect = page.rectangles.add({geometricBounds:[y, x, y + w,x + w]});
+</code></pre>
+
+<p>Wir erzeugen auf der ersten Seite eine Rechteck, ähnlich wie unser Dokument und stellen die Aussenkanten ein. Die <code>geometricBounds</code>. Wir könnten auch folgendes schreiben.</p>
+
+<pre><code>var rect = page.rectangles.add();
+var y1 = y;
+var x1 = x;
+var y2 = y1 + w;
+var x2 = x1 + w;
+rect.geometricBounds = [y1, x1, y2, x2];
+</code></pre>
+
+<p>Die Eigenschaft <code>geometricBounds</code> erwartet immer ein Array mit 4 Stellen. Diese geben die Linke obere Ecke und die Rechte untere Ecke an. Immer von der Oberen beziehungswiese linken Kante der Seite gemessen. Hierbei steht die y Koordinate vor der x Koordinate. Zu beachten ist auch das innerhalb von <code>add()</code> ein Doppelpunkt anstatt eines Gleichheitszeihens bei der Zuweisung des Wertes verwendet werden muss.<br/>
+Es folgen drei einfache Befehle.</p>
+
+<pre><code>rect.place(allImages[i] );
+rect.fit(FitOptions.CONTENT_TO_FRAME);
+x +=w;
+</code></pre>
+
+<p>Das Bild mit dem Index i wird in dem Rechteck platziert, der Inhalt wird an die Grösse des Rechteckes angepasst und wir erhöhen den x Wert um eine Bildbreite.Hier könnte auch <code>x = x + w</code> stehen. Da wir in unserer Schleife sind passiert dies für die komplette Menge der Bilder unabhängig davon ob wir 5, 100 oder 10000 haben. Dies ist eine der großen Stärken von Skripten und Programmen. Die Iteration.<br/>
+Damit wir jedoch nicht nur Bilder nach Rechts platzieren sondern umbrechen wenn x (oder x1) größer oder gleich der Breite der Seite minus der Bildbeite*(der Rand) ist müssen wir eine weitere Kondition hinzufügen.</p>
+
+<pre><code>if(x &gt;= pw - (w)){
+x = w;
+y+= w;
+}
+</code></pre>
+
+<p>Die die es bis hier her geschafft haben sollten diesen Code jetzt entschlüsseln können. Wenn x grösser gleich 150 - 25, um auf unser Beispiel mit der 16 als Menge der Bilder zurückzukommen, setze x zurück auf 25 und addiere auf y 25 auf. die Zahlen reihe ist dann:</p>
+
+<pre><code>i = 0
+x = 25
+y = 25  
+</code></pre>
+
+<p>dann</p>
+
+<pre><code>i = 1
+x = 50
+y = 25
+</code></pre>
+
+<p>Das passiert solange bis x 125 ist.<br/>
+Dort setzt die Kondition <code>if(x &gt;= pw - (w))</code> an.<br/>
+x wird in der Kondition zurück auf 25 gesetzt und y wird auf 50 gesetzt.
+Dann ist</p>
+
+<pre><code>i = 4.
+</code></pre>
+
+<p>Wir fangen bei 0 an zu Zählen im Array also ist <code>allImages[4]</code> das fünfte Bild.
+und so weiter und so weiter.<br/>
+Wir sind am Ende. Probiere den Code mit unterschiedliche vielen Jpg-Dateien aus verändere ihn mach ihn kaputt und liess die Fehlermeldungen. Dies ist ein weitverbreitetes Problem. Computer und Programme würden viel an ihrer Mystik verlieren wenn einerseits die Nutzer die Meldungen lesen würde anstatt nur auf ok zu drücken und andererseits die Meldungen verständlich geschrieben wären.</p>
+
+<p>Ein weiters Skript <em>greatPower.jsx</em>. Dies besteht aus nur einer Zeile und ist doch mächtig und auch ein wenig gefährlich. Wenn bei der Entwicklung eines anderen Skripts immer wieder neue Dokumente erzeugt werden kann es schnell passieren, dass 10, 20, 50 Dokumente geöffnet sind. Die Oberfläche von InDesign bietet nicht die Möglichkeit alle geöffneten Dokumente zu schliessen ohne zu speichern. Das bedeutet das bei 50 Dokumenten 50 mal beim Schliessen entweder gespeichert oder das Dokument verworfen werden muss. Mit greatPower.jsx ist dies möglich. Um dies auszuprobieren erzeugen wir ein paar Dokumente mit dem Skript createDocuments.jsx. Dies is stark verkürzt in seiner schreibweise und verwendet eine andere Art von Schleife. die <code>while</code> Schleife.</p>
+
+<pre><code>// createDocuments.jsx
+var counter = 0;
+var numberOfDocuments = 22;
+while(counter &lt;= numberOfDocuments){
+app.documents.add({
+    documentPreferences:{
+        pageWidth:100,pageHeight:100
+        }
+    });
+var tf = app.activeDocument.pages.item(0).textFrames.add({
+    geometricBounds:[10,10,90,90],
+    contents:String(counter) + "Hello World"
+    });
+tf.characters.everyItem().properties = {
+    pointSize:42
+    };
+
+counter++;
+}
+</code></pre>
+
+<p>Um diese Dokumente wieder zu schliessen benutze greatPower.jsx</p>
+
+<pre><code>// Like Uncle Ben saz: "With great power comes great responsability!"
+app.documents.everyItem().close(SaveOptions.NO);
+</code></pre>
+
+<p>Wenn nun dem ein oder anderem der Gedanke kommt: "Das ist doch alles viel zu kompliziert!" Warum dies mehr Unwille den Unvermögen ist  werde ich versuchen im nächsten Teil zu untersuchen</p>
+
+<h2>Teil 4 Die Angst</h2>
+
+<h2>Teil 5 Ein Werkzeug, Schritt für Schritt</h2>
+
+<h2>Fazit</h2>
+
+<p><em>HackerTyper:
+<strong>Duden:
+</strong></em>esoterische Programmiersprachen
+****Pseudocode</p>
+
+  
+  <div class="footer">
+    <div class="contact">
+      <p>
+        Fabian Morón Zirfas<br />
+        Owner of <a href="http://fabiantheblind.info">fabiantheblind.info</a><br />
+        hello@fabiantheblind.info
+      </p>
+    </div>
+    <div class="contact">
+      <p>
+        <a href="http://github.com/fabiantheblind/">github.com/fabiantheblind</a><br />
+        <a href="http://twitter.com/fabiantheblind/">twitter.com/fabiantheblind</a><br />
+        <a href="http://flickr.com/photos/fabiantheblind/">flickr.com/photos/fabiantheblind</a><br />
+        <a href="https://vimeo.com/fabiantheblind">vimeo.com/fabiantheblind</a>
+
+      </p>
+    </div>
+   <!--  <div class="rss">
+      <a href="http://feeds.feedburner.com/tom-preston-werner">
+        <img src="/images/rss.png" alt="Subscribe to RSS Feed" />
+      </a>
+    </div> -->
+  </div>
+</div>
+
+<!-- <a href="http://github.com/mojombo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
+ -->
+<!-- ClickTale Bottom part 
+<div id="ClickTaleDiv" style="display: none;"></div>
+<script type="text/javascript">
+if(document.location.protocol!='https:')
+  document.write(unescape("%3Cscript%20src='http://s.clicktale.net/WRb.js'%20type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+if(typeof ClickTale=='function') ClickTale(206,0.3,"www03");
+</script>
+ ClickTale end of Bottom part -->
+
+</body>
+</html>
