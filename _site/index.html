@@ -38,17 +38,15 @@ var WRInitTime=(new Date()).getTime();
 
 <h2>Mehr Zeit für Gestaltung</h2>
 
-<h1>Einleitung</h1>
+<h2>Einleitung</h2>
 
-<p>Diese Arbeit setzt sich mit der Automation von Design-Prozessen auseinander. Sie ist keinen komplette Anleitung zum Erlernen von Programmier-Grundkenntissen, diese können für viele verschieden Sprachen im "World Wide Web" gefunden werden, sondern eine Auseinandersetzung was Automation durch Programmierung für Designer leisten kann und welche Bereiche sie nicht abdeckt. Dies wird durch einige kurze aber mächtige Beispiele illustriert.
-Sie, die Arbeit, ist der versuch die Mystik und nebulösen Vorstellungen die sich um Computerprogramme ranken zu brechen und den die Schnitstellen die aktuelle Grafikprogramme bieten auf zu zeigen.<br/>
-Im ersten Teil soll dem Leser ein Verständnis für die Herkunft und Unterschiede von Computersprachen und den in ihrem Kontext verwendeten Vokablen vermittelt werden. Dadurch lassen sich die im zweiten Teil betrachteten Anwendungsgebiete unterschiedlicher Sprachen besser verstehen.  Hier wird auch aufgezeigt wo Grenzen liegen und wann es sinnig, unnötig und unerlässlich ist. Im dritten Teil werden dann die Einsatzmöglichkeiten innerhalb von Grafiksoftware beleuchtet und anhand von einfachen und dennoch mächtigen Automationen der Nutzen dargestellt den sie liefern. Im vierten Teil soll dann ergründet werden wo die Abwehrhaltung her rührt wenn das Thema auf das Erlernen von Programmiersprachen fällt und warum diese unbegründet sind beziehungsweise sogar schädlich sein können.<br/>
+<p>Diese Arbeit setzt sich mit der Automation von Design-Prozessen auseinander. Sie ist keine komplette Anleitung zum Erlernen von Programmier Grundkenntisen, diese können für viele verschieden Sprachen im "World Wide Web" gefunden werden, sondern eine Auseinandersetzung was Automation durch Programmierung für Designer leisten kann und welche Bereiche sie nicht abdeckt. Dies wird durch einige kurze aber mächtige Beispiele illustriert.
+Sie, die Arbeit, ist der versuch die Mystik und nebulösen Vorstellungen die sich um Computerprogramme ranken zu brechen und die Schnitstellen die aktuelle Grafikprogramme bieten auf zu zeigen.<br/>
+Im ersten Teil soll dem Leser ein Verständnis für die Herkunft und Unterschiede von Computersprachen und den in ihrem Kontext verwendeten Vokablen vermittelt werden. Dadurch lassen sich die im zweiten Teil betrachteten Anwendungsgebiete unterschiedlicher Sprachen besser verstehen. Hier wird auch aufgezeigt wo Grenzen liegen und wann Automation sinnig, unnötig und unerlässlich ist. Im dritten Teil werden dann die Einsatzmöglichkeiten innerhalb von Grafiksoftware beleuchtet und anhand von einfachen und dennoch mächtigen Automationen der Nutzen dargestellt den sie liefern können. Im vierten Teil soll ergründet werden wo die Abwehrhaltung her rührt wenn es um das Erlernen von Programmiersprachen geht und warum diese unbegründet sind beziehungsweise sogar schädlich sein können.<br/>
 Der fünfte Teil versucht dann an einem komplexerem Beispiel den Aufbau eines solchen Werkzeuges zu durchdringen die Methodik die dahinter steht zu erläutern.<br/>
-Abschliessend soll im Fazit der Erkenntniszuwachs aus alledem nochmals zusammengefasst werden.</p>
+Abschliessend soll im Fazit der Erkenntniszuwachs aus all dem zusammengefasst werden.</p>
 
 <h2>Teil 1 Herkunft, Unterschiede und kleine Terminologie</h2>
-
-<p>[NOCH NICHT GESCHRIEBEN]</p>
 
 <h3>Herkunft von Computersprachen</h3>
 
@@ -64,29 +62,33 @@ Abschliessend soll im Fazit der Erkenntniszuwachs aus alledem nochmals zusammeng
 
 <h3>Was ist ein Programm?</h3>
 
-<p>Das Bild das wir im Kopf haben wenn wir das Wort Programm hören ist stark durch Film beeinflusst. Wir sehen junge, meist übergewichtig und verpickelte Menschen vor uns die in abgedunkelten Räumen zwischen Monitoren, Kabeln und Pizzapackungen auf ewige grün leuchtende Zahlenkolonnen blicken die für uns keinerlei Sinn ergeben. Diese oder ähnliche Bilder sind inspiriert aus einer Zeit in der Computer nur einfarbige Pixel hatten und Grafische Benutzeroberflächen wie Windows noch aus der Kommandozeile gestartet wurde. Als Hommage an diese Vorstellung hat "Duiker101" das Programm <a href="http://hackertyper.net/">HackerTyper</a> entworfen welches mit bereits vorgegebenem Text allein über Tastendruck den Bildschirm mit kompliziertem Quellkode füllt. Dabei ist es irrelevant welche Tasten der Benutzer drückt.
-Verwerfen sie diese Vorstellung (Es ist nicht so das es dies nicht gibt dennoch entspricht es nicht der Regel). Ein Programm ist lt. <a href="http://www.duden.de/rechtschreibung/Programm">Duden</a>: "die nach einem Plan genau festgelegten Einzelheiten eines Vorhabens"*. Unter dieser Betrachtungsweise ist jede Bauanleitung zu Möbelstücken, eine Beschreibung des Weges von hier zum Bahnhof oder das Rezept für Sahnetörtchen ein Programm. Bloß das in letzterem Fall nicht ein Computer die Anweisungen ausführt sondern ein Mensch. Die Sprache in der dieses Programm geschrieben ist, ist Deutsch. Der grosse Unterschied zu einem Computersprache/-programm liegt hier ein der Möglichkeit der Interpretation. Die Ausführende "Maschiene" (in diesem Fall der Mensch) kann solche Angaben wie "eine Priese Salz" oder "eine Messerspitze Merrettich" verarbeiten. Ein Computer ist hierzu (noch) nicht fähig. Er bräuchte eine eindeutigere Angabe wie 50 Gramm.<br/>
-Das Programm muss an dieser Stelle noch von dem Begriff des Algorithmus abgetrennt werden.</p>
+<p>Das Bild das viele im Kopf haben wenn sie das Wort Programm hören ist stark durch Film beeinflusst. Wir sehen junge, meist übergewichtig und verpickelte Menschen vor uns die in abgedunkelten Räumen zwischen Monitoren, Kabeln und Pizzapackungen auf ewige grün leuchtende Zahlenkolonnen blicken die für uns keinerlei Sinn ergeben. Diese oder ähnliche Bilder sind inspiriert aus einer Zeit in der Computer nur einfarbige Pixel hatten und Grafische Benutzeroberflächen wie Windows noch aus der Kommandozeile gestartet wurde. Als Hommage an diese Vorstellung hat "Duiker101" das Programm <a href="http://hackertyper.net/">HackerTyper</a> entworfen welches mit bereits vorgegebenem Text allein über Tastendruck den Bildschirm mit kompliziertem Quellkode füllt. Dabei ist es irrelevant welche Tasten der Benutzer drückt.
+Verwerfen sie diese Vorstellung (Es ist nicht so das es dies nicht gibt dennoch entspricht es nicht der Regel). Ein Programm ist lt. <a href="http://www.duden.de/rechtschreibung/Programm">Duden</a>: "die nach einem Plan genau festgelegten Einzelheiten eines Vorhabens". Unter dieser Betrachtungsweise ist jede Bauanleitung zu Möbelstücken, eine Beschreibung des Weges von hier zum Bahnhof oder das Rezept für Sahnetörtchen ein Programm. Bloß das in letzterem Fall nicht ein Computer die Anweisungen ausführt sondern ein Mensch. Die Sprache in der dieses Programm geschrieben ist, ist Deutsch. Der grosse Unterschied zu einem Computersprache/-programm liegt hier ein der Möglichkeit der Interpretation. Die Ausführende "Maschiene" (in diesem Fall der Mensch) kann solche Angaben wie "eine Priese Salz" oder "eine Messerspitze Merrettich" verarbeiten. Ein Computer ist hierzu (noch) nicht fähig. Er bräuchte eine eindeutigere Angabe wie 50 Gramm. Das Programm sollte an dieser Stelle noch von dem Begriff des Algorithmus abgetrennt werden.</p>
 
 <h3>Was ist ein Algorithmus?</h3>
 
-<p>Auch wenn sich diese beiden Begriffe in ihrer Bedeutung teilweise überschneiden sollten diese auf folgende weise unterschieden werden. Der Algorithmus für Milch holen wäre in Pseudocode:<br/>
+<p>Auch wenn sich diese beiden Begriffe in ihrer Bedeutung teilweise überschneiden sollten sie auf folgende weise unterschieden werden. Der Algorithmus für Milch holen wäre in Pseudocode:<br/>
 <code>wenn (Aussage (kein Milch ist im Kühlschrank) wahr ist): hole neue Milch! wenn nicht: tue nichts!</code><br/>
 Das Programm für Milch holen würde vorraussetzen das alle Schritte und Notwendigkeiten bis zum Übergang der Milch in das Eigentum der Holenden bekannt und definiert sind. Also so etwas wie:</p>
 
 <pre><code>Person fabian ist gleich neu Person;
 Kühlschrank schrank ist gleich neuer Kühlschrank;
 Kühlschrank Menge Milch ist gleich 1;
-jeden morgen fabian trinke Milch aus Kühlschrank, Menge 0.2;
+jeden morgen fabian trinke Milch aus Kühlschrank;
+Menge Milch reduziere um 0.2l;
 jeden morgen fabian beobachte Menge Milch;
 wenn Milch kleiner gleich 0.1 ist fabian hohle Milch im Supermarkt;
 </code></pre>
 
-<p>Und so weiter und so weiter. Diese Funktionsanweisungen könnten noch detailierter ausgearbeitet werden. Hierbei sei zu beachten das solche Objekte wie Kühlschrank und Person bereits implemetiert also bekannt sind. Das Programm im Vergleich zum Algorithmus muss alle eingesetzten Mittel kennen und oder selber beschreiben.</p>
+<p>Und so weiter und so ähnlich. Diese Funktionsanweisungen könnten noch detailierter ausgearbeitet werden. Hierbei sei zu beachten das solche Objekte wie Kühlschrank und Person bereits implemetiert also bekannt sind. Das Programm im Vergleich zum Algorithmus muss alle eingesetzten Mittel kennen und oder selber beschreiben.</p>
 
 <h3>Was ist die Syntax?</h3>
 
-<p>Die Syntax ist die Form in der die Programmiersprache ausgestalltet ist. Die Syntax einer Programmiersprache besteht aus reservierten Worten wie zum Beispiel in Java <code>"new","while","null","true"</code>, Operatoren wie <code>"+","-","*","."</code> und Kontrollstrukturen wie <code>"if(){}else{}"</code> oder <code>"for(int i = 0; i &lt; x;i++)"</code>. Diese Konstrukte dürfen nur für bestimmte Aufgaben verwendet werden. Wenn also ein Programmierer seine Variable `"null" nennet, wird das Programm beim ausführen eine Fehler auswerfen. Die obig genannten Strukturen, Operatoren und reservierten Worte müssen erlernt werden. Eine vollständige Beschreibung aller würde jedoch den Rahmen dieser Arbeit sprengen. Weiterhin ist beim schreiben von Programmen auch auf die Groß- und Kleinschreibung zu achten. Eine Variable die mit dem Namen "myValue" initiert wird muss auch mit diesem Namen aufgerufen werden. Bei einer falschen schreibweise "MyValue" oder "myvalue" würde das Programm warnen das die gewünschte Variable nicht existiert. Es gibt Sprachen die versuchen ihre Syntax so weit wie möglich an unseren Sprachen zu orientieren, zum Beispiel Applescript:</p>
+<p>Die Syntax ist die Form in der die Programmiersprache ausgestalltet ist. Die Syntax einer Programmiersprache besteht aus reservierten Worten wie zum Beispiel in Java <code>"new","while","null","true"</code>, Operatoren wie <code>+,-,*,.</code> und Kontrollstrukturen wie <code>"if(){}else{}"</code> oder <code>"for(int i = 0; i &lt; x;i++)"</code>. Lesne sie diese "Sätze" kürz. Wie würden sie es sprechen?</p>
+
+<p>Ausgesprochen wäre dies: <code>"For int i = 0, i kleiner x, i plus plus"</code></p>
+
+<p>Diese Konstrukte dürfen nur für bestimmte Aufgaben verwendet werden. Wenn also ein Programmierer seine Variable <code>null</code> nennet, wird das Programm beim ausführen eine Fehler auswerfen. Die obig genannten Strukturen, Operatoren und reservierten Worte müssen erlernt werden. Eine vollständige Beschreibung aller würde jedoch den Rahmen dieser Arbeit sprengen. Weiterhin ist beim schreiben von Programmen auch auf die Groß- und Kleinschreibung zu achten. Eine Variable die mit dem Namen <code>myValue</code> initiert wird muss auch mit diesem Namen aufgerufen werden. Bei einer falschen schreibweise <code>MyValue</code> oder <code>myvalue</code> würde das Programm warnen das die gewünschte Variable nicht existiert. Es gibt Sprachen die versuchen ihre Syntax so weit wie möglich an unseren Sprachen zu orientieren, zum Beispiel Applescript:</p>
 
 <pre><code>tell application "Safari" to activate
 </code></pre>
