@@ -1,3 +1,3 @@
 markdown: rdiscount
 pygments: true
-exclude: mojombofiles,JEKYLL MT4D.esproj  
+exclude: mojombofiles,JEKYLL MT4D.esproj,Project.espressostorage  
