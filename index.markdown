@@ -27,8 +27,11 @@ Verwerfen sie diese Vorstellung (Es ist nicht so das es dies nicht gibt dennoch 
 
 ###Was ist ein Algorithmus?
 Auch wenn sich diese beiden Begriffe in ihrer Bedeutung teilweise überschneiden sollten sie auf folgende weise unterschieden werden. Der Algorithmus für Milch holen wäre in Pseudocode:  
-`wenn (Aussage (kein Milch ist im Kühlschrank) wahr ist): hole neue Milch! wenn nicht: tue nichts!`  
+
+	wenn (Aussage (kein Milch ist im Kühlschrank) wahr ist): hole neue Milch! wenn nicht: tue nichts!  
+
 Das Programm für Milch holen würde vorraussetzen das alle Schritte und Notwendigkeiten bis zum Übergang der Milch in das Eigentum der Holenden bekannt und definiert sind. Also so etwas wie:  
+
 	Person fabian ist gleich neu Person;
 	Kühlschrank schrank ist gleich neuer Kühlschrank;
 	Kühlschrank Menge Milch ist gleich 1;
@@ -36,46 +39,69 @@ Das Programm für Milch holen würde vorraussetzen das alle Schritte und Notwend
 	Menge Milch reduziere um 0.2l;
 	jeden morgen fabian beobachte Menge Milch;
 	wenn Milch kleiner gleich 0.1 ist fabian hohle Milch im Supermarkt;
+
 Und so weiter und so ähnlich. Diese Funktionsanweisungen könnten noch detailierter ausgearbeitet werden. Hierbei sei zu beachten das solche Objekte wie Kühlschrank und Person bereits implemetiert also bekannt sind. Das Programm im Vergleich zum Algorithmus muss alle eingesetzten Mittel kennen und oder selber beschreiben.  
   
 ###Was ist die Syntax?
-Die Syntax ist die Form in der die Programmiersprache ausgestalltet ist. Die Syntax einer Programmiersprache besteht aus reservierten Worten wie zum Beispiel in Java `"new","while","null","true"`, Operatoren wie ` +,-,*,.` und Kontrollstrukturen wie `"if(){}else{}"` oder `"for(int i = 0; i < x;i++)"`. Lesen sie diese "Sätze" kurz. Wie würden sie es sprechen?  
+Die Syntax ist die Form in der die Programmiersprache ausgestalltet ist. Die Syntax einer Programmiersprache besteht aus reservierten Worten wie zum Beispiel in Java {% highlight js %}new, while, null , true,{% endhighlight %} Operatoren wie  {% highlight js %}+,-,*,.{% endhighlight %} und Kontrollstrukturen wie {% highlight js %}if(){}else{}{% endhighlight %} oder "{% highlight js %}for(int i = 0; i < x;i++){% endhighlight %}  
+Lesen sie diese "Sätze" kurz. Wie würden sie es sprechen?  
   
-Ausgesprochen wäre dies: `"For int i gleich 0, i kleiner x, i plus plus"`  
-  
-Diese Konstrukte und Worte dürfen nur für bestimmte Aufgaben verwendet werden. Wenn also ein Programmierer seine Variable `null` nennet, wird das Programm beim ausführen eine Fehler auswerfen. Die obig genannten Strukturen, Operatoren und reservierten Worte müssen erlernt werden. Eine vollständige Beschreibung aller würde jedoch den Rahmen dieser Arbeit sprengen. Weiterhin ist beim schreiben von Programmen auch auf die Groß- und Kleinschreibung zu achten. Eine Variable die mit dem Namen `myValue` initiert wird muss auch mit diesem Namen aufgerufen werden. Bei einer falschen schreibweise `MyValue` oder `myvalue` würde das Programm warnen das die gewünschte Variable nicht existiert.  
+Ausgesprochen wäre dies: {% highlight js %} For int i gleich 0, i kleiner x, i plus plus {% endhighlight %}  
+
+Es gibt in JavaScript eine Hand voll [reservierter Worte (Mozilla Developer Network)](https://developer.mozilla.org/en/JavaScript/Reference/Reserved_Words) die beim schreiben nicht verwendet werden dürfen.
+{% highlight js %}
+break, case, catch, continue, debugger, default, delete, do, else, finally, 
+for, function, if, in, instanceof, new, return, switch, this, throw, try, typeof, 
+var, void, while, with, null, false, true 
+{% endhighlight %}
+Noch einmal. Diese Worte dürfen nur für bestimmte Aufgaben verwendet werden! Wenn also ein Programmierer seine Variable `null` nennet, wird das Programm beim ausführen eine Fehler auswerfen. Die obig genannten Strukturen, Operatoren und reservierten Worte müssen erlernt werden. Eine vollständige Beschreibung aller würde jedoch den Rahmen dieser Arbeit sprengen.  
+Weiterhin ist beim schreiben von Programmen auch auf die Groß- und Kleinschreibung zu achten. Eine Variable die mit dem Namen `myValue` initiert wird muss auch mit diesem Namen aufgerufen werden. Bei einer falschen schreibweise `MyValue` oder `myvalue` würde das Programm warnen, dass die aufgerufene Variable nicht existiert.  
+
+{% highlight js %}
+	var myValue = 5; // define a variable
+	myvalue++; //edit it but written wrong
+{% endhighlight %}
+
+<br /> <a href="images/error_myvalue.png"> <img src="images/error_myvalue.png" width="100%" style="max-width:800px;" alt="" /></a>
+
 Es gibt Sprachen die versuchen ihre Syntax so weit wie möglich an unseren Sprachen zu orientieren, zum Beispiel Applescript:
 
+{% highlight applescript %}
 	tell application "Safari" to activate
+{% endhighlight %}
 
 und wieder andere wie die esoterische Programmiersprache* "Brainfuck" die mit ihren acht Zeichen  
 
+{% highlight bf %}
 	+ - < > [ ] , .
+{% endhighlight %}
 
 voll funktionsfähig, aber nicht für das schreiben von Programmen gedacht ist sondern eher ein Gedankenmodell darstellt.
 Das Brainfuck Hello World ([aus wiki](http://en.wikipedia.org/wiki/Brainfuck)):  
 
-	+++++ +++++             initialize counter (cell #0) to 10
-	[                       use loop to set the next four cells to 70/100/30/10
-	    > +++++ ++              add  7 to cell #1
-	    > +++++ +++++           add 10 to cell #2 
-	    > +++                   add  3 to cell #3
-	    > +                     add  1 to cell #4
-	    <<<< -                  decrement counter (cell #0)
-	]                   
-	> ++ .                  print 'H'
-	> + .                   print 'e'
-	+++++ ++ .              print 'l'
-	.                       print 'l'
-	+++ .                   print 'o'
-	> ++ .                  print ' '
-	<< +++++ +++++ +++++ .  print 'W'
-	> .                     print 'o'
-	+++ .                   print 'r'
-	----- - .               print 'l'
-	----- --- .             print 'd'
-	> + .                   print '!'
-	> .                     print '\n'  
+{% highlight bf %}
+ 	+++++ +++++             initialize counter (cell #0) to 10
+ 	[                       use loop to set the next four cells to 70/100/30/10
+ 	    > +++++ ++              add  7 to cell #1
+ 	    > +++++ +++++           add 10 to cell #2 
+ 	    > +++                   add  3 to cell #3
+ 	    > +                     add  1 to cell #4
+ 	    <<<< -                  decrement counter (cell #0)
+ 	]                   
+ 	> ++ .                  print 'H'
+ 	> + .                   print 'e'
+ 	+++++ ++ .              print 'l'
+ 	.                       print 'l'
+ 	+++ .                   print 'o'
+ 	> ++ .                  print ' '
+ 	<< +++++ +++++ +++++ .  print 'W'
+ 	> .                     print 'o'
+ 	+++ .                   print 'r'
+ 	----- - .               print 'l'
+ 	----- --- .             print 'd'
+ 	> + .                   print '!'
+ 	> .                     print '\n' 
+ {% endhighlight %} 
 
 Wie bereits oben in der Beschreibung des Milchalgorithmus zu sehen ist verwendet selbst Pseudocode ein nicht genau definierte Syntax lehnt sich jedoch mit konstruktionen wie "ist gleich" an die Mathematik und Programmierung an. Andere Sprachen mit denen wir uns noch später Auseinandersetzen wie C++, Processing oder JavaScript sind zwischen diesen Extrema angesiedelt und vereinen in einer für das geübte Auge lesbaren und dennoch kompakte Art die Befehlsufrufe.
   
@@ -90,29 +116,33 @@ Um Quellkode zu schreiben bedarf es nicht viel. Ein einfacher Texteditor reicht 
 
 ###Was ist Hello World? 
 Das "Hello World" Programm hat sich als standard Beispiel etabliert um die Syntax einer Sprache zu erklären. Exerzieren wir das einmal kurz durch. Um für Adobe InDesign, After Effects, Illustrator, Photoshop, Photoshop Elements, Photoshop Elements Organizer, Bridge, Audition, Media Encoder und Premiere Pro Skripte zu schreiben liefert Adobe eine eigene IDE, eine Integrierte Entwicklungs Umgebung, mit.  
-<a href="images/estk.png"> <img src="images/estk.png" width="100%" alt="" /></a>
+<br /> <a href="images/estk.png"> <img src="images/estk.png" width="100%" alt="" /></a>
 Das ExtendScript Toolkit. Dies ist nicht der schönste Editor. Er hat jedoch einige Vorteile die die Entwicklung von Skripten sehr einfach macht. Die wichtigste Eigenschaft ist dabei folgende. Es kann ein Skript ohne es zu speichern ausführen. Das Toolkit wird bei der Installation von Adobe Produkten direkt mit geliefert. Suchen sie es in ihren Dienstprogrammen dort sollten sie fündig werden. Wenn nicht gehen sie zu dieser Webseite [http://www.adobe.com/devnet/scripting.html](http://www.adobe.com/devnet/scripting.html), laden und installieren sie es.  
 Wenn es dann installiert ist geben sie folgende Text ein:  
 
+{% highlight js %}
 	alert("Hello World");
+{% endhighlight %}
 
 und drücken sie auf den "Play/Run" Knopf oben rechts oder drücken sie CMD-r oder CTRL-r, abhängig von ihrer Platform.  
-<a href="images/hello_world.png"> <img src="images/hello_world.png" width="100%" alt="" /></a>
+<br /> <a href="images/hello_world.png"> <img src="images/hello_world.png" width="100%" alt="" /></a>
 
 Herzlichen Glückwunsch. Ihr erstes Javascript.  
 Um dieses Skript in InDesign oder Photoshop auszuführen muss die Ziel Applikation aus dem PullDown Menü auf der oberen Leiste gewählt werden. Beim öffenen ist es auf ExtendScript Toolkit gestellt. Wählen sie dort InDesign aus. Das Toolkit wird sofort fragen ob InDesign auch gestartet werden soll. Bestätigen sie das und führen sie das Skript noch einmal aus. Sie werden sehen, dass der Computer zu InDesign überwechselt und den gleichen Hinweis gibt.  
 Probieren sie weiter Skripte und Kalkulationen aus. Zum Beispiel  
 
-	var h = "Hello";
-	var w = "World";
-	var calc = (10*50)/23 - 1;
-	alert(h + " " + w +"! Your result is: "+ clac );  
+{% highlight js %}
+ 	var h = "Hello";
+ 	var w = "World";
+ 	var calc = (10*50)/23 - 1;
+ 	alert(h + " " + w +"! Your result is: "+ clac ); 
+ {% endhighlight %} 
   
 
 
   
 ###Was ist Syntax-Highlighting?
-<a href="images/syntax_highlite.png"><img src="images/syntax_highlite.png" width="100%" alt="" /></a>
+<br /> <a href="images/syntax_highlite.png"><img src="images/syntax_highlite.png" width="100%" alt="" /></a>
 
 Syntax Highlighting ist eine Hilfestellung für Programmierer um ihren Quellkode übersichtlicher zu gestalten. Hierbei werden bestimmte Teile wie Operatoren,Kommentare, Funktionsdeklarationen oder Reservierte Worte farblich hervorgehoben beziehungsweise zurückgenommen um das Lesen zu erleichtern.  
   
@@ -130,9 +160,9 @@ Als Objektorientierung (ach als OO abgekürzt) versteht man ein bestimmte Art wi
 	{  
 
 Der Proto-Apfel (Der Proto-Apfel existiert eingentlich nicht. Unsere Sprache lässt solche Ungenauigkeiten zu. Es gibt einen Apfel und einen Anderen. Aber nicht "DEN" Apfel. ) hat bestimmte Eigenschaften wie Gewicht und Farbe. Hinzu kommen bestimmte Methoden wie Fallen, Wachsen und Verrotten die durch die Eigenschaften beeinflusste werden können.  
-<a href="images/object_orientation_classes-1.png"><img src="images/object_orientation_classes-1.png" width="100%" alt="" /></a>
+<br /> <a href="images/object_orientation_classes-1.png"><img src="images/object_orientation_classes-1.png" width="100%" alt="" /></a>
  Wenn nun ein Baum wächst und Äpfel produziert erzeugt er nach dem Bauplan des Proto-Apfels neue Äpfel und jedem werden bestimmte Werte übergeben.  
-<a href="images/object_orientation_classes-2.png"><img src="images/object_orientation_classes-2.png" width="100%" alt="" /></a>
+<br /> <a href="images/object_orientation_classes-2.png"><img src="images/object_orientation_classes-2.png" width="100%" alt="" /></a>
 Der Baum erzeugt den Apfel und ruft kontinuierlich die Methode Wachsen auf. Hierbei wird der Wert des Gewichtes inkrementiert. Sind die Früchte dann reif wird abhängig vom Gewicht des einzelnen Apfels die Methode Fallen ausgelösst. Wenn der Apfel dann auf dem Boden liegt und die Methode Fallen beendet ist beginnt die Methode Verroten ihre Arbeit. Die Farbe des Apfels verändert sich und das Gewicht wird wieder verringert.
 Das bedeutet der Proto-Apfel selber wird nicht angerührt sondern Instanzen von diesem. Um dies noch auf die Spitze zu treiben haben wir nicht nur eine Art Apfel sondern verschieden Sorten. Also ist die Klasse Granny Smith und ein "Kind"-Klasse der Basisklasse Apfel. Granny Smith erbt alle Eigenschaften der Klasse Apfel ohne das sie neu implemntiert werden müssen und bekommt noch eine weitere Eigenschaft: den Namen.
 
@@ -151,7 +181,7 @@ In InDesign hat der Benutzer die Möglichkeit Absatz- und Zeichenformate anzuleg
 - Bild Unterschrift  
 - Pagina  
 In dem Format "[Einfacher Absatz]" wird eine Schriftart und eine Schriftgrösse definiert. Dieses Format ist das Proto-Format von dem sich alle weiteren Formate ableiten. Sie erben also alle die Eigenschaften Schrift (appliedFont) und die Schriftgrösse (pointSize). Das Format "Überschrift 1" (Ü1) bekommt dann eine eigene Schriftgrösse und einen fetten Schnitt der Schriftart. Im dem Format "Überschrift 2" (Ü2) wird dann festgelegt das nicht mehr das "[Einfacher Absatz]" Format als Basis Klasse benutzt wird sondern Ü1. Damit erbt Ü2 alle Eigenschaften von Ü1. In Ü2 wird dann nurnoch eine neue Schriftgrösse festgelegt. Das gleiche kann dann mit "Überschrift 3" (Ü3) passieren. Ü3 basiert auf Ü2 und bekommt ebenfalls eine eigene Schriftgrösse. Jetzt basiert Ü3 auf Ü2, das auf Ü1 und das auf "[Einfacher Absatz]". Ähnlich verfahren wir mit den weiteren Formaten. "Textkörper" basiert auf "[Einfacher Absatz]", "Bildunterschrift" auf "Textkörper" nur kleiner und "Pagina" auf "Bildunterschrift" aber mit 70% Deckkraft. Wenn der Gestalter nun entscheidet dass eine andere Schriftart von Nöten ist, ändert er sie nur in "[Einfacher Absatz]" und alle Kinder werden entsprechend angepasst. Dies ist ebenfalls Objektorientiert.  
-<a href="images/id_formate.png"><img src="images/id_formate.png" width="100%" alt="" /></a>
+<br /> <a href="images/id_formate.png"><img src="images/id_formate.png" width="100%" alt="" /></a>
 
 	} // Klammer zu
   
@@ -169,10 +199,11 @@ Ein Workaround ist eine kreative Lösung um ein Problem zu umgehen. Wenn zum Bei
 ###Welche Konventionen gibt es?
 Neben den Bestimmungen der Syntax gibt es verschiedene Konventionen die das lesen von Skripten einfacher machen sollen. Zum Beispiel ist es gang und gebe dass die Funktionsweise am Beginn eines Skripts in einem Kommentar erklärt wird. Oder die Verwendung der Variable i (für Iterator) als Zähler in Schleifen.
   
-###Was ist Scripting?
+###Was ist Scripting?  
+Die einfachste Antwort sind folgende zweieinhalb Sätze:  
 > Scripting languages assume that there already exists a collection of useful components written in other languages. Scripting languages aren't intended for writing applications from scratch; they are intended primarily for plugging together components  
 > Scripting: Higher Level Programming
-for the 21st Century by John K. Ousterhout
+for the 21st Century by John K. Ousterhout ([online](http://www.tcl.tk/doc/scripting.html))
    
 
 ###Was ist der Unterschied zwischen Javascript und ExtendScript?
@@ -188,10 +219,11 @@ Ein Objekt erzeugen mit folgenden Eigenschaften
 Dann gibt das Programm eine Meldung mit dem Ergebnis zurück.  
   
 Dieses Programm liegt hier in verschiedenen Sprachen vor.  
-Ich werde hier kurz auf die Unterschiede eingehen. An dieser Stelle ist es nicht zwingend den Programmcode komplett zu verstehen. Beachten sie nur die syntaktischen Unterschiede. Vergleichen sie die Funktion oder Methode `int Object::compare(int a, int b)` in C++ mit `int obj_compare(Object s, int a, int b)` in C oder `compare(int a, int b)` und betrachten sie danach die Funktion `compare : function(a,b){if(a>b){return a;}else{return b;}` in JavaScript. Es gibt kleine Unterschiede aber die gemeinsame Herrkunft ist unübersehbar. Eine tiefere Erklärung des Quellcodes findet sich in den Kommentaren der einzelnen Programme.  
+Ich werde hier kurz auf die Unterschiede eingehen. An dieser Stelle ist es nicht zwingend den Programmcode komplett zu verstehen. Beachten sie nur die syntaktischen Unterschiede. Vergleichen sie die Funktion oder Methode {% highlight cpp %}int Object::compare(int a, int b){% endhighlight %} in C++ mit {% highlight c %}int compare(int a, int b){% endhighlight %} in C und betrachten sie danach die Funktion {% highlight js %}compare : function(a,b){if(a>b){return a;}else{return b;}{% endhighlight %} in JavaScript. Es gibt kleine Unterschiede aber die gemeinsame Herrkunft ist unübersehbar. Eine tiefere Erklärung des Quellcodes findet sich in den Kommentaren der einzelnen Programme.  
 ####Assembler (anObject.s)
-Dies ist die Variente die die Maschiene versteht. Es wurde jedoch nicht von mir geschrieben sondern ist das Ergebnis des Kompilierungsprozesses des C++ Programms.  Näher wäre nur noch Nullen und Einsen zu schrieben. Ich drucke dies hier der Vollständigkeit halber ab. Ja - es gibt auch diesen Aspekt der Programmierung aber um dort anzugelangen ist es ein weiter Weg den wenige gehen und auch wir nicht beschreiten werden in dieser Arbeit. Aus Platzgründen werde ich hier nur die ersten 29 Zeilen zeigen. Das gesamte Programm in Assembler Code ist über 700 Zeilen lang.  
+Dies ist die Variente die die Maschiene versteht. Es wurde jedoch nicht von mir geschrieben sondern ist das Ergebnis des Kompilierungsprozesses des C++ Programms. Näher wäre nur noch Nullen und Einsen zu schrieben. Ich drucke dies hier der Vollständigkeit halber ab. Ja - es gibt auch diesen Aspekt der Programmierung aber um dort anzugelangen ist es ein weiter Weg den wenige gehen und auch wir nicht beschreiten werden in dieser Arbeit. Aus Platzgründen werde ich hier nur die ersten 29 Zeilen zeigen. Das gesamte Programm in Assembler Code ist über 700 Zeilen lang.  
 
+{% highlight cpp-objdump %}
 		.section	__TEXT,__text,regular,pure_instructions
 		.globl	__ZN6Object7compareEii
 		.align	1, 0x90
@@ -221,16 +253,20 @@ Dies ist die Variente die die Maschiene versteht. Es wurde jedoch nicht von mir 
 		popq	%rbp
 		ret
 	Leh_func_end1:
+{% endhighlight %}
 
 
 ####C++ (anObject.cpp)  
  In diesem Beispiel ist bereits zu sehen, dass die Menge an Code die geschrieben werden muss geringer wird. Wobei hier wie auch im C Beispiel bedacht werden muss, dass bereits vorhandene Programmteile mit weiteren hunderten oder tausenden Zeilen Code eingebunden werden. Mit den Aussagen:  
 
-	#include <iostream>
-	#include <string>  
+{% highlight cpp %}
+ 	#include <iostream>
+ 	#include <string> 
+ {% endhighlight %} 
   
 werden fertige Klassen mit Methoden aufgerufen. "iostream" um die Ein- und Ausgabe des Programms zu handhaben und "string" um Zeichenketten zu verarbeiten. Der Unterschied ist enorm. Während in C eine Zeichenkette noch eine Liste einzelner Zeichen ist wird in C++ ein Zeichenkette als ein einziges Objekt gehandhabt und bringt viele Funktionen mit zur Verarbeitung dieser.  
 
+{% highlight cpp %}
 	#include <iostream>
 	#include <string>
 	
@@ -264,39 +300,55 @@ werden fertige Klassen mit Methoden aufgerufen. "iostream" um die Ein- und Ausga
 		delete myObject;
 		return 0;
 	}
+{% endhighlight %}
 
 
 ####ANSI C noObject.c  
-Im Unterschied zu C++ und JS ist die Sprache C grundsätzlich nicht für eine Objektorientierung ausgelegt. Deshalb hier einmal das Beispiel noObject.c welches ebenfalls die gestellte Aufgabe des Vergleich löst aber kein Objekt.  
+Im Unterschied zu C++ und JS ist die Sprache C nicht für eine Objektorientierung ausgelegt. Deshalb hier einmal das Beispiel noObject.c welches ebenfalls die gestellte Aufgabe des Vergleich löst aber kein Objekt erzeugt. Die Syntax ähnelt hier sehr der von JavaScript. Sobald jedoch Pointer hinzukommen wird es schwer kompliziert. (Ein Pointer ist der Verweiss auf die Adresse unter der eine Variable abgelegt. Dies verweist auf reel okkupierten Speicher.) Das kann dann so aussehen:
+ 
 
-	#include<stdio.h>
+{% highlight c %}
+double *dp, atof(char *);
+{% endhighlight %}
 
-	compare(int a, int b){
-		if(a>b){return a;}else{return b;}
-		}
-	
-	int main(void){
-		char name[11] = "Hello World";
-		int a = 23,b = 5;
-		printf("The Object named: %s\nCompared: %d with %d.\n%d is bigger!\n",name,a,b,compare(a,b));
-	
-		return 0;
-	}  
+>says that in an expression *dp and atof(s) have values of double, and that the argument of atof is a pointer to char.
+> aus The C programming Language By Brian W. Kernighan and Dennis M. Ritchie. Published by Prentice-Hall in 1988
+([online]( http://net.pku.edu.cn/~course/cs101/2008/resource/The_C_Programming_Language.pdf))
 
-<a href="images/terminal_c_cpp.png"><img src="images/terminal_c_cpp.png" width="100%" alt="" /></a>
+Aber ich schweife ab. Keine Sorge mit solchen Gedankenmodellen werden wir in JavaScript nicht konfrontiert. All diese funktionalität wird von der Maschiene im Hintergrund erledigt. Somit bleibt Zeit sich mit der Funktionsweise zu beschäftigen. Stellen sie es sich vor wie: "Entweder das Auto vor dem Fahren zusammenbauen oder einfach in das fertige Auto einzusteigen und loszufahren." Dennoch habe ich die Vergleichs-Funktion einmal in C geschrieben.
+{% highlight c %}
+  	#include<stdio.h>
+  
+  	compare(int a, int b){
+  		if(a>b){return a;}else{return b;}
+  		}
+  	
+  	int main(void){
+  		char name[11] = "Hello World";
+  		int a = 23,b = 5;
+  		printf("The Object named: %s\nCompared: %d with %d.\n%d is bigger!",name,a,b,compare(a,b));
+  	
+  		return 0;
+  	}
+  {% endhighlight %}  
+
+<br /> <a href="images/terminal_c_cpp.png"><img src="images/terminal_c_cpp.png" width="100%" alt="" /></a>
 
 
 ####JavaScript (anObject.js)  
   Mit JavaScript gehen wir noch einen Schritt weiter. Hier sind das Objekt, die Ein-/Ausgabe, der String bereits existent und müssen nicht neu implementiert noch eingebunden werden. Der massgebende Unterschied ist dass die vorherigen Programme wirklich vollwertige Programme sind die nach dem Kompilieren aus der Kommandozeile ausgeführt werden können. Die JavaScript Variante benötigit ein Programm in dem es ausgeführt wird. Es ist also alleine nicht lauffähig. Werfen sie einen Blick auf die Funktion `buildNewObject(n)`. Was wir in C in 26 Zeilen schreiben hat in JavaScript nur noch 8 Zeilen.
 
+{% highlight js %}
 	main();
 	
 	function main(){
 	
-		var obj = buildNewObject("Hello Javascript");
+		var obj = buildNewObject("Hello JS");
 		var a = 23, b = 5;
 		obj.compare(a,b);
-		alert("The Object named: "+ obj.name +"\nCompared: "+ a +" with "+ b +"\n" + obj.result + " is bigger\n");
+		alert("The Script named: "+ obj.name + 
+			  "\nCompared: "+ a +" with "+ b +"\n" 
+			  + obj.result + " is bigger\n");
 		obj = null;
 		return 0;
 	}
@@ -305,13 +357,35 @@ Im Unterschied zu C++ und JS ist die Sprache C grundsätzlich nicht für eine Ob
 	    var obj = {
 		name:n,
 	    result:0,
-		compare : function(a,b){if(a>b){return a;}else{return b;}}
+		compare : function(a,b){if(a>b){this.result = a;}else{this.result = b;}}
 	    };
 	    return obj;
 	}
-  
-<a href="images/estk_anobjectjs.png"><img src="images/estk_anobjectjs.png" width="100%" alt="" /></a>
+{% endhighlight %}
+<br /> <a href="images/estk_anobjectjs.png"><img src="images/estk_anobjectjs.png" width="100%" alt="" /></a>
 
+Dies ist eine kleine Abwandlung der {% highlight js %}compare{% endhighlight %} Funktion. Das soll zeigen wie intelligent JavaScript sein kann. Die Funktion {% highlight js %}buildNewObject(n){% endhighlight %} kann die gegebenen Variablen vergleiche und in sich selber das Ergebnis setzen mit {% highlight js %}this.result{% endhighlight %}. Um eine solche Funktionalität in einer Hochsprache zu erzeugen bedürfte es einiger Zeilen mehr. Ohne diese Erweiterung würde es schon mehr der C Variante ähneln.
+
+{% highlight js %}
+	main();  
+	function main(){
+    	var a = 23, b = 5;
+    	var name = "Hello JS";
+    	var result = compare(a,b);
+        	alert("The Script named: "+ name +"\nCompared: "
+        		  + a +" with "+ b +"\n" + result + " is bigger\n");
+    	}
+	function compare (a,b){
+    	if(a>b){
+        	return  a;
+        	}else{
+        	return  b;
+    	};
+	};
+{% endhighlight %}
+<br /> <a href="images/estk_noobjectjs.png"><img src="images/estk_noobjectjs.png" width="100%" alt="" /></a>
+
+  
 Dies ist der Punkt wo wir als Gestalter ansetzen können. Wir müssen das Rad nicht neu erfinden. Wir können jedoch unseren Arbeitsablauf durch gezielte Befehlsketten von repetitive Aufgaben befreien. Ich bin mir sicher dass ein grossteil aller Gestalter die vorgefertigte Software für ihre Arbeit verwenden schon einmal an den Punkt kamen wo sie sich dachten: "Warum kann mein Programm DAS nicht," (DAS steht hier für eine gewünschte Funktionsweise)  "es ist doch alles da. Der Knopf und danach Knopf!". Scripting erlaubt es uns diese beiden Knöpfe mit eineander zu verbinden. Das bedeutet dann das wir unsere Arbeit um einen "Klick" reduziert haben. Wir haben zwei Knöpfe durch Verkettung auf einen neuen Knopf gelegt. Natürlich klingt die Reduktion um einen Klick vernachlässigbar. Wenn Jedoch diese zwei Klicks 100 mal ausgeführt werden müssen und wir durch logische Anweisung diese ebenfalls auf nur einen Knopf zusammenführen können ist der Zeitgewinn enorm. Ebenfalls muss hier erwähnt werden das viele der Probleme die in einem Gestlatungsprozess auftreten nicht zum erstenmal bei eben dieser Person auftreten. Für den Bereich Scripting von Adobe Anwendungen gibt es im Netz viele Seiten und Foren die sich mit diesem Thema befassen. Im Bereich JavaScript gibt es noch viele mehr, da JavaScript auch verwendet wird beziehungsweise entwichelt wurde um Browser zu steuern. Aufgrund dessen ist die Dokumentation mehr als ausgiebig. Es Bedarf nur einiger Übung um die gefundenen Beispiele auf die eigene Problemstellung zu abstrahieren.  
 #Hierbei sei zu beachten! [Absatz überarbeiten]  
 Scripting kann keine Entscheidungen fällen. Es existiert kein Algorithmus der Ästhetik simuliert. Um eine spannende Komposition zu schaffen braucht der Gestalter "nur" drei geometrische Grundformen zu erzeugen und diese im richtigen Verhältnis zu einander anzuordnen. Um dies programmatisch zu lösen müsste ein Skript mehrere hundert mal ausgeführt werden. Jedesmal mit einer kleinen Veränderung der Koordinaten der obig genannten drei Objekte. Davon mal ganz abgesehen, dass der Author irgendwann entscheiden muss welche Komposition knackig ist. Was das Script leisten kann ist anhand von bestimmten Rahmenparametern eine Fülle von Varianten zu liefern die von Hand Senenscheidenentzündungen hervorrufen würde.  
@@ -360,13 +434,15 @@ Wenn dies der Fall ist steigt der Nutzen der Arbeit. Der einmalige Aufwand ein P
 	app.activeDocument.selection;
 In dieser Liste liegen Einzelne Objekte die Text sein können oder eine Vektorform oder ein Bild. All diese haben gemeinsame Eigenschaften aber auch spezielle. Es muss also befor eine Eigenschaft genutzt oder verändert werden kann eine Abfrage stattfinden welche Art von Objekt einthalten ist.  
 
-	// InDesign & Illustrator
-	var firstListItem = app.activeDocument.selection[0]; // first object in selection 
-		if(firstListItem instanceof TextFrame){ /* check the type */
-		alert("I am a " + firstListItem.constructor.name);    // and name it
-	}  
+{% highlight js %}
+  	// InDesign & Illustrator
+  	var firstListItem = app.activeDocument.selection[0]; // first object in selection 
+  		if(firstListItem instanceof TextFrame){ /* check the type */
+  		alert("I am a " + firstListItem.constructor.name);    // and name it
+  	}
+  {% endhighlight %}  
 
-<a href="images/ai_id_textframe.png"><img src="images/ai_id_textframe.png" width="100%" alt="" /></a>
+<br /> <a href="images/ai_id_textframe.png"><img src="images/ai_id_textframe.png" width="100%" alt="" /></a>
 
 
 Viele solcher Abfrage können ein Skript schnell komplex werden lassen. Oder anders ausgedrückt je universeller der Nutzen sein soll desto mehr Umgebungsvariablen müssen beachtet werden. Dies bedarf natürlich Zeit.  
@@ -380,17 +456,22 @@ Dies ist ein wichtiger Faktor. Wenn nur der Author selber die Automation verwend
 Wenn dem so ist sollte der Prozess vielleicht in mehrere Skripte zerlegt werden. Für den Fall das Variablen von einem Skript an das nächste übergeben werden müssen kann dies die Komplexität weiter erhöhen. In diesem Fall gibt es die Möglichkeit eigene Textdateien vom Skript kreieren zu lassen in dem Werte abgelegt werden können, Eine "Script Panel" zu erzeugen oder eine eigene `#targetengine` zu erzeugen in der solange das Programm aktiv ist Daten gespeichert werden. Die letzten beiden sind jedoch forgeschrittene Lösungen die ebenfalls viele Stolpersteine beherbergen können.  
 ####Das Beispiel targetengine 
 Skript 1:
+{% highlight js %}
 	#targetengine "session01"
 	var myValue = 0; // new value
 	alert(myValue); // result is 0
 	myValue++; // increment by 1
+{% endhighlight %}
   
 Skript 2:
+{% highlight js %}
 	#targetengine "session01"
 	alert(myValue); // result is 1
+{% endhighlight %}
   
 Der Algorithmus is wie folgt  
 
+{% highlight js %}
 	Start  
 	Sitzung 1
 	definiere Variable meinWert und speicher 0 in ihr
@@ -402,6 +483,7 @@ Der Algorithmus is wie folgt
 	Sitzung 1
 	zeige Wert von meinWert
 	Stop  
+{% endhighlight %}
   
 Dies bedeutet dass das Programm (nicht das Skript) sich den Wert für die Variable `myValue` gemerkt hat und ihn solange in `#targetengine "session01"` speichert bis es beendet wird. Hier liegt die Gefahr darin Variablen Namen doppelt zu vergeben. In vielen meiner Skripte speichere ich das aktive Dokument in der variable `doc`. Wenn diese nun in einer targetengine liegen wird das Programm immer auf das zuletzt `doc` gleichgesetzte Objekt zugreifen auch wenn dies vielleicht nicht gewünscht ist sondern vom Benutzer nicht beachtet wurde. Auch die Verwendung von Textdateien kann ihre Tücken haben. Auf unterschiedlichen Betriebsystemen werden Dateipfade unterschiedlich gehandhabt. Auch dies will abgefragt und getestet werden. "Last but not least" gibt es noch die Möglichkeit eigene Grafische Benutzeroberflächen zu erzeugen. Dies ist aber eine Variante für erfahrenere Authoren.   
   
@@ -415,36 +497,38 @@ Wie bereits oben erwähnt sind viele Probleme bereits einmal aufgetreten am Ende
 
 Dies Bedarf eines Beispiels. InDesign kann nicht erfragen ob ein Zeichen in einer Schriftart enthalten ist. Es gibt als kein Feld das so etwas wie "Font has Character" beinhaltet. Um dieses Abfrage zu simulieren hat Peter Kahrel (einer der präsentesten InDesign Skripter) die Funktion try_char geschrieben die hier in einer etwas abgewandelten Form folgt. Diese Funktion macht folgendes. Sie bekommt eine Zeichen als Parameter. Diesen speichert temporär in einer Variable. Dann wird das Zeichen genommen und InDesign versucht es in Konturen umzuwandeln. Dies kann nur passieren wenn das Zeichen in dem Font auch existiert. Sollte dem so sein wird die neu kreierte Vektorform wieder verworfen und das Zeichen wird aus dem Zwischenspeicher wieder hergestellt. Wenn jedoch das erzeugen der Vektorform einen Fehler erzeugt wird dieser aufgefangen. Dies passiert mit dem Konstrukt `try { } catch (e) {}` Sollte der Inhalt der ersten geschwungenen Klammer oder auch Block genannt einen Fehler erzeugen wird dieser aufgefangen und das Skript führt den Zweiten Block aus. Die Variable `e` ist in diesem Fall die Fehlermeldung. Probieren sie es aus mit diesem kurzen Skript: `try{ var no_no = nothing;}catch(e){alert(e);}`. Das Programm wird sie warnen das die Variable `nothing` nicht existiert. Um die folgende Funktion sinvoll ausführen zu können benötigen sie ein InDesign Dokument mit einer Textbox auf der ersten Seite in der Zeichen nicht dargestellt werden können. (Siehe Bild).  
 
-	var tf = app.activeDocument.pages.item(0).textFrames.item(0);
+{% highlight js %}
+ 	var tf = app.activeDocument.pages.item(0).textFrames.item(0);
+ 
+ 	for(var i = 0; i < tf.characters.length;i++){
+     var theChar = tf.characters.item(i);
+     try_char (theChar);
+     };
+ 
+ 	// by Peter Kahrel 
+ 	// http://www.kahrel.plus.com/indesign/compose_cs3.jsx
+ 	function try_char (theChar){  
+ 	try {  
+     	// save the character 
+ 		var storage = theChar.contents; 
+     	// create outline  
+     	theChar.createOutlines();  
+     	// if we got here it worked, so delete the outline
+     	// if not the next line will be within the catch block  
+ 		// if not it will cause an error  
+     	theChar.remove();  
+     	// insert the character (again)  
+     	theChar.contents = storage;  
+     	} catch(e){  
+     	alert("The character "+ theChar.contents + 
+     	" could not be converted into an Outline.\n"+
+     	"That means he does not exist in the font:\n\""
+     	+ theChar.appliedFont.name+"\"");
+     	}  
+     } 
+ {% endhighlight %} 
 
-	for(var i = 0; i < tf.characters.length;i++){
-    var theChar = tf.characters.item(i);
-    try_char (theChar);
-    };
-
-	// by Peter Kahrel 
-	// http://www.kahrel.plus.com/indesign/compose_cs3.jsx
-	function try_char (theChar){  
-	try {  
-    	// save the character 
-		var storage = theChar.contents; 
-    	// create outline  
-    	theChar.createOutlines();  
-    	// if we got here it worked, so delete the outline
-    	// if not the next line will be within the catch block  
-		// if not it will cause an error  
-    	theChar.remove();  
-    	// insert the character (again)  
-    	theChar.contents = storage;  
-    	} catch(e){  
-    	alert("The character "+ theChar.contents + 
-    	" could not be converted into an Outline.\n"+
-    	"That means he does not exist in the font:\n\""
-    	+ theChar.appliedFont.name+"\"");
-    	}  
-    }  
-
-<a href="images/try_char_id.png"><img src="images/try_char_id.png" width="100%" alt="" /></a>
+<br /> <a href="images/try_char_id.png"><img src="images/try_char_id.png" width="100%" alt="" /></a>
 
 
 Solche Lösungen setzen nicht nur ein kreativen Umgang mit Code vorraus sondern auch ein tiefes Wissen über die Funktionsweise und Möglichkeiten innerhalb von, in diesem Falle, InDesign.  
@@ -463,6 +547,7 @@ Es folgt nun das InDesign Skript image_matrix.jsx mit etwas mehr als 40 Zeilen C
 Kopieren sie den nachstehenden Code und bereiten sie einen Ordner mit einigen Jpg-Bildern vor. Das Skript das unten beschrieben wird verarbeitet NUR .jpg Dateien, Dateien die .jpeg oder .JPG heissen werden ignoriert. Es sollten um die 15 bis 30 sein damit die Ausführung des Skriptes nicht zuviel Zeit in Anspruch nimmt. Es kann jedoch auch 100,1000 oder mehr Bildern handhaben. Die genau Menge ist irelevant. Lesen nochmals den Abschnitt Hello World und wie Skripte ausgeführt werden können und führen sie das Skript aus. Wenn der Ordnerauswahl Dialog sich öffnet wähle sie den Ordner mit den Bildern an.
 Das gesamte Skript:  
 
+{% highlight js %}
 	{// START SCRIPT
 	main(); // you need a function to be able to cancel a script
 
@@ -522,10 +607,11 @@ Das gesamte Skript:
 
 		};// end function loadFiles
 	} // END OF SCRIPT
+{% endhighlight %}
 	  
-<a href="images/image_matrix_1.jpg"><img src="images/image_matrix_1.jpg" width="100%" style="max-width:500px;" alt="" /></a><br />
-<a href="images/image_matrix_2.jpg"><img src="images/image_matrix_2.jpg" width="100%" style="max-width:500px;" alt="" /></a><br />
-<a href="images/image_matrix_3.jpg"><img src="images/image_matrix_3.jpg" width="100%" style="max-width:500px;" alt="" /></a><br />
+<br /> <a href="images/image_matrix_1.jpg"><img src="images/image_matrix_1.jpg" width="100%" style="max-width:500px;" alt="" /></a><br />
+<br /> <a href="images/image_matrix_2.jpg"><img src="images/image_matrix_2.jpg" width="100%" style="max-width:500px;" alt="" /></a><br />
+<br /> <a href="images/image_matrix_3.jpg"><img src="images/image_matrix_3.jpg" width="100%" style="max-width:500px;" alt="" /></a><br />
 
 
 ###Das Skript Schritt für Schritt.  
@@ -535,23 +621,30 @@ Ein Skript sollte immer in geschwungenen Klammern engefasst sein. Dies ist nicht
 
 Als nächstes definieren wir eine Funktion die einmalig aufgerufen wird. Hierbei ist es irrelevant ob der Aufruf vor oder nach der Funktionsdefinition stattfindet. Aus Gründen der Übersichtlicheit steht hier der Aufruf vor der definition. Diese Funktion erhält keine Parameter. Später wird auch ein Funktion mit Parametern eingesetzt. Der Zweck den gesamten Code in einer Funktion zu kapseln ist folgender: Wenn es eine hirarchisch höhere Ebene gibt, unsere `{}` Klammern, kann eine Funktion mit dem Befehl `return;` beendet werden. Dies ist nützlich um bei Fehlern oder falscher Benutzer Eingabe die Ausführung zu stoppen. Mit dem Befehl `return` kann nicht nur ein Funktion beendet werden sondern auch ein Wert zurückgegben werden. Wenn wir also schreiben `return 1;` am Ende einer Funktion wäre das Ergebniss 1. `var myValue = main();` Wenn die Funktion main nun einen Wert zurückgeben würde, wäre `myValue` 1. In unserem Fall benötigt die `main()` keinen Rückgabewert.
 
+{% highlight js %}
 	main();
 	function main(){
 	}
+{% endhighlight %}
 
 Wir befinden uns nun in der Funktion `main();`.  
 Es folgt die deklaration der ersten Variable. Sie beinhaltet die Breite (und Höhe) unserer Bilder.
 
+{% highlight js %}
 	var w = 25;
+{% endhighlight %}
 
 Wie zu sehen ist entspricht die Variable `w`*(steht für width) nun 25. `w` wird im Verlauf des Skriptes mehrmals verwendet. Der Vorteil  daran Variablen zu verwenden anstatt immer 25 zu schreiben ist, dass wenn wir die Breite verändern wollen wir dies nur ein einziges mal an `w` erledigen müssen und alle weiteren Verwendungen von `w` werden angepasst.  
 Als nächstes folgt bereits die nächste Subfunktion mit einem Parameter und einem Rückgabewert. In Javascript werden alle Variablen mit `var` deklariert. Die Unterscheidung des Types findet erst bei der Verwendung statt. Deshalb können wir schreiben.  
 
+{% highlight js %}
 	var allImages = loadFiles("*.jpg");
+{% endhighlight %}
 
 Damit die Funktion auch vorhanden ist fügen wir sie hinter `function main(){ }` an.
 Unser Code sieht also wie folgt aus.  
 
+{% highlight js %}
 	{
 	main();
 		function main(){
@@ -562,34 +655,43 @@ Unser Code sieht also wie folgt aus.
 			return 0;
 		}
 	}
+{% endhighlight %}
 
 Den Rückgabewert werden wir noch verändern, denn wir wollen Bilder laden und nicht 0. Wie oben zu sehen ist erhält `loadFiles` den Parameter `type`. Dies ist der Dateityp der später geladen werden soll. `type` is genau wie `w` und `allImages` eine Variable nur das wir im Parameter Block der Funktion das `var` weglassen können.  
 Wenn wir `*.*` schreiben würden würde unsere Funktion jeden Dateityp laden. Der Einfachheit halber beschränken wir uns auf jpg da wir wissen das InDesign jpg-Dateien laden und platzieren kann.  
 Als nächstes begeben wir uns in die Funktion `loadFiles` und betrachten die Dateihandhabung und eine Benutzerinteraktion. Basierend auf dem Ergebnis der Interaktion fällt das Skript eine konditionale Entscheidung ob es weiter arbeiten soll oder ob es die Funktion `loadFiles` beendet.  
 
+{% highlight js %}
 	var theFolder = Folder.selectDialog ("Choose the Folder");
 	if(!theFolder){ 
 			return;
 			};
+{% endhighlight %}
 
 Bisher waren alle Befehle JavaScript Befehle. Der Befehl `Folder.selectDialog ("Choose the Folder")` jedoch ist ExtendScript. das Objekt `Folder` hat eine eigene Funktion `selectDialog(parameter)`. Wir müssen diese Funktion nicht betrachten. Wir müssen nur wissen, dass sie ein Interface öffnet und dem Benutzer die Möglichkeit gibt einen beliebigen Ordner auszuwählen. Der Parameter ist der Text der auf dem Auswahldialog oben zu sehen ist. Der gewählte Ordner wird dann in der neuen Variable `theFolder` für eine spätere Referenzierung gespeichert. Dann folgt das Konstrukt der konditionalen Abfrage.
 
+{% highlight js %}
 	if( Statment ){ Do Something }
+{% endhighlight %}
 
 Sie besagt, dass wenn die Aussage in der runden Klammer war ist die geschwungene Klammer ausgeführt wird. in unserem Fall wird durch das `!` die Aussage negiert. Ausgeschrieben könnte dort stehen `if(theFolder == false)` oder `if(theFolder != true)` die Schreibweise `if(!theFolder)` ist einfach nur verkürzt. Wenn wir  `if(theFolder)` schreiben würden würde das `if(theFolder==true)` entsprechen. Zu Beachten ist nicht `=` zu schreiben. Dies bedeutet "ist gleich", `==` bedeutet "entspricht". Gesprochen wäre unsere Aussage: "Wenn der Ordner nicht existiert - beende die Funktion".  
 Als nächstes betrachten wir was das Laden der Dateien aus unserem Ordner.  
 
+{% highlight js %}
 	var allImages = theFolder.getFiles(type);
+{% endhighlight %}
 
 Ordner Objekte (Folder) haben eine weiter enigebaute Funktion: `getFiles(parameter)`. Diese hat auch einen Parameter. Den Dateityp. Hierbei wird nicht nur eine einzelne Datei zurückgegebn sondern eine Sammlung aller Dateien des angegebenen Typs. Dies ist ein Array. Ein Array sollte man sich als eine Liste vorstellen deren Positionen über einen Index aufgerufen werden können. Hierbei ist zu beachten das das erste Objekt in der Liste nicht mit 1 sondern mit 0 angesprochen wird. Also ist `allImages[0]` das erste Bild unserer Liste.  
 Nun folgt ein weitere Sicherheitscheck ob wir Bilder gefunden haben und die Bestimmung des Rückgabewerts unserer Funktion. Ebenfalls wird der Nutzer wenn es keine Bilder gibt darauf hingewiesen.
 
+{% highlight js %}
 	if((allImages.length < 1) || (allImages == null) ){
 		alert("There are no images of the type: " + type);
 		return null;	   
 	}else{
 		return allImages;
 	};
+{% endhighlight %}
 
 Wie wir oben sehen benutzen wir nochmals die Konditionale Entscheidung `if()`. jedoch mit einer Erweiterung dem `else`. Dies bedeutet das auf jeden Fall eine er beiden Blöcke ausgeführt wird. Um es im Pseudocode darszustellen:  
 
@@ -599,44 +701,59 @@ Innerhalb unsere runden Aussage Klammer haben wir mehrere Aussagen verknüpft. w
   
 Wir befinden uns wieder in der Funktion main und werden einen weiter Abfrage starten.
 
+{% highlight js %}
 	if(allImages == null) return;
+{% endhighlight %}
 
 Wenn `loadImages` `null` zurückgibt bricht das Skript ab. Dies ist nötig da `loadImages` in der Funktion `main` stattfindet. Also führt ein `return` in `loadImages` nur zurück nach `main` und nicht zum beenden des Skripts. Hier ist ebenfalls eine verkürzte schreibweise zu sehen. Wir können uns die geschwungenen Klammern sparen wenn wir nur einen einzigen Befehl haben. Das heisst:  
 
+{% highlight js %}
 	if(statement){doSomething;} 
+{% endhighlight %}
 
 enspricht:  
 
+{% highlight js %}
 	if(statement) doSomething
+{% endhighlight %}
 
 Ebenfalls könnte 
 
+{% highlight js %}
 	if(statement){doSomething;}else{doSomethingElse;}
+{% endhighlight %}
+
 als
 
+{% highlight js %}
 	if(statement) doSomething; else doSomethingElse;
+{% endhighlight %}
 
 abgekürzt werden. Dies geht jedoch nur bei jeweils einem Befehl nach der Aussage.  
 
 Als nächstes folgt die Berechnung unserer Seitenbreite und Seitenhöhe. Die Höhe wird nochmals mit einer Kondition überprüft. Wenn die Menge an Bildern nicht in ein Matrix passt, also 3 mal 3 oder 4 mal 4 oder 100 mal 100 müss die Höhe nochmals um eine Zeile erweitert werden. Hier kommt das JavaScript Objekt `Math` zum Einsatz.   
 
+{% highlight js %}
 	var pw = Math.round(Math.sqrt(allImages.length)) * w + (w*2);
 	var ph = pw;
 	if(Math.round(Math.sqrt(allImages.length)) != Math.sqrt(allImages.length)){
 	        ph = pw + w;
 	}
+{% endhighlight %}
 
 Dies wirkt komplizert. Um es zu Verstehen lösen wir den ersten Satz einmal auf. Betrachten sie das Bild dabei.  
 
-	a ist gleich 16. Die Menge an Bildern.  
-	b ist die Wurzel aus a. Wir wollen es rechteckig. Also 4.  
-	c ist b gerundet. Falls es eine Kommazahl ist. Bleibt in diesem Fall 4, wenn a 16 ist.
-	d ist 25. Die Breite der Bilder.  
-	e ist c mal d. Wir staffeln die Bilder nach rechts. 4×25 also 100  
-	f ist d mal 2. Das ist Links und Rechts der Abstand zum Seitenrand.
-	Jeweils eine Bildbreite. Also 50  
+{% highlight js %}
+ 	a ist gleich 16. Die Menge an Bildern.  
+ 	b ist die Wurzel aus a. Wir wollen es rechteckig. Also 4.  
+ 	c ist b gerundet. Falls es eine Kommazahl ist. Bleibt in diesem Fall 4, wenn a 16 ist.
+ 	d ist 25. Die Breite der Bilder.  
+ 	e ist c mal d. Wir staffeln die Bilder nach rechts. 4×25 also 100  
+ 	f ist d mal 2. Das ist Links und Rechts der Abstand zum Seitenrand.
+ 	Jeweils eine Bildbreite. Also 50 
+ {% endhighlight %} 
 
-<a href="images/matrix_think.png"><img src="images/matrix_think.png" width="100%" style="max-width:500px;" alt="" /></a><br />
+<br /> <a href="images/matrix_think.png"><img src="images/matrix_think.png" width="100%" style="max-width:500px;" alt="" /></a><br />
 
 Also ist unsere Seitenbreite 150  
 
@@ -646,12 +763,16 @@ oder
 g = [√a] × d + (d × 2)  
 oder  
 
+{% highlight js %}
 	var pw = Math.round(Math.sqrt(allImages.length)) * w + (w*2);  
+{% endhighlight %}
 
 Danach setzen wir die Höhe der Seite der Breite gleich.
 Für den Fall das b (oder `Math.sqrt(allImages.length)`) eine Fliesskommazahl ist und wir eine nicht rechteckige Matrix erzeugen müssen, also alle Bilder platziert werden sollen, müssen wir die Höhe der Seite um eine Zeile für Bilder erweitern. Deshalb vergleichen wir in dem `if(statement)` ob die gerundete Quadratwurzel kleiner als die Quadratwurzel ist.
 
+{% highlight js %}
 	(Math.round(Math.sqrt(allImages.length)) < Math.sqrt(allImages.length)
+{% endhighlight %}
 
 oder  
 [√a] ≠ √a  
@@ -661,20 +782,25 @@ Wenn die Wurzel aus der Menge an Bilder nicht der gerundeten Wurzel aus der Meng
 ich vermeide hier um es nicht noch weiter zu verkomplizieren jede Art von Maßeinheit. Das lassen wir InDesign selber regeln. In der Standarteinstellung sind es Millimeter. Dies könnten wir defineren müssen wir aber nicht da InDesign immer eine Grundeinstellung hat.  
 Als nächstes folgen das erzeugen des Dokuments, das einstellen der Seite auf unsere errechneten Werte, das überführen der ersten Seite im Dokument in eine Variable und die Definition unseres Startpunktes.  
 
+{% highlight js %}
 	var doc = app.documents.add();
 	    doc.documentPreferences.pageWidth = pw;
 	    doc.documentPreferences.pageHeight = ph;
 	var page = doc.pages.item(0);
 	var y = w;
 	var x = w;
+{% endhighlight %}
 
 Diese Zeilen sind fast selbst erklärend. Wir fügen der Sammlung an Dokumenten ein neues hinzu. Dabei ist irrelevant ob bereits ein Dokument existiert oder nicht. Dann stellen wir die Weite und Höhe der Seite ein. Dann nehmen wir aus der Sammlung an Seiten in dem neuem Dokument die Erste. Der Aufruf `item(0)` ist ebenfalls ein ExtendScript Befehl der nur in InDesign funktioniert. wir könnten auch `var page = doc.pages[0]` schreiben. Hier funktioniert beides gleich. Das ist jedoch nicht immer der Fall. Es gibt zum Beispiel die Möglichkeit `doc.pages.middleItem()` oder `doc.pages.lastItem()` abzufragen. Bei einem normalen Array wie unserem `allImages` würde `lastItem()` nicht funktionieren. Danach erzeugen wir die Startpunkt unseres ersten Bildes. x und y sind jeweils eine Bildbreite vom Rand der Seite entfernt.
 Es gibt noch die Möglichkeit die ersten drei Zeilen abzukürzen. Dies ist eine komprimiert schreibweise die uns noch öfter begegnen wird.  
 
+{% highlight js %}
 	var doc = app.documents.add({documentPreferences:{pageWidth:pw,pageHeight:ph}});
+{% endhighlight %}
 
 Aber zu dieser Schachtelung kommen wir noch. Wir sind bereits halb durch. Es folgt nochmals ein weiteres Konstrukt. die Schleife.  
 
+{% highlight js %}
 	for(var i = 0; i < allImages.length;i++){
 	var rect = page.rectangles.add({geometricBounds:[y, x, y + w,x + w]});
 	rect.place(allImages[i] );
@@ -682,68 +808,86 @@ Aber zu dieser Schachtelung kommen wir noch. Wir sind bereits halb durch. Es fol
 	rect.fit(FitOptions.CENTER_CONTENT);// fit it to the frame
 	x +=w;
 	}
+{% endhighlight %}
 
 Mit dieser Schleife würden wir nur Bilder nach rechts weiter setzen. Den "Zeilenumbruch" fügen wir später ein. Ersteinmal die Aussage der Schleife ähnelt der Kondition `for(statment){doSomething}` nur mit `for` anstatt `if`. Es könnte als an _solange_ übersetzt werden. Solange du durch die Liste der Bilder zählen kannst. Die Aussage `for(var i = 0; i < allImages.length; i++ )` ist  eine verkürzte schreibweise für `for(var i = 0; i < allImages.length; i = i + 1 )`. Es wäre  auch möglich `for(var i = 5; i < 100; i= i +5)` zu schreiben. Das Bedeutet. Zähler i ist 5. Solange i kleiner als 100 ist, erhöhe i um 5. Im ersten durchlauf ist i 5 im zweiten 10 im dritten 15. Wir würden dann nur das 5te ,10te und 15te Bild erhalten anstatt alle.  
 Es folgt:  
 
+{% highlight js %}
 	var rect = page.rectangles.add({geometricBounds:[y, x, y + w,x + w]});
+{% endhighlight %}
 
 Wir erzeugen auf der ersten Seite eine Rechteck, ähnlich wie unser Dokument und stellen die Aussenkanten ein. Die `geometricBounds`. Wir könnten auch folgendes schreiben.  
   
+{% highlight js %}
 	var rect = page.rectangles.add();
 	var y1 = y;
 	var x1 = x;
 	var y2 = y1 + w;
 	var x2 = x1 + w;
 	rect.geometricBounds = [y1, x1, y2, x2];
+{% endhighlight %}
   
 Die Eigenschaft `geometricBounds` erwartet immer ein Array mit 4 Stellen. Diese geben die Linke obere Ecke und die Rechte untere Ecke an. Immer von der Oberen beziehungswiese linken Kante der Seite gemessen. Hierbei steht die y Koordinate vor der x Koordinate. Zu beachten ist auch, dass innerhalb von `add()` ein Doppelpunkt anstatt eines Gleichheitszeichens bei der Zuweisung des Wertes verwendet werden muss.  
 Es folgen drei einfache Befehle.  
   
+{% highlight js %}
 	rect.place(allImages[i] );
 	rect.fit(FitOptions.FILL_PROPORTIONALLY);// fit it to the frame
 	rect.fit(FitOptions.CENTER_CONTENT);// fit it to the frame
 	x +=w;
+{% endhighlight %}
   
 Das Bild mit dem Index i wird in dem Rechteck platziert, der Inhalt wird an die Grösse des Rechteckes angepasst, zentriert und wir erhöhen den x Wert um eine Bildbreite. Hier könnte auch `x = x + w` stehen. Es gibt weiter verkürzte Schreibweisen wie:
 
+{% highlight js %}
 	x-=5; //  equivalent to x = x - 5;
 	x*=5; //  equivalent to x = x * 5;
 	x/=5; //  equivalent to x = x / 5;
+{% endhighlight %}
 
 Da wir in unserer Schleife sind passiert dies für die komplette Menge der Bilder unabhängig davon ob wir 5, 100 oder 10000 haben. Dies ist eine der großen Stärken von Skripten und Programmen. Die Iteration.  
 Damit wir jedoch nicht nur Bilder nach Rechts platzieren sondern umbrechen wenn x (oder x1) größer oder gleich der Breite der Seite minus der Bildbeite (der Rand) ist müssen wir eine weitere Kondition hinzufügen.  
-  
+
+{% highlight js %}
 	if(x >= pw - (w)){
-	x = w;
-	y+= w;
-	}
-  
+ 	x = w;
+ 	y+= w;
+ 	}
+{% endhighlight %}
+
 Wenn diese Kondition nicht da wäre würde das Skript die Bilder wie in der folgenden Grafik platzieren. Achtung! Wenn zuviele Bilder über die Arbeitsfläche hinaus gehen kann das InDesign zum Absturz bringen und oder das Dokument unwiederruflich zerstören.  
-<a href="images/matrx_without_breakline.png"><img src="images/matrx_without_breakline.png" width="100%" alt="" /></a><br />
+<br /> <a href="images/matrx_without_breakline.png"><img src="images/matrx_without_breakline.png" width="100%" alt="" /></a><br />
 Die die es bis hier her geschafft haben sollten den obigen Code jetzt entschlüsseln können.  
 Wenn x grösser gleich 150 - 25, um auf unser Beispiel mit der 16 als Menge der Bilder zurückzukommen, setze x zurück auf 25 und addiere auf y 25 auf. die Zahlenreihe ist dann:  
 
+{% highlight js %}	
 	i = 0
 	x = 25
 	y = 25  
+{% endhighlight %}
+
 dann
 
+{% highlight js %}
 	i = 1
 	x = 50
 	y = 25
+{% endhighlight %}
 
 Das passiert solange bis x 125 ist.  
 Dort setzt die Kondition `if(x >= pw - (w))` an.  
 x wird in der Kondition zurück auf 25 gesetzt und y wird auf 50 gesetzt.
 Dann ist  
 
-	i = 4.
+	{% highlight js %}
+		i = 4.
+	{% endhighlight %}
 
 Wir fangen bei 0 an zu Zählen im Array also ist `allImages[4]` das fünfte Bild.
 und so weiter und so weiter.  
 Wir sind am Ende. Probieren sie den Code mit unterschiedliche vielen Jpg-Dateien aus. Verändern sie ihn bis er nicht mehr funktioniert und lesen sie die Fehlermeldungen. Dies ist ein weitverbreitetes Problem. Computer und Programme würden viel an ihrer Mystik verlieren wenn einerseits die Nutzer die Meldungen lesen würde anstatt nur auf ok zu drücken und andererseits die Meldungen verständlich geschrieben wären.  
-<a href="images/error.png"><img src="images/error.png" width="100%" alt="" /></a><br />  
+<br /> <a href="images/error.png"><img src="images/error.png" width="100%" alt="" /></a><br />  
 Ein weiters Skript, _greatPower.jsx_, welches aus nur einer Befehlszeile besteht und dennoch mächtig und auch ein wenig gefährlich ist.  
 Wenn bei der Entwicklung eines anderen Skripts immer wieder neue Dokumente erzeugt werden kann es schnell passieren, dass 10, 20, 50 Dokumente geöffnet sind. Die Oberfläche von InDesign bietet nicht die Möglichkeit alle geöffneten Dokumente zu schliessen ohne zu speichern. Das bedeutet das bei 50 Dokumenten 50 mal beim Schliessen entweder gespeichert oder das Dokument verworfen werden muss. Mit greatPower.jsx ist dies möglich. Um dies auszuprobieren erzeugen wir ein paar Dokumente mit dem Skript createDocuments.jsx. Dies is stark verkürzt in seiner schreibweise und verwendet eine andere Art von Schleife. die `while` Schleife.   
 
@@ -764,26 +908,37 @@ Wenn bei der Entwicklung eines anderen Skripts immer wieder neue Dokumente erzeu
 	tf.characters.everyItem().properties = {
 	    pointSize:42
 	    };
-	
 	counter++;
 	}
 {% endhighlight %}
 
 Um diese 23 Dokumente wieder zu schliessen benutzen sie "greatPower.jsx"
-{% highlight js %}
 
-	// Like Uncle Ben saz: "With great power comes great responsability!"
-	app.documents.everyItem().close(SaveOptions.NO);
-  
+{% highlight js %}
+ 	// Like Uncle Ben saz: "With great power comes great responsability!"
+ 	app.documents.everyItem().close(SaveOptions.NO);
+{% endhighlight %} 
 Wenn nun dem ein oder anderem der Gedanke kommt: "Das ist doch alles viel zu kompliziert!" Warum dies mehr Unwille den Unvermögen ist werde ich versuchen im nächsten Teil zu untersuchen.   
   
 ##Teil 4 Die Angst
 [NOCH NICHT GESCHRIEBEN]  
 ##Teil 5 Ein Werkzeug  
-[NOCH NICHT GESCHRIEBEN]  
+Wo bleibt die extra Zeit für Gestaltung die versprochen wurde? Wie bereits erwähnt braucht das lernen einer Sprache etwas Zeit. Die Grammatik und Rechtschreibung können aus einem Buch gelernt werden, die Nuancen und Umgangssprache kann jedoch nur durch das Sprechen geschult werden.  
+Zum Glück sind wir hier nicht alleine. Es gibt bereits viele Werkzeuge die frei zur Verfügung stehen und zur Optimierung unserer Arbeitsprozesse genutzt werden können. In diesem Sinne habe ich das Script AEMap.jsx für Adobe After Effects geschrieben.  
+<br /> <a href="images/aemapuiv02a.png"><img src="images/aemapuiv02a.png" width="100%" alt="" /></a><br />  
+
+Viele Motion Designer kommen irgendwann einmal an den Punkt an dem sie eine Weltkarte oder die Aussenkontur eines Landes benötigen. Bisher war es so das immer wieder eine Websuche begann nach benutzbaren Kartenmaterial. Hierbei entstehen einige Problem. Die Rechte an Kartenmaterial das "einfach so" aus dem Netz gezogen wurde sind oft ungeklärt. Manchmal sind es Vektordatein wenn man Pech hat sind es Pixelbilder. Diese Quelldatei liegt dann innerhalb eines Projektes und wird mit diesem archiviert. Wenn sie wieder benötigt wird beginnt die Suche aufs neue. Was bei vielen absolvierten Projekten schnell zeitraubend werden kann. After Effects Projekte können schnell aus hunderten Quelldateien bestehen und sind gerne nach persönlichem Gusto sortiert. Was wenn dann nicht nur eine Weltkarte sondern zum Beispiel die Kontur von Osttimor und Papua Neu Guinea benötigt wird?  
+
+<br /> <a href="images/ostimorpaua_01.jpg"><img src="images/ostimorpaua_01.jpg" width="100%" alt="" /></a><br />  
+
+Selbst wenn eine vernünftige Vektorform einer Karte existiert und griffbereit ist wie könne die beiden Länder gefunden werden? Was ist wenn eine Grenzänderung stattfindet? Und und und. Um diesen Problemen zu entgehen kann AEMap.jsx eine Weltkarte in Rektangularprojektion erzeugen. Dabei entsteht eine After Effects Komposition in einer gewählten Skalierung (immer 2:1) in der 178 Präkompositionen enthalten sind die 286 einzelne Polygongruppen beinhalten.
+<br /> <a href="images/aemapfullcomp.png"><img src="images/aemapfullcomp.png" width="100%" alt="" /></a><br />  
+Der Nutzer kann zwischen verschiedenen Einstellungen wählen wie zum Beispiel die Karte mit Kontur zu zeichen oder ohne oder ob alle Polygone auf eine Ebene gezeichnet werden sollen oder ob in die oben genannten Kompositionen gesplittet werden soll. Ebenfalls können 3D Einstellungen definiert werden und ähnliche mehr. Die Daten bestehen auf einem GeoJson Datensatz der zum freien Gebrauch ins Netz gestellt wurde. Der gesamten Funktionsumfang ist auf [dieser Webseite](http://fabiantheblind.github.com/AEMap/) dokumentiert. Dieses Skript spart nicht nur mir Zeit sondern auch anderen. Die Resonanz in der After Effects Community" ist gross. Daher hat das Skript seit seiner Veröffentlichung auf [AEScripts.com](http://aescripts.com/aemap/) am 10 April 2012 bereits über 400 Downloads gehabt (heute 24 April 2012). Das Tutorial und das Demo wurden bereits über 4000 mal auf Youtube geladen. Aber genug der Selbstbeweihräucherung. Der Vorteil an solchen und ähnlichen Werkzeugen die zum Beispiel auf AEScripts.com bereit gestellt werden ist, dass diese meist aus dem Zwang heraus enstanden sind einen Arbeitsablauf zu automatisieren um Zeit zusparen. 
+
+
 ##Fazit 
 [NOCH NICHT GESCHRIEBEN]  
 ##JavaScript &amp; ExtendScript Ressourcen
 [NOCH NICHT GESCHRIEBEN]  
-##Quellenverziechnis
+##Quellenverzeichnis
 [NOCH NICHT GESCHRIEBEN]  
