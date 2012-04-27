@@ -11,217 +11,31 @@ Sie, die Arbeit, ist der versuch die Mystik und nebulösen Vorstellungen die sic
 Im ersten Teil soll dem Leser ein Verständnis für die Herkunft und Unterschiede von Computersprachen und den in ihrem Kontext verwendeten Vokablen vermittelt werden. Dadurch lassen sich die im zweiten Teil betrachteten Anwendungsgebiete unterschiedlicher Sprachen besser verstehen. Hier wird auch aufgezeigt wo Grenzen liegen und wann Automation sinnig, unnötig und unerlässlich ist. Im dritten Teil werden dann die Einsatzmöglichkeiten innerhalb von Grafiksoftware beleuchtet und anhand von einfachen und dennoch mächtigen Automationen der Nutzen dargestellt den sie liefern können. Im vierten Teil soll ergründet werden wo die Abwehrhaltung her rührt wenn es um das Erlernen von Programmiersprachen geht und warum diese unbegründet sind beziehungsweise sogar schädlich sein können.  
 Der fünfte Teil versucht dann an einem komplexerem Beispiel den Aufbau eines solchen Werkzeuges zu durchdringen die Methodik die dahinter steht zu erläutern.  
 Abschliessend soll im Fazit der Erkenntniszuwachs aus all dem zusammengefasst werden.  
-  
-##Teil 1 Herkunft, Unterschiede und kleine Terminologie
 
-###Herkunft von Computersprachen
-[NOCH NICHT GESCHRIEBEN]    
-###(Einige) Unterschiede von Computersprachen
-[NOCH NICHT GESCHRIEBEN]  
-###Was ist Code?
-Als Code bezeichen wir in der Regeln Informationen die verschlüsselt (encoding) werden um dann an einer weiteren Stelle wieder entschlüsselt zu werden (decoding). Zum Beispiel stellt Morse-Code Buchstaben dar indem ein einziges unmoduliertes Signal, zum Beispiel ein Ton, in kurze und lange Sequenzen unterteilt wird. Der Rezipient kann dann, wenn er des Systems machtig ist, diese Informationen entschlüsseln und zu der originalen Nachricht wieder zusammensetzen. Ein weiters Bespiel ist der Abakus. Dieser erlaubt es wenn der Benutzer des Systems machtig ist Rechenoperationen auszuführen. Und als drittes die Knotenschrift der Inkas die wie der Name bereits besagt aus einem System von Knoten auf einem Satz Schnüren bestand. Heutzutage findet das Wort "Code" im Computerbereich oft Verwendung als Kurzform des Ausdrucks "Source-Code" also Quellkode eines Programms.  
-  
-###Was ist ein Programm?
-Das Bild das viele im Kopf haben wenn sie das Wort Programm hören ist stark durch Film beeinflusst. Wir sehen junge, meist übergewichtig und verpickelte Menschen vor uns die in abgedunkelten Räumen zwischen Monitoren, Kabeln und Pizzapackungen auf ewige grün leuchtende Zahlenkolonnen blicken die für uns keinerlei Sinn ergeben. Diese oder ähnliche Bilder sind inspiriert aus einer Zeit in der Computer nur einfarbige Pixel hatten und Grafische Benutzeroberflächen wie Windows noch aus der Kommandozeile gestartet wurde. Als Hommage an diese Vorstellung hat "Duiker101" das Programm [HackerTyper](http://hackertyper.net/) entworfen welches mit bereits vorgegebenem Text allein über Tastendruck den Bildschirm mit kompliziertem Quellkode füllt. Dabei ist es irrelevant welche Tasten der Benutzer drückt.
-Verwerfen sie diese Vorstellung (Es ist nicht so das es dies nicht gibt dennoch entspricht es nicht der Regel). Ein Programm ist lt. [Duden](http://www.duden.de/rechtschreibung/Programm): "die nach einem Plan genau festgelegten Einzelheiten eines Vorhabens". Unter dieser Betrachtungsweise ist jede Bauanleitung zu Möbelstücken, eine Beschreibung des Weges von hier zum Bahnhof oder das Rezept für Sahnetörtchen ein Programm. Bloß das in letzterem Fall nicht ein Computer die Anweisungen ausführt sondern ein Mensch. Die Sprache in der dieses Programm geschrieben ist, ist Deutsch. Der grosse Unterschied zu einem Computersprache/-programm liegt hier ein der Möglichkeit der Interpretation. Die Ausführende "Maschiene" (in diesem Fall der Mensch) kann solche Angaben wie "eine Priese Salz" oder "eine Messerspitze Merrettich" verarbeiten. Ein Computer ist hierzu (noch) nicht fähig. Er bräuchte eine eindeutigere Angabe wie 50 Gramm. Das Programm sollte an dieser Stelle noch von dem Begriff des Algorithmus abgetrennt werden.  
+#Bevor sie Einsteigen
+Bevor sie weiterlesen einige Hinweise. Wenn sie noch keine Erfahrungen mit Programmierung gemacht haben lassen sie sich nicht abschrecken. Es werden einige für den Laien unverständliche Zeilen vorkommen und einige die sich aus dem Kontext oder den Namen der Funktionen erschliessen lassen. Falls sie die Beispiele in Abschnitt Eins und Zwei ausprobieren möchten lesen sie den Abschnitt Terminologie [NUMMER] "Hello World" zuerst. Dort wird erklärt wie und wo sie Skripte schreiben und ausführen können. Es werden Fachausdrücke vorkommen die ebenfalls im Abschnitt Terminologie [NUMMER] erklärt werden. Ab dem Abschitt [NUMMER] Das Szenario steigen wir dann voll in das lesen und wenn sie möchten schreiben von Skripten ein. Dafür sollte zumindest der eben genannte Abschnitt einmal nachvollzogen worden sein. Wenn die dort dargestellten Zusammenhänge und Konstrukte zu komplex sind verschaffen sie sich etwas Übung. Es existiert eine schöne Webseite geannt [codecademy.com](http://www.codecademy.com/#!/exercises/0) auf der sie in eingen lustigen Aufgaben durch die Grundlagen von JavaScript geführt werden. Wenn mal etwas nicht funktionert - verzweifeln sie nicht. Kontrollieren sie ihre schreibweisen und suchen sie sich weiterführende Informationen im Netz. Die einfachste Möglichkeit ist den gewünschten Befehl samt JavaScript (z.B. "alert() JavaScript") in einer Suchmaschiene einzugeben. Da das Netz voll von JavaScript ist spuckt es in 99% der Fälle auch die richtige Dokumentation aus. Werfen sie ebenfalls einen Blick in die Referenzliste. Dort finden sie viele Ressourcen für "Scripting" die ihnen den Einstig erleichtern werden.    
 
-###Was ist ein Algorithmus?
-Auch wenn sich diese beiden Begriffe in ihrer Bedeutung teilweise überschneiden sollten sie auf folgende weise unterschieden werden. Der Algorithmus für Milch holen wäre in Pseudocode:  
-
-	wenn (Aussage (kein Milch ist im Kühlschrank) wahr ist): hole neue Milch! wenn nicht: tue nichts!  
-
-Das Programm für Milch holen würde vorraussetzen das alle Schritte und Notwendigkeiten bis zum Übergang der Milch in das Eigentum der Holenden bekannt und definiert sind. Also so etwas wie:  
-
-	Person fabian ist gleich neu Person;
-	Kühlschrank schrank ist gleich neuer Kühlschrank;
-	Kühlschrank Menge Milch ist gleich 1;
-	jeden morgen fabian trinke Milch aus Kühlschrank;
-	Menge Milch reduziere um 0.2l;
-	jeden morgen fabian beobachte Menge Milch;
-	wenn Milch kleiner gleich 0.1 ist fabian hohle Milch im Supermarkt;
-
-Und so weiter und so ähnlich. Diese Funktionsanweisungen könnten noch detailierter ausgearbeitet werden. Hierbei sei zu beachten das solche Objekte wie Kühlschrank und Person bereits implemetiert also bekannt sind. Das Programm im Vergleich zum Algorithmus muss alle eingesetzten Mittel kennen und oder selber beschreiben.  
-  
-###Was ist die Syntax?
-Die Syntax ist die Form in der die Programmiersprache ausgestalltet ist. Die Syntax einer Programmiersprache besteht aus reservierten Worten wie zum Beispiel in Java {% highlight js %}new, while, null , true,{% endhighlight %} Operatoren wie  {% highlight js %}+,-,*,.{% endhighlight %} und Kontrollstrukturen wie {% highlight js %}if(){}else{}{% endhighlight %} oder "{% highlight js %}for(int i = 0; i < x;i++){% endhighlight %}  
-Lesen sie diese "Sätze" kurz. Wie würden sie es sprechen?  
-  
-Ausgesprochen wäre dies: {% highlight js %} For int i gleich 0, i kleiner x, i plus plus {% endhighlight %}  
-
-Es gibt in JavaScript eine Hand voll [reservierter Worte (Mozilla Developer Network)](https://developer.mozilla.org/en/JavaScript/Reference/Reserved_Words) die beim schreiben nicht verwendet werden dürfen.
-{% highlight js %}
-break, case, catch, continue, debugger, default, delete, do, else, finally, 
-for, function, if, in, instanceof, new, return, switch, this, throw, try, typeof, 
-var, void, while, with, null, false, true 
-{% endhighlight %}
-Noch einmal. Diese Worte dürfen nur für bestimmte Aufgaben verwendet werden! Wenn also ein Programmierer seine Variable `null` nennet, wird das Programm beim ausführen eine Fehler auswerfen. Die obig genannten Strukturen, Operatoren und reservierten Worte müssen erlernt werden. Eine vollständige Beschreibung aller würde jedoch den Rahmen dieser Arbeit sprengen.  
-Weiterhin ist beim schreiben von Programmen auch auf die Groß- und Kleinschreibung zu achten. Eine Variable die mit dem Namen `myValue` initiert wird muss auch mit diesem Namen aufgerufen werden. Bei einer falschen schreibweise `MyValue` oder `myvalue` würde das Programm warnen, dass die aufgerufene Variable nicht existiert.  
-
-{% highlight js %}
-	var myValue = 5; // define a variable
-	myvalue++; //edit it but written wrong
-{% endhighlight %}
-
-<br /> <a href="images/error_myvalue.png"> <img src="images/error_myvalue.png" width="100%" style="max-width:800px;" alt="" /></a>
-
-Es gibt Sprachen die versuchen ihre Syntax so weit wie möglich an unseren Sprachen zu orientieren, zum Beispiel Applescript:
-
-{% highlight applescript %}
-	tell application "Safari" to activate
-{% endhighlight %}
-
-und wieder andere wie die esoterische Programmiersprache* "Brainfuck" die mit ihren acht Zeichen  
-
-{% highlight bf %}
-	+ - < > [ ] , .
-{% endhighlight %}
-
-voll funktionsfähig, aber nicht für das schreiben von Programmen gedacht ist sondern eher ein Gedankenmodell darstellt.
-Das Brainfuck Hello World ([aus wiki](http://en.wikipedia.org/wiki/Brainfuck)):  
-
-{% highlight bf %}
- 	+++++ +++++             initialize counter (cell #0) to 10
- 	[                       use loop to set the next four cells to 70/100/30/10
- 	    > +++++ ++              add  7 to cell #1
- 	    > +++++ +++++           add 10 to cell #2 
- 	    > +++                   add  3 to cell #3
- 	    > +                     add  1 to cell #4
- 	    <<<< -                  decrement counter (cell #0)
- 	]                   
- 	> ++ .                  print 'H'
- 	> + .                   print 'e'
- 	+++++ ++ .              print 'l'
- 	.                       print 'l'
- 	+++ .                   print 'o'
- 	> ++ .                  print ' '
- 	<< +++++ +++++ +++++ .  print 'W'
- 	> .                     print 'o'
- 	+++ .                   print 'r'
- 	----- - .               print 'l'
- 	----- --- .             print 'd'
- 	> + .                   print '!'
- 	> .                     print '\n' 
- {% endhighlight %} 
-
-Wie bereits oben in der Beschreibung des Milchalgorithmus zu sehen ist verwendet selbst Pseudocode ein nicht genau definierte Syntax lehnt sich jedoch mit konstruktionen wie "ist gleich" an die Mathematik und Programmierung an. Andere Sprachen mit denen wir uns noch später Auseinandersetzen wie C++, Processing oder JavaScript sind zwischen diesen Extrema angesiedelt und vereinen in einer für das geübte Auge lesbaren und dennoch kompakte Art die Befehlsufrufe.
-  
-###Was ist Pseudocode?
-Im Verlaufe dieser Arbeit werde ich immer wieder auf die Darstellung von Alogrithmen in "Pseudocode" zurückgreifen. Pseudocode besteht nicht aus einer bereits definierten Syntax und kann auch nicht von einem Compiler übersetzt werden sondern dient nur zur Darstellung eines logischen Ablaufs. Wie bereits in dem Milchalgorithmus zu sehen war versucht Pseudocode einen Programmablauf in menschenlesbarer Form darzustellen.  
-  
-###Was ist ein Compiler?
-Der Vollständigkeit halber soll dieser hier erklärt werden auch wenn er uns kaum mehr im weiteren Verlauf der Arbeit begegen wird. Der Compiler ist ebenfalls ein Programm das aus menschenlesbaren Hochsprachen wie zum Beispiel C++ maschienenlesbaren Quellkode erzeugt (Assemblercode). Diesen Prozess bezeichnet man auch als Kompilierung.  
-  
-###Was ist eine IDE (Integrated Development Envoirement)?
-Um Quellkode zu schreiben bedarf es nicht viel. Ein einfacher Texteditor reicht aus um komplette Programme zu schreiben. Im Laufe der Zeit wurde jedoch viel Software programmiert um das schreiben von Quelltext zu erleichtern. Dies geht los bei einfachem Syntax-Highlighting bis hinzu kompletten Entwicklungsumgebungen die noch vor dem Kompilieren beziehungweise während des schreibens die Syntax auf ihre Validität prüfen und gegebenfalls Vorschläge machen was gemeint sein könnte oder bei nicht verwendeten Programmteilen warnen das diese derzeit unnütz sind. In unserem Fallbeispieln werden wir noch mit diesen Programmen zu tuen kriegen. Es sei jedoch bereits gesagt das wir die einfachste Möglichkeit nutzen werden die sich uns bietet und die auf beiden Platformen (Windows und Mac OS X) zur Verfügung steht. Das ExtendScript Toolkit (Mehr hierzu ist im nächsten Abschnitt zu finden).  
-
-###Was ist Hello World? 
-Das "Hello World" Programm hat sich als standard Beispiel etabliert um die Syntax einer Sprache zu erklären. Exerzieren wir das einmal kurz durch. Um für Adobe InDesign, After Effects, Illustrator, Photoshop, Photoshop Elements, Photoshop Elements Organizer, Bridge, Audition, Media Encoder und Premiere Pro Skripte zu schreiben liefert Adobe eine eigene IDE, eine Integrierte Entwicklungs Umgebung, mit.  
-<br /> <a href="images/estk.png"> <img src="images/estk.png" width="100%" alt="" /></a>
-Das ExtendScript Toolkit. Dies ist nicht der schönste Editor. Er hat jedoch einige Vorteile die die Entwicklung von Skripten sehr einfach macht. Die wichtigste Eigenschaft ist dabei folgende. Es kann ein Skript ohne es zu speichern ausführen. Das Toolkit wird bei der Installation von Adobe Produkten direkt mit geliefert. Suchen sie es in ihren Dienstprogrammen dort sollten sie fündig werden. Wenn nicht gehen sie zu dieser Webseite [http://www.adobe.com/devnet/scripting.html](http://www.adobe.com/devnet/scripting.html), laden und installieren sie es.  
-Wenn es dann installiert ist geben sie folgende Text ein:  
-
-{% highlight js %}
-	alert("Hello World");
-{% endhighlight %}
-
-und drücken sie auf den "Play/Run" Knopf oben rechts oder drücken sie CMD-r oder CTRL-r, abhängig von ihrer Platform.  
-<br /> <a href="images/hello_world.png"> <img src="images/hello_world.png" width="100%" alt="" /></a>
-
-Herzlichen Glückwunsch. Ihr erstes Javascript.  
-Um dieses Skript in InDesign oder Photoshop auszuführen muss die Ziel Applikation aus dem PullDown Menü auf der oberen Leiste gewählt werden. Beim öffenen ist es auf ExtendScript Toolkit gestellt. Wählen sie dort InDesign aus. Das Toolkit wird sofort fragen ob InDesign auch gestartet werden soll. Bestätigen sie das und führen sie das Skript noch einmal aus. Sie werden sehen, dass der Computer zu InDesign überwechselt und den gleichen Hinweis gibt.  
-Probieren sie weiter Skripte und Kalkulationen aus. Zum Beispiel  
-
-{% highlight js %}
- 	var h = "Hello";
- 	var w = "World";
- 	var calc = (10*50)/23 - 1;
- 	alert(h + " " + w +"! Your result is: "+ clac ); 
- {% endhighlight %} 
-  
-
-
-  
-###Was ist Syntax-Highlighting?
-<br /> <a href="images/syntax_highlite.png"><img src="images/syntax_highlite.png" width="100%" alt="" /></a>
-
-Syntax Highlighting ist eine Hilfestellung für Programmierer um ihren Quellkode übersichtlicher zu gestalten. Hierbei werden bestimmte Teile wie Operatoren,Kommentare, Funktionsdeklarationen oder Reservierte Worte farblich hervorgehoben beziehungsweise zurückgenommen um das Lesen zu erleichtern.  
-  
-###Was ist eine API (Application Programming Interface)?
-Dies ist die Schnittstelle die ein Programm bietet um auf sein Funktionen zugreifen zu können. Dies wird beim Schreiben von Programmen wie InDesign von den Programmierern definiert. Diese Schnittstelle ist wie ein Baum mit Querverweisen aufgebaut. Um in InDesign einem bestehendem Dokument auf der ersten Seite eine Textbox hinzuzufügen muss durch diesen Baum manövriert werden.  
-
-	app.activeDocument.pages.item(0).textFrames.add();
-
-Diese Zeile erzeugt in der linken oberen Ecken eine Textkiste.  
-All diese Befehle und Eigenschaften müssen nicht auswendig gelernt werden sondern können nachgeschlagen werden. Im ExtendScript Toolkit kann unter Hilfe / ObjektModell Viewer ein Hilfsprogramm aufgerufen werden das alle Befehle mit einer kurzen Erklärung enthält. Oder es kann auf der Seite von jongware eine .chm Datei heruntergeladen werden die die gleichen Informationen enthält und mit einem .chm Viewer durchsucht werden kann. [http://www.jongware.com/idjshelp.html](http://www.jongware.com/idjshelp.html)  
-  
-###Was ist Objektorientierung?
-Als Objektorientierung (ach als OO abgekürzt) versteht man ein bestimmte Art wie Programme aufgebaut sind. Ein Objekt ist ein gekapselter Teil des Programmcodes der Schnittstellen und Methoden bietet und seine Eigenschaften an weiter Objekte vererben kann. Um dies besser zu verstehen möchte ein hervorragendes Beispiel aus "Processing: A Programming Handbook for Visual Designers and Artists" von Casey Reas and Ben Fry bemühen.  
-####Klammer auf!
-	{  
-
-Der Proto-Apfel (Der Proto-Apfel existiert eingentlich nicht. Unsere Sprache lässt solche Ungenauigkeiten zu. Es gibt einen Apfel und einen Anderen. Aber nicht "DEN" Apfel. ) hat bestimmte Eigenschaften wie Gewicht und Farbe. Hinzu kommen bestimmte Methoden wie Fallen, Wachsen und Verrotten die durch die Eigenschaften beeinflusste werden können.  
-<br /> <a href="images/object_orientation_classes-1.png"><img src="images/object_orientation_classes-1.png" width="100%" alt="" /></a>
- Wenn nun ein Baum wächst und Äpfel produziert erzeugt er nach dem Bauplan des Proto-Apfels neue Äpfel und jedem werden bestimmte Werte übergeben.  
-<br /> <a href="images/object_orientation_classes-2.png"><img src="images/object_orientation_classes-2.png" width="100%" alt="" /></a>
-Der Baum erzeugt den Apfel und ruft kontinuierlich die Methode Wachsen auf. Hierbei wird der Wert des Gewichtes inkrementiert. Sind die Früchte dann reif wird abhängig vom Gewicht des einzelnen Apfels die Methode Fallen ausgelösst. Wenn der Apfel dann auf dem Boden liegt und die Methode Fallen beendet ist beginnt die Methode Verroten ihre Arbeit. Die Farbe des Apfels verändert sich und das Gewicht wird wieder verringert.
-Das bedeutet der Proto-Apfel selber wird nicht angerührt sondern Instanzen von diesem. Um dies noch auf die Spitze zu treiben haben wir nicht nur eine Art Apfel sondern verschieden Sorten. Also ist die Klasse Granny Smith und ein "Kind"-Klasse der Basisklasse Apfel. Granny Smith erbt alle Eigenschaften der Klasse Apfel ohne das sie neu implemntiert werden müssen und bekommt noch eine weitere Eigenschaft: den Namen.
-
-	} // Klammer zu.  
-Dieses Konstruktionsweise spiegelt sich in nicht nur in der Programmierung wieder. Die Benutzung einiger Komponenten in unseren Werkzeugen ist genau nach diesem Prinzip organisiert.
-####Eine weiter Klammer auf   
-
-	{
-
-In InDesign hat der Benutzer die Möglichkeit Absatz- und Zeichenformate anzulegen ohne die das setzen eines Buches eine wirklich Zeitraubende Angelegenheit wäre. Eine einfache Gruppe von Absatzformaten kann wie folgt aufgebaut sein.  
-- [Einfacher Absatz]  
-- TextKörper  
-- Überschrift 1  
-- Überschrift 2  
-- Überschrift 3  
-- Bild Unterschrift  
-- Pagina  
-In dem Format "[Einfacher Absatz]" wird eine Schriftart und eine Schriftgrösse definiert. Dieses Format ist das Proto-Format von dem sich alle weiteren Formate ableiten. Sie erben also alle die Eigenschaften Schrift (appliedFont) und die Schriftgrösse (pointSize). Das Format "Überschrift 1" (Ü1) bekommt dann eine eigene Schriftgrösse und einen fetten Schnitt der Schriftart. Im dem Format "Überschrift 2" (Ü2) wird dann festgelegt das nicht mehr das "[Einfacher Absatz]" Format als Basis Klasse benutzt wird sondern Ü1. Damit erbt Ü2 alle Eigenschaften von Ü1. In Ü2 wird dann nurnoch eine neue Schriftgrösse festgelegt. Das gleiche kann dann mit "Überschrift 3" (Ü3) passieren. Ü3 basiert auf Ü2 und bekommt ebenfalls eine eigene Schriftgrösse. Jetzt basiert Ü3 auf Ü2, das auf Ü1 und das auf "[Einfacher Absatz]". Ähnlich verfahren wir mit den weiteren Formaten. "Textkörper" basiert auf "[Einfacher Absatz]", "Bildunterschrift" auf "Textkörper" nur kleiner und "Pagina" auf "Bildunterschrift" aber mit 70% Deckkraft. Wenn der Gestalter nun entscheidet dass eine andere Schriftart von Nöten ist, ändert er sie nur in "[Einfacher Absatz]" und alle Kinder werden entsprechend angepasst. Dies ist ebenfalls Objektorientiert.  
-<br /> <a href="images/id_formate.png"><img src="images/id_formate.png" width="100%" alt="" /></a>
-
-	} // Klammer zu
-  
-###Was sind Funktionen/Methoden?
-Eine Funktion oder eine Methode sind gekapselte Programmteile and die Parameter übergeben werden können und die an den gegebenen Parametern eine Kalkulation durchführen. Sie können dann Werte zurückgeben. Dies ist nützlich wenn bestimmte Tätigkeiten an unterschiedlichen Positionen eins Programms oder Skripts mehr mals aufgerufen werden müssen.     
-###Was ist ein Bug?
-Ein Bug ist ein Fehler der das Programm von seiner einwandfreien Ausführung abhält. Dies kann nur ein Rechenfehler sein oder ein Fehler der das gesamte Programm zum Absturz bringt.  
-  
-###Was ist Debugging?
-Dies ist der Prozess des Findens und korrigeren von Fehlern.  
-
-###Was ist ein Workaround?  
-Ein Workaround ist eine kreative Lösung um ein Problem zu umgehen. Wenn zum Beispiel eine API ein bestimmte Funktion nicht anbietet muss ein Weg um dieses Problem drumherum gefunden werden. 
-  
-###Welche Konventionen gibt es?
-Neben den Bestimmungen der Syntax gibt es verschiedene Konventionen die das lesen von Skripten einfacher machen sollen. Zum Beispiel ist es gang und gebe dass die Funktionsweise am Beginn eines Skripts in einem Kommentar erklärt wird. Oder die Verwendung der Variable i (für Iterator) als Zähler in Schleifen.
-  
-###Was ist Scripting?  
-Die einfachste Antwort sind folgende zweieinhalb Sätze:  
 > Scripting languages assume that there already exists a collection of useful components written in other languages. Scripting languages aren't intended for writing applications from scratch; they are intended primarily for plugging together components  
 > Scripting: Higher Level Programming
 for the 21st Century by John K. Ousterhout ([online](http://www.tcl.tk/doc/scripting.html))
-   
 
-###Was ist der Unterschied zwischen Javascript und ExtendScript?
-JavaScript oder EcmaScript ist das was uns täglich in Webbrowsern solche Dinge bescherte wie Scrollen auf Knopfdruck oder Warnhinweise und ähnliches. ExtendScript ist ein Dialekt von JavaScript der von Adobe entwickelt wurde. Das bedeutet InDesign versteht JavaScript und ExtendScript aber ein Browser kann mit ExtendScript Befehlen nichts anfangen.  
-  
-##Teil 2 Anwendungsgebiete
-Auch wenn Aufgaben auf unterschiedliche Weise mit verschiedenen Programmiersprachen gelöst werden können haben sich spezielle Anwendungsgebiete für die einzelnen Sprachen ergeben. Ganz unabhängig davon, dass sich in unserem Fall Adobe Anwendungen nur mit AppleScript, VisualBasic oder JavaScript ansprechen lassen macht es Sinn eine Scriptsprache zu verwenden um die bereits in höheren Sprachen implemetierten Funktionen zu verbinden.  
-  
-Zur Veranschaulichung was das in der Anwendung bedeutet zur hier ein Programm das folgende Aufgaben erledigt.
-Ein Objekt erzeugen mit folgenden Eigenschaften  
+##Teil 1 Programme und Skripte
+Auch wenn Aufgaben auf unterschiedliche Weise mit verschiedenen Programmiersprachen gelöst werden können haben sich spezielle Anwendungsgebiete für die einzelnen Sprachen ergeben. Ganz unabhängig davon, dass sich in unserem Fall Adobe Anwendungen mit JavaScript ansprechen lassen macht es Sinn eine Skriptsprache zu verwenden um die bereits in höheren Sprachen implemetierten Funktionen zu verbinden. Einige Adobe Anwendungen verstehen auch AppleScript oder VisualBasic. Der Vorteil an JavaScript ist, dass es Platform unabhängig ist. Adobe Anwendungen selber sind in C++ geschrieben. Wir wollen JavaScript benutzen um diese Anwendungen zu steuern.   
+Zur Veranschaulichung was dies bedeutet hier ein Programm das folgende Aufgaben erledigt.  
+
+- Zwei Zahlen  in Variablen definieren
+- Ein Objekt mit folgenden 3 Eigenschaften erzeugen  
 - Einem Namen  
-- Einer Funktion die 2 Zahlen mit einander vergleicht und feststellt welche die grössere von beiden ist.
-Dann gibt das Programm eine Meldung mit dem Ergebnis zurück.  
+- Einer Funktion die 2 Zahlen mit einander vergleicht und feststellt welche die grössere von beiden ist.  
+- Eine Ergebnis zurück geben  
+- Einen Satz aus allen Variablen zusammenstellen
+- Diesen Satz darstellen
   
 Dieses Programm liegt hier in verschiedenen Sprachen vor.  
-Ich werde hier kurz auf die Unterschiede eingehen. An dieser Stelle ist es nicht zwingend den Programmcode komplett zu verstehen. Beachten sie nur die syntaktischen Unterschiede. Vergleichen sie die Funktion oder Methode {% highlight cpp %}int Object::compare(int a, int b){% endhighlight %} in C++ mit {% highlight c %}int compare(int a, int b){% endhighlight %} in C und betrachten sie danach die Funktion {% highlight js %}compare : function(a,b){if(a>b){return a;}else{return b;}{% endhighlight %} in JavaScript. Es gibt kleine Unterschiede aber die gemeinsame Herrkunft ist unübersehbar. Eine tiefere Erklärung des Quellcodes findet sich in den Kommentaren der einzelnen Programme.  
+Ich werde hier kurz auf kleine Unterschiede eingehen und versuchen an diesen 3 Beispielen zu erläutern warum JavaScript eine einfach und mächtige Sprache ist. An dieser Stelle ist es nicht zwingend den Programmcode komplett zu verstehen. Beachten sie nur die syntaktischen Unterschiede. Vergleichen sie die Funktion oder Methode `int Object::compare(int a, int b)` in C++ mit `int compare(int a, int b)` in C und betrachten sie danach die Funktion / Objekt `compare : function(a,b){if(a>b){return a;}else{return b;}` in JavaScript. Es gibt kleine Unterschiede aber die gemeinsame Herrkunft ist unübersehbar. Eine tiefere Erklärung des Quellcodes findet sich in den Kommentaren der einzelnen Programme und des SKriptes.  
+
 ####Assembler (anObject.s)
-Dies ist die Variente die die Maschiene versteht. Es wurde jedoch nicht von mir geschrieben sondern ist das Ergebnis des Kompilierungsprozesses des C++ Programms. Näher wäre nur noch Nullen und Einsen zu schrieben. Ich drucke dies hier der Vollständigkeit halber ab. Ja - es gibt auch diesen Aspekt der Programmierung aber um dort anzugelangen ist es ein weiter Weg den wenige gehen und auch wir nicht beschreiten werden in dieser Arbeit. Aus Platzgründen werde ich hier nur die ersten 29 Zeilen zeigen. Das gesamte Programm in Assembler Code ist über 700 Zeilen lang.  
+Dies ist die Variente die die Maschiene versteht. Es wurde jedoch nicht von mir geschrieben sondern ist das Ergebnis des Kompilierungsprozesses des C++ Programms. Näher wäre nur noch Nullen und Einsen zu schrieben. Ich drucke dies hier der Vollständigkeit halber ab. Ja - es gibt auch diesen Aspekt der Programmierung der genau dem entspricht was Menschen davon abhält sich mit ihr auseinander zu setzen. Um dort anzugelangen ist es ein weiter Weg den wenige gehen und auch wir nicht beschreiten werden in dieser Arbeit. Aus Platzgründen werde ich hier nur die ersten 29 Zeilen zeigen. Das gesamte Programm in Assembler Code ist über 700 Zeilen lang und ist im Download Packet enthalten.  
 
 {% highlight cpp-objdump %}
 		.section	__TEXT,__text,regular,pure_instructions
@@ -254,145 +68,146 @@ Dies ist die Variente die die Maschiene versteht. Es wurde jedoch nicht von mir 
 		ret
 	Leh_func_end1:
 {% endhighlight %}
+(…)  
 
-
-####C++ (anObject.cpp)  
- In diesem Beispiel ist bereits zu sehen, dass die Menge an Code die geschrieben werden muss geringer wird. Wobei hier wie auch im C Beispiel bedacht werden muss, dass bereits vorhandene Programmteile mit weiteren hunderten oder tausenden Zeilen Code eingebunden werden. Mit den Aussagen:  
-
-{% highlight cpp %}
- 	#include <iostream>
- 	#include <string> 
- {% endhighlight %} 
-  
-werden fertige Klassen mit Methoden aufgerufen. "iostream" um die Ein- und Ausgabe des Programms zu handhaben und "string" um Zeichenketten zu verarbeiten. Der Unterschied ist enorm. Während in C eine Zeichenkette noch eine Liste einzelner Zeichen ist wird in C++ ein Zeichenkette als ein einziges Objekt gehandhabt und bringt viele Funktionen mit zur Verarbeitung dieser.  
-
-{% highlight cpp %}
-	#include <iostream>
-	#include <string>
-	
-	// using namespace std; // if you use this you can remove all "std::"
-	class Object{
-		
-	public:
-		std::string name;
-		Object(){}// basis constructor
-		Object(std::string in){name = in;}// another constructor
-		int compare(int a, int b);//Prototype
-		void setName(std::string in){name = in;}
-	};
-	
-	int Object::compare(int a, int b){
-		if(a>b){return a;}else{return b;}
-	}
-	
-	int main(){
-		Object* myObject = new Object("Hello World");
-	
-		int a = 23,b = 5;
-	
-		std::cout << "The Object named: "<< 
-		myObject->name << "\nCompared: "
-		<< a << " with "
-		<< b << "\n" 
-		<< myObject->compare(a,b) <<" is bigger\n" 
-		<< std::endl;
-		/* code */
-		delete myObject;
-		return 0;
-	}
-{% endhighlight %}
-
+Grusselig oder nicht? Zu unserem Glück müssen wir so etwas weder schreiben noch lesen können. Von 1969 bis 1973 würde die Sprache C von Dennis Ritchie ( Quelle The C Programming Language von Brian W. Kernighan & Dennis Ritchie) im "Bell Labs Computing Sciences Research Center" entwickelt. Diese Sprache wird beim Kompilieren in Assembler Code übersetzt. Der Vorteil dabei ist eine viel einfachere Syntax die es erlaubt den Schwerpunkt der Aufmerksamkeit auf das Konzept des Programms zu richten.   
 
 ####ANSI C noObject.c  
-Im Unterschied zu C++ und JS ist die Sprache C nicht für eine Objektorientierung ausgelegt. Deshalb hier einmal das Beispiel noObject.c welches ebenfalls die gestellte Aufgabe des Vergleich löst aber kein Objekt erzeugt. Die Syntax ähnelt hier sehr der von JavaScript. Sobald jedoch Pointer hinzukommen wird es schwer kompliziert. (Ein Pointer ist der Verweiss auf die Adresse unter der eine Variable abgelegt. Dies verweist auf reel okkupierten Speicher.) Das kann dann so aussehen:
- 
+Im Unterschied zu C++ und JavaScript ist die Sprache C nicht für eine Objektorientierung ausgelegt. Deshalb hier einmal das Beispiel noObject.c welches die gestellte Aufgabe des Vergleich löst aber kein Objekt erzeugt. Die Syntax ähnelt hier sehr der von JavaScript. Sobald jedoch Pointer hinzukommen wird es schwer kompliziert.
 
+Aber ich schweife ab. Keine Sorge mit Problemen wie: "In welchem Speicher lege ich meine Variable ab" und "Habe ich auch den Müll rausgetragen" (Das löschen eines unbenutzten Objekts wird "Garbadge Collection" also "Müll sammeln" genannt), werden wir in JavaScript nicht konfrontiert. All diese Funktionalität wird von der Maschiene im Hintergrund erledigt. Somit bleibt Zeit sich mit der Funktionsweise und Konzept zu beschäftigen. Stellen sie es sich vor wie es wäre entweder das Auto vor dem Fahren zusammen zu bauen oder einfach in das fertige Auto einzusteigen und loszufahren." Um die Abstammung von JavaScript verstehen zu können habe ich die Vergleichs-Funktion in C geschrieben.
 {% highlight c %}
-double *dp, atof(char *);
-{% endhighlight %}
+// include the io lib
+#include<stdio.h>
+// the compare function takes integer as arguments 
+int compare(int a, int b){
+	if(a>b){return a;}else{return b;}
+}
+// the main function
+int main(void){
+	char name[11] = "Hello World"; // our string
+	int a = 23,b = 5; // the values to compare
+	// now print all that stuff
+	// with %s you insert string arguments
+	// with %d digits 
+	printf("The Object named: %s\nCompared: %d with %d.\n%d is bigger!",name,a,b,compare(a,b));
 
->says that in an expression *dp and atof(s) have values of double, and that the argument of atof is a pointer to char.
-> aus The C programming Language By Brian W. Kernighan and Dennis M. Ritchie. Published by Prentice-Hall in 1988
-([online]( http://net.pku.edu.cn/~course/cs101/2008/resource/The_C_Programming_Language.pdf))
-
-Aber ich schweife ab. Keine Sorge mit solchen Gedankenmodellen werden wir in JavaScript nicht konfrontiert. All diese funktionalität wird von der Maschiene im Hintergrund erledigt. Somit bleibt Zeit sich mit der Funktionsweise zu beschäftigen. Stellen sie es sich vor wie: "Entweder das Auto vor dem Fahren zusammenbauen oder einfach in das fertige Auto einzusteigen und loszufahren." Dennoch habe ich die Vergleichs-Funktion einmal in C geschrieben.
-{% highlight c %}
-  	#include<stdio.h>
-  
-  	compare(int a, int b){
-  		if(a>b){return a;}else{return b;}
-  		}
-  	
-  	int main(void){
-  		char name[11] = "Hello World";
-  		int a = 23,b = 5;
-  		printf("The Object named: %s\nCompared: %d with %d.\n%d is bigger!",name,a,b,compare(a,b));
-  	
-  		return 0;
-  	}
-  {% endhighlight %}  
+	return 0;// everything went fine return 0
+}
+{% endhighlight %}  
 
 <br /> <a href="images/terminal_c_cpp.png"><img src="images/terminal_c_cpp.png" width="100%" alt="" /></a>
+####C++ (anObject.cpp)  
+Basierend auf C wurde Ende der Siebziger Anfang der Achtziger Jahre des letzten Jahrtausends die Sprache C++ von Bjarne Stroustrup in den AT&T Labs entwickelt (Quelle: Bjarne\_Stroustrup\_-\_The\_C++\_Programming\_Language\_3rd\_Ed [online](http://www.ib.cnea.gov.ar/~oop/biblio/Bjarne_Stroustrup_-_The_C++_Programming_Language_3rd_Ed.pdf)). Diese Sprache ist nach dem Konzept der Objektorientierung (OO) aufgebaut. OO hat den Vorteil des Versteckens beziehungsweise Kapselns von Daten. Es kommt die Klasse hinzu. Sie erlaubt ganze Programmteile auszulagern und nur einen Schnittstille für ihre Benutzung zu liefern. Für genauere Erklärungen lesen sie den Abschnitt [NUMMER ABSCHNITT]
+In diesem Beispiel ist bereits zu sehen, dass die Menge an Code die geschrieben werden muss geringer wird (im Vergleich zum Assembler Code). Wobei hier wie auch im C Beispiel bedacht werden muss, dass bereits vorhandene Programmteile mit weiteren hunderten oder tausenden Zeilen Code hinzugefügt werden.  
 
+{% highlight cpp %}
+#include <iostream>
+#include <string> 
+ {% endhighlight %} 
+  
+Mit den obigen 2 Zeilen werden fertige Klassen eingebunden. "iostream" um die Ein- und Ausgabe des Programms zu handhaben und "string" um Zeichenketten zu verarbeiten. Der Unterschied ist enorm. Während in C eine Zeichenkette noch eine Liste einzelner Zeichen ist wird in C++ ein Zeichenkette als ein einziges Objekt gehandhabt und bringt viele Funktionen mit zur Verarbeitung dieser.  
 
+{% highlight cpp %}
+
+// the string and io classes
+#include <iostream>
+#include <string>
+
+//using namespace std; // if you use this you can remove all "std::"
+class Object{ /* our object*/
+public:
+	std::string name; // its name
+
+	Object(){}// basis constructor
+	Object(std::string in){name = in;}// another constructor
+	int compare(int a, int b);//Prototype for comparsion
+	void setName(std::string in){name = in;} // to set the name
+};
+
+int Object::compare(int a, int b){/* the compare function*/
+	if(a>b){return a;}else{return b;}
+}
+
+int main(){ /* now the main programm*/
+	Object* myObject = new Object("Hello World CPP");// make a new object
+
+	int a = 23,b = 5;// declare some values
+	// now the output directly with comparsion
+	std::cout << "The Object named: "<< 
+	myObject->name << "\nCompared: "
+	<< a << " with "
+	<< b << "\n" 
+	<< myObject->compare(a,b) <<" is bigger\n" 
+	<< std::endl;
+	/* code */
+	delete myObject; // remove the object from memory
+	return 0; // everything went fine return 0
+}
+{% endhighlight %}
+<br />
 ####JavaScript (anObject.js)  
-  Mit JavaScript gehen wir noch einen Schritt weiter. Hier sind das Objekt, die Ein-/Ausgabe, der String bereits existent und müssen nicht neu implementiert noch eingebunden werden. Der massgebende Unterschied ist dass die vorherigen Programme wirklich vollwertige Programme sind die nach dem Kompilieren aus der Kommandozeile ausgeführt werden können. Die JavaScript Variante benötigit ein Programm in dem es ausgeführt wird. Es ist also alleine nicht lauffähig. Werfen sie einen Blick auf die Funktion `buildNewObject(n)`. Was wir in C in 26 Zeilen schreiben hat in JavaScript nur noch 8 Zeilen.
+Im Jahre 1995 wurde die Spache LiveScript zusammen mit der 2.0 Version von Netscape (ein WEb-Browser) veröffentlicht und bald in JavaScript umbenannt (Quelle: JavaScript das Umfassende Handbuch). Wie in jedem Buch das sich mit JavaScript auseinandersetzt möchte auch ich hier sagen und es dabei belassen:  
+######Java is to JavaScript like ham to hamster  
+Mit JavaScript gehen wir einen Schritt weiter als in C++. Hier sind das Objekt, die Ein-/Ausgabe, der String bereits existent und müssen nicht neu implementiert noch eingebunden werden. Genau genommen ist in JavaScript fast alles ein Objekt. Der massgebende Unterschied ist dass die vorherigen Programme wirklich vollwertige Programme sind die nach dem Kompilieren aus der Kommandozeile ausgeführt werden können. Die JavaScript Variante benötigit ein Programm in dem es ausgeführt wird. Es ist also alleine nicht lauffähig. Dennoch - was wir in C++ in 8 Zeilen schreiben hat in JavaScript nur noch 4 Zeilen.
 
 {% highlight js %}
-	main();
-	
-	function main(){
-	
-		var obj = buildNewObject("Hello JS");
-		var a = 23, b = 5;
-		obj.compare(a,b);
-		alert("The Script named: "+ obj.name + 
-			  "\nCompared: "+ a +" with "+ b +"\n" 
-			  + obj.result + " is bigger\n");
-		obj = null;
-		return 0;
-	}
-	
-	function buildNewObject(n){
-	    var obj = {
-		name:n,
-	    result:0,
-		compare : function(a,b){if(a>b){this.result = a;}else{this.result = b;}}
-	    };
-	    return obj;
-	}
+main(); // call the main function
+
+function main(){ /* here wee go */
+
+    var obj = buildNewObject("Hello JS"); // create a new Object
+    var a = 23, b = 5; // define the vlaues
+    obj.compare(a,b); // let the object compare the values
+    // and make the message
+    alert("The Script named: "+ obj.name + 
+          "\nCompared: "+ a +" with "+ b +"\n" 
+          + obj.result + " is bigger\n");
+    obj = null; // delete the object
+    return 0; // everything went fine return 0
+};
+
+function buildNewObject(n){/* this is our object builder*/
+    var obj = { /* create a json object*/
+    name:n, /* its name is the incoming value*/
+    result:0, /* this will be set by the compare object*/
+    compare : function(a,b){if(a>b){this.result = a;}else if(a<b){this.result = b;}}
+    };
+    return obj; // return the new object
+};
 {% endhighlight %}
 <br /> <a href="images/estk_anobjectjs.png"><img src="images/estk_anobjectjs.png" width="100%" alt="" /></a>
-
-Dies ist eine kleine Abwandlung der {% highlight js %}compare{% endhighlight %} Funktion. Das soll zeigen wie intelligent JavaScript sein kann. Die Funktion {% highlight js %}buildNewObject(n){% endhighlight %} kann die gegebenen Variablen vergleiche und in sich selber das Ergebnis setzen mit {% highlight js %}this.result{% endhighlight %}. Um eine solche Funktionalität in einer Hochsprache zu erzeugen bedürfte es einiger Zeilen mehr. Ohne diese Erweiterung würde es schon mehr der C Variante ähneln.
+Werfen sie einen Blick auf die Funktion `buildNewObject(n)`.
+Dies ist eine kleine Abwandlung der `compare` Funktion die wir in der C++ Variante sehen. Die verbesserte Funktion kann die gegebenen Variablen vergleichen und in sich selber mit `this.result` das Ergebnis festlegen. Um eine solche Funktionalität in einer C++ zu erzeugen bedürfte es einiger Zeilen mehr.
+Ohne diese Erweiterung und ohne das Objekt würde das JavaScript es wieder der C Variante ähneln.
 
 {% highlight js %}
-	main();  
-	function main(){
-    	var a = 23, b = 5;
-    	var name = "Hello JS";
-    	var result = compare(a,b);
-        	alert("The Script named: "+ name +"\nCompared: "
-        		  + a +" with "+ b +"\n" + result + " is bigger\n");
-    	}
-	function compare (a,b){
-    	if(a>b){
-        	return  a;
-        	}else{
-        	return  b;
-    	};
-	};
+main();  
+function main(){
+   	var a = 23, b = 5;
+   	var name = "Hello JS";
+   	var result = compare(a,b);
+       	alert("The Script named: "+ name +"\nCompared: "
+       		  + a +" with "+ b +"\n" + result + " is bigger\n");
+   	}
+function compare (a,b){
+   	if(a>b){
+       	return  a;
+       	}else{
+       	return  b;
+   	};
+};
 {% endhighlight %}
 <br /> <a href="images/estk_noobjectjs.png"><img src="images/estk_noobjectjs.png" width="100%" alt="" /></a>
 
   
-Dies ist der Punkt wo wir als Gestalter ansetzen können. Wir müssen das Rad nicht neu erfinden. Wir können jedoch unseren Arbeitsablauf durch gezielte Befehlsketten von repetitive Aufgaben befreien. Ich bin mir sicher dass ein grossteil aller Gestalter die vorgefertigte Software für ihre Arbeit verwenden schon einmal an den Punkt kamen wo sie sich dachten: "Warum kann mein Programm DAS nicht," (DAS steht hier für eine gewünschte Funktionsweise)  "es ist doch alles da. Der Knopf und danach Knopf!". Scripting erlaubt es uns diese beiden Knöpfe mit eineander zu verbinden. Das bedeutet dann das wir unsere Arbeit um einen "Klick" reduziert haben. Wir haben zwei Knöpfe durch Verkettung auf einen neuen Knopf gelegt. Natürlich klingt die Reduktion um einen Klick vernachlässigbar. Wenn Jedoch diese zwei Klicks 100 mal ausgeführt werden müssen und wir durch logische Anweisung diese ebenfalls auf nur einen Knopf zusammenführen können ist der Zeitgewinn enorm. Ebenfalls muss hier erwähnt werden das viele der Probleme die in einem Gestlatungsprozess auftreten nicht zum erstenmal bei eben dieser Person auftreten. Für den Bereich Scripting von Adobe Anwendungen gibt es im Netz viele Seiten und Foren die sich mit diesem Thema befassen. Im Bereich JavaScript gibt es noch viele mehr, da JavaScript auch verwendet wird beziehungsweise entwichelt wurde um Browser zu steuern. Aufgrund dessen ist die Dokumentation mehr als ausgiebig. Es Bedarf nur einiger Übung um die gefundenen Beispiele auf die eigene Problemstellung zu abstrahieren.  
-#Hierbei sei zu beachten! [Absatz überarbeiten]  
-Scripting kann keine Entscheidungen fällen. Es existiert kein Algorithmus der Ästhetik simuliert. Um eine spannende Komposition zu schaffen braucht der Gestalter "nur" drei geometrische Grundformen zu erzeugen und diese im richtigen Verhältnis zu einander anzuordnen. Um dies programmatisch zu lösen müsste ein Skript mehrere hundert mal ausgeführt werden. Jedesmal mit einer kleinen Veränderung der Koordinaten der obig genannten drei Objekte. Davon mal ganz abgesehen, dass der Author irgendwann entscheiden muss welche Komposition knackig ist. Was das Script leisten kann ist anhand von bestimmten Rahmenparametern eine Fülle von Varianten zu liefern die von Hand Senenscheidenentzündungen hervorrufen würde.  
-Programmieren ist nicht einfach. Es ist wie eine neue Sprache lernen. Stellen sie sich vor sie sind in einem fremden Land dessen Sprache sie nicht beherrschen. Sie werden zuerst Probleme haben. Dann lernen sie ihre Grundbedürfnisse zu decken. Ab einem gewissen Punkt können sie Tageszeitungen lesen und Inhalte erfassen und abstrahieren. Eines Tages werden sie feststellen, dass sie in der Sprache Träumen.  
+JavaScript ist der Punkt wo wir als Gestalter ansetzen können. Wir müssen das Rad nicht neu erfinden. Wir können jedoch unseren Arbeitsablauf durch gezielte Befehlsketten von repetitive Aufgaben befreien. Ich bin mir sicher dass ein Grossteil aller Gestalter die vorgefertigte Software für ihre Arbeit verwenden schon einmal an den Punkt kamen wo sie sich dachten: "Warum kann mein Programm DAS nicht," (DAS steht hier für eine gewünschte Funktionsweise) "es ist doch alles da. Der Knopf und danach diesen Knopf!". Scripting erlaubt es uns diese beiden Knöpfe mit eineander zu verbinden. Das bedeutet dann das wir unsere Arbeit um einen "Klick" reduziert haben. Wir haben zwei Knöpfe durch Verkettung auf einen neuen Knopf gelegt. Natürlich klingt die Reduktion um einen Klick vernachlässigbar. Wenn Jedoch diese zwei Klicks 100 mal ausgeführt werden müssen und wir durch logische Anweisung diese ebenfalls auf nur einen Knopf zusammenführen können ist der Zeitgewinn enorm. Ebenfalls muss hier erwähnt werden das viele der Probleme die in einem Gestlatungsprozess auftreten nicht zum erstenmal bei eben dieser Person auftreten. Für den Bereich Scripting von Adobe Anwendungen gibt es im Netz viele Seiten und Foren die sich mit diesem Thema befassen. Im Bereich JavaScript gibt es noch viele mehr, da JavaScript auch verwendet wird beziehungsweise entwichelt wurde um Browser zu steuern. Aufgrund dessen ist die Dokumentation mehr als ausgiebig. Es Bedarf nur einiger Übung um die gefundenen Beispiele auf die eigene Problemstellung zu abstrahieren.  
+#Hierbei sei zu beachten!  
+Scripting kann keine Design Entscheidungen fällen. Es existiert kein Algorithmus der Ästhetik simuliert. Um eine spannende Komposition zu schaffen braucht der Gestalter "nur" drei geometrische Grundformen zu erzeugen und diese im richtigen Verhältnis zu einander anzuordnen. Um dies programmatisch zu lösen müsste ein Skript mehrere hundert mal ausgeführt werden. Jedesmal mit einer kleinen Veränderung der Koordinaten der obig genannten drei Objekte. Davon mal ganz abgesehen, dass der Author irgendwann entscheiden muss welche Komposition knackig ist. Was das Script leisten kann ist anhand von bestimmten Rahmenparametern eine Fülle von Varianten zu liefern die von Hand Senenscheidenentzündungen hervorrufen würde.  
+Programmieren ist nicht einfach. Es ist wie eine neue Sprache lernen. Stellen sie sich vor sie sind in einem fremden Land dessen Sprache sie nicht beherrschen. Sie werden zuerst Probleme haben. Dann lernen sie ihre Grundbedürfnisse zu decken. Ab einem gewissen Punkt können sie Tageszeitungen lesen und Inhalte erfassen und abstrahieren. Eines Tages werden sie feststellen, dass sie in der Sprache Träumen. Der Vorteil an Computersprachen im Vergleich zu "Menschensprachen" ist das in der Computersprache kein Raum für Interpretation ist. Jede Aussage MUSS eindeutig sein. In der Kommunikation mit Menschen MUSS interpretiert werden. Dies ist ein Vorteil, dennoch ist eine Sprache zu lernen keine leichte Aufgabe.  
 Daher sollten sie bevor sie in die Tiefen von JavaScript abtauchen um ein Problem zu lösen endschieden:  
   
-- Welche Operatioen sollen ausgeführt werden?
+- Welche Operationen sollen ausgeführt werden?
 - Wie komplex sind die Operationen?
 - Wie ist das Zeitfenster und wann muss das Produkt fertig sein?
 - Wie oft muss diese Tätigkeit ausgeführt werden?
@@ -408,9 +223,9 @@ Und einige Punkte die sich hauptsächlich durch Recherche abarbeiten lassen
 
 Diese Analyse kann keine genauen Angaben über Zeit und Aufwand machen da dies immer auch vom Erfindungsreichtum des Authors abhängig ist. Der Kreative kommt hier schneller zum Ziel.
 
-- Welche Operatioen sollen ausgeführt werden?  
+- Welche Operationen sollen ausgeführt werden?  
 
-Programme oder Skripte schreiben ist nicht wie "Scribbeln". Wir können zum Beispiel beim Telefonieren eine Stift in die Hand nehmen und draufloskritzeln. Beim Programmieren muss das Ergebnis bereits definiert sein bevor geschrieben wird. Natürlich ergeben sich auch während des Schreibens neue Ideen, dennoch bedarf es einer konkreten Vorstellung was das Ziel sein soll. Es ist eher mit Sprechen zu vergleichen. Erst Denken dann Sprechen.  
+Programme oder Skripte schreiben ist nicht wie "Scribbeln". Wir können zum Beispiel beim Telefonieren eine Stift in die Hand nehmen und draufloskritzeln. Beim Programmieren muss das Ergebnis bereits definiert sein bevor geschrieben wird. Natürlich ergeben sich auch während des Schreibens neue Ideen, dennoch bedarf es einer konkreten Vorstellung was das Ziel sein soll. Auch dies ist mit Sprechen zu vergleichen. Erst Denken dann Reden.  
 
 - Wie komplex sind die Operationen?  
 
@@ -431,8 +246,10 @@ Wenn dies der Fall ist steigt der Nutzen der Arbeit. Der einmalige Aufwand ein P
 - Wie sehr ist sie (Die Aufgabe) von Umgebungsvariablen abhängig?  
 
 (Das selbstgeschriebene Programm ist in diesem Fall aussen vor. Wie bereits oben erwähnt setzt das Programm alle Möglichkeiten vorraus. Das Skript hingegen greift auf bestehende Komponenten zu.) Kann das Skript unabhängig von allen Variablen die der Benutzer setzen kann ausgeführt werden vereinfacht das den Aufwand. Bei einer Abhängigkeit Bedarf es immer erst einer Abfrage des ist Status und einer Evaluierung. In Illustrator oder InDesign wird die aktuelle Auswahl des aktiven Dokuments in einer Liste genannt "selection" geführt.
+{% highlight js %}
 	app.activeDocument.selection;
-In dieser Liste liegen Einzelne Objekte die Text sein können oder eine Vektorform oder ein Bild. All diese haben gemeinsame Eigenschaften aber auch spezielle. Es muss also befor eine Eigenschaft genutzt oder verändert werden kann eine Abfrage stattfinden welche Art von Objekt einthalten ist.  
+{% endhighlight %}
+In dieser Liste liegen Einzelne Objekte die Text sein können oder eine Vektorform oder ein Bild. All diese haben gemeinsame Eigenschaften aber auch spezielle. Es muss also bevor eine Eigenschaft genutzt oder verändert werden kann eine Abfrage stattfinden welche Art von Objekt einthalten ist. Nachfolgend ein Beispiel das in InDesign und Illustrator gleich funktioniert. Es wird der Name des ersten Objekts in der Selektion abgefragt, wenn dies eine Textkiste ist gibt das Skript eine Meldung zurück.   
 
 {% highlight js %}
   	// InDesign & Illustrator
@@ -532,17 +349,28 @@ Dies Bedarf eines Beispiels. InDesign kann nicht erfragen ob ein Zeichen in eine
 
 
 Solche Lösungen setzen nicht nur ein kreativen Umgang mit Code vorraus sondern auch ein tiefes Wissen über die Funktionsweise und Möglichkeiten innerhalb von, in diesem Falle, InDesign.  
-  
 Die obig genannten Hindernisse schrecken ab. Es klingt alles sehr komplex. Es ist jedoch alles sehr allgemein gehalten und manche Fragen stelle sich auch erst gar nicht. Bei Aufgaben die ein Normal Nutzer niemals manuell machen würde muss sogar ein Skript geschrieben werden wenn sie erledigt werden soll.  
 Auch wenn der Prozess des Skript schriebens eine Kreative Arbeit ist, ist das Ziel des Skriptes nicht der Kreative Output sondern die Optimierung der eigenen Arbeitsabläufe. Das Skript oder Programm kann niemals die Idee liefern. Es unterstützt den Prozess indem es repetitive Aufgaben erledigt die entweder niemals gemacht worden wären oder aber vom eigentlichen Kreativem Prozess ablenken.   
-  
+<br />
+##Teil 3.1 Das Szenario
+Um besser zu verstehen was das Skript leisten kann soll hier ein Fall Beispiel aufgemacht werden. Stellen sie sich vor ihre Aufgabe ist folgende:  
+Erzeugen Sie eine quadratische Bildmatrix in InDesign aus einer definierten Anzahl an quadratischen Bildern mit einer festen Grösse. Das würde bedeuten das wir zum Beispiel 4×4 also 16 Bilder darstellen wollen.
+Es folgt eine grafische Gegenüberstellung des automatisierten und manuellen Prozesses.
+<br /> <a href="images/matrix_algorithmus_01.png"><img src="images/matrix_algorithmus_01.png" width="100%" alt="" /></a>
+Wird ihnen bereits klar worauf ich hinaus will? Bei 16 Bildern kommen wir auf 38 Aktionen. Mit einem Skript haben wir 3 Aktionen. Wenn es eine 10×10 Matrix sein soll sind das 206 Aktionen im Skript sind es weiterhin 3. Der Kern der Aufgabe ist das errechnen des Layouts. Dies muss in der manuellen sowie in der automatisierten Variante passieren. Also kommt auch der Gestlater der sich für die manuelle entschieden hat auch nicht um etwas Mathematik herum. Da wir von Prozessen im Gestalter Alltag reden kann es gut vorkommen das ein Kunde eine solche Aufgabe an sie stellt.  
+Verändern wir die Aufgabe noch ein wenig:  
+Erzeugen Sie eine Bildmatrix in InDesign aus einer noch nicht definierten Anzahl an quadratischen Bildern mit einer festen Grösse.   
+<br /> <a href="images/matrix_algorithmus_02.png"><img src="images/matrix_algorithmus_02.png" width="100%" alt="" /></a>  
+Um dieser Anforderung gerecht zu werden müssen wir in der automatisierten Variante eine Kondition einführen. Wenn die gerundete Wurzel eine Fliesskommazahl ist, ist die Seitenhöhe die Seitenbreite plus eine Bildbreit.  
+<br />
 ##Teil 3 Der Einsatz
 Die Fragen die sich jetzt stellen sind folgende: "Wie kommt dies zum Einsaz?", "Wie kann ich dies nutzen?".
-Es folgt nun das InDesign Skript image_matrix.jsx mit etwas mehr als 40 Zeilen Code. Dieses Skript beinhaltet eine Benutzer Interaktion, Dateihandhabung, das Math Objekt*(ein bereits bestehnder Teil von Javascript. Es erledigt solche Aufgaben wie Rundung von Werten oder das Berechnen einer Quadratwurzel), Conditionen, eine Schleife, Funktionen, Variablen und es hat einen Generativen Character. Das Skript erledigt folgende Schritte (in Pseudocode).  
+Es folgt nun das InDesign Skript image_matrix.jsx mit etwas mehr als 40 Zeilen Code. Dieses Skript beinhaltet eine Benutzer Interaktion, Dateihandhabung, das Math Objekt*(ein bereits bestehnder Teil von JavaScript. Es erledigt solche Aufgaben wie Rundung von Werten oder das Berechnen einer Quadratwurzel), Conditionen, eine Schleife, Funktionen, Variablen und es hat einen Generativen Character. Das Skript erledigt folgende Schritte.  
 
 - Frage den Benutzer nach einem Ordner mit jpg Dateien.  
 - Erzeuge ein Quadratisches Dokument dessen Grösse auf der Quadratwurzel der Menge der Bilder bassiert und alle Bilder fast.  
 - Platziere alle Bilder.  
+
   
 Kopieren sie den nachstehenden Code und bereiten sie einen Ordner mit einigen Jpg-Bildern vor. Das Skript das unten beschrieben wird verarbeitet NUR .jpg Dateien, Dateien die .jpeg oder .JPG heissen werden ignoriert. Es sollten um die 15 bis 30 sein damit die Ausführung des Skriptes nicht zuviel Zeit in Anspruch nimmt. Es kann jedoch auch 100,1000 oder mehr Bildern handhaben. Die genau Menge ist irelevant. Lesen nochmals den Abschnitt Hello World und wie Skripte ausgeführt werden können und führen sie das Skript aus. Wenn der Ordnerauswahl Dialog sich öffnet wähle sie den Ordner mit den Bildern an.
 Das gesamte Skript:  
@@ -635,7 +463,7 @@ Es folgt die deklaration der ersten Variable. Sie beinhaltet die Breite (und Hö
 {% endhighlight %}
 
 Wie zu sehen ist entspricht die Variable `w`*(steht für width) nun 25. `w` wird im Verlauf des Skriptes mehrmals verwendet. Der Vorteil  daran Variablen zu verwenden anstatt immer 25 zu schreiben ist, dass wenn wir die Breite verändern wollen wir dies nur ein einziges mal an `w` erledigen müssen und alle weiteren Verwendungen von `w` werden angepasst.  
-Als nächstes folgt bereits die nächste Subfunktion mit einem Parameter und einem Rückgabewert. In Javascript werden alle Variablen mit `var` deklariert. Die Unterscheidung des Types findet erst bei der Verwendung statt. Deshalb können wir schreiben.  
+Als nächstes folgt bereits die nächste Subfunktion mit einem Parameter und einem Rückgabewert. In JavaScript werden alle Variablen mit `var` deklariert. Die Unterscheidung des Types findet erst bei der Verwendung statt. Deshalb können wir schreiben.  
 
 {% highlight js %}
 	var allImages = loadFiles("*.jpg");
@@ -935,7 +763,206 @@ Selbst wenn eine vernünftige Vektorform einer Karte existiert und griffbereit i
 <br /> <a href="images/aemapfullcomp.png"><img src="images/aemapfullcomp.png" width="100%" alt="" /></a><br />  
 Der Nutzer kann zwischen verschiedenen Einstellungen wählen wie zum Beispiel die Karte mit Kontur zu zeichen oder ohne oder ob alle Polygone auf eine Ebene gezeichnet werden sollen oder ob in die oben genannten Kompositionen gesplittet werden soll. Ebenfalls können 3D Einstellungen definiert werden und ähnliche mehr. Die Daten bestehen auf einem GeoJson Datensatz der zum freien Gebrauch ins Netz gestellt wurde. Der gesamten Funktionsumfang ist auf [dieser Webseite](http://fabiantheblind.github.com/AEMap/) dokumentiert. Dieses Skript spart nicht nur mir Zeit sondern auch anderen. Die Resonanz in der After Effects Community" ist gross. Daher hat das Skript seit seiner Veröffentlichung auf [AEScripts.com](http://aescripts.com/aemap/) am 10 April 2012 bereits über 400 Downloads gehabt (heute 24 April 2012). Das Tutorial und das Demo wurden bereits über 4000 mal auf Youtube geladen. Aber genug der Selbstbeweihräucherung. Der Vorteil an solchen und ähnlichen Werkzeugen die zum Beispiel auf AEScripts.com bereit gestellt werden ist, dass diese meist aus dem Zwang heraus enstanden sind einen Arbeitsablauf zu automatisieren um Zeit zusparen. 
 
+##Teil 1 Die kleine Terminologie
 
+###Herkunft von Computersprachen
+[NOCH NICHT GESCHRIEBEN]    
+###(Einige) Unterschiede von Computersprachen
+[NOCH NICHT GESCHRIEBEN]  
+###Was ist Code?
+Als Code bezeichen wir in der Regeln Informationen die verschlüsselt (encoding) werden um dann an einer weiteren Stelle wieder entschlüsselt zu werden (decoding). Zum Beispiel stellt Morse-Code Buchstaben dar indem ein einziges unmoduliertes Signal, zum Beispiel ein Ton, in kurze und lange Sequenzen unterteilt wird. Der Rezipient kann dann, wenn er des Systems machtig ist, diese Informationen entschlüsseln und zu der originalen Nachricht wieder zusammensetzen. Ein weiters Bespiel ist der Abakus. Dieser erlaubt es wenn der Benutzer des Systems machtig ist Rechenoperationen auszuführen. Und als drittes die Knotenschrift der Inkas die wie der Name bereits besagt aus einem System von Knoten auf einem Satz Schnüren bestand. Heutzutage findet das Wort "Code" im Computerbereich oft Verwendung als Kurzform des Ausdrucks "Source-Code" also Quellkode eines Programms.  
+  
+###Was ist ein Programm?
+Das Bild das viele im Kopf haben wenn sie das Wort Programm hören ist stark durch Film beeinflusst. Wir sehen junge, meist übergewichtig und verpickelte Menschen vor uns die in abgedunkelten Räumen zwischen Monitoren, Kabeln und Pizzapackungen auf ewige grün leuchtende Zahlenkolonnen blicken die für uns keinerlei Sinn ergeben. Diese oder ähnliche Bilder sind inspiriert aus einer Zeit in der Computer nur einfarbige Pixel hatten und Grafische Benutzeroberflächen wie Windows noch aus der Kommandozeile gestartet wurde. Als Hommage an diese Vorstellung hat "Duiker101" das Programm [HackerTyper](http://hackertyper.net/) entworfen welches mit bereits vorgegebenem Text allein über Tastendruck den Bildschirm mit kompliziertem Quellkode füllt. Dabei ist es irrelevant welche Tasten der Benutzer drückt.
+Verwerfen sie diese Vorstellung (Es ist nicht so das es dies nicht gibt dennoch entspricht es nicht der Regel). Ein Programm ist lt. [Duden](http://www.duden.de/rechtschreibung/Programm): "die nach einem Plan genau festgelegten Einzelheiten eines Vorhabens". Unter dieser Betrachtungsweise ist jede Bauanleitung zu Möbelstücken, eine Beschreibung des Weges von hier zum Bahnhof oder das Rezept für Sahnetörtchen ein Programm. Bloß das in letzterem Fall nicht ein Computer die Anweisungen ausführt sondern ein Mensch. Die Sprache in der dieses Programm geschrieben ist, ist Deutsch. Der grosse Unterschied zu einem Computersprache/-programm liegt hier ein der Möglichkeit der Interpretation. Die Ausführende "Maschiene" (in diesem Fall der Mensch) kann solche Angaben wie "eine Priese Salz" oder "eine Messerspitze Merrettich" verarbeiten. Ein Computer ist hierzu (noch) nicht fähig. Er bräuchte eine eindeutigere Angabe wie 50 Gramm. Das Programm sollte an dieser Stelle noch von dem Begriff des Algorithmus abgetrennt werden.  
+
+###Was ist ein Algorithmus?
+Auch wenn sich diese beiden Begriffe in ihrer Bedeutung teilweise überschneiden sollten sie auf folgende weise unterschieden werden. Der Algorithmus für Milch holen wäre in Pseudocode:  
+
+	wenn (Aussage (kein Milch ist im Kühlschrank) wahr ist): hole neue Milch! wenn nicht: tue nichts!  
+
+Das Programm für Milch holen würde vorraussetzen das alle Schritte und Notwendigkeiten bis zum Übergang der Milch in das Eigentum der Holenden bekannt und definiert sind. Also so etwas wie:  
+
+	Person fabian ist gleich neu Person;
+	Kühlschrank schrank ist gleich neuer Kühlschrank;
+	Kühlschrank Menge Milch ist gleich 1;
+	jeden morgen fabian trinke Milch aus Kühlschrank;
+	Menge Milch reduziere um 0.2l;
+	jeden morgen fabian beobachte Menge Milch;
+	wenn Milch kleiner gleich 0.1 ist fabian hohle Milch im Supermarkt;
+
+Und so weiter und so ähnlich. Diese Funktionsanweisungen könnten noch detailierter ausgearbeitet werden. Hierbei sei zu beachten das solche Objekte wie Kühlschrank und Person bereits implemetiert also bekannt sind. Das Programm im Vergleich zum Algorithmus muss alle eingesetzten Mittel kennen und oder selber beschreiben.  
+  
+###Was ist die Syntax?
+Die Syntax ist die Form in der die Programmiersprache ausgestalltet ist. Die Syntax einer Programmiersprache besteht aus reservierten Worten wie zum Beispiel in Java `new, while, null , true,` Operatoren wie  `+,-,*,.` und Kontrollstrukturen wie `if(){}else{}` oder "`for(int i = 0; i < x;i++)`  
+Lesen sie diese "Sätze" kurz. Wie würden sie es sprechen?  
+  
+Ausgesprochen wäre dies: ` For int i gleich 0, i kleiner x, i plus plus `
+
+Es gibt in JavaScript eine Hand voll [reservierter Worte (Mozilla Developer Network)](https://developer.mozilla.org/en/JavaScript/Reference/Reserved_Words) die beim schreiben nicht verwendet werden dürfen.
+{% highlight js %}
+break, case, catch, continue, debugger, default, delete, do, else, finally, 
+for, function, if, in, instanceof, new, return, switch, this, throw, try, typeof, 
+var, void, while, with, null, false, true 
+{% endhighlight %}
+Noch einmal. Diese Worte dürfen nur für bestimmte Aufgaben verwendet werden! Wenn also ein Programmierer seine Variable `null` nennet, wird das Programm beim ausführen eine Fehler auswerfen. Die obig genannten Strukturen, Operatoren und reservierten Worte müssen erlernt werden. Eine vollständige Beschreibung aller würde jedoch den Rahmen dieser Arbeit sprengen.  
+Weiterhin ist beim schreiben von Programmen auch auf die Groß- und Kleinschreibung zu achten. Eine Variable die mit dem Namen `myValue` initiert wird muss auch mit diesem Namen aufgerufen werden. Bei einer falschen schreibweise `MyValue` oder `myvalue` würde das Programm warnen, dass die aufgerufene Variable nicht existiert.  
+
+{% highlight js %}
+	var myValue = 5; // define a variable
+	myvalue++; //edit it but written wrong
+{% endhighlight %}
+
+<br /> <a href="images/error_myvalue.png"> <img src="images/error_myvalue.png" width="100%" style="max-width:800px;" alt="" /></a>
+
+Es gibt Sprachen die versuchen ihre Syntax so weit wie möglich an unseren Sprachen zu orientieren, zum Beispiel Applescript:
+
+{% highlight applescript %}
+	tell application "Safari" to activate
+{% endhighlight %}
+
+und wieder andere wie die esoterische Programmiersprache* "Brainfuck" die mit ihren acht Zeichen  
+
+{% highlight bf %}
+	+ - < > [ ] , .
+{% endhighlight %}
+
+voll funktionsfähig, aber nicht für das schreiben von Programmen gedacht ist sondern eher ein Gedankenmodell darstellt.
+Das Brainfuck Hello World ([aus wiki](http://en.wikipedia.org/wiki/Brainfuck)):  
+
+{% highlight bf %}
+ 	+++++ +++++             initialize counter (cell #0) to 10
+ 	[                       use loop to set the next four cells to 70/100/30/10
+ 	    > +++++ ++              add  7 to cell #1
+ 	    > +++++ +++++           add 10 to cell #2 
+ 	    > +++                   add  3 to cell #3
+ 	    > +                     add  1 to cell #4
+ 	    <<<< -                  decrement counter (cell #0)
+ 	]                   
+ 	> ++ .                  print 'H'
+ 	> + .                   print 'e'
+ 	+++++ ++ .              print 'l'
+ 	.                       print 'l'
+ 	+++ .                   print 'o'
+ 	> ++ .                  print ' '
+ 	<< +++++ +++++ +++++ .  print 'W'
+ 	> .                     print 'o'
+ 	+++ .                   print 'r'
+ 	----- - .               print 'l'
+ 	----- --- .             print 'd'
+ 	> + .                   print '!'
+ 	> .                     print '\n' 
+ {% endhighlight %} 
+
+Wie bereits oben in der Beschreibung des Milchalgorithmus zu sehen ist verwendet selbst Pseudocode ein nicht genau definierte Syntax lehnt sich jedoch mit konstruktionen wie "ist gleich" an die Mathematik und Programmierung an. Andere Sprachen mit denen wir uns noch später Auseinandersetzen wie C++, Processing oder JavaScript sind zwischen diesen Extrema angesiedelt und vereinen in einer für das geübte Auge lesbaren und dennoch kompakte Art die Befehlsufrufe.
+  
+###Was ist Pseudocode?
+Im Verlaufe dieser Arbeit werde ich immer wieder auf die Darstellung von Alogrithmen in "Pseudocode" zurückgreifen. Pseudocode besteht nicht aus einer bereits definierten Syntax und kann auch nicht von einem Compiler übersetzt werden sondern dient nur zur Darstellung eines logischen Ablaufs. Wie bereits in dem Milchalgorithmus zu sehen war versucht Pseudocode einen Programmablauf in menschenlesbarer Form darzustellen.  
+  
+###Was ist ein Compiler?
+Der Vollständigkeit halber soll dieser hier erklärt werden auch wenn er uns kaum mehr im weiteren Verlauf der Arbeit begegen wird. Der Compiler ist ebenfalls ein Programm das aus menschenlesbaren Hochsprachen wie zum Beispiel C++ maschienenlesbaren Quellkode erzeugt (Assemblercode). Diesen Prozess bezeichnet man auch als Kompilierung.  
+  
+###Was ist eine IDE (Integrated Development Envoirement)?
+Um Quellkode zu schreiben bedarf es nicht viel. Ein einfacher Texteditor reicht aus um komplette Programme zu schreiben. Im Laufe der Zeit wurde jedoch viel Software programmiert um das schreiben von Quelltext zu erleichtern. Dies geht los bei einfachem Syntax-Highlighting bis hinzu kompletten Entwicklungsumgebungen die noch vor dem Kompilieren beziehungweise während des schreibens die Syntax auf ihre Validität prüfen und gegebenfalls Vorschläge machen was gemeint sein könnte oder bei nicht verwendeten Programmteilen warnen das diese derzeit unnütz sind. In unserem Fallbeispieln werden wir noch mit diesen Programmen zu tuen kriegen. Es sei jedoch bereits gesagt das wir die einfachste Möglichkeit nutzen werden die sich uns bietet und die auf beiden Platformen (Windows und Mac OS X) zur Verfügung steht. Das ExtendScript Toolkit (Mehr hierzu ist im nächsten Abschnitt zu finden).  
+
+###Was ist Hello World? 
+Das "Hello World" Programm hat sich als standard Beispiel etabliert um die Syntax einer Sprache zu erklären. Exerzieren wir das einmal kurz durch. Um für Adobe InDesign, After Effects, Illustrator, Photoshop, Photoshop Elements, Photoshop Elements Organizer, Bridge, Audition, Media Encoder und Premiere Pro Skripte zu schreiben liefert Adobe eine eigene IDE, eine Integrierte Entwicklungs Umgebung, mit.  
+<br /> <a href="images/estk.png"> <img src="images/estk.png" width="100%" alt="" /></a>
+Das ExtendScript Toolkit. Dies ist nicht der schönste Editor. Er hat jedoch einige Vorteile die die Entwicklung von Skripten sehr einfach macht. Die wichtigste Eigenschaft ist dabei folgende. Es kann ein Skript ohne es zu speichern ausführen. Das Toolkit wird bei der Installation von Adobe Produkten direkt mit geliefert. Suchen sie es in ihren Dienstprogrammen dort sollten sie fündig werden. Wenn nicht gehen sie zu dieser Webseite [http://www.adobe.com/devnet/scripting.html](http://www.adobe.com/devnet/scripting.html), laden und installieren sie es.  
+Wenn es dann installiert ist geben sie folgende Text ein:  
+
+{% highlight js %}
+	alert("Hello World");
+{% endhighlight %}
+
+und drücken sie auf den "Play/Run" Knopf oben rechts oder drücken sie CMD-r oder CTRL-r, abhängig von ihrer Platform.  
+<br /> <a href="images/hello_world.png"> <img src="images/hello_world.png" width="100%" alt="" /></a>
+
+Herzlichen Glückwunsch. Ihr erstes JavaScript.  
+Um dieses Skript in InDesign oder Photoshop auszuführen muss die Ziel Applikation aus dem PullDown Menü auf der oberen Leiste gewählt werden. Beim öffenen ist es auf ExtendScript Toolkit gestellt. Wählen sie dort InDesign aus. Das Toolkit wird sofort fragen ob InDesign auch gestartet werden soll. Bestätigen sie das und führen sie das Skript noch einmal aus. Sie werden sehen, dass der Computer zu InDesign überwechselt und den gleichen Hinweis gibt.  
+Probieren sie weiter Skripte und Kalkulationen aus. Zum Beispiel  
+
+{% highlight js %}
+ 	var h = "Hello";
+ 	var w = "World";
+ 	var calc = (10*50)/23 - 1;
+ 	alert(h + " " + w +"! Your result is: "+ clac ); 
+ {% endhighlight %} 
+  
+
+
+  
+###Was ist Syntax-Highlighting?
+<br /> <a href="images/syntax_highlite.png"><img src="images/syntax_highlite.png" width="100%" alt="" /></a>
+
+Syntax Highlighting ist eine Hilfestellung für Programmierer um ihren Quellkode übersichtlicher zu gestalten. Hierbei werden bestimmte Teile wie Operatoren,Kommentare, Funktionsdeklarationen oder Reservierte Worte farblich hervorgehoben beziehungsweise zurückgenommen um das Lesen zu erleichtern.  
+  
+###Was ist eine API (Application Programming Interface)?
+Dies ist die Schnittstelle die ein Programm bietet um auf sein Funktionen zugreifen zu können. Dies wird beim Schreiben von Programmen wie InDesign von den Programmierern definiert. Diese Schnittstelle ist wie ein Baum mit Querverweisen aufgebaut. Um in InDesign einem bestehendem Dokument auf der ersten Seite eine Textbox hinzuzufügen muss durch diesen Baum manövriert werden.  
+
+	app.activeDocument.pages.item(0).textFrames.add();
+
+Diese Zeile erzeugt in der linken oberen Ecken eine Textkiste.  
+All diese Befehle und Eigenschaften müssen nicht auswendig gelernt werden sondern können nachgeschlagen werden. Im ExtendScript Toolkit kann unter Hilfe / ObjektModell Viewer ein Hilfsprogramm aufgerufen werden das alle Befehle mit einer kurzen Erklärung enthält. Oder es kann auf der Seite von jongware eine .chm Datei heruntergeladen werden die die gleichen Informationen enthält und mit einem .chm Viewer durchsucht werden kann. [http://www.jongware.com/idjshelp.html](http://www.jongware.com/idjshelp.html)  
+  
+###Was ist Objektorientierung?
+Als Objektorientierung (ach als OO abgekürzt) versteht man ein bestimmte Art wie Programme aufgebaut sind. Ein Objekt ist ein gekapselter Teil des Programmcodes der Schnittstellen und Methoden bietet und seine Eigenschaften an weiter Objekte vererben kann. Um dies besser zu verstehen möchte ein hervorragendes Beispiel aus "Processing: A Programming Handbook for Visual Designers and Artists" von Casey Reas and Ben Fry bemühen.  
+####Klammer auf!
+	{  
+
+Der Proto-Apfel (Der Proto-Apfel existiert eingentlich nicht. Unsere Sprache lässt solche Ungenauigkeiten zu. Es gibt einen Apfel und einen Anderen. Aber nicht "DEN" Apfel. ) hat bestimmte Eigenschaften wie Gewicht und Farbe. Hinzu kommen bestimmte Methoden wie Fallen, Wachsen und Verrotten die durch die Eigenschaften beeinflusste werden können.  
+<br /> <a href="images/object_orientation_classes-1.png"><img src="images/object_orientation_classes-1.png" width="100%" alt="" /></a>
+ Wenn nun ein Baum wächst und Äpfel produziert erzeugt er nach dem Bauplan des Proto-Apfels neue Äpfel und jedem werden bestimmte Werte übergeben.  
+<br /> <a href="images/object_orientation_classes-2.png"><img src="images/object_orientation_classes-2.png" width="100%" alt="" /></a>
+Der Baum erzeugt den Apfel und ruft kontinuierlich die Methode Wachsen auf. Hierbei wird der Wert des Gewichtes inkrementiert. Sind die Früchte dann reif wird abhängig vom Gewicht des einzelnen Apfels die Methode Fallen ausgelösst. Wenn der Apfel dann auf dem Boden liegt und die Methode Fallen beendet ist beginnt die Methode Verroten ihre Arbeit. Die Farbe des Apfels verändert sich und das Gewicht wird wieder verringert.
+Das bedeutet der Proto-Apfel selber wird nicht angerührt sondern Instanzen von diesem. Um dies noch auf die Spitze zu treiben haben wir nicht nur eine Art Apfel sondern verschieden Sorten. Also ist die Klasse Granny Smith und ein "Kind"-Klasse der Basisklasse Apfel. Granny Smith erbt alle Eigenschaften der Klasse Apfel ohne das sie neu implemntiert werden müssen und bekommt noch eine weitere Eigenschaft: den Namen.
+
+	} // Klammer zu.  
+Dieses Konstruktionsweise spiegelt sich in nicht nur in der Programmierung wieder. Die Benutzung einiger Komponenten in unseren Werkzeugen ist genau nach diesem Prinzip organisiert.
+####Eine weiter Klammer auf   
+
+	{
+
+In InDesign hat der Benutzer die Möglichkeit Absatz- und Zeichenformate anzulegen ohne die das setzen eines Buches eine wirklich Zeitraubende Angelegenheit wäre. Eine einfache Gruppe von Absatzformaten kann wie folgt aufgebaut sein.  
+- [Einfacher Absatz]  
+- TextKörper  
+- Überschrift 1  
+- Überschrift 2  
+- Überschrift 3  
+- Bild Unterschrift  
+- Pagina  
+In dem Format "[Einfacher Absatz]" wird eine Schriftart und eine Schriftgrösse definiert. Dieses Format ist das Proto-Format von dem sich alle weiteren Formate ableiten. Sie erben also alle die Eigenschaften Schrift (appliedFont) und die Schriftgrösse (pointSize). Das Format "Überschrift 1" (Ü1) bekommt dann eine eigene Schriftgrösse und einen fetten Schnitt der Schriftart. Im dem Format "Überschrift 2" (Ü2) wird dann festgelegt das nicht mehr das "[Einfacher Absatz]" Format als Basis Klasse benutzt wird sondern Ü1. Damit erbt Ü2 alle Eigenschaften von Ü1. In Ü2 wird dann nurnoch eine neue Schriftgrösse festgelegt. Das gleiche kann dann mit "Überschrift 3" (Ü3) passieren. Ü3 basiert auf Ü2 und bekommt ebenfalls eine eigene Schriftgrösse. Jetzt basiert Ü3 auf Ü2, das auf Ü1 und das auf "[Einfacher Absatz]". Ähnlich verfahren wir mit den weiteren Formaten. "Textkörper" basiert auf "[Einfacher Absatz]", "Bildunterschrift" auf "Textkörper" nur kleiner und "Pagina" auf "Bildunterschrift" aber mit 70% Deckkraft. Wenn der Gestalter nun entscheidet dass eine andere Schriftart von Nöten ist, ändert er sie nur in "[Einfacher Absatz]" und alle Kinder werden entsprechend angepasst. Dies ist ebenfalls Objektorientiert.  
+<br /> <a href="images/id_formate.png"><img src="images/id_formate.png" width="100%" alt="" /></a>
+
+	} // Klammer zu
+  
+###Was sind Funktionen/Methoden?
+Eine Funktion oder eine Methode sind gekapselte Programmteile and die Parameter übergeben werden können und die an den gegebenen Parametern eine Kalkulation durchführen. Sie können dann Werte zurückgeben. Dies ist nützlich wenn bestimmte Tätigkeiten an unterschiedlichen Positionen eins Programms oder Skripts mehr mals aufgerufen werden müssen.     
+###Was ist ein Bug?
+Ein Bug ist ein Fehler der das Programm von seiner einwandfreien Ausführung abhält. Dies kann nur ein Rechenfehler sein oder ein Fehler der das gesamte Programm zum Absturz bringt.  
+  
+###Was ist Debugging?
+Dies ist der Prozess des Findens und korrigeren von Fehlern.  
+
+###Was ist ein Workaround?  
+Ein Workaround ist eine kreative Lösung um ein Problem zu umgehen. Wenn zum Beispiel eine API ein bestimmte Funktion nicht anbietet muss ein Weg um dieses Problem drumherum gefunden werden. 
+  
+###Welche Konventionen gibt es?
+Neben den Bestimmungen der Syntax gibt es verschiedene Konventionen die das lesen von Skripten einfacher machen sollen. Zum Beispiel ist es gang und gebe dass die Funktionsweise am Beginn eines Skripts in einem Kommentar erklärt wird. Oder die Verwendung der Variable i (für Iterator) als Zähler in Schleifen.
+
+###Was ist der Unterschied zwischen JavaScript und ExtendScript?
+JavaScript oder EcmaScript ist das was uns täglich in Webbrowsern solche Dinge bescherte wie Scrollen auf Knopfdruck oder Warnhinweise und ähnliches. ExtendScript ist ein Dialekt von JavaScript der von Adobe entwickelt wurde. Das bedeutet InDesign versteht JavaScript und ExtendScript aber ein Browser kann mit ExtendScript Befehlen nichts anfangen.  
+
+###Was sind Pointer  
+Ein Pointer ist der Verweiss auf die Adresse unter der eine Variable abgelegt. Dies verweist auf von der Variable okkupierten Speicher. Das kann dann so aussehen:
+{% highlight c %}
+double *dp, atof(char *);
+{% endhighlight %}
+
+>says that in an expression *dp and atof(s) have values of double, and that the argument of atof is a pointer to char.  
+
+> aus The C programming Language By Brian W. Kernighan and Dennis M. Ritchie. Published by Prentice-Hall in 1988
+([online]( http://net.pku.edu.cn/~course/cs101/2008/resource/The_C_Programming_Language.pdf))
 ##Fazit 
 [NOCH NICHT GESCHRIEBEN]  
 ##JavaScript &amp; ExtendScript Ressourcen
