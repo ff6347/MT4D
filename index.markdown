@@ -3,29 +3,98 @@ layout: default
 title: Mehr Zeit für Gestaltung
 ---
 #BA von Fabian Morón Zirfas  
-##Mehr Zeit für Gestaltung  
+##Mehr Zeit für Gestaltung
+<div id="top"></div>
+<br>  
+#Inhalt
+##<a href="#01">1 Einleitung</a>
+<a href="#" class="show_hide" rel="#slidingDiv00">[?]</a><div id="slidingDiv00">
+###<a href="#02">&emsp;1.1 Bevor sie Einsteigen</a>
+</div>
+<br>
+##<a href="#03">2 Wann soll ich Scripten?</a>
+<a href="#" class="show_hide" rel="#slidingDiv01">[?]</a><div id="slidingDiv01">
+####<a href="#37">&emsp;2.0.1 Welche Operationen sollen ausgeführt werden?</a>
+####<a href="#38">&emsp;2.0.2 Wie komplex sind die Operationen?</a>
+####<a href="#39">&emsp;2.0.3 Wie ist das Zeitfenster und wann muss das Produkt fertig sein?</a>
+####<a href="#40">&emsp;2.0.4 Wie oft muss diese Tätigkeit ausgeführt werden?</a>
+####<a href="#41">&emsp;2.0.5 Lässt sich die Automation auch auf andere ähnliche Bereiche anwenden oder mit geringen Aufwand abstrahieren?</a>
+####<a href="#42">&emsp;2.0.6 Wie sehr ist sie von Umgebungsvariablen abhängig?</a>
+####<a href="#43">&emsp;2.0.7 Soll die Automation von dritten Benutzt werden?</a>
+####<a href="#44">&emsp;2.0.8 Ist der Prozess linear oder bedarf es einer Rückkopplung zum Benutzer?</a>
+###<a href="#04">&emsp;2.1 Das Beispiel targetengine</a>
+####<a href="#45">&emsp;2.1.1 Existieren bereits Automationen in dem Sektor und wenn ja lassen sich diese abwandeln?</a>
+####<a href="#46">2.1.2 Bietet die API direkten Zugriff auf die benötigten Funktionen oder braucht es eine Workaround?</a>
+###<a href="#05">&emsp;2.2 Das Beispiel try char</a>
+</div>
+<br>
+##<a href="#07">3 Szenarien</a>
+<a href="#" class="show_hide" rel="#slidingDiv02">[?]</a><div id="slidingDiv02">
+###<a href="#08">&emsp;3.1 Der Einsatz - das Beispiel image matrix</a>
+####<a href="#33">&emsp;&emsp;3.1.1 Ergebnisse - image matrix</a>
+###<a href="#09">&emsp;3.2 image matrix - Schritt für Schritt.</a>  
+###<a href="#10">&emsp;3.3 Das Beispiel great power</a>
+</div>
 
-##Einleitung
-Diese Arbeit setzt sich mit der Automation von Design-Prozessen auseinander. Sie ist keine komplette Anleitung zum Erlernen von Programmier Grundkenntnissen, diese können für viele verschieden Sprachen im "World Wide Web" gefunden werden, sondern eine Auseinandersetzung was Automation durch Programmierung für Designer leisten kann und welche Bereiche sie nicht abdeckt. Dies wird durch einige kurze Beispiele illustriert.
-Sie, die Arbeit, ist der versuch die Mystik und nebulösen Vorstellungen die sich um Computerprogramme ranken zu brechen und die Schnittstellen die aktuelle Grafikprogramme bieten auf zu zeigen.  
+<br>
+##<a href="#12">4 Ein Werkzeug - AEMap</a>
+<br>
+##<a href="#11">5 Die Angst</a>
+<br>
+##<a href="#06">6 Fazit </a>
+<br>
+##<a href="#13">7 Die kleine Terminologie</a>
+<a href="#" class="show_hide" rel="#slidingDiv03">[?]</a><div id="slidingDiv03">
+###<a href="#14">&emsp;7.01 Was ist Code?</a>
+###<a href="#15">&emsp;7.02 Was ist ein Programm?</a>
+###<a href="#16">&emsp;7.03 Was ist ein Algorithmus?</a>
+###<a href="#17">&emsp;7.04 Was ist die Syntax?</a>
+###<a href="#18">&emsp;7.05 Was ist Pseudocode?</a>
+###<a href="#19">&emsp;7.06 Was ist ein Compiler?</a>
+###<a href="#20">&emsp;7.07 Was ist eine IDE (Integrated Development Envoirement)?</a>
+###<a href="#21">&emsp;7.08 Was ist Hello World?</a> 
+###<a href="#22">&emsp;7.09 Was ist Syntax-Highlighting?</a>
+###<a href="#23">&emsp;7.10 Was ist eine API (Application Programming Interface)?</a>
+###<a href="#24">&emsp;7.11 Was ist Objektorientierung?</a>
+###<a href="#25">&emsp;7.12 Was sind Funktionen/Methoden</a>?
+###<a href="#26">&emsp;7.13 Was ist ein Bug?</a>
+###<a href="#27">&emsp;7.14 Was ist Debugging?</a>
+###<a href="#28">&emsp;7.15 Was ist ein Workaround?</a>  
+###<a href="#29">&emsp;7.16 Welche Konventionen gibt es?</a>
+###<a href="#30">&emsp;7.17 Herkunft von JavaScript</a>
+###<a href="#31">&emsp;7.18 Was ist der Unterschied zwischen JavaScript und ExtendScript?</a>
+###<a href="#32">&emsp;7.19 Was sind Pointer</a>
+</div> 
+<br>
+##<a href="#34">8 Refenrenzen</a>
+<br>
+##<a href="#35">9 Weblinks</a>
+<br>
+##<a href="#36">10 Quellen</a>
+-------------
+<br>
+<br>
+##<span id="overlay"><a href="#02" title="Next" >&darr;</a></span><a id="01"></a>1 Einleitung <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
+Diese Arbeit setzt sich mit der Automation von Design-Prozessen auseinander. Sie ist an Designer gerichtet die einen rohen Überblick bekommen wollen wie Arbeitsprozesse automatisiert werden können und soll als Hilfestellung dienen einen Einstieg in das Schreiben von Skripten für Grafikanwendungen. Sie ist keine komplette Anleitung zum Erlernen von Programmier Grundkenntnissen, diese können für viele verschieden Sprachen im "World Wide Web" gefunden werden, sondern eine Auseinandersetzung was Automation durch Programmierung für Designer leisten kann und welche Bereiche sie nicht abdeckt. Im ersten Abschnitt soll dem Leser kurz erläutert werden was er benötigt um zu Skripten um dann im zweiten Teil zu analysieren wann dies sich lohnt. Hier wird an einem kurzen Beispielen erläutert wo Probleme auftreten können und an einem weiteren wie solche Problem klug umschifft werden können. Im dritten Teil folgt ein Szenario an dem Schritt für Schritt die Logik und Funktionsweise eines Skriptes erklärt wird und ein weiteres Szenario mit einer einzeiligen und doch nützlichen Lösung. Der vierte Teil behandelt  eine wirkliche Anwendung. Anhand dieser wird das Ausmaß das dies annehmen kann gezeigt. Es folgt im fünften Teil ein Auseinandersetzung mit der Frage woher die Abwehrhaltung gegen Computersprachen herrühren kann. Im sechsten Teil, dem Fazit, wird der Erkenntniszuwachs aus all dem zusammengefasst. Es folgt noch eine weiterer Abschitt mit Erläuterungen zur Teilweise verwendeten Terminologie. Dieser Abschnitt sollte jedoch nicht linear gelesen werden sondern als Referenz dienen. Zum Abschluss stehen die Referenzen, Weblinks und Quellenverweise.  
+<br>
+###<span id="overlay"><a href="#03" title="Next" >&darr;</a></span><a id="02"></a>1.1 Bevor sie Einsteigen <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
+Bevor sie weiterlesen einige Hinweise. Wenn sie noch keine Erfahrungen mit Programmierung gemacht haben lassen sie sich nicht abschrecken. Es werden einige für den Laien unverständliche Zeilen vorkommen und einige die sich aus dem Kontext oder den Namen der <a href="#25">Funktionen</a> erschliessen lassen. Falls sie die Beispiele in Abschnitt Eins und Zwei ausprobieren möchten lesen sie den Abschnitt <a href="#21">7.08 Was ist Hello World?</a> zuerst. Dort wird erklärt wie und wo sie Skripte schreiben und ausführen können. Es werden Fachausdrücke vorkommen die ebenfalls im Abschnitt <a href="#13">7 Die kleine Terminologie </a>erklärt werden. Ab dem Abschnitt <a href="#07">3 Szenarien</a> steigen wir dann voll in das Lesen und wenn sie möchten Schreiben von Skripten ein. Dafür sollte zumindest der eben genannte Abschnitt "Was ist Hello World?" einmal nachvollzogen worden sein. Wenn die dort dargestellten Zusammenhänge und Konstrukte zu komplex sind verschaffen sie sich etwas Übung. Es existiert eine schöne Webseite genannt [codecademy.com](http://www.codecademy.com/#!/exercises/0) auf der sie in einigen lustigen Aufgaben durch die Grundlagen von JavaScript geführt werden. Wenn mal etwas nicht funktioniert - verzweifeln sie nicht. Kontrollieren sie ihre Schreibweise und suchen sie sich weiterführende Informationen im Netz. Die einfachste Möglichkeit ist den gewünschten Befehl samt JavaScript <a href="http://lmgtfy.com/?q=alert()+JavaScript">(z.B. "alert() JavaScript")</a> in einer Suchmaschine einzugeben. Da das Netz voll von JavaScript ist spuckt es in 99% der Fälle auch die richtige Dokumentation aus. Werfen sie ebenfalls einen Blick in die Referenz-Liste. Dort finden sie viele Ressourcen für "Scripting" die ihnen den Einstig erleichtern werden.  
+Um in diesem html Dokument zu manövrieren können sie entweder normal scrollen oder sie benutzen die &darr; &uarr; Pfeile. Der &darr; bringt sie zum nächsten Abschnitt. der &uarr; bringt sie wieder zurück zum Index. Sie werden ebenfalls kleine [?] am Ende eines Absatzes finden. Drücken sie auf diese drauf - sie enthalten Zusatzinformationen und Querverwiese.<a href="#" class="show_hide" rel="#slidingDiv0">[?]</a><div id="slidingDiv0">Herzlichen Glückwunsch. Sie haben eine Zusatzinformation gefunden. drücken sie auf das [x] um diese Kiste wieder zu schliessen.</div>   
 
-Abschliessend soll im Fazit der Erkenntniszuwachs aus all dem zusammengefasst werden.  
 
-#Bevor sie Einsteigen
-Bevor sie weiterlesen einige Hinweise. Wenn sie noch keine Erfahrungen mit Programmierung gemacht haben lassen sie sich nicht abschrecken. Es werden einige für den Laien unverständliche Zeilen vorkommen und einige die sich aus dem Kontext oder den Namen der Funktionen erschliessen lassen. Falls sie die Beispiele in Abschnitt Eins und Zwei ausprobieren möchten lesen sie den Abschnitt Terminologie [NUMMER] "Hello World" zuerst. Dort wird erklärt wie und wo sie Skripte schreiben und ausführen können. Es werden Fachausdrücke vorkommen die ebenfalls im Abschnitt Terminologie [NUMMER] erklärt werden. Ab dem Abschnitt [NUMMER] Das Szenario steigen wir dann voll in das lesen und wenn sie möchten schreiben von Skripten ein. Dafür sollte zumindest der eben genannte Abschnitt einmal nachvollzogen worden sein. Wenn die dort dargestellten Zusammenhänge und Konstrukte zu komplex sind verschaffen sie sich etwas Übung. Es existiert eine schöne Webseite genannt [codecademy.com](http://www.codecademy.com/#!/exercises/0) auf der sie in einigen lustigen Aufgaben durch die Grundlagen von JavaScript geführt werden. Wenn mal etwas nicht funktioniert - verzweifeln sie nicht. Kontrollieren sie ihre Schreibweise und suchen sie sich weiterführende Informationen im Netz. Die einfachste Möglichkeit ist den gewünschten Befehl samt JavaScript (z.B. "alert() JavaScript") in einer Suchmaschine einzugeben. Da das Netz voll von JavaScript ist spuckt es in 99% der Fälle auch die richtige Dokumentation aus. Werfen sie ebenfalls einen Blick in die Referenz-Liste. Dort finden sie viele Ressourcen für "Scripting" die ihnen den Einstig erleichtern werden.    
+##<span id="overlay"><a href="#04" title="Next" >&darr;</a></span><a id="03"></a>2 Wann soll ich Skripten? <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>  
 
 > Scripting languages assume that there already exists a collection of useful components written in other languages. Scripting languages aren't intended for writing applications from scratch; they are intended primarily for plugging together components  
 > Scripting: Higher Level Programming
 for the 21st Century by John K. Ousterhout ([online](http://www.tcl.tk/doc/scripting.html))
 
-##Teil 1 Wann soll ich Skripten?
-Auch wenn Aufgaben auf unterschiedliche Weise mit verschiedenen Programmiersprachen gelöst werden können haben sich spezielle Anwendungsgebiete für die einzelnen Sprachen ergeben. Ganz unabhängig davon, dass sich in unserem Fall Adobe Anwendungen mit JavaScript ansprechen lassen macht es Sinn eine Skriptsprache zu verwenden um die bereits in höheren Sprachen implementierten Funktionen zu verbinden. 
+Auch wenn Aufgaben auf unterschiedliche Weise mit verschiedenen Programmiersprachen gelöst werden können haben sich spezielle Anwendungsgebiete für die einzelnen Sprachen ergeben. Ganz unabhängig davon, dass sich in unserem Fall Adobe Anwendungen mit JavaScript ansprechen lassen macht es Sinn eine Skriptsprache zu verwenden um die bereits in höheren Sprachen implementierten Funktionen zu verbinden. JavaScript ist unser Kleber. Wir müssen das Rad nicht neu erfinden. Wir können jedoch unseren Arbeitsablauf durch gezielte Befehlsketten von repetitive Aufgaben befreien. Ich bin mir sicher dass ein Grossteil aller Gestalter die vorgefertigte Software für ihre Arbeit verwenden schon einmal an den Punkt kamen wo sie sich dachten: "Warum kann mein Programm DAS nicht", "es ist doch alles da. Der Knopf und danach diesen Knopf!".<a href="#" class="show_hide" rel="#slidingDiv1">[?]</a><div id="slidingDiv1">DAS steht hier für eine gewünschte Funktionsweise</div>  
+Scripting erlaubt es uns diese beiden Knöpfe mit einander zu verbinden. Das bedeutet dann, dass wir unsere Arbeit um einen "Klick" reduziert haben. Wir haben zwei Knöpfe durch Verkettung auf einen neuen Knopf gelegt. Natürlich klingt die Reduktion um einen Klick vernachlässigbar. Wenn Jedoch diese zwei Klicks 100 mal ausgeführt werden müssen und wir durch logische Anweisung diese ebenfalls auf nur einen Knopf zusammenführen können ist der Zeitgewinn enorm. Ebenfalls muss hier erwähnt werden das viele der Probleme die in einem Gestaltungs-Prozess auftreten nicht zum ersten mal bei eben dieser Person auftreten. Für den Bereich Scripting von Adobe Anwendungen gibt es im Netz viele Seiten und Foren die sich mit diesem Thema befassen. Im Bereich JavaScript gibt es noch viele mehr, da JavaScript auch verwendet wird beziehungsweise entwickelt wurde um Browser zu steuern. Aufgrund dessen ist die Dokumentation mehr als ausgiebig. Es Bedarf nur etwas Übung um die gefundenen Beispiele zu lesen und auf die eigene Problemstellung zu abstrahieren.  
 
-JavaScript ist unser Kleber. Wir müssen das Rad nicht neu erfinden. Wir können jedoch unseren Arbeitsablauf durch gezielte Befehlsketten von repetitive Aufgaben befreien. Ich bin mir sicher dass ein Grossteil aller Gestalter die vorgefertigte Software für ihre Arbeit verwenden schon einmal an den Punkt kamen wo sie sich dachten: "Warum kann mein Programm DAS nicht," ([MARGINALSPALTE]DAS steht hier für eine gewünschte Funktionsweise) "es ist doch alles da. Der Knopf und danach diesen Knopf!". Scripting erlaubt es uns diese beiden Knöpfe mit einander zu verbinden. Das bedeutet dann, dass wir unsere Arbeit um einen "Klick" reduziert haben. Wir haben zwei Knöpfe durch Verkettung auf einen neuen Knopf gelegt. Natürlich klingt die Reduktion um einen Klick vernachlässigbar. Wenn Jedoch diese zwei Klicks 100 mal ausgeführt werden müssen und wir durch logische Anweisung diese ebenfalls auf nur einen Knopf zusammenführen können ist der Zeitgewinn enorm. Ebenfalls muss hier erwähnt werden das viele der Probleme die in einem Gestaltungs-Prozess auftreten nicht zum ersten mal bei eben dieser Person auftreten. Für den Bereich Scripting von Adobe Anwendungen gibt es im Netz viele Seiten und Foren die sich mit diesem Thema befassen. Im Bereich JavaScript gibt es noch viele mehr, da JavaScript auch verwendet wird beziehungsweise entwickelt wurde um Browser zu steuern. Aufgrund dessen ist die Dokumentation mehr als ausgiebig. Es Bedarf nur etwas Übung um die gefundenen Beispiele zu lesen und auf die eigene Problemstellung zu abstrahieren.  
-
-#Hierbei sei zu beachten!  
-Scripting kann keine Design Entscheidungen fällen. Es existiert kein Algorithmus ([MARGINALSPALTE] Ein Algorithmus ist ein logische Verkettung von Operationen siehe Abschnitt [NUMMER] Was ist ein Algorithmus) der Ästhetik simuliert. Um eine spannende Komposition zu schaffen braucht der Gestalter "nur" drei geometrische Grundformen zu erzeugen und diese im richtigen Verhältnis zu einander anzuordnen. Um dies programmatisch zu lösen müsste ein Skript mehrere hundert mal ausgeführt werden. Jedes mal mit einer kleinen Veränderung der Koordinaten der obig genannten drei Objekte. Davon mal ganz abgesehen, dass der Autor irgendwann entscheiden muss welche Komposition knackig ist. Was das Skript leisten kann ist anhand von bestimmten Rahmenparametern eine Fülle von Varianten zu liefern die von Hand Sehnenscheidenentzündungen hervorrufen würde.  
-Programmieren ist nicht einfach. Es ist wie eine neue Sprache lernen. Stellen sie sich vor sie sind in einem fremden Land dessen Sprache sie nicht beherrschen. Sie werden zuerst Probleme haben. Dann lernen sie ihre Grundbedürfnisse zu decken. Ab einem gewissen Punkt können sie Tageszeitungen lesen und Inhalte erfassen und abstrahieren. Eines Tages werden sie feststellen, dass sie in der Sprache Träumen. Der Vorteil an Computersprachen im Vergleich zu "Menschensprachen" ist das in der Computersprache kein Raum für Interpretation ist. Jede Aussage MUSS eindeutig sein. In der Kommunikation mit Menschen MUSS interpretiert werden. Dies ist ein Vorteil, dennoch ist eine Sprache zu lernen keine leichte Aufgabe.  
+    
+#Hierbei sei zu beachten! 
+Scripting kann keine Design Entscheidungen fällen. Es existiert kein Algorithmus der Ästhetik simuliert.<a href="#" class="show_hide" rel="#slidingDiv2">[?]</a><div id="slidingDiv2"> Ein Algorithmus ist ein logische Verkettung von Operationen siehe Abschnitt <a href="#16">7.03 Was ist ein Algorithmus?</a></div>  Um eine spannende Komposition zu schaffen braucht der Gestalter "nur" drei geometrische Grundformen zu erzeugen und diese im richtigen Verhältnis zu einander anzuordnen. Um dies programmatisch zu lösen müsste ein Skript mehrere hundert mal ausgeführt werden. Jedes mal mit einer kleinen Veränderung der Koordinaten der obig genannten drei Objekte. Davon mal ganz abgesehen, dass der Autor irgendwann entscheiden muss welche Komposition knackig ist. Was das Skript leisten kann ist anhand von bestimmten Rahmenparametern eine Fülle von Varianten zu liefern die von Hand Sehnenscheidenentzündungen hervorrufen würde.
+Programmieren ist nicht einfach. Es ist wie eine neue Sprache lernen. Stellen sie sich vor sie sind in einem fremden Land dessen Sprache sie nicht beherrschen. Sie werden zuerst Probleme haben. Dann lernen sie ihre Grundbedürfnisse zu decken. Ab einem gewissen Punkt können sie Tageszeitungen lesen und Inhalte erfassen und abstrahieren. Eines Tages werden sie feststellen, dass sie in der Sprache Träumen. Der Vorteil an Computersprachen im Vergleich zu "Menschensprachen" ist das in der Computersprache kein Raum für Interpretation ist. Jede Aussage MUSS eindeutig sein. In der Kommunikation mit Menschen MUSS interpretiert werden. In Schriftform ist auch kein Raum für Interpretation. Die <a href="#17">Syntax</a> muss valide sein. Dies ist ein Vorteil. Es zwingt zu Genauigkeit. Dennoch - eine Sprache lernen ist keine leichte Aufgabe.  
 Daher sollten sie bevor sie in die Tiefen von JavaScript abtauchen um ein Problem zu lösen entscheiden:  
   
 - Welche Operationen sollen ausgeführt werden?
@@ -40,34 +109,34 @@ Daher sollten sie bevor sie in die Tiefen von JavaScript abtauchen um ein Proble
 Und einige Punkte die sich hauptsächlich durch Recherche abarbeiten lassen  
 
 - Existieren bereits Automationen in dem Sektor und wenn ja lassen sich diese abwandeln?
-- Bietet die API direkten Zugriff auf die benötigten Funktionen oder braucht es eine Workaround? 
+- Bietet die <a href="#23">API</a> direkten Zugriff auf die benötigten Funktionen oder braucht es eine <a href="#28">Workaround</a>? 
 
 Diese Analyse kann keine genauen Angaben über Zeit und Aufwand machen da dies immer auch vom Erfindungsreichtum des Autors abhängig ist. Der Kreative kommt hier schneller zum Ziel.
 
-- Welche Operationen sollen ausgeführt werden?  
+- <span id="overlay"><a href="#38" title="Next" >&darr;</a>Welche Operationen sollen ausgeführt werden?</span><a id="37"></a><span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>  
 
 Programme oder Skripte schreiben ist nicht wie "Scribbeln". Wir können beim Telefonieren eine Stift in die Hand nehmen und drauf los kritzeln. Beim Programmieren muss das Ergebnis bereits definiert sein bevor geschrieben wird. Natürlich ergeben sich auch während des Schreibens neue Ideen, dennoch muss eine konkreten Vorstellung existieren was das Ziel sein soll. Auch dies ist mit Sprechen zu vergleichen. Erst Denken dann Reden.  
 
-- Wie komplex sind die Operationen?  
+- <span id="overlay"><a href="#39" title="Next" >&darr;</a>Wie komplex sind die Operationen?</span><a id="38"></a><span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>  
 
-Wenn eine Fülle von unterschiedlichen Operationen ausgeführt werden soll, müssen auch entsprechend viele Anweisungen an das Programm erfolgen und der Autor muss sich auf eine längere Entwicklungszeit einstellen. Wenn es im Gegensatz darum geht eine Hand voll Operationen 1000 mal auszuführen kann es sein, daSs sich der Kern des Skriptes auf 10 Zeile reduziert. DIES bedeutet auch, dasS die Zeit für Entwicklung und Debugging relativ gering sein können und sich der Zeitaufwand lohnen kann. 
+Wenn eine Fülle von unterschiedlichen Operationen ausgeführt werden soll, müssen auch entsprechend viele Anweisungen an das Programm erfolgen und der Autor muss sich auf eine längere Entwicklungszeit einstellen. Wenn es im Gegensatz darum geht eine Hand voll Operationen 1000 mal auszuführen kann es sein, daSs sich der Kern des Skriptes auf 10 Zeile reduziert. DIES bedeutet auch, dasS die Zeit für Entwicklung und Debuggingrelativ gering sein können und sich der Zeitaufwand lohnen kann.<a href="#" class="show_hide" rel="#slidingDiv9">[?]</a><div id="slidingDiv9"> Ein Bug ist ein Fehler im Programm. Debugging ist der Prozess der Fehlersuche. Siehe Abschnitt <a href="#26">7.13 Was ist ein Bug?</a> und <a href="#27">7.14 Was ist Debugging?</a></div> 
   
-- Wie ist das Zeitfenster und wann muss das Produkt fertig sein?  
+- <span id="overlay"><a href="#40" title="Next" >&darr;</a>Wie ist das Zeitfenster und wann muss das Produkt fertig sein?</span><a id="39"></a><span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>  
 
-Auch hier muss abhängig von der Komplexität des Skriptes und dem eigenem Vermögen geurteilt werden ob dies in dem gegebenen Zeitraum Recherchiert, Entworfen, Geschrieben und "debugged" ([MARGINALSPLATE] Debugging ist der Prozess der Fehlersuche. Siehe Abschnitt [NUMMER] Was ist Debugging?) werden kann. Hinzu kommt, dass das Ergebnis meist nur ein Teilergebnis ist und noch weiterverarbeitet werden muss. Es ist davon auszugehen das etwaige tiefere Fehler erst während des vollem Einsatzes auftreten. Wenn dies in dem entsprechendem Zeitraum nicht zu bewerkstelligen ist sollte von einer Entwicklung abgesehen werden.
+Auch hier muss abhängig von der Komplexität des Skriptes und dem eigenem Vermögen geurteilt werden ob dies in dem gegebenen Zeitraum Recherchiert, Entworfen, Geschrieben und "debugged"  werden kann. Hinzu kommt, dass das Ergebnis meist nur ein Teilergebnis ist und noch weiterverarbeitet werden muss. Es ist davon auszugehen das etwaige tiefere Fehler erst während des vollem Einsatzes auftreten. Wenn dies in dem entsprechendem Zeitraum nicht zu bewerkstelligen ist sollte von einer Entwicklung abgesehen werden.
 
-- Wie oft muss diese Tätigkeit ausgeführt werden?  
+- <span id="overlay"><a href="#41" title="Next" >&darr;</a>Wie oft muss diese Tätigkeit ausgeführt werden?</span><a id="40"></a><span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>  
 
 Wenn das Skript nur ein einziges mal ausgeführt werden soll, sollte man sich fragen wo darin der Nutzen liegt. Es kann natürlich sein das dies Sinn und Zweck hat und sollte nur bedingt ausschlaggebend sein. Hierbei gilt es zu Unterscheiden das einmalig 1000 mal einen Knopf drücken bereits eine Hilfe sein kann. Einmalig 1000 mal unterschiedliche Knöpfe drücken ist eine Aufgabe die doch besser manuell geschieht.  
 
-- Lässt sich die Automation auch auf andere ähnliche Bereiche anwenden oder mit geringen Aufwand abstrahieren?  
+- <span id="overlay"><a href="#42" title="Next" >&darr;</a>Lässt sich die Automation auch auf andere ähnliche Bereiche anwenden oder mit geringen Aufwand abstrahieren?</span><a id="41"></a><span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>  
 
 Wenn dies der Fall ist steigt der Nutzen der Arbeit. Der einmalige Aufwand ein Programm oder Skript für eine immer wieder kehrende beziehungsweise ähnliche Aufgabe zu schreiben reduziert sich im "Nachhinein" durch jede Ausführung. Dies soll heissen: Durch das Schreiben des Programms das ich immer wieder verwende spare ich Zeit in der Zukunft. 
 
-- Wie sehr ist sie (Die Aufgabe) von Umgebungsvariablen abhängig?  
+- <span id="overlay"><a href="#43" title="Next" >&darr;</a>Wie sehr ist sie (Die Aufgabe) von Umgebungsvariablen abhängig?</span><a id="42"></a><span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>  
 
-([MARGINALSPALTE] Das selbstgeschriebene Programm ist in diesem Fall aussen vor. Wie bereits oben erwähnt setzt das Programm alle Möglichkeiten voraus. Das Skript hingegen greift auf bestehende Komponenten zu.) Kann das Skript unabhängig von allen Variablen die der Benutzer setzen kann ausgeführt werden vereinfacht das den Aufwand. Bei einer Abhängigkeit erfordert es immer erst einer Abfrage des "Ist-Status".  
-Ein kleines Beispiel: In Illustrator oder InDesign wird die aktuelle Auswahl des aktiven Dokuments in einer Liste genannt "selection" geführt.
+Kann das Skript unabhängig von allen Variablen die der Benutzer setzen kann ausgeführt werden vereinfacht das den Aufwand. Bei einer Abhängigkeit erfordert es immer erst einer Abfrage des "Ist-Status".  
+Ein kleines Beispiel: In Illustrator oder InDesign wird die aktuelle Auswahl des aktiven Dokuments in einer Liste genannt "selection" geführt. <a href="#" class="show_hide" rel="#slidingDiv3">[?]</a><div id="slidingDiv3"> Das selbstgeschriebene Programm ist in diesem Fall aussen vor. Wie bereits oben erwähnt setzt das Programm alle Möglichkeiten voraus. Das Skript hingegen greift auf bestehende Komponenten zu.</div> 
 {% highlight js %}
 	app.activeDocument.selection;
 {% endhighlight %}
@@ -86,15 +155,15 @@ In dieser Liste liegen Einzelne Objekte die Text sein können oder eine Vektor-F
 
 Viele solcher Abfrage können ein Skript schnell komplex werden lassen. Oder anders ausgedrückt je universeller der Nutzen sein soll desto mehr Umgebungsvariablen müssen beachtet werden. Dies benötigt Zeit.  
 
-- Soll die Automation von dritten Benutzt werden?  
+- <span id="overlay"><a href="#44" title="Next" >&darr;</a>Soll die Automation von dritten Benutzt werden?</span><a id="43"></a><span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>  
 
-Dies ist ein wichtiger Faktor. Wenn nur der Autor selbst die Automation verwendet kann er seine vorhergehenden Aktionen auf die Bedürfnisse und Beschränkungen des Skriptes anpassen. Wenn jedoch eine unbedarfte oder schlimmer noch eine dem Skripten nicht mä(ö)chtige Person dieses Werkzeug nutzen soll müssen wie bereits oben erwähnt viele Umgebungsvariablen abgefragt oder selber bestimmt werden. Im Programmier-Slang sagt man: "Man muss vom DAU* ausgehen." ([MARGINALSPALTE]Dümmster Anzunehmender User). Dies ist nicht als Beleidigung gedacht. Es soll eher sagen dass alle Benutzerfehler die auftreten können auftreten werden. In diesem Fall bekommt ein Nicht des Programmierens Mächtiger wenn er Glück hat nur eine Fehlermeldung, wenn er Pech hat einen Programmabsturz. In beiden Fällen steigt die Hemmung des Nutzer ungemein das Skript noch einmal zu verwenden. Wenn also Dritte mit ins Spiel kommen erfordert es noch längere Test- und Debug-Phasen.  
+Dies ist ein wichtiger Faktor. Wenn nur der Autor selbst die Automation verwendet kann er seine vorhergehenden Aktionen auf die Bedürfnisse und Beschränkungen des Skriptes anpassen. Wenn jedoch eine unbedarfte oder schlimmer noch eine dem Skripten nicht mä(ö)chtige Person dieses Werkzeug nutzen soll müssen wie bereits oben erwähnt viele Umgebungsvariablen abgefragt oder selber bestimmt werden. Im Programmier-Slang sagt man: "Man muss vom DAU ausgehen." Dies ist nicht als Beleidigung gedacht. Es soll eher sagen dass alle Benutzerfehler die auftreten können auftreten werden. In diesem Fall bekommt ein Nicht des Programmierens Mächtiger wenn er Glück hat nur eine Fehlermeldung, wenn er Pech hat einen Programmabsturz. In beiden Fällen steigt die Hemmung des Nutzer ungemein das Skript noch einmal zu verwenden. Wenn also Dritte mit ins Spiel kommen erfordert es noch längere Test- und Debug-Phasen. <a href="#" class="show_hide" rel="#slidingDiv4">[?]</a><div id="slidingDiv4">DAU: Dümmster Anzunehmender User</div>  
   
-- Ist der Prozess linear oder bedarf es einer Rückkopplung zum Benutzer?  
+- <span id="overlay"><a href="#04" title="Next" >&darr;</a>Ist der Prozess linear oder bedarf es einer Rückkopplung zum Benutzer?</span><a id="44"></a><span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>  
 
-Wenn dem so ist sollte der Prozess vielleicht in mehrere Skripte zerlegt werden. Für den Fall das Variablen von einem Skript an das nächste übergeben werden müssen kann dies die Komplexität weiter erhöhen. In diesem Fall gibt es die Möglichkeit eigene Textdateien vom Skript kreieren zu lassen in dem Werte abgelegt werden können, Eine "Script Panel" ([MARGINALSPALTE] Ein Script Panel ist eine Erweiterung der Grafischen Oberfläche die es erlaubt während das Skript läuft weiterhin mit dem Programm zu interagieren) zu erzeugen oder eine eigene `#targetengine` zu erzeugen in der solange das Programm aktiv ist Daten gespeichert werden. Die letzten beiden sind jedoch fortgeschrittene Lösungen die ebenfalls viele Stolpersteine beherbergen können.  
+Wenn dem so ist sollte der Prozess vielleicht in mehrere Skripte zerlegt werden. Für den Fall das Variablen von einem Skript an das nächste übergeben werden müssen kann dies die Komplexität weiter erhöhen. In diesem Fall gibt es die Möglichkeit eigene Textdateien vom Skript kreieren zu lassen in dem Werte abgelegt werden können, Eine "Script Panel" zu erzeugen oder eine eigene `#targetengine` zu erzeugen in der solange das Programm aktiv ist Daten gespeichert werden. Die letzten beiden sind jedoch fortgeschrittene Lösungen die ebenfalls viele Stolpersteine beherbergen können.  <a href="#" class="show_hide" rel="#slidingDiv5">[?]</a><div id="slidingDiv5"> Ein Script Panel ist eine Erweiterung der Grafischen Oberfläche die es erlaubt während das Skript läuft weiterhin mit dem Programm zu interagieren</div>   
 
-####Das Beispiel targetengine 
+###<span id="overlay"><a href="#05" title="Next" >&darr;</a></span><a id="04"></a>2.1 Das Beispiel targetengine <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span> 
 Skript 1:
 {% highlight js %}
 	#targetengine "session01"
@@ -129,15 +198,15 @@ Dies bedeutet dass das Programm (nicht das Skript) sich den Wert für die Variab
   
 Die Recherche-Arbeiten sollten bereits vor dem ersten Entwurf erledigt sein.
 
-- Existieren bereits Automationen in dem Sektor und wenn ja lassen sich diese abwandeln?  
+- <span id="overlay"><a href="#45" title="Next" >&darr;</a>Existieren bereits Automationen in dem Sektor und wenn ja lassen sich diese abwandeln?</span><a id="45"></a><span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>  
 
 Wie bereits oben erwähnt sind viele Probleme bereits einmal aufgetreten am Ende dieser Arbeit ist eine Liste zu finden wo für welchen Zweck nach Informationen gesucht werden kann. Wenn das Problem nicht all zu speziell ist kann es gut sein, dass es bereits ein Skript gibt das entweder genau diese Funktion enthält und wenn nicht auf die eigenen Bedürfnisse angepasst werden kann oder was meist der Fall es mehrere Skripte gibt die Teilprozesse der eigenen Idee beinhalten und als Referenz benutzt werden können. In den seltensten Fällen entsteht ein Skript von Scratch*(aus einem blanken Textdokument). 
   
-- Bietet die API direkten Zugriff auf die benötigten Funktionen oder bedarf es eines Workaround?  
+- <span id="overlay"><a href="#07" title="Next" >&darr;</a>Bietet die API direkten Zugriff auf die benötigten Funktionen oder bedarf es eines Workaround?</span><a id="46"></a><span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>  
 
-####Das Beispiel try char 
+###<span id="overlay"><a href="#07" title="Next" >&darr;</a></span><a id="05"></a>2.2 Das Beispiel try char <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span> 
 Um dies zu erläutern möchte ich mich eines Beispiels bedienen.  
-InDesign kann nicht erfragen ob ein Zeichen in einer Schriftart enthalten ist. Es gibt kein Feld das so etwas `wie Font has Character` beinhaltet. Um dieses Abfrage zu simulieren hat Peter Kahrel ([MARGINALSPALTE] Peter Kahrel ist einer der präsentesten InDesign Skripter und Autor von "InDesign mit JavaScript automatisieren" im O'Reilly Verlag) die Funktion try_char geschrieben die hier in einer etwas abgewandelten Form folgt.   
+InDesign kann nicht erfragen ob ein Zeichen in einer Schriftart enthalten ist. Es gibt kein Feld das so etwas `wie Font has Character` beinhaltet. Um dieses Abfrage zu simulieren hat Peter Kahreldie Funktion try_char geschrieben die hier in einer etwas abgewandelten Form folgt.   <a href="#" class="show_hide" rel="#slidingDiv6">[?]</a><div id="slidingDiv6"> Peter Kahrel ist einer der präsentesten InDesign Skripter und Autor von "InDesign mit JavaScript automatisieren" erschienen im O'Reilly Verlag</div>    
 <br /> <a href="images/algorithmus_trychar.png"><img src="images/algorithmus_trychar.png" width="100%" alt="" /></a>
 Um die folgende Funktion `try_char()` sinnvoll ausführen zu können benötigen sie ein InDesign Dokument mit einer Textbox auf der ersten Seite, in der Text in einer Schriftart enthalten ist die die Zeichen des Textes nicht enthält.  
 
@@ -195,7 +264,7 @@ Solche Lösungen setzen nicht nur ein kreativen Umgang mit Code voraus sondern a
 Die obig genannten Hindernisse schrecken ab. Es klingt alles sehr komplex. Es ist jedoch alles sehr allgemein gehalten und manche Fragen stelle sich auch erst gar nicht. Bei Aufgaben die ein Normal Nutzer niemals manuell machen würde muss sogar ein Skript geschrieben werden wenn sie erledigt werden sollen.  
 Auch wenn der Prozess des Skript-Schreibens eine Kreative Arbeit ist, ist das Ziel des Skriptes nicht der Kreative Output sondern die Optimierung der eigenen Arbeitsabläufe. Das Skript oder Programm kann niemals die Idee liefern. Es unterstützt den Prozess indem es sich wiederholende  Aufgaben erledigt die entweder niemals gemacht worden wären, oder aber vom eigentlichen Kreativem Prozess ablenken.   
 <br />
-##Teil XX Das Szenario
+##<span id="overlay"><a href="#08" title="Next" >&darr;</a></span><a id="07"></a>3 Szenarien <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
 Um besser zu verstehen was das Skript leisten kann soll hier ein Fall Beispiel aufgemacht werden vor dem jeder Layouter einmal stehen könnte. Stellen sie sich vor ihre Aufgabe ist folgende:  
 <br>
 Erzeugen Sie eine quadratische Bildmatrix in InDesign aus einer definierten Anzahl an quadratischen Bildern mit einer festen Grösse.
@@ -209,16 +278,16 @@ Erzeugen Sie eine Bildmatrix in InDesign aus einer noch nicht definierten Anzahl
 <br /> <a href="images/matrix_algorithmus_02.png"><img src="images/matrix_algorithmus_02.png" width="100%" alt="" /></a>  
 Um dieser Anforderung gerecht zu werden müssen wir in der automatisierten Variante eine Kondition einführen. Wenn die gerundete Wurzel eine Fließkommazahl ist, ist die Seitenhöhe die Seitenbreite plus eine Bildbreit.  
 <br />
-##Teil 3 Der Einsatz
+###<span id="overlay"><a href="#33" title="Next" >&darr;</a></span><a id="08"></a>3.1 Der Einsatz - das Beispiel image matrix <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
 Die Fragen die sich jetzt stellen sind folgende: "Wie kommt dies zum Einsatz?", "Wie kann ich dies nutzen?".
-Es folgt nun das InDesign Skript image_matrix.jsx mit etwas mehr als 40 Zeilen Code. Dieses Skript beinhaltet eine Benutzer Interaktion, Dateihandhabung, das Math Objekt ([MARGINALSPLATE] Das Math Objekt ist ein ein bereits bestehender Teil von JavaScript. Es erledigt solche Aufgaben wie Rundung von Werten oder das Berechnen einer Quadratwurzel), Konditionen, eine Schleife, Funktionen, Variablen und es hat einen generativen Charakter. Das Skript erledigt folgende Schritte.  
+Es folgt nun das InDesign Skript image_matrix.jsx mit etwas mehr als 40 Zeilen Code. Dieses Skript beinhaltet eine Benutzer Interaktion, Dateihandhabung, das Math Objekt, Konditionen, eine Schleife, Funktionen, Variablen und es hat einen generativen Charakter. Das Skript erledigt folgende Schritte. <a href="#" class="show_hide" rel="#slidingDiv7">[?]</a><div id="slidingDiv7"> Das Math Objekt ist ein ein bereits bestehender Teil von JavaScript. Es erledigt solche Aufgaben wie Rundung von Werten oder das Berechnen einer Quadratwurzel</div>  
 
 - Frage den Benutzer nach einem Ordner mit jpg Dateien.  
 - Erzeuge ein Quadratisches Dokument dessen Grösse auf der Quadratwurzel der Menge der Bilder basiert und alle Bilder fast.  
 - Platziere alle Bilder.  
 
   
-Kopieren sie den nachstehenden Code und bereiten sie einen Ordner mit einigen Jpg-Bildern vor. Das Skript das unten beschrieben wird verarbeitet NUR .jpg Dateien, Dateien die .jpeg oder .JPG heissen werden ignoriert. Es sollten um die 15 bis 30 sein damit die Ausführung des Skriptes nicht zuviel Zeit in Anspruch nimmt. Es kann jedoch auch 100, 1000 oder mehr Bildern verarbeiten. Die genau Menge ist irrelevant. Lesen sie nochmal den Abschnitt [NUMMER] Hello World  und führen sie das Skript aus. Wenn der Ordnerauswahl Dialog sich öffnet wähle sie den Ordner mit den Bildern.
+Kopieren sie den nachstehenden Code und bereiten sie einen Ordner mit einigen Jpg-Bildern vor. Das Skript das unten beschrieben wird verarbeitet NUR .jpg Dateien, Dateien die .jpeg oder .JPG heissen werden ignoriert. Es sollten um die 15 bis 30 sein damit die Ausführung des Skriptes nicht zuviel Zeit in Anspruch nimmt. Es kann jedoch auch 100, 1000 oder mehr Bildern verarbeiten. Die genau Menge ist irrelevant. Lesen sie nochmal den Abschnitt <a href="#21">7.08 Was ist Hello World?</a>  und führen sie das Skript aus. Wenn der Ordnerauswahl Dialog sich öffnet wähle sie den Ordner mit den Bildern.
 Das gesamte Skript:  
 
 {% highlight js %}
@@ -283,14 +352,14 @@ Das gesamte Skript:
 	} // END OF SCRIPT
 {% endhighlight %}
 <br>
-####Ergebnisse image_matrix.jsx
+####<span id="overlay"><a href="#09" title="Next" >&darr;</a></span><a id="33"></a>3.1.1 Ergebnisse - image matrix <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
 Alle 3 nachfolgenden Bilder sind mit ein und dem selbem Skript erzeugt.  
 <br /> <a href="images/image_matrix_1.jpg"><img src="images/image_matrix_1.jpg" width="100%" style="max-width:500px;" alt="" /></a><br />
 <br /> <a href="images/image_matrix_2.jpg"><img src="images/image_matrix_2.jpg" width="100%" style="max-width:500px;" alt="" /></a><br />
 <br /> <a href="images/image_matrix_3.jpg"><img src="images/image_matrix_3.jpg" width="100%" style="max-width:500px;" alt="" /></a><br />
 
 
-###image matrix Schritt für Schritt.  
+###<span id="overlay"><a href="#10" title="Next" >&darr;</a></span><a id="09"></a>3.2 image matrix - Schritt für Schritt. <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>  
 Ein Skript sollte immer in geschwungenen Klammern eingefasst sein. Dies ist nicht zwingend jedoch nützlich falls das Skript von einem anderem Skript evaluiert werden muss. Innerhalb dieser Klammern folgt der gesamte Quelltext.  
 
 	{}
@@ -345,7 +414,7 @@ Als nächstes begeben wir uns in die Funktion `loadFiles` und betrachten die Dat
 			};
 {% endhighlight %}
 
-Bisher waren alle Befehle JavaScript Befehle. Der Befehl `Folder.selectDialog ("Choose the Folder")` jedoch ist ExtendScript. das Objekt `Folder` hat eine eigene Funktion `selectDialog(parameter)`. Wir müssen diese Funktion nicht betrachten. Wir müssen nur wissen, dass sie ein Interface öffnet und dem Benutzer die Möglichkeit gibt einen beliebigen Ordner auszuwählen. Der Parameter ist der Text der auf dem Auswahldialog oben zu sehen ist. Der gewählte Ordner wird dann in der neuen Variable `theFolder` für eine spätere Referenzierung gespeichert. Dann folgt das Konstrukt der Konditionalen Abfrage.
+Bisher waren alle Befehle JavaScript Befehle. Der Befehl `Folder.selectDialog ("Choose the Folder")` jedoch ist <a href="#31">ExtendScript</a>. das Objekt `Folder` hat eine eigene Funktion `selectDialog(parameter)`. Wir müssen diese Funktion nicht betrachten. Wir müssen nur wissen, dass sie ein Interface öffnet und dem Benutzer die Möglichkeit gibt einen beliebigen Ordner auszuwählen. Der Parameter ist der Text der auf dem Auswahldialog oben zu sehen ist. Der gewählte Ordner wird dann in der neuen Variable `theFolder` für eine spätere Referenzierung gespeichert. Dann folgt das Konstrukt der Konditionalen Abfrage.
 
 {% highlight js %}
 	if( Statement ){ Do Something }
@@ -370,7 +439,7 @@ Nun folgt ein weitere Sicherheitscheck ob wir Bilder gefunden haben und die Best
 	};
 {% endhighlight %}
 
-Wie wir oben sehen benutzen wir nochmals die Konditionale Entscheidung `if()`. jedoch mit einer Erweiterung dem `else`. Dies bedeutet das auf jeden Fall eine er beiden Blöcke ausgeführt wird. Um es im Pseudocode darzustellen:  
+Wie wir oben sehen benutzen wir nochmals die Konditionale Entscheidung `if()`. jedoch mit einer Erweiterung dem `else`. Dies bedeutet das auf jeden Fall eine er beiden Blöcke ausgeführt wird. Um es im <a href="#18">Pseudocode</a> darzustellen:  
 
 {% highlight js %}
 Wenn die Aussage zutrifft mach dies ansonsten mach dass
@@ -567,7 +636,7 @@ Wir fangen bei 0 an zu Zählen im Array also ist `allImages[4]` das fünfte Bild
 und so weiter und so weiter.  
 Wir sind am Ende. Probieren sie den Code mit unterschiedliche vielen Jpg-Dateien aus. Verändern sie ihn bis er nicht mehr funktioniert und lesen sie die Fehlermeldungen. Dies ist ein weiterverbreitetes Problem. Computer und Programme würden viel an ihrer Mystik verlieren wenn einerseits die Nutzer die Meldungen lesen würde anstatt nur auf ok zu drücken und andererseits die Meldungen verständlich geschrieben wären.  
 <br /> <a href="images/error.png"><img src="images/error.png" width="100%" alt="" /></a><br />  
-##Das Beispiel great power
+###<span id="overlay"><a href="#12" title="Next" >&darr;</a></span><a id="10"></a>3.3 Das Beispiel great power <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
 Ein weiters Skript, _greatPower.jsx_, welches aus nur einer Befehlszeile besteht und dennoch mächtig und auch ein wenig gefährlich ist.  
 Wenn bei der Entwicklung eines anderen Skripts immer wieder neue Dokumente erzeugt werden kann es schnell passieren, dass 10, 20, 50 Dokumente geöffnet sind. Die Oberfläche von InDesign bietet nicht die Möglichkeit alle geöffneten Dokumente zu schliessen ohne zu speichern. Das bedeutet das bei 50 Dokumenten 50 mal beim Schliessen entweder gespeichert oder das Dokument verworfen werden muss. Mit greatPower.jsx ist dies möglich. Um dies auszuprobieren erzeugen wir ein paar Dokumente mit dem Skript createDocuments.jsx. Dies is stark verkürzt in seiner Schreibweise und verwendet eine andere Art von Schleife. die `while` Schleife.   
 <br /> <a href="images/algocreatedoc.png"><img src="images/algocreatedoc.png" width="100%" alt="" /></a><br />  
@@ -600,12 +669,8 @@ Um diese 23 Dokumente wieder zu schliessen benutzen sie "greatPower.jsx"
  	app.documents.everyItem().close(SaveOptions.NO);
 {% endhighlight %} 
 Wenn nun dem ein oder anderem der Gedanke kommt: "Das ist doch alles viel zu kompliziert!" Warum dies mehr Unwille den Unvermögen ist werde ich versuchen im nächsten Teil zu untersuchen.   
-  
-##Die Angst
 
-[NOCH NICHT GESCHRIEBEN]  
-
-##Ein Werkzeug  
+##<span id="overlay"><a href="#11" title="Next" >&darr;</a></span><a id="12"></a>4 Ein Werkzeug - AEMap<span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span> 
 Wo bleibt die extra Zeit für Gestaltung die versprochen wurde? Wie bereits erwähnt braucht das lernen einer Sprache etwas Zeit. Die Grammatik und Rechtschreibung können aus einem Buch gelernt werden, die Nuancen und Umgangssprache kann jedoch nur durch das Sprechen geschult werden.  
 Zum Glück sind wir hier nicht alleine. Es gibt bereits viele Werkzeuge die frei zur Verfügung stehen und zur Optimierung unserer Arbeitsprozesse genutzt werden können. In diesem Sinne habe ich das Skript AEMap.jsx für Adobe After Effects geschrieben.  
 <br /> <a href="images/aemapuiv02a.png"><img src="images/aemapuiv02a.png" width="100%" alt="" /></a><br />  
@@ -618,23 +683,26 @@ Selbst wenn eine vernünftige Vektor-Form einer Karte existiert und griffbereit 
 <br /> <a href="images/aemapfullcomp.png"><img src="images/aemapfullcomp.png" width="100%" alt="" /></a><br />  
 Der Nutzer kann zwischen verschiedenen Einstellungen wählen wie zum Beispiel die Karte mit Kontur zu zeichnen oder ohne oder ob alle Polygone auf eine Ebene gezeichnet werden sollen oder ob in die oben genannten Kompositionen gesplittet werden soll. Ebenfalls können 3D Einstellungen definiert werden und ähnliche mehr. Die Daten bestehen auf einem GeoJson Datensatz der zum freien Gebrauch ins Netz gestellt wurde. Der gesamten Funktionsumfang ist auf [dieser Webseite](http://fabiantheblind.github.com/AEMap/) dokumentiert. Dieses Skript spart nicht nur mir Zeit sondern auch anderen. Die Resonanz in der After Effects Community" ist gross. Daher hat das Skript seit seiner Veröffentlichung auf [AEScripts.com](http://aescripts.com/aemap/) am 10 April 2012 bereits über 400 Downloads gehabt (heute 24 April 2012). Das Tutorial und das Demo wurden bereits über 4000 mal auf Youtube geladen. Aber genug der Selbstbeweihräucherung. Der Vorteil an solchen und ähnlichen Werkzeugen die zum Beispiel auf AEScripts.com bereit gestellt werden ist, dass diese meist aus dem Zwang heraus entstanden sind einen Arbeitsablauf zu automatisieren um Zeit zu sparen. 
 
+##<span id="overlay"><a href="#06" title="Next" >&darr;</a></span><a id="11"></a>5 Die Angst <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
+Während der Auseinandersetzung
 
-##Fazit 
+##<span id="overlay"><a href="#13" title="Next" >&darr;</a></span><a id="06"></a>6 Fazit <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
 [NOCH NICHT GESCHRIEBEN]  
 
 
 ****************************
 
-##Die kleine Terminologie
+##<span id="overlay"><a href="#14" title="Next" >&darr;</a></span><a id="13"></a>7 Die kleine Terminologie <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
+Dieser Abschnitt ist zur Erläuterung gedacht und um den Lesefluss nicht durch sekundär Informationen und Erklärungen von FAchbegriffen zu unterbrechen. 
 
-###Was ist Code?
-Als Code bezeichnen wir in der Regeln Informationen die verschlüsselt (encoding) werden um dann an einer weiteren Stelle wieder entschlüsselt zu werden (decoding). Zum Beispiel stellt Morse-Code Buchstaben dar indem ein einziges unmoduliertes Signal, zum Beispiel ein Ton, in kurze und lange Sequenzen unterteilt wird. Der Rezipient kann dann, wenn er des Systems mächtig ist, diese Informationen entschlüsseln und zu der originalen Nachricht wieder zusammensetzen. Ein weiters Bespiel ist der Abakus. Dieser erlaubt es wenn der Benutzer des Systems mächtig ist Rechenoperationen auszuführen. Und als drittes die Knotenschrift der Inkas die wie der Name bereits besagt aus einem System von Knoten auf einem Satz Schnüren bestand. Heutzutage findet das Wort "Code" im Computerbereich oft Verwendung als Kurzform des Ausdrucks "Source-Code" also Quelltext eines Programms.  
+###<span id="overlay"><a href="#15" title="Next" >&darr;</a></span><a id="14"></a>Was ist Code? <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
+Als Code bezeichnen wir in der Regeln Informationen die verschlüsselt (encoding) werden um dann an einer weiteren Stelle wieder entschlüsselt zu werden (decoding). Zum Beispiel stellt Morse-Code Buchstaben dar indem ein einziges unmoduliertes Signal, zum Beispiel ein Ton, in kurze und lange Sequenzen unterteilt wird. Der Rezipient kann dann, wenn er des Systems mächtig ist, diese Informationen entschlüsseln und zu der originalen Nachricht wieder zusammensetzen. Ein weiters Bespiel ist der Abakus. Dieser erlaubt es wenn der Benutzer des Systems mächtig ist Rechenoperationen auszuführen. Und als drittes die Knotenschrift der Inkas die wie der Name bereits besagt aus einem System von Knoten auf einem Satz Schnüren bestand. Heutzutage findet das Wort "Code" im Computerbereich oft Verwendung als Kurzform des Ausdrucks "Source-Code" also Quelltext eines <a href="#15">Programms</a>.  
   
-###Was ist ein Programm?
+###<span id="overlay"><a href="#16" title="Next" >&darr;</a></span><a id="15"></a>Was ist ein Programm? <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
 Das Bild das viele im Kopf haben wenn sie das Wort Programm hören ist stark durch Film beeinflusst. Wir sehen junge, meist übergewichtig und verpickelte Menschen vor uns die in abgedunkelten Räumen zwischen Monitoren, Kabeln und Pizzapackungen auf ewige grün leuchtende Zahlenkolonnen blicken die für uns keinerlei Sinn ergeben. Diese oder ähnliche Bilder sind inspiriert aus einer Zeit in der Computer nur einfarbige Pixel hatten und Grafische Benutzeroberflächen wie Windows noch aus der Kommandozeile gestartet wurde. Als Hommage an diese Vorstellung hat "Duiker101" das Programm [HackerTyper](http://hackertyper.net/) entworfen welches mit bereits vorgegebenem Text allein über Tastendruck den Bildschirm mit kompliziertem Quelltext füllt. Dabei ist es irrelevant welche Tasten der Benutzer drückt.
-Verwerfen sie diese Vorstellung (Es ist nicht so das es dies nicht gibt dennoch entspricht es nicht der Regel). Ein Programm ist lt. [Duden](http://www.duden.de/rechtschreibung/Programm): "die nach einem Plan genau festgelegten Einzelheiten eines Vorhabens". Unter dieser Betrachtungsweise ist jede Bauanleitung zu Möbelstücken, eine Beschreibung des Weges von hier zum Bahnhof oder das Rezept für Sahnetörtchen ein Programm. Bloß das in letzterem Fall nicht ein Computer die Anweisungen ausführt sondern ein Mensch. Die Sprache in der dieses Programm geschrieben ist, ist Deutsch. Der grosse Unterschied zu einem Computersprache/-programm liegt hier ein der Möglichkeit der Interpretation. Die Ausführende "Maschine" (in diesem Fall der Mensch) kann solche Angaben wie "eine Priese Salz" oder "eine Messerspitze Meerrettich" verarbeiten. Ein Computer ist hierzu (noch) nicht fähig. Er bräuchte eine eindeutigere Angabe wie 50 Gramm. Das Programm sollte an dieser Stelle noch von dem Begriff des Algorithmus abgetrennt werden.  
+Verwerfen sie diese Vorstellung (Es ist nicht so das es dies nicht gibt dennoch entspricht es nicht der Regel). Ein Programm ist lt. [Duden](http://www.duden.de/rechtschreibung/Programm): "die nach einem Plan genau festgelegten Einzelheiten eines Vorhabens". Unter dieser Betrachtungsweise ist jede Bauanleitung zu Möbelstücken, eine Beschreibung des Weges von hier zum Bahnhof oder das Rezept für Sahnetörtchen ein Programm. Bloß das in letzterem Fall nicht ein Computer die Anweisungen ausführt sondern ein Mensch. Die Sprache in der dieses Programm geschrieben ist, ist Deutsch. Der grosse Unterschied zu einem Computersprache/-programm liegt hier ein der Möglichkeit der Interpretation. Die Ausführende "Maschine" (in diesem Fall der Mensch) kann solche Angaben wie "eine Priese Salz" oder "eine Messerspitze Meerrettich" verarbeiten. Ein Computer ist hierzu (noch) nicht fähig. Er bräuchte eine eindeutigere Angabe wie 50 Gramm. Das Programm sollte an dieser Stelle noch von dem Begriff des <a href="#16">Algorithmus</a> abgetrennt werden.  
 
-###Was ist ein Algorithmus?
+###<span id="overlay"><a href="#17" title="Next" >&darr;</a></span><a id="16"></a>Was ist ein Algorithmus? <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
 Auch wenn sich diese beiden Begriffe in ihrer Bedeutung teilweise überschneiden sollten sie auf folgende weise unterschieden werden. Der Algorithmus für Milch holen wäre in Pseudocode:  
 
 	wenn (Aussage (kein Milch ist im Kühlschrank) wahr ist): hole neue Milch! wenn nicht: tue nichts!  
@@ -651,7 +719,7 @@ Das Programm für Milch holen würde voraussetzen das alle Schritte und Notwendi
 
 Und so weiter und so ähnlich. Diese Funktionsanweisungen könnten noch detaillierter ausgearbeitet werden. Hierbei sei zu beachten das solche Objekte wie Kühlschrank und Person bereits implementiert also bekannt sind. Das Programm im Vergleich zum Algorithmus muss alle eingesetzten Mittel kennen und oder selber beschreiben.  
   
-###Was ist die Syntax?
+###<span id="overlay"><a href="#18" title="Next" >&darr;</a></span><a id="17"></a>Was ist die Syntax? <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
 Die Syntax ist die Form in der die Programmiersprache ausgestaltet ist. Die Syntax einer Programmiersprache besteht aus reservierten Worten wie zum Beispiel in Java `new, while, null , true,` Operatoren wie  `+,-,*,.` und Kontrollstrukturen wie `if(){}else{}` oder "`for(int i = 0; i < x;i++)`  
 Lesen sie diese "Sätze" kurz. Wie würden sie es sprechen?  
   
@@ -714,17 +782,17 @@ Das Brainfuck Hello World ([aus wiki](http://en.wikipedia.org/wiki/Brainfuck)):
 
 Wie bereits oben in der Beschreibung des Milchalgorithmus zu sehen ist verwendet selbst Pseudocode ein nicht genau definierte Syntax lehnt sich jedoch mit Konstruktionen wie "ist gleich" an die Mathematik und Programmierung an. Andere Sprachen mit denen wir uns noch später Auseinandersetzen wie C++, Processing oder JavaScript sind zwischen diesen Extrema angesiedelt und vereinen in einer für das geübte Auge lesbaren und dennoch kompakte Art die Befehlsaufrufe.
   
-###Was ist Pseudocode?
-Im Verlaufe dieser Arbeit werde ich immer wieder auf die Darstellung von Algorithmen in "Pseudocode" zurückgreifen. Pseudocode besteht nicht aus einer bereits definierten Syntax und kann auch nicht von einem Compiler übersetzt werden sondern dient nur zur Darstellung eines logischen Ablaufs. Wie bereits in dem Milchalgorithmus zu sehen war versucht Pseudocode einen Programmablauf in menschenlesbarer Form darzustellen.  
+###<span id="overlay"><a href="#19" title="Next" >&darr;</a></span><a id="18"></a>Was ist Pseudocode? <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
+Im Verlaufe dieser Arbeit werde ich immer wieder auf die Darstellung von Algorithmen in "Pseudocode" zurückgreifen. Pseudocode besteht nicht aus einer bereits definierten Syntax und kann auch nicht von einem <a href="#19">Compiler</a> übersetzt werden sondern dient nur zur Darstellung eines logischen Ablaufs. Wie bereits in dem Milchalgorithmus zu sehen war versucht Pseudocode einen Programmablauf in menschenlesbarer Form darzustellen.  
   
-###Was ist ein Compiler?
+###<span id="overlay"><a href="#20" title="Next" >&darr;</a></span><a id="19"></a>Was ist ein Compiler? <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
 Der Vollständigkeit halber soll dieser hier erklärt werden auch wenn er uns kaum mehr im weiteren Verlauf der Arbeit begegnen wird. Der Compiler ist ebenfalls ein Programm das aus menschenlesbaren Hochsprachen wie zum Beispiel C++ maschinenlesbaren Quelltext erzeugt (Assemblercode). Diesen Prozess bezeichnet man auch als Kompilierung.  
   
-###Was ist eine IDE (Integrated Development Envoirement)?
-Um Quelltext zu schreiben bedarf es nicht viel. Ein einfacher Texteditor reicht aus um komplette Programme zu schreiben. Im Laufe der Zeit wurde jedoch viel Software programmiert um das schreiben von Quelltext zu erleichtern. Dies geht los bei einfachem Syntax-Highlighting bis hinzu kompletten Entwicklungsumgebungen die noch vor dem Kompilieren beziehungsweise während des Schreibens die Syntax auf ihre Validität prüfen und gegebenenfalls Vorschläge machen was gemeint sein könnte oder bei nicht verwendeten Programmteilen warnen das diese derzeit unnütz sind. In unserem Fall-Beispiel werden wir noch mit diesen Programmen zu tuen kriegen. Es sei jedoch bereits gesagt das wir die einfachste Möglichkeit nutzen werden die sich uns bietet und die auf beiden Plattformen (Windows und Mac OS X) zur Verfügung steht. Das ExtendScript Toolkit (Mehr hierzu ist im nächsten Abschnitt zu finden).  
+###<span id="overlay"><a href="#21" title="Next" >&darr;</a></span><a id="20"></a>Was ist eine IDE (Integrated Development Envoirement)? <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
+Um Quelltext zu schreiben bedarf es nicht viel. Ein einfacher Texteditor reicht aus um komplette Programme zu schreiben. Im Laufe der Zeit wurde jedoch viel Software programmiert um das schreiben von Quelltext zu erleichtern. Dies geht los bei einfachem Syntax-Highlighting bis hinzu kompletten Entwicklungsumgebungen die noch vor dem Kompilieren beziehungsweise während des Schreibens die Syntax auf ihre Validität prüfen und gegebenenfalls Vorschläge machen was gemeint sein könnte oder bei nicht verwendeten Programmteilen warnen das diese derzeit unnütz sind. In unserem Fall-Beispiel werden wir noch mit diesen Programmen zu tuen kriegen. Es sei jedoch bereits gesagt das wir die einfachste Möglichkeit nutzen werden die sich uns bietet und die auf beiden Plattformen (Windows und Mac OS X) zur Verfügung steht. Das ExtendScript Toolkit.  
 
-###Was ist Hello World? 
-Das "Hello World" Programm hat sich als Standard Beispiel etabliert um die Syntax einer Sprache zu erklären. Exerzieren wir das einmal kurz durch. Um für Adobe InDesign, After Effects, Illustrator, Photoshop, Photoshop Elements, Photoshop Elements Organizer, Bridge, Audition, Media Encoder und Premiere Pro Skripte zu schreiben liefert Adobe eine eigene IDE, eine Integrierte Entwicklung Umgebung, mit.  
+###<span id="overlay"><a href="#22" title="Next" >&darr;</a></span><a id="21"></a>Was ist Hello World? <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span> 
+Das "Hello World" Programm hat sich als Standard Beispiel etabliert um die Syntax einer Sprache zu erklären. Exerzieren wir das einmal kurz durch. Um für Adobe InDesign, After Effects, Illustrator, Photoshop, Photoshop Elements, Photoshop Elements Organizer, Bridge, Audition, Media Encoder und Premiere Pro Skripte zu schreiben liefert Adobe eine eigene <a href="#20">IDE, eine Integrierte Entwicklung Umgebung</a>, mit.  
 <br /> <a href="images/estk.png"> <img src="images/estk.png" width="100%" alt="" /></a>
 Das ExtendScript Toolkit. Dies ist nicht der schönste Editor. Er hat jedoch einige Vorteile die die Entwicklung von Skripten sehr einfach macht. Die wichtigste Eigenschaft ist dabei folgende. Es kann ein Skript ohne es zu speichern ausführen. Das Toolkit wird bei der Installation von Adobe Produkten direkt mit geliefert. Suchen sie es in ihren Dienstprogrammen dort sollten sie fündig werden. Wenn nicht gehen sie zu dieser Webseite [http://www.adobe.com/devnet/scripting.html](http://www.adobe.com/devnet/scripting.html), laden und installieren sie es.  
 Wenn es dann installiert ist geben sie folgende Text ein:  
@@ -750,12 +818,12 @@ Probieren sie weiter Skripte und Kalkulationen aus. Zum Beispiel
 
 
   
-###Was ist Syntax-Highlighting?
+###<span id="overlay"><a href="#23" title="Next" >&darr;</a></span><a id="22"></a>Was ist Syntax-Highlighting? <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
 <br /> <a href="images/syntax_highlite.png"><img src="images/syntax_highlite.png" width="100%" alt="" /></a>
 
-Syntax-Highlighting ist eine Hilfestellung für Programmierer um ihren Quelltext übersichtlicher zu gestalten. Hierbei werden bestimmte Teile wie Operatoren,Kommentare, Funktionsdeklarationen oder Reservierte Worte farblich hervorgehoben beziehungsweise zurückgenommen um das Lesen zu erleichtern.  
+Syntax-Highlighting ist eine Hilfestellung für Programmierer um ihren Quelltext übersichtlicher zu gestalten. Hierbei werden bestimmte Teile wie Operatoren, Kommentare, Funktionsdeklarationen oder Reservierte Worte farblich hervorgehoben beziehungsweise zurückgenommen um das Lesen zu erleichtern.  
   
-###Was ist eine API (Application Programming Interface)?
+###<span id="overlay"><a href="#24" title="Next" >&darr;</a></span><a id="23"></a>Was ist eine API (Application Programming Interface)? <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
 Dies ist die Schnittstelle die ein Programm bietet um auf sein Funktionen zugreifen zu können. Dies wird beim Schreiben von Programmen wie InDesign von den Programmierern definiert. Diese Schnittstelle ist wie ein Baum mit Querverweisen aufgebaut. Um in InDesign einem bestehendem Dokument auf der ersten Seite eine Textbox hinzuzufügen muss durch diesen Baum manövriert werden.  
 
 	app.activeDocument.pages.item(0).textFrames.add();
@@ -763,7 +831,7 @@ Dies ist die Schnittstelle die ein Programm bietet um auf sein Funktionen zugrei
 Diese Zeile erzeugt in der linken oberen Ecken eine Textkiste.  
 All diese Befehle und Eigenschaften müssen nicht auswendig gelernt werden sondern können nachgeschlagen werden. Im ExtendScript Toolkit kann unter Hilfe / ObjektModell Viewer ein Hilfsprogramm aufgerufen werden das alle Befehle mit einer kurzen Erklärung enthält. Oder es kann auf der Seite von jongware eine .chm Datei heruntergeladen werden die die gleichen Informationen enthält und mit einem .chm Viewer durchsucht werden kann. [http://www.jongware.com/idjshelp.html](http://www.jongware.com/idjshelp.html)  
   
-###Was ist Objektorientierung?
+###<span id="overlay"><a href="#25" title="Next" >&darr;</a></span><a id="24"></a>Was ist Objektorientierung? <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
 Als Objektorientierung (ach als OO abgekürzt) versteht man ein bestimmte Art wie Programme aufgebaut sind. Ein Objekt ist ein gekapselter Teil des Programmcodes der Schnittstellen und Methoden bietet und seine Eigenschaften an weiter Objekte vererben kann. Um dies besser zu verstehen möchte ein hervorragendes Beispiel aus "Processing: A Programming Handbook for Visual Designers and Artists" von Casey Reas and Ben Fry bemühen.  
 ####Klammer auf!
 	{  
@@ -794,21 +862,21 @@ In dem Format "[Einfacher Absatz]" wird eine Schriftart und eine Schriftgrösse 
 
 	} // Klammer zu
   
-###Was sind Funktionen/Methoden?
+###<span id="overlay"><a href="#26" title="Next" >&darr;</a></span><a id="25"></a>Was sind Funktionen/Methoden? <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
 Eine Funktion oder eine Methode sind gekapselte Programmteile and die Parameter übergeben werden können und die an den gegebenen Parametern eine Kalkulation durchführen. Sie können dann Werte zurückgeben. Dies ist nützlich wenn bestimmte Tätigkeiten an unterschiedlichen Positionen eins Programms oder Skripts mehrmals aufgerufen werden müssen.     
-###Was ist ein Bug?
+###<span id="overlay"><a href="#27" title="Next" >&darr;</a></span><a id="26"></a>Was ist ein Bug? <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
 Ein Bug ist ein Fehler der das Programm von seiner einwandfreien Ausführung abhält. Dies kann nur ein Rechenfehler sein oder ein Fehler der das gesamte Programm zum Absturz bringt.  
   
-###Was ist Debugging?
+###<span id="overlay"><a href="#28" title="Next" >&darr;</a></span><a id="27"></a>Was ist Debugging? <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
 Dies ist der Prozess des Finden und korrigieren von Fehlern.  
 
-###Was ist ein Workaround?  
+###<span id="overlay"><a href="#29" title="Next" >&darr;</a></span><a id="28"></a>Was ist ein Workaround? <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>  
 Ein Workaround ist eine kreative Lösung um ein Problem zu umgehen. Wenn zum Beispiel eine API ein bestimmte Funktion nicht anbietet muss ein Weg um dieses Problem drumherum gefunden werden. 
   
-###Welche Konventionen gibt es?
+###<span id="overlay"><a href="#30" title="Next" >&darr;</a></span><a id="29"></a>Welche Konventionen gibt es? <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
 Neben den Bestimmungen der Syntax gibt es verschiedene Konventionen die das lesen von Skripten einfacher machen sollen. Zum Beispiel ist es gang und gebe dass die Funktionsweise am Beginn eines Skripts in einem Kommentar erklärt wird. Oder die Verwendung der Variable i (für Iterator) als Zähler in Schleifen.
 
-###Herkunft von JavaScript
+###<span id="overlay"><a href="#31" title="Next" >&darr;</a></span><a id="30"></a>Herkunft von JavaScript <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
 JavaScript orientiert sich in seiner Syntax an C und C++. 
 Zur Veranschaulichung was dies bedeutet hier ein Programm das folgende Aufgaben erledigt.  
 
@@ -887,8 +955,7 @@ int main(void){
 
 <br /> <a href="images/terminal_c_cpp.png"><img src="images/terminal_c_cpp.png" width="100%" alt="" /></a>
 ####C++ (anObject.cpp)  
-Basierend auf C wurde Ende der Siebziger Anfang der Achtziger Jahre des letzten Jahrtausends die Sprache C++ von Bjarne Stroustrup in den AT&T Labs entwickelt (Quelle: Bjarne\_Stroustrup\_-\_The\_C++\_Programming\_Language\_3rd\_Ed [online](http://www.ib.cnea.gov.ar/~oop/biblio/Bjarne_Stroustrup_-_The_C++_Programming_Language_3rd_Ed.pdf)). Diese Sprache ist nach dem Konzept der Objektorientierung (OO) aufgebaut. OO hat den Vorteil des Versteckens beziehungsweise Kapseln von Daten. Es kommt die Klasse hinzu. Sie erlaubt ganze Programmteile auszulagern und nur einen Schnittstille für ihre Benutzung zu liefern. Für genauere Erklärungen lesen sie den Abschnitt [NUMMER ABSCHNITT]
-In diesem Beispiel ist bereits zu sehen, dass die Menge an Code die geschrieben werden muss geringer wird (im Vergleich zum Assembler Code). Wobei hier wie auch im C Beispiel bedacht werden muss, dass bereits vorhandene Programmteile mit weiteren hunderten oder tausenden Zeilen Code hinzugefügt werden.  
+Basierend auf C wurde Ende der Siebziger Anfang der Achtziger Jahre des letzten Jahrtausends die Sprache C++ von Bjarne Stroustrup in den AT&T Labs entwickelt (Quelle: Bjarne\_Stroustrup\_-\_The\_C++\_Programming\_Language\_3rd\_Ed [online](http://www.ib.cnea.gov.ar/~oop/biblio/Bjarne_Stroustrup_-_The_C++_Programming_Language_3rd_Ed.pdf)). Diese Sprache ist nach dem Konzept der Objektorientierung (OO) aufgebaut. In diesem Beispiel ist bereits zu sehen, dass die Menge an Code die geschrieben werden muss geringer wird (im Vergleich zum Assembler Code). Wobei hier wie auch im C Beispiel bedacht werden muss, dass bereits vorhandene Programmteile mit weiteren hunderten oder tausenden Zeilen Code hinzugefügt werden. <a href="#" class="show_hide" rel="#slidingDiv8">[?]</a><div id="slidingDiv8"> OO hat den Vorteil des Versteckens beziehungsweise Kapseln von Daten. Es kommt die Klasse hinzu. Sie erlaubt ganze Programmteile auszulagern und nur einen Schnittstille für ihre Benutzung zu liefern. Für genauere Erklärungen lesen sie den Abschnitt <a href="#24">7.11 Was ist Objektorientierung?</a></div>  
 
 {% highlight cpp %}
 #include <iostream>
@@ -990,10 +1057,10 @@ function compare (a,b){
 <br /> <a href="images/estk_noobjectjs.png"><img src="images/estk_noobjectjs.png" width="100%" alt="" /></a>
 
 
-###Was ist der Unterschied zwischen JavaScript und ExtendScript?
+###<span id="overlay"><a href="#32" title="Next" >&darr;</a></span><a id="31"></a>Was ist der Unterschied zwischen JavaScript und ExtendScript? <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
 JavaScript oder EcmaScript ist das was uns täglich in Webbrowsern solche Dinge bescherte wie Scrollen auf Knopfdruck oder Warnhinweise und ähnliches. ExtendScript ist ein Dialekt von JavaScript der von Adobe entwickelt wurde. Das bedeutet InDesign versteht JavaScript und ExtendScript aber ein Browser kann mit ExtendScript Befehlen nichts anfangen.  
 
-###Was sind Pointer  
+###<span id="overlay"><a href="#34" title="Next" >&darr;</a></span><a id="32"></a>Was sind Pointer <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>  
 Ein Pointer ist der Verwies auf die Adresse unter der eine Variable abgelegt. Dies verweist auf von der Variable okkupierten Speicher. Das kann dann so aussehen:
 {% highlight c %}
 double *dp, atof(char *);
@@ -1004,7 +1071,9 @@ double *dp, atof(char *);
 > aus The C programming Language By Brian W. Kernighan and Dennis M. Ritchie. Published by Prentice-Hall in 1988
 ([online]( http://net.pku.edu.cn/~course/cs101/2008/resource/The_C_Programming_Language.pdf))
 
-##JavaScript &amp; ExtendScript Ressourcen
-[NOCH NICHT GESCHRIEBEN]  
-##Quellenverzeichnis
-[NOCH NICHT GESCHRIEBEN]  
+<br>
+##<span id="overlay"><a href="#35" title="Next" >&darr;</a></span><a id="34">8 Refenrenzen</a> <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
+<br>
+##<span id="overlay"><a href="#36" title="Next" >&darr;</a></span><a id="35">9 Weblinks</a> <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
+<br>
+##<a id="#36">10 Quellen</a> <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
