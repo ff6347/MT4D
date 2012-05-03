@@ -2,77 +2,80 @@
 layout: default
 title: Mehr Zeit für Gestaltung
 ---
-#BA von Fabian Morón Zirfas  
-##Mehr Zeit für Gestaltung
-<div id="top"></div>
-<br>  
-#Inhalt
-##<a href="#01">1 Einleitung</a>
-<a href="#" class="show_hide" rel="#slidingDiv00">[?]</a><div id="slidingDiv00">
-###<a href="#02">&emsp;1.1 Bevor sie Einsteigen</a>
-</div>
+#Bachelor Arbeit von Fabian Morón Zirfas
+#Mehr Zeit für Gestaltung
+<!-- <br /> <a href="images/connectedNodes.jpg"><img src="images/connectedNodes.jpg" width="100%" alt="" /></a>
+ -->
 <br>
-##<a href="#03">2 Wann soll ich Scripten?</a>
-<a href="#" class="show_hide" rel="#slidingDiv01">[?]</a><div id="slidingDiv01">
-####<a href="#37">&emsp;2.0.1 Welche Operationen sollen ausgeführt werden?</a>
-####<a href="#38">&emsp;2.0.2 Wie komplex sind die Operationen?</a>
-####<a href="#39">&emsp;2.0.3 Wie ist das Zeitfenster und wann muss das Produkt fertig sein?</a>
-####<a href="#40">&emsp;2.0.4 Wie oft muss diese Tätigkeit ausgeführt werden?</a>
-####<a href="#41">&emsp;2.0.5 Lässt sich die Automation auch auf andere ähnliche Bereiche anwenden oder mit geringen Aufwand abstrahieren?</a>
-####<a href="#42">&emsp;2.0.6 Wie sehr ist sie von Umgebungsvariablen abhängig?</a>
-####<a href="#43">&emsp;2.0.7 Soll die Automation von dritten Benutzt werden?</a>
-####<a href="#44">&emsp;2.0.8 Ist der Prozess linear oder bedarf es einer Rückkopplung zum Benutzer?</a>
-###<a href="#04">&emsp;2.1 Das Beispiel targetengine</a>
-####<a href="#45">&emsp;2.1.1 Existieren bereits Automationen in dem Sektor und wenn ja lassen sich diese abwandeln?</a>
-####<a href="#46">2.1.2 Bietet die API direkten Zugriff auf die benötigten Funktionen oder braucht es eine Workaround?</a>
-###<a href="#05">&emsp;2.2 Das Beispiel try char</a>
-</div>
+#####Inhalt  
 <br>
-##<a href="#07">3 Szenarien</a>
-<a href="#" class="show_hide" rel="#slidingDiv02">[?]</a><div id="slidingDiv02">
-###<a href="#08">&emsp;3.1 Der Einsatz - das Beispiel image matrix</a>
-####<a href="#33">&emsp;&emsp;3.1.1 Ergebnisse - image matrix</a>
-###<a href="#09">&emsp;3.2 image matrix - Schritt für Schritt.</a>  
-###<a href="#10">&emsp;3.3 Das Beispiel great power</a>
-</div>
+<div id="index">
+
+<h2><a href="#01">1 Einleitung</a></h2>
+<h3><a href="#02">&emsp;1.1 Bevor sie Einsteigen</a></h3>
+<br>
+<div><h2><a href="#03">2 Wann soll ich Scripten?</a></h2>
+<ul>
+<li><a href="#37">&emsp;&emsp;2.0.1 Welche Operationen sollen ausgeführt werden?</a></li>
+<li><a href="#38">&emsp;&emsp;2.0.2 Wie komplex sind die Operationen?</a></li>
+<li><a href="#39">&emsp;&emsp;2.0.3 Wie ist das Zeitfenster und wann muss das Produkt fertig sein?</a></li>
+<li><a href="#40">&emsp;&emsp;2.0.4 Wie oft muss diese Tätigkeit ausgeführt werden?</a></li>
+<li><a href="#41">&emsp;&emsp;2.0.5 Lässt sich die Automation auch auf andere ähnliche Bereiche anwenden oder mit geringen Aufwand abstrahieren?</a> </li>
+<li><a href="#42">&emsp;&emsp;2.0.6 Wie sehr ist sie von Umgebungsvariablen abhängig?</a></li>
+<li><a href="#43">&emsp;&emsp;2.0.7 Soll die Automation von dritten Benutzt werden?</a></li>
+<li><a href="#44">&emsp;&emsp;2.0.8 Ist der Prozess linear oder bedarf es einer Rückkopplung zum Benutzer?</a></li>
+</ul>
+<h3><a href="#04">&emsp;2.1 Das Beispiel targetengine</a></h3>
+<ul><li><a href="#45">&emsp;&emsp;2.1.1 Existieren bereits Automationen in dem Sektor und wenn ja lassen sich diese abwandeln?</a></li>
+<li><a href="#46">&emsp;&emsp;2.1.2 Bietet die API direkten Zugriff auf die benötigten Funktionen oder braucht es eine Workaround?</a></li>
+</ul>
+<h3><a href="#05">&emsp;2.2 Das Beispiel try char</a></h3></div>
+<br>
+<h2><a href="#07">3 Szenarien</a></h2>
+<h3><a href="#08">&emsp;3.1 Der Einsatz - das Beispiel image matrix</a></h3>
+<h4><a href="#33">&emsp;&emsp;3.1.1 Ergebnisse - image matrix</a></h4>
+<h3><a href="#09">&emsp;3.2 image matrix - Schritt für Schritt.</a></h3>
+<h3><a href="#10">&emsp;3.3 Das Beispiel great power</a></h3>
 
 <br>
-##<a href="#12">4 Ein Werkzeug - AEMap</a>
+<h2><a href="#12">4 Ein Werkzeug - AEMap</a></h2>
 <br>
-##<a href="#11">5 Die Angst</a>
+<h2><a href="#11">5 Die Angst</a></h2>
 <br>
-##<a href="#06">6 Fazit </a>
+<h2><a href="#06">6 Fazit </a></h2>
 <br>
-##<a href="#13">7 Die kleine Terminologie</a>
-<a href="#" class="show_hide" rel="#slidingDiv03">[?]</a><div id="slidingDiv03">
-###<a href="#14">&emsp;7.01 Was ist Code?</a>
-###<a href="#15">&emsp;7.02 Was ist ein Programm?</a>
-###<a href="#16">&emsp;7.03 Was ist ein Algorithmus?</a>
-###<a href="#17">&emsp;7.04 Was ist die Syntax?</a>
-###<a href="#18">&emsp;7.05 Was ist Pseudocode?</a>
-###<a href="#19">&emsp;7.06 Was ist ein Compiler?</a>
-###<a href="#20">&emsp;7.07 Was ist eine IDE (Integrated Development Envoirement)?</a>
-###<a href="#21">&emsp;7.08 Was ist Hello World?</a> 
-###<a href="#22">&emsp;7.09 Was ist Syntax-Highlighting?</a>
-###<a href="#23">&emsp;7.10 Was ist eine API (Application Programming Interface)?</a>
-###<a href="#24">&emsp;7.11 Was ist Objektorientierung?</a>
-###<a href="#25">&emsp;7.12 Was sind Funktionen/Methoden</a>?
-###<a href="#26">&emsp;7.13 Was ist ein Bug?</a>
-###<a href="#27">&emsp;7.14 Was ist Debugging?</a>
-###<a href="#28">&emsp;7.15 Was ist ein Workaround?</a>  
-###<a href="#29">&emsp;7.16 Welche Konventionen gibt es?</a>
-###<a href="#30">&emsp;7.17 Herkunft von JavaScript</a>
-###<a href="#31">&emsp;7.18 Was ist der Unterschied zwischen JavaScript und ExtendScript?</a>
-###<a href="#32">&emsp;7.19 Was sind Pointer</a>
-</div> 
+<h2><a href="#13">7 Die kleine Terminologie</a></h2>
+<ul>
+<li><a href="#14">&emsp;7.01 Was ist Code?</a></li>
+<li><a href="#15">&emsp;7.02 Was ist ein Programm?</a></li>
+<li><a href="#16">&emsp;7.03 Was ist ein Algorithmus?</a></li>
+<li><a href="#17">&emsp;7.04 Was ist die Syntax?</a></li>
+<li><a href="#18">&emsp;7.05 Was ist Pseudocode?</a></li>
+<li><a href="#19">&emsp;7.06 Was ist ein Compiler?</a></li>
+<li><a href="#20">&emsp;7.07 Was ist eine IDE (Integrated Development Envoirement)?</a></li>
+<li><a href="#21">&emsp;7.08 Was ist Hello World?</a> </li>
+<li><a href="#22">&emsp;7.09 Was ist Syntax-Highlighting?</a></li>
+<li><a href="#23">&emsp;7.10 Was ist eine API (Application Programming Interface)?</a></li>
+<li><a href="#24">&emsp;7.11 Was ist Objektorientierung?</a></li>
+<li><a href="#25">&emsp;7.12 Was sind Funktionen/Methoden</a>?</li>
+<li><a href="#26">&emsp;7.13 Was ist ein Bug?</a></li>
+<li><a href="#27">&emsp;7.14 Was ist Debugging?</a></li>
+<li><a href="#28">&emsp;7.15 Was ist ein Workaround?</a>  </li>
+<li><a href="#29">&emsp;7.16 Welche Konventionen gibt es?</a></li>
+<li><a href="#30">&emsp;7.17 Herkunft von JavaScript</a></li>
+<li><a href="#31">&emsp;7.18 Was ist der Unterschied zwischen JavaScript und ExtendScript?</a></li>
+<li><a href="#32">&emsp;7.19 Was sind Pointer</a></li>
+</ul><br>
+<h2><a href="#34">8 Refenrenzen</a></h2>
 <br>
-##<a href="#34">8 Refenrenzen</a>
+<h2><a href="#35">9 Weblinks</a></h2>
 <br>
-##<a href="#35">9 Weblinks</a>
-<br>
-##<a href="#36">10 Quellen</a>
+<h2><a href="#36">10 Quellen</a></h2>
+</div>
+<br>  
+
 -------------
-<br>
+  
 <br>
 ##<span id="overlay"><a href="#02" title="Next" >&darr;</a></span><a id="01"></a>1 Einleitung <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
 Diese Arbeit setzt sich mit der Automation von Design-Prozessen auseinander. Sie ist an Designer gerichtet die einen rohen Überblick bekommen wollen wie Arbeitsprozesse automatisiert werden können und soll als Hilfestellung dienen einen Einstieg in das Schreiben von Skripten für Grafikanwendungen. Sie ist keine komplette Anleitung zum Erlernen von Programmier Grundkenntnissen, diese können für viele verschieden Sprachen im "World Wide Web" gefunden werden, sondern eine Auseinandersetzung was Automation durch Programmierung für Designer leisten kann und welche Bereiche sie nicht abdeckt. Im ersten Abschnitt soll dem Leser kurz erläutert werden was er benötigt um zu Skripten um dann im zweiten Teil zu analysieren wann dies sich lohnt. Hier wird an einem kurzen Beispielen erläutert wo Probleme auftreten können und an einem weiteren wie solche Problem klug umschifft werden können. Im dritten Teil folgt ein Szenario an dem Schritt für Schritt die Logik und Funktionsweise eines Skriptes erklärt wird und ein weiteres Szenario mit einer einzeiligen und doch nützlichen Lösung. Der vierte Teil behandelt  eine wirkliche Anwendung. Anhand dieser wird das Ausmaß das dies annehmen kann gezeigt. Es folgt im fünften Teil ein Auseinandersetzung mit der Frage woher die Abwehrhaltung gegen Computersprachen herrühren kann. Im sechsten Teil, dem Fazit, wird der Erkenntniszuwachs aus all dem zusammengefasst. Es folgt noch eine weiterer Abschitt mit Erläuterungen zur Teilweise verwendeten Terminologie. Dieser Abschnitt sollte jedoch nicht linear gelesen werden sondern als Referenz dienen. Zum Abschluss stehen die Referenzen, Weblinks und Quellenverweise.  
@@ -684,10 +687,21 @@ Selbst wenn eine vernünftige Vektor-Form einer Karte existiert und griffbereit 
 Der Nutzer kann zwischen verschiedenen Einstellungen wählen wie zum Beispiel die Karte mit Kontur zu zeichnen oder ohne oder ob alle Polygone auf eine Ebene gezeichnet werden sollen oder ob in die oben genannten Kompositionen gesplittet werden soll. Ebenfalls können 3D Einstellungen definiert werden und ähnliche mehr. Die Daten bestehen auf einem GeoJson Datensatz der zum freien Gebrauch ins Netz gestellt wurde. Der gesamten Funktionsumfang ist auf [dieser Webseite](http://fabiantheblind.github.com/AEMap/) dokumentiert. Dieses Skript spart nicht nur mir Zeit sondern auch anderen. Die Resonanz in der After Effects Community" ist gross. Daher hat das Skript seit seiner Veröffentlichung auf [AEScripts.com](http://aescripts.com/aemap/) am 10 April 2012 bereits über 400 Downloads gehabt (heute 24 April 2012). Das Tutorial und das Demo wurden bereits über 4000 mal auf Youtube geladen. Aber genug der Selbstbeweihräucherung. Der Vorteil an solchen und ähnlichen Werkzeugen die zum Beispiel auf AEScripts.com bereit gestellt werden ist, dass diese meist aus dem Zwang heraus entstanden sind einen Arbeitsablauf zu automatisieren um Zeit zu sparen. 
 
 ##<span id="overlay"><a href="#06" title="Next" >&darr;</a></span><a id="11"></a>5 Die Angst <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
-Während der Auseinandersetzung
+Wann immer ich gefragt werde über was ich schreibe oder womit ich mich beschäftige und ich antworte: "Programmieren", stosse ich auf die Aussage: "Das werde ich nie lernen." Woher kommt diese Annahme? 
+Auf der TEDxVancouver im November 2011  beschreibt Jef Thorp eine Situation die gut unseren aktuellen Zustand beschreibt:
+Wenn man vor 30 Jahren einem Programmierer gesagt hätte: "In 30 Jahren haben alle einen Computer aber keiner wird wissen wie man programmiert." Hätte dieser gesagt das ist nicht möglich.
+Computer haben sich von den Rechenmaschienen der Spezialisten zu einem alltäglichen Ding entwickelt, das wir nutzen und akzeptieren dem wir aber nicht unter die Haube gucken möchten.
+Oder anders.
+> „Jede hinreichend fortschrittliche Technologie ist von Magie nicht zu unterscheiden.“
+> Sir Arthur C. Clarke's Drittes Gesetz
+
+Wir haben Computer und ihre Funktionsweise mystifizert ein "Klerus" die wir Programmiere nennen erzeugt Ohs und Ahs aber wie dieser Zauber wirkt wissen wir nicht. Da ich keinen Einblick in die derzeitige Situation an unseren Schulen habe kann ich das Folgende nur aus meiner eigenen Erfahrung beurteilen. Ein frühes Vertrautmachen mit Computern gab es in meiner schulischen Laufbahn nicht. Wer Interesse hatte konnte in die Computer-AG eintreten. Freiwillig. Bei einem eher musisch begabtem Menschen ruft die natürlich wenig Begeisterung hervor. Ich denke damit stehe ich nicht allein. Die Angst kommt vom Unbekannten. Um auf den Vergleich des Auslandsaufenthalts zurück zu kommen, natürlich haben wir ein unwohles Gefühl wenn wir uns dort aufhalten wo wir uns nicht auskennen. Wir werden weiterhin versuchen, so oft wir können, unsere eigene Sprache anstatt der Landessprache zu nutzen. Dies ist menschlich - und und ein wenig töricht.  
+Mit dem erlernen einer Computersprache vollzieht sich ein Wandel. Es ist der Schritt vom Bediener eines von anderen gefertigten Werkzeugen zu einem Macher von Werkzeugen. Die Programme die wir als Grafiker nutzen sind nach der Idee eines Teams von Menschen geformt. Wir haben keinen Einfluss auf die Funktionsweise. Mit dem Schreiben von Programmen oder Skripten kann dies überwunden werden.  
 
 ##<span id="overlay"><a href="#13" title="Next" >&darr;</a></span><a id="06"></a>6 Fazit <span id="overlay"><a href="#top" title="Back to Index" >&uarr;</a></span>
-[NOCH NICHT GESCHRIEBEN]  
+Programmieren ist nicht leicht, aber leichter als man denkt. Es gibt Stolpersteine. Gerade der Anfang hat eine flache Lernkurve. Ab einem gewissen Punkt ändert sich dies aber der muss erst erreicht werden. Der Idealfall zum erlernen von Computersprachen ist unter Zwang. Wenn sie vor einem Problem stehen das manuell nicht gelösst werden kann aber gelösst werden muss.  
+Alle anderen müssen sich selbst überwinden. Es kann vieles mit einer Automation durch Programmierung gelöst werden. Sie ist nicht die Lösung unserer Arbeit sondern die Entschlackung unseres Arbeitsprozesses von geisttötenden Aufgaben. Sie schafft Raum für komplexe Visualisierungen und Zeit für das Konzept, wenn die eigenen Fertigkeiten gefesstigt sind. Das Lernen dieser Sprachen ist wie im Neuen Jahr mit dem Rauchen aufhören und regelmäßig Sport trieben. Man muss es einfach machen. Auch dies ist nicht leicht aber vielleicht besser für uns.  
+Wichtig ist keine Dogmas zu erschaffen. Eine Aufgabe automatisiert zu lösen um der Automation willen kann genauso kontraproduktiv sein wie sich mit einem "Ich kann das nicht!" zufrieden zu geben.
 
 
 ****************************
@@ -836,7 +850,7 @@ Als Objektorientierung (ach als OO abgekürzt) versteht man ein bestimmte Art wi
 ####Klammer auf!
 	{  
 
-Der Proto-Apfel (Der Proto-Apfel existiert eigentlich nicht. Unsere Sprache lässt solche Ungenauigkeiten zu. Es gibt einen Apfel und einen Anderen. Aber nicht "DEN" Apfel. ) hat bestimmte Eigenschaften wie Gewicht und Farbe. Hinzu kommen bestimmte Methoden wie Fallen, Wachsen und Verrotten die durch die Eigenschaften beeinflusste werden können.  
+Der Proto-Apfel hat bestimmte Eigenschaften wie Gewicht und Farbe. Hinzu kommen bestimmte Methoden wie Fallen, Wachsen und Verrotten die durch die Eigenschaften beeinflusste werden können. <a href="#" class="show_hide" rel="#slidingDiv10">[?]</a><div id="slidingDiv10">Der Proto-Apfel existiert eigentlich nicht. Unsere Sprache lässt solche Ungenauigkeiten zu. Es gibt einen Apfel und einen Anderen. Aber nicht "DEN" Apfel.</div>  
 <br /> <a href="images/object_orientation_classes-1.png"><img src="images/object_orientation_classes-1.png" width="100%" alt="" /></a>
  Wenn nun ein Baum wächst und Äpfel produziert erzeugt er nach dem Bauplan des Proto-Apfels neue Äpfel und jedem werden bestimmte Werte übergeben.  
 <br /> <a href="images/object_orientation_classes-2.png"><img src="images/object_orientation_classes-2.png" width="100%" alt="" /></a>
