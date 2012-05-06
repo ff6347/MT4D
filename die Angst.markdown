@@ -1,5 +1,5 @@
-Die Angst.
-Wann immer ich gefragt werde über was ich schreibe oder womit ich mich beschäftige und ich antworte: "Programmieren", stosse ich auf die Aussage: "Das werde ich nie lernen." Woher kommt diese Annahme? 
+##Die Angst.  
+Wann immer ich gefragt werde über was ich schreibe oder womit ich mich beschäftige und ich antworte: "Programmieren", stosse ich auf die Aussage: "Das werde ich nie lernen." Woher kommt diese Annahme?  
 Auf der TEDxVancouver im November 2011  beschreibt Jef Thorp eine Situation die gut unseren aktuellen Zustand beschreibt:
 Wenn man vor 30 Jahren einem Programmierer gesagt hätte: "In 30 Jahren haben alle einen Computer aber keiner wird wissen wie man programmiert." Hätte dieser gesagt das ist nicht möglich.
 Computer haben sich von den Rechenmaschienen der Spezialisten zu einem alltäglichen Ding entwickelt, das wir nutzen und akzeptieren dem wir aber nicht unter die Haube gucken möchten.
