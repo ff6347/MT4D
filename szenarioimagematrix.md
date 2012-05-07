@@ -5,7 +5,7 @@ title: Szenario image matrix
 
 ###<a name="08"></a>3.1 Der Einsatz - das Beispiel image matrix
 Die Fragen die sich jetzt stellen sind folgende: "Wie kommt dies zum Einsatz?", "Wie kann ich dies nutzen?".
-Es folgt nun das InDesign Skript image_matrix.jsx mit etwas mehr als 40 Zeilen Code. Dieses Skript beinhaltet eine Benutzer Interaktion, Dateihandhabung, das Math Objekt, Konditionen, eine Schleife, Funktionen, Variablen und es hat einen generativen Charakter. Das Skript erledigt folgende Schritte.\[^math\]  
+Es folgt nun das InDesign Skript image_matrix.jsx mit etwas mehr als 40 Zeilen Code. Dieses Skript beinhaltet eine Benutzer Interaktion, Dateihandhabung, das Math Objekt, Konditionen, eine Schleife, Funktionen, Variablen und es hat einen generativen Charakter. Das Skript erledigt folgende Schritte.[^math]  
 
 - Frage den Benutzer nach einem Ordner mit jpg Dateien.  
 - Erzeuge ein Quadratisches Dokument dessen Grösse auf der Quadratwurzel der Menge der Bilder basiert und alle Bilder fast.  
@@ -83,4 +83,4 @@ Alle 3 nachfolgenden Bilder sind mit ein und dem selbem Skript erzeugt.
 ![matrix 2](images/image_matrix_2.jpg)  
 ![matrix 3](images/image_matrix_3.jpg)  
 
-\[^math\]: Das Math Objekt ist ein ein bereits bestehender Teil von JavaScript. Es erledigt solche Aufgaben wie Rundung von Werten oder das Berechnen einer Quadratwurzel  
+[^math]: Das Math Objekt ist ein ein bereits bestehender Teil von JavaScript. Es erledigt solche Aufgaben wie Rundung von Werten oder das Berechnen einer Quadratwurzel  
