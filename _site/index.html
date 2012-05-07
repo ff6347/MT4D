@@ -1,1278 +1,209 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>Mehr Zeit für Gestaltung</title>
-   <meta name="author" content="fabiantheblind" />
-
-   <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
-
-   <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
-
-
-</head>
-<body>
-
-
-
-<div class="site">
-   <div id="printfriendly">
-<script src="http://cdn.printfriendly.com/printfriendly.js" type="text/javascript"></script><a href="http://www.printfriendly.com" style=" color:#6D9F00; text-decoration:none;" class="printfriendly" onclick="window.print(); return false;" title="Printer Friendly and PDF"><img style="border:none;" src="http://cdn.printfriendly.com/button-print-gry20.png" alt="Print Friendly and PDF"/></a>
-  </div> 
-  <div class="title">
-    <a href="/">Home</a>
-    <!-- <a class="extra" href="/">home</a> -->
-  </div>
-
-  <h1>BA von Fabian Morón Zirfas</h1>
-
-<h2>Mehr Zeit für Gestaltung</h2>
-
-<h2>Einleitung</h2>
-
-<p>Diese Arbeit setzt sich mit der Automation von Design-Prozessen auseinander. Sie ist keine komplette Anleitung zum Erlernen von Programmier Grundkenntisen, diese können für viele verschieden Sprachen im "World Wide Web" gefunden werden, sondern eine Auseinandersetzung was Automation durch Programmierung für Designer leisten kann und welche Bereiche sie nicht abdeckt. Dies wird durch einige kurze aber mächtige Beispiele illustriert.
-Sie, die Arbeit, ist der versuch die Mystik und nebulösen Vorstellungen die sich um Computerprogramme ranken zu brechen und die Schnitstellen die aktuelle Grafikprogramme bieten auf zu zeigen.<br/>
-Im ersten Teil soll dem Leser ein Verständnis für die Herkunft und Unterschiede von Computersprachen und den in ihrem Kontext verwendeten Vokablen vermittelt werden. Dadurch lassen sich die im zweiten Teil betrachteten Anwendungsgebiete unterschiedlicher Sprachen besser verstehen. Hier wird auch aufgezeigt wo Grenzen liegen und wann Automation sinnig, unnötig und unerlässlich ist. Im dritten Teil werden dann die Einsatzmöglichkeiten innerhalb von Grafiksoftware beleuchtet und anhand von einfachen und dennoch mächtigen Automationen der Nutzen dargestellt den sie liefern können. Im vierten Teil soll ergründet werden wo die Abwehrhaltung her rührt wenn es um das Erlernen von Programmiersprachen geht und warum diese unbegründet sind beziehungsweise sogar schädlich sein können.<br/>
-Der fünfte Teil versucht dann an einem komplexerem Beispiel den Aufbau eines solchen Werkzeuges zu durchdringen die Methodik die dahinter steht zu erläutern.<br/>
-Abschliessend soll im Fazit der Erkenntniszuwachs aus all dem zusammengefasst werden.</p>
-
-<h2>Teil 1 Herkunft, Unterschiede und kleine Terminologie</h2>
-
-<h3>Herkunft von Computersprachen</h3>
-
-<p>[NOCH NICHT GESCHRIEBEN]</p>
-
-<h3>(Einige) Unterschiede von Computersprachen</h3>
-
-<p>[NOCH NICHT GESCHRIEBEN]</p>
-
-<h3>Was ist Code?</h3>
-
-<p>Als Code bezeichen wir in der Regeln Informationen die verschlüsselt (encoding) werden um dann an einer weiteren Stelle wieder entschlüsselt zu werden (decoding). Zum Beispiel stellt Morse-Code Buchstaben dar indem ein einziges unmoduliertes Signal, zum Beispiel ein Ton, in kurze und lange Sequenzen unterteilt wird. Der Rezipient kann dann, wenn er des Systems machtig ist, diese Informationen entschlüsseln und zu der originalen Nachricht wieder zusammensetzen. Ein weiters Bespiel ist der Abakus. Dieser erlaubt es wenn der Benutzer des Systems machtig ist Rechenoperationen auszuführen. Und als drittes die Knotenschrift der Inkas die wie der Name bereits besagt aus einem System von Knoten auf einem Satz Schnüren bestand. Heutzutage findet das Wort "Code" im Computerbereich oft Verwendung als Kurzform des Ausdrucks "Source-Code" also Quellkode eines Programms.</p>
-
-<h3>Was ist ein Programm?</h3>
-
-<p>Das Bild das viele im Kopf haben wenn sie das Wort Programm hören ist stark durch Film beeinflusst. Wir sehen junge, meist übergewichtig und verpickelte Menschen vor uns die in abgedunkelten Räumen zwischen Monitoren, Kabeln und Pizzapackungen auf ewige grün leuchtende Zahlenkolonnen blicken die für uns keinerlei Sinn ergeben. Diese oder ähnliche Bilder sind inspiriert aus einer Zeit in der Computer nur einfarbige Pixel hatten und Grafische Benutzeroberflächen wie Windows noch aus der Kommandozeile gestartet wurde. Als Hommage an diese Vorstellung hat "Duiker101" das Programm <a href="http://hackertyper.net/">HackerTyper</a> entworfen welches mit bereits vorgegebenem Text allein über Tastendruck den Bildschirm mit kompliziertem Quellkode füllt. Dabei ist es irrelevant welche Tasten der Benutzer drückt.
-Verwerfen sie diese Vorstellung (Es ist nicht so das es dies nicht gibt dennoch entspricht es nicht der Regel). Ein Programm ist lt. <a href="http://www.duden.de/rechtschreibung/Programm">Duden</a>: "die nach einem Plan genau festgelegten Einzelheiten eines Vorhabens". Unter dieser Betrachtungsweise ist jede Bauanleitung zu Möbelstücken, eine Beschreibung des Weges von hier zum Bahnhof oder das Rezept für Sahnetörtchen ein Programm. Bloß das in letzterem Fall nicht ein Computer die Anweisungen ausführt sondern ein Mensch. Die Sprache in der dieses Programm geschrieben ist, ist Deutsch. Der grosse Unterschied zu einem Computersprache/-programm liegt hier ein der Möglichkeit der Interpretation. Die Ausführende "Maschiene" (in diesem Fall der Mensch) kann solche Angaben wie "eine Priese Salz" oder "eine Messerspitze Merrettich" verarbeiten. Ein Computer ist hierzu (noch) nicht fähig. Er bräuchte eine eindeutigere Angabe wie 50 Gramm. Das Programm sollte an dieser Stelle noch von dem Begriff des Algorithmus abgetrennt werden.</p>
-
-<h3>Was ist ein Algorithmus?</h3>
-
-<p>Auch wenn sich diese beiden Begriffe in ihrer Bedeutung teilweise überschneiden sollten sie auf folgende weise unterschieden werden. Der Algorithmus für Milch holen wäre in Pseudocode:</p>
-
-<pre><code>wenn (Aussage (kein Milch ist im Kühlschrank) wahr ist): hole neue Milch! wenn nicht: tue nichts!  
-</code></pre>
-
-<p>Das Programm für Milch holen würde vorraussetzen das alle Schritte und Notwendigkeiten bis zum Übergang der Milch in das Eigentum der Holenden bekannt und definiert sind. Also so etwas wie:</p>
-
-<pre><code>Person fabian ist gleich neu Person;
-Kühlschrank schrank ist gleich neuer Kühlschrank;
-Kühlschrank Menge Milch ist gleich 1;
-jeden morgen fabian trinke Milch aus Kühlschrank;
-Menge Milch reduziere um 0.2l;
-jeden morgen fabian beobachte Menge Milch;
-wenn Milch kleiner gleich 0.1 ist fabian hohle Milch im Supermarkt;
-</code></pre>
-
-<p>Und so weiter und so ähnlich. Diese Funktionsanweisungen könnten noch detailierter ausgearbeitet werden. Hierbei sei zu beachten das solche Objekte wie Kühlschrank und Person bereits implemetiert also bekannt sind. Das Programm im Vergleich zum Algorithmus muss alle eingesetzten Mittel kennen und oder selber beschreiben.</p>
-
-<h3>Was ist die Syntax?</h3>
-
-<p>Die Syntax ist die Form in der die Programmiersprache ausgestalltet ist. Die Syntax einer Programmiersprache besteht aus reservierten Worten wie zum Beispiel in Java</p>
-
-<div class="highlight"><pre><code class="js"><span class="k">new</span><span class="p">,</span> <span class="k">while</span><span class="p">,</span> <span class="kc">null</span> <span class="p">,</span> <span class="kc">true</span><span class="p">,</span>
-</code></pre>
-</div>
-
-
-<p> Operatoren wie</p>
-
-<div class="highlight"><pre><code class="js"><span class="o">+</span><span class="p">,</span><span class="o">-</span><span class="p">,</span><span class="o">*</span><span class="p">,.</span>
-</code></pre>
-</div>
-
-
-<p> und Kontrollstrukturen wie</p>
-
-<div class="highlight"><pre><code class="js"><span class="k">if</span><span class="p">(){}</span><span class="k">else</span><span class="p">{}</span>
-</code></pre>
-</div>
-
-
-<p> oder "</p>
-
-<div class="highlight"><pre><code class="js"><span class="k">for</span><span class="p">(</span><span class="kr">int</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">x</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span>
-</code></pre>
-</div>
-
-
-<p>Lesen sie diese "Sätze" kurz. Wie würden sie es sprechen?</p>
-
-<p>Ausgesprochen wäre dies:</p>
-
-<div class="highlight"><pre><code class="js"> <span class="nx">For</span> <span class="kr">int</span> <span class="nx">i</span> <span class="nx">gleich</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">i</span> <span class="nx">kleiner</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">i</span> <span class="nx">plus</span> <span class="nx">plus</span> 
-</code></pre>
-</div>
-
-
-<p>Es gibt in JavaScript eine Hand voll <a href="https://developer.mozilla.org/en/JavaScript/Reference/Reserved_Words">reservierter Worte (Mozilla Developer Network)</a> die beim schreiben nicht verwendet werden dürfen.</p>
-
-<div class="highlight"><pre><code class="js"><span class="k">break</span><span class="p">,</span> <span class="k">case</span><span class="p">,</span> <span class="k">catch</span><span class="p">,</span> <span class="k">continue</span><span class="p">,</span> <span class="kr">debugger</span><span class="p">,</span> <span class="k">default</span><span class="p">,</span> <span class="k">delete</span><span class="p">,</span> <span class="k">do</span><span class="p">,</span> <span class="k">else</span><span class="p">,</span> <span class="k">finally</span><span class="p">,</span> 
-<span class="k">for</span><span class="p">,</span> <span class="kd">function</span><span class="p">,</span> <span class="k">if</span><span class="p">,</span> <span class="k">in</span><span class="p">,</span> <span class="k">instanceof</span><span class="p">,</span> <span class="k">new</span><span class="p">,</span> <span class="k">return</span><span class="p">,</span> <span class="k">switch</span><span class="p">,</span> <span class="k">this</span><span class="p">,</span> <span class="k">throw</span><span class="p">,</span> <span class="k">try</span><span class="p">,</span> <span class="k">typeof</span><span class="p">,</span> 
-<span class="kd">var</span><span class="p">,</span> <span class="k">void</span><span class="p">,</span> <span class="k">while</span><span class="p">,</span> <span class="kd">with</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span> 
-</code></pre>
-</div>
-
-
-<p>Noch einmal. Diese Worte dürfen nur für bestimmte Aufgaben verwendet werden! Wenn also ein Programmierer seine Variable <code>null</code> nennet, wird das Programm beim ausführen eine Fehler auswerfen. Die obig genannten Strukturen, Operatoren und reservierten Worte müssen erlernt werden. Eine vollständige Beschreibung aller würde jedoch den Rahmen dieser Arbeit sprengen.<br/>
-Weiterhin ist beim schreiben von Programmen auch auf die Groß- und Kleinschreibung zu achten. Eine Variable die mit dem Namen <code>myValue</code> initiert wird muss auch mit diesem Namen aufgerufen werden. Bei einer falschen schreibweise <code>MyValue</code> oder <code>myvalue</code> würde das Programm warnen, dass die aufgerufene Variable nicht existiert.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">myValue</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span> <span class="c1">// define a variable</span>
-    <span class="nx">myvalue</span><span class="o">++</span><span class="p">;</span> <span class="c1">//edit it but written wrong</span>
-</code></pre>
-</div>
-
-
-
-
-<br /> <a href="images/error_myvalue.png"> <img src="images/error_myvalue.png" width="100%" style="max-width:800px;" alt="" /></a>
-
-
-<p>Es gibt Sprachen die versuchen ihre Syntax so weit wie möglich an unseren Sprachen zu orientieren, zum Beispiel Applescript:</p>
-
-<div class="highlight"><pre><code class="applescript">  <span class="k">tell</span> <span class="nb">application</span> <span class="s2">&quot;Safari&quot;</span> <span class="k">to</span> <span class="nb">activate</span>
-</code></pre>
-</div>
-
-
-<p>und wieder andere wie die esoterische Programmiersprache* "Brainfuck" die mit ihren acht Zeichen</p>
-
-<div class="highlight"><pre><code class="bf"><span class="c">   </span><span class="nb">+</span><span class="c"> </span><span class="nb">-</span><span class="c"> </span><span class="nv">&lt;</span><span class="c"> </span><span class="nv">&gt;</span><span class="c"> </span><span class="k">[</span><span class="c"> </span><span class="k">]</span><span class="c"> </span><span class="nt">,</span><span class="c"> </span><span class="nt">.</span><span class="c"></span>
-</code></pre>
-</div>
-
-
-<p>voll funktionsfähig, aber nicht für das schreiben von Programmen gedacht ist sondern eher ein Gedankenmodell darstellt.
-Das Brainfuck Hello World (<a href="http://en.wikipedia.org/wiki/Brainfuck">aus wiki</a>):</p>
-
-<div class="highlight"><pre><code class="bf"><span class="c">   </span><span class="nb">+++++</span><span class="c"> </span><span class="nb">+++++</span><span class="c">             initialize counter (cell #0) to 10</span>
-<span class="c">    </span><span class="k">[</span><span class="c">                       use loop to set the next four cells to 70/100/30/10</span>
-<span class="c">        </span><span class="nv">&gt;</span><span class="c"> </span><span class="nb">+++++</span><span class="c"> </span><span class="nb">++</span><span class="c">              add  7 to cell #1</span>
-<span class="c">        </span><span class="nv">&gt;</span><span class="c"> </span><span class="nb">+++++</span><span class="c"> </span><span class="nb">+++++</span><span class="c">           add 10 to cell #2 </span>
-<span class="c">        </span><span class="nv">&gt;</span><span class="c"> </span><span class="nb">+++</span><span class="c">                   add  3 to cell #3</span>
-<span class="c">        </span><span class="nv">&gt;</span><span class="c"> </span><span class="nb">+</span><span class="c">                     add  1 to cell #4</span>
-<span class="c">        </span><span class="nv">&lt;&lt;&lt;&lt;</span><span class="c"> </span><span class="nb">-</span><span class="c">                  decrement counter (cell #0)</span>
-<span class="c">    </span><span class="k">]</span><span class="c">                   </span>
-<span class="c">    </span><span class="nv">&gt;</span><span class="c"> </span><span class="nb">++</span><span class="c"> </span><span class="nt">.</span><span class="c">                  print &#39;H&#39;</span>
-<span class="c">    </span><span class="nv">&gt;</span><span class="c"> </span><span class="nb">+</span><span class="c"> </span><span class="nt">.</span><span class="c">                   print &#39;e&#39;</span>
-<span class="c">    </span><span class="nb">+++++</span><span class="c"> </span><span class="nb">++</span><span class="c"> </span><span class="nt">.</span><span class="c">              print &#39;l&#39;</span>
-<span class="c">    </span><span class="nt">.</span><span class="c">                       print &#39;l&#39;</span>
-<span class="c">    </span><span class="nb">+++</span><span class="c"> </span><span class="nt">.</span><span class="c">                   print &#39;o&#39;</span>
-<span class="c">    </span><span class="nv">&gt;</span><span class="c"> </span><span class="nb">++</span><span class="c"> </span><span class="nt">.</span><span class="c">                  print &#39; &#39;</span>
-<span class="c">    </span><span class="nv">&lt;&lt;</span><span class="c"> </span><span class="nb">+++++</span><span class="c"> </span><span class="nb">+++++</span><span class="c"> </span><span class="nb">+++++</span><span class="c"> </span><span class="nt">.</span><span class="c">  print &#39;W&#39;</span>
-<span class="c">    </span><span class="nv">&gt;</span><span class="c"> </span><span class="nt">.</span><span class="c">                     print &#39;o&#39;</span>
-<span class="c">    </span><span class="nb">+++</span><span class="c"> </span><span class="nt">.</span><span class="c">                   print &#39;r&#39;</span>
-<span class="c">    </span><span class="nb">-----</span><span class="c"> </span><span class="nb">-</span><span class="c"> </span><span class="nt">.</span><span class="c">               print &#39;l&#39;</span>
-<span class="c">    </span><span class="nb">-----</span><span class="c"> </span><span class="nb">---</span><span class="c"> </span><span class="nt">.</span><span class="c">             print &#39;d&#39;</span>
-<span class="c">    </span><span class="nv">&gt;</span><span class="c"> </span><span class="nb">+</span><span class="c"> </span><span class="nt">.</span><span class="c">                   print &#39;!&#39;</span>
-<span class="c">    </span><span class="nv">&gt;</span><span class="c"> </span><span class="nt">.</span><span class="c">                     print &#39;\n&#39; </span>
-<span class="c"> </span>
-</code></pre>
-</div>
-
-
-<p>Wie bereits oben in der Beschreibung des Milchalgorithmus zu sehen ist verwendet selbst Pseudocode ein nicht genau definierte Syntax lehnt sich jedoch mit konstruktionen wie "ist gleich" an die Mathematik und Programmierung an. Andere Sprachen mit denen wir uns noch später Auseinandersetzen wie C++, Processing oder JavaScript sind zwischen diesen Extrema angesiedelt und vereinen in einer für das geübte Auge lesbaren und dennoch kompakte Art die Befehlsufrufe.</p>
-
-<h3>Was ist Pseudocode?</h3>
-
-<p>Im Verlaufe dieser Arbeit werde ich immer wieder auf die Darstellung von Alogrithmen in "Pseudocode" zurückgreifen. Pseudocode besteht nicht aus einer bereits definierten Syntax und kann auch nicht von einem Compiler übersetzt werden sondern dient nur zur Darstellung eines logischen Ablaufs. Wie bereits in dem Milchalgorithmus zu sehen war versucht Pseudocode einen Programmablauf in menschenlesbarer Form darzustellen.</p>
-
-<h3>Was ist ein Compiler?</h3>
-
-<p>Der Vollständigkeit halber soll dieser hier erklärt werden auch wenn er uns kaum mehr im weiteren Verlauf der Arbeit begegen wird. Der Compiler ist ebenfalls ein Programm das aus menschenlesbaren Hochsprachen wie zum Beispiel C++ maschienenlesbaren Quellkode erzeugt (Assemblercode). Diesen Prozess bezeichnet man auch als Kompilierung.</p>
-
-<h3>Was ist eine IDE (Integrated Development Envoirement)?</h3>
-
-<p>Um Quellkode zu schreiben bedarf es nicht viel. Ein einfacher Texteditor reicht aus um komplette Programme zu schreiben. Im Laufe der Zeit wurde jedoch viel Software programmiert um das schreiben von Quelltext zu erleichtern. Dies geht los bei einfachem Syntax-Highlighting bis hinzu kompletten Entwicklungsumgebungen die noch vor dem Kompilieren beziehungweise während des schreibens die Syntax auf ihre Validität prüfen und gegebenfalls Vorschläge machen was gemeint sein könnte oder bei nicht verwendeten Programmteilen warnen das diese derzeit unnütz sind. In unserem Fallbeispieln werden wir noch mit diesen Programmen zu tuen kriegen. Es sei jedoch bereits gesagt das wir die einfachste Möglichkeit nutzen werden die sich uns bietet und die auf beiden Platformen (Windows und Mac OS X) zur Verfügung steht. Das ExtendScript Toolkit (Mehr hierzu ist im nächsten Abschnitt zu finden).</p>
-
-<h3>Was ist Hello World?</h3>
-
-<p>Das "Hello World" Programm hat sich als standard Beispiel etabliert um die Syntax einer Sprache zu erklären. Exerzieren wir das einmal kurz durch. Um für Adobe InDesign, After Effects, Illustrator, Photoshop, Photoshop Elements, Photoshop Elements Organizer, Bridge, Audition, Media Encoder und Premiere Pro Skripte zu schreiben liefert Adobe eine eigene IDE, eine Integrierte Entwicklungs Umgebung, mit.</p>
-
-<br /> <a href="images/estk.png"> <img src="images/estk.png" width="100%" alt="" /></a>
-
-
-<p>Das ExtendScript Toolkit. Dies ist nicht der schönste Editor. Er hat jedoch einige Vorteile die die Entwicklung von Skripten sehr einfach macht. Die wichtigste Eigenschaft ist dabei folgende. Es kann ein Skript ohne es zu speichern ausführen. Das Toolkit wird bei der Installation von Adobe Produkten direkt mit geliefert. Suchen sie es in ihren Dienstprogrammen dort sollten sie fündig werden. Wenn nicht gehen sie zu dieser Webseite <a href="http://www.adobe.com/devnet/scripting.html">http://www.adobe.com/devnet/scripting.html</a>, laden und installieren sie es.<br/>
-Wenn es dann installiert ist geben sie folgende Text ein:</p>
-
-<div class="highlight"><pre><code class="js">   <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">);</span>
-</code></pre>
-</div>
-
-
-<p>und drücken sie auf den "Play/Run" Knopf oben rechts oder drücken sie CMD-r oder CTRL-r, abhängig von ihrer Platform.</p>
-
-<br /> <a href="images/hello_world.png"> <img src="images/hello_world.png" width="100%" alt="" /></a>
-
-
-<p>Herzlichen Glückwunsch. Ihr erstes Javascript.<br/>
-Um dieses Skript in InDesign oder Photoshop auszuführen muss die Ziel Applikation aus dem PullDown Menü auf der oberen Leiste gewählt werden. Beim öffenen ist es auf ExtendScript Toolkit gestellt. Wählen sie dort InDesign aus. Das Toolkit wird sofort fragen ob InDesign auch gestartet werden soll. Bestätigen sie das und führen sie das Skript noch einmal aus. Sie werden sehen, dass der Computer zu InDesign überwechselt und den gleichen Hinweis gibt.<br/>
-Probieren sie weiter Skripte und Kalkulationen aus. Zum Beispiel</p>
-
-<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">h</span> <span class="o">=</span> <span class="s2">&quot;Hello&quot;</span><span class="p">;</span>
-    <span class="kd">var</span> <span class="nx">w</span> <span class="o">=</span> <span class="s2">&quot;World&quot;</span><span class="p">;</span>
-    <span class="kd">var</span> <span class="nx">calc</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="o">*</span><span class="mi">50</span><span class="p">)</span><span class="o">/</span><span class="mi">23</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="nx">alert</span><span class="p">(</span><span class="nx">h</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="nx">w</span> <span class="o">+</span><span class="s2">&quot;! Your result is: &quot;</span><span class="o">+</span> <span class="nx">clac</span> <span class="p">);</span> 
  
-</code></pre>
-</div>
-
-
-<h3>Was ist Syntax-Highlighting?</h3>
-
-<br /> <a href="images/syntax_highlite.png"><img src="images/syntax_highlite.png" width="100%" alt="" /></a>
-
-
-<p>Syntax Highlighting ist eine Hilfestellung für Programmierer um ihren Quellkode übersichtlicher zu gestalten. Hierbei werden bestimmte Teile wie Operatoren,Kommentare, Funktionsdeklarationen oder Reservierte Worte farblich hervorgehoben beziehungsweise zurückgenommen um das Lesen zu erleichtern.</p>
-
-<h3>Was ist eine API (Application Programming Interface)?</h3>
-
-<p>Dies ist die Schnittstelle die ein Programm bietet um auf sein Funktionen zugreifen zu können. Dies wird beim Schreiben von Programmen wie InDesign von den Programmierern definiert. Diese Schnittstelle ist wie ein Baum mit Querverweisen aufgebaut. Um in InDesign einem bestehendem Dokument auf der ersten Seite eine Textbox hinzuzufügen muss durch diesen Baum manövriert werden.</p>
-
-<pre><code>app.activeDocument.pages.item(0).textFrames.add();
-</code></pre>
-
-<p>Diese Zeile erzeugt in der linken oberen Ecken eine Textkiste.<br/>
-All diese Befehle und Eigenschaften müssen nicht auswendig gelernt werden sondern können nachgeschlagen werden. Im ExtendScript Toolkit kann unter Hilfe / ObjektModell Viewer ein Hilfsprogramm aufgerufen werden das alle Befehle mit einer kurzen Erklärung enthält. Oder es kann auf der Seite von jongware eine .chm Datei heruntergeladen werden die die gleichen Informationen enthält und mit einem .chm Viewer durchsucht werden kann. <a href="http://www.jongware.com/idjshelp.html">http://www.jongware.com/idjshelp.html</a></p>
-
-<h3>Was ist Objektorientierung?</h3>
-
-<p>Als Objektorientierung (ach als OO abgekürzt) versteht man ein bestimmte Art wie Programme aufgebaut sind. Ein Objekt ist ein gekapselter Teil des Programmcodes der Schnittstellen und Methoden bietet und seine Eigenschaften an weiter Objekte vererben kann. Um dies besser zu verstehen möchte ein hervorragendes Beispiel aus "Processing: A Programming Handbook for Visual Designers and Artists" von Casey Reas and Ben Fry bemühen.</p>
-
-<h4>Klammer auf!</h4>
-
-<pre><code>{  
-</code></pre>
-
-<p>Der Proto-Apfel (Der Proto-Apfel existiert eingentlich nicht. Unsere Sprache lässt solche Ungenauigkeiten zu. Es gibt einen Apfel und einen Anderen. Aber nicht "DEN" Apfel. ) hat bestimmte Eigenschaften wie Gewicht und Farbe. Hinzu kommen bestimmte Methoden wie Fallen, Wachsen und Verrotten die durch die Eigenschaften beeinflusste werden können.</p>
-
-<br /> <a href="images/object_orientation_classes-1.png"><img src="images/object_orientation_classes-1.png" width="100%" alt="" /></a>
-
-
-<p> Wenn nun ein Baum wächst und Äpfel produziert erzeugt er nach dem Bauplan des Proto-Apfels neue Äpfel und jedem werden bestimmte Werte übergeben.</p>
-
-<br /> <a href="images/object_orientation_classes-2.png"><img src="images/object_orientation_classes-2.png" width="100%" alt="" /></a>
-
-
-<p>Der Baum erzeugt den Apfel und ruft kontinuierlich die Methode Wachsen auf. Hierbei wird der Wert des Gewichtes inkrementiert. Sind die Früchte dann reif wird abhängig vom Gewicht des einzelnen Apfels die Methode Fallen ausgelösst. Wenn der Apfel dann auf dem Boden liegt und die Methode Fallen beendet ist beginnt die Methode Verroten ihre Arbeit. Die Farbe des Apfels verändert sich und das Gewicht wird wieder verringert.
-Das bedeutet der Proto-Apfel selber wird nicht angerührt sondern Instanzen von diesem. Um dies noch auf die Spitze zu treiben haben wir nicht nur eine Art Apfel sondern verschieden Sorten. Also ist die Klasse Granny Smith und ein "Kind"-Klasse der Basisklasse Apfel. Granny Smith erbt alle Eigenschaften der Klasse Apfel ohne das sie neu implemntiert werden müssen und bekommt noch eine weitere Eigenschaft: den Namen.</p>
-
-<pre><code>} // Klammer zu.  
-</code></pre>
-
-<p>Dieses Konstruktionsweise spiegelt sich in nicht nur in der Programmierung wieder. Die Benutzung einiger Komponenten in unseren Werkzeugen ist genau nach diesem Prinzip organisiert.</p>
-
-<h4>Eine weiter Klammer auf</h4>
-
-<pre><code>{
-</code></pre>
-
-<p>In InDesign hat der Benutzer die Möglichkeit Absatz- und Zeichenformate anzulegen ohne die das setzen eines Buches eine wirklich Zeitraubende Angelegenheit wäre. Eine einfache Gruppe von Absatzformaten kann wie folgt aufgebaut sein.<br/>
-- [Einfacher Absatz]<br/>
-- TextKörper<br/>
-- Überschrift 1<br/>
-- Überschrift 2<br/>
-- Überschrift 3<br/>
-- Bild Unterschrift<br/>
-- Pagina<br/>
-In dem Format "[Einfacher Absatz]" wird eine Schriftart und eine Schriftgrösse definiert. Dieses Format ist das Proto-Format von dem sich alle weiteren Formate ableiten. Sie erben also alle die Eigenschaften Schrift (appliedFont) und die Schriftgrösse (pointSize). Das Format "Überschrift 1" (Ü1) bekommt dann eine eigene Schriftgrösse und einen fetten Schnitt der Schriftart. Im dem Format "Überschrift 2" (Ü2) wird dann festgelegt das nicht mehr das "[Einfacher Absatz]" Format als Basis Klasse benutzt wird sondern Ü1. Damit erbt Ü2 alle Eigenschaften von Ü1. In Ü2 wird dann nurnoch eine neue Schriftgrösse festgelegt. Das gleiche kann dann mit "Überschrift 3" (Ü3) passieren. Ü3 basiert auf Ü2 und bekommt ebenfalls eine eigene Schriftgrösse. Jetzt basiert Ü3 auf Ü2, das auf Ü1 und das auf "[Einfacher Absatz]". Ähnlich verfahren wir mit den weiteren Formaten. "Textkörper" basiert auf "[Einfacher Absatz]", "Bildunterschrift" auf "Textkörper" nur kleiner und "Pagina" auf "Bildunterschrift" aber mit 70% Deckkraft. Wenn der Gestalter nun entscheidet dass eine andere Schriftart von Nöten ist, ändert er sie nur in "[Einfacher Absatz]" und alle Kinder werden entsprechend angepasst. Dies ist ebenfalls Objektorientiert.</p>
-
-<br /> <a href="images/id_formate.png"><img src="images/id_formate.png" width="100%" alt="" /></a>
-
-
-<pre><code>} // Klammer zu
-</code></pre>
-
-<h3>Was sind Funktionen/Methoden?</h3>
-
-<p>Eine Funktion oder eine Methode sind gekapselte Programmteile and die Parameter übergeben werden können und die an den gegebenen Parametern eine Kalkulation durchführen. Sie können dann Werte zurückgeben. Dies ist nützlich wenn bestimmte Tätigkeiten an unterschiedlichen Positionen eins Programms oder Skripts mehr mals aufgerufen werden müssen.</p>
-
-<h3>Was ist ein Bug?</h3>
-
-<p>Ein Bug ist ein Fehler der das Programm von seiner einwandfreien Ausführung abhält. Dies kann nur ein Rechenfehler sein oder ein Fehler der das gesamte Programm zum Absturz bringt.</p>
-
-<h3>Was ist Debugging?</h3>
-
-<p>Dies ist der Prozess des Findens und korrigeren von Fehlern.</p>
-
-<h3>Was ist ein Workaround?</h3>
-
-<p>Ein Workaround ist eine kreative Lösung um ein Problem zu umgehen. Wenn zum Beispiel eine API ein bestimmte Funktion nicht anbietet muss ein Weg um dieses Problem drumherum gefunden werden.</p>
-
-<h3>Welche Konventionen gibt es?</h3>
-
-<p>Neben den Bestimmungen der Syntax gibt es verschiedene Konventionen die das lesen von Skripten einfacher machen sollen. Zum Beispiel ist es gang und gebe dass die Funktionsweise am Beginn eines Skripts in einem Kommentar erklärt wird. Oder die Verwendung der Variable i (für Iterator) als Zähler in Schleifen.</p>
-
-<h3>Was ist Scripting?</h3>
-
-<p>Die einfachste Antwort sind folgende zweieinhalb Sätze:</p>
-
-<blockquote><p>Scripting languages assume that there already exists a collection of useful components written in other languages. Scripting languages aren't intended for writing applications from scratch; they are intended primarily for plugging together components<br/>
-Scripting: Higher Level Programming
-for the 21st Century by John K. Ousterhout (<a href="http://www.tcl.tk/doc/scripting.html">online</a>)</p></blockquote>
-
-<h3>Was ist der Unterschied zwischen Javascript und ExtendScript?</h3>
-
-<p>JavaScript oder EcmaScript ist das was uns täglich in Webbrowsern solche Dinge bescherte wie Scrollen auf Knopfdruck oder Warnhinweise und ähnliches. ExtendScript ist ein Dialekt von JavaScript der von Adobe entwickelt wurde. Das bedeutet InDesign versteht JavaScript und ExtendScript aber ein Browser kann mit ExtendScript Befehlen nichts anfangen.</p>
-
-<h2>Teil 2 Anwendungsgebiete</h2>
-
-<p>Auch wenn Aufgaben auf unterschiedliche Weise mit verschiedenen Programmiersprachen gelöst werden können haben sich spezielle Anwendungsgebiete für die einzelnen Sprachen ergeben. Ganz unabhängig davon, dass sich in unserem Fall Adobe Anwendungen nur mit AppleScript, VisualBasic oder JavaScript ansprechen lassen macht es Sinn eine Scriptsprache zu verwenden um die bereits in höheren Sprachen implemetierten Funktionen zu verbinden.</p>
-
-<p>Zur Veranschaulichung was das in der Anwendung bedeutet zur hier ein Programm das folgende Aufgaben erledigt.
-Ein Objekt erzeugen mit folgenden Eigenschaften<br/>
-- Einem Namen<br/>
-- Einer Funktion die 2 Zahlen mit einander vergleicht und feststellt welche die grössere von beiden ist.
-Dann gibt das Programm eine Meldung mit dem Ergebnis zurück.</p>
-
-<p>Dieses Programm liegt hier in verschiedenen Sprachen vor.<br/>
-Ich werde hier kurz auf die Unterschiede eingehen. An dieser Stelle ist es nicht zwingend den Programmcode komplett zu verstehen. Beachten sie nur die syntaktischen Unterschiede. Vergleichen sie die Funktion oder Methode</p>
-
-<div class="highlight"><pre><code class="cpp"><span class="kt">int</span> <span class="n">Object</span><span class="o">::</span><span class="n">compare</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span>
-</code></pre>
-</div>
-
-
-<p> in C++ mit</p>
-
-<div class="highlight"><pre><code class="c"><span class="kt">int</span> <span class="n">compare</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span>
-</code></pre>
-</div>
-
-
-<p> in C und betrachten sie danach die Funktion</p>
-
-<div class="highlight"><pre><code class="js"><span class="nx">compare</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span><span class="k">if</span><span class="p">(</span><span class="nx">a</span><span class="o">&gt;</span><span class="nx">b</span><span class="p">){</span><span class="k">return</span> <span class="nx">a</span><span class="p">;}</span><span class="k">else</span><span class="p">{</span><span class="k">return</span> <span class="nx">b</span><span class="p">;}</span>
-</code></pre>
-</div>
-
-
-<p> in JavaScript. Es gibt kleine Unterschiede aber die gemeinsame Herrkunft ist unübersehbar. Eine tiefere Erklärung des Quellcodes findet sich in den Kommentaren der einzelnen Programme.</p>
-
-<h4>Assembler (anObject.s)</h4>
-
-<p>Dies ist die Variente die die Maschiene versteht. Es wurde jedoch nicht von mir geschrieben sondern ist das Ergebnis des Kompilierungsprozesses des C++ Programms. Näher wäre nur noch Nullen und Einsen zu schrieben. Ich drucke dies hier der Vollständigkeit halber ab. Ja - es gibt auch diesen Aspekt der Programmierung aber um dort anzugelangen ist es ein weiter Weg den wenige gehen und auch wir nicht beschreiten werden in dieser Arbeit. Aus Platzgründen werde ich hier nur die ersten 29 Zeilen zeigen. Das gesamte Programm in Assembler Code ist über 700 Zeilen lang.</p>
-
-<div class="highlight"><pre><code class="cpp">      <span class="p">.</span><span class="n">section</span>  <span class="n">__TEXT</span><span class="p">,</span><span class="n">__text</span><span class="p">,</span><span class="n">regular</span><span class="p">,</span><span class="n">pure_instructions</span>
-        <span class="p">.</span><span class="n">globl</span>    <span class="n">__ZN6Object7compareEii</span>
-        <span class="p">.</span><span class="n">align</span>    <span class="mi">1</span><span class="p">,</span> <span class="mh">0x90</span>
-    <span class="nl">__ZN6Object7compareEii:</span>
-    <span class="nl">Leh_func_begin1:</span>
-        <span class="n">pushq</span>    <span class="o">%</span><span class="n">rbp</span>
-    <span class="nl">Ltmp0:</span>
-        <span class="n">movq</span> <span class="o">%</span><span class="n">rsp</span><span class="p">,</span> <span class="o">%</span><span class="n">rbp</span>
-    <span class="nl">Ltmp1:</span>
-        <span class="n">movq</span> <span class="o">%</span><span class="n">rdi</span><span class="p">,</span> <span class="o">-</span><span class="mi">8</span><span class="p">(</span><span class="o">%</span><span class="n">rbp</span><span class="p">)</span>
-        <span class="n">movl</span> <span class="o">%</span><span class="n">esi</span><span class="p">,</span> <span class="o">-</span><span class="mi">12</span><span class="p">(</span><span class="o">%</span><span class="n">rbp</span><span class="p">)</span>
-        <span class="n">movl</span> <span class="o">%</span><span class="n">edx</span><span class="p">,</span> <span class="o">-</span><span class="mi">16</span><span class="p">(</span><span class="o">%</span><span class="n">rbp</span><span class="p">)</span>
-        <span class="n">movl</span> <span class="o">-</span><span class="mi">12</span><span class="p">(</span><span class="o">%</span><span class="n">rbp</span><span class="p">),</span> <span class="o">%</span><span class="n">eax</span>
-        <span class="n">movl</span> <span class="o">-</span><span class="mi">16</span><span class="p">(</span><span class="o">%</span><span class="n">rbp</span><span class="p">),</span> <span class="o">%</span><span class="n">ecx</span>
-        <span class="n">cmpl</span> <span class="o">%</span><span class="n">ecx</span><span class="p">,</span> <span class="o">%</span><span class="n">eax</span>
-        <span class="n">jle</span>  <span class="n">LBB1_2</span>
-        <span class="n">movl</span> <span class="o">-</span><span class="mi">12</span><span class="p">(</span><span class="o">%</span><span class="n">rbp</span><span class="p">),</span> <span class="o">%</span><span class="n">eax</span>
-        <span class="n">movl</span> <span class="o">%</span><span class="n">eax</span><span class="p">,</span> <span class="o">-</span><span class="mi">24</span><span class="p">(</span><span class="o">%</span><span class="n">rbp</span><span class="p">)</span>
-        <span class="n">jmp</span>  <span class="n">LBB1_3</span>
-    <span class="nl">LBB1_2:</span>
-        <span class="n">movl</span> <span class="o">-</span><span class="mi">16</span><span class="p">(</span><span class="o">%</span><span class="n">rbp</span><span class="p">),</span> <span class="o">%</span><span class="n">eax</span>
-        <span class="n">movl</span> <span class="o">%</span><span class="n">eax</span><span class="p">,</span> <span class="o">-</span><span class="mi">24</span><span class="p">(</span><span class="o">%</span><span class="n">rbp</span><span class="p">)</span>
-    <span class="nl">LBB1_3:</span>
-        <span class="n">movl</span> <span class="o">-</span><span class="mi">24</span><span class="p">(</span><span class="o">%</span><span class="n">rbp</span><span class="p">),</span> <span class="o">%</span><span class="n">eax</span>
-        <span class="n">movl</span> <span class="o">%</span><span class="n">eax</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">(</span><span class="o">%</span><span class="n">rbp</span><span class="p">)</span>
-        <span class="n">movl</span> <span class="o">-</span><span class="mi">20</span><span class="p">(</span><span class="o">%</span><span class="n">rbp</span><span class="p">),</span> <span class="o">%</span><span class="n">eax</span>
-        <span class="n">popq</span> <span class="o">%</span><span class="n">rbp</span>
-        <span class="n">ret</span>
-    <span class="nl">Leh_func_end1:</span>
-</code></pre>
-</div>
-
-
-<h4>C++ (anObject.cpp)</h4>
-
-<p> In diesem Beispiel ist bereits zu sehen, dass die Menge an Code die geschrieben werden muss geringer wird. Wobei hier wie auch im C Beispiel bedacht werden muss, dass bereits vorhandene Programmteile mit weiteren hunderten oder tausenden Zeilen Code eingebunden werden. Mit den Aussagen:</p>
-
-<div class="highlight"><pre><code class="cpp">  <span class="cp">#include &lt;iostream&gt;</span>
-    <span class="cp">#include &lt;string&gt; </span>
- 
-</code></pre>
-</div>
-
-
-<p>werden fertige Klassen mit Methoden aufgerufen. "iostream" um die Ein- und Ausgabe des Programms zu handhaben und "string" um Zeichenketten zu verarbeiten. Der Unterschied ist enorm. Während in C eine Zeichenkette noch eine Liste einzelner Zeichen ist wird in C++ ein Zeichenkette als ein einziges Objekt gehandhabt und bringt viele Funktionen mit zur Verarbeitung dieser.</p>
-
-<div class="highlight"><pre><code class="cpp">  <span class="cp">#include &lt;iostream&gt;</span>
-    <span class="cp">#include &lt;string&gt;</span>
-    
-    <span class="c1">// using namespace std; // if you use this you can remove all &quot;std::&quot;</span>
-    <span class="k">class</span> <span class="nc">Object</span><span class="p">{</span>
-        
-    <span class="k">public</span><span class="o">:</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">name</span><span class="p">;</span>
-        <span class="n">Object</span><span class="p">(){}</span><span class="c1">// basis constructor</span>
-        <span class="n">Object</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">in</span><span class="p">){</span><span class="n">name</span> <span class="o">=</span> <span class="n">in</span><span class="p">;}</span><span class="c1">// another constructor</span>
-        <span class="kt">int</span> <span class="n">compare</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">);</span><span class="c1">//Prototype</span>
-        <span class="kt">void</span> <span class="n">setName</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">in</span><span class="p">){</span><span class="n">name</span> <span class="o">=</span> <span class="n">in</span><span class="p">;}</span>
-    <span class="p">};</span>
-    
-    <span class="kt">int</span> <span class="n">Object</span><span class="o">::</span><span class="n">compare</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">){</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="o">&gt;</span><span class="n">b</span><span class="p">){</span><span class="k">return</span> <span class="n">a</span><span class="p">;}</span><span class="k">else</span><span class="p">{</span><span class="k">return</span> <span class="n">b</span><span class="p">;}</span>
-    <span class="p">}</span>
-    
-    <span class="kt">int</span> <span class="n">main</span><span class="p">(){</span>
-        <span class="n">Object</span><span class="o">*</span> <span class="n">myObject</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Object</span><span class="p">(</span><span class="s">&quot;Hello World&quot;</span><span class="p">);</span>
-    
-        <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">23</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
-    
-        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;The Object named: &quot;</span><span class="o">&lt;&lt;</span> 
-        <span class="n">myObject</span><span class="o">-&gt;</span><span class="n">name</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">Compared: &quot;</span>
-        <span class="o">&lt;&lt;</span> <span class="n">a</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; with &quot;</span>
-        <span class="o">&lt;&lt;</span> <span class="n">b</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span> 
-        <span class="o">&lt;&lt;</span> <span class="n">myObject</span><span class="o">-&gt;</span><span class="n">compare</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span> <span class="o">&lt;&lt;</span><span class="s">&quot; is bigger</span><span class="se">\n</span><span class="s">&quot;</span> 
-        <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-        <span class="cm">/* code */</span>
-        <span class="k">delete</span> <span class="n">myObject</span><span class="p">;</span>
-        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
-</code></pre>
-</div>
-
-
-<h4>ANSI C noObject.c</h4>
-
-<p>Im Unterschied zu C++ und JS ist die Sprache C nicht für eine Objektorientierung ausgelegt. Deshalb hier einmal das Beispiel noObject.c welches ebenfalls die gestellte Aufgabe des Vergleich löst aber kein Objekt erzeugt. Die Syntax ähnelt hier sehr der von JavaScript. Sobald jedoch Pointer hinzukommen wird es schwer kompliziert. (Ein Pointer ist der Verweiss auf die Adresse unter der eine Variable abgelegt. Dies verweist auf reel okkupierten Speicher.) Das kann dann so aussehen:</p>
-
-<div class="highlight"><pre><code class="c"><span class="kt">double</span> <span class="o">*</span><span class="n">dp</span><span class="p">,</span> <span class="n">atof</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="p">);</span>
-</code></pre>
-</div>
-
-
-<blockquote><p>says that in an expression *dp and atof(s) have values of double, and that the argument of atof is a pointer to char.
-aus The C programming Language By Brian W. Kernighan and Dennis M. Ritchie. Published by Prentice-Hall in 1988
-(<a href="http://net.pku.edu.cn/~course/cs101/2008/resource/The_C_Programming_Language.pdf">online</a>)</p></blockquote>
-
-<p>Aber ich schweife ab. Keine Sorge mit solchen Gedankenmodellen werden wir in JavaScript nicht konfrontiert. All diese funktionalität wird von der Maschiene im Hintergrund erledigt. Somit bleibt Zeit sich mit der Funktionsweise zu beschäftigen. Stellen sie es sich vor wie: "Entweder das Auto vor dem Fahren zusammenbauen oder einfach in das fertige Auto einzusteigen und loszufahren." Dennoch habe ich die Vergleichs-Funktion einmal in C geschrieben.</p>
-
-<div class="highlight"><pre><code class="c">    <span class="cp">#include&lt;stdio.h&gt;</span>
-  
-    <span class="n">compare</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">){</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="o">&gt;</span><span class="n">b</span><span class="p">){</span><span class="k">return</span> <span class="n">a</span><span class="p">;}</span><span class="k">else</span><span class="p">{</span><span class="k">return</span> <span class="n">b</span><span class="p">;}</span>
-        <span class="p">}</span>
-    
-    <span class="kt">int</span> <span class="n">main</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
-        <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">11</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;Hello World&quot;</span><span class="p">;</span>
-        <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">23</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
-        <span class="n">printf</span><span class="p">(</span><span class="s">&quot;The Object named: %s</span><span class="se">\n</span><span class="s">Compared: %d with %d.</span><span class="se">\n</span><span class="s">%d is bigger!&quot;</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">compare</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">));</span>
-    
-        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
-  
-</code></pre>
-</div>
-
-
-
-
-<br /> <a href="images/terminal_c_cpp.png"><img src="images/terminal_c_cpp.png" width="100%" alt="" /></a>
-
-
-<h4>JavaScript (anObject.js)</h4>
-
-<p>  Mit JavaScript gehen wir noch einen Schritt weiter. Hier sind das Objekt, die Ein-/Ausgabe, der String bereits existent und müssen nicht neu implementiert noch eingebunden werden. Der massgebende Unterschied ist dass die vorherigen Programme wirklich vollwertige Programme sind die nach dem Kompilieren aus der Kommandozeile ausgeführt werden können. Die JavaScript Variante benötigit ein Programm in dem es ausgeführt wird. Es ist also alleine nicht lauffähig. Werfen sie einen Blick auf die Funktion <code>buildNewObject(n)</code>. Was wir in C in 26 Zeilen schreiben hat in JavaScript nur noch 8 Zeilen.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="nx">main</span><span class="p">();</span>
-    
-    <span class="kd">function</span> <span class="nx">main</span><span class="p">(){</span>
-    
-        <span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="nx">buildNewObject</span><span class="p">(</span><span class="s2">&quot;Hello JS&quot;</span><span class="p">);</span>
-        <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">23</span><span class="p">,</span> <span class="nx">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
-        <span class="nx">obj</span><span class="p">.</span><span class="nx">compare</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">);</span>
-        <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;The Script named: &quot;</span><span class="o">+</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> 
-              <span class="s2">&quot;\nCompared: &quot;</span><span class="o">+</span> <span class="nx">a</span> <span class="o">+</span><span class="s2">&quot; with &quot;</span><span class="o">+</span> <span class="nx">b</span> <span class="o">+</span><span class="s2">&quot;\n&quot;</span> 
-              <span class="o">+</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">result</span> <span class="o">+</span> <span class="s2">&quot; is bigger\n&quot;</span><span class="p">);</span>
-        <span class="nx">obj</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
-        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
-    
-    <span class="kd">function</span> <span class="nx">buildNewObject</span><span class="p">(</span><span class="nx">n</span><span class="p">){</span>
-        <span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="nx">name</span><span class="o">:</span><span class="nx">n</span><span class="p">,</span>
-        <span class="nx">result</span><span class="o">:</span><span class="mi">0</span><span class="p">,</span>
-        <span class="nx">compare</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span><span class="k">if</span><span class="p">(</span><span class="nx">a</span><span class="o">&gt;</span><span class="nx">b</span><span class="p">){</span><span class="k">this</span><span class="p">.</span><span class="nx">result</span> <span class="o">=</span> <span class="nx">a</span><span class="p">;}</span><span class="k">else</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">result</span> <span class="o">=</span> <span class="nx">b</span><span class="p">;}}</span>
-        <span class="p">};</span>
-        <span class="k">return</span> <span class="nx">obj</span><span class="p">;</span>
-    <span class="p">}</span>
-</code></pre>
-</div>
-
-
-
-
-<br /> <a href="images/estk_anobjectjs.png"><img src="images/estk_anobjectjs.png" width="100%" alt="" /></a>
-
-
-<p>Dies ist eine kleine Abwandlung der</p>
-
-<div class="highlight"><pre><code class="js"><span class="nx">compare</span>
-</code></pre>
-</div>
-
-
-<p> Funktion. Das soll zeigen wie intelligent JavaScript sein kann. Die Funktion</p>
-
-<div class="highlight"><pre><code class="js"><span class="nx">buildNewObject</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span>
-</code></pre>
-</div>
-
-
-<p> kann die gegebenen Variablen vergleiche und in sich selber das Ergebnis setzen mit</p>
-
-<div class="highlight"><pre><code class="js"><span class="k">this</span><span class="p">.</span><span class="nx">result</span>
-</code></pre>
-</div>
-
-
-<p>. Um eine solche Funktionalität in einer Hochsprache zu erzeugen bedürfte es einiger Zeilen mehr. Ohne diese Erweiterung würde es schon mehr der C Variante ähneln.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="nx">main</span><span class="p">();</span>  
-    <span class="kd">function</span> <span class="nx">main</span><span class="p">(){</span>
-        <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">23</span><span class="p">,</span> <span class="nx">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
-        <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;Hello JS&quot;</span><span class="p">;</span>
-        <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">compare</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">);</span>
-            <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;The Script named: &quot;</span><span class="o">+</span> <span class="nx">name</span> <span class="o">+</span><span class="s2">&quot;\nCompared: &quot;</span>
-                  <span class="o">+</span> <span class="nx">a</span> <span class="o">+</span><span class="s2">&quot; with &quot;</span><span class="o">+</span> <span class="nx">b</span> <span class="o">+</span><span class="s2">&quot;\n&quot;</span> <span class="o">+</span> <span class="nx">result</span> <span class="o">+</span> <span class="s2">&quot; is bigger\n&quot;</span><span class="p">);</span>
-        <span class="p">}</span>
-    <span class="kd">function</span> <span class="nx">compare</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span>
-        <span class="k">if</span><span class="p">(</span><span class="nx">a</span><span class="o">&gt;</span><span class="nx">b</span><span class="p">){</span>
-            <span class="k">return</span>  <span class="nx">a</span><span class="p">;</span>
-            <span class="p">}</span><span class="k">else</span><span class="p">{</span>
-            <span class="k">return</span>  <span class="nx">b</span><span class="p">;</span>
-        <span class="p">};</span>
-    <span class="p">};</span>
-</code></pre>
-</div>
-
-
-
-
-<br /> <a href="images/estk_noobjectjs.png"><img src="images/estk_noobjectjs.png" width="100%" alt="" /></a>
-
-
-<p>Dies ist der Punkt wo wir als Gestalter ansetzen können. Wir müssen das Rad nicht neu erfinden. Wir können jedoch unseren Arbeitsablauf durch gezielte Befehlsketten von repetitive Aufgaben befreien. Ich bin mir sicher dass ein grossteil aller Gestalter die vorgefertigte Software für ihre Arbeit verwenden schon einmal an den Punkt kamen wo sie sich dachten: "Warum kann mein Programm DAS nicht," (DAS steht hier für eine gewünschte Funktionsweise)  "es ist doch alles da. Der Knopf und danach Knopf!". Scripting erlaubt es uns diese beiden Knöpfe mit eineander zu verbinden. Das bedeutet dann das wir unsere Arbeit um einen "Klick" reduziert haben. Wir haben zwei Knöpfe durch Verkettung auf einen neuen Knopf gelegt. Natürlich klingt die Reduktion um einen Klick vernachlässigbar. Wenn Jedoch diese zwei Klicks 100 mal ausgeführt werden müssen und wir durch logische Anweisung diese ebenfalls auf nur einen Knopf zusammenführen können ist der Zeitgewinn enorm. Ebenfalls muss hier erwähnt werden das viele der Probleme die in einem Gestlatungsprozess auftreten nicht zum erstenmal bei eben dieser Person auftreten. Für den Bereich Scripting von Adobe Anwendungen gibt es im Netz viele Seiten und Foren die sich mit diesem Thema befassen. Im Bereich JavaScript gibt es noch viele mehr, da JavaScript auch verwendet wird beziehungsweise entwichelt wurde um Browser zu steuern. Aufgrund dessen ist die Dokumentation mehr als ausgiebig. Es Bedarf nur einiger Übung um die gefundenen Beispiele auf die eigene Problemstellung zu abstrahieren.</p>
-
-<h1>Hierbei sei zu beachten! [Absatz überarbeiten]</h1>
-
-<p>Scripting kann keine Entscheidungen fällen. Es existiert kein Algorithmus der Ästhetik simuliert. Um eine spannende Komposition zu schaffen braucht der Gestalter "nur" drei geometrische Grundformen zu erzeugen und diese im richtigen Verhältnis zu einander anzuordnen. Um dies programmatisch zu lösen müsste ein Skript mehrere hundert mal ausgeführt werden. Jedesmal mit einer kleinen Veränderung der Koordinaten der obig genannten drei Objekte. Davon mal ganz abgesehen, dass der Author irgendwann entscheiden muss welche Komposition knackig ist. Was das Script leisten kann ist anhand von bestimmten Rahmenparametern eine Fülle von Varianten zu liefern die von Hand Senenscheidenentzündungen hervorrufen würde.<br/>
-Programmieren ist nicht einfach. Es ist wie eine neue Sprache lernen. Stellen sie sich vor sie sind in einem fremden Land dessen Sprache sie nicht beherrschen. Sie werden zuerst Probleme haben. Dann lernen sie ihre Grundbedürfnisse zu decken. Ab einem gewissen Punkt können sie Tageszeitungen lesen und Inhalte erfassen und abstrahieren. Eines Tages werden sie feststellen, dass sie in der Sprache Träumen.<br/>
-Daher sollten sie bevor sie in die Tiefen von JavaScript abtauchen um ein Problem zu lösen endschieden:</p>
-
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content=
+    "text/html; charset=us-ascii" />
+    <title>
+      BA FMZ
+    </title>
+    <meta name="author" content="fabiantheblind" />
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="css/syntax.css" type="text/css" />
+    <!-- Homepage CSS -->
+    <link rel="stylesheet" href="css/screen.css" type="text/css"
+    media="screen, projection" /><!-- Include Print CSS -->
+    <link rel="stylesheet" href="css/print.css" type="text/css"
+    media="print" />
+   <link rel="stylesheet" href="css/nav.css" type="text/css"
+    media="screen, projection" /><!-- Include nav CSS -->
+<!--    
+    <script src="js/jquery-1.7.2.min.js" type="text/javascript">
+</script>
+    <script src="js/jquery-ui-1.8.20.custom.min.js" type=
+    "text/javascript">
+</script>
+    <script src="js/showHide.js" type="text/javascript">
+</script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js">
+</script>
+    <script type="text/javascript" src="js/jquery.plusanchor.js">
+</script>
+ <script type="text/javascript">
+//<![CDATA[
+    $(document).ready(function(){
+
+
+    $('.show_hide').showHide({      
+    speed: 500,  // speed you want the toggle to happen  
+    easing: 'easeInOutQuart',  // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
+    changeText: 1, // if you dont want the button text to change, set this to 0
+    showText: '[?]',// the button text to show when a div is closed
+    hideText: '[x]' // the button text to show when a div is open     
+    }); 
+    });
+
+    $(document).ready(function(){
+    $('body').plusAnchor({
+    easing: 'easeInOutExpo',
+    speed: 2500,
+          onInit: function( base ) {
+
+              if ( base.initHash != '' && $(base.initHash).length > 0 ) {
+
+                window.location.hash = 'hash_' + base.initHash.substring(1);
+
+          window.scrollTo(0, 0);
+
+                  $(window).load( function() {
+
+                    timer = setTimeout(function() {
+
+                        $(base.scrollEl).animate({
+                            scrollTop: $( base.initHash ).offset().top
+
+                        }, base.options.speed, base.options.easing);
+                    }, 10000); // setTimeout
+
+                  }); // window.load
+              }; // if window.location.hash
+
+          } // onInit
+    });
+    });
+    //]]>
+    </script> -->
+
+  </head>
+  <body>
+  <nav>  
+<!-- <h1>Bachelor Arbeit von Fabian Mor&oacute;n Zirfas</h1>
+<h1>Mehr Zeit f&uuml;r Gestaltung</h1> -->
+<!-- <br /> <a href="images/connectedNodes.jpg"><img src="images/connectedNodes.jpg" width="100%" alt="" /></a>
+ -->
+<!-- <br> -->
+<!-- <h4>Inhalt</h4> -->
+<!-- <br>
+<div id="index"> -->
 <ul>
-<li>Welche Operatioen sollen ausgeführt werden?</li>
-<li>Wie komplex sind die Operationen?</li>
-<li>Wie ist das Zeitfenster und wann muss das Produkt fertig sein?</li>
-<li>Wie oft muss diese Tätigkeit ausgeführt werden?</li>
-<li>Lässt sich die Automation auch auf andere ähnliche Bereiche anwenden bzw mit geringen Aufwand abstrahieren?</li>
-<li>Wie sehr ist sie von Umgebungsvariablen abhängig?</li>
-<li>Soll die Automation von dritten Benutzt werden?</li>
-<li>Ist der Prozess linear oder bedarf es einer Rückkopplung zum Benutzer?</li>
+	<li><a href="00einleitung.html">1 Einleitung</a></li>
+		<ul>
+			<li><a href="01bevorsieeinsteigen.html">&emsp;1.1 Bevor sie Einsteigen</a></li>
+		</ul>
+	<li><a href="02wannsollichskripten.html">2 Wann soll ich Scripten?</a></li>
+	<!-- 	<ul>
+			<li><a href="wannsollichskripten.html#37">&emsp;&emsp;2.0.1 Welche Operationen sollen ausgef&uuml;hrt werden?</a></li>
+			<li><a href="wannsollichskripten.html#38">&emsp;&emsp;2.0.2 Wie komplex sind die Operationen?</a></li>
+			<li><a href="wannsollichskripten.html#39">&emsp;&emsp;2.0.3 Wie ist das Zeitfenster und wann muss das Produkt fertig sein?</a></li>
+			<li><a href="wannsollichskripten.html#40">&emsp;&emsp;2.0.4 Wie oft muss diese T&auml;tigkeit ausgef&uuml;hrt werden?</a></li>
+			<li><a href="wannsollichskripten.html#41">&emsp;&emsp;2.0.5 L&auml;sst sich die Automation auch auf andere &auml;hnliche Bereiche anwenden oder mit geringen Aufwand abstrahieren?</a> </li>
+			<li><a href="wannsollichskripten.html#42">&emsp;&emsp;2.0.6 Wie sehr ist sie von Umgebungsvariablen abh&auml;ngig?</a></li>
+			<li><a href="wannsollichskripten.html#43">&emsp;&emsp;2.0.7 Soll die Automation von dritten Benutzt werden?</a></li>
+			<li><a href="wannsollichskripten.html#44">&emsp;&emsp;2.0.8 Ist der Prozess linear oder bedarf es einer R&uuml;ckkopplung zum Benutzer?</a></li>
+		</ul> -->
+	<li><a href="02wannsollichskripten.html#04">&emsp;2.1 Das Beispiel targetengine</a></li>
+<!-- 		<ul>
+			<li><a href="wannsollichskripten.html#45">&emsp;&emsp;2.1.1 Existieren bereits Automationen in dem Sektor und wenn ja lassen sich diese abwandeln?</a></li>
+			<li><a href="wannsollichskripten.html#46">&emsp;&emsp;2.1.2 Bietet die API direkten Zugriff auf die ben&ouml;tigten Funktionen oder braucht es eine Workaround?</a></li>
+		</ul> -->
+	<li><a href="02wannsollichskripten.html#05">&emsp;2.2 Das Beispiel try char</a></li>
+
+	<li><a href="03szenarien.html">3 Szenarien</a></li>
+
+		<ul>
+			<li><a href="04szenarioimagematrix.html">&emsp;3.1 Der Einsatz - das Beispiel image matrix</a></li>
+			<li><a href="04szenarioimagematrix.html#33">&emsp;&emsp;3.1.1 Ergebnisse - image matrix</a></li>
+			<li><a href="05imagematrixschrittfuerschritt.html">&emsp;3.2 image matrix - Schritt f&uuml;r Schritt.</a></li>
+			<li><a href="06szenariogretapower.html">&emsp;3.3 Das Beispiel great power</a></li>
+		</ul>
+	<li><a href="07werkzeuge.html">4 Werkzeuge</a></li>
+	<li><a href="08dieangst.html">5 Die Angst</a></li>
+	<li><a href="09fazit.html">6 Fazit</a></li>
+	<li><a href="10terminologie.html">7 Die kleine Terminologie</a></li>
+		<ul>
+			<li><a href="10terminologie.html#14">&emsp;7.01 Was ist Code?</a></li>
+			<li><a href="10terminologie.html#15">&emsp;7.02 Was ist ein Programm?</a></li>
+			<li><a href="10terminologie.html#16">&emsp;7.03 Was ist ein Algorithmus?</a></li>
+			<li><a href="10terminologie.html#17">&emsp;7.04 Was ist die Syntax?</a></li>
+			<li><a href="10terminologie.html#18">&emsp;7.05 Was ist Pseudocode?</a></li>
+			<li><a href="10terminologie.html#19">&emsp;7.06 Was ist ein Compiler?</a></li>
+			<li><a href="10terminologie.html#20">&emsp;7.07 Was ist eine IDE (Integrated Development Envoirement)?</a></li>
+			<li><a href="10terminologie.html#21">&emsp;7.08 Was ist Hello World?</a> </li>
+			<li><a href="10terminologie.html#22">&emsp;7.09 Was ist Syntax-Highlighting?</a></li>
+			<li><a href="10terminologie.html#23">&emsp;7.10 Was ist eine API (Application Programming Interface)?</a></li>
+			<li><a href="10terminologie.html#24">&emsp;7.11 Was ist Objektorientierung?</a></li>
+			<li><a href="10terminologie.html#25">&emsp;7.12 Was sind Funktionen/Methoden</a>?</li>
+			<li><a href="10terminologie.html#26">&emsp;7.13 Was ist ein Bug?</a></li>
+			<li><a href="10terminologie.html#27">&emsp;7.14 Was ist Debugging?</a></li>
+			<li><a href="10terminologie.html#28">&emsp;7.15 Was ist ein Workaround?</a>  </li>
+			<li><a href="10terminologie.html#29">&emsp;7.16 Welche Konventionen gibt es?</a></li>
+			<li><a href="10terminologie.html#30">&emsp;7.17 Herkunft von JavaScript</a></li>
+			<li><a href="10terminologie.html#31">&emsp;7.18 Was ist der Unterschied zwischen JavaScript und ExtendScript?</a></li>
+			<li><a href="10terminologie.html#32">&emsp;7.19 Was sind Pointer</a></li>
+		</ul>
+	<li><a href="11referenzen.html">8 Refenrenzen</a></li>
+	<li><a href="12weblinks.html">9 Weblinks</a></li>
+	<li><a href="13quellen.html">10 Quellen</a></li>
 </ul>
-
-
-<p>Und einige Punkte die sich hauptsächlich durch Recherche abarbeiten lassen</p>
-
-<ul>
-<li>Existieren bereits Automationen in dem Sektor und wenn ja lassen sich diese abwandeln?</li>
-<li>Bietet die API direkten Zugriff auf die benötigten Funktionen oder bedarf es eines Workarounds?</li>
-</ul>
-
-
-<p>Diese Analyse kann keine genauen Angaben über Zeit und Aufwand machen da dies immer auch vom Erfindungsreichtum des Authors abhängig ist. Der Kreative kommt hier schneller zum Ziel.</p>
-
-<ul>
-<li>Welche Operatioen sollen ausgeführt werden?</li>
-</ul>
-
-
-<p>Programme oder Skripte schreiben ist nicht wie "Scribbeln". Wir können zum Beispiel beim Telefonieren eine Stift in die Hand nehmen und draufloskritzeln. Beim Programmieren muss das Ergebnis bereits definiert sein bevor geschrieben wird. Natürlich ergeben sich auch während des Schreibens neue Ideen, dennoch bedarf es einer konkreten Vorstellung was das Ziel sein soll. Es ist eher mit Sprechen zu vergleichen. Erst Denken dann Sprechen.</p>
-
-<ul>
-<li>Wie komplex sind die Operationen?</li>
-</ul>
-
-
-<p>Wenn eine Fülle von unterschiedlichen Operationen ausgeführt werden soll, müssen auch ensprechend viele Anweisungen an das Programm erfolgen und der Author muss sich auf eine längere Entwicklungszeit einstellen. Wenn es im Gegensatz darum geht eine Hand voll Operationen sagen wir 1000 mal auszuführen kann es sein das sich der Kern des Skriptes auf ca 10 Zeile reduziert. Das bedeutet auch das die Zeit für Entwicklung und Debugging relativ gering sein können und sich der Zeitaufwand lohnen kann.</p>
-
-<ul>
-<li>Wie ist das Zeitfenster und wann muss das Produkt fertig sein?</li>
-</ul>
-
-
-<p>Auch hier muss abhängig von der Komplexität des Skriptes und dem eigenem Vermögen geurteilt werden ob dies in dem gegebenen Zeitraum Recherchiert, Entworfen, Geschrieben und Debugged werden kann. Hinzukommt das das Ergebnis meist nur ein Teilergebnis ist und noch weiterverabeitet werden muss. Es ist davon auszugehen das etwaige tiefere Fehler erst während des vollem Einsatzes auftreten. Wenn dies in dem entsprechendem Zeitraum nicht zu bewerkstelligen ist sollte von einer Entwicklung abgesehen werden.</p>
-
-<ul>
-<li>Wie oft muss diese Tätigkeit ausgeführt werden?</li>
-</ul>
-
-
-<p>Wenn das Skript nur ein einziges mal ausgeführt werden soll, sollte man sich fragen wo darin der Nutzen liegt. Es kann natürlich sein das dies Sinn und Zweck hat und sollte nur bedingt ausschlaggebend sein. Hierbei gilt es zu Unterscheiden das einmalig 1000 mal einen Knopf drücken bereits eine Hilfe sein kann. Einmalig 1000 mal unterschiedliche Knöpfe drücken ist eine Aufgabe die doch besser manuell geschieht.</p>
-
-<ul>
-<li>Lässt sich die Automation auch auf andere ähnliche Bereiche anwenden bzw mit geringen Aufwand abstrahieren?</li>
-</ul>
-
-
-<p>Wenn dies der Fall ist steigt der Nutzen der Arbeit. Der einmalige Aufwand ein Programm oder Skript für eine immer wieder kehrende beziehungsweise ähnliche Aufgabe zu schreiben reduziert sich im "nachhinein" durch jede Ausführung. Dies soll heissen: Durch das schreiben des Programms das ich immer wieder verwende spare ich Zeit in der Zukunft.</p>
-
-<ul>
-<li>Wie sehr ist sie (Die Aufgabe) von Umgebungsvariablen abhängig?</li>
-</ul>
-
-
-<p>(Das selbstgeschriebene Programm ist in diesem Fall aussen vor. Wie bereits oben erwähnt setzt das Programm alle Möglichkeiten vorraus. Das Skript hingegen greift auf bestehende Komponenten zu.) Kann das Skript unabhängig von allen Variablen die der Benutzer setzen kann ausgeführt werden vereinfacht das den Aufwand. Bei einer Abhängigkeit Bedarf es immer erst einer Abfrage des ist Status und einer Evaluierung. In Illustrator oder InDesign wird die aktuelle Auswahl des aktiven Dokuments in einer Liste genannt "selection" geführt.</p>
-
-<pre><code>app.activeDocument.selection;
-</code></pre>
-
-<p>In dieser Liste liegen Einzelne Objekte die Text sein können oder eine Vektorform oder ein Bild. All diese haben gemeinsame Eigenschaften aber auch spezielle. Es muss also befor eine Eigenschaft genutzt oder verändert werden kann eine Abfrage stattfinden welche Art von Objekt einthalten ist.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="c1">// InDesign &amp; Illustrator</span>
-    <span class="kd">var</span> <span class="nx">firstListItem</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">activeDocument</span><span class="p">.</span><span class="nx">selection</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span> <span class="c1">// first object in selection </span>
-        <span class="k">if</span><span class="p">(</span><span class="nx">firstListItem</span> <span class="k">instanceof</span> <span class="nx">TextFrame</span><span class="p">){</span> <span class="cm">/* check the type */</span>
-        <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;I am a &quot;</span> <span class="o">+</span> <span class="nx">firstListItem</span><span class="p">.</span><span class="nx">constructor</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>    <span class="c1">// and name it</span>
-    <span class="p">}</span>
-  
-</code></pre>
-</div>
-
-
-
-
-<br /> <a href="images/ai_id_textframe.png"><img src="images/ai_id_textframe.png" width="100%" alt="" /></a>
-
-
-<p>Viele solcher Abfrage können ein Skript schnell komplex werden lassen. Oder anders ausgedrückt je universeller der Nutzen sein soll desto mehr Umgebungsvariablen müssen beachtet werden. Dies bedarf natürlich Zeit.</p>
-
-<ul>
-<li>Soll die Automation von dritten Benutzt werden?</li>
-</ul>
-
-
-<p>Dies ist ein wichtiger Faktor. Wenn nur der Author selber die Automation verwendet kann er seine vorhergehenden Aktionen auf die Bedürfnisse und Beschränkungen des Skriptes anpassen. Wenn jedoch eine unbedarfte oder schlimmer noch eine dem Skripten nicht mä(ö)chtige Person dieses Werkzeug nutzen soll müssen wie bereits oben erwähnt viele Umgebungsvariablen abgefragt oder selber bestimmt werden. Im Programmier-Slang sagt man: "Man muss vom DAU* ausgehen." (Dümmster Anzunehmender User). Dies ist nicht als Beleidigung gedacht. Es soll eher sagen dass alle Benutzerfehler die auftreten können auftreten werden. In diesem Fall bekommt ein Nicht des Programmierens Mächtiger wenn er Glück hat nur eine Fehlermeldung, wenn er Pech hat einen Programmabsturz. In beiden Fällen steigt die Hemmung des Nutzer ungemein das Skript noch einmal zu verwenden. Wenn also Dritte mit ins Spiel kommen bedarf es noch längerer Test- und Debug-Phasen.</p>
-
-<ul>
-<li>Ist der Prozess linear oder bedarf es einer Rückkopplung zum Benutzer?</li>
-</ul>
-
-
-<p>Wenn dem so ist sollte der Prozess vielleicht in mehrere Skripte zerlegt werden. Für den Fall das Variablen von einem Skript an das nächste übergeben werden müssen kann dies die Komplexität weiter erhöhen. In diesem Fall gibt es die Möglichkeit eigene Textdateien vom Skript kreieren zu lassen in dem Werte abgelegt werden können, Eine "Script Panel" zu erzeugen oder eine eigene <code>#targetengine</code> zu erzeugen in der solange das Programm aktiv ist Daten gespeichert werden. Die letzten beiden sind jedoch forgeschrittene Lösungen die ebenfalls viele Stolpersteine beherbergen können.</p>
-
-<h4>Das Beispiel targetengine</h4>
-
-<p>Skript 1:</p>
-
-<div class="highlight"><pre><code class="js">   <span class="err">#</span><span class="nx">targetengine</span> <span class="s2">&quot;session01&quot;</span>
-    <span class="kd">var</span> <span class="nx">myValue</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// new value</span>
-    <span class="nx">alert</span><span class="p">(</span><span class="nx">myValue</span><span class="p">);</span> <span class="c1">// result is 0</span>
-    <span class="nx">myValue</span><span class="o">++</span><span class="p">;</span> <span class="c1">// increment by 1</span>
-</code></pre>
-</div>
-
-
-<p>Skript 2:</p>
-
-<div class="highlight"><pre><code class="js">   <span class="err">#</span><span class="nx">targetengine</span> <span class="s2">&quot;session01&quot;</span>
-    <span class="nx">alert</span><span class="p">(</span><span class="nx">myValue</span><span class="p">);</span> <span class="c1">// result is 1</span>
-</code></pre>
-</div>
-
-
-<p>Der Algorithmus is wie folgt</p>
-
-<div class="highlight"><pre><code class="js">   <span class="nx">Start</span>  
-    <span class="nx">Sitzung</span> <span class="mi">1</span>
-    <span class="nx">definiere</span> <span class="nx">Variable</span> <span class="nx">meinWert</span> <span class="nx">und</span> <span class="nx">speicher</span> <span class="mi">0</span> <span class="k">in</span> <span class="nx">ihr</span>
-    <span class="nx">zeige</span> <span class="nx">Wert</span> <span class="nx">von</span> <span class="nx">meinWert</span>
-    <span class="nx">erh</span><span class="err">ö</span><span class="nx">he</span> <span class="nx">meinWert</span> <span class="nx">im</span> <span class="nx">eins</span>
-    <span class="nx">Stop</span>  
-  
-    <span class="nx">Start</span>  
-    <span class="nx">Sitzung</span> <span class="mi">1</span>
-    <span class="nx">zeige</span> <span class="nx">Wert</span> <span class="nx">von</span> <span class="nx">meinWert</span>
-    <span class="nx">Stop</span>  
-</code></pre>
-</div>
-
-
-<p>Dies bedeutet dass das Programm (nicht das Skript) sich den Wert für die Variable <code>myValue</code> gemerkt hat und ihn solange in <code>#targetengine "session01"</code> speichert bis es beendet wird. Hier liegt die Gefahr darin Variablen Namen doppelt zu vergeben. In vielen meiner Skripte speichere ich das aktive Dokument in der variable <code>doc</code>. Wenn diese nun in einer targetengine liegen wird das Programm immer auf das zuletzt <code>doc</code> gleichgesetzte Objekt zugreifen auch wenn dies vielleicht nicht gewünscht ist sondern vom Benutzer nicht beachtet wurde. Auch die Verwendung von Textdateien kann ihre Tücken haben. Auf unterschiedlichen Betriebsystemen werden Dateipfade unterschiedlich gehandhabt. Auch dies will abgefragt und getestet werden. "Last but not least" gibt es noch die Möglichkeit eigene Grafische Benutzeroberflächen zu erzeugen. Dies ist aber eine Variante für erfahrenere Authoren.</p>
-
-<p>Die Recherchearbeiten sollten bereits vor dem ersten Entwurf erledigt sein.</p>
-
-<ul>
-<li>Existieren bereits Automationen in dem Sektor und wenn ja lassen sich diese abwandeln?</li>
-</ul>
-
-
-<p>Wie bereits oben erwähnt sind viele Probleme bereits einmal aufgetreten am Ende dieser Arbeit ist eine Liste zu finden wo für welchen Zweck nach Informationen gesucht werden kann. Wenn das Problem nicht all zu speziell ist kann es gut sein, dass es bereits ein Skript gibt das entweder genau diese Funktion enthält und wenn nicht auf die eigenen Bedürfnisse angepasst werden kann oder was meist der Fall es mehrere Skripte gibt die Teilprozesse der eigenen Idee beinhalten und als Referenz benutzt werden können. In den seltesten Fällen entsteht ein Skript von Scratch*(aus einem blanken Textdokument).</p>
-
-<ul>
-<li>Bietet die API direkten Zugriff auf die benötigten Funktionen oder bedarf es eines Workarounds?</li>
-</ul>
-
-
-<p>Dies Bedarf eines Beispiels. InDesign kann nicht erfragen ob ein Zeichen in einer Schriftart enthalten ist. Es gibt als kein Feld das so etwas wie "Font has Character" beinhaltet. Um dieses Abfrage zu simulieren hat Peter Kahrel (einer der präsentesten InDesign Skripter) die Funktion try_char geschrieben die hier in einer etwas abgewandelten Form folgt. Diese Funktion macht folgendes. Sie bekommt eine Zeichen als Parameter. Diesen speichert temporär in einer Variable. Dann wird das Zeichen genommen und InDesign versucht es in Konturen umzuwandeln. Dies kann nur passieren wenn das Zeichen in dem Font auch existiert. Sollte dem so sein wird die neu kreierte Vektorform wieder verworfen und das Zeichen wird aus dem Zwischenspeicher wieder hergestellt. Wenn jedoch das erzeugen der Vektorform einen Fehler erzeugt wird dieser aufgefangen. Dies passiert mit dem Konstrukt <code>try { } catch (e) {}</code> Sollte der Inhalt der ersten geschwungenen Klammer oder auch Block genannt einen Fehler erzeugen wird dieser aufgefangen und das Skript führt den Zweiten Block aus. Die Variable <code>e</code> ist in diesem Fall die Fehlermeldung. Probieren sie es aus mit diesem kurzen Skript: <code>try{ var no_no = nothing;}catch(e){alert(e);}</code>. Das Programm wird sie warnen das die Variable <code>nothing</code> nicht existiert. Um die folgende Funktion sinvoll ausführen zu können benötigen sie ein InDesign Dokument mit einer Textbox auf der ersten Seite in der Zeichen nicht dargestellt werden können. (Siehe Bild).</p>
-
-<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">tf</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">activeDocument</span><span class="p">.</span><span class="nx">pages</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="mi">0</span><span class="p">).</span><span class="nx">textFrames</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
- 
-    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">tf</span><span class="p">.</span><span class="nx">characters</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
-     <span class="kd">var</span> <span class="nx">theChar</span> <span class="o">=</span> <span class="nx">tf</span><span class="p">.</span><span class="nx">characters</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
-     <span class="nx">try_char</span> <span class="p">(</span><span class="nx">theChar</span><span class="p">);</span>
-     <span class="p">};</span>
- 
-    <span class="c1">// by Peter Kahrel </span>
-    <span class="c1">// http://www.kahrel.plus.com/indesign/compose_cs3.jsx</span>
-    <span class="kd">function</span> <span class="nx">try_char</span> <span class="p">(</span><span class="nx">theChar</span><span class="p">){</span>  
-    <span class="k">try</span> <span class="p">{</span>  
-        <span class="c1">// save the character </span>
-        <span class="kd">var</span> <span class="nx">storage</span> <span class="o">=</span> <span class="nx">theChar</span><span class="p">.</span><span class="nx">contents</span><span class="p">;</span> 
-        <span class="c1">// create outline  </span>
-        <span class="nx">theChar</span><span class="p">.</span><span class="nx">createOutlines</span><span class="p">();</span>  
-        <span class="c1">// if we got here it worked, so delete the outline</span>
-        <span class="c1">// if not the next line will be within the catch block  </span>
-        <span class="c1">// if not it will cause an error  </span>
-        <span class="nx">theChar</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>  
-        <span class="c1">// insert the character (again)  </span>
-        <span class="nx">theChar</span><span class="p">.</span><span class="nx">contents</span> <span class="o">=</span> <span class="nx">storage</span><span class="p">;</span>  
-        <span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>  
-        <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;The character &quot;</span><span class="o">+</span> <span class="nx">theChar</span><span class="p">.</span><span class="nx">contents</span> <span class="o">+</span> 
-        <span class="s2">&quot; could not be converted into an Outline.\n&quot;</span><span class="o">+</span>
-        <span class="s2">&quot;That means he does not exist in the font:\n\&quot;&quot;</span>
-        <span class="o">+</span> <span class="nx">theChar</span><span class="p">.</span><span class="nx">appliedFont</span><span class="p">.</span><span class="nx">name</span><span class="o">+</span><span class="s2">&quot;\&quot;&quot;</span><span class="p">);</span>
-        <span class="p">}</span>  
-     <span class="p">}</span> 
- 
-</code></pre>
-</div>
-
-
-
-
-<br /> <a href="images/try_char_id.png"><img src="images/try_char_id.png" width="100%" alt="" /></a>
-
-
-<p>Solche Lösungen setzen nicht nur ein kreativen Umgang mit Code vorraus sondern auch ein tiefes Wissen über die Funktionsweise und Möglichkeiten innerhalb von, in diesem Falle, InDesign.</p>
-
-<p>Die obig genannten Hindernisse schrecken ab. Es klingt alles sehr komplex. Es ist jedoch alles sehr allgemein gehalten und manche Fragen stelle sich auch erst gar nicht. Bei Aufgaben die ein Normal Nutzer niemals manuell machen würde muss sogar ein Skript geschrieben werden wenn sie erledigt werden soll.<br/>
-Auch wenn der Prozess des Skript schriebens eine Kreative Arbeit ist, ist das Ziel des Skriptes nicht der Kreative Output sondern die Optimierung der eigenen Arbeitsabläufe. Das Skript oder Programm kann niemals die Idee liefern. Es unterstützt den Prozess indem es repetitive Aufgaben erledigt die entweder niemals gemacht worden wären oder aber vom eigentlichen Kreativem Prozess ablenken.</p>
-
-<h2>Teil 3 Der Einsatz</h2>
-
-<p>Die Fragen die sich jetzt stellen sind folgende: "Wie kommt dies zum Einsaz?", "Wie kann ich dies nutzen?".
-Es folgt nun das InDesign Skript image_matrix.jsx mit etwas mehr als 40 Zeilen Code. Dieses Skript beinhaltet eine Benutzer Interaktion, Dateihandhabung, das Math Objekt*(ein bereits bestehnder Teil von Javascript. Es erledigt solche Aufgaben wie Rundung von Werten oder das Berechnen einer Quadratwurzel), Conditionen, eine Schleife, Funktionen, Variablen und es hat einen Generativen Character. Das Skript erledigt folgende Schritte (in Pseudocode).</p>
-
-<ul>
-<li>Frage den Benutzer nach einem Ordner mit jpg Dateien.</li>
-<li>Erzeuge ein Quadratisches Dokument dessen Grösse auf der Quadratwurzel der Menge der Bilder bassiert und alle Bilder fast.</li>
-<li>Platziere alle Bilder.</li>
-</ul>
-
-
-<p>Kopieren sie den nachstehenden Code und bereiten sie einen Ordner mit einigen Jpg-Bildern vor. Das Skript das unten beschrieben wird verarbeitet NUR .jpg Dateien, Dateien die .jpeg oder .JPG heissen werden ignoriert. Es sollten um die 15 bis 30 sein damit die Ausführung des Skriptes nicht zuviel Zeit in Anspruch nimmt. Es kann jedoch auch 100,1000 oder mehr Bildern handhaben. Die genau Menge ist irelevant. Lesen nochmals den Abschnitt Hello World und wie Skripte ausgeführt werden können und führen sie das Skript aus. Wenn der Ordnerauswahl Dialog sich öffnet wähle sie den Ordner mit den Bildern an.
-Das gesamte Skript:</p>
-
-<div class="highlight"><pre><code class="js">   <span class="p">{</span><span class="c1">// START SCRIPT</span>
-    <span class="nx">main</span><span class="p">();</span> <span class="c1">// you need a function to be able to cancel a script</span>
-
-    <span class="kd">function</span> <span class="nx">main</span><span class="p">(){</span><span class="c1">// all is in here</span>
-
-    <span class="kd">var</span> <span class="nx">w</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span> <span class="c1">// the image sizes</span>
-    <span class="kd">var</span> <span class="nx">allImages</span> <span class="o">=</span> <span class="nx">loadFiles</span><span class="p">(</span><span class="s2">&quot;*.jpg&quot;</span><span class="p">);</span><span class="c1">// opens a prompt and lets the user choose a folder</span>
-    <span class="k">if</span><span class="p">(</span><span class="nx">allImages</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span> <span class="c1">// if that what the function returns null is - cancel</span>
-
-    <span class="kd">var</span> <span class="nx">pw</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="p">))</span> <span class="o">*</span> <span class="nx">w</span> <span class="o">+</span> <span class="p">(</span><span class="nx">w</span><span class="o">*</span><span class="mi">2</span><span class="p">);</span> <span class="c1">// this will hold the page width</span>
-    <span class="kd">var</span> <span class="nx">ph</span> <span class="o">=</span> <span class="nx">pw</span><span class="p">;</span>
-
-    <span class="k">if</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="p">))</span> <span class="o">!=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="p">)){</span>
-            <span class="nx">ph</span> <span class="o">=</span> <span class="nx">pw</span> <span class="o">+</span> <span class="nx">w</span><span class="p">;</span>
-            <span class="p">}</span>
-
-    <span class="kd">var</span> <span class="nx">doc</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">documents</span><span class="p">.</span><span class="nx">add</span><span class="p">();</span> <span class="c1">//build a basic document</span>
-    <span class="nx">doc</span><span class="p">.</span><span class="nx">documentPreferences</span><span class="p">.</span><span class="nx">pageWidth</span> <span class="o">=</span> <span class="nx">pw</span><span class="p">;</span><span class="c1">// set the width</span>
-    <span class="nx">doc</span><span class="p">.</span><span class="nx">documentPreferences</span><span class="p">.</span><span class="nx">pageHeight</span> <span class="o">=</span> <span class="nx">ph</span><span class="p">;</span> <span class="c1">// set the height</span>
-    <span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="nx">doc</span><span class="p">.</span><span class="nx">pages</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="c1">// finally - get the first page</span>
-
-    <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="nx">w</span><span class="p">;</span> <span class="c1">// the upper left corner</span>
-    <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">w</span><span class="p">;</span> <span class="c1">// the upper left corner</span>
-
-    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span><span class="c1">// loop thru all images</span>
-
-    <span class="kd">var</span> <span class="nx">rect</span> <span class="o">=</span> <span class="nx">page</span><span class="p">.</span><span class="nx">rectangles</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span><span class="nx">geometricBounds</span><span class="o">:</span><span class="p">[</span><span class="nx">y</span><span class="p">,</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span> <span class="o">+</span> <span class="nx">w</span><span class="p">,</span><span class="nx">x</span> <span class="o">+</span> <span class="nx">w</span><span class="p">]});</span><span class="c1">// add a rectangle to the page</span>
-    <span class="nx">rect</span><span class="p">.</span><span class="nx">place</span><span class="p">(</span><span class="nx">allImages</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">);</span><span class="c1">// place the image</span>
-    <span class="nx">rect</span><span class="p">.</span><span class="nx">fit</span><span class="p">(</span><span class="nx">FitOptions</span><span class="p">.</span><span class="nx">FILL_PROPORTIONALLY</span><span class="p">);</span><span class="c1">// fit it to the frame</span>
-    <span class="nx">rect</span><span class="p">.</span><span class="nx">fit</span><span class="p">(</span><span class="nx">FitOptions</span><span class="p">.</span><span class="nx">CENTER_CONTENT</span><span class="p">);</span><span class="c1">// fit it to the frame</span>
-    <span class="nx">x</span> <span class="o">+=</span><span class="nx">w</span><span class="p">;</span> <span class="c1">// increase x by an image width</span>
-
-    <span class="k">if</span><span class="p">(</span><span class="nx">x</span> <span class="o">&gt;=</span> <span class="nx">pw</span> <span class="o">-</span> <span class="p">(</span><span class="nx">w</span><span class="p">)){</span> <span class="c1">// if x is the width minus an image width</span>
-            <span class="nx">x</span> <span class="o">=</span> <span class="nx">w</span><span class="p">;</span> <span class="c1">// reset x</span>
-            <span class="nx">y</span><span class="o">+=</span> <span class="nx">w</span><span class="p">;</span> <span class="c1">// and increment y by an image width</span>
-            <span class="p">};</span><span class="c1">//end increase x and y conditional</span>
-
-        <span class="p">};</span><span class="c1">//close allImages loop</span>
-
-    <span class="p">};</span><span class="c1">// end main function</span>
-
-    <span class="kd">function</span> <span class="nx">loadFiles</span><span class="p">(</span><span class="nx">type</span><span class="p">){</span><span class="c1">// the function that loads the files</span>
-
-    <span class="kd">var</span> <span class="nx">theFolder</span> <span class="o">=</span> <span class="nx">Folder</span><span class="p">.</span><span class="nx">selectDialog</span> <span class="p">(</span><span class="s2">&quot;Choose the Folder&quot;</span><span class="p">);</span><span class="c1">// user select a folder</span>
-
-    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">theFolder</span><span class="p">){</span><span class="c1">// if the folder is not a folder cancel the script</span>
-        <span class="k">return</span><span class="p">;</span><span class="c1">// this cancels the whole function image_loadFiles</span>
-            <span class="p">};</span> <span class="c1">// end foldr check</span>
-
-    <span class="kd">var</span> <span class="nx">allImages</span> <span class="o">=</span> <span class="nx">theFolder</span><span class="p">.</span><span class="nx">getFiles</span><span class="p">(</span><span class="nx">type</span><span class="p">);</span><span class="c1">// get the files by type</span>
-    <span class="k">if</span><span class="p">((</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">)</span><span class="o">||</span><span class="p">(</span><span class="nx">allImages</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">){</span><span class="c1">// again if check if there are images</span>
-        <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;There are no images of the type: &quot;</span> <span class="o">+</span> <span class="nx">type</span><span class="p">);</span><span class="c1">// hm something went wrong? User error</span>
-        <span class="k">return</span> <span class="kc">null</span><span class="p">;</span><span class="c1">// so we cancel the function</span>
-           <span class="p">}</span><span class="k">else</span><span class="p">{</span>
-        <span class="k">return</span> <span class="nx">allImages</span><span class="p">;</span><span class="c1">// give back the images. Success!</span>
-            <span class="p">};</span><span class="c1">// end all images check</span>
-
-        <span class="p">};</span><span class="c1">// end function loadFiles</span>
-    <span class="p">}</span> <span class="c1">// END OF SCRIPT</span>
-</code></pre>
-</div>
-
-
-
-
-<br /> <a href="images/image_matrix_1.jpg"><img src="images/image_matrix_1.jpg" width="100%" style="max-width:500px;" alt="" /></a><br />
-
-
-<br /> <a href="images/image_matrix_2.jpg"><img src="images/image_matrix_2.jpg" width="100%" style="max-width:500px;" alt="" /></a><br />
-
-
-<br /> <a href="images/image_matrix_3.jpg"><img src="images/image_matrix_3.jpg" width="100%" style="max-width:500px;" alt="" /></a><br />
-
-
-<h3>Das Skript Schritt für Schritt.</h3>
-
-<p>Ein Skript sollte immer in geschwungenen Klammern engefasst sein. Dies ist nicht zwingend jedoch nützlich falls das Skript von einem anderem Skript evaluiert werden muss. Innerhalb dieser Klammern folgt der gesamte Quellcode.</p>
-
-<pre><code>{}
-</code></pre>
-
-<p>Als nächstes definieren wir eine Funktion die einmalig aufgerufen wird. Hierbei ist es irrelevant ob der Aufruf vor oder nach der Funktionsdefinition stattfindet. Aus Gründen der Übersichtlicheit steht hier der Aufruf vor der definition. Diese Funktion erhält keine Parameter. Später wird auch ein Funktion mit Parametern eingesetzt. Der Zweck den gesamten Code in einer Funktion zu kapseln ist folgender: Wenn es eine hirarchisch höhere Ebene gibt, unsere <code>{}</code> Klammern, kann eine Funktion mit dem Befehl <code>return;</code> beendet werden. Dies ist nützlich um bei Fehlern oder falscher Benutzer Eingabe die Ausführung zu stoppen. Mit dem Befehl <code>return</code> kann nicht nur ein Funktion beendet werden sondern auch ein Wert zurückgegben werden. Wenn wir also schreiben <code>return 1;</code> am Ende einer Funktion wäre das Ergebniss 1. <code>var myValue = main();</code> Wenn die Funktion main nun einen Wert zurückgeben würde, wäre <code>myValue</code> 1. In unserem Fall benötigt die <code>main()</code> keinen Rückgabewert.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="nx">main</span><span class="p">();</span>
-    <span class="kd">function</span> <span class="nx">main</span><span class="p">(){</span>
-    <span class="p">}</span>
-</code></pre>
-</div>
-
-
-<p>Wir befinden uns nun in der Funktion <code>main();</code>.<br/>
-Es folgt die deklaration der ersten Variable. Sie beinhaltet die Breite (und Höhe) unserer Bilder.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">w</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span>
-</code></pre>
-</div>
-
-
-<p>Wie zu sehen ist entspricht die Variable <code>w</code>*(steht für width) nun 25. <code>w</code> wird im Verlauf des Skriptes mehrmals verwendet. Der Vorteil  daran Variablen zu verwenden anstatt immer 25 zu schreiben ist, dass wenn wir die Breite verändern wollen wir dies nur ein einziges mal an <code>w</code> erledigen müssen und alle weiteren Verwendungen von <code>w</code> werden angepasst.<br/>
-Als nächstes folgt bereits die nächste Subfunktion mit einem Parameter und einem Rückgabewert. In Javascript werden alle Variablen mit <code>var</code> deklariert. Die Unterscheidung des Types findet erst bei der Verwendung statt. Deshalb können wir schreiben.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">allImages</span> <span class="o">=</span> <span class="nx">loadFiles</span><span class="p">(</span><span class="s2">&quot;*.jpg&quot;</span><span class="p">);</span>
-</code></pre>
-</div>
-
-
-<p>Damit die Funktion auch vorhanden ist fügen wir sie hinter <code>function main(){ }</code> an.
-Unser Code sieht also wie folgt aus.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="p">{</span>
-    <span class="nx">main</span><span class="p">();</span>
-        <span class="kd">function</span> <span class="nx">main</span><span class="p">(){</span>
-            <span class="kd">var</span> <span class="nx">w</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span>
-            <span class="kd">var</span> <span class="nx">allImages</span> <span class="o">=</span> <span class="nx">loadFiles</span><span class="p">(</span><span class="s2">&quot;*.jpg&quot;</span><span class="p">);</span>
-        <span class="p">}</span>
-        <span class="kd">function</span> <span class="nx">loadFiles</span><span class="p">(</span><span class="nx">type</span><span class="p">){</span>
-            <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-</code></pre>
-</div>
-
-
-<p>Den Rückgabewert werden wir noch verändern, denn wir wollen Bilder laden und nicht 0. Wie oben zu sehen ist erhält <code>loadFiles</code> den Parameter <code>type</code>. Dies ist der Dateityp der später geladen werden soll. <code>type</code> is genau wie <code>w</code> und <code>allImages</code> eine Variable nur das wir im Parameter Block der Funktion das <code>var</code> weglassen können.<br/>
-Wenn wir <code>*.*</code> schreiben würden würde unsere Funktion jeden Dateityp laden. Der Einfachheit halber beschränken wir uns auf jpg da wir wissen das InDesign jpg-Dateien laden und platzieren kann.<br/>
-Als nächstes begeben wir uns in die Funktion <code>loadFiles</code> und betrachten die Dateihandhabung und eine Benutzerinteraktion. Basierend auf dem Ergebnis der Interaktion fällt das Skript eine konditionale Entscheidung ob es weiter arbeiten soll oder ob es die Funktion <code>loadFiles</code> beendet.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">theFolder</span> <span class="o">=</span> <span class="nx">Folder</span><span class="p">.</span><span class="nx">selectDialog</span> <span class="p">(</span><span class="s2">&quot;Choose the Folder&quot;</span><span class="p">);</span>
-    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">theFolder</span><span class="p">){</span> 
-            <span class="k">return</span><span class="p">;</span>
-            <span class="p">};</span>
-</code></pre>
-</div>
-
-
-<p>Bisher waren alle Befehle JavaScript Befehle. Der Befehl <code>Folder.selectDialog ("Choose the Folder")</code> jedoch ist ExtendScript. das Objekt <code>Folder</code> hat eine eigene Funktion <code>selectDialog(parameter)</code>. Wir müssen diese Funktion nicht betrachten. Wir müssen nur wissen, dass sie ein Interface öffnet und dem Benutzer die Möglichkeit gibt einen beliebigen Ordner auszuwählen. Der Parameter ist der Text der auf dem Auswahldialog oben zu sehen ist. Der gewählte Ordner wird dann in der neuen Variable <code>theFolder</code> für eine spätere Referenzierung gespeichert. Dann folgt das Konstrukt der konditionalen Abfrage.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="k">if</span><span class="p">(</span> <span class="nx">Statment</span> <span class="p">){</span> <span class="nx">Do</span> <span class="nx">Something</span> <span class="p">}</span>
-</code></pre>
-</div>
-
-
-<p>Sie besagt, dass wenn die Aussage in der runden Klammer war ist die geschwungene Klammer ausgeführt wird. in unserem Fall wird durch das <code>!</code> die Aussage negiert. Ausgeschrieben könnte dort stehen <code>if(theFolder == false)</code> oder <code>if(theFolder != true)</code> die Schreibweise <code>if(!theFolder)</code> ist einfach nur verkürzt. Wenn wir  <code>if(theFolder)</code> schreiben würden würde das <code>if(theFolder==true)</code> entsprechen. Zu Beachten ist nicht <code>=</code> zu schreiben. Dies bedeutet "ist gleich", <code>==</code> bedeutet "entspricht". Gesprochen wäre unsere Aussage: "Wenn der Ordner nicht existiert - beende die Funktion".<br/>
-Als nächstes betrachten wir was das Laden der Dateien aus unserem Ordner.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">allImages</span> <span class="o">=</span> <span class="nx">theFolder</span><span class="p">.</span><span class="nx">getFiles</span><span class="p">(</span><span class="nx">type</span><span class="p">);</span>
-</code></pre>
-</div>
-
-
-<p>Ordner Objekte (Folder) haben eine weiter enigebaute Funktion: <code>getFiles(parameter)</code>. Diese hat auch einen Parameter. Den Dateityp. Hierbei wird nicht nur eine einzelne Datei zurückgegebn sondern eine Sammlung aller Dateien des angegebenen Typs. Dies ist ein Array. Ein Array sollte man sich als eine Liste vorstellen deren Positionen über einen Index aufgerufen werden können. Hierbei ist zu beachten das das erste Objekt in der Liste nicht mit 1 sondern mit 0 angesprochen wird. Also ist <code>allImages[0]</code> das erste Bild unserer Liste.<br/>
-Nun folgt ein weitere Sicherheitscheck ob wir Bilder gefunden haben und die Bestimmung des Rückgabewerts unserer Funktion. Ebenfalls wird der Nutzer wenn es keine Bilder gibt darauf hingewiesen.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="k">if</span><span class="p">((</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="nx">allImages</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">){</span>
-        <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;There are no images of the type: &quot;</span> <span class="o">+</span> <span class="nx">type</span><span class="p">);</span>
-        <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>     
-    <span class="p">}</span><span class="k">else</span><span class="p">{</span>
-        <span class="k">return</span> <span class="nx">allImages</span><span class="p">;</span>
-    <span class="p">};</span>
-</code></pre>
-</div>
-
-
-<p>Wie wir oben sehen benutzen wir nochmals die Konditionale Entscheidung <code>if()</code>. jedoch mit einer Erweiterung dem <code>else</code>. Dies bedeutet das auf jeden Fall eine er beiden Blöcke ausgeführt wird. Um es im Pseudocode darszustellen:</p>
-
-<pre><code>Wenn die Aussage zutrifft mach dies ansonsten mach dass
-</code></pre>
-
-<p>Innerhalb unsere runden Aussage Klammer haben wir mehrere Aussagen verknüpft. wir haben also 2 Aussagen. Mit dem <code>||</code> sagen wir entweder oder. In unserem Fall ist das einmal der Check ob wir mindestens ein Bild haben <code>(allImages.length &lt; 1)</code>. <code>length</code> ist eine Eigenschaft jedes Arrays und gibt wenn wir ein Bild haben 1 zurück. Wenn es einhundert sind 100. Wir fragen also ob die länge von unserer Liste kleiner als 1 ist. Diese Aussage verbinden wir mit <code>||</code> dies bedeutet "oder". Wenn also Aussage 1 oder Aussage 2 zutreffen führe den ersten Block aus. Wenn wir beide Aussagen Abfragen wollten müssten wir <code>&amp;&amp;</code> schreiben. Dies würde nur den ersten Block ausführen wenn beide Aussagen zutreffen. In unserem zweiten Aussage fragen wir nach <code>null</code>, dies ist etwas ähnliches wie nichts. Also wenn wir einen Fehler beim Laden der Bilder hatten oder <code>allImages</code> nicht existiert. Im ersten Block beenden wir nur die Funktion. Wenn keine der beiden Aussagen zutrifft sollten wir eine Liste von Bildern haben und diese geben wir mit <code>return allImages</code> an unsere Funktion <code>main</code> zurück.</p>
-
-<p>Wir befinden uns wieder in der Funktion main und werden einen weiter Abfrage starten.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="k">if</span><span class="p">(</span><span class="nx">allImages</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
-</code></pre>
-</div>
-
-
-<p>Wenn <code>loadImages</code> <code>null</code> zurückgibt bricht das Skript ab. Dies ist nötig da <code>loadImages</code> in der Funktion <code>main</code> stattfindet. Also führt ein <code>return</code> in <code>loadImages</code> nur zurück nach <code>main</code> und nicht zum beenden des Skripts. Hier ist ebenfalls eine verkürzte schreibweise zu sehen. Wir können uns die geschwungenen Klammern sparen wenn wir nur einen einzigen Befehl haben. Das heisst:</p>
-
-<div class="highlight"><pre><code class="js">   <span class="k">if</span><span class="p">(</span><span class="nx">statement</span><span class="p">){</span><span class="nx">doSomething</span><span class="p">;}</span> 
-</code></pre>
-</div>
-
-
-<p>enspricht:</p>
-
-<div class="highlight"><pre><code class="js">   <span class="k">if</span><span class="p">(</span><span class="nx">statement</span><span class="p">)</span> <span class="nx">doSomething</span>
-</code></pre>
-</div>
-
-
-<p>Ebenfalls könnte</p>
-
-<div class="highlight"><pre><code class="js">   <span class="k">if</span><span class="p">(</span><span class="nx">statement</span><span class="p">){</span><span class="nx">doSomething</span><span class="p">;}</span><span class="k">else</span><span class="p">{</span><span class="nx">doSomethingElse</span><span class="p">;}</span>
-</code></pre>
-</div>
-
-
-<p>als</p>
-
-<div class="highlight"><pre><code class="js">   <span class="k">if</span><span class="p">(</span><span class="nx">statement</span><span class="p">)</span> <span class="nx">doSomething</span><span class="p">;</span> <span class="k">else</span> <span class="nx">doSomethingElse</span><span class="p">;</span>
-</code></pre>
-</div>
-
-
-<p>abgekürzt werden. Dies geht jedoch nur bei jeweils einem Befehl nach der Aussage.</p>
-
-<p>Als nächstes folgt die Berechnung unserer Seitenbreite und Seitenhöhe. Die Höhe wird nochmals mit einer Kondition überprüft. Wenn die Menge an Bildern nicht in ein Matrix passt, also 3 mal 3 oder 4 mal 4 oder 100 mal 100 müss die Höhe nochmals um eine Zeile erweitert werden. Hier kommt das JavaScript Objekt <code>Math</code> zum Einsatz.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">pw</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="p">))</span> <span class="o">*</span> <span class="nx">w</span> <span class="o">+</span> <span class="p">(</span><span class="nx">w</span><span class="o">*</span><span class="mi">2</span><span class="p">);</span>
-    <span class="kd">var</span> <span class="nx">ph</span> <span class="o">=</span> <span class="nx">pw</span><span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="p">))</span> <span class="o">!=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="p">)){</span>
-            <span class="nx">ph</span> <span class="o">=</span> <span class="nx">pw</span> <span class="o">+</span> <span class="nx">w</span><span class="p">;</span>
-    <span class="p">}</span>
-</code></pre>
-</div>
-
-
-<p>Dies wirkt komplizert. Um es zu Verstehen lösen wir den ersten Satz einmal auf. Betrachten sie das Bild dabei.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="nx">a</span> <span class="nx">ist</span> <span class="nx">gleich</span> <span class="mi">16</span><span class="p">.</span> <span class="nx">Die</span> <span class="nx">Menge</span> <span class="nx">an</span> <span class="nx">Bildern</span><span class="p">.</span>  
-    <span class="nx">b</span> <span class="nx">ist</span> <span class="nx">die</span> <span class="nx">Wurzel</span> <span class="nx">aus</span> <span class="nx">a</span><span class="p">.</span> <span class="nx">Wir</span> <span class="nx">wollen</span> <span class="nx">es</span> <span class="nx">rechteckig</span><span class="p">.</span> <span class="nx">Also</span> <span class="mi">4</span><span class="p">.</span>  
-    <span class="nx">c</span> <span class="nx">ist</span> <span class="nx">b</span> <span class="nx">gerundet</span><span class="p">.</span> <span class="nx">Falls</span> <span class="nx">es</span> <span class="nx">eine</span> <span class="nx">Kommazahl</span> <span class="nx">ist</span><span class="p">.</span> <span class="nx">Bleibt</span> <span class="k">in</span> <span class="nx">diesem</span> <span class="nx">Fall</span> <span class="mi">4</span><span class="p">,</span> <span class="nx">wenn</span> <span class="nx">a</span> <span class="mi">16</span> <span class="nx">ist</span><span class="p">.</span>
-    <span class="nx">d</span> <span class="nx">ist</span> <span class="mi">25</span><span class="p">.</span> <span class="nx">Die</span> <span class="nx">Breite</span> <span class="nx">der</span> <span class="nx">Bilder</span><span class="p">.</span>  
-    <span class="nx">e</span> <span class="nx">ist</span> <span class="nx">c</span> <span class="nx">mal</span> <span class="nx">d</span><span class="p">.</span> <span class="nx">Wir</span> <span class="nx">staffeln</span> <span class="nx">die</span> <span class="nx">Bilder</span> <span class="nx">nach</span> <span class="nx">rechts</span><span class="p">.</span> <span class="mi">4</span><span class="err">×</span><span class="mi">25</span> <span class="nx">also</span> <span class="mi">100</span>  
-    <span class="nx">f</span> <span class="nx">ist</span> <span class="nx">d</span> <span class="nx">mal</span> <span class="mi">2</span><span class="p">.</span> <span class="nx">Das</span> <span class="nx">ist</span> <span class="nx">Links</span> <span class="nx">und</span> <span class="nx">Rechts</span> <span class="nx">der</span> <span class="nx">Abstand</span> <span class="nx">zum</span> <span class="nx">Seitenrand</span><span class="p">.</span>
-    <span class="nx">Jeweils</span> <span class="nx">eine</span> <span class="nx">Bildbreite</span><span class="p">.</span> <span class="nx">Also</span> <span class="mi">50</span> 
- 
-</code></pre>
-</div>
-
-
-
-
-<br /> <a href="images/matrix_think.png"><img src="images/matrix_think.png" width="100%" style="max-width:500px;" alt="" /></a><br />
-
-
-<p>Also ist unsere Seitenbreite 150</p>
-
-<p>Die Breite der Bilder mal der auf- oder abgerundeten Wurzel aus der Menge an Bildern plus eine Bildbreite links und eine rechts. (Lesen sie den vorherigen Satz nochmal und versuchen sie sich ein geistiges Bild von der Berechnung zu machen.)</p>
-
-<p>oder  <br/>
-g = [√a] × d + (d × 2)<br/>
-oder</p>
-
-<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">pw</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="p">))</span> <span class="o">*</span> <span class="nx">w</span> <span class="o">+</span> <span class="p">(</span><span class="nx">w</span><span class="o">*</span><span class="mi">2</span><span class="p">);</span>  
-</code></pre>
-</div>
-
-
-<p>Danach setzen wir die Höhe der Seite der Breite gleich.
-Für den Fall das b (oder <code>Math.sqrt(allImages.length)</code>) eine Fliesskommazahl ist und wir eine nicht rechteckige Matrix erzeugen müssen, also alle Bilder platziert werden sollen, müssen wir die Höhe der Seite um eine Zeile für Bilder erweitern. Deshalb vergleichen wir in dem <code>if(statement)</code> ob die gerundete Quadratwurzel kleiner als die Quadratwurzel ist.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="p">))</span> <span class="o">&lt;</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
-</code></pre>
-</div>
-
-
-<p>oder<br/>
-[√a] ≠ √a<br/>
-oder<br/>
-Wenn die Wurzel aus der Menge an Bilder nicht der gerundeten Wurzel aus der Menge an Bildern entspricht ist die Seitenhöhe die Seitenbreite plus eine Bildbreite. Wenn a also 17 ist wäre die Seite 150 breit und 175 hoch.</p>
-
-<p>ich vermeide hier um es nicht noch weiter zu verkomplizieren jede Art von Maßeinheit. Das lassen wir InDesign selber regeln. In der Standarteinstellung sind es Millimeter. Dies könnten wir defineren müssen wir aber nicht da InDesign immer eine Grundeinstellung hat.<br/>
-Als nächstes folgen das erzeugen des Dokuments, das einstellen der Seite auf unsere errechneten Werte, das überführen der ersten Seite im Dokument in eine Variable und die Definition unseres Startpunktes.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">doc</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">documents</span><span class="p">.</span><span class="nx">add</span><span class="p">();</span>
-        <span class="nx">doc</span><span class="p">.</span><span class="nx">documentPreferences</span><span class="p">.</span><span class="nx">pageWidth</span> <span class="o">=</span> <span class="nx">pw</span><span class="p">;</span>
-        <span class="nx">doc</span><span class="p">.</span><span class="nx">documentPreferences</span><span class="p">.</span><span class="nx">pageHeight</span> <span class="o">=</span> <span class="nx">ph</span><span class="p">;</span>
-    <span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="nx">doc</span><span class="p">.</span><span class="nx">pages</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-    <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="nx">w</span><span class="p">;</span>
-    <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">w</span><span class="p">;</span>
-</code></pre>
-</div>
-
-
-<p>Diese Zeilen sind fast selbst erklärend. Wir fügen der Sammlung an Dokumenten ein neues hinzu. Dabei ist irrelevant ob bereits ein Dokument existiert oder nicht. Dann stellen wir die Weite und Höhe der Seite ein. Dann nehmen wir aus der Sammlung an Seiten in dem neuem Dokument die Erste. Der Aufruf <code>item(0)</code> ist ebenfalls ein ExtendScript Befehl der nur in InDesign funktioniert. wir könnten auch <code>var page = doc.pages[0]</code> schreiben. Hier funktioniert beides gleich. Das ist jedoch nicht immer der Fall. Es gibt zum Beispiel die Möglichkeit <code>doc.pages.middleItem()</code> oder <code>doc.pages.lastItem()</code> abzufragen. Bei einem normalen Array wie unserem <code>allImages</code> würde <code>lastItem()</code> nicht funktionieren. Danach erzeugen wir die Startpunkt unseres ersten Bildes. x und y sind jeweils eine Bildbreite vom Rand der Seite entfernt.
-Es gibt noch die Möglichkeit die ersten drei Zeilen abzukürzen. Dies ist eine komprimiert schreibweise die uns noch öfter begegnen wird.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">doc</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">documents</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span><span class="nx">documentPreferences</span><span class="o">:</span><span class="p">{</span><span class="nx">pageWidth</span><span class="o">:</span><span class="nx">pw</span><span class="p">,</span><span class="nx">pageHeight</span><span class="o">:</span><span class="nx">ph</span><span class="p">}});</span>
-</code></pre>
-</div>
-
-
-<p>Aber zu dieser Schachtelung kommen wir noch. Wir sind bereits halb durch. Es folgt nochmals ein weiteres Konstrukt. die Schleife.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
-    <span class="kd">var</span> <span class="nx">rect</span> <span class="o">=</span> <span class="nx">page</span><span class="p">.</span><span class="nx">rectangles</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span><span class="nx">geometricBounds</span><span class="o">:</span><span class="p">[</span><span class="nx">y</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span> <span class="o">+</span> <span class="nx">w</span><span class="p">,</span><span class="nx">x</span> <span class="o">+</span> <span class="nx">w</span><span class="p">]});</span>
-    <span class="nx">rect</span><span class="p">.</span><span class="nx">place</span><span class="p">(</span><span class="nx">allImages</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">);</span>
-    <span class="nx">rect</span><span class="p">.</span><span class="nx">fit</span><span class="p">(</span><span class="nx">FitOptions</span><span class="p">.</span><span class="nx">FILL_PROPORTIONALLY</span><span class="p">);</span><span class="c1">// fit it to the frame</span>
-    <span class="nx">rect</span><span class="p">.</span><span class="nx">fit</span><span class="p">(</span><span class="nx">FitOptions</span><span class="p">.</span><span class="nx">CENTER_CONTENT</span><span class="p">);</span><span class="c1">// fit it to the frame</span>
-    <span class="nx">x</span> <span class="o">+=</span><span class="nx">w</span><span class="p">;</span>
-    <span class="p">}</span>
-</code></pre>
-</div>
-
-
-<p>Mit dieser Schleife würden wir nur Bilder nach rechts weiter setzen. Den "Zeilenumbruch" fügen wir später ein. Ersteinmal die Aussage der Schleife ähnelt der Kondition <code>for(statment){doSomething}</code> nur mit <code>for</code> anstatt <code>if</code>. Es könnte als an <em>solange</em> übersetzt werden. Solange du durch die Liste der Bilder zählen kannst. Die Aussage <code>for(var i = 0; i &lt; allImages.length; i++ )</code> ist  eine verkürzte schreibweise für <code>for(var i = 0; i &lt; allImages.length; i = i + 1 )</code>. Es wäre  auch möglich <code>for(var i = 5; i &lt; 100; i= i +5)</code> zu schreiben. Das Bedeutet. Zähler i ist 5. Solange i kleiner als 100 ist, erhöhe i um 5. Im ersten durchlauf ist i 5 im zweiten 10 im dritten 15. Wir würden dann nur das 5te ,10te und 15te Bild erhalten anstatt alle.<br/>
-Es folgt:</p>
-
-<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">rect</span> <span class="o">=</span> <span class="nx">page</span><span class="p">.</span><span class="nx">rectangles</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span><span class="nx">geometricBounds</span><span class="o">:</span><span class="p">[</span><span class="nx">y</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span> <span class="o">+</span> <span class="nx">w</span><span class="p">,</span><span class="nx">x</span> <span class="o">+</span> <span class="nx">w</span><span class="p">]});</span>
-</code></pre>
-</div>
-
-
-<p>Wir erzeugen auf der ersten Seite eine Rechteck, ähnlich wie unser Dokument und stellen die Aussenkanten ein. Die <code>geometricBounds</code>. Wir könnten auch folgendes schreiben.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">rect</span> <span class="o">=</span> <span class="nx">page</span><span class="p">.</span><span class="nx">rectangles</span><span class="p">.</span><span class="nx">add</span><span class="p">();</span>
-    <span class="kd">var</span> <span class="nx">y1</span> <span class="o">=</span> <span class="nx">y</span><span class="p">;</span>
-    <span class="kd">var</span> <span class="nx">x1</span> <span class="o">=</span> <span class="nx">x</span><span class="p">;</span>
-    <span class="kd">var</span> <span class="nx">y2</span> <span class="o">=</span> <span class="nx">y1</span> <span class="o">+</span> <span class="nx">w</span><span class="p">;</span>
-    <span class="kd">var</span> <span class="nx">x2</span> <span class="o">=</span> <span class="nx">x1</span> <span class="o">+</span> <span class="nx">w</span><span class="p">;</span>
-    <span class="nx">rect</span><span class="p">.</span><span class="nx">geometricBounds</span> <span class="o">=</span> <span class="p">[</span><span class="nx">y1</span><span class="p">,</span> <span class="nx">x1</span><span class="p">,</span> <span class="nx">y2</span><span class="p">,</span> <span class="nx">x2</span><span class="p">];</span>
-</code></pre>
-</div>
-
-
-<p>Die Eigenschaft <code>geometricBounds</code> erwartet immer ein Array mit 4 Stellen. Diese geben die Linke obere Ecke und die Rechte untere Ecke an. Immer von der Oberen beziehungswiese linken Kante der Seite gemessen. Hierbei steht die y Koordinate vor der x Koordinate. Zu beachten ist auch, dass innerhalb von <code>add()</code> ein Doppelpunkt anstatt eines Gleichheitszeichens bei der Zuweisung des Wertes verwendet werden muss.<br/>
-Es folgen drei einfache Befehle.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="nx">rect</span><span class="p">.</span><span class="nx">place</span><span class="p">(</span><span class="nx">allImages</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">);</span>
-    <span class="nx">rect</span><span class="p">.</span><span class="nx">fit</span><span class="p">(</span><span class="nx">FitOptions</span><span class="p">.</span><span class="nx">FILL_PROPORTIONALLY</span><span class="p">);</span><span class="c1">// fit it to the frame</span>
-    <span class="nx">rect</span><span class="p">.</span><span class="nx">fit</span><span class="p">(</span><span class="nx">FitOptions</span><span class="p">.</span><span class="nx">CENTER_CONTENT</span><span class="p">);</span><span class="c1">// fit it to the frame</span>
-    <span class="nx">x</span> <span class="o">+=</span><span class="nx">w</span><span class="p">;</span>
-</code></pre>
-</div>
-
-
-<p>Das Bild mit dem Index i wird in dem Rechteck platziert, der Inhalt wird an die Grösse des Rechteckes angepasst, zentriert und wir erhöhen den x Wert um eine Bildbreite. Hier könnte auch <code>x = x + w</code> stehen. Es gibt weiter verkürzte Schreibweisen wie:</p>
-
-<div class="highlight"><pre><code class="js">   <span class="nx">x</span><span class="o">-=</span><span class="mi">5</span><span class="p">;</span> <span class="c1">//  equivalent to x = x - 5;</span>
-    <span class="nx">x</span><span class="o">*=</span><span class="mi">5</span><span class="p">;</span> <span class="c1">//  equivalent to x = x * 5;</span>
-    <span class="nx">x</span><span class="o">/=</span><span class="mi">5</span><span class="p">;</span> <span class="c1">//  equivalent to x = x / 5;</span>
-</code></pre>
-</div>
-
-
-<p>Da wir in unserer Schleife sind passiert dies für die komplette Menge der Bilder unabhängig davon ob wir 5, 100 oder 10000 haben. Dies ist eine der großen Stärken von Skripten und Programmen. Die Iteration.<br/>
-Damit wir jedoch nicht nur Bilder nach Rechts platzieren sondern umbrechen wenn x (oder x1) größer oder gleich der Breite der Seite minus der Bildbeite (der Rand) ist müssen wir eine weitere Kondition hinzufügen.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="k">if</span><span class="p">(</span><span class="nx">x</span> <span class="o">&gt;=</span> <span class="nx">pw</span> <span class="o">-</span> <span class="p">(</span><span class="nx">w</span><span class="p">)){</span>
-    <span class="nx">x</span> <span class="o">=</span> <span class="nx">w</span><span class="p">;</span>
-    <span class="nx">y</span><span class="o">+=</span> <span class="nx">w</span><span class="p">;</span>
-    <span class="p">}</span>
-</code></pre>
-</div>
-
-
-<p>Wenn diese Kondition nicht da wäre würde das Skript die Bilder wie in der folgenden Grafik platzieren. Achtung! Wenn zuviele Bilder über die Arbeitsfläche hinaus gehen kann das InDesign zum Absturz bringen und oder das Dokument unwiederruflich zerstören.</p>
-
-<br /> <a href="images/matrx_without_breakline.png"><img src="images/matrx_without_breakline.png" width="100%" alt="" /></a><br />
-
-
-<p>Die die es bis hier her geschafft haben sollten den obigen Code jetzt entschlüsseln können.<br/>
-Wenn x grösser gleich 150 - 25, um auf unser Beispiel mit der 16 als Menge der Bilder zurückzukommen, setze x zurück auf 25 und addiere auf y 25 auf. die Zahlenreihe ist dann:</p>
-
-<div class="highlight"><pre><code class="js">   
-    <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="nx">x</span> <span class="o">=</span> <span class="mi">25</span>
-    <span class="nx">y</span> <span class="o">=</span> <span class="mi">25</span>  
-</code></pre>
-</div>
-
-
-<p>dann</p>
-
-<div class="highlight"><pre><code class="js">   <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="nx">x</span> <span class="o">=</span> <span class="mi">50</span>
-    <span class="nx">y</span> <span class="o">=</span> <span class="mi">25</span>
-</code></pre>
-</div>
-
-
-<p>Das passiert solange bis x 125 ist.<br/>
-Dort setzt die Kondition <code>if(x &gt;= pw - (w))</code> an.<br/>
-x wird in der Kondition zurück auf 25 gesetzt und y wird auf 50 gesetzt.
-Dann ist</p>
-
-<div class="highlight"><pre><code class="js">       <span class="nx">i</span> <span class="o">=</span> <span class="mi">4</span><span class="p">.</span>
-    
-</code></pre>
-</div>
-
-
-<p>Wir fangen bei 0 an zu Zählen im Array also ist <code>allImages[4]</code> das fünfte Bild.
-und so weiter und so weiter.<br/>
-Wir sind am Ende. Probieren sie den Code mit unterschiedliche vielen Jpg-Dateien aus. Verändern sie ihn bis er nicht mehr funktioniert und lesen sie die Fehlermeldungen. Dies ist ein weitverbreitetes Problem. Computer und Programme würden viel an ihrer Mystik verlieren wenn einerseits die Nutzer die Meldungen lesen würde anstatt nur auf ok zu drücken und andererseits die Meldungen verständlich geschrieben wären.</p>
-
-<br /> <a href="images/error.png"><img src="images/error.png" width="100%" alt="" /></a><br />  
-
-
-<p>Ein weiters Skript, <em>greatPower.jsx</em>, welches aus nur einer Befehlszeile besteht und dennoch mächtig und auch ein wenig gefährlich ist.<br/>
-Wenn bei der Entwicklung eines anderen Skripts immer wieder neue Dokumente erzeugt werden kann es schnell passieren, dass 10, 20, 50 Dokumente geöffnet sind. Die Oberfläche von InDesign bietet nicht die Möglichkeit alle geöffneten Dokumente zu schliessen ohne zu speichern. Das bedeutet das bei 50 Dokumenten 50 mal beim Schliessen entweder gespeichert oder das Dokument verworfen werden muss. Mit greatPower.jsx ist dies möglich. Um dies auszuprobieren erzeugen wir ein paar Dokumente mit dem Skript createDocuments.jsx. Dies is stark verkürzt in seiner schreibweise und verwendet eine andere Art von Schleife. die <code>while</code> Schleife.</p>
-
-<div class="highlight"><pre><code class="js">   <span class="c1">// createDocuments.jsx</span>
-    <span class="kd">var</span> <span class="nx">counter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="kd">var</span> <span class="nx">numberOfDocuments</span> <span class="o">=</span> <span class="mi">22</span><span class="p">;</span>
-    <span class="k">while</span><span class="p">(</span><span class="nx">counter</span> <span class="o">&lt;=</span> <span class="nx">numberOfDocuments</span><span class="p">){</span>
-    <span class="nx">app</span><span class="p">.</span><span class="nx">documents</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span>
-        <span class="nx">documentPreferences</span><span class="o">:</span><span class="p">{</span>
-            <span class="nx">pageWidth</span><span class="o">:</span><span class="mi">100</span><span class="p">,</span><span class="nx">pageHeight</span><span class="o">:</span><span class="mi">100</span>
-            <span class="p">}</span>
-        <span class="p">});</span>
-    <span class="kd">var</span> <span class="nx">tf</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">activeDocument</span><span class="p">.</span><span class="nx">pages</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="mi">0</span><span class="p">).</span><span class="nx">textFrames</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span>
-        <span class="nx">geometricBounds</span><span class="o">:</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">90</span><span class="p">],</span>
-        <span class="nx">contents</span><span class="o">:</span><span class="nb">String</span><span class="p">(</span><span class="nx">counter</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;Hello World&quot;</span>
-        <span class="p">});</span>
-    <span class="nx">tf</span><span class="p">.</span><span class="nx">characters</span><span class="p">.</span><span class="nx">everyItem</span><span class="p">().</span><span class="nx">properties</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="nx">pointSize</span><span class="o">:</span><span class="mi">42</span>
-        <span class="p">};</span>
-    <span class="nx">counter</span><span class="o">++</span><span class="p">;</span>
-    <span class="p">}</span>
-</code></pre>
-</div>
-
-
-<p>Um diese 23 Dokumente wieder zu schliessen benutzen sie "greatPower.jsx"</p>
-
-<div class="highlight"><pre><code class="js">   <span class="c1">// Like Uncle Ben saz: &quot;With great power comes great responsability!&quot;</span>
-    <span class="nx">app</span><span class="p">.</span><span class="nx">documents</span><span class="p">.</span><span class="nx">everyItem</span><span class="p">().</span><span class="nx">close</span><span class="p">(</span><span class="nx">SaveOptions</span><span class="p">.</span><span class="nx">NO</span><span class="p">);</span>
-</code></pre>
-</div>
-
-
-<p>Wenn nun dem ein oder anderem der Gedanke kommt: "Das ist doch alles viel zu kompliziert!" Warum dies mehr Unwille den Unvermögen ist werde ich versuchen im nächsten Teil zu untersuchen.</p>
-
-<h2>Teil 4 Die Angst</h2>
-
-<p>[NOCH NICHT GESCHRIEBEN]</p>
-
-<h2>Teil 5 Ein Werkzeug</h2>
-
-<p>Wo bleibt die extra Zeit für Gestaltung die versprochen wurde? Wie bereits erwähnt braucht das lernen einer Sprache etwas Zeit. Die Grammatik und Rechtschreibung können aus einem Buch gelernt werden, die Nuancen und Umgangssprache kann jedoch nur durch das Sprechen geschult werden.<br/>
-Zum Glück sind wir hier nicht alleine. Es gibt bereits viele Werkzeuge die frei zur Verfügung stehen und zur Optimierung unserer Arbeitsprozesse genutzt werden können. In diesem Sinne habe ich das Script AEMap.jsx für Adobe After Effects geschrieben.</p>
-
-<br /> <a href="images/aemapuiv02a.png"><img src="images/aemapuiv02a.png" width="100%" alt="" /></a><br />  
-
-
-<p>Viele Motion Designer kommen irgendwann einmal an den Punkt an dem sie eine Weltkarte oder die Aussenkontur eines Landes benötigen. Bisher war es so das immer wieder eine Websuche begann nach benutzbaren Kartenmaterial. Hierbei entstehen einige Problem. Die Rechte an Kartenmaterial das "einfach so" aus dem Netz gezogen wurde sind oft ungeklärt. Manchmal sind es Vektordatein wenn man Pech hat sind es Pixelbilder. Diese Quelldatei liegt dann innerhalb eines Projektes und wird mit diesem archiviert. Wenn sie wieder benötigt wird beginnt die Suche aufs neue. Was bei vielen absolvierten Projekten schnell zeitraubend werden kann. After Effects Projekte können schnell aus hunderten Quelldateien bestehen und sind gerne nach persönlichem Gusto sortiert. Was wenn dann nicht nur eine Weltkarte sondern zum Beispiel die Kontur von Osttimor und Papua Neu Guinea benötigt wird?</p>
-
-<br /> <a href="images/ostimorpaua_01.jpg"><img src="images/ostimorpaua_01.jpg" width="100%" alt="" /></a><br />  
-
-
-<p>Selbst wenn eine vernünftige Vektorform einer Karte existiert und griffbereit ist wie könne die beiden Länder gefunden werden? Was ist wenn eine Grenzänderung stattfindet? Und und und. Um diesen Problemen zu entgehen kann AEMap.jsx eine Weltkarte in Rektangularprojektion erzeugen. Dabei entsteht eine After Effects Komposition in einer gewählten Skalierung (immer 2:1) in der 178 Präkompositionen enthalten sind die 286 einzelne Polygongruppen beinhalten.</p>
-
-<br /> <a href="images/aemapfullcomp.png"><img src="images/aemapfullcomp.png" width="100%" alt="" /></a><br />  
-
-
-<p>Der Nutzer kann zwischen verschiedenen Einstellungen wählen wie zum Beispiel die Karte mit Kontur zu zeichen oder ohne oder ob alle Polygone auf eine Ebene gezeichnet werden sollen oder ob in die oben genannten Kompositionen gesplittet werden soll. Ebenfalls können 3D Einstellungen definiert werden und ähnliche mehr. Die Daten bestehen auf einem GeoJson Datensatz der zum freien Gebrauch ins Netz gestellt wurde. Der gesamten Funktionsumfang ist auf <a href="http://fabiantheblind.github.com/AEMap/">dieser Webseite</a> dokumentiert. Dieses Skript spart nicht nur mir Zeit sondern auch anderen. Die Resonanz in der After Effects Community" ist gross. Daher hat das Skript seit seiner Veröffentlichung auf <a href="http://aescripts.com/aemap/">AEScripts.com</a> am 10 April 2012 bereits über 400 Downloads gehabt (heute 24 April 2012). Das Tutorial und das Demo wurden bereits über 4000 mal auf Youtube geladen. Aber genug der Selbstbeweihräucherung. Der Vorteil an solchen und ähnlichen Werkzeugen die zum Beispiel auf AEScripts.com bereit gestellt werden ist, dass diese meist aus dem Zwang heraus enstanden sind einen Arbeitsablauf zu automatisieren um Zeit zusparen.</p>
-
-<h2>Fazit</h2>
-
-<p>[NOCH NICHT GESCHRIEBEN]</p>
-
-<h2>JavaScript &amp; ExtendScript Ressourcen</h2>
-
-<p>[NOCH NICHT GESCHRIEBEN]</p>
-
-<h2>Quellenverzeichnis</h2>
-
-<p>[NOCH NICHT GESCHRIEBEN]</p>
-
-  
-  <div class="footer">
-    Diese Website würde mit <a href="http://jekyllrb.com/">jekyll</a> entwickelt. Alle Inhalte liegen unter <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/de/">CC BY-NC-SA 3.0 Lizenz</a> auf <a href="https://github.com/fabiantheblind/MT4D_TXT">github.com. (NOCH NICHT ÖFFENTLICH)</a>
-    <div class="contact">
-      <p>
-        Fabian Morón Zirfas<br />
-        Owner of <a href="http://fabiantheblind.info">fabiantheblind.info</a><br />
-        hello@fabiantheblind.info
-      </p>
+</nav>
+    <div id="top"></div>
+    <div name="top"></div>
+    <!-- <div id="overlay"><a href="#top">back to top</a></div> -->
+    <div class="site">
+      <div id="printfriendly">
+        <script src="http://cdn.printfriendly.com/printfriendly.js"
+        type="text/javascript">
+</script><a href="http://www.printfriendly.com" style=
+" color:#6D9F00; text-decoration:none;" class="printfriendly"
+        onclick="window.print(); return false;" title=
+        "Printer Friendly and PDF"><img style="border:none;" src=
+        "http://cdn.printfriendly.com/button-print-gry20.png" alt=
+        "Print Friendly and PDF" /></a>
+      </div>
+      <div class="title">
+        <a href="/">Home</a> 
+        <!-- <a class="extra" href="/">home</a> -->
+
+      </div>
+      <h1>Bachelor Arbeit von Fabian Morón Zirfas</h1>
+
+<h1>Mehr Zeit für Gestaltung</h1>
+
+<h2>Was kann Automation in Design-Prozessen leisten?</h2>
+
+      <br />
+      <!--<div class="footer"> 
+        Diese Website wude mit <a href=
+        "http://jekyllrb.com/">jekyll</a> entwickelt. <br> Alle Inhalte liegen unter <a href=
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/de/">
+        CC BY-NC-SA 3.0 Lizenz</a> auf <a href=
+        "https://github.com/fabiantheblind/MT4D_TXT">github.com.
+        (NOCH NICHT &Ouml;FFENTLICH)</a>
+        <div class="contact">
+          <p>
+            Fabian Mor&oacute;n Zirfas<br />
+            Owner of <a href=
+            "http://fabiantheblind.info">fabiantheblind.info</a><br />
+
+            hello@fabiantheblind.info
+          </p>
+        </div>
+        <div class="contact">
+          <p>
+            <a href=
+            "http://github.com/fabiantheblind/">github.com/fabiantheblind</a><br />
+
+            <a href=
+            "http://twitter.com/fabiantheblind/">twitter.com/fabiantheblind</a><br />
+
+            <a href=
+            "http://flickr.com/photos/fabiantheblind/">flickr.com/photos/fabiantheblind</a><br />
+
+            <a href=
+            "https://vimeo.com/fabiantheblind">vimeo.com/fabiantheblind</a>
+          </p>
+        </div>
+      </div> -->
     </div>
-    <div class="contact">
-      <p>
-        <a href="http://github.com/fabiantheblind/">github.com/fabiantheblind</a><br />
-        <a href="http://twitter.com/fabiantheblind/">twitter.com/fabiantheblind</a><br />
-        <a href="http://flickr.com/photos/fabiantheblind/">flickr.com/photos/fabiantheblind</a><br />
-        <a href="https://vimeo.com/fabiantheblind">vimeo.com/fabiantheblind</a>
-
-      </p>
-    </div>
-
-    </div>
-  </div>
-</div>
-
-</body>
+  </body>
 </html>

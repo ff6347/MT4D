@@ -6,6 +6,42 @@
 
 /* Global Reset */
 
+@font-face {
+    font-family: 'DejaVuSerifBook';
+    src: url('../fonts/DejaVuSerif-webfont.eot');
+    src: url('../fonts/DejaVuSerif-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DejaVuSerif-webfont.woff') format('woff'),
+         url('../fonts/DejaVuSerif-webfont.ttf') format('truetype'),
+         url('../fonts/DejaVuSerif-webfont.svg#DejaVuSerifBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DejaVuSerifItalic';
+    src: url('../fonts/DejaVuSerif-Italic-webfont.eot');
+    src: url('../fonts/DejaVuSerif-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DejaVuSerif-Italic-webfont.woff') format('woff'),
+         url('../fonts/DejaVuSerif-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/DejaVuSerif-Italic-webfont.svg#DejaVuSerifItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DejaVuSerifBold';
+    src: url('../fonts/DejaVuSerif-Bold-webfont.eot');
+    src: url('../fonts/DejaVuSerif-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DejaVuSerif-Bold-webfont.woff') format('woff'),
+         url('../fonts/DejaVuSerif-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/DejaVuSerif-Bold-webfont.svg#DejaVuSerifBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,29 +53,77 @@ html, body {
 }
 
 body {
-  background-color: white;
-  font: 13.34px Georgia, "Times New Roman", Times, serif;
-  *font-size: small;
+  font: 13.34px 'DejaVuSerifBook', Georgia,  Times, serif;
+  /**font-size: small;*/
+	/*background: white url(../images/connectedNodes.jpg) no-repeat;*/
 }
 
+strong{
+	  font:'DejaVuSerifBold', Georgia,  Times, serif;
+
+}
+
+em{
+		  font:'DejaVuSerifItalic', Georgia,  Times, serif;
+
+}
 h1{
 	font-size: 1.7em;
 	  margin-bottom: 1.5em;
 	
 }
 
+img{
+
+  width:100%;
+}
+
+#index{
+		/*white-space: nowrap;*/
+	list-style-type: circle;
+	list-style-position: inside;
+	opacity: 1;
+}
+
+
+#overlay{
+	text-decoration: none;
+	font-size: 1em;
+	text-align: right;
+}
+
+
 h2{
-	font-size: 1.5em;
+	font-size: 1.4em;
 }
 
 h3{
-font-size: 1.3em;
+font-size: 1.1em;
+
 }
 
  h4, h5, h6 {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
 }
+
+.show_hide{
+	display: inline;
+}
+
+/*
+#slidingDiv0,#slidingDiv1, #slidingDiv2, #slidingDiv3, #slidingDiv4, #slidingDiv5, #slidingDiv6, #slidingDiv7, #slidingDiv8, #slidingDiv9, #slidingDiv10, #slidingDiv11, #slidingDiv12, #slidingDiv13, #slidingDiv14{
+	/*height:300px;*!/
+	display:none;
+	border-bottom-style: dotted;
+	border-bottom-color: #b0b0b0;
+	border: 1px dotted #c6c6c6;
+	font-style: italic;
+	padding: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+*/
 
 
 blockquote{
@@ -57,15 +141,17 @@ p {
 }
 
 a {
-  color: #7f00aa;
+  color: #706c73;
+	text-decoration: none;
 }
 
 a:hover {
-  color: black;
+  color: #000000;
 }
 
 a:visited {
-  color: #ff0afe;
+  color: #686768;
+	text-decoration: none;
 }
 
 table {
@@ -73,9 +159,37 @@ table {
   font: 100%;
 }
 
+pre{
+	/*overflow: auto;
+	width: 100%;*/
+	width: 100%;                          /* specify width  */
+	white-space: pre-wrap;                 /* CSS3 browsers  */
+	white-space: -moz-pre-wrap !important; /* 1999+ Mozilla  */
+	white-space: -pre-wrap;                /* Opera 4 thru 6 */
+	white-space: -o-pre-wrap;              /* Opera 7 and up */
+	word-wrap: break-word;                 /* IE 5.5+ and up */
+	/* overflow-x: auto; */                /* Firefox 2 only */
+	/* width: 99%; */		       /* only if needed */
+	}
 #printfriendly{
 
 	float: right;
+}
+
+nav {
+	display: inline-block;
+	margin:0 auto 20px;
+	position: fixed;
+	
+	width: 400px;
+	background-color: white;
+	padding-left: 10px;
+	padding-top: 20px;
+	float: left;
+	font-size: 0.8em;
+}
+nav a:hover{
+	color: #58a809;
 }
 
 /*****************************************************************************/
@@ -107,19 +221,25 @@ ul.posts {
 
 .site {
   font-size: 110%;
-  width: 42em;
-  margin: 3em auto 2em auto;
+  width: 650px;
   line-height: 1.6em;
+	background-color: white;
+	border: 1em solid white;
+	-moz-border-radius: 23px;
+border-radius: 23px;
+max-width: 650px;
+	left: 400px;
+	padding-left: 400px;
 }
 
 .title {
-  color: #a00;
+
   font-weight: bold;
   margin-bottom: 2em;
 }
 
   .site .title a {
-    color: #a00;
+
     text-decoration: none;
   }
 
@@ -155,18 +275,18 @@ ul.posts {
     }
 
       .site .footer .contact a {
-        color: #8085C1;
+
       }
 
-    .site .footer .rss {
+/*    .site .footer .rss {
       margin-top: 1.1em;
       margin-right: -.2em;
       float: right;
-    }
+    }*/
 
-      .site .footer .rss img {
+/*      .site .footer .rss img {
         border: 0;
-      }
+      }*/
 
 /*****************************************************************************/
 /*
