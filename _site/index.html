@@ -81,14 +81,14 @@ wenn Milch kleiner gleich 0.1 ist fabian hohle Milch im Supermarkt;
 
 <p>Die Syntax ist die Form in der die Programmiersprache ausgestalltet ist. Die Syntax einer Programmiersprache besteht aus reservierten Worten wie zum Beispiel in Java</p>
 
-<div class="highlight"><pre><code class="js"><span class="k">new</span><span class="o">,</span> <span class="k">while</span><span class="o">,</span> <span class="kc">null</span> <span class="o">,</span> <span class="kc">true</span><span class="o">,</span>
+<div class="highlight"><pre><code class="js"><span class="k">new</span><span class="p">,</span> <span class="k">while</span><span class="p">,</span> <span class="kc">null</span> <span class="p">,</span> <span class="kc">true</span><span class="p">,</span>
 </code></pre>
 </div>
 
 
 <p> Operatoren wie</p>
 
-<div class="highlight"><pre><code class="js"><span class="o">+,-,*,</span><span class="p">.</span>
+<div class="highlight"><pre><code class="js"><span class="o">+</span><span class="p">,</span><span class="o">-</span><span class="p">,</span><span class="o">*</span><span class="p">,.</span>
 </code></pre>
 </div>
 
@@ -102,7 +102,7 @@ wenn Milch kleiner gleich 0.1 ist fabian hohle Milch im Supermarkt;
 
 <p> oder "</p>
 
-<div class="highlight"><pre><code class="js"><span class="k">for</span><span class="p">(</span><span class="nx">int</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">x</span><span class="o">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+<div class="highlight"><pre><code class="js"><span class="k">for</span><span class="p">(</span><span class="kr">int</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">x</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span>
 </code></pre>
 </div>
 
@@ -111,16 +111,16 @@ wenn Milch kleiner gleich 0.1 ist fabian hohle Milch im Supermarkt;
 
 <p>Ausgesprochen wäre dies:</p>
 
-<div class="highlight"><pre><code class="js"> <span class="nx">For</span> <span class="nx">int</span> <span class="nx">i</span> <span class="nx">gleich</span> <span class="mi">0</span><span class="o">,</span> <span class="nx">i</span> <span class="nx">kleiner</span> <span class="nx">x</span><span class="o">,</span> <span class="nx">i</span> <span class="nx">plus</span> <span class="nx">plus</span> 
+<div class="highlight"><pre><code class="js"> <span class="nx">For</span> <span class="kr">int</span> <span class="nx">i</span> <span class="nx">gleich</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">i</span> <span class="nx">kleiner</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">i</span> <span class="nx">plus</span> <span class="nx">plus</span> 
 </code></pre>
 </div>
 
 
 <p>Es gibt in JavaScript eine Hand voll <a href="https://developer.mozilla.org/en/JavaScript/Reference/Reserved_Words">reservierter Worte (Mozilla Developer Network)</a> die beim schreiben nicht verwendet werden dürfen.</p>
 
-<div class="highlight"><pre><code class="js"><span class="k">break</span><span class="o">,</span> <span class="nx">case</span><span class="o">,</span> <span class="k">catch</span><span class="o">,</span> <span class="k">continue</span><span class="o">,</span> <span class="nx">debugger</span><span class="o">,</span> <span class="nx">default</span><span class="o">,</span> <span class="nx">delete</span><span class="o">,</span> <span class="k">do</span><span class="o">,</span> <span class="k">else</span><span class="o">,</span> <span class="nx">finally</span><span class="o">,</span> 
-<span class="k">for</span><span class="o">,</span> <span class="kd">function</span><span class="o">,</span> <span class="k">if</span><span class="o">,</span> <span class="k">in</span><span class="o">,</span> <span class="k">instanceof</span><span class="o">,</span> <span class="k">new</span><span class="o">,</span> <span class="k">return</span><span class="o">,</span> <span class="nx">switch</span><span class="o">,</span> <span class="k">this</span><span class="o">,</span> <span class="k">throw</span><span class="o">,</span> <span class="k">try</span><span class="o">,</span> <span class="k">typeof</span><span class="o">,</span> 
-<span class="kd">var</span><span class="o">,</span> <span class="nx">void</span><span class="o">,</span> <span class="k">while</span><span class="o">,</span> <span class="kd">with</span><span class="o">,</span> <span class="kc">null</span><span class="o">,</span> <span class="kc">false</span><span class="o">,</span> <span class="kc">true</span> 
+<div class="highlight"><pre><code class="js"><span class="k">break</span><span class="p">,</span> <span class="k">case</span><span class="p">,</span> <span class="k">catch</span><span class="p">,</span> <span class="k">continue</span><span class="p">,</span> <span class="kr">debugger</span><span class="p">,</span> <span class="k">default</span><span class="p">,</span> <span class="k">delete</span><span class="p">,</span> <span class="k">do</span><span class="p">,</span> <span class="k">else</span><span class="p">,</span> <span class="k">finally</span><span class="p">,</span> 
+<span class="k">for</span><span class="p">,</span> <span class="kd">function</span><span class="p">,</span> <span class="k">if</span><span class="p">,</span> <span class="k">in</span><span class="p">,</span> <span class="k">instanceof</span><span class="p">,</span> <span class="k">new</span><span class="p">,</span> <span class="k">return</span><span class="p">,</span> <span class="k">switch</span><span class="p">,</span> <span class="k">this</span><span class="p">,</span> <span class="k">throw</span><span class="p">,</span> <span class="k">try</span><span class="p">,</span> <span class="k">typeof</span><span class="p">,</span> 
+<span class="kd">var</span><span class="p">,</span> <span class="k">void</span><span class="p">,</span> <span class="k">while</span><span class="p">,</span> <span class="kd">with</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span> 
 </code></pre>
 </div>
 
@@ -128,8 +128,8 @@ wenn Milch kleiner gleich 0.1 ist fabian hohle Milch im Supermarkt;
 <p>Noch einmal. Diese Worte dürfen nur für bestimmte Aufgaben verwendet werden! Wenn also ein Programmierer seine Variable <code>null</code> nennet, wird das Programm beim ausführen eine Fehler auswerfen. Die obig genannten Strukturen, Operatoren und reservierten Worte müssen erlernt werden. Eine vollständige Beschreibung aller würde jedoch den Rahmen dieser Arbeit sprengen.<br/>
 Weiterhin ist beim schreiben von Programmen auch auf die Groß- und Kleinschreibung zu achten. Eine Variable die mit dem Namen <code>myValue</code> initiert wird muss auch mit diesem Namen aufgerufen werden. Bei einer falschen schreibweise <code>MyValue</code> oder <code>myvalue</code> würde das Programm warnen, dass die aufgerufene Variable nicht existiert.</p>
 
-<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">myValue</span> <span class="o">=</span> <span class="mi">5</span><span class="o">;</span> <span class="c">// define a variable</span>
-    <span class="nx">myvalue</span><span class="o">++;</span> <span class="c">//edit it but written wrong</span>
+<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">myValue</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span> <span class="c1">// define a variable</span>
+    <span class="nx">myvalue</span><span class="o">++</span><span class="p">;</span> <span class="c1">//edit it but written wrong</span>
 </code></pre>
 </div>
 
@@ -220,9 +220,9 @@ Wenn es dann installiert ist geben sie folgende Text ein:</p>
 Um dieses Skript in InDesign oder Photoshop auszuführen muss die Ziel Applikation aus dem PullDown Menü auf der oberen Leiste gewählt werden. Beim öffenen ist es auf ExtendScript Toolkit gestellt. Wählen sie dort InDesign aus. Das Toolkit wird sofort fragen ob InDesign auch gestartet werden soll. Bestätigen sie das und führen sie das Skript noch einmal aus. Sie werden sehen, dass der Computer zu InDesign überwechselt und den gleichen Hinweis gibt.<br/>
 Probieren sie weiter Skripte und Kalkulationen aus. Zum Beispiel</p>
 
-<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">h</span> <span class="o">=</span> <span class="s2">&quot;Hello&quot;</span><span class="o">;</span>
-    <span class="kd">var</span> <span class="nx">w</span> <span class="o">=</span> <span class="s2">&quot;World&quot;</span><span class="o">;</span>
-    <span class="kd">var</span> <span class="nx">calc</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="o">*</span><span class="mi">50</span><span class="p">)</span><span class="o">/</span><span class="mi">23</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span>
+<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">h</span> <span class="o">=</span> <span class="s2">&quot;Hello&quot;</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">w</span> <span class="o">=</span> <span class="s2">&quot;World&quot;</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">calc</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="o">*</span><span class="mi">50</span><span class="p">)</span><span class="o">/</span><span class="mi">23</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
     <span class="nx">alert</span><span class="p">(</span><span class="nx">h</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="nx">w</span> <span class="o">+</span><span class="s2">&quot;! Your result is: &quot;</span><span class="o">+</span> <span class="nx">clac</span> <span class="p">);</span> 
  
 </code></pre>
@@ -353,7 +353,7 @@ Ich werde hier kurz auf die Unterschiede eingehen. An dieser Stelle ist es nicht
 
 <p> in C und betrachten sie danach die Funktion</p>
 
-<div class="highlight"><pre><code class="js"><span class="nx">compare</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="o">,</span><span class="nx">b</span><span class="p">){</span><span class="k">if</span><span class="p">(</span><span class="nx">a</span><span class="o">&gt;</span><span class="nx">b</span><span class="p">){</span><span class="k">return</span> <span class="nx">a</span><span class="o">;</span><span class="p">}</span><span class="k">else</span><span class="p">{</span><span class="k">return</span> <span class="nx">b</span><span class="o">;</span><span class="p">}</span>
+<div class="highlight"><pre><code class="js"><span class="nx">compare</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span><span class="k">if</span><span class="p">(</span><span class="nx">a</span><span class="o">&gt;</span><span class="nx">b</span><span class="p">){</span><span class="k">return</span> <span class="nx">a</span><span class="p">;}</span><span class="k">else</span><span class="p">{</span><span class="k">return</span> <span class="nx">b</span><span class="p">;}</span>
 </code></pre>
 </div>
 
@@ -401,8 +401,8 @@ Ich werde hier kurz auf die Unterschiede eingehen. An dieser Stelle ist es nicht
 
 <p> In diesem Beispiel ist bereits zu sehen, dass die Menge an Code die geschrieben werden muss geringer wird. Wobei hier wie auch im C Beispiel bedacht werden muss, dass bereits vorhandene Programmteile mit weiteren hunderten oder tausenden Zeilen Code eingebunden werden. Mit den Aussagen:</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="cp">     #include &lt;iostream&gt;</span>
-<span class="cp">   #include &lt;string&gt; </span>
+<div class="highlight"><pre><code class="cpp">  <span class="cp">#include &lt;iostream&gt;</span>
+    <span class="cp">#include &lt;string&gt; </span>
  
 </code></pre>
 </div>
@@ -410,17 +410,17 @@ Ich werde hier kurz auf die Unterschiede eingehen. An dieser Stelle ist es nicht
 
 <p>werden fertige Klassen mit Methoden aufgerufen. "iostream" um die Ein- und Ausgabe des Programms zu handhaben und "string" um Zeichenketten zu verarbeiten. Der Unterschied ist enorm. Während in C eine Zeichenkette noch eine Liste einzelner Zeichen ist wird in C++ ein Zeichenkette als ein einziges Objekt gehandhabt und bringt viele Funktionen mit zur Verarbeitung dieser.</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="cp"> #include &lt;iostream&gt;</span>
-<span class="cp">   #include &lt;string&gt;</span>
+<div class="highlight"><pre><code class="cpp">  <span class="cp">#include &lt;iostream&gt;</span>
+    <span class="cp">#include &lt;string&gt;</span>
     
-    <span class="c">// using namespace std; // if you use this you can remove all &quot;std::&quot;</span>
+    <span class="c1">// using namespace std; // if you use this you can remove all &quot;std::&quot;</span>
     <span class="k">class</span> <span class="nc">Object</span><span class="p">{</span>
         
     <span class="k">public</span><span class="o">:</span>
         <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">name</span><span class="p">;</span>
-        <span class="n">Object</span><span class="p">(){}</span><span class="c">// basis constructor</span>
-        <span class="n">Object</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">in</span><span class="p">){</span><span class="n">name</span> <span class="o">=</span> <span class="n">in</span><span class="p">;}</span><span class="c">// another constructor</span>
-        <span class="kt">int</span> <span class="n">compare</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">);</span><span class="c">//Prototype</span>
+        <span class="n">Object</span><span class="p">(){}</span><span class="c1">// basis constructor</span>
+        <span class="n">Object</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">in</span><span class="p">){</span><span class="n">name</span> <span class="o">=</span> <span class="n">in</span><span class="p">;}</span><span class="c1">// another constructor</span>
+        <span class="kt">int</span> <span class="n">compare</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">);</span><span class="c1">//Prototype</span>
         <span class="kt">void</span> <span class="n">setName</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">in</span><span class="p">){</span><span class="n">name</span> <span class="o">=</span> <span class="n">in</span><span class="p">;}</span>
     <span class="p">};</span>
     
@@ -439,7 +439,7 @@ Ich werde hier kurz auf die Unterschiede eingehen. An dieser Stelle ist es nicht
         <span class="o">&lt;&lt;</span> <span class="n">b</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span> 
         <span class="o">&lt;&lt;</span> <span class="n">myObject</span><span class="o">-&gt;</span><span class="n">compare</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span> <span class="o">&lt;&lt;</span><span class="s">&quot; is bigger</span><span class="se">\n</span><span class="s">&quot;</span> 
         <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-        <span class="c">/* code */</span>
+        <span class="cm">/* code */</span>
         <span class="k">delete</span> <span class="n">myObject</span><span class="p">;</span>
         <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
     <span class="p">}</span>
@@ -462,7 +462,7 @@ aus The C programming Language By Brian W. Kernighan and Dennis M. Ritchie. Publ
 
 <p>Aber ich schweife ab. Keine Sorge mit solchen Gedankenmodellen werden wir in JavaScript nicht konfrontiert. All diese funktionalität wird von der Maschiene im Hintergrund erledigt. Somit bleibt Zeit sich mit der Funktionsweise zu beschäftigen. Stellen sie es sich vor wie: "Entweder das Auto vor dem Fahren zusammenbauen oder einfach in das fertige Auto einzusteigen und loszufahren." Dennoch habe ich die Vergleichs-Funktion einmal in C geschrieben.</p>
 
-<div class="highlight"><pre><code class="c"><span class="cp">   #include&lt;stdio.h&gt;</span>
+<div class="highlight"><pre><code class="c">    <span class="cp">#include&lt;stdio.h&gt;</span>
   
     <span class="n">compare</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">){</span>
         <span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="o">&gt;</span><span class="n">b</span><span class="p">){</span><span class="k">return</span> <span class="n">a</span><span class="p">;}</span><span class="k">else</span><span class="p">{</span><span class="k">return</span> <span class="n">b</span><span class="p">;}</span>
@@ -494,22 +494,22 @@ aus The C programming Language By Brian W. Kernighan and Dennis M. Ritchie. Publ
     <span class="kd">function</span> <span class="nx">main</span><span class="p">(){</span>
     
         <span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="nx">buildNewObject</span><span class="p">(</span><span class="s2">&quot;Hello JS&quot;</span><span class="p">);</span>
-        <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">23</span><span class="o">,</span> <span class="nx">b</span> <span class="o">=</span> <span class="mi">5</span><span class="o">;</span>
-        <span class="nx">obj</span><span class="p">.</span><span class="nx">compare</span><span class="p">(</span><span class="nx">a</span><span class="o">,</span><span class="nx">b</span><span class="p">);</span>
+        <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">23</span><span class="p">,</span> <span class="nx">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+        <span class="nx">obj</span><span class="p">.</span><span class="nx">compare</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">);</span>
         <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;The Script named: &quot;</span><span class="o">+</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> 
               <span class="s2">&quot;\nCompared: &quot;</span><span class="o">+</span> <span class="nx">a</span> <span class="o">+</span><span class="s2">&quot; with &quot;</span><span class="o">+</span> <span class="nx">b</span> <span class="o">+</span><span class="s2">&quot;\n&quot;</span> 
               <span class="o">+</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">result</span> <span class="o">+</span> <span class="s2">&quot; is bigger\n&quot;</span><span class="p">);</span>
-        <span class="nx">obj</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
-        <span class="k">return</span> <span class="mi">0</span><span class="o">;</span>
+        <span class="nx">obj</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
     <span class="p">}</span>
     
     <span class="kd">function</span> <span class="nx">buildNewObject</span><span class="p">(</span><span class="nx">n</span><span class="p">){</span>
         <span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="nx">name</span><span class="o">:</span><span class="nx">n</span><span class="o">,</span>
-        <span class="nx">result</span><span class="o">:</span><span class="mi">0</span><span class="o">,</span>
-        <span class="nx">compare</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="o">,</span><span class="nx">b</span><span class="p">){</span><span class="k">if</span><span class="p">(</span><span class="nx">a</span><span class="o">&gt;</span><span class="nx">b</span><span class="p">){</span><span class="k">this</span><span class="p">.</span><span class="nx">result</span> <span class="o">=</span> <span class="nx">a</span><span class="o">;</span><span class="p">}</span><span class="k">else</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">result</span> <span class="o">=</span> <span class="nx">b</span><span class="o">;</span><span class="p">}}</span>
+        <span class="nx">name</span><span class="o">:</span><span class="nx">n</span><span class="p">,</span>
+        <span class="nx">result</span><span class="o">:</span><span class="mi">0</span><span class="p">,</span>
+        <span class="nx">compare</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span><span class="k">if</span><span class="p">(</span><span class="nx">a</span><span class="o">&gt;</span><span class="nx">b</span><span class="p">){</span><span class="k">this</span><span class="p">.</span><span class="nx">result</span> <span class="o">=</span> <span class="nx">a</span><span class="p">;}</span><span class="k">else</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">result</span> <span class="o">=</span> <span class="nx">b</span><span class="p">;}}</span>
         <span class="p">};</span>
-        <span class="k">return</span> <span class="nx">obj</span><span class="o">;</span>
+        <span class="k">return</span> <span class="nx">obj</span><span class="p">;</span>
     <span class="p">}</span>
 </code></pre>
 </div>
@@ -545,17 +545,17 @@ aus The C programming Language By Brian W. Kernighan and Dennis M. Ritchie. Publ
 
 <div class="highlight"><pre><code class="js">   <span class="nx">main</span><span class="p">();</span>  
     <span class="kd">function</span> <span class="nx">main</span><span class="p">(){</span>
-        <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">23</span><span class="o">,</span> <span class="nx">b</span> <span class="o">=</span> <span class="mi">5</span><span class="o">;</span>
-        <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;Hello JS&quot;</span><span class="o">;</span>
-        <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">compare</span><span class="p">(</span><span class="nx">a</span><span class="o">,</span><span class="nx">b</span><span class="p">);</span>
+        <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">23</span><span class="p">,</span> <span class="nx">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+        <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;Hello JS&quot;</span><span class="p">;</span>
+        <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">compare</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">);</span>
             <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;The Script named: &quot;</span><span class="o">+</span> <span class="nx">name</span> <span class="o">+</span><span class="s2">&quot;\nCompared: &quot;</span>
                   <span class="o">+</span> <span class="nx">a</span> <span class="o">+</span><span class="s2">&quot; with &quot;</span><span class="o">+</span> <span class="nx">b</span> <span class="o">+</span><span class="s2">&quot;\n&quot;</span> <span class="o">+</span> <span class="nx">result</span> <span class="o">+</span> <span class="s2">&quot; is bigger\n&quot;</span><span class="p">);</span>
         <span class="p">}</span>
-    <span class="kd">function</span> <span class="nx">compare</span> <span class="p">(</span><span class="nx">a</span><span class="o">,</span><span class="nx">b</span><span class="p">){</span>
+    <span class="kd">function</span> <span class="nx">compare</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span>
         <span class="k">if</span><span class="p">(</span><span class="nx">a</span><span class="o">&gt;</span><span class="nx">b</span><span class="p">){</span>
-            <span class="k">return</span>  <span class="nx">a</span><span class="o">;</span>
+            <span class="k">return</span>  <span class="nx">a</span><span class="p">;</span>
             <span class="p">}</span><span class="k">else</span><span class="p">{</span>
-            <span class="k">return</span>  <span class="nx">b</span><span class="o">;</span>
+            <span class="k">return</span>  <span class="nx">b</span><span class="p">;</span>
         <span class="p">};</span>
     <span class="p">};</span>
 </code></pre>
@@ -644,10 +644,10 @@ Daher sollten sie bevor sie in die Tiefen von JavaScript abtauchen um ein Proble
 
 <p>In dieser Liste liegen Einzelne Objekte die Text sein können oder eine Vektorform oder ein Bild. All diese haben gemeinsame Eigenschaften aber auch spezielle. Es muss also befor eine Eigenschaft genutzt oder verändert werden kann eine Abfrage stattfinden welche Art von Objekt einthalten ist.</p>
 
-<div class="highlight"><pre><code class="js">   <span class="c">// InDesign &amp; Illustrator</span>
-    <span class="kd">var</span> <span class="nx">firstListItem</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">activeDocument</span><span class="p">.</span><span class="nx">selection</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span> <span class="c">// first object in selection </span>
-        <span class="k">if</span><span class="p">(</span><span class="nx">firstListItem</span> <span class="k">instanceof</span> <span class="nx">TextFrame</span><span class="p">){</span> <span class="c">/* check the type */</span>
-        <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;I am a &quot;</span> <span class="o">+</span> <span class="nx">firstListItem</span><span class="p">.</span><span class="nx">constructor</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>    <span class="c">// and name it</span>
+<div class="highlight"><pre><code class="js">   <span class="c1">// InDesign &amp; Illustrator</span>
+    <span class="kd">var</span> <span class="nx">firstListItem</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">activeDocument</span><span class="p">.</span><span class="nx">selection</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span> <span class="c1">// first object in selection </span>
+        <span class="k">if</span><span class="p">(</span><span class="nx">firstListItem</span> <span class="k">instanceof</span> <span class="nx">TextFrame</span><span class="p">){</span> <span class="cm">/* check the type */</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;I am a &quot;</span> <span class="o">+</span> <span class="nx">firstListItem</span><span class="p">.</span><span class="nx">constructor</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>    <span class="c1">// and name it</span>
     <span class="p">}</span>
   
 </code></pre>
@@ -680,9 +680,9 @@ Daher sollten sie bevor sie in die Tiefen von JavaScript abtauchen um ein Proble
 <p>Skript 1:</p>
 
 <div class="highlight"><pre><code class="js">   <span class="err">#</span><span class="nx">targetengine</span> <span class="s2">&quot;session01&quot;</span>
-    <span class="kd">var</span> <span class="nx">myValue</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="c">// new value</span>
-    <span class="nx">alert</span><span class="p">(</span><span class="nx">myValue</span><span class="p">);</span> <span class="c">// result is 0</span>
-    <span class="nx">myValue</span><span class="o">++;</span> <span class="c">// increment by 1</span>
+    <span class="kd">var</span> <span class="nx">myValue</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// new value</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="nx">myValue</span><span class="p">);</span> <span class="c1">// result is 0</span>
+    <span class="nx">myValue</span><span class="o">++</span><span class="p">;</span> <span class="c1">// increment by 1</span>
 </code></pre>
 </div>
 
@@ -690,7 +690,7 @@ Daher sollten sie bevor sie in die Tiefen von JavaScript abtauchen um ein Proble
 <p>Skript 2:</p>
 
 <div class="highlight"><pre><code class="js">   <span class="err">#</span><span class="nx">targetengine</span> <span class="s2">&quot;session01&quot;</span>
-    <span class="nx">alert</span><span class="p">(</span><span class="nx">myValue</span><span class="p">);</span> <span class="c">// result is 1</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="nx">myValue</span><span class="p">);</span> <span class="c1">// result is 1</span>
 </code></pre>
 </div>
 
@@ -732,25 +732,25 @@ Daher sollten sie bevor sie in die Tiefen von JavaScript abtauchen um ein Proble
 
 <div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">tf</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">activeDocument</span><span class="p">.</span><span class="nx">pages</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="mi">0</span><span class="p">).</span><span class="nx">textFrames</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
  
-    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">tf</span><span class="p">.</span><span class="nx">characters</span><span class="p">.</span><span class="nx">length</span><span class="o">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">tf</span><span class="p">.</span><span class="nx">characters</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
      <span class="kd">var</span> <span class="nx">theChar</span> <span class="o">=</span> <span class="nx">tf</span><span class="p">.</span><span class="nx">characters</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
      <span class="nx">try_char</span> <span class="p">(</span><span class="nx">theChar</span><span class="p">);</span>
      <span class="p">};</span>
  
-    <span class="c">// by Peter Kahrel </span>
-    <span class="c">// http://www.kahrel.plus.com/indesign/compose_cs3.jsx</span>
+    <span class="c1">// by Peter Kahrel </span>
+    <span class="c1">// http://www.kahrel.plus.com/indesign/compose_cs3.jsx</span>
     <span class="kd">function</span> <span class="nx">try_char</span> <span class="p">(</span><span class="nx">theChar</span><span class="p">){</span>  
     <span class="k">try</span> <span class="p">{</span>  
-        <span class="c">// save the character </span>
-        <span class="kd">var</span> <span class="nx">storage</span> <span class="o">=</span> <span class="nx">theChar</span><span class="p">.</span><span class="nx">contents</span><span class="o">;</span> 
-        <span class="c">// create outline  </span>
+        <span class="c1">// save the character </span>
+        <span class="kd">var</span> <span class="nx">storage</span> <span class="o">=</span> <span class="nx">theChar</span><span class="p">.</span><span class="nx">contents</span><span class="p">;</span> 
+        <span class="c1">// create outline  </span>
         <span class="nx">theChar</span><span class="p">.</span><span class="nx">createOutlines</span><span class="p">();</span>  
-        <span class="c">// if we got here it worked, so delete the outline</span>
-        <span class="c">// if not the next line will be within the catch block  </span>
-        <span class="c">// if not it will cause an error  </span>
+        <span class="c1">// if we got here it worked, so delete the outline</span>
+        <span class="c1">// if not the next line will be within the catch block  </span>
+        <span class="c1">// if not it will cause an error  </span>
         <span class="nx">theChar</span><span class="p">.</span><span class="nx">remove</span><span class="p">();</span>  
-        <span class="c">// insert the character (again)  </span>
-        <span class="nx">theChar</span><span class="p">.</span><span class="nx">contents</span> <span class="o">=</span> <span class="nx">storage</span><span class="o">;</span>  
+        <span class="c1">// insert the character (again)  </span>
+        <span class="nx">theChar</span><span class="p">.</span><span class="nx">contents</span> <span class="o">=</span> <span class="nx">storage</span><span class="p">;</span>  
         <span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>  
         <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;The character &quot;</span><span class="o">+</span> <span class="nx">theChar</span><span class="p">.</span><span class="nx">contents</span> <span class="o">+</span> 
         <span class="s2">&quot; could not be converted into an Outline.\n&quot;</span><span class="o">+</span>
@@ -788,65 +788,65 @@ Es folgt nun das InDesign Skript image_matrix.jsx mit etwas mehr als 40 Zeilen C
 <p>Kopieren sie den nachstehenden Code und bereiten sie einen Ordner mit einigen Jpg-Bildern vor. Das Skript das unten beschrieben wird verarbeitet NUR .jpg Dateien, Dateien die .jpeg oder .JPG heissen werden ignoriert. Es sollten um die 15 bis 30 sein damit die Ausführung des Skriptes nicht zuviel Zeit in Anspruch nimmt. Es kann jedoch auch 100,1000 oder mehr Bildern handhaben. Die genau Menge ist irelevant. Lesen nochmals den Abschnitt Hello World und wie Skripte ausgeführt werden können und führen sie das Skript aus. Wenn der Ordnerauswahl Dialog sich öffnet wähle sie den Ordner mit den Bildern an.
 Das gesamte Skript:</p>
 
-<div class="highlight"><pre><code class="js">   <span class="p">{</span><span class="c">// START SCRIPT</span>
-    <span class="nx">main</span><span class="p">();</span> <span class="c">// you need a function to be able to cancel a script</span>
+<div class="highlight"><pre><code class="js">   <span class="p">{</span><span class="c1">// START SCRIPT</span>
+    <span class="nx">main</span><span class="p">();</span> <span class="c1">// you need a function to be able to cancel a script</span>
 
-    <span class="kd">function</span> <span class="nx">main</span><span class="p">(){</span><span class="c">// all is in here</span>
+    <span class="kd">function</span> <span class="nx">main</span><span class="p">(){</span><span class="c1">// all is in here</span>
 
-    <span class="kd">var</span> <span class="nx">w</span> <span class="o">=</span> <span class="mi">25</span><span class="o">;</span> <span class="c">// the image sizes</span>
-    <span class="kd">var</span> <span class="nx">allImages</span> <span class="o">=</span> <span class="nx">loadFiles</span><span class="p">(</span><span class="s2">&quot;*.jpg&quot;</span><span class="p">);</span><span class="c">// opens a prompt and lets the user choose a folder</span>
-    <span class="k">if</span><span class="p">(</span><span class="nx">allImages</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="k">return</span><span class="o">;</span> <span class="c">// if that what the function returns null is - cancel</span>
+    <span class="kd">var</span> <span class="nx">w</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span> <span class="c1">// the image sizes</span>
+    <span class="kd">var</span> <span class="nx">allImages</span> <span class="o">=</span> <span class="nx">loadFiles</span><span class="p">(</span><span class="s2">&quot;*.jpg&quot;</span><span class="p">);</span><span class="c1">// opens a prompt and lets the user choose a folder</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">allImages</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span> <span class="c1">// if that what the function returns null is - cancel</span>
 
-    <span class="kd">var</span> <span class="nx">pw</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="p">))</span> <span class="o">*</span> <span class="nx">w</span> <span class="o">+</span> <span class="p">(</span><span class="nx">w</span><span class="o">*</span><span class="mi">2</span><span class="p">);</span> <span class="c">// this will hold the page width</span>
-    <span class="kd">var</span> <span class="nx">ph</span> <span class="o">=</span> <span class="nx">pw</span><span class="o">;</span>
+    <span class="kd">var</span> <span class="nx">pw</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="p">))</span> <span class="o">*</span> <span class="nx">w</span> <span class="o">+</span> <span class="p">(</span><span class="nx">w</span><span class="o">*</span><span class="mi">2</span><span class="p">);</span> <span class="c1">// this will hold the page width</span>
+    <span class="kd">var</span> <span class="nx">ph</span> <span class="o">=</span> <span class="nx">pw</span><span class="p">;</span>
 
     <span class="k">if</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="p">))</span> <span class="o">!=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="p">)){</span>
-            <span class="nx">ph</span> <span class="o">=</span> <span class="nx">pw</span> <span class="o">+</span> <span class="nx">w</span><span class="o">;</span>
+            <span class="nx">ph</span> <span class="o">=</span> <span class="nx">pw</span> <span class="o">+</span> <span class="nx">w</span><span class="p">;</span>
             <span class="p">}</span>
 
-    <span class="kd">var</span> <span class="nx">doc</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">documents</span><span class="p">.</span><span class="nx">add</span><span class="p">();</span> <span class="c">//build a basic document</span>
-    <span class="nx">doc</span><span class="p">.</span><span class="nx">documentPreferences</span><span class="p">.</span><span class="nx">pageWidth</span> <span class="o">=</span> <span class="nx">pw</span><span class="o">;//</span> <span class="nx">set</span> <span class="nx">the</span> <span class="nx">width</span>
-    <span class="nx">doc</span><span class="p">.</span><span class="nx">documentPreferences</span><span class="p">.</span><span class="nx">pageHeight</span> <span class="o">=</span> <span class="nx">ph</span><span class="o">;</span> <span class="c">// set the height</span>
-    <span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="nx">doc</span><span class="p">.</span><span class="nx">pages</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="c">// finally - get the first page</span>
+    <span class="kd">var</span> <span class="nx">doc</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">documents</span><span class="p">.</span><span class="nx">add</span><span class="p">();</span> <span class="c1">//build a basic document</span>
+    <span class="nx">doc</span><span class="p">.</span><span class="nx">documentPreferences</span><span class="p">.</span><span class="nx">pageWidth</span> <span class="o">=</span> <span class="nx">pw</span><span class="p">;</span><span class="c1">// set the width</span>
+    <span class="nx">doc</span><span class="p">.</span><span class="nx">documentPreferences</span><span class="p">.</span><span class="nx">pageHeight</span> <span class="o">=</span> <span class="nx">ph</span><span class="p">;</span> <span class="c1">// set the height</span>
+    <span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="nx">doc</span><span class="p">.</span><span class="nx">pages</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="c1">// finally - get the first page</span>
 
-    <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="nx">w</span><span class="o">;</span> <span class="c">// the upper left corner</span>
-    <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">w</span><span class="o">;</span> <span class="c">// the upper left corner</span>
+    <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="nx">w</span><span class="p">;</span> <span class="c1">// the upper left corner</span>
+    <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">w</span><span class="p">;</span> <span class="c1">// the upper left corner</span>
 
-    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="o">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span><span class="c">// loop thru all images</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span><span class="c1">// loop thru all images</span>
 
-    <span class="kd">var</span> <span class="nx">rect</span> <span class="o">=</span> <span class="nx">page</span><span class="p">.</span><span class="nx">rectangles</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span><span class="nx">geometricBounds</span><span class="o">:</span><span class="p">[</span><span class="nx">y</span><span class="o">,</span><span class="nx">x</span><span class="o">,</span><span class="nx">y</span> <span class="o">+</span> <span class="nx">w</span><span class="o">,</span><span class="nx">x</span> <span class="o">+</span> <span class="nx">w</span><span class="p">]});</span><span class="c">// add a rectangle to the page</span>
-    <span class="nx">rect</span><span class="p">.</span><span class="nx">place</span><span class="p">(</span><span class="nx">allImages</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">);</span><span class="c">// place the image</span>
-    <span class="nx">rect</span><span class="p">.</span><span class="nx">fit</span><span class="p">(</span><span class="nx">FitOptions</span><span class="p">.</span><span class="nx">FILL_PROPORTIONALLY</span><span class="p">);</span><span class="c">// fit it to the frame</span>
-    <span class="nx">rect</span><span class="p">.</span><span class="nx">fit</span><span class="p">(</span><span class="nx">FitOptions</span><span class="p">.</span><span class="nx">CENTER_CONTENT</span><span class="p">);</span><span class="c">// fit it to the frame</span>
-    <span class="nx">x</span> <span class="o">+=</span><span class="nx">w</span><span class="o">;</span> <span class="c">// increase x by an image width</span>
+    <span class="kd">var</span> <span class="nx">rect</span> <span class="o">=</span> <span class="nx">page</span><span class="p">.</span><span class="nx">rectangles</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span><span class="nx">geometricBounds</span><span class="o">:</span><span class="p">[</span><span class="nx">y</span><span class="p">,</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span> <span class="o">+</span> <span class="nx">w</span><span class="p">,</span><span class="nx">x</span> <span class="o">+</span> <span class="nx">w</span><span class="p">]});</span><span class="c1">// add a rectangle to the page</span>
+    <span class="nx">rect</span><span class="p">.</span><span class="nx">place</span><span class="p">(</span><span class="nx">allImages</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">);</span><span class="c1">// place the image</span>
+    <span class="nx">rect</span><span class="p">.</span><span class="nx">fit</span><span class="p">(</span><span class="nx">FitOptions</span><span class="p">.</span><span class="nx">FILL_PROPORTIONALLY</span><span class="p">);</span><span class="c1">// fit it to the frame</span>
+    <span class="nx">rect</span><span class="p">.</span><span class="nx">fit</span><span class="p">(</span><span class="nx">FitOptions</span><span class="p">.</span><span class="nx">CENTER_CONTENT</span><span class="p">);</span><span class="c1">// fit it to the frame</span>
+    <span class="nx">x</span> <span class="o">+=</span><span class="nx">w</span><span class="p">;</span> <span class="c1">// increase x by an image width</span>
 
-    <span class="k">if</span><span class="p">(</span><span class="nx">x</span> <span class="o">&gt;=</span> <span class="nx">pw</span> <span class="o">-</span> <span class="p">(</span><span class="nx">w</span><span class="p">)){</span> <span class="c">// if x is the width minus an image width</span>
-            <span class="nx">x</span> <span class="o">=</span> <span class="nx">w</span><span class="o">;</span> <span class="c">// reset x</span>
-            <span class="nx">y</span><span class="o">+=</span> <span class="nx">w</span><span class="o">;</span> <span class="c">// and increment y by an image width</span>
-            <span class="p">};</span><span class="c">//end increase x and y conditional</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">x</span> <span class="o">&gt;=</span> <span class="nx">pw</span> <span class="o">-</span> <span class="p">(</span><span class="nx">w</span><span class="p">)){</span> <span class="c1">// if x is the width minus an image width</span>
+            <span class="nx">x</span> <span class="o">=</span> <span class="nx">w</span><span class="p">;</span> <span class="c1">// reset x</span>
+            <span class="nx">y</span><span class="o">+=</span> <span class="nx">w</span><span class="p">;</span> <span class="c1">// and increment y by an image width</span>
+            <span class="p">};</span><span class="c1">//end increase x and y conditional</span>
 
-        <span class="p">};</span><span class="c">//close allImages loop</span>
+        <span class="p">};</span><span class="c1">//close allImages loop</span>
 
-    <span class="p">};</span><span class="c">// end main function</span>
+    <span class="p">};</span><span class="c1">// end main function</span>
 
-    <span class="kd">function</span> <span class="nx">loadFiles</span><span class="p">(</span><span class="nx">type</span><span class="p">){</span><span class="c">// the function that loads the files</span>
+    <span class="kd">function</span> <span class="nx">loadFiles</span><span class="p">(</span><span class="nx">type</span><span class="p">){</span><span class="c1">// the function that loads the files</span>
 
-    <span class="kd">var</span> <span class="nx">theFolder</span> <span class="o">=</span> <span class="nx">Folder</span><span class="p">.</span><span class="nx">selectDialog</span> <span class="p">(</span><span class="s2">&quot;Choose the Folder&quot;</span><span class="p">);</span><span class="c">// user select a folder</span>
+    <span class="kd">var</span> <span class="nx">theFolder</span> <span class="o">=</span> <span class="nx">Folder</span><span class="p">.</span><span class="nx">selectDialog</span> <span class="p">(</span><span class="s2">&quot;Choose the Folder&quot;</span><span class="p">);</span><span class="c1">// user select a folder</span>
 
-    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">theFolder</span><span class="p">){</span><span class="c">// if the folder is not a folder cancel the script</span>
-        <span class="k">return</span><span class="o">;//</span> <span class="k">this</span> <span class="nx">cancels</span> <span class="nx">the</span> <span class="nx">whole</span> <span class="kd">function</span> <span class="nx">image_loadFiles</span>
-            <span class="p">};</span> <span class="c">// end foldr check</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">theFolder</span><span class="p">){</span><span class="c1">// if the folder is not a folder cancel the script</span>
+        <span class="k">return</span><span class="p">;</span><span class="c1">// this cancels the whole function image_loadFiles</span>
+            <span class="p">};</span> <span class="c1">// end foldr check</span>
 
-    <span class="kd">var</span> <span class="nx">allImages</span> <span class="o">=</span> <span class="nx">theFolder</span><span class="p">.</span><span class="nx">getFiles</span><span class="p">(</span><span class="nx">type</span><span class="p">);</span><span class="c">// get the files by type</span>
-    <span class="k">if</span><span class="p">((</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">)</span><span class="o">||</span><span class="p">(</span><span class="nx">allImages</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">){</span><span class="c">// again if check if there are images</span>
-        <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;There are no images of the type: &quot;</span> <span class="o">+</span> <span class="nx">type</span><span class="p">);</span><span class="c">// hm something went wrong? User error</span>
-        <span class="k">return</span> <span class="kc">null</span><span class="o">;//</span> <span class="nx">so</span> <span class="nx">we</span> <span class="nx">cancel</span> <span class="nx">the</span> <span class="kd">function</span>
+    <span class="kd">var</span> <span class="nx">allImages</span> <span class="o">=</span> <span class="nx">theFolder</span><span class="p">.</span><span class="nx">getFiles</span><span class="p">(</span><span class="nx">type</span><span class="p">);</span><span class="c1">// get the files by type</span>
+    <span class="k">if</span><span class="p">((</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">)</span><span class="o">||</span><span class="p">(</span><span class="nx">allImages</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">){</span><span class="c1">// again if check if there are images</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;There are no images of the type: &quot;</span> <span class="o">+</span> <span class="nx">type</span><span class="p">);</span><span class="c1">// hm something went wrong? User error</span>
+        <span class="k">return</span> <span class="kc">null</span><span class="p">;</span><span class="c1">// so we cancel the function</span>
            <span class="p">}</span><span class="k">else</span><span class="p">{</span>
-        <span class="k">return</span> <span class="nx">allImages</span><span class="o">;//</span> <span class="nx">give</span> <span class="nx">back</span> <span class="nx">the</span> <span class="nx">images</span><span class="p">.</span> <span class="nx">Success</span><span class="o">!</span>
-            <span class="p">};</span><span class="c">// end all images check</span>
+        <span class="k">return</span> <span class="nx">allImages</span><span class="p">;</span><span class="c1">// give back the images. Success!</span>
+            <span class="p">};</span><span class="c1">// end all images check</span>
 
-        <span class="p">};</span><span class="c">// end function loadFiles</span>
-    <span class="p">}</span> <span class="c">// END OF SCRIPT</span>
+        <span class="p">};</span><span class="c1">// end function loadFiles</span>
+    <span class="p">}</span> <span class="c1">// END OF SCRIPT</span>
 </code></pre>
 </div>
 
@@ -881,7 +881,7 @@ Das gesamte Skript:</p>
 <p>Wir befinden uns nun in der Funktion <code>main();</code>.<br/>
 Es folgt die deklaration der ersten Variable. Sie beinhaltet die Breite (und Höhe) unserer Bilder.</p>
 
-<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">w</span> <span class="o">=</span> <span class="mi">25</span><span class="o">;</span>
+<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">w</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span>
 </code></pre>
 </div>
 
@@ -900,11 +900,11 @@ Unser Code sieht also wie folgt aus.</p>
 <div class="highlight"><pre><code class="js">   <span class="p">{</span>
     <span class="nx">main</span><span class="p">();</span>
         <span class="kd">function</span> <span class="nx">main</span><span class="p">(){</span>
-            <span class="kd">var</span> <span class="nx">w</span> <span class="o">=</span> <span class="mi">25</span><span class="o">;</span>
+            <span class="kd">var</span> <span class="nx">w</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span>
             <span class="kd">var</span> <span class="nx">allImages</span> <span class="o">=</span> <span class="nx">loadFiles</span><span class="p">(</span><span class="s2">&quot;*.jpg&quot;</span><span class="p">);</span>
         <span class="p">}</span>
         <span class="kd">function</span> <span class="nx">loadFiles</span><span class="p">(</span><span class="nx">type</span><span class="p">){</span>
-            <span class="k">return</span> <span class="mi">0</span><span class="o">;</span>
+            <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
         <span class="p">}</span>
     <span class="p">}</span>
 </code></pre>
@@ -917,7 +917,7 @@ Als nächstes begeben wir uns in die Funktion <code>loadFiles</code> und betrach
 
 <div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">theFolder</span> <span class="o">=</span> <span class="nx">Folder</span><span class="p">.</span><span class="nx">selectDialog</span> <span class="p">(</span><span class="s2">&quot;Choose the Folder&quot;</span><span class="p">);</span>
     <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">theFolder</span><span class="p">){</span> 
-            <span class="k">return</span><span class="o">;</span>
+            <span class="k">return</span><span class="p">;</span>
             <span class="p">};</span>
 </code></pre>
 </div>
@@ -943,9 +943,9 @@ Nun folgt ein weitere Sicherheitscheck ob wir Bilder gefunden haben und die Best
 
 <div class="highlight"><pre><code class="js">   <span class="k">if</span><span class="p">((</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="nx">allImages</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">){</span>
         <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;There are no images of the type: &quot;</span> <span class="o">+</span> <span class="nx">type</span><span class="p">);</span>
-        <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>     
+        <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>     
     <span class="p">}</span><span class="k">else</span><span class="p">{</span>
-        <span class="k">return</span> <span class="nx">allImages</span><span class="o">;</span>
+        <span class="k">return</span> <span class="nx">allImages</span><span class="p">;</span>
     <span class="p">};</span>
 </code></pre>
 </div>
@@ -960,14 +960,14 @@ Nun folgt ein weitere Sicherheitscheck ob wir Bilder gefunden haben und die Best
 
 <p>Wir befinden uns wieder in der Funktion main und werden einen weiter Abfrage starten.</p>
 
-<div class="highlight"><pre><code class="js">   <span class="k">if</span><span class="p">(</span><span class="nx">allImages</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="k">return</span><span class="o">;</span>
+<div class="highlight"><pre><code class="js">   <span class="k">if</span><span class="p">(</span><span class="nx">allImages</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
 </code></pre>
 </div>
 
 
 <p>Wenn <code>loadImages</code> <code>null</code> zurückgibt bricht das Skript ab. Dies ist nötig da <code>loadImages</code> in der Funktion <code>main</code> stattfindet. Also führt ein <code>return</code> in <code>loadImages</code> nur zurück nach <code>main</code> und nicht zum beenden des Skripts. Hier ist ebenfalls eine verkürzte schreibweise zu sehen. Wir können uns die geschwungenen Klammern sparen wenn wir nur einen einzigen Befehl haben. Das heisst:</p>
 
-<div class="highlight"><pre><code class="js">   <span class="k">if</span><span class="p">(</span><span class="nx">statement</span><span class="p">){</span><span class="nx">doSomething</span><span class="o">;</span><span class="p">}</span> 
+<div class="highlight"><pre><code class="js">   <span class="k">if</span><span class="p">(</span><span class="nx">statement</span><span class="p">){</span><span class="nx">doSomething</span><span class="p">;}</span> 
 </code></pre>
 </div>
 
@@ -981,14 +981,14 @@ Nun folgt ein weitere Sicherheitscheck ob wir Bilder gefunden haben und die Best
 
 <p>Ebenfalls könnte</p>
 
-<div class="highlight"><pre><code class="js">   <span class="k">if</span><span class="p">(</span><span class="nx">statement</span><span class="p">){</span><span class="nx">doSomething</span><span class="o">;</span><span class="p">}</span><span class="k">else</span><span class="p">{</span><span class="nx">doSomethingElse</span><span class="o">;</span><span class="p">}</span>
+<div class="highlight"><pre><code class="js">   <span class="k">if</span><span class="p">(</span><span class="nx">statement</span><span class="p">){</span><span class="nx">doSomething</span><span class="p">;}</span><span class="k">else</span><span class="p">{</span><span class="nx">doSomethingElse</span><span class="p">;}</span>
 </code></pre>
 </div>
 
 
 <p>als</p>
 
-<div class="highlight"><pre><code class="js">   <span class="k">if</span><span class="p">(</span><span class="nx">statement</span><span class="p">)</span> <span class="nx">doSomething</span><span class="o">;</span> <span class="k">else</span> <span class="nx">doSomethingElse</span><span class="o">;</span>
+<div class="highlight"><pre><code class="js">   <span class="k">if</span><span class="p">(</span><span class="nx">statement</span><span class="p">)</span> <span class="nx">doSomething</span><span class="p">;</span> <span class="k">else</span> <span class="nx">doSomethingElse</span><span class="p">;</span>
 </code></pre>
 </div>
 
@@ -998,9 +998,9 @@ Nun folgt ein weitere Sicherheitscheck ob wir Bilder gefunden haben und die Best
 <p>Als nächstes folgt die Berechnung unserer Seitenbreite und Seitenhöhe. Die Höhe wird nochmals mit einer Kondition überprüft. Wenn die Menge an Bildern nicht in ein Matrix passt, also 3 mal 3 oder 4 mal 4 oder 100 mal 100 müss die Höhe nochmals um eine Zeile erweitert werden. Hier kommt das JavaScript Objekt <code>Math</code> zum Einsatz.</p>
 
 <div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">pw</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="p">))</span> <span class="o">*</span> <span class="nx">w</span> <span class="o">+</span> <span class="p">(</span><span class="nx">w</span><span class="o">*</span><span class="mi">2</span><span class="p">);</span>
-    <span class="kd">var</span> <span class="nx">ph</span> <span class="o">=</span> <span class="nx">pw</span><span class="o">;</span>
+    <span class="kd">var</span> <span class="nx">ph</span> <span class="o">=</span> <span class="nx">pw</span><span class="p">;</span>
     <span class="k">if</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="p">))</span> <span class="o">!=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="p">)){</span>
-            <span class="nx">ph</span> <span class="o">=</span> <span class="nx">pw</span> <span class="o">+</span> <span class="nx">w</span><span class="o">;</span>
+            <span class="nx">ph</span> <span class="o">=</span> <span class="nx">pw</span> <span class="o">+</span> <span class="nx">w</span><span class="p">;</span>
     <span class="p">}</span>
 </code></pre>
 </div>
@@ -1010,7 +1010,7 @@ Nun folgt ein weitere Sicherheitscheck ob wir Bilder gefunden haben und die Best
 
 <div class="highlight"><pre><code class="js">   <span class="nx">a</span> <span class="nx">ist</span> <span class="nx">gleich</span> <span class="mi">16</span><span class="p">.</span> <span class="nx">Die</span> <span class="nx">Menge</span> <span class="nx">an</span> <span class="nx">Bildern</span><span class="p">.</span>  
     <span class="nx">b</span> <span class="nx">ist</span> <span class="nx">die</span> <span class="nx">Wurzel</span> <span class="nx">aus</span> <span class="nx">a</span><span class="p">.</span> <span class="nx">Wir</span> <span class="nx">wollen</span> <span class="nx">es</span> <span class="nx">rechteckig</span><span class="p">.</span> <span class="nx">Also</span> <span class="mi">4</span><span class="p">.</span>  
-    <span class="nx">c</span> <span class="nx">ist</span> <span class="nx">b</span> <span class="nx">gerundet</span><span class="p">.</span> <span class="nx">Falls</span> <span class="nx">es</span> <span class="nx">eine</span> <span class="nx">Kommazahl</span> <span class="nx">ist</span><span class="p">.</span> <span class="nx">Bleibt</span> <span class="k">in</span> <span class="nx">diesem</span> <span class="nx">Fall</span> <span class="mi">4</span><span class="o">,</span> <span class="nx">wenn</span> <span class="nx">a</span> <span class="mi">16</span> <span class="nx">ist</span><span class="p">.</span>
+    <span class="nx">c</span> <span class="nx">ist</span> <span class="nx">b</span> <span class="nx">gerundet</span><span class="p">.</span> <span class="nx">Falls</span> <span class="nx">es</span> <span class="nx">eine</span> <span class="nx">Kommazahl</span> <span class="nx">ist</span><span class="p">.</span> <span class="nx">Bleibt</span> <span class="k">in</span> <span class="nx">diesem</span> <span class="nx">Fall</span> <span class="mi">4</span><span class="p">,</span> <span class="nx">wenn</span> <span class="nx">a</span> <span class="mi">16</span> <span class="nx">ist</span><span class="p">.</span>
     <span class="nx">d</span> <span class="nx">ist</span> <span class="mi">25</span><span class="p">.</span> <span class="nx">Die</span> <span class="nx">Breite</span> <span class="nx">der</span> <span class="nx">Bilder</span><span class="p">.</span>  
     <span class="nx">e</span> <span class="nx">ist</span> <span class="nx">c</span> <span class="nx">mal</span> <span class="nx">d</span><span class="p">.</span> <span class="nx">Wir</span> <span class="nx">staffeln</span> <span class="nx">die</span> <span class="nx">Bilder</span> <span class="nx">nach</span> <span class="nx">rechts</span><span class="p">.</span> <span class="mi">4</span><span class="err">×</span><span class="mi">25</span> <span class="nx">also</span> <span class="mi">100</span>  
     <span class="nx">f</span> <span class="nx">ist</span> <span class="nx">d</span> <span class="nx">mal</span> <span class="mi">2</span><span class="p">.</span> <span class="nx">Das</span> <span class="nx">ist</span> <span class="nx">Links</span> <span class="nx">und</span> <span class="nx">Rechts</span> <span class="nx">der</span> <span class="nx">Abstand</span> <span class="nx">zum</span> <span class="nx">Seitenrand</span><span class="p">.</span>
@@ -1055,11 +1055,11 @@ Wenn die Wurzel aus der Menge an Bilder nicht der gerundeten Wurzel aus der Meng
 Als nächstes folgen das erzeugen des Dokuments, das einstellen der Seite auf unsere errechneten Werte, das überführen der ersten Seite im Dokument in eine Variable und die Definition unseres Startpunktes.</p>
 
 <div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">doc</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">documents</span><span class="p">.</span><span class="nx">add</span><span class="p">();</span>
-        <span class="nx">doc</span><span class="p">.</span><span class="nx">documentPreferences</span><span class="p">.</span><span class="nx">pageWidth</span> <span class="o">=</span> <span class="nx">pw</span><span class="o">;</span>
-        <span class="nx">doc</span><span class="p">.</span><span class="nx">documentPreferences</span><span class="p">.</span><span class="nx">pageHeight</span> <span class="o">=</span> <span class="nx">ph</span><span class="o">;</span>
+        <span class="nx">doc</span><span class="p">.</span><span class="nx">documentPreferences</span><span class="p">.</span><span class="nx">pageWidth</span> <span class="o">=</span> <span class="nx">pw</span><span class="p">;</span>
+        <span class="nx">doc</span><span class="p">.</span><span class="nx">documentPreferences</span><span class="p">.</span><span class="nx">pageHeight</span> <span class="o">=</span> <span class="nx">ph</span><span class="p">;</span>
     <span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="nx">doc</span><span class="p">.</span><span class="nx">pages</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-    <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="nx">w</span><span class="o">;</span>
-    <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">w</span><span class="o">;</span>
+    <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="nx">w</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">w</span><span class="p">;</span>
 </code></pre>
 </div>
 
@@ -1067,19 +1067,19 @@ Als nächstes folgen das erzeugen des Dokuments, das einstellen der Seite auf un
 <p>Diese Zeilen sind fast selbst erklärend. Wir fügen der Sammlung an Dokumenten ein neues hinzu. Dabei ist irrelevant ob bereits ein Dokument existiert oder nicht. Dann stellen wir die Weite und Höhe der Seite ein. Dann nehmen wir aus der Sammlung an Seiten in dem neuem Dokument die Erste. Der Aufruf <code>item(0)</code> ist ebenfalls ein ExtendScript Befehl der nur in InDesign funktioniert. wir könnten auch <code>var page = doc.pages[0]</code> schreiben. Hier funktioniert beides gleich. Das ist jedoch nicht immer der Fall. Es gibt zum Beispiel die Möglichkeit <code>doc.pages.middleItem()</code> oder <code>doc.pages.lastItem()</code> abzufragen. Bei einem normalen Array wie unserem <code>allImages</code> würde <code>lastItem()</code> nicht funktionieren. Danach erzeugen wir die Startpunkt unseres ersten Bildes. x und y sind jeweils eine Bildbreite vom Rand der Seite entfernt.
 Es gibt noch die Möglichkeit die ersten drei Zeilen abzukürzen. Dies ist eine komprimiert schreibweise die uns noch öfter begegnen wird.</p>
 
-<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">doc</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">documents</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span><span class="nx">documentPreferences</span><span class="o">:</span><span class="p">{</span><span class="nx">pageWidth</span><span class="o">:</span><span class="nx">pw</span><span class="o">,</span><span class="nx">pageHeight</span><span class="o">:</span><span class="nx">ph</span><span class="p">}});</span>
+<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">doc</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">documents</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span><span class="nx">documentPreferences</span><span class="o">:</span><span class="p">{</span><span class="nx">pageWidth</span><span class="o">:</span><span class="nx">pw</span><span class="p">,</span><span class="nx">pageHeight</span><span class="o">:</span><span class="nx">ph</span><span class="p">}});</span>
 </code></pre>
 </div>
 
 
 <p>Aber zu dieser Schachtelung kommen wir noch. Wir sind bereits halb durch. Es folgt nochmals ein weiteres Konstrukt. die Schleife.</p>
 
-<div class="highlight"><pre><code class="js">   <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="o">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
-    <span class="kd">var</span> <span class="nx">rect</span> <span class="o">=</span> <span class="nx">page</span><span class="p">.</span><span class="nx">rectangles</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span><span class="nx">geometricBounds</span><span class="o">:</span><span class="p">[</span><span class="nx">y</span><span class="o">,</span> <span class="nx">x</span><span class="o">,</span> <span class="nx">y</span> <span class="o">+</span> <span class="nx">w</span><span class="o">,</span><span class="nx">x</span> <span class="o">+</span> <span class="nx">w</span><span class="p">]});</span>
+<div class="highlight"><pre><code class="js">   <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">allImages</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="kd">var</span> <span class="nx">rect</span> <span class="o">=</span> <span class="nx">page</span><span class="p">.</span><span class="nx">rectangles</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span><span class="nx">geometricBounds</span><span class="o">:</span><span class="p">[</span><span class="nx">y</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span> <span class="o">+</span> <span class="nx">w</span><span class="p">,</span><span class="nx">x</span> <span class="o">+</span> <span class="nx">w</span><span class="p">]});</span>
     <span class="nx">rect</span><span class="p">.</span><span class="nx">place</span><span class="p">(</span><span class="nx">allImages</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">);</span>
-    <span class="nx">rect</span><span class="p">.</span><span class="nx">fit</span><span class="p">(</span><span class="nx">FitOptions</span><span class="p">.</span><span class="nx">FILL_PROPORTIONALLY</span><span class="p">);</span><span class="c">// fit it to the frame</span>
-    <span class="nx">rect</span><span class="p">.</span><span class="nx">fit</span><span class="p">(</span><span class="nx">FitOptions</span><span class="p">.</span><span class="nx">CENTER_CONTENT</span><span class="p">);</span><span class="c">// fit it to the frame</span>
-    <span class="nx">x</span> <span class="o">+=</span><span class="nx">w</span><span class="o">;</span>
+    <span class="nx">rect</span><span class="p">.</span><span class="nx">fit</span><span class="p">(</span><span class="nx">FitOptions</span><span class="p">.</span><span class="nx">FILL_PROPORTIONALLY</span><span class="p">);</span><span class="c1">// fit it to the frame</span>
+    <span class="nx">rect</span><span class="p">.</span><span class="nx">fit</span><span class="p">(</span><span class="nx">FitOptions</span><span class="p">.</span><span class="nx">CENTER_CONTENT</span><span class="p">);</span><span class="c1">// fit it to the frame</span>
+    <span class="nx">x</span> <span class="o">+=</span><span class="nx">w</span><span class="p">;</span>
     <span class="p">}</span>
 </code></pre>
 </div>
@@ -1088,7 +1088,7 @@ Es gibt noch die Möglichkeit die ersten drei Zeilen abzukürzen. Dies ist eine 
 <p>Mit dieser Schleife würden wir nur Bilder nach rechts weiter setzen. Den "Zeilenumbruch" fügen wir später ein. Ersteinmal die Aussage der Schleife ähnelt der Kondition <code>for(statment){doSomething}</code> nur mit <code>for</code> anstatt <code>if</code>. Es könnte als an <em>solange</em> übersetzt werden. Solange du durch die Liste der Bilder zählen kannst. Die Aussage <code>for(var i = 0; i &lt; allImages.length; i++ )</code> ist  eine verkürzte schreibweise für <code>for(var i = 0; i &lt; allImages.length; i = i + 1 )</code>. Es wäre  auch möglich <code>for(var i = 5; i &lt; 100; i= i +5)</code> zu schreiben. Das Bedeutet. Zähler i ist 5. Solange i kleiner als 100 ist, erhöhe i um 5. Im ersten durchlauf ist i 5 im zweiten 10 im dritten 15. Wir würden dann nur das 5te ,10te und 15te Bild erhalten anstatt alle.<br/>
 Es folgt:</p>
 
-<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">rect</span> <span class="o">=</span> <span class="nx">page</span><span class="p">.</span><span class="nx">rectangles</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span><span class="nx">geometricBounds</span><span class="o">:</span><span class="p">[</span><span class="nx">y</span><span class="o">,</span> <span class="nx">x</span><span class="o">,</span> <span class="nx">y</span> <span class="o">+</span> <span class="nx">w</span><span class="o">,</span><span class="nx">x</span> <span class="o">+</span> <span class="nx">w</span><span class="p">]});</span>
+<div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">rect</span> <span class="o">=</span> <span class="nx">page</span><span class="p">.</span><span class="nx">rectangles</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span><span class="nx">geometricBounds</span><span class="o">:</span><span class="p">[</span><span class="nx">y</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span> <span class="o">+</span> <span class="nx">w</span><span class="p">,</span><span class="nx">x</span> <span class="o">+</span> <span class="nx">w</span><span class="p">]});</span>
 </code></pre>
 </div>
 
@@ -1096,11 +1096,11 @@ Es folgt:</p>
 <p>Wir erzeugen auf der ersten Seite eine Rechteck, ähnlich wie unser Dokument und stellen die Aussenkanten ein. Die <code>geometricBounds</code>. Wir könnten auch folgendes schreiben.</p>
 
 <div class="highlight"><pre><code class="js">   <span class="kd">var</span> <span class="nx">rect</span> <span class="o">=</span> <span class="nx">page</span><span class="p">.</span><span class="nx">rectangles</span><span class="p">.</span><span class="nx">add</span><span class="p">();</span>
-    <span class="kd">var</span> <span class="nx">y1</span> <span class="o">=</span> <span class="nx">y</span><span class="o">;</span>
-    <span class="kd">var</span> <span class="nx">x1</span> <span class="o">=</span> <span class="nx">x</span><span class="o">;</span>
-    <span class="kd">var</span> <span class="nx">y2</span> <span class="o">=</span> <span class="nx">y1</span> <span class="o">+</span> <span class="nx">w</span><span class="o">;</span>
-    <span class="kd">var</span> <span class="nx">x2</span> <span class="o">=</span> <span class="nx">x1</span> <span class="o">+</span> <span class="nx">w</span><span class="o">;</span>
-    <span class="nx">rect</span><span class="p">.</span><span class="nx">geometricBounds</span> <span class="o">=</span> <span class="p">[</span><span class="nx">y1</span><span class="o">,</span> <span class="nx">x1</span><span class="o">,</span> <span class="nx">y2</span><span class="o">,</span> <span class="nx">x2</span><span class="p">];</span>
+    <span class="kd">var</span> <span class="nx">y1</span> <span class="o">=</span> <span class="nx">y</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">x1</span> <span class="o">=</span> <span class="nx">x</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">y2</span> <span class="o">=</span> <span class="nx">y1</span> <span class="o">+</span> <span class="nx">w</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">x2</span> <span class="o">=</span> <span class="nx">x1</span> <span class="o">+</span> <span class="nx">w</span><span class="p">;</span>
+    <span class="nx">rect</span><span class="p">.</span><span class="nx">geometricBounds</span> <span class="o">=</span> <span class="p">[</span><span class="nx">y1</span><span class="p">,</span> <span class="nx">x1</span><span class="p">,</span> <span class="nx">y2</span><span class="p">,</span> <span class="nx">x2</span><span class="p">];</span>
 </code></pre>
 </div>
 
@@ -1109,18 +1109,18 @@ Es folgt:</p>
 Es folgen drei einfache Befehle.</p>
 
 <div class="highlight"><pre><code class="js">   <span class="nx">rect</span><span class="p">.</span><span class="nx">place</span><span class="p">(</span><span class="nx">allImages</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">);</span>
-    <span class="nx">rect</span><span class="p">.</span><span class="nx">fit</span><span class="p">(</span><span class="nx">FitOptions</span><span class="p">.</span><span class="nx">FILL_PROPORTIONALLY</span><span class="p">);</span><span class="c">// fit it to the frame</span>
-    <span class="nx">rect</span><span class="p">.</span><span class="nx">fit</span><span class="p">(</span><span class="nx">FitOptions</span><span class="p">.</span><span class="nx">CENTER_CONTENT</span><span class="p">);</span><span class="c">// fit it to the frame</span>
-    <span class="nx">x</span> <span class="o">+=</span><span class="nx">w</span><span class="o">;</span>
+    <span class="nx">rect</span><span class="p">.</span><span class="nx">fit</span><span class="p">(</span><span class="nx">FitOptions</span><span class="p">.</span><span class="nx">FILL_PROPORTIONALLY</span><span class="p">);</span><span class="c1">// fit it to the frame</span>
+    <span class="nx">rect</span><span class="p">.</span><span class="nx">fit</span><span class="p">(</span><span class="nx">FitOptions</span><span class="p">.</span><span class="nx">CENTER_CONTENT</span><span class="p">);</span><span class="c1">// fit it to the frame</span>
+    <span class="nx">x</span> <span class="o">+=</span><span class="nx">w</span><span class="p">;</span>
 </code></pre>
 </div>
 
 
 <p>Das Bild mit dem Index i wird in dem Rechteck platziert, der Inhalt wird an die Grösse des Rechteckes angepasst, zentriert und wir erhöhen den x Wert um eine Bildbreite. Hier könnte auch <code>x = x + w</code> stehen. Es gibt weiter verkürzte Schreibweisen wie:</p>
 
-<div class="highlight"><pre><code class="js">   <span class="nx">x</span><span class="o">-=</span><span class="mi">5</span><span class="o">;</span> <span class="c">//  equivalent to x = x - 5;</span>
-    <span class="nx">x</span><span class="o">*=</span><span class="mi">5</span><span class="o">;</span> <span class="c">//  equivalent to x = x * 5;</span>
-    <span class="nx">x</span><span class="o">/=</span><span class="mi">5</span><span class="o">;</span> <span class="c">//  equivalent to x = x / 5;</span>
+<div class="highlight"><pre><code class="js">   <span class="nx">x</span><span class="o">-=</span><span class="mi">5</span><span class="p">;</span> <span class="c1">//  equivalent to x = x - 5;</span>
+    <span class="nx">x</span><span class="o">*=</span><span class="mi">5</span><span class="p">;</span> <span class="c1">//  equivalent to x = x * 5;</span>
+    <span class="nx">x</span><span class="o">/=</span><span class="mi">5</span><span class="p">;</span> <span class="c1">//  equivalent to x = x / 5;</span>
 </code></pre>
 </div>
 
@@ -1129,8 +1129,8 @@ Es folgen drei einfache Befehle.</p>
 Damit wir jedoch nicht nur Bilder nach Rechts platzieren sondern umbrechen wenn x (oder x1) größer oder gleich der Breite der Seite minus der Bildbeite (der Rand) ist müssen wir eine weitere Kondition hinzufügen.</p>
 
 <div class="highlight"><pre><code class="js">   <span class="k">if</span><span class="p">(</span><span class="nx">x</span> <span class="o">&gt;=</span> <span class="nx">pw</span> <span class="o">-</span> <span class="p">(</span><span class="nx">w</span><span class="p">)){</span>
-    <span class="nx">x</span> <span class="o">=</span> <span class="nx">w</span><span class="o">;</span>
-    <span class="nx">y</span><span class="o">+=</span> <span class="nx">w</span><span class="o">;</span>
+    <span class="nx">x</span> <span class="o">=</span> <span class="nx">w</span><span class="p">;</span>
+    <span class="nx">y</span><span class="o">+=</span> <span class="nx">w</span><span class="p">;</span>
     <span class="p">}</span>
 </code></pre>
 </div>
@@ -1182,23 +1182,23 @@ Wir sind am Ende. Probieren sie den Code mit unterschiedliche vielen Jpg-Dateien
 <p>Ein weiters Skript, <em>greatPower.jsx</em>, welches aus nur einer Befehlszeile besteht und dennoch mächtig und auch ein wenig gefährlich ist.<br/>
 Wenn bei der Entwicklung eines anderen Skripts immer wieder neue Dokumente erzeugt werden kann es schnell passieren, dass 10, 20, 50 Dokumente geöffnet sind. Die Oberfläche von InDesign bietet nicht die Möglichkeit alle geöffneten Dokumente zu schliessen ohne zu speichern. Das bedeutet das bei 50 Dokumenten 50 mal beim Schliessen entweder gespeichert oder das Dokument verworfen werden muss. Mit greatPower.jsx ist dies möglich. Um dies auszuprobieren erzeugen wir ein paar Dokumente mit dem Skript createDocuments.jsx. Dies is stark verkürzt in seiner schreibweise und verwendet eine andere Art von Schleife. die <code>while</code> Schleife.</p>
 
-<div class="highlight"><pre><code class="js">   <span class="c">// createDocuments.jsx</span>
-    <span class="kd">var</span> <span class="nx">counter</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-    <span class="kd">var</span> <span class="nx">numberOfDocuments</span> <span class="o">=</span> <span class="mi">22</span><span class="o">;</span>
+<div class="highlight"><pre><code class="js">   <span class="c1">// createDocuments.jsx</span>
+    <span class="kd">var</span> <span class="nx">counter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">numberOfDocuments</span> <span class="o">=</span> <span class="mi">22</span><span class="p">;</span>
     <span class="k">while</span><span class="p">(</span><span class="nx">counter</span> <span class="o">&lt;=</span> <span class="nx">numberOfDocuments</span><span class="p">){</span>
     <span class="nx">app</span><span class="p">.</span><span class="nx">documents</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span>
         <span class="nx">documentPreferences</span><span class="o">:</span><span class="p">{</span>
-            <span class="nx">pageWidth</span><span class="o">:</span><span class="mi">100</span><span class="o">,</span><span class="nx">pageHeight</span><span class="o">:</span><span class="mi">100</span>
+            <span class="nx">pageWidth</span><span class="o">:</span><span class="mi">100</span><span class="p">,</span><span class="nx">pageHeight</span><span class="o">:</span><span class="mi">100</span>
             <span class="p">}</span>
         <span class="p">});</span>
     <span class="kd">var</span> <span class="nx">tf</span> <span class="o">=</span> <span class="nx">app</span><span class="p">.</span><span class="nx">activeDocument</span><span class="p">.</span><span class="nx">pages</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="mi">0</span><span class="p">).</span><span class="nx">textFrames</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span>
-        <span class="nx">geometricBounds</span><span class="o">:</span><span class="p">[</span><span class="mi">10</span><span class="o">,</span><span class="mi">10</span><span class="o">,</span><span class="mi">90</span><span class="o">,</span><span class="mi">90</span><span class="p">]</span><span class="o">,</span>
+        <span class="nx">geometricBounds</span><span class="o">:</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">90</span><span class="p">],</span>
         <span class="nx">contents</span><span class="o">:</span><span class="nb">String</span><span class="p">(</span><span class="nx">counter</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;Hello World&quot;</span>
         <span class="p">});</span>
     <span class="nx">tf</span><span class="p">.</span><span class="nx">characters</span><span class="p">.</span><span class="nx">everyItem</span><span class="p">().</span><span class="nx">properties</span> <span class="o">=</span> <span class="p">{</span>
         <span class="nx">pointSize</span><span class="o">:</span><span class="mi">42</span>
         <span class="p">};</span>
-    <span class="nx">counter</span><span class="o">++;</span>
+    <span class="nx">counter</span><span class="o">++</span><span class="p">;</span>
     <span class="p">}</span>
 </code></pre>
 </div>
@@ -1206,7 +1206,7 @@ Wenn bei der Entwicklung eines anderen Skripts immer wieder neue Dokumente erzeu
 
 <p>Um diese 23 Dokumente wieder zu schliessen benutzen sie "greatPower.jsx"</p>
 
-<div class="highlight"><pre><code class="js">   <span class="c">// Like Uncle Ben saz: &quot;With great power comes great responsability!&quot;</span>
+<div class="highlight"><pre><code class="js">   <span class="c1">// Like Uncle Ben saz: &quot;With great power comes great responsability!&quot;</span>
     <span class="nx">app</span><span class="p">.</span><span class="nx">documents</span><span class="p">.</span><span class="nx">everyItem</span><span class="p">().</span><span class="nx">close</span><span class="p">(</span><span class="nx">SaveOptions</span><span class="p">.</span><span class="nx">NO</span><span class="p">);</span>
 </code></pre>
 </div>
