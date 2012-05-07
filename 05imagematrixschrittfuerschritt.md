@@ -58,7 +58,7 @@ Als nächstes begeben wir uns in die Funktion `loadFiles` und betrachten die Dat
 			};
 {% endhighlight %}
 
-Bisher waren alle Befehle JavaScript Befehle. Der Befehl `Folder.selectDialog ("Choose the Folder")` jedoch ist <a href="#31">ExtendScript</a>. das Objekt `Folder` hat eine eigene Funktion `selectDialog(parameter)`. Wir müssen diese Funktion nicht betrachten. Wir müssen nur wissen, dass sie ein Interface öffnet und dem Benutzer die Möglichkeit gibt einen beliebigen Ordner auszuwählen. Der Parameter ist der Text der auf dem Auswahldialog oben zu sehen ist. Der gewählte Ordner wird dann in der neuen Variable `theFolder` für eine spätere Referenzierung gespeichert. Dann folgt das Konstrukt der Konditionalen Abfrage.
+Bisher waren alle Befehle JavaScript Befehle. Der Befehl `Folder.selectDialog ("Choose the Folder")` jedoch ist <a href="10terminologie.html#31">ExtendScript</a>. das Objekt `Folder` hat eine eigene Funktion `selectDialog(parameter)`. Wir müssen diese Funktion nicht betrachten. Wir müssen nur wissen, dass sie ein Interface öffnet und dem Benutzer die Möglichkeit gibt einen beliebigen Ordner auszuwählen. Der Parameter ist der Text der auf dem Auswahldialog oben zu sehen ist. Der gewählte Ordner wird dann in der neuen Variable `theFolder` für eine spätere Referenzierung gespeichert. Dann folgt das Konstrukt der Konditionalen Abfrage.
 
 {% highlight js %}
 	if( Statement ){ Do Something }
@@ -83,7 +83,7 @@ Nun folgt ein weitere Sicherheitscheck ob wir Bilder gefunden haben und die Best
 	};
 {% endhighlight %}
 
-Wie wir oben sehen benutzen wir nochmals die Konditionale Entscheidung `if()`. jedoch mit einer Erweiterung dem `else`. Dies bedeutet das auf jeden Fall eine er beiden Blöcke ausgeführt wird. Um es im <a href="#18">Pseudocode</a> darzustellen:  
+Wie wir oben sehen benutzen wir nochmals die Konditionale Entscheidung `if()`. jedoch mit einer Erweiterung dem `else`. Dies bedeutet das auf jeden Fall eine er beiden Blöcke ausgeführt wird. Um es im <a href="10terminologie.html#18">Pseudocode</a> darzustellen:  
 
 {% highlight text %}
 Wenn die Aussage zutrifft mach dies ansonsten mach dass

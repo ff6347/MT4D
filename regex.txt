@@ -1,0 +1,11 @@
+find html link turn to markdown link
+find what 	: <a\shref="(.*?)">(.*?)</a>
+change to 	: [$2]($1)
+
+find image turn to md image
+find what	: <img\ssrc="(.*?)"\s(.*?)\s/>
+Change to	: ![]($1)
+
+(?#find images in a  href tag)  
+find what	:<a\shref=.*?>(!\[.*?\]\(.*?\))</a>
+change to	:$1
