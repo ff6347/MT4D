@@ -1,0 +1,135 @@
+ 
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content=
+    "text/html; charset=us-ascii" />
+    <title>
+      {{ page.title }}
+    </title>
+    <meta name="author" content="fabiantheblind" />
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="css/syntax.css" type="text/css" />
+    <!-- Homepage CSS -->
+    <link rel="stylesheet" href="css/screen.css" type="text/css"
+    media="screen, projection" /><!-- Include Print CSS -->
+    <link rel="stylesheet" href="css/print.css" type="text/css"
+    media="print" />
+   <link rel="stylesheet" href="css/nav.css" type="text/css"
+    media="screen, projection" /><!-- Include nav CSS -->
+<!--    
+    <script src="js/jquery-1.7.2.min.js" type="text/javascript">
+</script>
+    <script src="js/jquery-ui-1.8.20.custom.min.js" type=
+    "text/javascript">
+</script>
+    <script src="js/showHide.js" type="text/javascript">
+</script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js">
+</script>
+    <script type="text/javascript" src="js/jquery.plusanchor.js">
+</script>
+ <script type="text/javascript">
+//<![CDATA[
+    $(document).ready(function(){
+
+
+    $('.show_hide').showHide({      
+    speed: 500,  // speed you want the toggle to happen  
+    easing: 'easeInOutQuart',  // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
+    changeText: 1, // if you dont want the button text to change, set this to 0
+    showText: '[?]',// the button text to show when a div is closed
+    hideText: '[x]' // the button text to show when a div is open     
+    }); 
+    });
+
+    $(document).ready(function(){
+    $('body').plusAnchor({
+    easing: 'easeInOutExpo',
+    speed: 2500,
+          onInit: function( base ) {
+
+              if ( base.initHash != '' && $(base.initHash).length > 0 ) {
+
+                window.location.hash = 'hash_' + base.initHash.substring(1);
+
+          window.scrollTo(0, 0);
+
+                  $(window).load( function() {
+
+                    timer = setTimeout(function() {
+
+                        $(base.scrollEl).animate({
+                            scrollTop: $( base.initHash ).offset().top
+
+                        }, base.options.speed, base.options.easing);
+                    }, 10000); // setTimeout
+
+                  }); // window.load
+              }; // if window.location.hash
+
+          } // onInit
+    });
+    });
+    //]]>
+    </script> -->
+
+  </head>
+  <body>
+  <nav>{% include nav.html %}</nav>
+    <div id="top"></div>
+    <div name="top"></div>
+    <!-- <div id="overlay"><a href="#top">back to top</a></div> -->
+    <div class="site">
+      <div id="printfriendly">
+        <script src="http://cdn.printfriendly.com/printfriendly.js"
+        type="text/javascript">
+</script><a href="http://www.printfriendly.com" style=
+" color:#6D9F00; text-decoration:none;" class="printfriendly"
+        onclick="window.print(); return false;" title=
+        "Printer Friendly and PDF"><img style="border:none;" src=
+        "http://cdn.printfriendly.com/button-print-gry20.png" alt=
+        "Print Friendly and PDF" /></a>
+      </div>
+      <div class="title">
+        <a href="/">Home</a> 
+        <!-- <a class="extra" href="/">home</a> -->
+
+      </div>
+      {{ content }}
+      <br />
+      <!--<div class="footer"> 
+        Diese Website wude mit <a href=
+        "http://jekyllrb.com/">jekyll</a> entwickelt. <br> Alle Inhalte liegen unter <a href=
+        "http://creativecommons.org/licenses/by-nc-sa/3.0/de/">
+        CC BY-NC-SA 3.0 Lizenz</a> auf <a href=
+        "https://github.com/fabiantheblind/MT4D_TXT">github.com.
+        (NOCH NICHT &Ouml;FFENTLICH)</a>
+        <div class="contact">
+          <p>
+            Fabian Mor&oacute;n Zirfas<br />
+            Owner of <a href=
+            "http://fabiantheblind.info">fabiantheblind.info</a><br />
+
+            hello@fabiantheblind.info
+          </p>
+        </div>
+        <div class="contact">
+          <p>
+            <a href=
+            "http://github.com/fabiantheblind/">github.com/fabiantheblind</a><br />
+
+            <a href=
+            "http://twitter.com/fabiantheblind/">twitter.com/fabiantheblind</a><br />
+
+            <a href=
+            "http://flickr.com/photos/fabiantheblind/">flickr.com/photos/fabiantheblind</a><br />
+
+            <a href=
+            "https://vimeo.com/fabiantheblind">vimeo.com/fabiantheblind</a>
+          </p>
+        </div>
+      </div> -->
+    </div>
+  </body>
+</html>
