@@ -6,6 +6,7 @@
 
 /* Global Reset */
 
+/*
 @font-face {
     font-family: 'DejaVuSerifBook';
     src: url('../fonts/DejaVuSerif-webfont.eot');
@@ -41,6 +42,7 @@
     font-style: normal;
 
 }
+*/
 
 * {
   margin: 0;
@@ -50,24 +52,31 @@
 html, body {
 
   height: 100%;
+  
 }
 
 body {
-  font: 13.34px 'DejaVuSerifBook', Georgia,  Times, serif;
+	  font: normal 400 1.0em/1em "calluna","Georgia";
+
+  /*font: 13.34px 'DejaVuSerifBook', Georgia, serif;*/
   /**font-size: small;*/
 	/*background: white url(../images/connectedNodes.jpg) no-repeat;*/
 }
 
 strong{
-	  font:'DejaVuSerifBold', Georgia,  Times, serif;
+	  /*font:'DejaVuSerifBold', Georgia, serif;*/
+	    font: normal 700 "calluna","Georgia";
+
 
 }
 
 em{
-		  font:'DejaVuSerifItalic', Georgia,  Times, serif;
+		  /*font:'DejaVuSerifItalic', Georgia, serif;*/
+	    font: italic 400 "calluna","Georgia";
 
 }
 h1{
+	font: normal 900 1.7em "calluna","Georgia";
 	font-size: 1.7em;
 	  margin-bottom: 1.5em;
 	
