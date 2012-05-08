@@ -1,5 +1,0 @@
-todos on HTML 2 MD
-
-&ouml; --> ö
-&uuml; --> ü
-&auml; --> ä 

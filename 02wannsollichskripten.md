@@ -8,27 +8,27 @@ title: Wann Soll ich Skripten
 > Scripting: Higher Level Programming
 for the 21st Century by John K. Ousterhout ([online](http://www.tcl.tk/doc/scripting.html))  
 
-Auch wenn Aufgaben auf unterschiedliche Weise mit verschiedenen Programmiersprachen gelöst werden können haben sich spezielle Anwendungsgebiete für die einzelnen Sprachen ergeben. Ganz unabhängig davon, dass sich in unserem Fall Adobe Anwendungen mit JavaScript ansprechen lassen macht es Sinn eine Skriptsprache zu verwenden um die bereits in höheren Sprachen implementierten Funktionen zu verbinden. JavaScript ist unser Kleber. Wir müssen das Rad nicht neu erfinden. Wir können jedoch unseren Arbeitsablauf durch gezielte Befehlsketten von repetitive Aufgaben befreien. Ich bin mir sicher dass ein Grossteil aller Gestalter die vorgefertigte Software für ihre Arbeit verwenden schon einmal an den Punkt kamen wo sie sich dachten: "Warum kann mein Programm **DAS** nicht", "es ist doch alles da. Der Knopf und danach diesen Knopf!". \[^DAS\] 
+Auch wenn Aufgaben auf unterschiedliche Weise mit verschiedenen Programmiersprachen gelöst werden können haben sich spezielle Anwendungsgebiete für die einzelnen Sprachen ergeben. Ganz unabhängig davon, dass sich in unserem Fall Adobe Anwendungen mit JavaScript ansprechen lassen macht es Sinn eine Skriptsprache zu verwenden um die bereits in höheren Sprachen implementierten Funktionen zu verbinden. JavaScript ist unser Kleber. Wir müssen das Rad nicht neu erfinden. Wir können jedoch unseren Arbeitsablauf durch gezielte Befehlsketten von repetitive Aufgaben befreien. Ich bin mir sicher dass ein Grossteil aller Gestalter die vorgefertigte Software für ihre Arbeit verwenden schon einmal an den Punkt kamen wo sie sich dachten: "Warum kann mein Programm **DAS** nicht", "es ist doch alles da. Der Knopf und danach diesen Knopf!". [^DAS] 
 Scripting erlaubt es uns diese beiden Knöpfe mit einander zu verbinden. Das bedeutet dann, dass wir unsere Arbeit um einen "Klick" reduziert haben. Wir haben zwei Knöpfe durch Verkettung auf einen neuen Knopf gelegt. Natürlich klingt die Reduktion um einen Klick vernachlässigbar. Wenn Jedoch diese zwei Klicks 100 mal ausgeführt werden müssen und wir durch logische Anweisung diese ebenfalls auf nur einen Knopf zusammenführen können ist der Zeitgewinn enorm. Ebenfalls muss hier erwähnt werden das viele der Probleme die in einem Gestaltungs*Prozess auftreten nicht zum ersten mal bei eben dieser Person auftreten. Für den Bereich Scripting von Adobe Anwendungen gibt es im Netz viele Seiten und Foren die sich mit diesem Thema befassen. Im Bereich JavaScript gibt es noch viele mehr, da JavaScript auch verwendet wird beziehungsweise entwickelt wurde um Browser zu steuern. Aufgrund dessen ist die Dokumentation mehr als ausgiebig. Es Bedarf nur etwas Übung um die gefundenen Beispiele zu lesen und auf die eigene Problemstellung zu abstrahieren.  
 
 #Hierbei sei zu beachten!   
 
-Scripting kann keine Design Entscheidungen fällen. Es existiert kein Algorithmus der Ästhetik simuliert. \[^ALGO1\] Um eine spannende Komposition zu schaffen braucht der Gestalter "nur" drei geometrische Grundformen zu erzeugen und diese im richtigen Verhältnis zu einander anzuordnen. Um dies programmatisch zu lösen müsste ein Skript mehrere hundert mal ausgeführt werden. Jedes mal mit einer kleinen Veränderung der Koordinaten der obig genannten drei Objekte. Davon mal ganz abgesehen, dass der Autor irgendwann entscheiden muss welche Komposition knackig ist. Was das Skript leisten kann ist anhand von bestimmten Rahmenparametern eine Fülle von Varianten zu liefern die von Hand Sehnenscheidenentzündungen hervorrufen würde. Programmieren ist nicht einfach. Es ist wie eine neue Sprache lernen. Stellen sie sich vor sie sind in einem fremden Land dessen Sprache sie nicht beherrschen. Sie werden zuerst Probleme haben. Dann lernen sie ihre Grundbedürfnisse zu decken. Ab einem gewissen Punkt können sie Tageszeitungen lesen und Inhalte erfassen und abstrahieren. Eines Tages werden sie feststellen, dass sie in der Sprache Träumen. Der Vorteil an Computersprachen im Vergleich zu "Menschensprachen" ist das in der Computersprache kein Raum für Interpretation ist. Jede Aussage MUSS eindeutig sein. In der Kommunikation mit Menschen MUSS interpretiert werden. In Schriftform ist auch kein Raum für Interpretation. Die <a href="10terminologie.html#17">Syntax</a> muss valide sein. Dies ist ein Vorteil. Es zwingt zu Genauigkeit. Dennoch - eine Sprache lernen ist keine leichte Aufgabe.  
+Scripting kann keine Design Entscheidungen fällen. Es existiert kein Algorithmus der Ästhetik simuliert. [^ALGO1] Um eine spannende Komposition zu schaffen braucht der Gestalter "nur" drei geometrische Grundformen zu erzeugen und diese im richtigen Verhältnis zu einander anzuordnen. Um dies programmatisch zu lösen müsste ein Skript mehrere hundert mal ausgeführt werden. Jedes mal mit einer kleinen Veränderung der Koordinaten der obig genannten drei Objekte. Davon mal ganz abgesehen, dass der Autor irgendwann entscheiden muss welche Komposition knackig ist. Was das Skript leisten kann ist anhand von bestimmten Rahmenparametern eine Fülle von Varianten zu liefern die von Hand Sehnenscheidenentzündungen hervorrufen würde. Programmieren ist nicht einfach. Es ist wie eine neue Sprache lernen. Stellen sie sich vor sie sind in einem fremden Land dessen Sprache sie nicht beherrschen. Sie werden zuerst Probleme haben. Dann lernen sie ihre Grundbedürfnisse zu decken. Ab einem gewissen Punkt können sie Tageszeitungen lesen und Inhalte erfassen und abstrahieren. Eines Tages werden sie feststellen, dass sie in der Sprache Träumen. Der Vorteil an Computersprachen im Vergleich zu "Menschensprachen" ist das in der Computersprache kein Raum für Interpretation ist. Jede Aussage MUSS eindeutig sein. In der Kommunikation mit Menschen MUSS interpretiert werden. In Schriftform ist auch kein Raum für Interpretation. Die [Syntax](10terminologie.html#17) muss valide sein. Dies ist ein Vorteil. Es zwingt zu Genauigkeit. Dennoch - eine Sprache lernen ist keine leichte Aufgabe.  
 Daher sollten sie bevor sie in die Tiefen von JavaScript abtauchen um ein Problem zu lösen entscheiden:  
   
-* Welche Operationen sollen ausgeführt werden?  
-* Wie komplex sind die Operationen?  
-* Wie ist das Zeitfenster und wann muss das Produkt fertig sein?  
-* Wie oft muss diese Tätigkeit ausgeführt werden?  
-* Lässt sich die Automation auch auf andere ähnliche Bereiche anwenden oder mit geringen Aufwand abstrahieren?  
-* Wie sehr ist sie von Umgebungsvariablen abhängig?  
-* Soll die Automation von dritten Benutzt werden?  
-* Ist der Prozess linear oder bedarf es einer Rückkopplung zum Benutzer?  
+* [Welche Operationen sollen ausgeführt werden?](#37)  
+* [Wie komplex sind die Operationen?](#38)  
+* [Wie ist das Zeitfenster und wann muss das Produkt fertig sein?](#39)  
+* [Wie oft muss diese Tätigkeit ausgeführt werden?](#40)  
+* [Lässt sich die Automation auch auf andere ähnliche Bereiche anwenden oder mit geringen Aufwand abstrahieren?](#41)  
+* [Wie sehr ist sie von Umgebungsvariablen abhängig?](#42)  
+* [Soll die Automation von dritten Benutzt werden?](#43)  
+* [Ist der Prozess linear oder bedarf es einer Rückkopplung zum Benutzer?](#44)  
 
 Und einige Punkte die sich hauptsächlich durch Recherche abarbeiten lassen  
 
-* Existieren bereits Automationen in dem Sektor und wenn ja lassen sich diese abwandeln?
-* Bietet die [API](terminologie.html#23) direkten Zugriff auf die benötigten Funktionen oder braucht es eine [Workaround?](terminologie.html#28)   
+* [Existieren bereits Automationen in dem Sektor und wenn ja lassen sich diese abwandeln?](#45)
+* [Bietet die](#46) [API](10terminologie.html#23) [direkten Zugriff auf die benötigten Funktionen oder braucht es eine](#46) [Workaround?](10terminologie.html#28)   
 
 Diese Analyse kann keine genauen Angaben über Zeit und Aufwand machen da dies immer auch vom Erfindungsreichtum des Autors abhängig ist. Der Kreative kommt hier schneller zum Ziel.  
  
@@ -39,7 +39,7 @@ Programme oder Skripte schreiben ist nicht wie "Scribbeln". Wir können beim Tel
 
 - <a name="38"></a>Wie komplex sind die Operationen?  
 
-Wenn eine Fülle von unterschiedlichen Operationen ausgeführt werden soll, müssen auch entsprechend viele Anweisungen an das Programm erfolgen und der Autor muss sich auf eine längere Entwicklungszeit einstellen. Wenn es im Gegensatz darum geht eine Hand voll Operationen 1000 mal auszuführen kann es sein, daSs sich der Kern des Skriptes auf 10 Zeile reduziert. DIES bedeutet auch, dasS die Zeit für Entwicklung und Debuggingrelativ gering sein können und sich der Zeitaufwand lohnen kann. \[^BUG\] 
+Wenn eine Fülle von unterschiedlichen Operationen ausgeführt werden soll, müssen auch entsprechend viele Anweisungen an das Programm erfolgen und der Autor muss sich auf eine längere Entwicklungszeit einstellen. Wenn es im Gegensatz darum geht eine Hand voll Operationen 1000 mal auszuführen kann es sein, daSs sich der Kern des Skriptes auf 10 Zeile reduziert. DIES bedeutet auch, dasS die Zeit für Entwicklung und Debuggingrelativ gering sein können und sich der Zeitaufwand lohnen kann. [^BUG] 
   
 - <a name="39"></a>Wie ist das Zeitfenster und wann muss das Produkt fertig sein?  
 
@@ -56,21 +56,21 @@ Wenn dies der Fall ist steigt der Nutzen der Arbeit. Der einmalige Aufwand ein P
 - <a name="42"></a>Wie sehr ist sie (Die Aufgabe) von Umgebungsvariablen abhängig? 
 
 Kann das Skript unabhängig von allen Variablen die der Benutzer setzen kann ausgeführt werden vereinfacht das den Aufwand. Bei einer Abhängigkeit erfordert es immer erst einer Abfrage des "Ist-Status".  
-Ein kleines Beispiel: In Illustrator oder InDesign wird die aktuelle Auswahl des aktiven Dokuments in einer Liste genannt "selection" geführt. \[^prog\]
+Ein kleines Beispiel: In Illustrator oder InDesign wird die aktuelle Auswahl des aktiven Dokuments in einer Liste genannt "selection" geführt. [^prog]  
 
-{% highlight js %}
-app.activeDocument.selection;
-{% endhighlight %}
+    {% highlight js %}
+    app.activeDocument.selection;
+    {% endhighlight %}
 
 In dieser Liste liegen Einzelne Objekte die Text sein können oder eine Vektor-Form oder ein Bild. All diese haben gemeinsame Eigenschaften aber auch spezielle. Es muss also bevor eine Eigenschaft genutzt oder verändert werden kann eine Abfrage stattfinden welche Art von Objekt enthalten ist. Das nachfolgende Beispiel funktioniert in InDesign und Illustrator gleich. Es wird der Name des ersten Objekts in der Selektion abgefragt, wenn dies eine Textkiste ist gibt das Skript eine Meldung zurück.   
 
-{% highlight js %}
-// InDesign & Illustrator
-var firstListItem = app.activeDocument.selection[0]; // first object in selection 
+    {% highlight js %}
+    // InDesign & Illustrator
+    var firstListItem = app.activeDocument.selection[0]; // first object in selection 
 	if(firstListItem instanceof TextFrame){ /* check the type */
 	alert("I am a " + firstListItem.constructor.name);    // and name it
 	}
-  {% endhighlight %}  
+    {% endhighlight %}  
 
 ![ai and id textframe](images/ai_id_textframe.png)  
 
@@ -82,37 +82,40 @@ Dies ist ein wichtiger Faktor. Wenn nur der Autor selbst die Automation verwende
   
 - <a name="44"></a>Ist der Prozess linear oder bedarf es einer Rückkopplung zum Benutzer?  
 
-Wenn dem so ist sollte der Prozess vielleicht in mehrere Skripte zerlegt werden. Für den Fall das Variablen von einem Skript an das nächste übergeben werden müssen kann dies die Komplexität weiter erhöhen. In diesem Fall gibt es die Möglichkeit eigene Textdateien vom Skript kreieren zu lassen in dem Werte abgelegt werden können, Eine "Script Panel" zu erzeugen oder eine eigene `targetengine` zu erzeugen in der solange das Programm aktiv ist Daten gespeichert werden. Die letzten beiden sind jedoch fortgeschrittene Lösungen die ebenfalls viele Stolpersteine beherbergen können.\[^Scriptpanel\]  
+Wenn dem so ist sollte der Prozess vielleicht in mehrere Skripte zerlegt werden. Für den Fall das Variablen von einem Skript an das nächste übergeben werden müssen kann dies die Komplexität weiter erhöhen. In diesem Fall gibt es die Möglichkeit eigene Textdateien vom Skript kreieren zu lassen in dem Werte abgelegt werden können, Eine "Script Panel" zu erzeugen oder eine eigene `targetengine` zu erzeugen in der solange das Programm aktiv ist Daten gespeichert werden. Die letzten beiden sind jedoch fortgeschrittene Lösungen die ebenfalls viele Stolpersteine beherbergen können.[^Scriptpanel]  
 
 ###<a name="04"></a>2.1 Das Beispiel targetengine   
 Skript 1:  
-{% highlight js %}
-#targetengine "session01"
-var myValue = 0; // new value
-alert(myValue); // result is 0
-myValue++; // increment by 1
-{% endhighlight %}
+
+    {% highlight js %}
+    #targetengine "session01"
+    var myValue = 0; // new value
+    alert(myValue); // result is 0
+    myValue++; // increment by 1
+    {% endhighlight %}
+
 Skript 2:  
-{% highlight js %}
-#targetengine "session01"
-alert(myValue); // result is 1
-{% endhighlight %}
+
+    {% highlight js %}
+    #targetengine "session01"
+    alert(myValue); // result is 1
+    {% endhighlight %}
   
 Der Algorithmus lautet wie folgt  
 
-{% highlight text %}
-Start  
-Sitzung 1
-definiere Variable meinWert und Speicher 0 in ihr
-zeige Wert von meinWert
-erhöhe meinWert im eins
-Stop  
-
-Start  
-Sitzung 1
-zeige Wert von meinWert
-Stop  
-{% endhighlight %}
+    {% highlight text %}
+    Start  
+    Sitzung 1
+    definiere Variable meinWert und Speicher 0 in ihr
+    zeige Wert von meinWert
+    erhöhe meinWert im eins
+    Stop  
+    
+    Start  
+    Sitzung 1
+    zeige Wert von meinWert
+    Stop  
+    {% endhighlight %}
   
 Dies bedeutet dass das Programm (nicht das Skript) sich den Wert für die Variable `myValue` gemerkt hat und ihn solange in `#targetengine "session01"` speichert bis es beendet wird. Hier liegt die Gefahr darin Variablen Namen doppelt zu vergeben. In vielen meiner Skripte speichere ich das aktive Dokument in der variable `doc`. Wenn diese nun in einer targetengine liegen wird das Programm immer auf das zuletzt `doc` gleichgesetzte Objekt zugreifen auch wenn dies vielleicht nicht gewünscht ist sondern vom Benutzer nicht beachtet wurde. Auch die Verwendung von Textdateien kann ihre Tücken haben. Auf unterschiedlichen Betriebsystemen werden Dateipfade unterschiedlich gehandhabt. Auch dies will abgefragt und getestet werden. "Last but not least" gibt es noch die Möglichkeit eigene Grafische Benutzeroberflächen zu erzeugen. Dies ist aber eine Variante für erfahrenere Autoren.   
   
@@ -125,30 +128,33 @@ Wie bereits oben erwähnt sind viele Probleme bereits einmal aufgetreten am Ende
 - <a name="46"></a>Bietet die API direkten Zugriff auf die benötigten Funktionen oder bedarf es eines Workaround?  
 
 ###<a name="05"></a>2.2 Das Beispiel try char   
+
 Um dies zu erläutern möchte ich mich eines Beispiels bedienen.  
-InDesign kann nicht erfragen ob ein Zeichen in einer Schriftart enthalten ist. Es gibt kein Feld das so etwas `wie Font has Character` beinhaltet. Um dieses Abfrage zu simulieren hat Peter Kahreldie Funktion try_char geschrieben die hier in einer etwas abgewandelten Form folgt. \[^Peterk\]  
-![algo try char](images/algorithmus_trychar.png)
+InDesign kann nicht erfragen ob ein Zeichen in einer Schriftart enthalten ist. Es gibt kein Feld das so etwas `wie Font has Character` beinhaltet. Um dieses Abfrage zu simulieren hat Peter Kahreldie Funktion try_char geschrieben die hier in einer etwas abgewandelten Form folgt. [^Peterk]  
+
+![algo try char](images/algorithmus_trychar.png)  
+
 Um die folgende Funktion `try_char()` sinnvoll ausführen zu können benötigen sie ein InDesign Dokument mit einer Textbox auf der ersten Seite, in der Text in einer Schriftart enthalten ist die die Zeichen des Textes nicht enthält.  
 
-{% highlight js %}
+    {% highlight js %}
 	var tf = app.activeDocument.pages.item(0).textFrames.item(0);
- 	for(var i = 0; i < tf.characters.length;i++){
-     var theChar = tf.characters.item(i);
-     try_char (theChar);
-     };
+    for(var i = 0; i < tf.characters.length;i++){
+    var theChar = tf.characters.item(i);
+    try_char (theChar);
+    };
  
- 	// original function by Peter Kahrel 
- 	// http://www.kahrel.plus.com/indesign/compose_cs3.jsx
- 	// edited by fabiantheblind
- 	function try_char (theChar){  
- 	try {  
+    // original function by Peter Kahrel 
+    // http://www.kahrel.plus.com/indesign/compose_cs3.jsx
+    // edited by fabiantheblind
+    function try_char (theChar){  
+    try {  
      	// save the character 
 		var storage = theChar.contents; 
      	// create outline  
      	theChar.createOutlines();  
      	// if we got here it worked, so delete the outline
      	// if not the next line will be within the catch block  
- 		// if not it will cause an error  
+        // if not it will cause an error  
      	theChar.remove();  
      	// insert the character (again)  
      	theChar.contents = storage;  
@@ -159,36 +165,37 @@ Um die folgende Funktion `try_char()` sinnvoll ausführen zu können benötigen 
      	+ theChar.appliedFont.name+"\"");
      	}  
      } 
- {% endhighlight %} 
+    {% endhighlight %} 
 
-![Try char script output](images/try_char_id.png)
+![Try char script output](images/try_char_id.png)  
 
 Diese Funktion macht folgendes. Sie bekommt eine Zeichen als Parameter. Diesen speichert sie temporär in einer Variable. Dann wird das Zeichen genommen und InDesign versucht es in Pfade umzuwandeln. Dies kann nur passieren wenn das Zeichen in der Schrift auch existiert. Sollte dem so sein wird die neu kreierte Vektor-Form wieder verworfen und das Zeichen wird aus dem Zwischenspeicher wieder hergestellt. Wenn jedoch die Umwandlung einen Fehler erzeugt wird dieser aufgefangen. Dies passiert mit dem Konstrukt `try { } catch (e) { }` Sollte der Inhalt der ersten geschwungenen Klammer oder auch Block genannt einen Fehler erzeugen wird dieser abgebrochen und das Skript führt den Zweiten Block aus. Die Variable `e` ist in diesem Fall die Fehlermeldung. Probieren sie es  mit diesem kurzen Skript aus.  
 
-{% highlight js %}
-try{
+    {% highlight js %}
+    try{
     var no_no = nothing; // nothing does not exist
     // so this produces an error
-
-}catch(e){
+    }catch(e){
     // open a window and show the alert.
     // \n is just a breakline
     // \" is to show quotation marks in text
     alert("This is the error message \"e\":\n" + e);
 	}
-{% endhighlight %}
+    {% endhighlight %}
 
-![Try catch script Algo](images/trycatchscript.png)
+![Try catch script Algo](images/trycatchscript.png)  
 
 Das Programm wird sie warnen das die Variable `nothing` nicht existiert.  
 Solche Lösungen setzen nicht nur ein kreativen Umgang mit Code voraus sondern auch ein tiefes Wissen über die Funktionsweise und Möglichkeiten innerhalb von, in diesem Falle, InDesign.  
 Die obig genannten Hindernisse schrecken ab. Es klingt alles sehr komplex. Es ist jedoch alles sehr allgemein gehalten und manche Fragen stelle sich auch erst gar nicht. Bei Aufgaben die ein Normal Nutzer niemals manuell machen würde muss sogar ein Skript geschrieben werden wenn sie erledigt werden sollen.  
 Auch wenn der Prozess des Skript-Schreibens eine Kreative Arbeit ist, ist das Ziel des Skriptes nicht der Kreative Output sondern die Optimierung der eigenen Arbeitsabläufe. Das Skript oder Programm kann niemals die Idee liefern. Es unterstützt den Prozess indem es sich wiederholende  Aufgaben erledigt die entweder niemals gemacht worden wären, oder aber vom eigentlichen Kreativem Prozess ablenken.   
 
-\[^DAS\]: **DAS** steht hier für eine gewünschte Funktionsweise.  
-\[^ALGO1\]: Ein Algorithmus ist ein logische Verkettung von Operationen siehe Abschnitt
-\[^Scriptpanel\]: Ein Script Panel ist eine Erweiterung der Grafischen Oberfläche die es erlaubt während das Skript läuft weiterhin mit dem Programm zu interagieren  
-\[^PeterK\]: Peter Kahrel ist einer der präsentesten InDesign Skripter und Autor von "InDesign mit JavaScript automatisieren" erschienen im O'Reilly Verlag  
-\[^BUG\] Ein Bug ist ein Fehler im Programm. Debugging ist der Prozess der Fehlersuche. Siehe Abschnitt <a href="#26">7.13 Was ist ein Bug?</a> und <a href="#27">7.14 Was ist Debugging?</a>  
-\[^DAU\]: Dümmster Anzunehmender User  
-\[^prog\]:  Das selbstgeschriebene Programm ist in diesem Fall aussen vor. Wie bereits oben erwähnt setzt das Programm alle Möglichkeiten voraus. Das Skript hingegen greift auf bestehende Komponenten zu.   -->
+[^DAS]: **DAS** steht hier für eine gewünschte Funktionsweise.  
+[^ALGO1]: Ein Algorithmus ist ein logische Verkettung von Operationen siehe Abschnitt
+[^Scriptpanel]: Ein Script Panel ist eine Erweiterung der Grafischen Oberfläche die es erlaubt während das Skript läuft weiterhin mit dem Programm zu interagieren  
+[^PeterK]: Peter Kahrel ist einer der präsentesten InDesign Skripter und Autor von "InDesign mit JavaScript automatisieren" erschienen im O'Reilly Verlag  
+[^BUG] Ein Bug ist ein Fehler im Programm. Debugging ist der Prozess der Fehlersuche. Siehe Abschnitt [7.13 Was ist ein Bug?](10terminologie.html#10) und [7.14 Was ist Debugging?](10terminologie.html#27)  
+
+[^DAU]: Dümmster Anzunehmender User  
+
+[^prog]:  Das selbstgeschriebene Programm ist in diesem Fall aussen vor. Wie bereits oben erwähnt setzt das Programm alle Möglichkeiten voraus. Das Skript hingegen greift auf bestehende Komponenten zu.  
