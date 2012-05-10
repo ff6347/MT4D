@@ -72,7 +72,7 @@ In dieser Liste liegen Einzelne Objekte die Text sein können oder eine Vektor-F
 	}
     {% endhighlight %}  
 
-![ai and id textframe](images/ai_id_textframe.png)  
+![ai and id textframe](images/ai_id_textframe.jpg)  
 
 Viele solcher Abfrage können ein Skript schnell komplex werden lassen. Oder anders ausgedrückt je universeller der Nutzen sein soll desto mehr Umgebungsvariablen müssen beachtet werden. Dies benötigt Zeit.  
 
@@ -132,7 +132,7 @@ Wie bereits oben erwähnt sind viele Probleme bereits einmal aufgetreten am Ende
 Um dies zu erläutern möchte ich mich eines Beispiels bedienen.  
 InDesign kann nicht erfragen ob ein Zeichen in einer Schriftart enthalten ist. Es gibt kein Feld das so etwas `wie Font has Character` beinhaltet. Um dieses Abfrage zu simulieren hat Peter Kahreldie Funktion try_char geschrieben die hier in einer etwas abgewandelten Form folgt. [^Peterk]  
 
-![algo try char](images/algorithmus_trychar.png)  
+![algo try char](images/algorithmus_trychar.jpg)  
 
 Um die folgende Funktion `try_char()` sinnvoll ausführen zu können benötigen sie ein InDesign Dokument mit einer Textbox auf der ersten Seite, in der Text in einer Schriftart enthalten ist die die Zeichen des Textes nicht enthält.  
 
@@ -167,7 +167,7 @@ Um die folgende Funktion `try_char()` sinnvoll ausführen zu können benötigen 
      } 
     {% endhighlight %} 
 
-![Try char script output](images/try_char_id.png)  
+![Try char script output](images/try_char_id.jpg)  
 
 Diese Funktion macht folgendes. Sie bekommt eine Zeichen als Parameter. Diesen speichert sie temporär in einer Variable. Dann wird das Zeichen genommen und InDesign versucht es in Pfade umzuwandeln. Dies kann nur passieren wenn das Zeichen in der Schrift auch existiert. Sollte dem so sein wird die neu kreierte Vektor-Form wieder verworfen und das Zeichen wird aus dem Zwischenspeicher wieder hergestellt. Wenn jedoch die Umwandlung einen Fehler erzeugt wird dieser aufgefangen. Dies passiert mit dem Konstrukt `try { } catch (e) { }` Sollte der Inhalt der ersten geschwungenen Klammer oder auch Block genannt einen Fehler erzeugen wird dieser abgebrochen und das Skript führt den Zweiten Block aus. Die Variable `e` ist in diesem Fall die Fehlermeldung. Probieren sie es  mit diesem kurzen Skript aus.  
 
@@ -183,7 +183,7 @@ Diese Funktion macht folgendes. Sie bekommt eine Zeichen als Parameter. Diesen s
 	}
     {% endhighlight %}
 
-![Try catch script Algo](images/trycatchscript.png)  
+![Try catch script Algo](images/trycatchscript.jpg)  
 
 Das Programm wird sie warnen das die Variable `nothing` nicht existiert.  
 Solche Lösungen setzen nicht nur ein kreativen Umgang mit Code voraus sondern auch ein tiefes Wissen über die Funktionsweise und Möglichkeiten innerhalb von, in diesem Falle, InDesign.  

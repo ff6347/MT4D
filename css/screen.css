@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************/
 /*
 /* Common
@@ -87,12 +89,12 @@ img{
   width:100%;
 }
 
-#index{
-		/*white-space: nowrap;*/
+/*#index{
+		white-space: nowrap;
 	list-style-type: circle;
 	list-style-position: inside;
 	opacity: 1;
-}
+}*/
 
 
 #overlay{
@@ -116,9 +118,21 @@ font-size: 1.1em;
   font-weight: bold;
 }
 
-.show_hide{
-	display: inline;
+
+
+.gist, pre {
+	background-color: white !important;
+	font-size: 12px !important;
+	 overflow-x: auto;                 
+	 width: 99%;
 }
+
+/*#gistoverride .gist .gist-file .gist-meta  .gist-data .gist-line-numbers {
+
+}*/
+/*.show_hide{
+	display: inline;
+}*/
 
 /*
 #slidingDiv0,#slidingDiv1, #slidingDiv2, #slidingDiv3, #slidingDiv4, #slidingDiv5, #slidingDiv6, #slidingDiv7, #slidingDiv8, #slidingDiv9, #slidingDiv10, #slidingDiv11, #slidingDiv12, #slidingDiv13, #slidingDiv14{
@@ -168,39 +182,43 @@ table {
   font: 100%;
 }
 
-pre{
-	/*overflow: auto;
-	width: 100%;*/
-	width: 100%;                          /* specify width  */
-	white-space: pre-wrap;                 /* CSS3 browsers  */
-	white-space: -moz-pre-wrap !important; /* 1999+ Mozilla  */
-	white-space: -pre-wrap;                /* Opera 4 thru 6 */
-	white-space: -o-pre-wrap;              /* Opera 7 and up */
-	word-wrap: break-word;                 /* IE 5.5+ and up */
-	/* overflow-x: auto; */                /* Firefox 2 only */
-	/* width: 99%; */		       /* only if needed */
-	}
-#printfriendly{
 
-	float: right;
-}
+
 
 nav {
+	
 	display: inline-block;
-	margin:0 auto 20px;
 	position: fixed;
 	
 	width: 400px;
 	background-color: white;
-	padding-left: 10px;
 	padding-top: 20px;
 	float: left;
-	font-size: 0.8em;
-}
-nav a:hover{
-	color: #58a809;
+
+	padding-left: 20px;
+	list-style-type: none;
+	font-size: 0.9em;
+	line-height: 1.4em;
+	list-style-type: none;
+
 }
 
+nav  ul {
+		list-style-type: none;
+}
+
+nav a{
+	color: #cdcdcd;
+}
+nav a:hover{
+	color: #2d2d2d;
+}
+nav a:visited{
+	color: #c3e0ca;
+	}
+nav a:hover{
+	color: #2d2d2d;
+}
 /*****************************************************************************/
 /*
 /* Home
@@ -237,8 +255,8 @@ ul.posts {
 	-moz-border-radius: 23px;
 border-radius: 23px;
 max-width: 650px;
-	left: 400px;
-	padding-left: 400px;
+	left: 415px;
+	padding-left: 425px;
 }
 
 .title {
