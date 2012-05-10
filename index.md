@@ -3,5 +3,7 @@ layout: start
 title: BA FMZ
 ---
 #Bachelor Arbeit von Fabian Morón Zirfas
-#Mehr Zeit für Gestaltung
-##Was kann Automation in Design-Prozessen leisten?
+<br>
+![animation](images/mt4dteaser.gif)  
+<br><br><br><br><br><br><br>
+##Was kann Automation in Design-Prozessen leisten?  
