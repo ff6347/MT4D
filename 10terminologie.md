@@ -5,7 +5,7 @@ title: Terminologie
 
 
 ##<a name="13"></a>7 Die kleine Terminologie 
-Dieser Abschnitt ist zur Erläuterung gedacht und um den Lesefluss nicht durch sekundär Informationen und Erklärungen von FAchbegriffen zu unterbrechen. 
+Dieser Abschnitt ist zur Erläuterung gedacht und um den Lesefluss nicht durch sekundär Informationen und Erklärungen von Fachbegriffen zu unterbrechen. 
 
 ###<a name="14"></a>Was ist Code? 
 Als Code bezeichnen wir in der Regeln Informationen die verschlüsselt (encoding) werden um dann an einer weiteren Stelle wieder entschlüsselt zu werden (decoding). Zum Beispiel stellt Morse-Code Buchstaben dar indem ein einziges unmoduliertes Signal, zum Beispiel ein Ton, in kurze und lange Sequenzen unterteilt wird. Der Rezipient kann dann, wenn er des Systems mächtig ist, diese Informationen entschlüsseln und zu der originalen Nachricht wieder zusammensetzen. Ein weiters Bespiel ist der Abakus. Dieser erlaubt es wenn der Benutzer des Systems mächtig ist Rechenoperationen auszuführen. Und als drittes die Knotenschrift der Inkas die wie der Name bereits besagt aus einem System von Knoten auf einem Satz Schnüren bestand. Heutzutage findet das Wort "Code" im Computerbereich oft Verwendung als Kurzform des Ausdrucks "Source-Code" also Quelltext eines [Programms](#15).  
