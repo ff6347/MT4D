@@ -8,72 +8,18 @@
 
 /* Global Reset */
 
-/*
-@font-face {
-    font-family: 'DejaVuSerifBook';
-    src: url('../fonts/DejaVuSerif-webfont.eot');
-    src: url('../fonts/DejaVuSerif-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/DejaVuSerif-webfont.woff') format('woff'),
-         url('../fonts/DejaVuSerif-webfont.ttf') format('truetype'),
-         url('../fonts/DejaVuSerif-webfont.svg#DejaVuSerifBook') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'DejaVuSerifItalic';
-    src: url('../fonts/DejaVuSerif-Italic-webfont.eot');
-    src: url('../fonts/DejaVuSerif-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/DejaVuSerif-Italic-webfont.woff') format('woff'),
-         url('../fonts/DejaVuSerif-Italic-webfont.ttf') format('truetype'),
-         url('../fonts/DejaVuSerif-Italic-webfont.svg#DejaVuSerifItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'DejaVuSerifBold';
-    src: url('../fonts/DejaVuSerif-Bold-webfont.eot');
-    src: url('../fonts/DejaVuSerif-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/DejaVuSerif-Bold-webfont.woff') format('woff'),
-         url('../fonts/DejaVuSerif-Bold-webfont.ttf') format('truetype'),
-         url('../fonts/DejaVuSerif-Bold-webfont.svg#DejaVuSerifBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-*/
-
 * {
   margin: 0;
   padding: 0;
 }
 
-html, body {
+html, body { height: 100%;}
 
-  height: 100%;
-  
-}
+body { font: normal 400 1.0em/1em "calluna","Georgia";}
 
-body {
-	  font: normal 400 1.0em/1em "calluna","Georgia";
-
-  /*font: 13.34px 'DejaVuSerifBook', Georgia, serif;*/
-  /**font-size: small;*/
-	/*background: white url(../images/connectedNodes.jpg) no-repeat;*/
-}
-
-strong{
-	  /*font:'DejaVuSerifBold', Georgia, serif;*/
-	    font: normal 700 "calluna","Georgia";
-
-
-}
+strong{font: normal 700 "calluna","Georgia";}
 
 em{
-		  /*font:'DejaVuSerifItalic', Georgia, serif;*/
 	    font: italic 400 "calluna","Georgia";
 
 }
@@ -81,34 +27,21 @@ h1{
 	font: normal 900 1.7em "calluna","Georgia";
 	font-size: 1.7em;
 	  margin-bottom: 1.5em;
-	
 }
 
-img{
+img{ width:100%;}
 
-  width:100%;
-}
-
-/*#index{
-		white-space: nowrap;
-	list-style-type: circle;
-	list-style-position: inside;
-	opacity: 1;
-}*/
-
-
-#overlay{
-	text-decoration: none;
-	font-size: 1em;
-	text-align: right;
-}
 
 
 h2{
+font: normal 700 "calluna","Georgia";
+
 	font-size: 1.4em;
 }
 
 h3{
+font: normal 700 "calluna","Georgia";
+
 font-size: 1.1em;
 
 }
@@ -119,34 +52,41 @@ font-size: 1.1em;
 }
 
 
+.gist{
+background-color: white !important;
+font-size: 13px !important;
+/*overflow-x: auto;                 
+width: 99%;*/
+line-height: 1.5em !important;
+}
 
-.gist, pre {
+.gist-file{
+  border: none !important;
+}
+
+.gist-meta{
 	background-color: white !important;
-	font-size: 12px !important;
-	 overflow-x: auto;                 
-	 width: 99%;
+
+  border: 1px solid #D2d2d2 !important;
+  padding: 12px !important;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+
 }
 
-/*#gistoverride .gist .gist-file .gist-meta  .gist-data .gist-line-numbers {
+.gist-data{
+	background-color: white !important;
 
-}*/
-/*.show_hide{
-	display: inline;
-}*/
-
-/*
-#slidingDiv0,#slidingDiv1, #slidingDiv2, #slidingDiv3, #slidingDiv4, #slidingDiv5, #slidingDiv6, #slidingDiv7, #slidingDiv8, #slidingDiv9, #slidingDiv10, #slidingDiv11, #slidingDiv12, #slidingDiv13, #slidingDiv14{
-	/*height:300px;*!/
-	display:none;
-	border-bottom-style: dotted;
-	border-bottom-color: #b0b0b0;
-	border: 1px dotted #c6c6c6;
-	font-style: italic;
-	padding: 1em;
-	margin-top: 1em;
-	margin-bottom: 1em;
+  padding: 15px !important;
+  border: 1px solid #D2d2d2 !important;
+  border-bottom: none !important;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
 }
-*/
 
 
 blockquote{
@@ -246,9 +186,19 @@ ul.posts {
 /*
 /*****************************************************************************/
 
+
+
+.startsite {
+  font-size: 110%;
+  text-align: justify;
+  width: 40em;
+  margin: 3em auto 2em auto;
+  line-height: 1.5em;
+  
+
+}
 .site {
   font-size: 110%;
-  width: 650px;
   line-height: 1.6em;
 	background-color: white;
 	border: 1em solid white;

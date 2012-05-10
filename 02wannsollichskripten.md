@@ -12,7 +12,7 @@ Auch wenn Aufgaben auf unterschiedliche Weise mit verschiedenen Programmiersprac
 
 #Hierbei Sei Zu Beachten!   
 
-"Scripting" kann keine Design-Entscheidungen fällen. Es existiert kein Algorithmus, der Ästhetik simuliert. [^ALGO1] Um eine spannende Komposition zu schaffen, braucht der Gestalter "nur" drei geometrische Grundformen zu erzeugen und diese im richtigen Verhältnis zu einander anzuordnen. Um dies programmatisch zu lösen, müsste ein Skript mehrere hundert Mal ausgeführt werden. Jedes Mal mit einer kleinen Veränderung der Koordinaten, der oben genannten drei Objekte. Abgesehen davon, dass der Autor irgendwann entscheiden muss, welche Komposition spannend ist. Was das Skript leisten kann, ist anhand von bestimmten Rahmenparametern eine Fülle von Varianten zu liefern, die manuell ausgeführt Sehnenscheidenentzündungen hervorrufen würden. Programmieren ist nicht einfach. Es ist, wie eine neue Sprache zu erlernen. Stellen sie sich vor, sie sind in einem fremden Land, dessen Sprache sie nicht beherrschen. Sie werden zuerst Probleme haben, sich zu verständigen. Dann lernen sie, ihre Grundbedürfnisse zu decken. Ab einem gewissen Punkt können sie Tageszeitungen lesen, Inhalte erfassen und abstrahieren. Eines Tages werden sie feststellen, dass sie in der Sprache träumen. Der Vorteil an Computersprachen im Vergleich zu "Menschensprachen" ist, dass in der Computersprache kein Raum für Interpretation vorhanden ist. Jede Aussage **MUSS**, im Gegensatz zur zwischenmenschlichen Kommunikation, eindeutig sein. In Quellcode ist kein Raum für Interpretation. Die [Syntax](10terminologie.html#17) muss valide sein. Dies ist ein Vorteil, da es Genauigkeit bedingt. Dennoch, eine Sprache lernen, ist keine leichte Aufgabe.  
+"Scripting" kann keine Design-Entscheidungen fällen. Es existiert kein Algorithmus, der Ästhetik simuliert. [^ALGO1] Um eine spannende Komposition zu schaffen, braucht der Gestalter "nur" drei geometrische Grundformen zu erzeugen und diese im richtigen Verhältnis zu einander anzuordnen. Um dies programmatisch zu lösen, müsste ein Skript mehrere hundert Mal ausgeführt werden. Jedes Mal mit einer kleinen Veränderung der Koordinaten, der oben genannten drei Objekte. Abgesehen davon, dass der Autor irgendwann entscheiden muss, welche Komposition spannend ist. Was das Skript leisten kann, ist anhand von bestimmten Rahmenparametern eine Fülle von Varianten zu liefern, die manuell ausgeführt Sehnenscheidenentzündungen hervorrufen würden. Programmieren ist nicht einfach. Es ist, wie eine neue Sprache zu erlernen. Stellen sie sich vor, sie sind in einem fremden Land, dessen Sprache sie nicht beherrschen. Sie werden zuerst Probleme haben, sich zu verständigen. Dann lernen sie, ihre Grundbedürfnisse zu decken. Ab einem gewissen Punkt können sie Tageszeitungen lesen, Inhalte erfassen und abstrahieren. Eines Tages werden sie feststellen, dass sie in der Sprache träumen. Der Vorteil an Computersprachen im Vergleich zu "Menschensprachen" ist, dass in der Computersprache kein Raum für Interpretation vorhanden ist. Jede Aussage **MUSS**, im Gegensatz zur zwischenmenschlichen Kommunikation, eindeutig sein. In [Quellcode](10terminologie.html#14) ist kein Raum für Interpretation. Die [Syntax](10terminologie.html#17) muss valide sein. Dies ist ein Vorteil, da es Genauigkeit bedingt. Dennoch, eine Sprache lernen, ist keine leichte Aufgabe.  
 Daher sollten sie, bevor sie in die Tiefen von JavaScript abtauchen, um ein Problem zu lösen, entscheiden:  
   
 * [Welche Operationen sollen ausgeführt werden?](#37)  
@@ -63,15 +63,19 @@ Ein kleines Beispiel: In Illustrator oder InDesign wird die aktuelle Auswahl des
 
 In dieser Liste liegen einzelne Objekte, die beispielsweise Text, eine Vektor-Form oder ein Bild sein können. All diese haben gemeinsame Eigenschaften, aber auch spezielle. Es muss also, bevor eine Eigenschaft genutzt oder verändert werden kann, eine Abfrage stattfinden, welche Art von Objekt enthalten ist. Das nachfolgende Beispiel funktioniert in InDesign und Illustrator gleich. Es wird der Name des ersten Objekts in der Selektion abgefragt, wenn dies eine Textbox ist, gibt das Skript eine Meldung zurück.   
 
+<script src="https://gist.github.com/2654645.js"> </script><br>
+{% comment %}
     {% highlight js %}
     // InDesign & Illustrator
     var firstListItem = app.activeDocument.selection[0]; // first object in selection 
-	if(firstListItem instanceof TextFrame){ /* check the type */
-	alert("I am a " + firstListItem.constructor.name);    // and name it
-	}
+    if(firstListItem instanceof TextFrame){ /* check the type */
+    alert("I am a " + firstListItem.constructor.name);    // and name it
+    }
     {% endhighlight %}  
+{% endcomment %}
 
-![ai and id textframe](images/ai_id_textframe.jpg)  
+
+[![ai and id textframe](images/ai_id_textframe.jpg)](images/ai_id_textframe.jpg)  
 
 Viele solcher Abfragen können ein Skript schnell komplex werden lassen. Oder anders ausgedrückt, je universeller der Nutzen sein soll, desto mehr Umgebungsvariablen müssen beachtet werden. Dies benötigt Zeit.  
 
@@ -84,26 +88,39 @@ Dies ist ein wichtiger Faktor. Wenn nur der Autor selbst die Automation verwende
 Wenn dem so ist, sollte der Prozess vielleicht in mehrere Skripte zerlegt werden. Für den Fall, dass Variablen von einem Skript an das nächste übergeben werden müssen, kann dies die Komplexität weiter erhöhen. Hierbei gibt es die Möglichkeiten, eigene Textdateien, in denen Werte abgelegt werden können, vom Skript kreieren zu lassen. Weiterhin ist es möglich, ein "Script Panel" zu erzeugen, das solange es aktiv ist Werte beinhaltet.
 Eine weitere Option ist die Verwendung einer `targetengine`, in der, solange das **Programm** aktiv ist, Daten gespeichert werden. Die letzten beiden sind jedoch fortgeschrittene Lösungen, die ebenfalls viele Stolpersteine beherbergen können.[^Scriptpanel]  
 
-###<a name="04"></a>2.1 Das Beispiel targetengine   
+###<a name="04"></a>2.1 Das Beispiel targetengine  
+
 Skript 1:  
 
-    {% highlight js %}
+<script src="https://gist.github.com/2654512.js?file=targetengine_example_script1.jsx"></script><br>
+
+Skript 2:  
+
+<script src="https://gist.github.com/2654512.js?file=targetengine_example_script2.jsx"></script><br>
+
+Der Algorithmus lautet wie folgt:  
+
+<script src="https://gist.github.com/2654512.js?file=targetengine_example_the_algo.txt"></script><br>
+
+{% comment %}  
+Skript 1:  
+
+    //{% highlight js %}
     #targetengine "session01"
     var myValue = 0; // new value
     alert(myValue); // result is 0
     myValue++; // increment by 1
     {% endhighlight %}
-
 Skript 2:  
-
-    {% highlight js %}
+    //{% highlight js %}
     #targetengine "session01"
     alert(myValue); // result is 1
     {% endhighlight %}
-  
+
 Der Algorithmus lautet wie folgt:  
 
-    {% highlight text %}
+
+    //{% highlight text %}
     Start  
     Sitzung 1
     definiere Variable meinWert und Speicher 0 in ihr
@@ -115,8 +132,9 @@ Der Algorithmus lautet wie folgt:
     Sitzung 1
     zeige Wert von meinWert
     Stop  
-    {% endhighlight %}
-  
+    //{% endhighlight %}
+{% endcomment %}
+
 Dies bedeutet, dass das Programm (nicht das Skript) sich den Wert für die Variable `myValue` gemerkt hat und ihn solange in `#targetengine "session01"` speichert, bis es beendet wird. Hier liegt die Gefahr darin, Bezeichnungen für Variablen doppelt zu vergeben. In vielen meiner Skripte speichere ich das aktive Dokument in der variable `doc`. Wenn diese nun in einer `targetengine` liegen, wird das Programm immer auf das zuletzt `doc` gleichgesetzte Objekt zugreifen. Dies geschieht auch wenn der Nutzer es nicht wünscht, sondern es lediglich nicht beachtet hat. Ebenfalls kann die Verwendung von Textdateien ihre Tücken haben. Auf unterschiedlichen Betriebssystemen werden Dateipfade unterschiedlich gehandhabt. Auch dies will abgefragt und getestet werden. "Last but not least" gibt es noch die Möglichkeit, eigene grafische Benutzeroberflächen zu erzeugen.
   
 Die Recherchearbeiten sollten bereits vor dem ersten Entwurf erledigt sein.
@@ -132,46 +150,51 @@ Wie bereits oben erwähnt, sind viele Probleme bereits einmal aufgetreten. Wenn 
 Um dies zu erläutern, möchte ich mich eines Beispiels bedienen.  
 InDesign kann nicht erfragen, ob ein Zeichen in einer Schriftart enthalten ist. Es gibt kein Feld, das `Font has Character` oder ähnliches beinhaltet. Um diese Abfrage zu simulieren, hat Peter Kahrel die Funktion try_char geschrieben, die hier in einer etwas abgewandelten Form folgt. [^Peterk]  
 
-![algo try char](images/algorithmus_trychar.jpg)  
+[![algo try char](images/algorithmus_trychar.jpg)](images/algorithmus_trychar.jpg)  
 
 Um die folgende Funktion `try_char()` sinnvoll ausführen zu können, benötigen sie ein InDesign Dokument mit einer Textbox auf der ersten Seite. In dieser Box muss Text enthalten sein, der Zeichen beinhaltet, die in dieser Schriftart nicht dargestellt werden können.  
 
+<script src="https://gist.github.com/2653708.js"> </script>
+{% comment %}
     {% highlight js %}
-	var tf = app.activeDocument.pages.item(0).textFrames.item(0);
+    var tf = app.activeDocument.pages.item(0).textFrames.item(0);
     for(var i = 0; i < tf.characters.length;i++){
     var theChar = tf.characters.item(i);
     try_char (theChar);
     };
- 
     // original function by Peter Kahrel 
     // http://www.kahrel.plus.com/indesign/compose_cs3.jsx
     // edited by fabiantheblind
     function try_char (theChar){  
     try {  
-     	// save the character 
-		var storage = theChar.contents; 
-     	// create outline  
-     	theChar.createOutlines();  
-     	// if we got here it worked, so delete the outline
-     	// if not the next line will be within the catch block  
+         // save the character 
+        var storage = theChar.contents; 
+         // create outline  
+         theChar.createOutlines();  
+         // if we got here it worked, so delete the outline
+         // if not the next line will be within the catch block  
         // if not it will cause an error  
-     	theChar.remove();  
-     	// insert the character (again)  
-     	theChar.contents = storage;  
-     	} catch(e){  
-     	alert("The character "+ theChar.contents + 
-     	" could not be converted into an Outline.\n"+
-     	"That means he does not exist in the font:\n\""
-     	+ theChar.appliedFont.name+"\"");
-     	}  
+         theChar.remove();  
+         // insert the character (again)  
+         theChar.contents = storage;  
+         } catch(e){  
+         alert("The character "+ theChar.contents + 
+         " could not be converted into an Outline.\n"+
+         "That means he does not exist in the font:\n\""
+         + theChar.appliedFont.name+"\"");
+         }  
      } 
     {% endhighlight %} 
+{% endcomment %}
 
-![Try char script output](images/try_char_id.jpg)  
+
+[![Try char script output](images/try_char_id.jpg)](images/try_char_id.jpg)  
 
 Diese Funktion macht folgendes:  
 Sie bekommt eine Zeichen als Parameter. Dieses speichert sie temporär in einer Variablen. Dann wird das Zeichen genommen und InDesign versucht es, in Pfade umzuwandeln. Dies kann nur passieren, wenn das Zeichen in der Schrift auch existiert. Sollte dem so sein, wird die neu kreierte Vektor-Form wieder verworfen und das Zeichen wird aus dem Zwischenspeicher wieder hergestellt. Wenn jedoch die Umwandlung einen Fehler erzeugt, wird dieser aufgefangen. Dies passiert mit dem Konstrukt `try { } catch (e) { }`. Sollte der Inhalt der ersten geschwungenen Klammer, oder auch Block genannt, einen Fehler erzeugen, wird dieser abgebrochen und das Skript führt den Zweiten Block aus. Die Variable `e` ist in diesem Fall die Fehlermeldung. Probieren sie es mit diesem kurzen Skript aus.  
 
+<script src="https://gist.github.com/2654624.js"> </script><br>
+{% comment %}
     {% highlight js %}
     try{
     var no_no = nothing; // nothing does not exist
@@ -181,13 +204,15 @@ Sie bekommt eine Zeichen als Parameter. Dieses speichert sie temporär in einer 
     // \n is just a breakline
     // \" is to show quotation marks in text
     alert("This is the error message \"e\":\n" + e);
-	}
+    }
     {% endhighlight %}
+{% endcomment %}
 
-![Try catch script Algo](images/trycatchscript.jpg)  
+
+[![Try catch script Algo](images/trycatchscript.jpg)](images/trycatchscript.jpg)  
 
 Das Programm wird sie warnen, dass die Variable `nothing` nicht existiert.  
-Solche Lösungen setzen nicht nur einen kreativen Umgang mit [Code](10terminologie.html#10) voraus, sondern auch ein tiefes Wissen über die Funktionsweise und Möglichkeiten innerhalb von, in diesem Falle, InDesign.  
+Solche Lösungen setzen nicht nur einen kreativen Umgang mit [Code](10terminologie.html#14) voraus, sondern auch ein tiefes Wissen über die Funktionsweise und Möglichkeiten innerhalb von, in diesem Falle, InDesign.  
 Die obe genannten Hindernisse schrecken ab. Es klingt alles sehr komplex. Es ist jedoch alles sehr allgemein gehalten und manche Fragen stellen sich auch erst gar nicht. Bei Aufgaben die ein "Normal-Nutzer" niemals manuell machen würde, muss sogar ein Skript geschrieben werden, wenn sie erledigt werden sollen.  
 Auch wenn der Prozess des Skript-Schreibens eine kreative Arbeit ist, ist das Ziel des Skriptes nicht der kreative Output, sondern die Optimierung der eigenen Arbeitsabläufe. Das Skript oder Programm kann niemals die Idee liefern. Es unterstützt den Prozess indem es sich wiederholende Aufgaben erledigt, die entweder niemals gemacht worden wären oder aber vom eigentlichen, kreativem Prozess ablenken.   
 
