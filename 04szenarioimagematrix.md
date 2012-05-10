@@ -4,6 +4,7 @@ title: Szenario image matrix
 ---
 
 ###<a name="08"></a>3.1 Der Einsatz - das Beispiel image matrix
+
 Die Fragen die sich jetzt stellen sind folgende: "Wie kommt dies zum Einsatz?", "Wie kann ich dies nutzen?".
 Es folgt nun das InDesign Skript image_matrix.jsx mit etwas mehr als 40 Zeilen Code. Dieses Skript beinhaltet eine Benutzer Interaktion, Dateihandhabung, das Math Objekt, Konditionen, eine Schleife, Funktionen, Variablen und es hat einen generativen Charakter. Das Skript erledigt folgende Schritte.[^math]  
 
@@ -15,7 +16,9 @@ Es folgt nun das InDesign Skript image_matrix.jsx mit etwas mehr als 40 Zeilen C
 Kopieren sie den nachstehenden Code und bereiten sie einen Ordner mit einigen Jpg-Bildern vor. Das Skript das unten beschrieben wird verarbeitet NUR .jpg Dateien, Dateien die .jpeg oder .JPG heissen werden ignoriert. Es sollten um die 15 bis 30 sein damit die Ausführung des Skriptes nicht zuviel Zeit in Anspruch nimmt. Es kann jedoch auch 100, 1000 oder mehr Bildern verarbeiten. Die genau Menge ist irrelevant. Lesen sie nochmal den Abschnitt [7.08 Was ist Hello World?](10terminologie.html#21) und führen sie das Skript aus. Wenn der Ordnerauswahl Dialog sich öffnet wähle sie den Ordner mit den Bildern.
 Das gesamte Skript:  
 
-{% highlight js %}
+<script src="https://gist.github.com/2651660.js"> </script>
+{% comment %}
+	{% highlight js %}
 	{ // START SCRIPT
 	main(); // you need a function to be able to cancel a script
 
@@ -75,8 +78,9 @@ Das gesamte Skript:
 
 		};// end function loadFiles
 	} // END OF SCRIPT
-{% endhighlight %}
-<br>
+	{% endhighlight %}
+{% endcomment %}
+
 ####<a name="33"></a>3.1.1 Ergebnisse - image matrix
 Alle 3 nachfolgenden Bilder sind mit ein und dem selbem Skript erzeugt.  
 ![matrix 1](images/image_matrix_1.jpg)  
