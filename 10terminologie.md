@@ -53,7 +53,7 @@ Weiterhin ist beim schreiben von Programmen auch auf die Groß- und Kleinschreib
 	myvalue++; //edit it but written wrong
 	{% endhighlight %}
 
-![error](images/error_myvalue.png)  
+![error](images/error_myvalue.jpg)  
 
 Es gibt Sprachen die versuchen ihre Syntax so weit wie möglich an unseren Sprachen zu orientieren, zum Beispiel Applescript:
 
@@ -107,7 +107,7 @@ Um Quelltext zu schreiben bedarf es nicht viel. Ein einfacher Texteditor reicht 
 ###<a name="21"></a>Was ist Hello World?  
 Das "Hello World" Programm hat sich als Standard Beispiel etabliert um die Syntax einer Sprache zu erklären. Exerzieren wir das einmal kurz durch. Um für Adobe InDesign, After Effects, Illustrator, Photoshop, Photoshop Elements, Photoshop Elements Organizer, Bridge, Audition, Media Encoder und Premiere Pro Skripte zu schreiben liefert Adobe eine eigene [IDE, eine Integrierte Entwicklung Umgebung](#20), mit.  
 
-![extend script toolkit](images/estk.png)  
+![extend script toolkit](images/estk.jpg)  
 
 Das ExtendScript Toolkit. Dies ist nicht der schönste Editor. Er hat jedoch einige Vorteile die die Entwicklung von Skripten sehr einfach macht. Die wichtigste Eigenschaft ist dabei folgende. Es kann ein Skript ohne es zu speichern ausführen. Das Toolkit wird bei der Installation von Adobe Produkten direkt mit geliefert. Suchen sie es in ihren Dienstprogrammen dort sollten sie fündig werden. Wenn nicht gehen sie zu dieser Webseite [http://www.adobe.com/devnet/scripting.html](http://www.adobe.com/devnet/scripting.html), laden und installieren sie es.  
 Wenn es dann installiert ist geben sie folgende Text ein:  
@@ -118,7 +118,7 @@ Wenn es dann installiert ist geben sie folgende Text ein:
 
 und drücken sie auf den "Play/Run" Knopf oben rechts oder drücken sie CMD-r oder CTRL-r, abhängig von ihrer Platform.  
 
-![Hello World](images/hello_world.png)  
+![Hello World](images/hello_world.jpg)  
 
 Herzlichen Glückwunsch. Ihr erstes JavaScript.  
 Um dieses Skript in InDesign oder Photoshop auszuführen muss die Ziel Applikation aus dem PullDown Menü auf der oberen Leiste gewählt werden. Beim öffnen ist es auf ExtendScript Toolkit gestellt. Wählen sie dort InDesign aus. Das Toolkit wird sofort fragen ob InDesign auch gestartet werden soll. Bestätigen sie das und führen sie das Skript noch einmal aus. Sie werden sehen, dass der Computer zu InDesign überwechselt und den gleichen Hinweis gibt.  
@@ -132,7 +132,7 @@ Probieren sie weiter Skripte und Kalkulationen aus. Zum Beispiel
 	{% endhighlight %} 
 
 ###<a name="22"></a>Was ist Syntax-Highlighting? 
-![Syntax Highlithing](images/syntax_highlite.png)  
+![Syntax Highlithing](images/syntax_highlite.jpg)  
 
 Syntax-Highlighting ist eine Hilfestellung für Programmierer um ihren Quelltext übersichtlicher zu gestalten. Hierbei werden bestimmte Teile wie Operatoren, Kommentare, Funktionsdeklarationen oder Reservierte Worte farblich hervorgehoben beziehungsweise zurückgenommen um das Lesen zu erleichtern.  
   
@@ -156,9 +156,9 @@ Als Objektorientierung (ach als OO abgekürzt) versteht man ein bestimmte Art wi
 
 Der Proto-Apfel hat bestimmte Eigenschaften wie Gewicht und Farbe. Hinzu kommen bestimmte Methoden wie Fallen, Wachsen und Verrotten die durch die Eigenschaften beeinflusste werden können. [^proto]  
 
-![OO](images/object_orientation_classes-1.png)  
+![OO](images/object_orientation_classes-1.jpg)  
  Wenn nun ein Baum wächst und Äpfel produziert erzeugt er nach dem Bauplan des Proto-Apfels neue Äpfel und jedem werden bestimmte Werte übergeben.  
-![OO classes](images/object_orientation_classes-2.png)  
+![OO classes](images/object_orientation_classes-2.jpg)  
 Der Baum erzeugt den Apfel und ruft kontinuierlich die Methode Wachsen auf. Hierbei wird der Wert des Gewichtes inkrementiert. Sind die Früchte dann reif wird abhängig vom Gewicht des einzelnen Apfels die Methode Fallen ausgelöst. Wenn der Apfel dann auf dem Boden liegt und die Methode Fallen beendet ist beginnt die Methode Verrotten ihre Arbeit. Die Farbe des Apfels verändert sich und das Gewicht wird wieder verringert.
 Das bedeutet der Proto-Apfel selber wird nicht angerührt sondern Instanzen von diesem. Um dies noch auf die Spitze zu treiben haben wir nicht nur eine Art Apfel sondern verschieden Sorten. Also ist die Klasse Granny Smith und ein "Kind"-Klasse der Basisklasse Apfel. Granny Smith erbt alle Eigenschaften der Klasse Apfel ohne das sie neu implementiert werden müssen und bekommt noch eine weitere Eigenschaft: den Namen.
 
@@ -184,7 +184,7 @@ In InDesign hat der Benutzer die Möglichkeit Absatz- und Zeichenformate anzuleg
 - Pagina  
 
 In dem Format "[Einfacher Absatz]" wird eine Schriftart und eine Schriftgrösse definiert. Dieses Format ist das Proto-Format von dem sich alle weiteren Formate ableiten. Sie erben also alle die Eigenschaften Schrift (appliedFont) und die Schriftgrösse (pointSize). Das Format "Überschrift 1" (Ü1) bekommt dann eine eigene Schriftgrösse und einen fetten Schnitt der Schriftart. Im dem Format "Überschrift 2" (Ü2) wird dann festgelegt das nicht mehr das "[Einfacher Absatz]" Format als Basis Klasse benutzt wird sondern Ü1. Damit erbt Ü2 alle Eigenschaften von Ü1. In Ü2 wird dann nur noch eine neue Schriftgrösse festgelegt. Das gleiche kann dann mit "Überschrift 3" (Ü3) passieren. Ü3 basiert auf Ü2 und bekommt ebenfalls eine eigene Schriftgrösse. Jetzt basiert Ü3 auf Ü2, das auf Ü1 und das auf "[Einfacher Absatz]". Ähnlich verfahren wir mit den weiteren Formaten. "Textkörper" basiert auf "[Einfacher Absatz]", "Bildunterschrift" auf "Textkörper" nur kleiner und "Pagina" auf "Bildunterschrift" aber mit 70% Deckkraft. Wenn der Gestalter nun entscheidet dass eine andere Schriftart von Nöten ist, ändert er sie nur in "[Einfacher Absatz]" und alle Kinder werden entsprechend angepasst. Dies ist ebenfalls Objektorientiert.  
-![InDesign Paragraphstyles](images/id_formate.png)
+![InDesign Paragraphstyles](images/id_formate.jpg)
 
 	{% highlight js %}
 	} // Klammer zu
@@ -285,7 +285,7 @@ Aber ich schweife ab. Keine Sorge mit Problemen wie: "In welchem Speicher lege i
 	}
 	{% endhighlight %}  
 
-![C and CPP Terminal](images/terminal_c_cpp.png)
+![C and CPP Terminal](images/terminal_c_cpp.jpg)
 ####C++ (anObject.cpp)  
 Basierend auf C wurde Ende der Siebziger Anfang der Achtziger Jahre des letzten Jahrtausends die Sprache C++ von Bjarne Stroustrup in den AT&T Labs entwickelt (Quelle: Bjarne\_Stroustrup\_-\_The\_C++\_Programming\_Language\_3rd\_Ed [online](http://www.ib.cnea.gov.ar/~oop/biblio/Bjarne_Stroustrup_-_The_C++_Programming_Language_3rd_Ed.pdf)). Diese Sprache ist nach dem Konzept der Objektorientierung (OO) aufgebaut. In diesem Beispiel ist bereits zu sehen, dass die Menge an Code die geschrieben werden muss geringer wird (im Vergleich zum Assembler Code). Wobei hier wie auch im C Beispiel bedacht werden muss, dass bereits vorhandene Programmteile mit weiteren hunderten oder tausenden Zeilen Code hinzugefügt werden. [^oo]  
 
@@ -365,7 +365,7 @@ Mit JavaScript gehen wir einen Schritt weiter als in C++. Hier sind das Objekt, 
 	};
 	{% endhighlight %}  
   
-![anObject.js](images/estk_anobjectjs.png)  
+![anObject.js](images/estk_anobjectjs.jpg)  
 
 Werfen sie einen Blick auf die Funktion `buildNewObject(n)`.  
 Dies ist eine kleine Abwandlung der `compare` Funktion die wir in der C++ Variante sehen. Die verbesserte Funktion kann die gegebenen Variablen vergleichen und in sich selber mit `this.result` das Ergebnis festlegen. Um eine solche Funktionalität in einer C++ zu erzeugen bedürfte es einiger Zeilen mehr.  
@@ -389,7 +389,7 @@ Ohne diese Erweiterung und ohne das Objekt würde das JavaScript es wieder der C
 	};
 	{% endhighlight %}
 
-![noObject.js](images/estk_noobjectjs.png)  
+![noObject.js](images/estk_noobjectjs.jpg)  
 
 [^oo]: OO hat den Vorteil des Versteckens beziehungsweise Kapseln von Daten. Es kommt die Klasse hinzu. Sie erlaubt ganze Programmteile auszulagern und nur einen Schnittstille für ihre Benutzung zu liefern. Für genauere Erklärungen lesen sie den Abschnitt [7.11 Was ist Objektorientierung?](#24)  
 

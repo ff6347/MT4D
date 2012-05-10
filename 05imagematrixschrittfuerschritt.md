@@ -145,7 +145,7 @@ Dies wirkt kompliziert. Um es zu Verstehen lösen wir den ersten Satz einmal auf
 	Jeweils eine Bildbreite. Also 50 
 	{% endhighlight %} 
 
-![matrix 4 mal 4](matrix_think.png)  
+![matrix 4 mal 4](images/matrix_think.jpg)  
 
 Also ist unsere Seitenbreite 150  
 
@@ -258,7 +258,7 @@ Damit wir jedoch nicht nur Bilder nach Rechts platzieren sondern umbrechen wenn 
 
 Wenn diese Kondition nicht da wäre würde das Skript die Bilder wie in der folgenden Grafik platzieren. Achtung! Wenn zuviel Bilder über die Arbeitsfläche hinaus gehen kann das InDesign zum Absturz bringen und oder das Dokument unwiderruflich zerstören.  
 
-![matrix onhe linebreak](images/matrx_without_breakline.png)  
+![matrix onhe linebreak](images/matrx_without_breakline.jpg)  
 
 Die die es bis hier her geschafft haben sollten den obigen Code jetzt entschlüsseln können.  
 Wenn x grösser gleich 150 - 25, um auf unser Beispiel mit der 16 als Menge der Bilder zurückzukommen, setze x zurück auf 25 und addiere auf y 25 auf. die Zahlenreihe ist dann:  
@@ -290,4 +290,4 @@ Wir fangen bei 0 an zu Zählen im Array also ist `allImages[4]` das fünfte Bild
 und so weiter und so weiter.  
 Wir sind am Ende. Probieren sie den Code mit unterschiedliche vielen Jpg-Dateien aus. Verändern sie ihn bis er nicht mehr funktioniert und lesen sie die Fehlermeldungen. Dies ist ein weiterverbreitetes Problem. Computer und Programme würden viel an ihrer Mystik verlieren wenn einerseits die Nutzer die Meldungen lesen würde anstatt nur auf ok zu drücken und andererseits die Meldungen verständlich geschrieben wären.  
 
-![error](images/error.png)  
+![error](images/error.jpg)  
