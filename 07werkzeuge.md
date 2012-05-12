@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: twitterbootstraped
 title: werkzeuge
 ---
 
@@ -41,6 +41,9 @@ Leider ist dies nur eine Idee. Um es umzusetzen müsste ich Ruby, das idml Schem
 Aber toll wäre es.  
 Der aktuelle Prozess orientiert sich an dieser Idee ist jedoch nicht komplett automatisert. Die Markdown Dateien werden mit einem Skript zu einem InDesign Buch zusammengeführt and die Auszeichnungen werden in Absatzformate übersetzt. Alle referenzierten Bilder werden auf den entsprechenden Seiten platziert. Ab diesem Punkt wird der "Feinschliff" des Layouts manuell durchgeführt. Das Übersetzen der Auszeichnung wird durch Suchen und Ersetzten Routinen bewerkstelligt. Dies ist eine rohe Art der Transformation. Es wäre sinnvoller die Übersetzung nicht mit einem Workaround zu erledigen. Wie bereits oben erwähnt fehlt jedoch dafür die Zeit.  
 
+<script src="https://gist.github.com/2659939.js?file=createBook.jsx"></script><br>
+
+{% comment %}
 [^markdown]: Die Auszeichnungssprache Markdown wurde von [John Gruber](http://daringfireball.net/) entwickelt und erlaubt es in reinem Textdokumenten Auszeichnungen wie Überschrift 1 oder Zitat zu verwenden ohne dass der Lesefluß maßgeblich beeinträchtigt wird.  
 
 [^jekyll]: ?]Mit 4 Befehlen könnte dies schon auf einem Webserver bereitgestellt werden.  
@@ -53,3 +56,4 @@ Der aktuelle Prozess orientiert sich an dieser Idee ist jedoch nicht komplett au
 	{% endhighlight %}
 
 Damit sind die Daten im Netz verfügbar und können eingesehen werden. Hier könnte ein online Korrektursystem mit differenzierten Nutzerrechten eingebunden werden und und und...  
+{% endcomment %}

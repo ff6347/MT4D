@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: twitterbootstraped
 title: Wann Soll Ich Skripten
 ---
 ##Wann Soll Ich Skripten
@@ -57,13 +57,17 @@ Wenn dies der Fall ist, steigt der Nutzen der Arbeit. Der einmalige Aufwand ein 
 Kann das Skript unabhängig von allen Variablen, die der Benutzer setzen kann, ausgeführt werden, vereinfacht das den Aufwand. Bei einer Abhängigkeit erfordert es immer erst einer Abfrage des "Ist-Status".  
 Ein kleines Beispiel: In Illustrator oder InDesign wird die aktuelle Auswahl des aktiven Dokuments in einer Liste, genannt "selection", geführt.  
 
+<script src="https://gist.github.com/2654645.js?file=appSelection.jsx"></script><br>
+{% comment %}
     {% highlight js %}
     app.activeDocument.selection;
     {% endhighlight %}
+{% endcomment %}
+
 
 In dieser Liste liegen einzelne Objekte, die beispielsweise Text, eine Vektor-Form oder ein Bild sein können. All diese haben gemeinsame Eigenschaften, aber auch spezielle. Es muss also, bevor eine Eigenschaft genutzt oder verändert werden kann, eine Abfrage stattfinden, welche Art von Objekt enthalten ist. Das nachfolgende Beispiel funktioniert in InDesign und Illustrator gleich. Es wird der Name des ersten Objekts in der Selektion abgefragt, wenn dies eine Textbox ist, gibt das Skript eine Meldung zurück.   
 
-<script src="https://gist.github.com/2654645.js"> </script><br>
+<script src="https://gist.github.com/2654645.js?file=find_textframes.jsx"></script><br>
 {% comment %}
     {% highlight js %}
     // InDesign & Illustrator

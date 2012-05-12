@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: twitterbootstraped
 title: Bevor Sie Einsteigen
 ---
 ###Bevor Sie Einsteigen

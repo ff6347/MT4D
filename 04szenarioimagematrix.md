@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: twitterbootstraped
 title: Szenario image matrix
 ---
 
