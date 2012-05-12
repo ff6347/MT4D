@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: twitterbootstraped
 title: Image Matrix Schritt fuer Schritt
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: twitterbootstraped
 title: Terminologie
 ---
 
@@ -265,6 +265,8 @@ Im Unterschied zu C++ und JavaScript ist die Sprache C nicht für eine Objektori
 
 Aber ich schweife ab. Keine Sorge mit Problemen wie: "In welchem Speicher lege ich meine Variable ab" und "Habe ich auch den Müll rausgetragen" (Das löschen eines unbenutzten Objekts wird "Garbadge Collection" also "Müll sammeln" genannt), werden wir in JavaScript nicht konfrontiert. All diese Funktionalität wird von der Maschine im Hintergrund erledigt. Somit bleibt Zeit sich mit der Funktionsweise und Konzept zu beschäftigen. Stellen sie es sich vor wie es wäre entweder das Auto vor dem Fahren zusammen zu bauen oder einfach in das fertige Auto einzusteigen und loszufahren." Um die Abstammung von JavaScript verstehen zu können habe ich die Vergleichs-Funktion in C geschrieben.
 
+<script src="https://gist.github.com/2660633.js?file=noObject.c"></script><br>
+{% comment %}
 	{% highlight c %}
 	// include the io lib
 	#include<stdio.h>
@@ -284,86 +286,96 @@ Aber ich schweife ab. Keine Sorge mit Problemen wie: "In welchem Speicher lege i
 		return 0;// everything went fine return 0
 	}
 	{% endhighlight %}  
+{% endcomment %}
+
 
 [![C and CPP Terminal](images/terminal_c_cpp.jpg)](images/terminal_c_cpp.jpg)
 ####C++ (anObject.cpp)  
 Basierend auf C wurde Ende der Siebziger Anfang der Achtziger Jahre des letzten Jahrtausends die Sprache C++ von Bjarne Stroustrup in den AT&T Labs entwickelt (Quelle: Bjarne\_Stroustrup\_-\_The\_C++\_Programming\_Language\_3rd\_Ed [online](http://www.ib.cnea.gov.ar/~oop/biblio/Bjarne_Stroustrup_-_The_C++_Programming_Language_3rd_Ed.pdf)). Diese Sprache ist nach dem Konzept der Objektorientierung (OO) aufgebaut. In diesem Beispiel ist bereits zu sehen, dass die Menge an Code die geschrieben werden muss geringer wird (im Vergleich zum Assembler Code). Wobei hier wie auch im C Beispiel bedacht werden muss, dass bereits vorhandene Programmteile mit weiteren hunderten oder tausenden Zeilen Code hinzugefügt werden. [^oo]  
 
-	{% highlight cpp %}
+{% highlight cpp %}
 	#include <iostream>
 	#include <string> 
-	{% endhighlight %} 
+{% endhighlight %} 
 	  
 Mit den obigen 2 Zeilen werden fertige Klassen eingebunden. "iostream" um die Ein- und Ausgabe des Programms zu handhaben und "string" um Zeichenketten zu verarbeiten. Der Unterschied ist enorm. Während in C eine Zeichenkette noch eine Liste einzelner Zeichen ist wird in C++ ein Zeichenkette als ein einziges Objekt gehandhabt und bringt viele Funktionen mit zur Verarbeitung dieser.  
 
-	{% highlight cpp %}
-	
-	// the string and io classes
-	#include <iostream>
-	#include <string>
-	
-	//using namespace std; // if you use this you can remove all "std::"
-	class Object{ /* our object*/
-	public:
-		std::string name; // its name
-	
-		Object(){}// basis constructor
-		Object(std::string in){name = in;}// another constructor
-		int compare(int a, int b);//Prototype for comparsion
-		void setName(std::string in){name = in;} // to set the name
-	};
-	
-	int Object::compare(int a, int b){/* the compare function*/
-		if(a>b){return a;}else{return b;}
-	}
-	
-	int main(){ /* now the main program*/
-		Object* myObject = new Object("Hello World CPP");// make a new object
-	
-		int a = 23,b = 5;// declare some values
-		// now the output directly with comparsion
-		std::cout << "The Object named: "<< 
-		myObject->name << "\nCompared: "
-		<< a << " with "
-		<< b << "\n" 
-		<< myObject->compare(a,b) <<" is bigger\n" 
-		<< std::endl;
-		/* code */
-		delete myObject; // remove the object from memory
-		return 0; // everything went fine return 0
-	}
-	{% endhighlight %}  
+<script src="https://gist.github.com/2660651.js?file=anObject.cpp"></script><br>
+{% comment %}
+ 	{% highlight cpp %}
+ 	
+ 	// the string and io classes
+ 	#include <iostream>
+ 	#include <string>
+ 	
+ 	//using namespace std; // if you use this you can remove all "std::"
+ 	class Object{ /* our object*/
+ 	public:
+ 		std::string name; // its name
+ 	
+ 		Object(){}// basis constructor
+ 		Object(std::string in){name = in;}// another constructor
+ 		int compare(int a, int b);//Prototype for comparsion
+ 		void setName(std::string in){name = in;} // to set the name
+ 	};
+ 	
+ 	int Object::compare(int a, int b){/* the compare function*/
+ 		if(a>b){return a;}else{return b;}
+ 	}
+ 	
+ 	int main(){ /* now the main program*/
+ 		Object* myObject = new Object("Hello World CPP");// make a new object
+ 	
+ 		int a = 23,b = 5;// declare some values
+ 		// now the output directly with comparsion
+ 		std::cout << "The Object named: "<< 
+ 		myObject->name << "\nCompared: "
+ 		<< a << " with "
+ 		<< b << "\n" 
+ 		<< myObject->compare(a,b) <<" is bigger\n" 
+ 		<< std::endl;
+ 		/* code */
+ 		delete myObject; // remove the object from memory
+ 		return 0; // everything went fine return 0
+ 	}
+ 	{% endhighlight %} 
+ {% endcomment %}
+  
 
 ####JavaScript (anObject.js)  
 Im Jahre 1995 wurde die Sprache LiveScript zusammen mit der 2.0 Version von Netscape (ein WEb-Browser) veröffentlicht und bald in JavaScript umbenannt (Quelle: JavaScript das Umfassende Handbuch). Wie in jedem Buch das sich mit JavaScript auseinandersetzt möchte auch ich hier sagen und es dabei belassen:  
 ######Java is to JavaScript like ham to hamster  
 Mit JavaScript gehen wir einen Schritt weiter als in C++. Hier sind das Objekt, die Ein-/Ausgabe, der String bereits existent und müssen nicht neu implementiert noch eingebunden werden. Genau genommen ist in JavaScript fast alles ein Objekt. Der massgebende Unterschied ist dass die vorherigen Programme wirklich vollwertige Programme sind die nach dem Kompilieren aus der Kommandozeile ausgeführt werden können. Die JavaScript Variante benötigt ein Programm in dem es ausgeführt wird. Es ist also alleine nicht lauffähig. Dennoch - was wir in C++ in 8 Zeilen schreiben hat in JavaScript nur noch 4 Zeilen.
 
-	{% highlight js %}
-	main(); // call the main function
-	
-	function main(){ /* here wee go */
-	
-	    var obj = buildNewObject("Hello JS"); // create a new Object
-	    var a = 23, b = 5; // define the values
-	    obj.compare(a,b); // let the object compare the values
-	    // and make the message
-	    alert("The Script named: "+ obj.name + 
-	          "\nCompared: "+ a +" with "+ b +"\n" 
-	          + obj.result + " is bigger\n");
-	    obj = null; // delete the object
-	    return 0; // everything went fine return 0
-	};
-	
-	function buildNewObject(n){/* this is our object builder*/
-	    var obj = { /* create a json object*/
-	    name:n, /* its name is the incoming value*/
-	    result:0, /* this will be set by the compare object*/
-	    compare : function(a,b){if(a>b){this.result = a;}else if(a<b){this.result 	= b;}}
-	    };
-	    return obj; // return the new object
-	};
-	{% endhighlight %}  
+<script src="https://gist.github.com/2660661.js?file=anObject.js"></script><br>
+{% comment %}
+  	{% highlight js %}
+  	main(); // call the main function
+  	
+  	function main(){ /* here wee go */
+  	
+  	    var obj = buildNewObject("Hello JS"); // create a new Object
+  	    var a = 23, b = 5; // define the values
+  	    obj.compare(a,b); // let the object compare the values
+  	    // and make the message
+  	    alert("The Script named: "+ obj.name + 
+  	          "\nCompared: "+ a +" with "+ b +"\n" 
+  	          + obj.result + " is bigger\n");
+  	    obj = null; // delete the object
+  	    return 0; // everything went fine return 0
+  	};
+  	
+  	function buildNewObject(n){/* this is our object builder*/
+  	    var obj = { /* create a json object*/
+  	    name:n, /* its name is the incoming value*/
+  	    result:0, /* this will be set by the compare object*/
+  	    compare : function(a,b){if(a>b){this.result = a;}else if(a<b){this.result 	= b;}}
+  	    };
+  	    return obj; // return the new object
+  	};
+  	{% endhighlight %}
+  {% endcomment %}
+    
   
 [![anObject.js](images/estk_anobjectjs.jpg)](images/estk_anobjectjs.jpg)  
 
@@ -371,6 +383,8 @@ Werfen sie einen Blick auf die Funktion `buildNewObject(n)`.
 Dies ist eine kleine Abwandlung der `compare` Funktion die wir in der C++ Variante sehen. Die verbesserte Funktion kann die gegebenen Variablen vergleichen und in sich selber mit `this.result` das Ergebnis festlegen. Um eine solche Funktionalität in einer C++ zu erzeugen bedürfte es einiger Zeilen mehr.  
 Ohne diese Erweiterung und ohne das Objekt würde das JavaScript es wieder der C Variante ähneln.
 
+<script src="https://gist.github.com/2660661.js?file=noObject.js"></script><br>
+{% comment %}
 	{% highlight js %}
 	main();  
 	function main(){
@@ -388,6 +402,8 @@ Ohne diese Erweiterung und ohne das Objekt würde das JavaScript es wieder der C
 	   	};
 	};
 	{% endhighlight %}
+{% endcomment %}
+
 
 [![noObject.js](images/estk_noobjectjs.jpg)](images/estk_noobjectjs.jpg)  
 
