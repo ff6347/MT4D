@@ -7,12 +7,36 @@ title: Wann Soll Ich Skripten
 > "Scripting languages assume that there already exists a collection of useful components written in other languages. Scripting languages aren't intended for writing applications from scratch; they are intended primarily for plugging together components."  
 > Scripting: Higher Level Programming for the 21st Century by John K. Ousterhout ([online](http://www.tcl.tk/doc/scripting.html))  
 
-Auch wenn Aufgaben auf unterschiedliche Weise mit verschiedenen Programmiersprachen gelöst werden können, haben sich spezielle Anwendungsgebiete für die einzelnen Sprachen ergeben. Ganz unabhängig davon, dass sich in unserem Fall Adobe Anwendungen mit JavaScript ansprechen lassen, macht es Sinn, eine Skriptsprache zu verwenden, um die bereits in höheren Sprachen implementierten Funktionen zu verbinden. JavaScript ist unser "Kleber". Wir können jedoch unseren Arbeitsablauf durch gezielte Befehlsketten von repetitiven Aufgaben befreien. Ich bin mir sicher, dass ein Grossteil aller Gestalter die vorgefertigte Software für ihre Arbeit verwenden, schon an den Punkt kamen, wo sie sich dachten: "Warum kann mein Programm **DAS** nicht, es ist doch alles da. Der Knopf und danach diesen Knopf!". [^DAS] 
+Auch wenn Aufgaben auf unterschiedliche Weise mit verschiedenen Programmiersprachen gelöst werden können, haben sich spezielle Anwendungsgebiete für die einzelnen Sprachen ergeben. Ganz unabhängig davon, dass sich in unserem Fall Adobe Anwendungen mit JavaScript ansprechen lassen, macht es Sinn, eine Skriptsprache zu verwenden, um die bereits in höheren Sprachen implementierten Funktionen zu verbinden. JavaScript ist unser "Kleber". Wir können jedoch unseren Arbeitsablauf durch gezielte Befehlsketten von repetitiven Aufgaben befreien. Ich bin mir sicher, dass ein Grossteil aller Gestalter die vorgefertigte Software für ihre Arbeit verwenden, schon an den Punkt kamen, wo sie sich dachten: "Warum kann mein Programm **DAS** nicht, es ist doch alles da. Der Knopf und danach diesen Knopf!".
+<a data-toggle="modal" href="#myModal1" >? \[\^\DAS\]</a>
+<div class="modal fade" id="myModal1">
+    <script type="text/javascript">$(this).modal('hide');</script>
+  <div class="modal-header">
+    <button class="close" data-dismiss="modal">×</button>
+    <h3>Anmerkung</h3>
+  </div>
+  <div class="modal-body">
+    <p><!-- here comes the text --><strong>DAS</strong> steht hier für eine gewünschte Funktionsweise.</p>
+  </div>
+</div>
+
 "Scripting" erlaubt es uns, diese beiden Knöpfe miteinander zu verbinden. Das bedeutet dann, dass wir unsere Arbeit um einen "Klick" reduziert haben. Wir haben zwei Knöpfe durch Verkettung auf einen neuen Knopf gelegt. Natürlich klingt die Reduktion um einen "Klick" vernachlässigbar. Wenn jedoch diese zwei "Klicks" 100-mal ausgeführt werden müssen und wir durch logische Anweisung diese ebenfalls auf nur einen Knopf zusammenführen können, ist der Zeitgewinn enorm. Ebenfalls muss hier erwähnt werden, dass viele der Probleme, die in einem Gestaltungsprozess auftreten, nicht zum ersten Mal bei eben dieser Person auftreten. Für den Bereich "Scripting" von Adobe-Anwendungen gibt es im Netz viele Seiten und Foren, die sich mit diesem Thema befassen. Im Bereich JavaScript gibt es noch viele mehr, da JavaScript auch verwendet wird beziehungsweise entwickelt wurde, um Browser zu steuern. Aufgrund dessen ist die Dokumentation mehr als ausgiebig. Es bedarf nur etwas Übung, um die gefundenen Beispiele zu lesen und auf die eigene Problemstellung zu abstrahieren.  
 
 #Hierbei Sei Zu Beachten!   
 
-"Scripting" kann keine Design-Entscheidungen fällen. Es existiert kein Algorithmus, der Ästhetik simuliert. [^ALGO1] Um eine spannende Komposition zu schaffen, braucht der Gestalter "nur" drei geometrische Grundformen zu erzeugen und diese im richtigen Verhältnis zu einander anzuordnen. Um dies programmatisch zu lösen, müsste ein Skript mehrere hundert Mal ausgeführt werden. Jedes Mal mit einer kleinen Veränderung der Koordinaten, der oben genannten drei Objekte. Abgesehen davon, dass der Autor irgendwann entscheiden muss, welche Komposition spannend ist. Was das Skript leisten kann, ist anhand von bestimmten Rahmenparametern eine Fülle von Varianten zu liefern, die manuell ausgeführt Sehnenscheidenentzündungen hervorrufen würden. Programmieren ist nicht einfach. Es ist, wie eine neue Sprache zu erlernen. Stellen sie sich vor, sie sind in einem fremden Land, dessen Sprache sie nicht beherrschen. Sie werden zuerst Probleme haben, sich zu verständigen. Dann lernen sie, ihre Grundbedürfnisse zu decken. Ab einem gewissen Punkt können sie Tageszeitungen lesen, Inhalte erfassen und abstrahieren. Eines Tages werden sie feststellen, dass sie in der Sprache träumen. Der Vorteil an Computersprachen im Vergleich zu "Menschensprachen" ist, dass in der Computersprache kein Raum für Interpretation vorhanden ist. Jede Aussage **MUSS**, im Gegensatz zur zwischenmenschlichen Kommunikation, eindeutig sein. In [Quellcode](10terminologie.html#14) ist kein Raum für Interpretation. Die [Syntax](10terminologie.html#17) muss valide sein. Dies ist ein Vorteil, da es Genauigkeit bedingt. Dennoch, eine Sprache lernen, ist keine leichte Aufgabe.  
+"Scripting" kann keine Design-Entscheidungen fällen. Es existiert kein Algorithmus, der Ästhetik simuliert. 
+ <a data-toggle="modal" href="#myModal2" >? \[\^ALGO1\]</a>
+<div class="modal fade" id="myModal2">
+    <script type="text/javascript">$(this).modal('hide');</script>
+  <div class="modal-header">
+    <button class="close" data-dismiss="modal">×</button>
+    <h3>Anmerkung</h3>
+  </div>
+  <div class="modal-body">
+    <p>Ein Algorithmus ist ein logische Verkettung von Operationen siehe <a href="10terminologie.html#16">Abschnitt 7.03</a>.</p>
+  </div>
+</div>
+ Um eine spannende Komposition zu schaffen, braucht der Gestalter "nur" drei geometrische Grundformen zu erzeugen und diese im richtigen Verhältnis zu einander anzuordnen. Um dies programmatisch zu lösen, müsste ein Skript mehrere hundert Mal ausgeführt werden. Jedes Mal mit einer kleinen Veränderung der Koordinaten, der oben genannten drei Objekte. Abgesehen davon, dass der Autor irgendwann entscheiden muss, welche Komposition spannend ist. Was das Skript leisten kann, ist anhand von bestimmten Rahmenparametern eine Fülle von Varianten zu liefern, die manuell ausgeführt Sehnenscheidenentzündungen hervorrufen würden. Programmieren ist nicht einfach. Es ist, wie eine neue Sprache zu erlernen. Stellen sie sich vor, sie sind in einem fremden Land, dessen Sprache sie nicht beherrschen. Sie werden zuerst Probleme haben, sich zu verständigen. Dann lernen sie, ihre Grundbedürfnisse zu decken. Ab einem gewissen Punkt können sie Tageszeitungen lesen, Inhalte erfassen und abstrahieren. Eines Tages werden sie feststellen, dass sie in der Sprache träumen. Der Vorteil an Computersprachen im Vergleich zu "Menschensprachen" ist, dass in der Computersprache kein Raum für Interpretation vorhanden ist. Jede Aussage **MUSS**, im Gegensatz zur zwischenmenschlichen Kommunikation, eindeutig sein. In [Quellcode](10terminologie.html#14) ist kein Raum für Interpretation. Die [Syntax](10terminologie.html#17) muss valide sein. Dies ist ein Vorteil, da es Genauigkeit bedingt. Dennoch, eine Sprache lernen, ist keine leichte Aufgabe.  
 Daher sollten sie, bevor sie in die Tiefen von JavaScript abtauchen, um ein Problem zu lösen, entscheiden:  
   
 * [Welche Operationen sollen ausgeführt werden?](#37)  
@@ -38,8 +62,18 @@ Programme oder Skripte schreiben, ist nicht wie "Scribbeln". Wir können beim Te
 
 ###<a name="38"></a>Wie komplex sind die Operationen?  
 
-Wenn eine Fülle von unterschiedlichen Operationen ausgeführt werden soll, müssen auch entsprechend viele Anweisungen an das Programm erfolgen und der Autor muss sich auf eine längere Entwicklungszeit einstellen. Wenn es hingegen darum geht, einige Operationen 1000-mal auszuführen, kann es sein, dass sich der Kern des Skriptes auf zehn Zeilen reduziert. Dies bedeutet auch, dass die Zeit für Entwicklung und "Debugging" relativ gering sein und sich der Zeitaufwand lohnen kann. [^BUG] 
-  
+Wenn eine Fülle von unterschiedlichen Operationen ausgeführt werden soll, müssen auch entsprechend viele Anweisungen an das Programm erfolgen und der Autor muss sich auf eine längere Entwicklungszeit einstellen. Wenn es hingegen darum geht, einige Operationen 1000-mal auszuführen, kann es sein, dass sich der Kern des Skriptes auf zehn Zeilen reduziert. Dies bedeutet auch, dass die Zeit für Entwicklung und "Debugging" relativ gering sein und sich der Zeitaufwand lohnen kann. 
+ <a data-toggle="modal" href="#myModal3" >? \[\^BUG\]</a>
+<div class="modal fade" id="myModal3">
+    <script type="text/javascript">$(this).modal('hide');</script>
+  <div class="modal-header">
+    <button class="close" data-dismiss="modal">×</button>
+    <h3>Anmerkung</h3>
+  </div>
+  <div class="modal-body">
+    <p>Ein Bug ist ein Fehler im Programm. Debugging ist der Prozess der Fehlersuche. Siehe Abschnitt <a href="10terminologie.html#10">7.13 Was ist ein Bug?</a> und <a href="10terminologie.html#27">7.14 Was ist Debugging?</a>.</p>
+  </div>
+</div>
 ###<a name="39"></a>Wie groß ist das Zeitfenster und wann muss das Produkt fertig sein?  
 
 Auch hier muss, abhängig von der Komplexität des Skriptes und dem eigenem Vermögen, geurteilt werden, ob dies in dem gegebenen Zeitraum recherchiert, entworfen, geschrieben und "debugged" werden kann. Hinzu kommt, dass das Ergebnis meist nur ein Teilergebnis ist und noch weiterverarbeitet werden muss. Es ist davon auszugehen, dass etwaige tiefere Fehler erst während des vollen Einsatzes auftreten. Wenn dies in dem entsprechenden Zeitraum nicht zu bewerkstelligen ist, sollte von einer Entwicklung abgesehen werden.
@@ -79,19 +113,39 @@ In dieser Liste liegen einzelne Objekte, die beispielsweise Text, eine Vektor-Fo
 {% endcomment %}
 
 
-[![ai and id textframe](images/ai_id_textframe.jpg)](images/ai_id_textframe.jpg)  
+[![ai and id textframe](images/ai_id_textframe_thumb.jpg)](images/ai_id_textframe.jpg)  
 
 Viele solcher Abfragen können ein Skript schnell komplex werden lassen. Oder anders ausgedrückt, je universeller der Nutzen sein soll, desto mehr Umgebungsvariablen müssen beachtet werden. Dies benötigt Zeit.  
 
 ###<a name="43"></a>Soll die Automation von dritten Benutzt werden?  
 
-Dies ist ein wichtiger Faktor. Wenn nur der Autor selbst die Automation verwendet, kann er seine vorhergehenden Aktionen auf die Bedürfnisse und Beschränkungen des Skriptes anpassen. Wenn jedoch eine unbedarfte oder schlimmer noch eine dem "Skripten" nicht mächtige Person dieses Werkzeug nutzen soll, müssen wie bereits oben erwähnt, viele Umgebungsvariablen abgefragt oder selber bestimmt werden. Im Programmier-Slang sagt man: "Man muss vom DAU ausgehen." Dies ist nicht als Beleidigung gedacht. Es soll eher sagen, dass alle Benutzerfehler, die auftreten können, auftreten werden. In diesem Fall bekommt jemand, der nicht programmieren kann, wenn er Glück hat, nur eine Fehlermeldung. Im schlimmsten Falle führt es zu einem Programmabsturz. In beiden Fällen steigt die Hemmung des Nutzers ungemein, das Skript noch einmal zu verwenden. Wenn also Dritte mit ins Spiel kommen, erfordert es noch längere Test- und Debug-Phasen.[^DAU]  
-  
+Dies ist ein wichtiger Faktor. Wenn nur der Autor selbst die Automation verwendet, kann er seine vorhergehenden Aktionen auf die Bedürfnisse und Beschränkungen des Skriptes anpassen. Wenn jedoch eine unbedarfte oder schlimmer noch eine dem "Skripten" nicht mächtige Person dieses Werkzeug nutzen soll, müssen wie bereits oben erwähnt, viele Umgebungsvariablen abgefragt oder selber bestimmt werden. Im Programmier-Slang sagt man: "Man muss vom DAU ausgehen." Dies ist nicht als Beleidigung gedacht. Es soll eher sagen, dass alle Benutzerfehler, die auftreten können, auftreten werden. In diesem Fall bekommt jemand, der nicht programmieren kann, wenn er Glück hat, nur eine Fehlermeldung. Im schlimmsten Falle führt es zu einem Programmabsturz. In beiden Fällen steigt die Hemmung des Nutzers ungemein, das Skript noch einmal zu verwenden. Wenn also Dritte mit ins Spiel kommen, erfordert es noch längere Test- und Debug-Phasen.  
+ <a data-toggle="modal" href="#myModal4" >? \[\^DAU\]</a>
+<div class="modal fade" id="myModal4">
+    <script type="text/javascript">$(this).modal('hide');</script>
+  <div class="modal-header">
+    <button class="close" data-dismiss="modal">×</button>
+    <h3>Anmerkung</h3>
+  </div>
+  <div class="modal-body">
+    <p>Dümmster Anzunehmender User</p>
+  </div>
+</div>
 ###<a name="44"></a>Ist der Prozess linear oder bedarf es einer Rückkopplung zum Benutzer?  
 
 Wenn dem so ist, sollte der Prozess vielleicht in mehrere Skripte zerlegt werden. Für den Fall, dass Variablen von einem Skript an das nächste übergeben werden müssen, kann dies die Komplexität weiter erhöhen. Hierbei gibt es die Möglichkeiten, eigene Textdateien, in denen Werte abgelegt werden können, vom Skript kreieren zu lassen. Weiterhin ist es möglich, ein "Script Panel" zu erzeugen, das solange es aktiv ist Werte beinhaltet.
-Eine weitere Option ist die Verwendung einer `targetengine`, in der, solange das **Programm** aktiv ist, Daten gespeichert werden. Die letzten beiden sind jedoch fortgeschrittene Lösungen, die ebenfalls viele Stolpersteine beherbergen können.[^Scriptpanel]  
-
+Eine weitere Option ist die Verwendung einer `targetengine`, in der, solange das **Programm** aktiv ist, Daten gespeichert werden. Die letzten beiden sind jedoch fortgeschrittene Lösungen, die ebenfalls viele Stolpersteine beherbergen können.
+ <a data-toggle="modal" href="#myModal5" >? \[\^Scriptpanel\]</a>
+<div class="modal fade" id="myModal5">
+    <script type="text/javascript">$(this).modal('hide');</script>
+  <div class="modal-header">
+    <button class="close" data-dismiss="modal">×</button>
+    <h3>Anmerkung</h3>
+  </div>
+  <div class="modal-body">
+    <p> Ein "Script Panel" ist eine Erweiterung der grafischen Oberfläche, die es erlaubt, während das Skript läuft, weiterhin mit dem Programm zu interagieren.</p>
+  </div>
+</div>
 ###<a name="04"></a>2.1 Das Beispiel targetengine  
 
 Skript 1:  
@@ -152,9 +206,20 @@ Wie bereits oben erwähnt, sind viele Probleme bereits einmal aufgetreten. Wenn 
 ###<a name="05"></a>2.2 Das Beispiel try char   
 
 Um dies zu erläutern, möchte ich mich eines Beispiels bedienen.  
-InDesign kann nicht erfragen, ob ein Zeichen in einer Schriftart enthalten ist. Es gibt kein Feld, das `Font has Character` oder ähnliches beinhaltet. Um diese Abfrage zu simulieren, hat Peter Kahrel die Funktion try_char geschrieben, die hier in einer etwas abgewandelten Form folgt. [^Peterk]  
+InDesign kann nicht erfragen, ob ein Zeichen in einer Schriftart enthalten ist. Es gibt kein Feld, das `Font has Character` oder ähnliches beinhaltet. Um diese Abfrage zu simulieren, hat Peter Kahrel die Funktion try_char geschrieben, die hier in einer etwas abgewandelten Form folgt.
+ <a data-toggle="modal" href="#myModal6" >? \[\^Peterk\]</a>
+<div class="modal fade" id="myModal6">
+    <script type="text/javascript">$(this).modal('hide');</script>
+  <div class="modal-header">
+    <button class="close" data-dismiss="modal">×</button>
+    <h3>Anmerkung</h3>
+  </div>
+  <div class="modal-body">
+    <p>Peter Kahrel ist einer der präsentesten InDesign Skripter und Autor von "InDesign mit JavaScript automatisieren" erschienen im O'Reilly Verlag</p>
+  </div>
+</div>  
 
-[![algo try char](images/algorithmus_trychar.jpg)](images/algorithmus_trychar.jpg)  
+[![algo try char](images/algorithmus_trychar_thumb.jpg)](images/algorithmus_trychar.jpg)  
 
 Um die folgende Funktion `try_char()` sinnvoll ausführen zu können, benötigen sie ein InDesign Dokument mit einer Textbox auf der ersten Seite. In dieser Box muss Text enthalten sein, der Zeichen beinhaltet, die in dieser Schriftart nicht dargestellt werden können.  
 
@@ -192,7 +257,7 @@ Um die folgende Funktion `try_char()` sinnvoll ausführen zu können, benötigen
 {% endcomment %}
 
 
-[![Try char script output](images/try_char_id.jpg)](images/try_char_id.jpg)  
+[![Try char script output](images/try_char_id_thumb.jpg)](images/try_char_id.jpg)  
 
 Diese Funktion macht folgendes:  
 Sie bekommt eine Zeichen als Parameter. Dieses speichert sie temporär in einer Variablen. Dann wird das Zeichen genommen und InDesign versucht es, in Pfade umzuwandeln. Dies kann nur passieren, wenn das Zeichen in der Schrift auch existiert. Sollte dem so sein, wird die neu kreierte Vektor-Form wieder verworfen und das Zeichen wird aus dem Zwischenspeicher wieder hergestellt. Wenn jedoch die Umwandlung einen Fehler erzeugt, wird dieser aufgefangen. Dies passiert mit dem Konstrukt `try { } catch (e) { }`. Sollte der Inhalt der ersten geschwungenen Klammer, oder auch Block genannt, einen Fehler erzeugen, wird dieser abgebrochen und das Skript führt den Zweiten Block aus. Die Variable `e` ist in diesem Fall die Fehlermeldung. Probieren sie es mit diesem kurzen Skript aus.  
@@ -213,13 +278,14 @@ Sie bekommt eine Zeichen als Parameter. Dieses speichert sie temporär in einer 
 {% endcomment %}
 
 
-[![Try catch script Algo](images/trycatchscript.jpg)](images/trycatchscript.jpg)  
+[![Try catch script Algo](images/trycatchscript_thumb.jpg)](images/trycatchscript.jpg)  
 
 Das Programm wird sie warnen, dass die Variable `nothing` nicht existiert.  
 Solche Lösungen setzen nicht nur einen kreativen Umgang mit [Code](10terminologie.html#14) voraus, sondern auch ein tiefes Wissen über die Funktionsweise und Möglichkeiten innerhalb von, in diesem Falle, InDesign.  
 Die obe genannten Hindernisse schrecken ab. Es klingt alles sehr komplex. Es ist jedoch alles sehr allgemein gehalten und manche Fragen stellen sich auch erst gar nicht. Bei Aufgaben die ein "Normal-Nutzer" niemals manuell machen würde, muss sogar ein Skript geschrieben werden, wenn sie erledigt werden sollen.  
 Auch wenn der Prozess des Skript-Schreibens eine kreative Arbeit ist, ist das Ziel des Skriptes nicht der kreative Output, sondern die Optimierung der eigenen Arbeitsabläufe. Das Skript oder Programm kann niemals die Idee liefern. Es unterstützt den Prozess indem es sich wiederholende Aufgaben erledigt, die entweder niemals gemacht worden wären oder aber vom eigentlichen, kreativem Prozess ablenken.   
 
+{% comment %}
 [^DAS]: **DAS** steht hier für eine gewünschte Funktionsweise.  
 [^ALGO1]: Ein Algorithmus ist ein logische Verkettung von Operationen siehe Abschnitt
 [^Scriptpanel]: Ein "Script Panel" ist eine Erweiterung der grafischen Oberfläche, die es erlaubt, während das Skript läuft, weiterhin mit dem Programm zu interagieren.  
@@ -227,5 +293,5 @@ Auch wenn der Prozess des Skript-Schreibens eine kreative Arbeit ist, ist das Zi
 [^BUG] Ein Bug ist ein Fehler im Programm. Debugging ist der Prozess der Fehlersuche. Siehe Abschnitt [7.13 Was ist ein Bug?](10terminologie.html#10) und [7.14 Was ist Debugging?](10terminologie.html#27)  
 
 [^DAU]: Dümmster Anzunehmender User  
+{% endcomment %}
 
-[^prog]:  Das selbstgeschriebene Programm ist in diesem Fall aussen vor. Wie bereits oben erwähnt setzt das Programm alle Möglichkeiten voraus. Das Skript hingegen greift auf bestehende Komponenten zu.  

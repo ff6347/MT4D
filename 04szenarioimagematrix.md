@@ -83,8 +83,8 @@ Das gesamte Skript:
 
 ####<a name="33"></a>3.1.1 Ergebnisse - image matrix
 Alle 3 nachfolgenden Bilder sind mit demselbem Skript erzeugt.  
-[![matrix 1](images/image_matrix_1.jpg)](images/image_matrix_1.jpg)  
-[![matrix 2](images/image_matrix_2.jpg)](images/image_matrix_2.jpg)  
-[![matrix 3](images/image_matrix_3.jpg)](images/image_matrix_3.jpg)  
+[![matrix 1](images/image_matrix_1_thumb.jpg)](images/image_matrix_1.jpg)  
+[![matrix 2](images/image_matrix_2_thumb.jpg)](images/image_matrix_2.jpg)  
+[![matrix 3](images/image_matrix_3_thumb.jpg)](images/image_matrix_3.jpg)  
 
 [^math]: Das Math Objekt ist ein bereits bestehender Teil von JavaScript. Es erledigt solche Aufgaben wie Rundung von Werten oder das Berechnen einer Quadratwurzel.  
