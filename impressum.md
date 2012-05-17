@@ -31,12 +31,12 @@ Owner of <a href="http://fabiantheblind.info">fabiantheblind.info</a>
 
 <div class="connect" >
 	  		
-<a href="http://twitter.com/fabiantheblind"><img class="connect" src="/images/twitter.png"  /></a>  <span >&middot;</span>  
-<a href="http://vimeo.com/fabiantheblind"><img class="connect" src="/images/vimeo.png" /></a>    <span >&middot;</span>    
+<a href="http://twitter.com/fabiantheblind"><img class="connect" src="images/twitter.png"  /></a>  <span >&middot;</span>  
+<a href="http://vimeo.com/fabiantheblind"><img class="connect" src="images/vimeo.png" /></a>    <span >&middot;</span>    
 <a href="http://www.flickr.com/photos/fabiantheblind/show/"><img class="connect" src="/images/flickr.png"  /></a>  <span >&middot;</span>  
-<a href="https://github.com/fabiantheblind"><img class="connect" src="/images/github.png" /></a>  <span >&middot;</span>  
-<a href="http://fabiantheblind.tumblr.com/"><img class="connect" src="/images/tumblr.png"  /></a>  <span >&middot;</span>  
-<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#102;&#97;&#98;&#105;&#97;&#110;&#116;&#104;&#101;&#98;&#108;&#105;&#110;&#100;&#46;&#105;&#110;&#102;&#111;"><img class="connect" src="/images/e-mail.png"  /></a> 
+<a href="https://github.com/fabiantheblind"><img class="connect" src="images/github.png" /></a>  <span >&middot;</span>  
+<a href="http://fabiantheblind.tumblr.com/"><img class="connect" src="images/tumblr.png"  /></a>  <span >&middot;</span>  
+<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#102;&#97;&#98;&#105;&#97;&#110;&#116;&#104;&#101;&#98;&#108;&#105;&#110;&#100;&#46;&#105;&#110;&#102;&#111;"><img class="connect" src="images/e-mail.png"  /></a> 
 
 	  		<span ></span>		  		  
 	</div>
