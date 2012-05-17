@@ -18,7 +18,7 @@ Super extra spezial Dank mit Sahne an alle die mich mit Zuspruch zum weitermache
 
 ------
 Diese Website wurde mit <a href= "http://jekyllrb.com/">jekyll</a> und <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> entwickelt.  
-Die Grafiken wurden mit <a href="http://aescripts.com/plexus/">plexus</a> und <a href="https://github.com/fabiantheblind/obj-from-ai">diesem Skript</a> erzeugt.  
+Die Grafiken wurden mit <a href="http://aescripts.com/plexus/">plexus</a> und <a href="https://github.com/fabiantheblind/obj-from-ai">diesem Skript</a> erzeugt und die Icons sind Teil der <a href="http://glyphicons.com/">glyphicons</a>.  
 Alle Text- und Bildinhalte liegen unter <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/de/"> CC BY-NC-SA 3.0 Lizenz</a> auf <a href="https://github.com/fabiantheblind/MT4D_TXT">github.com/fabiantheblind/MT4D_TXT</a>  
 Alle Quellcode Dateien liegen unter <a href="http://www.opensource.org/licenses/mit-license.php">MIT Lizenz</a> auf <a href="https://github.com/fabiantheblind/moreTimeForDesign">github.com/fabiantheblind/moreTimeForDesign</a> oder sind als Gist unter diesem <a href="https://gist.github.com/fabiantheblind">account abgelegt.</a>  
 
