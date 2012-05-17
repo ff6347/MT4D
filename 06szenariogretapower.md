@@ -3,10 +3,9 @@ layout: twitterbootstraped
 title: Szenario Great Power
 ---
 
-###<a name="10"></a>3.3 Das Beispiel great power
+###<a name="10"></a>3.3 Das Beispiel greatPower
 Ein weiters Skript, _greatPower.jsx_, welches aus nur einer Befehlszeile besteht und dennoch mächtig und auch ein wenig gefährlich ist.  
-Wenn bei der Entwicklung eines anderen Skripts immer wieder neue Dokumente erzeugt werden kann es schnell passieren, dass 10, 20, 50 Dokumente geöffnet sind. Die Oberfläche von InDesign bietet nicht die Möglichkeit alle geöffneten Dokumente zu schliessen ohne zu speichern. Das bedeutet das bei 50 Dokumenten 50 mal beim Schliessen entweder gespeichert oder das Dokument verworfen werden muss. Mit greatPower.jsx ist dies möglich. Um dies auszuprobieren erzeugen wir ein paar Dokumente mit dem Skript createDocuments.jsx. Dies is stark verkürzt in seiner Schreibweise und verwendet eine andere Art von Schleife. die `while` Schleife.  
-
+Wenn bei der Entwicklung eines anderen Skripts immer wieder neue Dokumente erzeugt werden, kann es schnell passieren, dass 10, 20 oder sogar 50 Dokumente geöffnet sind. Die Oberfläche von InDesign bietet nicht die Möglichkeit, alle geöffneten Dokumente zu schließen ohne zu speichern. Das bedeutet, dass bei 50 Dokumenten 50 mal beim Schließen entweder gespeichert, oder das Dokument verworfen werden muss. Mit greatPower.jsx ist das möglich. Um dies auszuprobieren, erzeugen wir ein paar Dokumente mit dem Skript createDocuments.jsx. Es hat eine stark verkürzt Schreibweise und verwendet eine andere Art von Schleife: die `while` Schleife.  
 
 [![Algo create Doc](images/algocreatedoc_thumb.jpg)](images/algocreatedoc.jpg)  
 
@@ -36,7 +35,7 @@ Wenn bei der Entwicklung eines anderen Skripts immer wieder neue Dokumente erzeu
 {% endcomment %}
 
 
-Um diese 23 Dokumente wieder zu schliessen benutzen sie "greatPower.jsx"  
+Um diese 23 Dokumente wieder zu schließen, benutzen sie "greatPower.jsx".  
 
 [![Algo Great Power](images/algogreatpower_thumb.jpg)](images/algogreatpower.jpg)  
 

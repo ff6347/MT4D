@@ -25,6 +25,7 @@ Dies ist eine Sammlung an nützlichen Weblinks, die sich über die Jahre bei mir
 - [ID indesignsecrets](http://indesignsecrets.com/category/secrets/pluginsscripts)  
 - [ID kahrel.plus](http://www.kahrel.plus.com/indesignscripts.html)  
 - [ID Scripting Guide Scripts](http://www.adobe.com/devnet/indesign/documentation.html#idscripting)  
+- [ID fachhefte](http://www.fachhefte.ch/)
 
 ####Tutorial Sammlungen
 
@@ -36,6 +37,7 @@ Dies ist eine Sammlung an nützlichen Weblinks, die sich über die Jahre bei mir
 - [ID indisnip](http://indisnip.wordpress.com/tag/javascript/)  
 - [ID JavaScripting InDesign](http://jsid.blogspot.de/)  
 - [ID Scripting Guide Scripts](http://www.adobe.com/devnet/indesign/documentation.html#idscripting)  
+- [JS codecademy](http://www.codecademy.com/#!/exercises/0)
 
 ####Verschiedenes
 

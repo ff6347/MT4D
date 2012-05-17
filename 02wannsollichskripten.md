@@ -7,8 +7,8 @@ title: Wann Soll Ich Skripten
 > "Scripting languages assume that there already exists a collection of useful components written in other languages. Scripting languages aren't intended for writing applications from scratch; they are intended primarily for plugging together components."  
 > Scripting: Higher Level Programming for the 21st Century by John K. Ousterhout ([online](http://www.tcl.tk/doc/scripting.html))  
 
-Auch wenn Aufgaben auf unterschiedliche Weise mit verschiedenen Programmiersprachen gelöst werden können, haben sich spezielle Anwendungsgebiete für die einzelnen Sprachen ergeben. Ganz unabhängig davon, dass sich in unserem Fall Adobe Anwendungen mit JavaScript ansprechen lassen, macht es Sinn, eine Skriptsprache zu verwenden, um die bereits in höheren Sprachen implementierten Funktionen zu verbinden. JavaScript ist unser "Kleber". Wir können jedoch unseren Arbeitsablauf durch gezielte Befehlsketten von repetitiven Aufgaben befreien. Ich bin mir sicher, dass ein Grossteil aller Gestalter die vorgefertigte Software für ihre Arbeit verwenden, schon an den Punkt kamen, wo sie sich dachten: "Warum kann mein Programm **DAS** nicht, es ist doch alles da. Der Knopf und danach diesen Knopf!".
-<a data-toggle="modal" href="#myModal1" >? \[\^\DAS\]</a>
+Auch wenn Aufgaben auf unterschiedliche Weise mit verschiedenen Programmiersprachen gelöst werden können, haben sich spezielle Anwendungsgebiete für die einzelnen Sprachen ergeben. Ganz unabhängig davon, dass sich in unserem Fall Adobe Anwendungen mit JavaScript ansprechen lassen, macht es Sinn, eine Skriptsprache zu verwenden, um die bereits in höheren Sprachen implementierten Funktionen zu verbinden. JavaScript ist unser "Kleber". Wir können jedoch unseren Arbeitsablauf durch gezielte Befehlsketten von repetitiven Aufgaben befreien. Ich bin mir sicher, dass ein Grossteil aller Gestalter die vorgefertigte Software für ihre Arbeit verwenden, schon an den Punkt kamen, wo sie sich dachten: "Warum kann mein Programm **DAS** <a data-toggle="modal" href="#myModal1" ><i class="icon-asterisk"></i></a> nicht, es ist doch alles da. Der Knopf und danach diesen Knopf!".  
+"Scripting" erlaubt es uns, diese beiden Knöpfe miteinander zu verbinden. Das bedeutet dann, dass wir unsere Arbeit um einen "Klick" reduziert haben. Wir haben zwei Knöpfe durch Verkettung auf einen neuen Knopf gelegt. Natürlich klingt die Reduktion um einen "Klick" vernachlässigbar. Wenn jedoch diese zwei "Klicks" 100-mal ausgeführt werden müssen und wir durch logische Anweisung diese ebenfalls auf nur einen Knopf zusammenführen können, ist der Zeitgewinn enorm. Ebenfalls muss hier erwähnt werden, dass viele der Probleme, die in einem Gestaltungsprozess auftreten, nicht zum ersten Mal bei eben dieser Person auftreten. Für den Bereich "Scripting" von Adobe-Anwendungen gibt es im Netz viele Seiten und Foren, die sich mit diesem Thema befassen. Im Bereich JavaScript gibt es noch viele mehr, da JavaScript auch verwendet wird beziehungsweise entwickelt wurde, um Browser zu steuern. Aufgrund dessen ist die Dokumentation mehr als ausgiebig. Es bedarf nur etwas Übung, um die gefundenen Beispiele zu lesen und auf die eigene Problemstellung zu abstrahieren.  
 <div class="modal fade" id="myModal1">
     <script type="text/javascript">$(this).modal('hide');</script>
   <div class="modal-header">
@@ -20,12 +20,8 @@ Auch wenn Aufgaben auf unterschiedliche Weise mit verschiedenen Programmiersprac
   </div>
 </div>
 
-"Scripting" erlaubt es uns, diese beiden Knöpfe miteinander zu verbinden. Das bedeutet dann, dass wir unsere Arbeit um einen "Klick" reduziert haben. Wir haben zwei Knöpfe durch Verkettung auf einen neuen Knopf gelegt. Natürlich klingt die Reduktion um einen "Klick" vernachlässigbar. Wenn jedoch diese zwei "Klicks" 100-mal ausgeführt werden müssen und wir durch logische Anweisung diese ebenfalls auf nur einen Knopf zusammenführen können, ist der Zeitgewinn enorm. Ebenfalls muss hier erwähnt werden, dass viele der Probleme, die in einem Gestaltungsprozess auftreten, nicht zum ersten Mal bei eben dieser Person auftreten. Für den Bereich "Scripting" von Adobe-Anwendungen gibt es im Netz viele Seiten und Foren, die sich mit diesem Thema befassen. Im Bereich JavaScript gibt es noch viele mehr, da JavaScript auch verwendet wird beziehungsweise entwickelt wurde, um Browser zu steuern. Aufgrund dessen ist die Dokumentation mehr als ausgiebig. Es bedarf nur etwas Übung, um die gefundenen Beispiele zu lesen und auf die eigene Problemstellung zu abstrahieren.  
-
 #Hierbei Sei Zu Beachten!   
 
-"Scripting" kann keine Design-Entscheidungen fällen. Es existiert kein Algorithmus, der Ästhetik simuliert. 
- <a data-toggle="modal" href="#myModal2" >? \[\^ALGO1\]</a>
 <div class="modal fade" id="myModal2">
     <script type="text/javascript">$(this).modal('hide');</script>
   <div class="modal-header">
@@ -36,7 +32,7 @@ Auch wenn Aufgaben auf unterschiedliche Weise mit verschiedenen Programmiersprac
     <p>Ein Algorithmus ist ein logische Verkettung von Operationen siehe <a href="10terminologie.html#16">Abschnitt 7.03</a>.</p>
   </div>
 </div>
- Um eine spannende Komposition zu schaffen, braucht der Gestalter "nur" drei geometrische Grundformen zu erzeugen und diese im richtigen Verhältnis zu einander anzuordnen. Um dies programmatisch zu lösen, müsste ein Skript mehrere hundert Mal ausgeführt werden. Jedes Mal mit einer kleinen Veränderung der Koordinaten, der oben genannten drei Objekte. Abgesehen davon, dass der Autor irgendwann entscheiden muss, welche Komposition spannend ist. Was das Skript leisten kann, ist anhand von bestimmten Rahmenparametern eine Fülle von Varianten zu liefern, die manuell ausgeführt Sehnenscheidenentzündungen hervorrufen würden. Programmieren ist nicht einfach. Es ist, wie eine neue Sprache zu erlernen. Stellen sie sich vor, sie sind in einem fremden Land, dessen Sprache sie nicht beherrschen. Sie werden zuerst Probleme haben, sich zu verständigen. Dann lernen sie, ihre Grundbedürfnisse zu decken. Ab einem gewissen Punkt können sie Tageszeitungen lesen, Inhalte erfassen und abstrahieren. Eines Tages werden sie feststellen, dass sie in der Sprache träumen. Der Vorteil an Computersprachen im Vergleich zu "Menschensprachen" ist, dass in der Computersprache kein Raum für Interpretation vorhanden ist. Jede Aussage **MUSS**, im Gegensatz zur zwischenmenschlichen Kommunikation, eindeutig sein. In [Quellcode](10terminologie.html#14) ist kein Raum für Interpretation. Die [Syntax](10terminologie.html#17) muss valide sein. Dies ist ein Vorteil, da es Genauigkeit bedingt. Dennoch, eine Sprache lernen, ist keine leichte Aufgabe.  
+"Scripting" kann keine Design-Entscheidungen fällen. Es existiert kein Algorithmus, der Ästhetik simuliert. <a data-toggle="modal" href="#myModal2" ><i class="icon-asterisk"></i></a> Um eine spannende Komposition zu schaffen, braucht der Gestalter "nur" drei geometrische Grundformen zu erzeugen und diese im richtigen Verhältnis zu einander anzuordnen. Um dies programmatisch zu lösen, müsste ein Skript mehrere hundert Mal ausgeführt werden. Jedes Mal mit einer kleinen Veränderung der Koordinaten, der oben genannten drei Objekte. Abgesehen davon, dass der Autor irgendwann entscheiden muss, welche Komposition spannend ist. Was das Skript leisten kann, ist anhand von bestimmten Rahmenparametern eine Fülle von Varianten zu liefern, die manuell ausgeführt Sehnenscheidenentzündungen hervorrufen würden. Programmieren ist nicht einfach. Es ist, wie eine neue Sprache zu erlernen. Stellen sie sich vor, sie sind in einem fremden Land, dessen Sprache sie nicht beherrschen. Sie werden zuerst Probleme haben, sich zu verständigen. Dann lernen sie, ihre Grundbedürfnisse zu decken. Ab einem gewissen Punkt können sie Tageszeitungen lesen, Inhalte erfassen und abstrahieren. Eines Tages werden sie feststellen, dass sie in der Sprache träumen. Der Vorteil an Computersprachen im Vergleich zu "Menschensprachen" ist, dass in der Computersprache kein Raum für Interpretation vorhanden ist. Jede Aussage **MUSS**, im Gegensatz zur zwischenmenschlichen Kommunikation, eindeutig sein. In [Quellcode](10terminologie.html#14) ist kein Raum für Interpretation. Die [Syntax](10terminologie.html#17) muss valide sein. Dies ist ein Vorteil, da es Genauigkeit bedingt. Dennoch, eine Sprache lernen, ist keine leichte Aufgabe.  
 Daher sollten sie, bevor sie in die Tiefen von JavaScript abtauchen, um ein Problem zu lösen, entscheiden:  
   
 * [Welche Operationen sollen ausgeführt werden?](#37)  
@@ -62,8 +58,8 @@ Programme oder Skripte schreiben, ist nicht wie "Scribbeln". Wir können beim Te
 
 ###<a name="38"></a>Wie komplex sind die Operationen?  
 
-Wenn eine Fülle von unterschiedlichen Operationen ausgeführt werden soll, müssen auch entsprechend viele Anweisungen an das Programm erfolgen und der Autor muss sich auf eine längere Entwicklungszeit einstellen. Wenn es hingegen darum geht, einige Operationen 1000-mal auszuführen, kann es sein, dass sich der Kern des Skriptes auf zehn Zeilen reduziert. Dies bedeutet auch, dass die Zeit für Entwicklung und "Debugging" relativ gering sein und sich der Zeitaufwand lohnen kann. 
- <a data-toggle="modal" href="#myModal3" >? \[\^BUG\]</a>
+Wenn eine Fülle von unterschiedlichen Operationen ausgeführt werden soll, müssen auch entsprechend viele Anweisungen an das Programm erfolgen und der Autor muss sich auf eine längere Entwicklungszeit einstellen. Wenn es hingegen darum geht, einige Operationen 1000-mal auszuführen, kann es sein, dass sich der Kern des Skriptes auf zehn Zeilen reduziert. Dies bedeutet auch, dass die Zeit für Entwicklung und "Debugging" relativ gering sein und sich der Zeitaufwand lohnen kann.<a data-toggle="modal" href="#myModal3" > <i class="icon-asterix"></i> </a>  
+
 <div class="modal fade" id="myModal3">
     <script type="text/javascript">$(this).modal('hide');</script>
   <div class="modal-header">
@@ -119,8 +115,8 @@ Viele solcher Abfragen können ein Skript schnell komplex werden lassen. Oder an
 
 ###<a name="43"></a>Soll die Automation von dritten Benutzt werden?  
 
-Dies ist ein wichtiger Faktor. Wenn nur der Autor selbst die Automation verwendet, kann er seine vorhergehenden Aktionen auf die Bedürfnisse und Beschränkungen des Skriptes anpassen. Wenn jedoch eine unbedarfte oder schlimmer noch eine dem "Skripten" nicht mächtige Person dieses Werkzeug nutzen soll, müssen wie bereits oben erwähnt, viele Umgebungsvariablen abgefragt oder selber bestimmt werden. Im Programmier-Slang sagt man: "Man muss vom DAU ausgehen." Dies ist nicht als Beleidigung gedacht. Es soll eher sagen, dass alle Benutzerfehler, die auftreten können, auftreten werden. In diesem Fall bekommt jemand, der nicht programmieren kann, wenn er Glück hat, nur eine Fehlermeldung. Im schlimmsten Falle führt es zu einem Programmabsturz. In beiden Fällen steigt die Hemmung des Nutzers ungemein, das Skript noch einmal zu verwenden. Wenn also Dritte mit ins Spiel kommen, erfordert es noch längere Test- und Debug-Phasen.  
- <a data-toggle="modal" href="#myModal4" >? \[\^DAU\]</a>
+Dies ist ein wichtiger Faktor. Wenn nur der Autor selbst die Automation verwendet, kann er seine vorhergehenden Aktionen auf die Bedürfnisse und Beschränkungen des Skriptes anpassen. Wenn jedoch eine unbedarfte oder schlimmer noch eine dem "Skripten" nicht mächtige Person dieses Werkzeug nutzen soll, müssen wie bereits oben erwähnt, viele Umgebungsvariablen abgefragt oder selber bestimmt werden. Im Programmier-Slang sagt man: "Man muss vom DAU<a data-toggle="modal" href="#myModal4" ><i class="icon-asterix"></i></a> ausgehen." Dies ist nicht als Beleidigung gedacht. Es soll eher sagen, dass alle Benutzerfehler, die auftreten können, auftreten werden. In diesem Fall bekommt jemand, der nicht programmieren kann, wenn er Glück hat, nur eine Fehlermeldung. Im schlimmsten Falle führt es zu einem Programmabsturz. In beiden Fällen steigt die Hemmung des Nutzers ungemein, das Skript noch einmal zu verwenden. Wenn also Dritte mit ins Spiel kommen, erfordert es noch längere Test- und Debug-Phasen.  
+
 <div class="modal fade" id="myModal4">
     <script type="text/javascript">$(this).modal('hide');</script>
   <div class="modal-header">
@@ -131,11 +127,12 @@ Dies ist ein wichtiger Faktor. Wenn nur der Autor selbst die Automation verwende
     <p>Dümmster Anzunehmender User</p>
   </div>
 </div>
+
 ###<a name="44"></a>Ist der Prozess linear oder bedarf es einer Rückkopplung zum Benutzer?  
 
 Wenn dem so ist, sollte der Prozess vielleicht in mehrere Skripte zerlegt werden. Für den Fall, dass Variablen von einem Skript an das nächste übergeben werden müssen, kann dies die Komplexität weiter erhöhen. Hierbei gibt es die Möglichkeiten, eigene Textdateien, in denen Werte abgelegt werden können, vom Skript kreieren zu lassen. Weiterhin ist es möglich, ein "Script Panel" zu erzeugen, das solange es aktiv ist Werte beinhaltet.
-Eine weitere Option ist die Verwendung einer `targetengine`, in der, solange das **Programm** aktiv ist, Daten gespeichert werden. Die letzten beiden sind jedoch fortgeschrittene Lösungen, die ebenfalls viele Stolpersteine beherbergen können.
- <a data-toggle="modal" href="#myModal5" >? \[\^Scriptpanel\]</a>
+Eine weitere Option ist die Verwendung einer `targetengine`, in der, solange das **Programm** aktiv ist, Daten gespeichert werden. Die letzten beiden sind jedoch fortgeschrittene Lösungen, die ebenfalls viele Stolpersteine beherbergen können. <a data-toggle="modal" href="#myModal5" ><i class="icon-asterix"></i></a>  
+
 <div class="modal fade" id="myModal5">
     <script type="text/javascript">$(this).modal('hide');</script>
   <div class="modal-header">
@@ -206,8 +203,8 @@ Wie bereits oben erwähnt, sind viele Probleme bereits einmal aufgetreten. Wenn 
 ###<a name="05"></a>2.2 Das Beispiel try char   
 
 Um dies zu erläutern, möchte ich mich eines Beispiels bedienen.  
-InDesign kann nicht erfragen, ob ein Zeichen in einer Schriftart enthalten ist. Es gibt kein Feld, das `Font has Character` oder ähnliches beinhaltet. Um diese Abfrage zu simulieren, hat Peter Kahrel die Funktion try_char geschrieben, die hier in einer etwas abgewandelten Form folgt.
- <a data-toggle="modal" href="#myModal6" >? \[\^Peterk\]</a>
+InDesign kann nicht erfragen, ob ein Zeichen in einer Schriftart enthalten ist. Es gibt kein Feld, das `Font has Character` oder ähnliches beinhaltet. Um diese Abfrage zu simulieren, hat Peter Kahrel die Funktion try_char geschrieben, die hier in einer etwas abgewandelten Form folgt. <a data-toggle="modal" href="#myModal6" ><i class="icon-asterix"></i></a>
+
 <div class="modal fade" id="myModal6">
     <script type="text/javascript">$(this).modal('hide');</script>
   <div class="modal-header">

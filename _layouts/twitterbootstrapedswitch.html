@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MT4D" />
+    <meta name="author" content="fabiantheblind" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> {{ page.title }}</title>
+
+    <!-- Le styles -->
+    <link href="css/twboot/bootstrap.css" rel="stylesheet" />
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- include typekit -->
+    <script type="text/javascript" src="https://use.typekit.com/jdb0zac.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="css/syntax.css" type="text/css" />   
+<!-- Homepage CSS -->
+    <link rel="stylesheet" href="css/screenbs.css" type="text/css" media="screen, projection" />
+    <!-- Include Print CSS -->
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />  
+    <link href="css/twboot/bootstrap-responsive.css" rel="stylesheet" />
+</head>
+<body>
+
+ <!-- /container bootstrap -->
+<div class="container">
+  <div id="topnav">        
+    <div class="row">
+      <div class="span1"> 
+        <h1>
+          <a href="/"><span id="top" name="top">Home</span></a>
+        </h1>
+      </div>
+<!--      <div class="span1"> <h1> <a href="blog.html">blog </a></h1> </div>
+          <div class="span1"> <h1><a href="00einleitung.html">mt4d</a> </h1></div> 
+          <div class="span1"><span ></span></div>-->
+      </div>
+    </div>
+  <div class="row-fluid">
+    <div class="site">
+      <div class="span3">
+      {% include navfootbs.html %}
+      </div>
+      <div class="span8">
+      {{ content }}
+      </div>
+    </div> 
+  </div>
+  <div class="row">
+    <div id="bottomnav">
+      <div class="span1 offset10"> 
+        <h2>
+          <a href="#top">2 top?</a>
+        </h2>
+      </div>
+            <div class="span1 offset11"> 
+        <h2>
+          <a href="/impressum.html">impressum</a>
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span3">
+  {% include navbs.html %}
+    </div>
+  </div>
+</div>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+  </body>
+</html>

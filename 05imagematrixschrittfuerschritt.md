@@ -62,7 +62,7 @@ Bisher waren alle Befehle JavaScript Befehle. Der Befehl `Folder.selectDialog ("
 	if( Statement ){ Do Something }
 	{% endhighlight %}
 
-Sie besagt, dass, wenn die Aussage in der runden Klammer wahr ist, die geschwungene Klammer ausgeführt wird. In unserem Fall wird durch das `!` die Aussage negiert. Ausgeschrieben könnte dort stehen `if(theFolder == false)` oder `if(theFolder != true)`. Die Schreibweise `if(!theFolder)` ist lediglich nur verkürzt. Wenn wir `if(theFolder)` schreiben, würde das `if(theFolder==true)` entsprechen. Zu beachten ist nicht `=` zu schreiben. Dies bedeutet "ist gleich", `==` bedeutet "entspricht". Gesprochen wäre die vorrangegangene Aussage: "Wenn der Ordner nicht existiert - beende die Funktion".  
+Sie besagt, dass, wenn die Aussage in der runden Klammer wahr ist, die geschwungene Klammer ausgeführt wird. In unserem Fall wird durch das `!` die Aussage negiert. Ausgeschrieben könnte dort stehen `if(theFolder == false)` oder `if(theFolder != true)`. Die Schreibweise `if(!theFolder)` ist lediglich nur verkürzt. Wenn wir `if(theFolder)` schreiben, würde das `if(theFolder==true)` entsprechen. Zu beachten ist nicht `=` zu schreiben. Dies bedeutet "wird zu", `==` bedeutet "entspricht". `=` ist eine Zuweisung von Werten, `==` ist ein Vergleich. Der Vollständigkeit halber soll noch erwähnt werden, dass es noch eine weitere Form gibt. Der typsichere Vergleich mit `===`, den wir jedoch nicht weiter betrachten wollen. Gesprochen wäre die obere Aussage: "Wenn der Ordner nicht existiert - beende die Funktion".  
 Als nächstes betrachten wir was das Laden der Dateien aus unserem Ordner.  
 
 	{% highlight js %}
@@ -189,15 +189,14 @@ Als nächstes folgen das Erzeugen des Dokuments, das Einstellen der Seite auf un
 	var y = w;
 	var x = w;
 	{% endhighlight %}
----------------------------------------------------------------------
-Diese Zeilen sind fast selbst erklärend. Wir fügen der Sammlung an Dokumenten ein neues hinzu. Dabei ist irrelevant, ob bereits ein Dokument existiert. Dann stellen wir die Weite und Höhe der Seite ein. Danach nehmen wir aus der Sammlung an Seiten in dem neuem Dokument die Erste. Der Aufruf `item(0)` ist ebenfalls ein ExtendScript Befehl der nur in InDesign funktioniert. wir könnten auch `var page = doc.pages[0]` schreiben. Hier funktioniert beides gleich. Das ist jedoch nicht immer der Fall. Es gibt zum Beispiel die Möglichkeit `doc.pages.middleItem()` oder `doc.pages.lastItem()` abzufragen. Bei einem normalen Array wie unserem `allImages` würde `lastItem()` nicht funktionieren. Danach erzeugen wir die Startpunkt unseres ersten Bildes. x und y sind jeweils eine Bildbreite vom Rand der Seite entfernt.
-Es gibt noch die Möglichkeit die ersten drei Zeilen abzukürzen. Dies ist eine komprimiert Schreibweise die uns noch öfter begegnen wird.  
+
+An dieser Stelle wird der Sammlung an Dokumenten ein neues hinzugefügt. Dabei ist irrelevant, ob bereits ein Dokument existiert. Dann stellen wir die Weite und Höhe der Seite ein. Danach nehmen wir aus der Sammlung an Seiten in dem neuem Dokument die Erste. Der Aufruf `item(0)` ist ebenfalls ein ExtendScript Befehl, der nur in InDesign funktioniert. Wir könnten auch `var page = doc.pages[0]` schreiben. Hier funktioniert beides gleich. Das ist jedoch nicht immer der Fall. Es gibt die Möglichkeit, `doc.pages.middleItem()` oder `doc.pages.lastItem()` abzufragen. Bei einem normalen Array wie unserem `allImages` würde `lastItem()` nicht funktionieren. Danach erzeugen wir den linken, obere Koordinate unseres ersten Bildes. x und y sind jeweils eine Bildbreite vom Rand der Seite entfernt. Es gibt noch die Möglichkeit, die ersten drei Zeilen abzukürzen. Dies ist eine komprimiert Schreibweise, die uns noch öfter begegnen wird.  
 
 	{% highlight js %}
 	var doc = app.documents.add({documentPreferences:{pageWidth:pw,pageHeight:ph}});
 	{% endhighlight %}
 
-Aber zu dieser Schachtelung kommen wir noch. Wir sind bereits halb durch. Es folgt nochmals ein weiteres Konstrukt. die Schleife.  
+Aber zu dieser Schachtelung kommen wir noch. Wir sind bereits halb durch. Es folgt nochmals ein weiteres Konstrukt: die Schleife.  
 
 	{% highlight js %}
 	for(var i = 0; i < allImages.length;i++){
@@ -209,14 +208,15 @@ Aber zu dieser Schachtelung kommen wir noch. Wir sind bereits halb durch. Es fol
 	}
 	{% endhighlight %}
 
-Mit dieser Schleife würden wir nur Bilder nach rechts weiter setzen. Den "Zeilenumbruch" fügen wir später ein. Erst einmal die Aussage der Schleife ähnelt der Kondition `for(statment){doSomething}` nur mit `for` anstatt `if`. Es könnte als an _solange_ übersetzt werden. Solange du durch die Liste der Bilder zählen kannst. Die Aussage `for(var i = 0; i < allImages.length; i++ )` ist  eine verkürzte Schreibweise für `for(var i = 0; i < allImages.length; i = i + 1 )`. Es wäre  auch möglich `for(var i = 5; i < 100; i= i +5)` zu schreiben. Das Bedeutet. Zähler i ist 5. Solange i kleiner als 100 ist, erhöhe i um 5. Im ersten durchlauf ist i 5 im zweiten 10 im dritten 15. Wir würden dann nur das 5te ,10te und 15te Bild erhalten anstatt alle.  
+Mit dieser Schleife würden wir nur Bilder weiter nach rechts setzen. Den "Zeilenumbruch" fügen wir später ein. Die Aussage der Schleife ähnelt der Kondition `for(statment){doSomething}` nur mit `for` anstatt `if`. Es könnte als an _solange_ übersetzt werden. Solange der Zähler kleiner als die Menge an Bildern in der Liste ist, führe etwas aus.  
+Die Aussage `for(var i = 0; i < allImages.length; i++ )` ist  eine verkürzte Schreibweise für `for(var i = 0; i < allImages.length; i = i + 1 )`. Es wäre  auch möglich, `for(var i = 5; i < 100; i= i +5)` zu schreiben. Das bedeutet:   Zähler i ist 5. Solange i kleiner als 100 ist, erhöhe i um 5. Im ersten Durchlauf ist i 5, im zweiten 10, im dritten 15. Wir würden dann lediglich das 5te ,10te und 15te Bild erhalten.  
 Es folgt:  
 
 	{% highlight js %}
 	var rect = page.rectangles.add({geometricBounds:[y, x, y + w,x + w]});
 	{% endhighlight %}
 
-Wir erzeugen auf der ersten Seite eine Rechteck, ähnlich wie unser Dokument und stellen die Aussenkanten ein. Die `geometricBounds`. Wir könnten auch folgendes schreiben.  
+Wir erzeugen auf der ersten Seite ein Rechteck, ähnlich wie bei unserem Dokument, und stellen die Außenkanten ein. Die `geometricBounds`. Wir könnten auch folgendes schreiben.  
   
 	{% highlight js %}
 	var rect = page.rectangles.add();
@@ -227,8 +227,8 @@ Wir erzeugen auf der ersten Seite eine Rechteck, ähnlich wie unser Dokument und
 	rect.geometricBounds = [y1, x1, y2, x2];
 	{% endhighlight %}
   
-Die Eigenschaft `geometricBounds` erwartet immer ein Array mit 4 Stellen. Diese geben die Linke obere Ecke und die Rechte untere Ecke an. Immer von der Oberen beziehungsweise linken Kante der Seite gemessen. Hierbei steht die y Koordinate vor der x Koordinate. Zu beachten ist auch, dass innerhalb von `add()` ein Doppelpunkt anstatt eines Gleichheitszeichens bei der Zuweisung des Wertes verwendet werden muss.  
-Es folgen drei einfache Befehle.  
+Die Eigenschaft `geometricBounds` erwartet immer ein Array mit 4 Stellen. Diese geben die linke, obere Ecke und die rechte, untere Ecke an. Immer von der oberen beziehungsweise linken Kante der Seite gemessen. Hierbei steht die y Koordinate vor der x Koordinate. Zu beachten ist auch, dass innerhalb von `add()` ein Doppelpunkt anstatt eines Gleichheitszeichens bei der Zuweisung des Wertes verwendet werden muss.  
+Es folgen drei, einfache Befehle.  
   
 	{% highlight js %}
 	rect.place(allImages[i] );
@@ -237,7 +237,7 @@ Es folgen drei einfache Befehle.
 	x +=w;
 	{% endhighlight %}
   
-Das Bild mit dem Index i wird in dem Rechteck platziert, der Inhalt wird an die Grösse des Rechteckes angepasst, zentriert und wir erhöhen den x Wert um eine Bildbreite. Hier könnte auch `x = x + w` stehen. Es gibt weiter verkürzte Schreibweisen wie:
+Das Bild mit dem Index `i` wird in dem Rechteck platziert. Der Inhalt wird an die größe des Rechteckes angepasst, zentriert und wir erhöhen den x Wert um eine Bildbreite. Hier könnte auch `x = x + w` stehen. Es gibt weiter verkürzte Schreibweisen wie:
 
 	{% highlight js %}
 	x-=5; //  equivalent to x = x - 5;
@@ -245,8 +245,8 @@ Das Bild mit dem Index i wird in dem Rechteck platziert, der Inhalt wird an die 
 	x/=5; //  equivalent to x = x / 5;
 	{% endhighlight %}
 
-Da wir in unserer Schleife sind passiert dies für die komplette Menge der Bilder unabhängig davon ob wir 5, 100 oder 10000 haben. Dies ist eine der großen Stärken von Skripten und Programmen. Die Iteration.  
-Damit wir jedoch nicht nur Bilder nach Rechts platzieren sondern umbrechen wenn x (oder x1) größer oder gleich der Breite der Seite minus der Bildbreite (der Rand) ist müssen wir eine weitere Kondition hinzufügen.  
+Da wir in unserer Schleife sind, geschieht dies für die komplette Menge der Bilder, unabhängig davon, ob 5, 100 oder 10000 vorhanden sind. Dies ist eine der großen Stärken von Skripten und Programmen. Die Iteration.  
+Damit die Bilder nicht nur nach rechts platziert werden, sondern auch umbrechen, wenn x (oder x1) größer oder gleich der Breite der Seite minus der Bildbreite (der Rand) ist, müssen wir eine weitere Kondition hinzufügen.  
 
 	{% highlight js %}
 	if(x >= pw - (w)){
@@ -255,12 +255,12 @@ Damit wir jedoch nicht nur Bilder nach Rechts platzieren sondern umbrechen wenn 
 	}
 	{% endhighlight %}
 
-Wenn diese Kondition nicht da wäre würde das Skript die Bilder wie in der folgenden Grafik platzieren. Achtung! Wenn zuviel Bilder über die Arbeitsfläche hinaus gehen kann das InDesign zum Absturz bringen und oder das Dokument unwiderruflich zerstören.  
+Wenn diese Kondition nicht da wäre, würde das Skript die Bilder wie in der folgenden Grafik platzieren. Achtung! Wenn zuviele Bilder über die Arbeitsfläche hinaus gehen, kann das InDesign zum Absturz bringen und/oder das Dokument unwiderruflich zerstören.  
 
 [![matrix onhe linebreak](images/matrx_without_breakline_thumb.jpg)](images/matrx_without_breakline.jpg)  
 
-Die die es bis hier her geschafft haben sollten den obigen Code jetzt entschlüsseln können.  
-Wenn x grösser gleich 150 - 25, um auf unser Beispiel mit der 16 als Menge der Bilder zurückzukommen, setze x zurück auf 25 und addiere auf y 25 auf. die Zahlenreihe ist dann:  
+Die, die es bis hierher geschafft haben, sollten den obigen Code jetzt entschlüsseln können.  
+Wenn x grösser gleich 150 - 25 ist, um auf unser Beispiel mit der 16 als Menge der Bilder zurückzukommen, setze x zurück auf 25 und addiere auf y 25. Die Zahlenreihe ist dann:  
 
 	{% highlight text %}	
 	i = 0
@@ -279,14 +279,9 @@ dann
 Das passiert solange bis x 125 ist.  
 Dort setzt die Kondition `if(x >= pw - (w))` an.  
 x wird in der Kondition zurück auf 25 gesetzt und y wird auf 50 gesetzt.
-Dann ist  
-
-	{% highlight text %}
-	i = 4.
-	{% endhighlight %}
-
-Wir fangen bei 0 an zu Zählen im Array also ist `allImages[4]` das fünfte Bild.
-und so weiter und so weiter.  
-Wir sind am Ende. Probieren sie den Code mit unterschiedliche vielen Jpg-Dateien aus. Verändern sie ihn bis er nicht mehr funktioniert und lesen sie die Fehlermeldungen. Dies ist ein weiterverbreitetes Problem. Computer und Programme würden viel an ihrer Mystik verlieren wenn einerseits die Nutzer die Meldungen lesen würde anstatt nur auf ok zu drücken und andererseits die Meldungen verständlich geschrieben wären.  
+Dann ist i = 4.
+Wir fangen bei 0 an zu zählen im Array also ist `allImages[4]` das fünfte Bild.
+Und so weiter und so weiter.  
+Wir sind am Ende. Probieren sie den Code mit unterschiedliche vielen .jpg Dateien aus. Verändern sie ihn, bis er nicht mehr funktioniert und lesen sie die Fehlermeldungen. Dies ist ein weiterverbreitetes Problem. Computer und Programme würden viel an ihrer Mystik verlieren, wenn einerseits die Nutzer die Meldungen lesen würden, anstatt nur auf ok zu drücken und andererseits die Meldungen verständlich geschrieben wären.  
 
 [![error](images/error_thumb.jpg)](images/error.jpg)  
