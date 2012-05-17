@@ -2,4 +2,4 @@ markdown: rdiscount
 pygments: true
 exclude: ignore,IDfiles,mojombofiles,JEKYLL MT4D.esproj,Project.espressostorage,user.fabiantheblind.espressostorage  
 permalink: /MT4D/:year/:month/:day/:title.html
-
+baseurl: /MT4D/
