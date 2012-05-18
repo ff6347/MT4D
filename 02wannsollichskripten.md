@@ -2,7 +2,7 @@
 layout: twitterbootstraped
 title: Wann Soll Ich Skripten
 ---
-##Wann Soll Ich Skripten
+##<a name="97"></a>Wann Soll Ich Skripten
 
 > "Scripting languages assume that there already exists a collection of useful components written in other languages. Scripting languages aren't intended for writing applications from scratch; they are intended primarily for plugging together components."  
 > Scripting: Higher Level Programming for the 21st Century by John K. Ousterhout ([online](http://www.tcl.tk/doc/scripting.html))  
