@@ -1,6 +1,7 @@
 ---
 layout: twitterbootstraped
 title: Terminologie
+bodyid: terms
 ---
 
 

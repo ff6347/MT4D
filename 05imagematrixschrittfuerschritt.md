@@ -1,6 +1,7 @@
 ---
 layout: twitterbootstraped
 title: Image Matrix Schritt fuer Schritt
+bodyid: usage
 ---
 
 ###<a name="09"></a>3.2 image matrix - Schritt für Schritt.  

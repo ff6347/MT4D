@@ -1,6 +1,7 @@
 ---
 layout: twitterbootstraped
 title: Szenario Great Power
+bodyid: usage
 ---
 
 ###<a name="10"></a>3.3 Das Beispiel greatPower

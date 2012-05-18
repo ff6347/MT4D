@@ -1,0 +1,13 @@
+---
+layout: default
+title: test
+category: helloworld
+bodyid: mytest
+---
+
+<ul>
+    {% for page in site.pages %}
+      <li>{{ page.bodyid }}</li>
+    {% endfor %}
+
+</ul>

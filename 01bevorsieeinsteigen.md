@@ -1,6 +1,7 @@
 ---
 layout: twitterbootstraped
 title: Bevor Sie Einsteigen
+bodyid: gttstrt
 ---
 ###<a name="96"></a>Bevor Sie Einsteigen
 
