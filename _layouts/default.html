@@ -6,7 +6,7 @@
     <meta name="description" content="MT4D" />
     <meta name="author" content="fabiantheblind" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> {{ page.title }}</title>
+    <title>{{ page.title }}</title>
 
     <!-- Le styles -->
 
@@ -25,9 +25,17 @@
 
 <link href="/MT4D/css/twboot/bootstrap-responsive.css" rel="stylesheet" />
 
+<script type="text/javascript">
+$('.navi').click(function()
+{
+  $('.navi').removeClass('active');
+  $(this).parent().addClass('active');
+});
+</script>
+
 </head>
 
-<body>
+<body id="{{ page.title }}">
 <!--    <span id="top" name="top"></span> -->
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -40,17 +48,27 @@
           <a class="brand" href="http://fabiantheblind.info">fabiantheblind.info</a>
           <div class="nav-collapse">
             <ul class="nav">
-
               <li><a href="/MT4D/00einleitung.html">MT4D</a></li>
               <!-- <li><a href="#about">About</a></li> -->
               <li><a href="/MT4D/blog.html">Blog</a></li>
               <li><a href="/MT4D/impressum.html">Impressum</a></li>
 <!--               <li><a href="#">2 top</a></li> -->
+              {% include navtop.html %}
             </ul>
           </div>
         </div>
       </div>
     </div>
+    
+        <div class="row">
+      <div class="span1"> 
+
+
+        <img src="/MT4D/images/buffer.png">
+
+
+      </div>
+    </div> 
  <!-- /container bootstrap -->
 
  {{ content }}
@@ -62,8 +80,9 @@
     <script src="/MT4D/js/bootstrap-transition.js"></script>
     <script src="/MT4D/js/bootstrap-collapse.js"></script>
     <script src="/MT4D/js/bootstrap-modal.js"></script>
+    <script src="/MT4D/js/bootstrap-dropdown.js"></script>
+
 <!--     <script src="/js/bootstrap-alert.js"></script>
-    <script src="/js/bootstrap-dropdown.js"></script>
     <script src="/js/bootstrap-scrollspy.js"></script>
     <script src="/js/bootstrap-tab.js"></script>
     <script src="/js/bootstrap-tooltip.js"></script>
