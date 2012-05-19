@@ -31,6 +31,9 @@
 
 <body id="{{ page.title }}">
 <!--    <span id="top" name="top"></span> -->
+{% include navbarfixedtop.html %}
+
+{% comment %}
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -55,6 +58,8 @@
         </div>
       </div>
     </div>
+{% endcomment %}
+
     
 {% comment %}
         <div class="row visible-desktop">
@@ -64,9 +69,9 @@
 {% endcomment %}
 
     </div> 
- <!-- /container bootstrap -->
-
  {{ content }}
+
+
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

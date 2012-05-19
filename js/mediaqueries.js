@@ -37,28 +37,28 @@ $(window).ready(fit());
   
   if(ww < sz1 ){ 
     /* Landscape phones and down*/
-    $("#getSize1").removeClass("row").addClass("row-fluid");
+    $("#getSize1").removeClass().addClass("row-fluid");
     $("#getSize2").removeClass().addClass("span11");
 
   }else if(ww > sz1 && ww <  sz2){
     /* Landscape phone to portrait tablet */
-    $("#getSize1").removeClass("row").addClass("row-fluid");
+    $("#getSize1").removeClass().addClass("row-fluid");
     $("#getSize2").removeClass().addClass("span11");
 
   }else if(ww > sz2 && ww < sz3 ){
     /*Portrait tablet to landscape*/
-    $("#getSize1").removeClass("row").addClass("row-fluid");
-    $("#getSize2").removeClass().addClass("span11");
+    $("#getSize1").removeClass().addClass("row");
+    $("#getSize2").removeClass().addClass("span11 offset1");
 
   }else if(ww > sz3 && ww < sz4 ){
 
     /* tablet landscape to desktop*/
-    $("#getSize1").removeClass("row-fluid").addClass("row");
+    $("#getSize1").removeClass().addClass("row");
      $("#getSize2").removeClass().addClass("span8");
 
   }else if(ww > sz4){
      /* Large desktop*/
-    $("#getSize1").removeClass("row-fluid").addClass("row");
+    $("#getSize1").removeClass().addClass("row");
     $("#getSize2").removeClass().addClass("span8");
 
   }; 

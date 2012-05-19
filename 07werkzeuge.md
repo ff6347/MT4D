@@ -22,9 +22,9 @@ Selbst wenn eine vernünftige Vektor-Form einer Karte existiert und griffbereit 
 [![AEMap Full Composition](images/aemapfullcomp_thumb.jpg)](images/aemapfullcomp.jpg)  
 
 Der Nutzer kann zwischen verschiedenen Einstellungen wählen, zum Beispiel die Karte mit Kontur oder ohne zu zeichnen. Er kann entscheiden, ob alle Polygone auf eine Ebene gezeichnet werden sollen oder ob in die oben genannten Kompositionen gesplittet werden soll. Ebenfalls können 3D-Einstellungen definiert werden und ähnliches mehr. Die Daten bestehen auf einem GeoJson Datensatz, der zum freien Gebrauch ins Netz gestellt wurde. Der gesamte Funktionsumfang ist auf [dieser Webseite](http://fabiantheblind.github.com/AEMap/) dokumentiert. Dieses Skript spart nicht nur mir Zeit, sondern auch anderen. Die Resonanz in der After Effects Community" ist groß. Daher hat das Skript seit seiner Veröffentlichung auf [AEScripts.com](http://aescripts.com/aemap/) am 10 April 2012 bereits über 550 Downloads gehabt (heute 4 Mai 2012). Das Tutorial und das Demo wurden bereits über 5000 mal auf Youtube geladen. Aber genug der Selbstbeweihräucherung. Der Vorteil an solchen und ähnlichen Werkzeugen, die zum Beispiel auf AEScripts.com bereit gestellt werden, ist, dass diese meist aus dem Zwang heraus entstanden, sind einen Arbeitsablauf zu automatisieren, um Zeit zu sparen.  
+
 <a name="98"></a>
 ###4.2 createBook
-
 Ein weiteres Werkzeug zum Multipublishing, das ich noch nicht umgesetzt habe und auch vielleicht niemals umsetzen werde, wäre folgendes. Zum Schreiben dieser Arbeit benutze ich eine Auszeichnungssprache genannt [Markdown](http://daringfireball.net/projects/markdown/), in einem Editor genannt [iAWriter](http://www.iawriter.com/). <a data-toggle="modal" href="#myModal1" ><i class="icon-asterisk"></i></a>
 <div class="modal fade" id="myModal1">
     <script type="text/javascript">$(this).modal('hide');</script>
@@ -92,3 +92,15 @@ Der aktuelle Prozess orientiert sich an dieser Idee, ist jedoch nicht komplett a
 
 Damit sind die Daten im Netz verfügbar und können eingesehen werden. Hier könnte ein online Korrektursystem mit differenzierten Nutzerrechten eingebunden werden und und und...  
 {% endcomment %}
+
+<a name="94"></a>
+###4.3 WAVEFRONT_objfrom AI
+![obj from ai](images/objfromai.jpg)
+Um die filigranen Textgrafiken in dieser Arbeit zu erzeugen, habe ich mich eines weiteren Werkzeuges bedient. [Plexus](http://aescripts.com/plexus/).  
+Plexus ist ein After Effects Partikelsystem, dass Punkte erzeugt die mit Linien verbunden werden können. Dieses Plugin kann Masken, Lichter und .obj Dateien verarbeiten um Partikel zu generieren. Besnoders die letzte Möglichkeit weckte mein Interesse. Wavefront .obj ist ein offenes textbasiertes Format, dass 3D Daten transportiert. Da ich keine 3D Applikation beherrsche aber diese Option trotzdem benutzen wollte, habe ich ein Skript geschrieben, dass aus Adobe Illustrator Pfadpunkten .obj Dateien schreibt. Ebenfalls habe ich ein ähnliches Programm geschrieben das aus Processing diesen Dateityp erstellen kann. Dies ist ein Workaround um mein eigenes Unvermögen 3D Applikation zu beherrschen.   
+<script src="https://gist.github.com/2103355.js"> </script>   
+
+<a name="93"></a>
+###4.4 Illustrator Voronoi
+![obj from ai](images/voronoifromai.jpg)
+Um Flächen und ihrer optimale Ausnutzung berechnen zu können, kann sich des Voronoi Algorithmuses bedient werden. Dieser wurde bereits in einigen Sprachen implementiert. Ebenfalls in JavaScript. Das schöne an der von mir verwendeten [Implememtation von gorhil](https://github.com/gorhill/Javascript-Voronoi) ist, dass sie sich nur die Berechnung übernimmt. Die Darstellung ist dabei offen. Dies ermöglicht es mit [Illustrator](http://fabiantheblind.github.com/Illustrator-Javascript-Voronoi/) die errechneten Daten zu visualisieren.
