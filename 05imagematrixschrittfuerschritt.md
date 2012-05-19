@@ -4,7 +4,8 @@ title: Image Matrix Schritt fuer Schritt
 bodyid: usage
 ---
 
-###<a name="09"></a>3.2 image matrix - Schritt für Schritt.  
+<a name="09"></a>
+###3.2 image matrix - Schritt für Schritt.  
 Ein Skript sollte immer in geschwungenen Klammern eingefasst sein. Dies ist nicht zwingend notwendig, jedoch nützlich, falls das Skript von einem anderem Skript evaluiert werden muss. Innerhalb dieser Klammern folgt der gesamte Quelltext.  
 
 	{}

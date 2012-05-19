@@ -4,7 +4,8 @@ title: Szenario image matrix
 bodyid: usage
 ---
 
-###<a name="08"></a>3.1 Der Einsatz - das Beispiel image matrix
+<a name="08"></a>
+###3.1 Der Einsatz - das Beispiel image matrix
 
 Die Fragen, die sich jetzt stellen, sind folgende: "Wie kommt dies zum Einsatz?", "Wie kann ich das nutzen?".
 Es folgt nun das InDesign-Skript "image_matrix.jsx" mit etwas mehr als 40 Zeilen Quelltext. Dieses Skript beinhaltet eine Benutzerinteraktion, Dateihandhabung, das Math Objekt <a data-toggle="modal" href="#myModal1" ><i class="icon-asterisk"></i></a>, Konditionen, eine Schleife, Funktionen, Variablen und es hat einen generativen Charakter. Das Skript erledigt folgende Schritte.
@@ -91,7 +92,8 @@ Das gesamte Skript:
 	{% endhighlight %}
 {% endcomment %}
 
-####<a name="33"></a>3.1.1 Ergebnisse - image matrix
+<a name="33"></a>
+####3.1.1 Ergebnisse - image matrix
 Alle 3 nachfolgenden Bilder sind mit demselbem Skript erzeugt.  
 [![matrix 1](images/image_matrix_1_thumb.jpg)](images/image_matrix_1.jpg)  
 [![matrix 2](images/image_matrix_2_thumb.jpg)](images/image_matrix_2.jpg)  

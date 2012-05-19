@@ -4,7 +4,8 @@ title: Szenarien
 bodyid: usage
 ---
 
-##<a name="07"></a>3 Szenarien
+<a name="07"></a>
+##3 Szenarien
 
 Um besser zu verstehen, was das Skript leisten kann, soll hier ein Fallbeispiel aufgemacht werden, vor dem jeder Layouter einmal stehen könnte. Stellen sie sich vor ihre Aufgabe ist folgende:  
 #Erzeugen sie eine quadratische Bildmatrix in InDesign aus einer definierten Anzahl an quadratischen Bildern mit einer festen Grösse.

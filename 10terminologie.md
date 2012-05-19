@@ -5,17 +5,21 @@ bodyid: terms
 ---
 
 
-##<a name="13"></a>7 Die kleine Terminologie 
+<a name="13"></a>
+##7 Die kleine Terminologie 
 Dieser Abschnitt ist zur Erläuterung gedacht und um den Lesefluss nicht durch sekundär Informationen und Erklärungen von Fachbegriffen zu unterbrechen. 
 
-###<a name="14"></a>Was ist Code? 
+<a name="14"></a>
+###Was ist Code? 
 Als Code bezeichnen wir in der Regeln Informationen die verschlüsselt (encoding) werden, um dann an einer weiteren Stelle wieder entschlüsselt zu werden (decoding). Zum Beispiel stellt Morse-Code Buchstaben dar, indem ein einziges unmoduliertes Signal, zum Beispiel ein Ton, in kurze und lange Sequenzen unterteilt wird. Der Rezipient kann dann, wenn er des Systems mächtig ist, diese Informationen entschlüsseln und zu der originalen Nachricht wieder zusammensetzen. Ein weiters Bespiel ist der Abakus. Dieser erlaubt es, wenn der Benutzer des Systems mächtig ist, Rechenoperationen auszuführen. Und als drittes die Knotenschrift der Inkas, die, wie der Name bereits besagt, aus einem System von Knoten auf einem Satz Schnüren bestand. Heutzutage findet das Wort "Code" im Computerbereich oft Verwendung als Kurzform des Ausdrucks "Source-Code" also Quelltext eines [Programms](#15).  
   
-###<a name="15"></a>Was ist ein Programm? 
+<a name="15"></a>
+###Was ist ein Programm? 
 Das Bild das viele im Kopf haben, wenn sie das Wort Programm hören, ist stark durch Film beeinflusst. Wir sehen junge, meist übergewichtig und verpickelte Menschen vor uns, die in abgedunkelten Räumen zwischen Monitoren, Kabeln und Pizzapackungen auf ewige grün leuchtende Zahlenkolonnen blicken, die für uns keinerlei Sinn ergeben. Diese oder ähnliche Bilder sind inspiriert aus einer Zeit, in der Computer nur einfarbige Pixel hatten und Grafische Benutzeroberflächen, wie Windows, noch aus der Kommandozeile gestartet wurde. Als Hommage an diese Vorstellung hat "Duiker101" das Programm [HackerTyper](http://hackertyper.net/) entworfen, welches mit bereits vorgegebenem Text, allein über Tastendruck, den Bildschirm mit kompliziertem Quelltext füllt. Dabei ist es irrelevant welche Tasten der Benutzer drückt.  
 Verwerfen sie diese Vorstellung. Es ist nicht so das es dies nicht gibt dennoch entspricht es nicht der Regel. Ein Programm ist lt. [Duden](http://www.duden.de/rechtschreibung/Programm): "die nach einem Plan genau festgelegten Einzelheiten eines Vorhabens". Unter dieser Betrachtungsweise ist jede Bauanleitung für Möbelstücke, eine Beschreibung des Weges von hier zum Bahnhof oder das Rezept für Sahnetörtchen ein Programm. Bloß, dass in letzterem Fall nicht ein Computer die Anweisungen ausführt, sondern ein Mensch. Die Sprache in der dieses Programm geschrieben ist, ist Deutsch. Der grosse Unterschied zu einem Computersprache/-programm liegt hier in der Möglichkeit der Interpretation. Die Ausführende "Maschine", in diesem Fall der Mensch, kann solche Angaben, wie "eine Priese Salz" oder "eine Messerspitze Meerrettich", verarbeiten. Ein Computer ist hierzu noch nicht fähig. Er bräuchte eine eindeutigere Angabe wie 50 Gramm. Das Programm muss an dieser Stelle noch von dem Begriff des [Algorithmus](#16) abgetrennt werden.  
 
-###<a name="16"></a>Was ist ein Algorithmus? 
+<a name="16"></a>
+###Was ist ein Algorithmus? 
 Auch wenn sich die bieden Begriffe und Programm in ihrer Bedeutung teilweise überschneiden, sollten sie auf folgende weise unterschieden werden. Der Algorithmus für Milch holen wäre in Pseudocode:  
 
 	wenn (Aussage (kein Milch ist im Kühlschrank) wahr ist): hole neue Milch! wenn nicht: tue nichts!  
@@ -32,7 +36,8 @@ Das Programm für Milch holen würde voraussetzen das alle Schritte und Notwendi
 
 Und so weiter und so ähnlich. Diese Funktionsanweisungen müssten noch detaillierter ausgearbeitet werden. Hierbei sei zu beachten das solche Objekte wie Kühlschrank und Person bereits implementiert also bekannt sein müssen. Das Programm im Vergleich zum Algorithmus muss alle eingesetzten Mittel kennen und/oder selber beschreiben.  
   
-###<a name="17"></a>Was ist die Syntax? 
+<a name="17"></a>
+###Was ist die Syntax? 
 Die Syntax ist die Form in der die Programmiersprache ausgestaltet ist. Die Syntax einer Programmiersprache besteht aus reservierten Worten wie zum Beispiel in Java `new, while, null , true,` Operatoren wie  `+,-,*,.` und Kontrollstrukturen wie `if(){}else{}` oder "`for(int i = 0; i < x;i++)`  
 Lesen sie diese "Sätze" kurz. Wie würden sie es sprechen?  
   
@@ -96,16 +101,20 @@ Das Brainfuck Hello World ([aus wiki](http://en.wikipedia.org/wiki/Brainfuck)):
 
 Wie bereits oben in der Beschreibung des Milchalgorithmus zu sehen ist verwendet selbst Pseudocode ein nicht genau definierte Syntax lehnt sich jedoch mit Konstruktionen wie "ist gleich" an die Mathematik und Programmierung an. Andere Sprachen, wie C++, Processing oder JavaScript, sind zwischen diesen Extrema angesiedelt und vereinen, in einer für das geübte Auge lesbaren und dennoch kompakte Art, solche Befehlsaufrufe.
   
-###<a name="18"></a>Was ist Pseudocode? 
+<a name="18"></a>
+###Was ist Pseudocode? 
 Im Verlaufe dieser Arbeit werde ich immer wieder auf die Darstellung von Algorithmen in "Pseudocode" zurückgreifen. Pseudocode besteht nicht aus einer bereits definierten Syntax und kann auch nicht von einem [Compiler](#19) übersetzt werden sondern dient nur zur Darstellung eines logischen Ablaufs. Wie oben in dem Milchalgorithmus zu sehen ist, versucht Pseudocode einen Programmablauf in menschenlesbarer Form darzustellen.  
   
-###<a name="19"></a>Was ist ein Compiler? 
+<a name="19"></a>
+###Was ist ein Compiler? 
 Der Compiler ist ebenfalls ein Programm das aus Hochsprachen wie C++ maschinenlesbaren Quelltext erzeugt (Assemblercode). Diesen Prozess bezeichnet man auch als Kompilierung.  
   
-###<a name="20"></a>Was ist eine IDE (Integrated Development Envoirement)? 
+<a name="20"></a>
+###Was ist eine IDE (Integrated Development Envoirement)? 
 Um Quelltext zu schreiben bedarf es nicht viel. Der einfachste Texteditor reicht aus um komplette Programme zu schreiben. Im Laufe der Zeit wurde jedoch viel Software programmiert, um das schreiben von Quelltext zu erleichtern. Dies geht los bei einfachem Syntax-Highlighting bis hinzu kompletten Entwicklungsumgebungen, die während des Schreibens die Syntax auf ihre Validität prüfen und gegebenenfalls Vorschläge machen, was gemeint sein könnte oder warnt bei nicht verwendeten Programmteilen. Wir die einfachste Möglichkeit nutzen, die sich uns bietet und die auf beiden Plattformen (Windows und Mac OS X) zur Verfügung steht. Das ExtendScript Toolkit. Mehr dazu im Abschnitt "Was ist Hello World?".  
 
-###<a name="21"></a>Was ist Hello World?  
+<a name="21"></a>
+###Was ist Hello World?  
 Das "Hello World" Programm hat sich als Standard Beispiel etabliert um die Syntax einer Sprache zu erklären. Es ist der erste Versuch in einer Sprache ein Progrmam zu schreiben, dass eine Aussage trifft. Hello World. Exerzieren wir das einmal durch. Um für Adobe InDesign, After Effects, Illustrator, Photoshop, Photoshop Elements, Photoshop Elements Organizer, Bridge, Audition, Media Encoder und Premiere Pro Skripte zu schreiben liefert Adobe eine eigene [IDE, eine Integrierte Entwicklung Umgebung](#20), mit.  
 
 [![extend script toolkit](images/estk_thumb.jpg)](images/estk.jpg)  
@@ -135,12 +144,14 @@ Probieren sie weiter Skripte und Kalkulationen aus. Zum Beispiel
 
 Gehen sie auf die Seite [codecademy.com](http://www.codecademy.com/#!/exercises/0)  
 
-###<a name="22"></a>Was ist Syntax-Highlighting? 
+<a name="22"></a>
+###Was ist Syntax-Highlighting? 
 [![Syntax Highlithing](images/syntax_highlite_thumb.jpg)](images/syntax_highlite.jpg)  
 
 Syntax-Highlighting ist eine Hilfestellung für Programmierer um ihren Quelltext übersichtlicher zu gestalten. Hierbei werden bestimmte Teile wie Operatoren, Kommentare, Funktionsdeklarationen oder reservierte Worte farblich hervorgehoben beziehungsweise zurückgenommen um das Lesen zu erleichtern.  
   
-###<a name="23"></a>Was ist eine API (Application Programming Interface)? 
+<a name="23"></a>
+###Was ist eine API (Application Programming Interface)? 
 Dies ist die Schnittstelle die ein Programm bietet um auf sein Funktionen zugreifen zu können. Dies wird beim Schreiben von Programmen wie InDesign von den Programmierern definiert. Diese Schnittstelle ist wie ein Baum mit Querverweisen aufgebaut.   
 [![network](images/network_thumb.jpg)](images/network.jpg)  
 
@@ -153,7 +164,8 @@ Um in InDesign einem bestehendem Dokument auf der ersten Seite eine Textbox hinz
 Diese Zeile erzeugt in der linken oberen Ecken eine Textkiste.  
 All diese Befehle und Eigenschaften müssen nicht auswendig gelernt, sondern können nachgeschlagen werden. Im ExtendScript Toolkit kann unter dem Menüpunkt "Hilfe / ObjektModell Viewer" ein Hilfsprogramm aufgerufen werden, dass alle Befehle mit einer kurzen Erklärung enthält. Oder es kann auf der Seite von jongware eine .chm Datei heruntergeladen werden, die, die gleichen Informationen enthält und mit einem .chm Viewer durchsucht werden kann. [http://www.jongware.com/idjshelp.html](http://www.jongware.com/idjshelp.html)  
   
-###<a name="24"></a>Was ist Objektorientierung? 
+<a name="24"></a>
+###Was ist Objektorientierung? 
 Als Objektorientierung, auch als "OO" abgekürzt, versteht man ein bestimmte Art wie Programme aufgebaut sind. Ein Objekt ist ein gekapselter Teil des Programmcodes, der Schnittstellen und Methoden bietet und seine Eigenschaften an weiter Objekte vererben kann. Um dies besser zu verstehen möchte ein hervorragendes Beispiel aus "Processing: A Programming Handbook for Visual Designers and Artists" von Casey Reas and Ben Fry bemühen.  
 ####Klammer auf!
 
@@ -210,21 +222,27 @@ In dem Format "[Einfacher Absatz]" wird eine Schriftart und eine Schriftgrösse 
 {% endcomment %}
 
 
-###<a name="25"></a>Was sind Funktionen/Methoden? 
+<a name="25"></a>
+###Was sind Funktionen/Methoden? 
 Eine Funktion oder eine Methode sind gekapselte Programmteile an die Parameter übergeben werden können und die an den gegebenen Parametern eine Kalkulation durchführen. Sie können dann Werte zurückgeben. Dies ist nützlich wenn bestimmte Tätigkeiten, an unterschiedlichen Positionen eins Programms oder Skripts, mehrmals aufgerufen werden müssen.     
-###<a name="26"></a>Was ist ein Bug? 
+<a name="26"></a>
+###Was ist ein Bug? 
 Ein Bug ist ein Fehler, der das Programm von seiner einwandfreien Ausführung abhält. Dies kann nur ein Rechenfehler sein oder ein Fehler der das gesamte Programm zum Absturz bringt.  
   
-###<a name="27"></a>Was ist Debugging? 
+<a name="27"></a>
+###Was ist Debugging? 
 Debugging ist der Prozess des finden und korrigieren von Fehlern.  
 
-###<a name="28"></a>Was ist ein Workaround?   
+<a name="28"></a>
+###Was ist ein Workaround?   
 Ein Workaround ist eine kreative Lösung um ein Problem zu umgehen. Wenn zum Beispiel eine API ein bestimmte Funktion nicht anbietet, muss ein Weg um dieses Problem drumherum gefunden werden. 
   
-###<a name="29"></a>Welche Konventionen gibt es? 
+<a name="29"></a>
+###Welche Konventionen gibt es? 
 Neben den Bestimmungen der Syntax gibt es verschiedene Konventionen die das lesen von Skripten/Programmen einfacher machen sollen. Zum Beispiel ist es gang und gebe dass die Funktionsweise am Beginn eines Skripts in einem Kommentar erklärt wird oder die Verwendung der Variable i (für Iterator) als Zähler in Schleifen.
 
-###<a name="30"></a>Herkunft von JavaScript 
+<a name="30"></a>
+###Herkunft von JavaScript 
 JavaScript orientiert sich in seiner Syntax an C und C++. 
 Zur Veranschaulichung hier ein Programm das folgende Aufgaben erledigt.  
 
@@ -438,10 +456,12 @@ Ohne diese Erweiterung und ohne das Objekt würde das JavaScript wieder der C Va
 {% endcomment %}
 
 
-###<a name="31"></a>Was ist der Unterschied zwischen JavaScript und ExtendScript? 
+<a name="31"></a>
+###Was ist der Unterschied zwischen JavaScript und ExtendScript? 
 JavaScript oder EcmaScript ist das was uns täglich in Webbrowsern solche Dinge bescherte wie Scrollen auf Knopfdruck oder Warnhinweise und ähnliches. ExtendScript ist ein "Dialekt" von JavaScript der von Adobe entwickelt wurde. Das bedeutet: InDesign versteht JavaScript und ExtendScript aber ein Browser kann mit ExtendScript Befehlen nichts anfangen.  
 
-###<a name="32"></a>Was sind Pointer   
+<a name="32"></a>
+###Was sind Pointer   
 Ein Pointer ist der Verwies auf die Speicheradresse unter der eine Variable abgelegt ist. Das kann dann so aussehen:  
 
 	{% highlight c %}

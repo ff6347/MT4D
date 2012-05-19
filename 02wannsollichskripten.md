@@ -3,7 +3,8 @@ layout: twitterbootstraped
 title: Wann Soll Ich Skripten
 bodyid: anlys
 ---
-##<a name="97"></a>Wann Soll Ich Skripten
+<a name="97"></a>
+##Wann Soll Ich Skripten
 
 > "Scripting languages assume that there already exists a collection of useful components written in other languages. Scripting languages aren't intended for writing applications from scratch; they are intended primarily for plugging together components."  
 > Scripting: Higher Level Programming for the 21st Century by John K. Ousterhout ([online](http://www.tcl.tk/doc/scripting.html))  
@@ -53,11 +54,13 @@ Und einige Punkte, die sich hauptsächlich durch Recherche abarbeiten lassen:
 Diese Analyse kann keine genauen Angaben über Zeit und Aufwand machen, da dies immer auch vom Erfindungsreichtum des Autors abhängig ist. Der Kreative kommt hier schneller zum Ziel.  
  
 
-###<a name="37"></a> Welche Operationen sollen ausgeführt werden?  
+<a name="37"></a>
+### Welche Operationen sollen ausgeführt werden?  
 
 Programme oder Skripte schreiben, ist nicht wie "Scribbeln". Wir können beim Telefonieren einen Stift in die Hand nehmen und drauf los kritzeln. Beim Programmieren muss das Ergebnis bereits definiert sein, bevor geschrieben wird. Natürlich ergeben sich auch während des Schreibens neue Ideen, dennoch muss eine konkrete Vorstellung existieren, was das Ziel sein soll. Auch dies ist mit Sprechen zu vergleichen. erst denken - dann reden.  
 
-###<a name="38"></a>Wie komplex sind die Operationen?  
+<a name="38"></a>
+###Wie komplex sind die Operationen?  
 
 Wenn eine Fülle von unterschiedlichen Operationen ausgeführt werden soll, müssen auch entsprechend viele Anweisungen an das Programm erfolgen und der Autor muss sich auf eine längere Entwicklungszeit einstellen. Wenn es hingegen darum geht, einige Operationen 1000-mal auszuführen, kann es sein, dass sich der Kern des Skriptes auf zehn Zeilen reduziert. Dies bedeutet auch, dass die Zeit für Entwicklung und "Debugging" relativ gering sein und sich der Zeitaufwand lohnen kann.<a data-toggle="modal" href="#myModal3" > <i class="icon-asterix"></i> </a>  
 
@@ -71,19 +74,23 @@ Wenn eine Fülle von unterschiedlichen Operationen ausgeführt werden soll, müs
     <p>Ein Bug ist ein Fehler im Programm. Debugging ist der Prozess der Fehlersuche. Siehe Abschnitt <a href="10terminologie.html#10">7.13 Was ist ein Bug?</a> und <a href="10terminologie.html#27">7.14 Was ist Debugging?</a>.</p>
   </div>
 </div>
-###<a name="39"></a>Wie groß ist das Zeitfenster und wann muss das Produkt fertig sein?  
+<a name="39"></a>
+###Wie groß ist das Zeitfenster und wann muss das Produkt fertig sein?  
 
 Auch hier muss, abhängig von der Komplexität des Skriptes und dem eigenem Vermögen, geurteilt werden, ob dies in dem gegebenen Zeitraum recherchiert, entworfen, geschrieben und "debugged" werden kann. Hinzu kommt, dass das Ergebnis meist nur ein Teilergebnis ist und noch weiterverarbeitet werden muss. Es ist davon auszugehen, dass etwaige tiefere Fehler erst während des vollen Einsatzes auftreten. Wenn dies in dem entsprechenden Zeitraum nicht zu bewerkstelligen ist, sollte von einer Entwicklung abgesehen werden.
 
-###<a name="40"></a>Wie oft muss diese Tätigkeit ausgeführt werden?  
+<a name="40"></a>
+###Wie oft muss diese Tätigkeit ausgeführt werden?  
 
 Wenn das Skript nur ein einziges Mal ausgeführt werden soll, sollte man sich fragen, wo darin der Nutzen liegt. Es kann natürlich sein, dass dies Sinn und Zweck hat und sollte nur bedingt ausschlaggebend sein. Hierbei gilt es zu unterscheiden, dass einmalig 1000-mal einen Knopf drücken, bereits eine Hilfe sein kann. Einmalig 1000-mal unterschiedliche Knöpfe drücken, ist eine Aufgabe, die doch besser manuell geschieht.  
 
-###<a name="41"></a>Lässt sich die Automation auch auf andere, ähnliche Bereiche anwenden oder mit geringem Aufwand abstrahieren?  
+<a name="41"></a>
+###Lässt sich die Automation auch auf andere, ähnliche Bereiche anwenden oder mit geringem Aufwand abstrahieren?  
 
 Wenn dies der Fall ist, steigt der Nutzen der Arbeit. Der einmalige Aufwand ein Programm oder Skript für eine immer wieder kehrende beziehungsweise ähnliche Aufgabe zu schreiben, rentiert sich durch jede weitere Ausführung. Dies soll heißen: Durch das Schreiben des Programms, das ich immer wieder verwende, spare ich Zeit in der Zukunft. 
 
-###<a name="42"></a>Wie sehr ist sie von Umgebungsvariablen abhängig? 
+<a name="42"></a>
+###Wie sehr ist sie von Umgebungsvariablen abhängig? 
 
 Kann das Skript unabhängig von allen Variablen, die der Benutzer setzen kann, ausgeführt werden, vereinfacht das den Aufwand. Bei einer Abhängigkeit erfordert es immer erst einer Abfrage des "Ist-Status".  
 Ein kleines Beispiel: In Illustrator oder InDesign wird die aktuelle Auswahl des aktiven Dokuments in einer Liste, genannt "selection", geführt.  
@@ -114,7 +121,8 @@ In dieser Liste liegen einzelne Objekte, die beispielsweise Text, eine Vektor-Fo
 
 Viele solcher Abfragen können ein Skript schnell komplex werden lassen. Oder anders ausgedrückt, je universeller der Nutzen sein soll, desto mehr Umgebungsvariablen müssen beachtet werden. Dies benötigt Zeit.  
 
-###<a name="43"></a>Soll die Automation von dritten Benutzt werden?  
+<a name="43"></a>
+###Soll die Automation von dritten Benutzt werden?  
 
 Dies ist ein wichtiger Faktor. Wenn nur der Autor selbst die Automation verwendet, kann er seine vorhergehenden Aktionen auf die Bedürfnisse und Beschränkungen des Skriptes anpassen. Wenn jedoch eine unbedarfte oder schlimmer noch eine dem "Skripten" nicht mächtige Person dieses Werkzeug nutzen soll, müssen wie bereits oben erwähnt, viele Umgebungsvariablen abgefragt oder selber bestimmt werden. Im Programmier-Slang sagt man: "Man muss vom DAU<a data-toggle="modal" href="#myModal4" ><i class="icon-asterix"></i></a> ausgehen." Dies ist nicht als Beleidigung gedacht. Es soll eher sagen, dass alle Benutzerfehler, die auftreten können, auftreten werden. In diesem Fall bekommt jemand, der nicht programmieren kann, wenn er Glück hat, nur eine Fehlermeldung. Im schlimmsten Falle führt es zu einem Programmabsturz. In beiden Fällen steigt die Hemmung des Nutzers ungemein, das Skript noch einmal zu verwenden. Wenn also Dritte mit ins Spiel kommen, erfordert es noch längere Test- und Debug-Phasen.  
 
@@ -129,7 +137,8 @@ Dies ist ein wichtiger Faktor. Wenn nur der Autor selbst die Automation verwende
   </div>
 </div>
 
-###<a name="44"></a>Ist der Prozess linear oder bedarf es einer Rückkopplung zum Benutzer?  
+<a name="44"></a>
+###Ist der Prozess linear oder bedarf es einer Rückkopplung zum Benutzer?  
 
 Wenn dem so ist, sollte der Prozess vielleicht in mehrere Skripte zerlegt werden. Für den Fall, dass Variablen von einem Skript an das nächste übergeben werden müssen, kann dies die Komplexität weiter erhöhen. Hierbei gibt es die Möglichkeiten, eigene Textdateien, in denen Werte abgelegt werden können, vom Skript kreieren zu lassen. Weiterhin ist es möglich, ein "Script Panel" zu erzeugen, das solange es aktiv ist Werte beinhaltet.
 Eine weitere Option ist die Verwendung einer `targetengine`, in der, solange das **Programm** aktiv ist, Daten gespeichert werden. Die letzten beiden sind jedoch fortgeschrittene Lösungen, die ebenfalls viele Stolpersteine beherbergen können. <a data-toggle="modal" href="#myModal5" ><i class="icon-asterix"></i></a>  
@@ -144,7 +153,8 @@ Eine weitere Option ist die Verwendung einer `targetengine`, in der, solange das
     <p> Ein "Script Panel" ist eine Erweiterung der grafischen Oberfläche, die es erlaubt, während das Skript läuft, weiterhin mit dem Programm zu interagieren.</p>
   </div>
 </div>
-###<a name="04"></a>2.1 Das Beispiel targetengine  
+<a name="04"></a>
+###2.1 Das Beispiel targetengine  
 
 Skript 1:  
 
@@ -195,13 +205,16 @@ Dies bedeutet, dass das Programm (nicht das Skript) sich den Wert für die Varia
   
 Die Recherchearbeiten sollten bereits vor dem ersten Entwurf erledigt sein.
 
-###<a name="45"></a>Existieren bereits Automationen in dem Sektor und, wenn ja, lassen sich diese abwandeln?  
+<a name="45"></a>
+###Existieren bereits Automationen in dem Sektor und, wenn ja, lassen sich diese abwandeln?  
 
 Wie bereits oben erwähnt, sind viele Probleme bereits einmal aufgetreten. Wenn das Problem nicht all zu speziell ist, kann es gut sein, dass es bereits ein Skript gibt, das entweder genau diese Funktion enthält und, wenn nicht, auf die eigenen Bedürfnisse angepasst werden kann. Meist is es der Fall, dass es mehrere Skripte gibt, die Teilprozesse der eigenen Idee beinhalten und als Referenz benutzt werden können. In den seltensten Fällen entsteht ein Skript nicht aus einem blanken Textdokument. 
   
-###<a name="46"></a>Bietet die API direkten Zugriff auf die benötigten Funktionen oder bedarf es eines Workaround?  
+<a name="46"></a>
+###Bietet die API direkten Zugriff auf die benötigten Funktionen oder bedarf es eines Workaround?  
 
-###<a name="05"></a>2.2 Das Beispiel try char   
+<a name="05"></a>
+###2.2 Das Beispiel try char   
 
 Um dies zu erläutern, möchte ich mich eines Beispiels bedienen.  
 InDesign kann nicht erfragen, ob ein Zeichen in einer Schriftart enthalten ist. Es gibt kein Feld, das `Font has Character` oder ähnliches beinhaltet. Um diese Abfrage zu simulieren, hat Peter Kahrel die Funktion try_char geschrieben, die hier in einer etwas abgewandelten Form folgt. <a data-toggle="modal" href="#myModal6" ><i class="icon-asterix"></i></a>
