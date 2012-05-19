@@ -6,7 +6,8 @@ bodyid: rflct
 
 <a name="11"></a>
 ##5 Die Angst
-Wann immer ich gefragt werde, über was ich schreibe oder womit ich mich beschäftige und ich antworte: "Programmieren", stosse ich auf die Aussage: "Das werde ich nie lernen." Woher kommt diese Annahme? Auf der TEDxVancouver im November 2011 beschreibt Jef Thorp eine Situation, die gut unseren aktuellen Zustand darstellt:  
+![dont panik](images/dontpanik.jpg)
+Wann immer ich gefragt werde, über was ich schreibe oder womit ich mich beschäftige und ich antworte: "Programmieren", stosse ich auf die Aussage: "Das werde ich nie lernen." Woher kommt diese Annahme? Auf der TEDxVancouver im November 2011 beschreibt Jer Thorp eine Situation, die gut unseren aktuellen Zustand darstellt:  
 Wenn man vor 30 Jahren einem Programmierer gesagt hätte: "In 30 Jahren haben alle einen Computer, aber keiner wird wissen wie man programmiert", hätte dieser gesagt: "Das ist nicht möglich". <a data-toggle="modal" href="#myModal1" ><i class="icon-asterisk"></i></a> Computer haben sich von den Rechenmaschinen der Spezialisten zu einem alltäglichen Ding entwickelt, das wir nutzen und akzeptieren, dem wir aber nicht unter die Haube gucken möchten. 
 <div class="modal fade" id="myModal1">
     <script type="text/javascript">$(this).modal('hide');</script>
@@ -15,7 +16,7 @@ Wenn man vor 30 Jahren einem Programmierer gesagt hätte: "In 30 Jahren haben al
     <h3>Anmerkung</h3>
   </div>
   <div class="modal-body">
-    <p> Jeff Thorp <a href="http://blog.blprnt.com/">alias (@blprnt)</a> ist ein kanadischer Medienkünstler. Er ist derzeit Data Artist in Residence bei der New York Times und ist Lehrbeauftragtern an der Universität von New York im ITP (Interactive Telecommunications Program).</p>
+    <p> Jer Thorp <a href="http://blog.blprnt.com/">alias (@blprnt)</a> ist ein kanadischer Medienkünstler. Er ist derzeit Data Artist in Residence bei der New York Times und ist Lehrbeauftragtern an der Universität von New York im ITP (Interactive Telecommunications Program).</p>
   </div>
 </div>
 

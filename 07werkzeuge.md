@@ -17,7 +17,7 @@ Viele Motion-Designer kommen irgendwann einmal an den Punkt, an dem sie eine Wel
 
 [![osttimor papua neu ginea](images/ostimorpaua_01_thumb.jpg)](images/ostimorpaua_01.jpg)  
 
-Selbst wenn eine vernünftige Vektor-Form einer Karte existiert und griffbereit isnt wie können die beiden Länder darin gefunden werden? Was ist wenn eine Grenzänderung stattfindet? Und und und. Um diesen Problemen zu entgehen, kann AEMap.jsx eine Weltkarte in Rektangularprojektion erzeugen. Dabei entsteht eine After Effects Komposition in einer gewählten Skalierung (immer 2:1) in der 178 Prä-Kompositionen enthalten sind, die 286 einzelne Polygon-Formen beinhalten.  
+Selbst wenn eine vernünftige Vektor-Form einer Karte existiert und griffbereit ist wie können die beiden Länder darin gefunden werden? Was ist wenn eine Grenzänderung stattfindet? Und und und. Um diesen Problemen zu entgehen, kann AEMap.jsx eine Weltkarte in Rektangularprojektion erzeugen. Dabei entsteht eine After Effects Komposition in einer gewählten Skalierung (immer 2:1) in der 178 Prä-Kompositionen enthalten sind, die 286 einzelne Polygon-Formen beinhalten.  
 
 [![AEMap Full Composition](images/aemapfullcomp_thumb.jpg)](images/aemapfullcomp.jpg)  
 
@@ -65,7 +65,7 @@ Diese Pipeline kann mit unterschiedlichen Templates für verschiedenste Formate 
   jekyll --server
   git add --all
   git commit -m "This is the message describing the commit"
-  git push origin master
+  git push origin gh-pages
   {% endhighlight %}
 
 Damit sind die Daten im Netz verfügbar und können eingesehen werden. Hier könnte ein online Korrektursystem mit differenzierten Nutzerrechten eingebunden werden und und und…</p>
