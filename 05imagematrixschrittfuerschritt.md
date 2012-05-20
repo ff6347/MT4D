@@ -163,11 +163,10 @@ oder
 	{% endhighlight %}
 
 Danach setzen wir die Höhe der Seite der Breite gleich.
-Für den Fall, dass b (oder `Math.sqrt(allImages.length)`) eine Fließkommazahl ist und wir eine nicht quadratische Matrix erzeugen, also alle Bilder platziert werden sollen, müssen wir die Höhe der Seite um eine Zeile für Bilder erweitern. Deshalb wird in dem `if(statement)` verglichen, ob die gerundete Quadratwurzel kleiner als die Quadratwurzel ist.  
+Für den Fall, dass b (oder `Math.sqrt(allImages.length)`) eine Fließkommazahl ist und wir eine nicht quadratische Matrix erzeugen, also alle Bilder platziert werden sollen, müssen wir die Höhe der Seite um eine Zeile für Bilder erweitern. Deshalb wird in dem `if(statement)` verglichen, ob die gerundete Quadratwurzel nicht der Quadratwurzel entspricht.  
 
-#ACHTUNG ACHTUNG TESTEN  kleiner als!!!!!  
 	{% highlight js %}
-	(Math.round(Math.sqrt(allImages.length)) < Math.sqrt(allImages.length)
+	(Math.round(Math.sqrt(allImages.length)) != Math.sqrt(allImages.length)
 	{% endhighlight %}
 
 oder  

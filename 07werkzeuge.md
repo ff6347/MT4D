@@ -50,8 +50,10 @@ Der obere Text wird nach dem Übersetzen, durch mein [CSS (Cascading Style Sheet
 **Fett** oder __Fett__  
 *Italic* oder _Italic_  
 
-Mit iA Writer habe ich einen weissen Bildschirm und bin frei von jedweder Ablenkung. Mit diesem Set (Markdown + iA Writer) bin ich voll auf das Schreiben konzentriert und lasse mich nicht von Layoutaufgaben stören. Um diese Texte in ein lesbare und mit CSS gestaltbare Form zu bringen, benutze ich [Jekyll](http://jekyllrb.com/). Jekyll ist ein in Ruby geschriebener Markup-Übersetzer, der statische .html Dokumente exportiert. Mit einem in Ruby geschriebenem Jekyll Plugin **könnte**, neben dem .html, auch eine für InDesign verständliche Datei erzeugt werden ein: .idml (InDesign Markup Language). Ebenfalls könnte ein .epub (Electronic Publication) oder ein [RSS-Feed (Rich Site Summary)](http://www.whatisrss.com/) erzeugt werden. Alle drei sind offene Standards und basieren auf der [.xml( EXtensible Markup Language)](http://www.w3schools.com/xml/xml_whatis.asp) Formatdefinition.
-Diese Pipeline kann mit unterschiedlichen Templates für verschiedenste Formate gesteuert werden. Auch hier gilt, die erzeugten Ergebnisse der Automation sind nicht das Endergebnis, sondern müssen noch weiterverabeitet werden. Es würde jedoch die Datenübertragung erleichtern und mit einer Anweisung in der Kommandozeile `jekyll --server` Rohdaten für verschiedenste Medien erzeugen. <a data-toggle="modal" href="#myModal2" ><i class="icon-asterisk"></i></a>  Diese müssten dann widerum einen Gestaltungsprozess durchlaufen. Leider ist dies nur eine Idee. Um es umzusetzen, müsste ich Ruby, das idml Schema, das epub Schema, mehr über xml, dtd, xslt, xPath, mehr über html und css und wie ich Plugins für Jekyll schreibe, lernen. Bis zum Ende dieser Arbeit ist das nicht zu bewerkstelligen. Aber toll wäre es.  
+Mit iA Writer habe ich einen weissen Bildschirm und bin frei von jedweder Ablenkung. Mit diesem Set (Markdown + iA Writer) bin ich voll auf das Schreiben konzentriert und lasse mich nicht von Layoutaufgaben stören. Um diese Texte in ein lesbare und mit CSS gestaltbare Form zu bringen, benutze ich [Jekyll](http://jekyllrb.com/). Jekyll ist ein in Ruby geschriebener Markup-Übersetzer, der statische .html Dokumente exportiert. Mit einem in Ruby geschriebenem Jekyll Plugin **könnte**, neben dem .html, auch eine für InDesign verständliche Datei erzeugt werden ein: .idml (InDesign Markup Language). Ebenfalls könnte ein .epub (Electronic Publication) oder ein [RSS-Feed (Rich Site Summary)](http://www.whatisrss.com/) erzeugt werden. Alle drei sind offene Standards und basieren auf der [.xml( EXtensible Markup Language)](http://www.w3schools.com/xml/xml_whatis.asp) Formatdefinition.  
+[![pipeline](images/pipeline_dream_thumb.jpg)](images/pipeline_dream.jpg)  
+Diese Pipeline kann mit unterschiedlichen Templates für verschiedenste Formate gesteuert werden. Auch hier gilt, die erzeugten Ergebnisse der Automation sind nicht das Endergebnis, sondern müssen noch weiterverabeitet werden. Es würde jedoch die Datenübertragung erleichtern und mit einer Anweisung in der Kommandozeile `jekyll --server` Rohdaten für verschiedenste Medien erzeugen. <a data-toggle="modal" href="#myModal2" ><i class="icon-asterisk"></i></a>  Diese müssten dann widerum einen Gestaltungsprozess durchlaufen.  
+Leider ist dies nur eine Idee. Um es umzusetzen, müsste ich Ruby, das idml Schema, das epub Schema, mehr über xml, dtd, xslt, xPath, mehr über html und css und wie ich Plugins für Jekyll schreibe, lernen. Bis zum Ende dieser Arbeit ist das nicht zu bewerkstelligen. Aber toll wäre es.  
 <div class="modal fade" id="myModal2">
     <script type="text/javascript">$(this).modal('hide');</script>
   <div class="modal-header">
@@ -59,10 +61,9 @@ Diese Pipeline kann mit unterschiedlichen Templates für verschiedenste Formate 
     <h3>Anmerkung</h3>
   </div>
   <div class="modal-body">
-    <p>Mit 4 Befehlen könnte dies schon auf einem Webserver bereitgestellt werden.  
+    <p>Mit 3 Befehlen könnte dies schon auf einem Webserver bereitgestellt werden.  
 
   {% highlight sh %}
-  jekyll --server
   git add --all
   git commit -m "This is the message describing the commit"
   git push origin gh-pages
@@ -70,10 +71,9 @@ Diese Pipeline kann mit unterschiedlichen Templates für verschiedenste Formate 
 
 Damit sind die Daten im Netz verfügbar und können eingesehen werden. Hier könnte ein online Korrektursystem mit differenzierten Nutzerrechten eingebunden werden und und und…</p>
   </div>
-</div>
+</div>  
 
-[![pipeline](/images/pipeline_thumb.jpg)](/images/pipeline.jpg)  
-
+[![pipeline](images/pipeline_thumb.jpg)](images/pipeline.jpg)  
 Der aktuelle Prozess orientiert sich an dieser Idee, ist jedoch nicht komplett automatisert. Die Markdown Dateien werden mit einem Skript zu einem InDesign Buch zusammengeführt und die Auszeichnungen werden in Absatzformate übersetzt. Alle referenzierten Bilder werden auf den entsprechenden Seiten platziert. Ab diesem Punkt wird der "Feinschliff" des Layouts manuell durchgeführt. Das Übersetzen der Auszeichnung wird durch "Suchen und Ersetzen"-Routinen bewerkstelligt. Dies ist eine rohe Art der Transformation. Es wäre sinnvoller, die Übersetzung nicht mit einem Workaround zu erledigen. Wie bereits oben erwähnt, fehlt jedoch dafür die Zeit.  
 
 <script src="https://gist.github.com/2659939.js?file=createBook.jsx"></script><br>
@@ -103,4 +103,4 @@ Plexus ist ein After Effects Partikelsystem, dass Punkte erzeugt die mit Linien 
 <a name="93"></a>
 ###4.4 Illustrator Voronoi
 ![obj from ai](images/voronoifromai.jpg)
-Um Flächen und ihre optimale Ausnutzung berechnen zu können, kann sich des Voronoi Algorithmuses bedient werden. Dieser wurde bereits in einigen Sprachen implementiert. Ebenfalls in JavaScript. Das schöne an der von mir verwendeten [Implememtation von gorhil](https://github.com/gorhill/Javascript-Voronoi) ist, dass sie sich nur die Berechnung übernimmt. Die Darstellung ist dabei offen. Dies ermöglicht es mit [Illustrator](http://fabiantheblind.github.com/Illustrator-Javascript-Voronoi/) die errechneten Daten zu visualisieren.
+Um Flächen und ihre optimale Ausnutzung berechnen zu können, kann sich des Voronoi Algorithmuses bedient werden. Dieser wurde bereits in einigen Sprachen implementiert. Ebenfalls in JavaScript. Das schöne an der von mir verwendeten [Implememtation von gorhil](https://github.com/gorhill/Javascript-Voronoi) ist, dass sie nur die Berechnung übernimmt. Die Darstellung ist dabei offen. Dies ermöglicht es mit [Illustrator](http://fabiantheblind.github.com/Illustrator-Javascript-Voronoi/) die errechneten Daten zu visualisieren.
