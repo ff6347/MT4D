@@ -7,7 +7,7 @@ bodyid: rflct
 <a name="11"></a>
 ##5 Die Angst
 ![dont panik](images/dontpanik.jpg)
-Wann immer ich gefragt werde, über was ich schreibe oder womit ich mich beschäftige und ich antworte: "Programmieren", stosse ich auf die Aussage: "Das werde ich nie lernen." Woher kommt diese Annahme? Auf der TEDxVancouver im November 2011 beschreibt Jer Thorp eine Situation, die gut unseren aktuellen Zustand darstellt:  
+Wann immer ich gefragt werde, über was ich schreibe oder womit ich mich beschäftige und ich antworte: "Grafik und Programmieren", stosse ich auf die Aussage: "Das werde ich nie lernen." Woher kommt diese Annahme? Auf der [TEDxVancouver im November 2011 beschreibt Jer Thorp](http://www.ted.com/talks/lang/en/jer_thorp_make_data_more_human.html) eine Situation, die gut unseren aktuellen Zustand darstellt:  
 Wenn man vor 30 Jahren einem Programmierer gesagt hätte: "In 30 Jahren haben alle einen Computer, aber keiner wird wissen wie man programmiert", hätte dieser gesagt: "Das ist nicht möglich". <a data-toggle="modal" href="#myModal1" ><i class="icon-asterisk"></i></a> Computer haben sich von den Rechenmaschinen der Spezialisten zu einem alltäglichen Ding entwickelt, das wir nutzen und akzeptieren, dem wir aber nicht unter die Haube gucken möchten. 
 <div class="modal fade" id="myModal1">
     <script type="text/javascript">$(this).modal('hide');</script>

@@ -4,7 +4,7 @@ title: Referenzen
 bodyid: quellen
 ---
 <a name="34">
-##</a>8 Refenrenzen
+##</a>8 Referenzen
 Dies ist eine Liste der Referenzen die bei Skriptentwicklung genutzt werden können um Befehle nachzuschlagen. Sie müssen sich jedoch etwas einlesen. Zum Beispiel ist im InDesign SDK (Software Development Kit) nicht sofort ersichtlich, dass eine riesige Sammlung an Beispiel Skripten darin enthalten ist. Ebenfalls werden sie sich wundern, dass für After Effects seit Version CS3 kein neuer "Scripting Guide" geschrieben wurde. Leider ist dem so.   
 
 ####IDJS Help von jongware
