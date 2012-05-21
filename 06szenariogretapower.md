@@ -37,7 +37,7 @@ Wenn bei der Entwicklung eines anderen Skripts immer wieder neue Dokumente erzeu
 {% endcomment %}
 
 
-Um diese 23 Dokumente wieder zu schließen, benutzen sie "greatPower.jsx".  
+Um diese 23 Dokumente wieder zu schließen, benutzen sie "greatPower-I.jsx".  
 
 [![Algo Great Power](images/algogreatpower_thumb.jpg)](images/algogreatpower.jpg)  
 
