@@ -293,7 +293,7 @@ Sie bekommt eine Zeichen als Parameter. Dieses speichert sie temporär in einer 
 
 Das Programm wird sie warnen, dass die Variable `nothing` nicht existiert.  
 Solche Lösungen setzen nicht nur einen kreativen Umgang mit [Code](10terminologie.html#14) voraus, sondern auch ein tiefes Wissen über die Funktionsweise und Möglichkeiten innerhalb von, in diesem Falle, InDesign.  
-Die obe genannten Hindernisse schrecken ab. Es klingt alles sehr komplex. Es ist jedoch alles sehr allgemein gehalten und manche Fragen stellen sich auch erst gar nicht. Bei Aufgaben die ein "Normal-Nutzer" niemals manuell machen würde, muss sogar ein Skript geschrieben werden, wenn sie erledigt werden sollen.  
+Die oben genannten Hindernisse schrecken ab. Es klingt alles sehr komplex. Es ist jedoch alles sehr allgemein gehalten und manche Fragen stellen sich auch erst gar nicht. Bei Aufgaben die ein "Normal-Nutzer" niemals manuell machen würde, muss sogar ein Skript geschrieben werden, wenn sie erledigt werden sollen.  
 Auch wenn der Prozess des Skript-Schreibens eine kreative Arbeit ist, ist das Ziel des Skriptes nicht der kreative Output, sondern die Optimierung der eigenen Arbeitsabläufe. Das Skript oder Programm kann niemals die Idee liefern. Es unterstützt den Prozess indem es sich wiederholende Aufgaben erledigt, die entweder niemals gemacht worden wären oder aber vom eigentlichen, kreativem Prozess ablenken.   
 
 {% comment %}

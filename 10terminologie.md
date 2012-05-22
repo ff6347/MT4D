@@ -142,7 +142,16 @@ Probieren sie weiter Skripte und Kalkulationen aus. Zum Beispiel
 	alert(h + " " + w +"! Your result is: "+ calc ); 
 	{% endhighlight %}  
 
-Gehen sie auf die Seite [codecademy.com](http://www.codecademy.com/#!/exercises/0)  
+oder:
+
+{% highlight js %}
+var doc = app.documents.add();
+doc.pages.item(0).textFrames.add({
+geometricBounds:[13,13,23,50],
+contents:“Hello InDesign“});
+{% endhighlight %}
+
+Gehen sie auf die Seite [codecademy.com](http://www.codecademy.com/#!/exercises/0) um mehr zu lernen.
 
 <a name="22"></a>
 ###7.09 Was ist Syntax-Highlighting? 
