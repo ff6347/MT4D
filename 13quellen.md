@@ -30,7 +30,7 @@ bodyid: quellen
 
 #####Artikel  
 
-- Ousterhout, John, "Scripting: Higher-Level Programming for the 21st Century," IEEE Computer, Vol. 31, No. 3, März 1998, pp. 23-30  
+- <p>Ousterhout, John, "Scripting: Higher-Level Programming for the 21st Century," IEEE Computer, Vol. 31, No. 3, März 1998, pp. 23-30</p>  
 
 #####Internet  
 - Kahrel, Peter, Script for "Entering characters with diacritics and other special sorts", http://www.kahrel.plus.com/indesign/compose_cs3.jsx (Oktober 2011)  
