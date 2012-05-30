@@ -74,29 +74,9 @@ Und wieder andere, wie die esoterische Programmiersprache "Brainfuck", die mit i
 	{% endhighlight %}
 
 voll funktionsfähig, aber nicht für das Schreiben von Programmen gedacht ist, sondern eher ein Gedankenmodell darstellt.
-Das Brainfuck Hello World ([aus wiki](http://en.wikipedia.org/wiki/Brainfuck)):  
+Das Brainfuck [Hello World](http://tilmanb.junetz.de/brainfuck.php4):  
 	{% highlight bf %}
-	+++++ +++++             initialize counter (cell #0) to 10
-	[                       use loop to set the next four cells to 70/100/30/10
-	    > +++++ ++              add  7 to cell #1
-	    > +++++ +++++           add 10 to cell #2 
-	    > +++                   add  3 to cell #3
-	    > +                     add  1 to cell #4
-	    <<<< -                  decrement counter (cell #0)
-	]
-	> ++ .                  print 'H'
-	> + .                   print 'e'
-	+++++ ++ .              print 'l'
-	.                       print 'l'
-	+++ .                   print 'o'
-	> ++ .                  print ' '
-	<< +++++ +++++ +++++ .  print 'W'
-	> .                     print 'o'
-	+++ .                   print 'r'
-	----- - .               print 'l'
-	----- --- .             print 'd'
-	> + .                   print '!'
-	> .                     print '\n' 
+>+++++++++[<++++++++>-]<.>+++++++[<++++>-]<+.+++++++..+++.[-]>++++++++[<++++>-]<.#>+++++++++++[<+++++>-]<.>++++++++[ <+++>-]<.+++.------.--------.[-]>++++++++[<++++>-]<+.[-]+ +++++++++.
 	{% endhighlight %} 
 
 Andere Sprachen, wie C++, Processing oder JavaScript, sind zwischen diesen Extrema angesiedelt und vereinen, in einer für das geübte Auge lesbaren und dennoch kompakten Art, solche Befehlsaufrufe.
@@ -142,16 +122,19 @@ Probieren sie weiter Skripte und Kalkulationen aus. Zum Beispiel
 	alert(h + " " + w +"! Your result is: "+ calc ); 
 	{% endhighlight %}  
 
-oder:
-
+Oder speziell für InDesign:  
+<script src="https://gist.github.com/2787648.js?file=id_js_helloworld.jsx"></script>
+{% comment %}
 {% highlight js %}
 var doc = app.documents.add();
 doc.pages.item(0).textFrames.add({
 geometricBounds:[13,13,23,50],
 contents:“Hello InDesign“});
 {% endhighlight %}
+{% endcomment %}
 
-Gehen sie auf die Seite [codecademy.com](http://www.codecademy.com/#!/exercises/0) um mehr zu lernen.
+
+Oder gehen sie auf die Seite [codecademy.com](http://www.codecademy.com/#!/exercises/0) um mehr zu lernen.
 
 <a name="22"></a>
 ###7.09 Was ist Syntax-Highlighting? 

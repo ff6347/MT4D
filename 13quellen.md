@@ -24,6 +24,8 @@ bodyid: quellen
 
 - Ritchie, Dennis & Kernighan, Brain, Deutsche Übersetzung: Dr. Schreiner, A.T. & DR. Janich, Ernst "Programmieren in C", München 1983, Carl Hanser Verlag  
 
+- Stroustrup, Bjarne, "The C++ Programming Language 3rd Edition", New Jersey 1997, Addison-Wesley Publishing Company  
+
 - Ullenboom, Christian, "Kava ist auch eine Insel", Bonn 2009, Galileo Press
 
 - Wenz, Christian, "JavaScript Das umfassende Handbuch", Bonn 2009, Galileo Press  
@@ -39,4 +41,6 @@ bodyid: quellen
 
 - Sir, Clarke, Arthur Charles, "Profiles of the Future: An Inquiry into the Limits of the Possible" http://physics.about.com/od/physics101thebasics/f/ClarkesLaws.htm (1962, Rev. 1973)
 
-- Beck, Ian, "Learning to code" http://beckism.com/2012/04/learning-to-code/ (April 2012)
+- Beck, Ian, "Learning to code" http://beckism.com/2012/04/learning-to-code/ (April 2012)  
+
+- Tilman, "Die Programmiersprache Brainfuck" http://tilmanb.junetz.de/brainfuck.php4 (April 2002)
