@@ -11,7 +11,7 @@ Ein Skript sollte immer in geschwungenen Klammern eingefasst sein. Dies ist nich
 	{}
 
 Als nächstes definieren wir eine Funktion, die einmalig aufgerufen wird. Hierbei ist es irrelevant, ob der Aufruf vor oder nach der Funktionsdefinition stattfindet. Aus Gründen der Übersichtlichkeit steht hier der Aufruf vor der Definition. Diese Funktion erhält keine Parameter. Später wird auch eine Funktion mit Parametern eingesetzt. Der Zweck, den gesamten Code in einer Funktion zu kapseln, ist folgender: Wenn es eine hierarchisch höhere Ebene gibt, unsere Klammern `{}`, kann eine Funktion mit dem Befehl `return;` beendet werden. Dies ist nützlich, um bei Fehlern oder falscher Benutzereingabe die Ausführung zu stoppen. Mit dem Befehl `return` kann nicht nur eine Funktion beendet werden, sondern auch ein Wert zurückgeliefert werden.
-Wenn wir am Ende einer Funktion `return 1;` schreiben, wäre das Ergebnis 1. `var myValue = main();` Wenn die Funktion `main` nun einen Wert zurückgeben würde, wäre `myValue` 1. In unserem Fall benötigt die `main()` keinen Rückgabewert.
+Wenn wir am Ende einer Funktion `return 1;` schreiben, wäre das Ergebnis 1. `var myValue = main();` Wenn die Funktion `main` nun diesen Wert zurückgeben würde, wäre `myValue` 1. In unserem Fall benötigt die `main()` keinen Rückgabewert.
 
 {% highlight js %}
 {
@@ -28,7 +28,7 @@ Es folgt die Deklaration der ersten Variable. Sie beinhaltet die Breite (und Hö
 var w = 25;
 {% endhighlight %}
 
-Wie zu sehen ist, entspricht die Variable `w` (steht für width) nun 25. `w` wird im Verlauf des Skriptes mehrmals verwendet. Der Vorteil daran, Variablen zu verwenden, anstatt immer 25 zu schreiben ist, dass wenn wir die Breite verändern wollen, wir dies nur ein einziges mal an `w` erledigen müssen und alle weiteren Verwendungen von `w` werden angepasst.  
+Wie zu sehen ist, entspricht die Variable `w` (steht für width) nun 25. `w` wird im Verlauf des Skriptes mehrmals verwendet. Der Vorteil daran, Variablen zu verwenden, anstatt immer 25 zu schreiben ist, dass wenn wir die Breite verändern wollen, wir dies nur ein einziges mal an `w` erledigen müssen. Alle weiteren Verwendungen von `w` werden angepasst.  
 Als nächstes folgt eine Subfunktion mit einem Parameter und einem Rückgabewert. In JavaScript werden alle Variablen mit `var` deklariert. Die Unterscheidung des Typus findet erst bei der Verwendung statt. Deshalb können wir schreiben:  
 
 {% highlight js %}
@@ -63,7 +63,7 @@ Als nächstes begeben wir uns in die Funktion `loadFiles` und betrachten die Dat
 Bisher waren alle Befehle JavaScript Befehle. Der Befehl `Folder.selectDialog ("Choose the Folder")` jedoch ist [ExtendScript](10terminologie.html#31). Das Objekt `Folder` hat eine eigene Funktion `selectDialog(parameter)`. Wir müssen diese Funktion nicht betrachten. Wir müssen nur wissen, dass sie ein Interface öffnet und dem Benutzer die Möglichkeit gibt, einen beliebigen Ordner auszuwählen. Der Parameter ist der Text, der auf dem Auswahldialog oben zu sehen ist. Der gewählte Ordner wird dann in der neuen Variable `theFolder` für eine spätere Referenzierung gespeichert. Dann folgt das Konstrukt der konditionalen Abfrage.
 
 	{% highlight js %}
-	if( Statement ){ Do Something }
+	if( Statement ){ doSomething }
 	{% endhighlight %}
 
 Sie besagt, dass, wenn die Aussage in der runden Klammer wahr ist, die geschwungene Klammer ausgeführt wird. In unserem Fall wird durch das `!` die Aussage negiert. Ausgeschrieben könnte dort stehen `if(theFolder == false)` oder `if(theFolder != true)`. Die Schreibweise `if(!theFolder)` ist lediglich verkürzt. Wenn wir `if(theFolder)` schreiben, würde das `if(theFolder==true)` entsprechen. Zu beachten ist nicht `=` zu schreiben. Dies bedeutet "wird zu", `==` bedeutet "entspricht". `=` ist eine Zuweisung von Werten, `==` ist ein Vergleich. Der Vollständigkeit halber soll noch erwähnt werden, dass es noch eine weitere Form gibt. Der typsichere Vergleich mit `===`, den wir jedoch nicht weiter betrachten wollen. Gesprochen wäre die obere Aussage: "Wenn der Ordner nicht existiert - beende die Funktion".  
@@ -91,7 +91,7 @@ Wie wir oben sehen, benutzen wir nochmals die konditionale Entscheidung `if()`, 
 	Wenn die Aussage zutrifft mach dies ansonsten mach dass
 	{% endhighlight %}
 
-Innerhalb unsere runden Aussageklammer haben wir mehrere Bedinungen verknüpft. Wir haben also zwei Aussagen. Mit dem `||` werden mehrere Aussagen geprüft. In unserem Fall ist das einmal der Check, ob wir mindestens ein Bild haben `(allImages.length < 1)`. `length` ist eine Eigenschaft jedes Arrays und gibt, wenn wir ein Bild haben 1 zurück. Wir fragen, ob die Länge von unserer Liste kleiner als 1 ist. Diese Aussage verbinden wir mit `||`, dies bedeutet "oder". Wenn Aussage 1 oder Aussage 2 zutrifft, führe den ersten Block aus. Wenn beide Aussagen wahr sein müssen, schreiben wir dafür`&&`. Dies würde nur den ersten Block ausführen, wenn beide Aussagen zutreffen. In unserer zweiten Aussage fragen wir nach `null`, dies entspricht "nichts". Wenn wir einen Fehler beim Laden der Bilder hatten oder `allImages` nicht existiert, dann brich die Ausführung ab. Im ersten Block wird die Funktion beendet. Wenn keine der beiden Aussagen zutrifft, wird mit `return allImages` eine Liste mit Bildreferenzen an die Funktion `main` zurückgegeben.  
+Innerhalb unsere runden Aussageklammer haben wir mehrere Bedinungen verknüpft. Wir haben also zwei Aussagen. Mit dem `||` werden mehrere Aussagen geprüft. In unserem Fall ist das einmal der Check, ob wir mindestens ein Bild haben `(allImages.length < 1)`. `length` ist eine Eigenschaft jedes Arrays und gibt, wenn wir ein Bild haben 1 zurück. Wir fragen, ob die Länge von unserer Liste kleiner als 1 ist. Diese Aussage verbinden wir mit `||`, dies bedeutet "oder". Wenn Aussage 1 oder Aussage 2 zutrifft, führe den ersten Block aus. Wenn beide Aussagen wahr sein müssen, schreiben wir dafür `&&`. Dies würde nur den ersten Block ausführen, wenn beide Aussagen zutreffen. In unserer zweiten Aussage fragen wir nach `null`, dies entspricht "nichts". Wenn wir einen Fehler beim Laden der Bilder hatten oder `allImages` nicht existiert, dann brich die Ausführung ab. Im ersten Block wird die Funktion beendet. Wenn eine der beiden Aussagen zutrifft, wird mit `return allImages` eine Liste mit Bildreferenzen an die Funktion `main` zurückgegeben.  
   
 Wir befinden uns wieder in der Funktion `main` und werden eine weitere Abfrage starten.
 
@@ -166,8 +166,7 @@ oder
 	var pw = Math.round(Math.sqrt(allImages.length)) * w + (w*2);  
 	{% endhighlight %}
 
-Danach setzen wir die Höhe der Seite der Breite gleich.
-Für den Fall, dass `b (oder `Math.sqrt(allImages.length)`) eine Fließkommazahl ist und wir eine nicht quadratische Matrix erzeugen, also alle Bilder platziert werden sollen, müssen wir die Höhe der Seite um eine Zeile für Bilder erweitern. Deshalb wird in dem `if(statement)` verglichen, ob die gerundete Quadratwurzel nicht der Quadratwurzel entspricht.  
+Danach setzen wir mit `var ph = pw;` die Höhe der Seite der Breite gleich. Für den Fall, dass `b` (oder `Math.sqrt(allImages.length)`) eine Fließkommazahl ist und wir eine nicht quadratische Matrix erzeugen, also alle Bilder platziert werden sollen, müssen wir die Höhe der Seite um eine Zeile für Bilder erweitern. Deshalb wird in dem `if(statement)` verglichen, ob die gerundete Quadratwurzel nicht der Quadratwurzel entspricht.  
 
 	{% highlight js %}
 	(Math.round(Math.sqrt(allImages.length)) != Math.sqrt(allImages.length)
@@ -184,7 +183,7 @@ oder
 Wenn die Wurzel aus der Menge an Bildern nicht der gerundeten Wurzel aus der Menge an Bildern entspricht, ist die Seitenhöhe die Seitenbreite plus eine Bildbreite. Wenn a also 17 ist wäre die Seite 150 breit und 175 hoch.  
   
 Ich vermeide hier, um es nicht noch weiter zu verkomplizieren, jede Art von Maßeinheit. In der Standard-Einstellung in InDesign sind es Millimeter. Dies könnten wir definieren, müssen wir aber nicht, da InDesign immer eine Grundeinstellung hat.  
-Als nächstes folgen das Erzeugen des Dokuments, das Einstellen der Seite auf unsere errechneten Werte, das Überführen der ersten Seite im Dokument in eine Variable und die Definition unseres Startpunktes.  
+Als nächstes folgen das Erzeugen des Dokuments, das Einstellen der Seite auf unsere errechneten Werte, das Überführen der ersten Seite im Dokument in eine Variable und die Definition unseres Startpunktes `(x,y)`.  
 
 	{% highlight js %}
 	var doc = app.documents.add();
@@ -281,12 +280,8 @@ dann
 	y = 25
 	{% endhighlight %}
 
-Das passiert solange bis x 125 ist.  
-Dort setzt die Kondition `if(x >= pw - (w))` an.  
-x wird in der Kondition zurück auf 25 gesetzt und y wird auf 50 gesetzt.
-Dann ist i = 4.
-Wir fangen bei 0 an zu zählen im Array also ist `allImages[4]` das fünfte Bild.
-Und so weiter und so weiter.  
-Wir sind am Ende. Probieren sie den Code mit unterschiedliche vielen .jpg Dateien aus. Verändern sie ihn, bis er nicht mehr funktioniert und lesen sie die Fehlermeldungen. Dies ist ein weiterverbreitetes Problem. Computer und Programme würden viel an ihrer Mystik verlieren, wenn einerseits die Nutzer die Meldungen lesen würden, anstatt nur auf "ok" zu drücken und andererseits die Meldungen verständlich geschrieben wären.  
+Das passiert solange bis x 125 ist. Dort setzt die Kondition `if(x >= pw - (w))` an. `x` wird in der Kondition zurück auf 25 gesetzt und y wird auf 50 gesetzt. Dann ist `i 4`.
+Wir fangen bei 0 an zu zählen im Array also ist `allImages[4]` das fünfte Bild. Und so weiter und so weiter.  
+Wir sind am Ende. Probieren sie den Code mit unterschiedliche vielen `.jpg` Dateien aus. Verändern sie ihn, bis er nicht mehr funktioniert und lesen sie die Fehlermeldungen. Dies ist ein weiterverbreitetes Problem. Computer und Programme würden viel an ihrer Mystik verlieren, wenn einerseits die Nutzer die Meldungen lesen würden, anstatt nur auf "ok" zu drücken und andererseits die Meldungen verständlich geschrieben wären.  
 
 [![error](images/error_thumb.jpg)](images/error.jpg)  

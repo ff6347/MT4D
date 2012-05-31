@@ -15,30 +15,35 @@ Als Code bezeichnen wir in der Regel Informationen, die verschlüsselt (encoding
   
 <a name="15"></a>
 ###7.02 Was ist ein Programm? 
-Das Bild, das viele im Kopf haben, wenn sie überlegen wie Programme enstehen, ist stark durch Film beeinflusst. Wir sehen junge, meist übergewichtig und verpickelte Menschen vor uns, die in abgedunkelten Räumen zwischen Monitoren, Kabeln und Pizzapackungen auf ewige grün leuchtende Zahlenkolonnen blicken, die für uns keinerlei Sinn ergeben. Diese oder ähnliche Bilder sind inspiriert aus einer Zeit, in der Computer nur einfarbige Pixel hatten und grafische Benutzeroberflächen, wie Windows, noch aus der Kommandozeile gestartet wurde. Als Hommage an diese Vorstellung hat "Duiker101" das Programm [HackerTyper](http://hackertyper.net/) entworfen, welches mit bereits vorgegebenem Text, allein durch Tastendruck, den Bildschirm mit kompliziertem Quelltext füllt. Dabei ist es irrelevant welche Tasten der Benutzer drückt.  
-Verwerfen sie diese Vorstellung. Es ist nicht so, dass es dies nicht gibt, dennoch entspricht es nicht der Regel. Ein Programm ist laut [Duden](http://www.duden.de/rechtschreibung/Programm): "die nach einem Plan genau festgelegten Einzelheiten eines Vorhabens". Unter dieser Betrachtungsweise ist jede Bauanleitung für Möbelstücke, eine Beschreibung des Weges von hier zum Bahnhof oder das Rezept für Sahnetörtchen ein Programm. Bloß, dass in letzterem Fall nicht ein Computer die Anweisungen ausführt, sondern ein Mensch. Die Sprache, in der dieses Programm geschrieben ist, ist Deutsch. Der große Unterschied zu einem "Computersprach-Programm" liegt hier in der Möglichkeit der Interpretation. Die ausführende "Maschine", in diesem Fall der Mensch, kann solche Angaben, wie "eine Priese Salz" oder "eine Messerspitze Meerrettich", verarbeiten. Ein Computer ist hierzu noch nicht fähig. Er bräuchte eine eindeutigere Angabe, wie zum Beispiel 50 Gramm. Das Programm muss an dieser Stelle noch von dem Begriff des [Algorithmus](#16) abgetrennt werden.  
+Das Bild, das viele im Kopf haben, wenn sie überlegen wie Programme enstehen, ist stark durch Film beeinflusst. Wir sehen junge, meist übergewichtig und verpickelte Menschen vor uns, die in abgedunkelten Räumen zwischen Monitoren, Kabeln und Pizzapackungen auf ewige grün leuchtende Zahlenkolonnen blicken, die für uns keinerlei Sinn ergeben. Diese oder ähnliche Bilder sind inspiriert aus einer Zeit, in der Computer nur einfarbige Pixel hatten und grafische Benutzeroberflächen, wie Windows, noch aus der Kommandozeile gestartet wurde. Als Hommage an diese Vorstellung hat "Duiker101" das Programm [HackerTyper](http://hackertyper.net/) entworfen, welches mit bereits vorgegebenem Text, allein durch Tastendruck, den Bildschirm mit kompliziertem Quelltext füllt. Dabei ist es irrelevant welche Tasten der Benutzer drückt. Verwerfen sie diese Vorstellung. Es ist nicht so, dass es dies nicht gibt, dennoch entspricht es nicht der Regel.  
+Ein Programm ist laut [Duden](http://www.duden.de/rechtschreibung/Programm): "die nach einem Plan genau festgelegten Einzelheiten eines Vorhabens". Unter dieser Betrachtungsweise ist jede Bauanleitung für Möbelstücke, eine Beschreibung des Weges von hier zum Bahnhof oder das Rezept für Sahnetörtchen ein Programm. Bloß, dass in letzterem Fall nicht ein Computer die Anweisungen ausführt, sondern ein Mensch. Die Sprache, in der dieses Programm geschrieben ist, ist Deutsch. Der große Unterschied zu einem "Computersprach-Programm" liegt hier in der Möglichkeit der Interpretation. Die ausführende "Maschine", in diesem Fall der Mensch, kann solche Angaben, wie "eine Priese Salz" oder "eine Messerspitze Meerrettich", verarbeiten. Ein Computer ist hierzu noch nicht fähig. Er bräuchte eine eindeutigere Angabe, wie zum Beispiel 50 Gramm. Das Programm muss an dieser Stelle noch von dem Begriff des [Algorithmus](#16) abgetrennt werden.  
 
 <a name="16"></a>
 ###7.03 Was ist ein Algorithmus? 
 Auch wenn sich die beiden Begriffe Algorithmus und Programm in ihrer Bedeutung überschneiden, sollten sie auf folgende Weise unterschieden werden. Der Algorithmus für Milch holen, wäre in Pseudocode:  
 
-	wenn (Aussage (kein Milch ist im Kühlschrank) wahr ist): hole neue Milch! wenn nicht: tue nichts!  
+{% highlight text %}
+  	wenn (Aussage (kein Milch ist im Kühlschrank) wahr ist): hole neue Milch! wenn nicht: tue nichts!
+  {% endhighlight %}  
 
 Das Programm für Milch holen würde voraussetzen, dass alle Schritte und Notwendigkeiten bis zum Übergang der Milch in das Eigentum des Holenden bekannt und definiert sind. Also so etwas wie:  
 
+{% highlight text %}
 	Person fabian ist gleich neu Person;
 	Kühlschrank Schrank ist gleich neuer Kühlschrank;
 	Kühlschrank Menge Milch ist gleich 1l;
 	jeden morgen fabian trinke Milch aus Kühlschrank;
 	Menge Milch reduziere um 0.2l;
 	jeden morgen fabian beobachte Menge Milch;
-	wenn Milch kleiner gleich 0.2l ist fabian hole Milch im Supermarkt;
+	wenn Milch kleiner gleich 0.2l ist
+	fabian hole Milch im Supermarkt;
+{% endhighlight %}
 
 Und so weiter und so ähnlich. Diese Funktionsanweisungen müssten noch detaillierter ausgearbeitet werden. Hierbei sei zu beachten, dass solche Objekte wie Kühlschrank und Person bereits implementiert, also bekannt, sein müssen. Das Programm, im Vergleich zum Algorithmus, muss alle eingesetzten Mittel kennen und/oder selber beschreiben.  
   
 <a name="17"></a>
 ###7.04 Was ist die Syntax? 
-Die Syntax ist die Form in der die Programmiersprache ausgestaltet ist. Die Syntax einer Programmiersprache besteht aus reservierten Worten, wie zum Beispiel in Java `new, while, null , true,` Operatoren wie  `+,-,*,.` und Kontrollstrukturen wie `if(){}else{}` oder "`for(int i = 0; i < x;i++)`  
+Die Syntax ist die Form in der die Programmiersprache ausgestaltet ist. Die Syntax einer Programmiersprache besteht aus reservierten Worten, wie zum Beispiel in Java `new, while, null, true,` Operatoren wie  `+,-,*,.` und Kontrollstrukturen wie `if(){}else{}` oder "`for(int i = 0; i < x;i++)`  
 Lesen sie diese "Sätze" kurz. Wie würden sie es sprechen?  
   
 Ausgesprochen wäre dies: ` For int i gleich 0, i kleiner x, i plus plus `

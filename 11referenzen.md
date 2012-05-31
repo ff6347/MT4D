@@ -17,7 +17,7 @@ Note that the Windows Help file format CHM is not usable on Macintosh OS X witho
 [http://www.jongware.com/idjshelp.html](http://www.jongware.com/idjshelp.html)
 
 ####Adobe SDK's
-Für die unterschiedlichen Adobe Applikationen gibt es verschieden Sets, die zur Entwicklung von Skripten verwendet werden können. Viele dieser Daten sind für die Plugin Entwicklung gedacht. Es sind jedoch auch viele Skripting Ressourcen enthalten.  
+Für die unterschiedlichen Adobe Applikationen gibt es verschieden Sets, für die Plugin Entwicklung gedacht sind. Es sind jedoch auch einige "Scripting" Ressourcen enthalten.  
 [AI SDK](http://www.adobe.com/devnet/illustrator/sdk.html)  
 [AE SDK](http://www.adobe.com/devnet/aftereffects.html)  
 [BR SDK](http://www.adobe.com/devnet/bridge.html)  
