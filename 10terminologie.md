@@ -15,7 +15,7 @@ Als Code bezeichnen wir in der Regel Informationen, die verschlüsselt (encoding
   
 <a name="15"></a>
 ###7.02 Was ist ein Programm? 
-Das Bild, das viele im Kopf haben, wenn sie das Wort Programm hören, ist stark durch Film beeinflusst. Wir sehen junge, meist übergewichtig und verpickelte Menschen vor uns, die in abgedunkelten Räumen zwischen Monitoren, Kabeln und Pizzapackungen auf ewige grün leuchtende Zahlenkolonnen blicken, die für uns keinerlei Sinn ergeben. Diese oder ähnliche Bilder sind inspiriert aus einer Zeit, in der Computer nur einfarbige Pixel hatten und grafische Benutzeroberflächen, wie Windows, noch aus der Kommandozeile gestartet wurde. Als Hommage an diese Vorstellung hat "Duiker101" das Programm [HackerTyper](http://hackertyper.net/) entworfen, welches mit bereits vorgegebenem Text, allein durch Tastendruck, den Bildschirm mit kompliziertem Quelltext füllt. Dabei ist es irrelevant welche Tasten der Benutzer drückt.  
+Das Bild, das viele im Kopf haben, wenn sie überlegen wie Programme enstehen, ist stark durch Film beeinflusst. Wir sehen junge, meist übergewichtig und verpickelte Menschen vor uns, die in abgedunkelten Räumen zwischen Monitoren, Kabeln und Pizzapackungen auf ewige grün leuchtende Zahlenkolonnen blicken, die für uns keinerlei Sinn ergeben. Diese oder ähnliche Bilder sind inspiriert aus einer Zeit, in der Computer nur einfarbige Pixel hatten und grafische Benutzeroberflächen, wie Windows, noch aus der Kommandozeile gestartet wurde. Als Hommage an diese Vorstellung hat "Duiker101" das Programm [HackerTyper](http://hackertyper.net/) entworfen, welches mit bereits vorgegebenem Text, allein durch Tastendruck, den Bildschirm mit kompliziertem Quelltext füllt. Dabei ist es irrelevant welche Tasten der Benutzer drückt.  
 Verwerfen sie diese Vorstellung. Es ist nicht so, dass es dies nicht gibt, dennoch entspricht es nicht der Regel. Ein Programm ist laut [Duden](http://www.duden.de/rechtschreibung/Programm): "die nach einem Plan genau festgelegten Einzelheiten eines Vorhabens". Unter dieser Betrachtungsweise ist jede Bauanleitung für Möbelstücke, eine Beschreibung des Weges von hier zum Bahnhof oder das Rezept für Sahnetörtchen ein Programm. Bloß, dass in letzterem Fall nicht ein Computer die Anweisungen ausführt, sondern ein Mensch. Die Sprache, in der dieses Programm geschrieben ist, ist Deutsch. Der große Unterschied zu einem "Computersprach-Programm" liegt hier in der Möglichkeit der Interpretation. Die ausführende "Maschine", in diesem Fall der Mensch, kann solche Angaben, wie "eine Priese Salz" oder "eine Messerspitze Meerrettich", verarbeiten. Ein Computer ist hierzu noch nicht fähig. Er bräuchte eine eindeutigere Angabe, wie zum Beispiel 50 Gramm. Das Programm muss an dieser Stelle noch von dem Begriff des [Algorithmus](#16) abgetrennt werden.  
 
 <a name="16"></a>
@@ -28,11 +28,11 @@ Das Programm für Milch holen würde voraussetzen, dass alle Schritte und Notwen
 
 	Person fabian ist gleich neu Person;
 	Kühlschrank Schrank ist gleich neuer Kühlschrank;
-	Kühlschrank Menge Milch ist gleich 1;
+	Kühlschrank Menge Milch ist gleich 1l;
 	jeden morgen fabian trinke Milch aus Kühlschrank;
 	Menge Milch reduziere um 0.2l;
 	jeden morgen fabian beobachte Menge Milch;
-	wenn Milch kleiner gleich 0.1 ist fabian hole Milch im Supermarkt;
+	wenn Milch kleiner gleich 0.2l ist fabian hole Milch im Supermarkt;
 
 Und so weiter und so ähnlich. Diese Funktionsanweisungen müssten noch detaillierter ausgearbeitet werden. Hierbei sei zu beachten, dass solche Objekte wie Kühlschrank und Person bereits implementiert, also bekannt, sein müssen. Das Programm, im Vergleich zum Algorithmus, muss alle eingesetzten Mittel kennen und/oder selber beschreiben.  
   
@@ -144,10 +144,7 @@ Syntax-Highlighting ist eine Hilfestellung für Programmierer, um ihren Quelltex
   
 <a name="23"></a>
 ###7.10 Was ist eine API (Application Programming Interface)? 
-Dies ist die Schnittstelle, die ein Programm bietet, um auf seine Funktionen zugreifen zu können. Dies wird beim Schreiben von Programmen wie InDesign von den Programmierern definiert. Diese Schnittstelle ist wie ein Baum mit Querverweisen aufgebaut.   
-[![network](images/network_thumb.jpg)](images/network.jpg)  
-
-Um in InDesign einem bestehenden Dokument auf der ersten Seite eine Textbox hinzuzufügen, muss durch diesen Baum manövriert werden.  
+Dies ist die Schnittstelle, die ein Programm bietet, um auf seine Funktionen zugreifen zu können. Dies wird beim Schreiben von Programmen wie InDesign von den Programmierern definiert. Diese Schnittstelle ist wie ein Baum mit Querverweisen aufgebaut. Um in InDesign einem bestehenden Dokument auf der ersten Seite eine Textbox hinzuzufügen, muss durch diesen Baum manövriert werden.  
 
 	{% highlight js %}
 	app.activeDocument.pages.item(0).textFrames.add();
@@ -183,7 +180,7 @@ Der Proto-Apfel hat bestimmte Eigenschaften, wie Gewicht und Farbe. Hinzu kommen
 Der Baum erzeugt den Apfel und ruft kontinuierlich die Methode "Wachsen" auf. Hierbei wird der Wert des Gewichtes inkrementiert. Sind die Früchte dann reif, wird, abhängig vom Gewicht des einzelnen Apfels, die Methode "Fallen" ausgelöst. Wenn der Apfel dann auf dem Boden liegt und die Methode "Fallen" beendet ist, beginnt die Methode "Verrotten" ihre Arbeit. Die Farbe des Apfels verändert sich und das Gewicht wird wieder dekrementiert.  
 Das bedeutet, der Proto-Apfel selber wird nicht angerührt, sondern Instanzen von diesem. Um dies noch auf die Spitze zu treiben, haben wir nicht nur eine Art Apfel, sondern verschieden Sorten. Also ist die Klasse Granny Smith eine "Kindklasse" der "Basisklasse" Apfel. Granny Smith erbt alle Eigenschaften der Klasse Apfel, ohne dass sie neu implementiert werden müssen und bekommt noch eine weitere Eigenschaft. Den Namen.  
 
-Diese Konstruktionsweise spiegelt sich nicht nur in der Programmierung wieder. Die Benutzung einiger Komponenten in unseren Werkzeugen ist genau nach diesem Prinzip organisiert.
+Diese Konstruktionsweise spiegelt sich nicht nur im «Scripting» oder bei Äpfeln wieder. Die Benutzung einiger Komponenten in unseren Werkzeugen ist genau nach diesem Prinzip organisiert.
 ####Eine weitere Klammer auf   
 
 	{% highlight js %}
@@ -228,7 +225,7 @@ Debugging ist der Prozess des Findens und Korrigierens von Fehlern.
 
 <a name="28"></a>
 ###7.15 Was ist ein Workaround?   
-Ein Workaround ist eine kreative Lösung, um ein Problem zu umgehen. Wenn zum Beispiel eine API eine bestimmte Funktion nicht anbietet, muss ein Weg um dieses Problem herum gefunden werden. 
+Ein Workaround ist eine kreative Lösung, um ein Problem zu umgehen. Wenn zum Beispiel eine API eine bestimmte Funktion nicht anbietet, muss ein Weg um dieses Problem herum gefunden werden. Lesen sie den Abschnitt ["2.2.1 Das Beispiel try char"](02wannsollichskripten.html#05).
   
 <a name="29"></a>
 ###7.16 Welche Konventionen gibt es? 
@@ -248,7 +245,7 @@ Zur Veranschaulichung folgt hier ein Programm, das diese Aufgaben erledigt:
 - Diesen Satz darstellen
   
 Dieses Programm liegt in verschiedenen Sprachen vor.  
-Ich werde kurz auf kleine Unterschiede eingehen und versuchen an diesen drei Beispielen zu erläutern, warum JavaScript eine einfache und mächtige Sprache ist. An dieser Stelle ist es nicht zwingend, den Programmcode komplett zu verstehen. Beachten sie nur die syntaktischen Unterschiede. Vergleichen sie die Funktion oder Methode `int Object::compare(int a, int b)` in C++ mit `int compare(int a, int b)` in C und betrachten sie danach die Funktion / das Objekt `compare : function(a,b){if(a>b){return a;}else{return b;}` in JavaScript. Es gibt kleine Unterschiede, aber die gemeinsame Herkunft ist unübersehbar. Eine tiefere Erklärung des Quelltextes findet sich in den Kommentaren der einzelnen Programme und des Skriptes.  
+Ich werde kurz auf kleine Unterschiede eingehen und versuchen an drei Beispielen zu erläutern, warum JavaScript eine einfache und mächtige Sprache ist. An dieser Stelle ist es nicht zwingend, den Programmcode komplett zu verstehen. Beachten sie nur die syntaktischen Unterschiede. Vergleichen sie die Funktion oder Methode `int Object::compare(int a, int b)` in C++ mit `int compare(int a, int b)` in C und betrachten sie danach die Funktion `this.compare = function(a,b)` in JavaScript. Es gibt kleine Unterschiede, aber die gemeinsame Herkunft ist unübersehbar. Eine tiefere Erklärung des Quelltextes findet sich in den Kommentaren der einzelnen Programme und des Skriptes.  
 
 ####Assembler (anObject.s)
 Dies ist die Variante, die die Maschine versteht. Es wurde jedoch nicht von mir geschrieben, sondern ist das Ergebnis des Kompilierungs-Prozesses des C++ Programms. Näher wäre nur noch Nullen und Einsen zu schrieben. Ja, es gibt auch diesen Aspekt der Programmierung, der genau dem entspricht, was Menschen davon abhält, sich mit ihr auseinander zu setzen. Um dort an zu gelangen, ist es ein weiter Weg, den wenige gehen und auch wir in dieser Arbeit nicht beschreiten werden. Aus Platzgründen werde ich hier nur die ersten 29 Zeilen zeigen. Das gesamte Programm ist in Assembler über 700 Zeilen lang.  
@@ -285,13 +282,11 @@ Dies ist die Variante, die die Maschine versteht. Es wurde jedoch nicht von mir 
 	Leh_func_end1:
 	{% endhighlight %}
 
-(…)  
-
-Gruselig oder nicht? Zu unserem Glück müssen wir so etwas weder schreiben noch lesen können. Von 1969 bis 1973 wurde die Sprache C von Dennis Ritchie ( Quelle The C Programming Language von Brian W. Kernighan & Dennis Ritchie) im "Bell Labs Computing Sciences Research Center" entwickelt. Diese Sprache wird beim Kompilieren in Assembler Code übersetzt. Der Vorteil dabei ist eine viel einfachere Syntax, die es erlaubt den Schwerpunkt der Aufmerksamkeit auf das Konzept des Programms zu richten.   
+Gruselig oder nicht? Zu unserem Glück müssen wir so etwas weder schreiben noch lesen können. Von 1969 bis 1973 wurde die Sprache C von Dennis Ritchie im "Bell Labs Computing Sciences Research Center" entwickelt. Diese Sprache wird beim Kompilieren in Assembler Code übersetzt. Der Vorteil, an C im Vergleich zu Assembler, ist eine viel einfachere Syntax, die es erlaubt den Schwerpunkt der Aufmerksamkeit auf das Konzept des Programms zu richten.   
 
 ####ANSI C noObject.c  
 Im Unterschied zu C++ und JavaScript ist die Sprache C nicht für eine Objektorientierung ausgelegt. Deshalb hier einmal das Beispiel noObject.c, welches die gestellte Aufgabe des Vergleichs löst, aber kein Objekt erzeugt. Die Syntax ähnelt sehr der von JavaScript. Sobald jedoch [Pointer](#32) hinzukommen, wird es komplizierter.  
-Aber ich schweife ab. Keine Sorge mit Problemen wie: "In welchem Speicher lege ich meine Variable ab" und "Habe ich auch den Müll rausgetragen" (Das löschen eines unbenutzten Objekts wird "Garbadge Collection" also "Müll sammeln" genannt), werden wir in JavaScript nicht konfrontiert. All diese Funktionalität wird von der Maschine im Hintergrund erledigt. Somit bleibt Zeit sich mit der Funktionsweise und dem Konzept zu beschäftigen. Stellen sie es sich vor, wie es wäre, das Auto vor dem Fahren zusammen zu bauen, anstatt in das fertige Auto einzusteigen und loszufahren. Um die Abstammung von JavaScript verstehen zu können, habe ich die Vergleichs-Funktion in C geschrieben.
+Aber ich schweife ab. Keine Sorge mit Problemen wie: "In welchem Speicher lege ich meine Variable ab" und "Habe ich auch den Müll rausgetragen" (Das löschen eines unbenutzten Objekts wird "Garbadge Collection" also "Müll sammeln" genannt), werden wir in JavaScript nicht konfrontiert. All diese Funktionalität wird von der Maschine im Hintergrund erledigt. Somit bleibt Zeit sich mit der Funktionsweise und dem Konzept zu beschäftigen. Stellen sie es sich vor, wie es wäre, das Auto vor dem Fahren zusammen zu bauen, anstatt in das fertige Auto einzusteigen und loszufahren. Um die Abstammung von JavaScript verstehen zu können, folgt die Vergleichs-Funktion in C.
 
 <script src="https://gist.github.com/2660633.js?file=noObject.c"></script><br>
 {% comment %}
@@ -319,7 +314,7 @@ Aber ich schweife ab. Keine Sorge mit Problemen wie: "In welchem Speicher lege i
 
 [![C and CPP Terminal](images/terminal_c_cpp_thumb.jpg)](images/terminal_c_cpp.jpg)
 ####C++ (anObject.cpp)  
-Basierend auf C wurde zu Beginn der Achtziger Jahre des letzten Jahrhunderts im letzten Jahrtausend die Sprache C++ von Bjarne Stroustrup in den AT&T Labs entwickelt (Quelle: Bjarne\_Stroustrup\_-\_The\_C++\_Programming\_Language\_3rd\_Ed [online](http://www.ib.cnea.gov.ar/~oop/biblio/Bjarne_Stroustrup_-_The_C++_Programming_Language_3rd_Ed.pdf)). Diese Sprache ist nach dem Konzept der Objektorientierung aufgebaut. In diesem Beispiel ist bereits zu sehen, dass die Menge an Code, die geschrieben werden muss, geringer wird (im Vergleich zum Assembler Code). Wobei hier, wie auch im C-Beispiel, bedacht werden muss, dass bereits vorhandene Programmteile mit weiteren hunderten oder tausenden Zeilen Code hinzugefügt werden.  <a data-toggle="modal" href="#myModal2" ><i class="icon-asterisk"></i></a>
+Basierend auf C wurde zu Beginn der Achtziger Jahre des letzten Jahrhunderts im letzten Jahrtausend die Sprache C++ von Bjarne Stroustrup in den AT&T Labs entwickelt. Diese Sprache ist nach dem Konzept der Objektorientierung aufgebaut. In diesem Beispiel ist bereits zu sehen, dass die Menge an Code, die geschrieben werden muss, geringer wird (im Vergleich zum Assembler Code). Wobei hier, wie auch im C-Beispiel, bedacht werden muss, dass bereits vorhandene Programmteile mit weiteren hunderten oder tausenden Zeilen Code hinzugefügt werden.  <a data-toggle="modal" href="#myModal2" ><i class="icon-asterisk"></i></a>
 <div class="modal fade" id="myModal2">
     <script type="text/javascript">$(this).modal('hide');</script>
   <div class="modal-header">
@@ -380,8 +375,7 @@ Mit den oberen zwei Zeilen werden fertige Klassen eingebunden. "iostream", um di
   
 
 ####JavaScript (anObject.js)  
-Im Jahre 1995 wurde die Sprache LiveScript zusammen mit der 2.0 Version von Netscape (ein Web-Browser) veröffentlicht und bald in JavaScript umbenannt (Quelle: JavaScript das Umfassende Handbuch). Wie in jedem Buch, das sich mit JavaScript auseinandersetzt, möchte auch ich hier sagen und es dabei belassen:  
-######Java is to JavaScript like ham to hamster  
+Im Jahre 1995 wurde die Sprache LiveScript zusammen mit der 2.0 Version von Netscape (ein Web-Browser) veröffentlicht und bald in JavaScript umbenannt. Wie in vielen Büchern, die sich mit JavaScript oder Java auseinandersetzt, möchte auch ich hier sagen und es dabei belassen: _Java is to JavaScript like ham to hamster_  
 Mit JavaScript gehen wir einen Schritt weiter als mit C++. Hier sind das Objekt, die Ein-/Ausgabe, der String bereits existent und müssen weder neu implementiert noch eingebunden werden. Genaugenommen ist in JavaScript fast alles ein Objekt. Der maßgebende Unterschied ist, dass die vorherigen Programme vollwertige Programme sind, die nach dem Kompilieren aus der Kommandozeile ausgeführt werden können. Die JavaScript Variante benötigt ein Programm, in dem sie ausgeführt wird. Es ist alleine nicht lauffähig.
 
 <script src="https://gist.github.com/2660661.js?file=anObject.js"></script><br>
@@ -416,7 +410,7 @@ Mit JavaScript gehen wir einen Schritt weiter als mit C++. Hier sind das Objekt,
   
 [![anObject.js](images/estk_anobjectjs_thumb.jpg)](images/estk_anobjectjs.jpg)  
 
-Werfen sie einen Blick auf die Funktion `buildNewObject(n)`.  
+Werfen sie einen Blick auf die Funktion `this.compare = function(a,b)` in `buildNewObject(n)`.  
 Dies ist eine kleine Abwandlung der `compare` Funktion, die wir in der C++ Variante sehen. Die verbesserte Funktion kann die gegebenen Variablen vergleichen und in sich selbst, mit `this.result`, das Ergebnis festlegen. Um eine solche Funktionalität in C++ zu erzeugen, bedürfte es einiger Zeilen mehr.  
 Ohne diese Erweiterung und ohne das Objekt würde das JavaScript wieder der C Variante ähneln.
 
@@ -457,9 +451,7 @@ JavaScript, oder EcmaScript, ist das, was uns täglich in Webbrowsern solche Din
 ###7.19 Was sind Pointer?   
 Ein Pointer ist der Verweis auf die Speicheradresse, unter der eine Variable abgelegt ist. Das kann dann so aussehen:  
 
-	{% highlight c %}
-	double *dp, atof(char *);
-	{% endhighlight %}
-
->says that in an expression *dp and atof(s) have values of double, and that the argument of atof is a pointer to char.  
-> aus The C programming Language By Brian W. Kernighan and Dennis M. Ritchie. Published by Prentice-Hall in 1988 ([online]( http://net.pku.edu.cn/~course/cs101/2008/resource/The_C_Programming_Language.pdf))
+>"Beispeilsweise besagt:
+>double *dp, atof(char *);
+>daß[sic] in einem Ausdruck atof() und *dp Werte vom Typ double liefern"
+>aus Programmieren in C von Brian W. Kernighan & Dennis M. Ritchie. Published by Prentice-Hall in 1988

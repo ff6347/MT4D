@@ -5,7 +5,7 @@ bodyid: bsp
 ---
 <a name="12"></a>
 ##4Werkzeuge
-Wo bleibt die extra Zeit für Gestaltung, die versprochen wurde? Wie bereits erwähnt, braucht das Lernen einer Sprache etwas Zeit. Die Grammatik und Rechtschreibung können aus einem Buch gelernt werden, die Nuancen und Umgangssprache kann jedoch nur durch das Sprechen geschult werden. Zum Glück sind wir dabei nicht alleine. Es gibt bereits viele Werkzeuge, die frei zur Verfügung stehen und zur Optimierung unserer Arbeitsprozesse genutzt werden können. Dies kann von kleinen Helfern wie "greatPower.jsx" bis zu voll ausgearbeiteten Systemen mit eigenen Grafischen Benutzeroberflächen gehen.  
+Wo bleibt die extra Zeit für Gestaltung, die versprochen wurde? Wie bereits erwähnt, braucht das Lernen einer Sprache etwas Zeit. Die Grammatik und Rechtschreibung können aus einem Buch gelernt werden, die Nuancen und Umgangssprache kann jedoch nur durch das Sprechen geschult werden. Zum Glück sind wir dabei nicht alleine. Es gibt bereits viele Werkzeuge, die frei zur Verfügung stehen und zur Optimierung unserer Arbeitsprozesse genutzt werden können. Dies kann von kleinen Helfern wie _greatPower.jsx_ bis zu voll ausgearbeiteten Systemen mit eigenen Grafischen Benutzeroberflächen gehen.  
 <a name="99"></a>
 ###4.1 AEMap.jsx & AEMap Utilites.jsx
 In diesem Sinne habe ich die Skripte AEMap.jsx und AEMap Utilities.jsx für Adobe After Effects geschrieben, und unter einer Open Source Lizenz ins Netz gestellt.  
@@ -17,11 +17,12 @@ Viele Motion-Designer kommen irgendwann einmal an den Punkt, an dem sie eine Wel
 
 [![osttimor papua neu ginea](images/ostimorpaua_01_thumb.jpg)](images/ostimorpaua_01.jpg)  
 
-Selbst wenn eine vernünftige Vektor-Form einer Karte existiert und griffbereit ist wie können die beiden Länder darin gefunden werden? Was ist wenn eine Grenzänderung stattfindet? Und und und. Um diesen Problemen zu entgehen, kann AEMap.jsx eine Weltkarte in Rektangularprojektion erzeugen. Dabei entsteht eine After Effects Komposition in einer gewählten Skalierung (immer 2:1) in der 178 Prä-Kompositionen enthalten sind, die 286 einzelne Polygon-Formen beinhalten.  
+Selbst wenn eine vernünftige Vektor-Form einer Karte existiert und griffbereit ist wie können die beiden Länder darin gefunden werden? Was ist wenn eine Grenzänderung stattfindet? Und und und. Um diesen Problemen zu entgehen, kann _AEMap.jsx_ eine Weltkarte in Rektangularprojektion erzeugen. Dabei entsteht eine After Effects Komposition in einer gewählten Skalierung (immer 2:1) in der 178 Prä-Kompositionen enthalten sind, die 286 einzelne Polygon-Formen beinhalten.  
 
 [![AEMap Full Composition](images/aemapfullcomp_thumb.jpg)](images/aemapfullcomp.jpg)  
 
-Der Nutzer kann zwischen verschiedenen Einstellungen wählen, zum Beispiel die Karte mit Kontur oder ohne zu zeichnen. Er kann entscheiden, ob alle Polygone auf eine Ebene gezeichnet werden sollen oder ob in die oben genannten Kompositionen gesplittet werden soll. Ebenfalls können 3D-Einstellungen definiert werden und ähnliches mehr. Die Daten bestehen auf einem GeoJson Datensatz, der zum freien Gebrauch ins Netz gestellt wurde. Der gesamte Funktionsumfang ist auf [dieser Webseite](http://fabiantheblind.github.com/AEMap/) dokumentiert. Dieses Skript spart nicht nur mir Zeit, sondern auch anderen. Die Resonanz in der After Effects Community" ist groß. Daher hat das Skript seit seiner Veröffentlichung auf [AEScripts.com](http://aescripts.com/aemap/) am 10 April 2012 bereits über 550 Downloads gehabt (heute 4 Mai 2012). Das Tutorial und das Demo wurden bereits über 5000 mal auf Youtube geladen. Aber genug der Selbstbeweihräucherung. Der Vorteil an solchen und ähnlichen Werkzeugen, die zum Beispiel auf AEScripts.com bereit gestellt werden, ist, dass diese meist aus dem Zwang heraus entstanden, sind einen Arbeitsablauf zu automatisieren, um Zeit zu sparen.  
+Der Nutzer kann zwischen verschiedenen Einstellungen wählen, zum Beispiel die Karte mit Kontur oder ohne zu zeichnen. Er kann entscheiden, ob alle Polygone auf eine Ebene gezeichnet werden sollen oder ob in die oben genannten Kompositionen gesplittet werden soll. Ebenfalls können 3D-Einstellungen definiert werden und ähnliches mehr. Die Daten bestehen auf einem GeoJson Datensatz, der zum freien Gebrauch ins Netz gestellt wurde. Der gesamte Funktionsumfang ist auf [dieser Webseite](http://fabiantheblind.github.com/AEMap/) dokumentiert. Dieses Skript spart nicht nur mir Zeit, sondern auch anderen. Die Resonanz in der After Effects Community" ist groß. Daher hat das Skript seit seiner Veröffentlichung auf [aescripts.com](http://aescripts.com/aemap/) am 10 April 2012 bereits über 550 Downloads gehabt (heute 4 Mai 2012). Das Tutorial und das Demo wurden bereits über 5000 mal auf Youtube geladen. Aber genug der Selbstbeweihräucherung. Der Vorteil an solchen und ähnlichen Werkzeugen, die zum Beispiel auf aescripts.com bereit gestellt werden, ist, dass diese meist aus dem Zwang heraus entstanden, sind einen Arbeitsablauf zu automatisieren, um Zeit zu sparen. Sie behandeln Probleme die in Designprozessen immer wieder auftreten.
+  
 
 <a name="98"></a>
 ###4.2 createBook
@@ -96,11 +97,11 @@ Damit sind die Daten im Netz verfügbar und können eingesehen werden. Hier kön
 <a name="94"></a>
 ###4.3 WAVEFRONT_objfrom AI
 ![obj from ai](images/objfromai.jpg)
-Um die filigranen Textgrafiken in dieser Arbeit zu erzeugen, habe ich mich eines weiteren Werkzeuges bedient. [Plexus](http://aescripts.com/plexus/).  
+Um die filigranen Textgrafiken in dieser Arbeit zu erzeugen, habe ich mich eines weiteren Werkzeuges bedient: [Plexus](http://aescripts.com/plexus/).  
 Plexus ist ein After Effects Partikelsystem, dass Punkte erzeugt die mit Linien verbunden werden können. Dieses Plugin kann Masken, Lichter und .obj Dateien verarbeiten um Partikel zu generieren. Besonders die letzte Möglichkeit weckte mein Interesse. Wavefront .obj ist ein offenes textbasiertes Format, dass 3D Daten transportiert. Da ich keine 3D Applikation beherrsche aber diese Option trotzdem benutzen wollte, habe ich ein Skript geschrieben, dass aus Adobe Illustrator Pfadpunkten .obj Dateien schreibt. Ebenfalls habe ich ein ähnliches Programm geschrieben das aus Processing diesen Dateityp erstellen kann. Dies ist ein Workaround um mein eigenes Unvermögen 3D Applikation zu beherrschen.   
 <script src="https://gist.github.com/2103355.js"> </script>   
 
 <a name="93"></a>
 ###4.4 Illustrator Voronoi
 ![obj from ai](images/voronoifromai.jpg)
-Um Flächen und ihre optimale Ausnutzung berechnen zu können, kann sich des Voronoi Algorithmuses bedient werden. Dieser wurde bereits in einigen Sprachen implementiert. Ebenfalls in JavaScript. Das schöne an der von mir verwendeten [Implememtation von gorhil](https://github.com/gorhill/Javascript-Voronoi) ist, dass sie nur die Berechnung übernimmt. Die Darstellung ist dabei offen. Dies ermöglicht es mit [Illustrator](http://fabiantheblind.github.com/Illustrator-Javascript-Voronoi/) die errechneten Daten zu visualisieren.
+Um Flächen und ihre optimale Ausnutzung berechnen zu können, kann sich des Voronoi Algorithmuses bedient werden. Dieser wurde bereits in einigen Sprachen implementiert. Ebenfalls in JavaScript. Der Vorteil an der von mir verwendeten [Implememtation von gorhil](https://github.com/gorhill/Javascript-Voronoi) ist, dass sie nur die Berechnung übernimmt. Die Darstellung ist dabei offen. Dies ermöglicht es mit [Illustrator](http://fabiantheblind.github.com/Illustrator-Javascript-Voronoi/) die errechneten Daten zu visualisieren.

@@ -13,42 +13,44 @@ Ein Skript sollte immer in geschwungenen Klammern eingefasst sein. Dies ist nich
 Als nächstes definieren wir eine Funktion, die einmalig aufgerufen wird. Hierbei ist es irrelevant, ob der Aufruf vor oder nach der Funktionsdefinition stattfindet. Aus Gründen der Übersichtlichkeit steht hier der Aufruf vor der Definition. Diese Funktion erhält keine Parameter. Später wird auch eine Funktion mit Parametern eingesetzt. Der Zweck, den gesamten Code in einer Funktion zu kapseln, ist folgender: Wenn es eine hierarchisch höhere Ebene gibt, unsere Klammern `{}`, kann eine Funktion mit dem Befehl `return;` beendet werden. Dies ist nützlich, um bei Fehlern oder falscher Benutzereingabe die Ausführung zu stoppen. Mit dem Befehl `return` kann nicht nur eine Funktion beendet werden, sondern auch ein Wert zurückgeliefert werden.
 Wenn wir am Ende einer Funktion `return 1;` schreiben, wäre das Ergebnis 1. `var myValue = main();` Wenn die Funktion `main` nun einen Wert zurückgeben würde, wäre `myValue` 1. In unserem Fall benötigt die `main()` keinen Rückgabewert.
 
-	{% highlight js %}
-	main();
-	function main(){
+{% highlight js %}
+{
+main();
+function main(){
 	}
-	{% endhighlight %}
+}
+{% endhighlight %}
 
 Wir befinden uns nun in der Funktion `main();`.  
 Es folgt die Deklaration der ersten Variable. Sie beinhaltet die Breite (und Höhe) unserer Bilder.
 
-	{% highlight js %}
-	var w = 25;
-	{% endhighlight %}
+{% highlight js %}
+var w = 25;
+{% endhighlight %}
 
 Wie zu sehen ist, entspricht die Variable `w` (steht für width) nun 25. `w` wird im Verlauf des Skriptes mehrmals verwendet. Der Vorteil daran, Variablen zu verwenden, anstatt immer 25 zu schreiben ist, dass wenn wir die Breite verändern wollen, wir dies nur ein einziges mal an `w` erledigen müssen und alle weiteren Verwendungen von `w` werden angepasst.  
 Als nächstes folgt eine Subfunktion mit einem Parameter und einem Rückgabewert. In JavaScript werden alle Variablen mit `var` deklariert. Die Unterscheidung des Typus findet erst bei der Verwendung statt. Deshalb können wir schreiben:  
 
-	{% highlight js %}
-	var allImages = loadFiles("*.jpg");
-	{% endhighlight %}
+{% highlight js %}
+var allImages = loadFiles("*.jpg");
+{% endhighlight %}
 
 Damit die Funktion auch vorhanden ist, fügen wir sie hinter `function main(){}` an. Unser Code sieht also wie folgt aus.  
 
-	{% highlight js %}
-	{
-	main();
-		function main(){
-			var w = 25;
-			var allImages = loadFiles("*.jpg");
-		}
-		function loadFiles(type){
-			return 0;
-		}
+{% highlight js %}
+{
+main();
+	function main(){
+		var w = 25;
+		var allImages = loadFiles("*.jpg");
 	}
-	{% endhighlight %}
+	function loadFiles(type){
+		return 0;
+	}
+}
+{% endhighlight %}
 
-Den Rückgabewert werden wir noch verändern, denn wir wollen Bilder laden und nicht 0. Wie oben zu sehen ist, erhält `loadFiles` den Parameter `type`. Dies ist der Dateityp, der später geladen werden soll. `type` ist genau wie `w` und `allImages` eine Variable, nur dass wir im Parameterblock der Funktion das `var` weglassen können. Wenn wir `*.*` schreiben, würde unsere Funktion jeden Dateityp laden. Der Einfachheit halber beschränken wir uns auf .jpg, da wir wissen, dass InDesign .jpg-Dateien laden und platzieren kann.  
+Den Rückgabewert werden wir noch verändern, denn wir wollen Bilder laden und nicht `0`. Wie oben zu sehen ist, erhält `loadFiles` den Parameter `type`. Dies ist der Dateityp, der später geladen werden soll. `type` ist genau wie `w` und `allImages` eine Variable, nur dass wir im Parameterblock der Funktion das `var` weglassen können. Wenn wir `*.*` schreiben, würde unsere Funktion jeden Dateityp laden. Der Einfachheit halber beschränken wir uns auf .jpg, da wir wissen, dass InDesign .jpg-Dateien laden und platzieren kann.  
 Als nächstes begeben wir uns in die Funktion `loadFiles` und betrachten die Dateihandhabung und eine Benutzerinteraktion. Basierend auf dem Ergebnis der Interaktion fällt das Skript eine konditionale Entscheidung, ob es weiter arbeiten soll oder ob es die Funktion `loadFiles` beendet.  
 
 	{% highlight js %}
@@ -64,7 +66,7 @@ Bisher waren alle Befehle JavaScript Befehle. Der Befehl `Folder.selectDialog ("
 	if( Statement ){ Do Something }
 	{% endhighlight %}
 
-Sie besagt, dass, wenn die Aussage in der runden Klammer wahr ist, die geschwungene Klammer ausgeführt wird. In unserem Fall wird durch das `!` die Aussage negiert. Ausgeschrieben könnte dort stehen `if(theFolder == false)` oder `if(theFolder != true)`. Die Schreibweise `if(!theFolder)` ist lediglich nur verkürzt. Wenn wir `if(theFolder)` schreiben, würde das `if(theFolder==true)` entsprechen. Zu beachten ist nicht `=` zu schreiben. Dies bedeutet "wird zu", `==` bedeutet "entspricht". `=` ist eine Zuweisung von Werten, `==` ist ein Vergleich. Der Vollständigkeit halber soll noch erwähnt werden, dass es noch eine weitere Form gibt. Der typsichere Vergleich mit `===`, den wir jedoch nicht weiter betrachten wollen. Gesprochen wäre die obere Aussage: "Wenn der Ordner nicht existiert - beende die Funktion".  
+Sie besagt, dass, wenn die Aussage in der runden Klammer wahr ist, die geschwungene Klammer ausgeführt wird. In unserem Fall wird durch das `!` die Aussage negiert. Ausgeschrieben könnte dort stehen `if(theFolder == false)` oder `if(theFolder != true)`. Die Schreibweise `if(!theFolder)` ist lediglich verkürzt. Wenn wir `if(theFolder)` schreiben, würde das `if(theFolder==true)` entsprechen. Zu beachten ist nicht `=` zu schreiben. Dies bedeutet "wird zu", `==` bedeutet "entspricht". `=` ist eine Zuweisung von Werten, `==` ist ein Vergleich. Der Vollständigkeit halber soll noch erwähnt werden, dass es noch eine weitere Form gibt. Der typsichere Vergleich mit `===`, den wir jedoch nicht weiter betrachten wollen. Gesprochen wäre die obere Aussage: "Wenn der Ordner nicht existiert - beende die Funktion".  
 Als nächstes betrachten wir was das Laden der Dateien aus unserem Ordner.  
 
 	{% highlight js %}
@@ -106,7 +108,7 @@ Wenn `loadImages` `null` zurück gibt, bricht das Skript ab. Dies ist nötig, da
 entspricht:  
 
 	{% highlight js %}
-	if(statement) doSomething
+	if(statement) doSomething;
 	{% endhighlight %}
 
 Ebenfalls könnte 
@@ -123,7 +125,7 @@ als
 
 abgekürzt werden. Dies geht jedoch nur bei jeweils einem Befehl nach der Aussage.  
 
-Als nächstes folgt die Berechnung unserer Seitenbreite und Seitenhöhe. Die Höhe wird nochmals mit einer Kondition überprüft. Wenn die Menge an Bildern nicht in eine Matrix passt, beispielsweise 3 × 3, 4 × 4 oder 100 × 100, muss die Höhe nochmals um eine Zeile erweitert werden. Hier kommt das JavaScript Objekt `Math` zum Einsatz.   
+Als nächstes folgt die Berechnung unserer Seitenbreite und Seitenhöhe. Die Höhe wird nochmals mit einer Kondition überprüft. Wenn die Menge an Bildern nicht in eine Matrix passt, also nicht 3 × 3, 4 × 4 oder 100 × 100 ist, muss die Höhe nochmals um eine Zeile erweitert werden. Hier kommt das JavaScript Objekt `Math` zum Einsatz.   
 
 	{% highlight js %}
 	var pw = Math.round(Math.sqrt(allImages.length)) * w + (w*2);
@@ -133,18 +135,20 @@ Als nächstes folgt die Berechnung unserer Seitenbreite und Seitenhöhe. Die Hö
 	}
 	{% endhighlight %}
 
-Dies wirkt kompliziert. Um es zu verstehen, lösen wir den ersten Satz einmal auf. Betrachten sie das Bild dabei.  
-
-	{% highlight text %}
-	a ist gleich 16. Die Menge an Bildern.  
-	b ist die Wurzel aus a. Wir wollen es rechteckig. Also 4.  
-	c ist b gerundet. Falls es eine Fließkommazahl ist. Bleibt in diesem Fall 4, wenn a 16 ist.
-	d ist 25. Die Breite der Bilder.  
-	e ist c mal d. Wir staffeln die Bilder nach rechts. 4 × 25 also 100  
-	f ist d mal 2. Das ist der linke und rechte Abstand zum Seitenrand. Jeweils eine Bildbreite. 50 
-	{% endhighlight %} 
+Dies wirkt kompliziert. Um es zu verstehen, lösen wir den ersten Satz einmal auf. Betrachten sie dabei das Bild.  
 
 [![matrix 4 mal 4](images/matrix_think_thumb.jpg)](images/matrix_think.jpg)  
+
+{% highlight text %}
+a ist gleich 16. Die Menge an Bildern.  
+b ist die Wurzel aus a. Wir wollen es rechteckig. Also 4.  
+c ist b gerundet. Falls es eine Fließkommazahl ist.
+c bleibt in diesem Fall 4, wenn a 16 ist.
+d ist 25. Die Breite der Bilder.  
+e ist c mal d.
+Wir staffeln die Bilder nach rechts. 4 × 25 also 100.  
+f ist d mal 2. Das ist der linke und rechte Abstand zum Seitenrand. Jeweils eine Bildbreite. Also 50.
+{% endhighlight %} 
 
 Daraus ergibt sich eine Seitenbreite von 150.  
 
@@ -163,7 +167,7 @@ oder
 	{% endhighlight %}
 
 Danach setzen wir die Höhe der Seite der Breite gleich.
-Für den Fall, dass b (oder `Math.sqrt(allImages.length)`) eine Fließkommazahl ist und wir eine nicht quadratische Matrix erzeugen, also alle Bilder platziert werden sollen, müssen wir die Höhe der Seite um eine Zeile für Bilder erweitern. Deshalb wird in dem `if(statement)` verglichen, ob die gerundete Quadratwurzel nicht der Quadratwurzel entspricht.  
+Für den Fall, dass `b (oder `Math.sqrt(allImages.length)`) eine Fließkommazahl ist und wir eine nicht quadratische Matrix erzeugen, also alle Bilder platziert werden sollen, müssen wir die Höhe der Seite um eine Zeile für Bilder erweitern. Deshalb wird in dem `if(statement)` verglichen, ob die gerundete Quadratwurzel nicht der Quadratwurzel entspricht.  
 
 	{% highlight js %}
 	(Math.round(Math.sqrt(allImages.length)) != Math.sqrt(allImages.length)
@@ -191,7 +195,7 @@ Als nächstes folgen das Erzeugen des Dokuments, das Einstellen der Seite auf un
 	var x = w;
 	{% endhighlight %}
 
-An dieser Stelle wird der Sammlung an Dokumenten ein neues hinzugefügt. Dabei ist irrelevant, ob bereits ein Dokument existiert. Dann stellen wir die Weite und Höhe der Seite ein. Danach nehmen wir aus der Sammlung an Seiten in dem neuem Dokument die Erste. Der Aufruf `item(0)` ist ebenfalls ein ExtendScript Befehl, der nur in InDesign funktioniert. Wir könnten auch `var page = doc.pages[0]` schreiben. Hier funktioniert beides gleich. Das ist jedoch nicht immer der Fall. Es gibt die Möglichkeit, `doc.pages.middleItem()` oder `doc.pages.lastItem()` abzufragen. Bei einem normalen Array wie unserem `allImages` würde `lastItem()` nicht funktionieren. Danach erzeugen wir den linken, obere Koordinate unseres ersten Bildes. x und y sind jeweils eine Bildbreite vom Rand der Seite entfernt. Es gibt noch die Möglichkeit, die ersten drei Zeilen abzukürzen. Dies ist eine komprimiert Schreibweise, die uns noch öfter begegnen wird.  
+An dieser Stelle wird der Sammlung an Dokumenten ein neues hinzugefügt. Dabei ist irrelevant, ob bereits ein Dokument existiert. Dann stellen wir die Weite und Höhe der Seite ein. Danach nehmen wir aus der Sammlung an Seiten in dem neuem Dokument die Erste. Der Aufruf `item(0)` ist ebenfalls ein ExtendScript Befehl, der nur in InDesign funktioniert. Wir könnten auch `var page = doc.pages[0]` schreiben. Hier funktioniert beides gleich. Das ist jedoch nicht immer der Fall. Es gibt die Möglichkeit, `doc.pages.middleItem()` oder `doc.pages.lastItem()` abzufragen. Bei einem normalen Array wie unserem `allImages` würde `lastItem()` oder auch `item() nicht funktionieren. Danach erzeugen wir den linken, obere Koordinate unseres ersten Bildes. x und y sind jeweils eine Bildbreite vom Rand der Seite entfernt. Es gibt noch die Möglichkeit, die ersten drei Zeilen abzukürzen. Dies ist eine komprimiert Schreibweise, die uns noch öfter begegnen wird.  
 
 	{% highlight js %}
 	var doc = app.documents.add({documentPreferences:{pageWidth:pw,pageHeight:ph}});
@@ -260,7 +264,7 @@ Wenn diese Kondition nicht da wäre, würde das Skript die Bilder wie in der fol
 
 [![matrix onhe linebreak](images/matrx_without_breakline_thumb.jpg)](images/matrx_without_breakline.jpg)  
 
-Die, die es bis hierher geschafft haben, sollten den obigen Code jetzt entschlüsseln können.  
+Die, die es bis hierher geschafft haben, sollten den vorherigen Code jetzt entschlüsseln können.  
 Wenn x grösser gleich 150 - 25 ist, um auf unser Beispiel mit der 16 als Menge der Bilder zurückzukommen, setze x zurück auf 25 und addiere auf y 25. Die Zahlenreihe ist dann:  
 
 	{% highlight text %}	
@@ -283,6 +287,6 @@ x wird in der Kondition zurück auf 25 gesetzt und y wird auf 50 gesetzt.
 Dann ist i = 4.
 Wir fangen bei 0 an zu zählen im Array also ist `allImages[4]` das fünfte Bild.
 Und so weiter und so weiter.  
-Wir sind am Ende. Probieren sie den Code mit unterschiedliche vielen .jpg Dateien aus. Verändern sie ihn, bis er nicht mehr funktioniert und lesen sie die Fehlermeldungen. Dies ist ein weiterverbreitetes Problem. Computer und Programme würden viel an ihrer Mystik verlieren, wenn einerseits die Nutzer die Meldungen lesen würden, anstatt nur auf ok zu drücken und andererseits die Meldungen verständlich geschrieben wären.  
+Wir sind am Ende. Probieren sie den Code mit unterschiedliche vielen .jpg Dateien aus. Verändern sie ihn, bis er nicht mehr funktioniert und lesen sie die Fehlermeldungen. Dies ist ein weiterverbreitetes Problem. Computer und Programme würden viel an ihrer Mystik verlieren, wenn einerseits die Nutzer die Meldungen lesen würden, anstatt nur auf "ok" zu drücken und andererseits die Meldungen verständlich geschrieben wären.  
 
 [![error](images/error_thumb.jpg)](images/error.jpg)  
