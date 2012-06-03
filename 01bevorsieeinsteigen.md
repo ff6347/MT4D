@@ -1,9 +1,0 @@
----
-layout: twitterbootstraped
-title: Bevor Sie Einsteigen
-bodyid: gttstrt
----
-<a name="96"></a>
-###Bevor Sie Einsteigen
-
-Bevor sie weiterlesen, einige Hinweise. Wenn sie noch keine Erfahrungen mit Programmierung gemacht haben, lassen sie sich nicht abschrecken. Es werden einige für den Laien unverständliche Zeilen vorkommen und einige, die sich aus dem Kontext oder den Namen der [Funktionen](10terminologie.html#25) erschliessen lassen. Falls sie die Beispiele in den Abschnitten Eins und Zwei ausprobieren möchten, lesen sie den Abschnitt [7.08 Was ist Hello World?](10terminologie.html#21) zuerst. Dort wird erklärt, wie und wo sie Skripte schreiben und ausführen können. Es werden Fachausdrücke vorkommen die, ebenfalls im Abschnitt [7 Die kleine Terminologie](10terminologie.html#13) erklärt werden. Ab dem Abschnitt [3 Szenarien](03szenarien.html#07) steigen wir dann in das Lesen und wenn sie möchten, Schreiben von Skripten ein. Dafür sollte zumindest der eben genannte Abschnitt "Was ist Hello World?" einmal nachvollzogen worden sein. Wenn die dort dargestellten Zusammenhänge und Konstrukte zu komplex sind, verschaffen sie sich etwas Übung. Es existiert eine schöne Webseite, genannt [codecademy.com](http://www.codecademy.com/#!/exercises/0), auf der sie in einigen lustigen Aufgaben durch die Grundlagen von JavaScript geführt werden. Wenn mal etwas nicht funktioniert, verzweifeln sie nicht. Kontrollieren sie ihre Schreibweise und suchen sie sich weiterführende Informationen im Netz. Die einfachste Möglichkeit ist den gewünschten Befehl samt JavaScript [z.B. "alert() JavaScript"](http://tinyurl.com/d6kglxq) in einer Suchmaschine einzugeben. Da "das Internet" viel JavaScript benutzt, ergibt eine Suche in 99% der Fälle auch die richtige Antwort. Werfen sie ebenfalls einen Blick auf die [Referenz-Liste](11referenzen.html). Dort finden sie viele Ressourcen für "Scripting", die ihnen den Einstieg erleichtern werden.   
