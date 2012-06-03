@@ -1,0 +1,39 @@
+---
+layout: defoffline
+---
+<div class="container-fluid">
+<!--    <div id="topnav">    -->     
+  <div class="row">
+    <div class="span1"> 
+      <img class="visible-desktop" src="images/buffer.png" />
+    </div>
+  </div> 
+  <div class="row">
+    <div class="span1"></div>
+  </div>
+  <div class="row-fluid" id="getSize1">
+    <div class="site">
+      <span class="visible-desktop">
+        <div class="span4">
+          <div id="sidenavprint"> 
+            {% include navbs.html %}
+          </div>
+        </div>
+      </span>
+        <div class="span7" id="getSize2">
+          <div id="contentprint">
+            {{ content }}
+        </div>
+      </div><!-- close content --> 
+    </div><!-- close site --> 
+  </div><!-- row fluid -->
+  <div id="navfootbssepa">
+    <div class="row-fluid">
+      <div class="span3">
+        <div id="footprint">
+        {% include navfootbs.html %}
+        </div>    
+     </div>
+   </div>
+  </div>
+</div>

@@ -1,0 +1,455 @@
+/*@font-face {font-family: 'Calluna-Bold';
+src: url('/webfonts/22E126_0_0.eot');
+src: url('/webfonts/22E126_0_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/22E126_0_0.woff') format('woff'),url('/webfonts/22E126_0_0.ttf') format('truetype');}
+
+ 
+@font-face {font-family: 'Calluna-Black';
+src: url('/webfonts/22E126_1_0.eot');
+src: url('/webfonts/22E126_1_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/22E126_1_0.woff') format('woff'),url('/webfonts/22E126_1_0.ttf') format('truetype');}
+
+ @font-face {font-family: 'Calluna-Regular';src: url('/webfonts/99466c90055bd82dbc8d8111504a9ba4_0.eot');src: url('/webfonts/99466c90055bd82dbc8d8111504a9ba4_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/99466c90055bd82dbc8d8111504a9ba4_0.woff') format('woff'),url('/webfonts/99466c90055bd82dbc8d8111504a9ba4_0.ttf') format('truetype'),url('/webfonts/99466c90055bd82dbc8d8111504a9ba4_0.svg#wf') format('svg'),url('/webfonts//99466c90055bd82dbc8d8111504a9ba4_0.svgz#wf') format('svg');}
+ */
+ 
+
+/*****************************************************************************/
+/*
+/* OWN LESS VARIABLES
+/*
+/*****************************************************************************/
+
+
+@linkcol :#375470;
+@linkhovercol :#000000;
+@linkvisitedcol:#686768;
+@textshadow: 1px 1px 3px #c3c3c3;
+
+.linkstyle{
+    text-decoration: none;
+}
+
+
+.navbarshadow{
+	-moz-box-shadow: 1 1 3px #8e8e8e;
+	-webkit-box-shadow: 1 1 3px #8e8e8e;
+	box-shadow: 1 1 3px #8e8e8e;
+}
+/*****************************************************************************/
+/*
+/* 
+/*
+/*****************************************************************************/
+
+@import "bootstrap.less";
+
+/*****************************************************************************/
+/*
+/* OVERWIRITING BOOTSTRAP VARIABLES
+/*
+/*****************************************************************************/
+
+@sansFontFamily:        normal 400 "calluna","Georgia";
+@serifFontFamily:       normal 400 "calluna","Georgia";
+
+@iconSpritePath:          "../images/glyphicons-halflings.png";
+@iconWhiteSpritePath:     "../images/glyphicons-halflings-white.png";
+
+
+/*****************************************************************************/
+/*
+/* 
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+/** {
+  margin: 0;
+  padding: 0;
+}*/
+
+
+container-fluid{
+	
+		top: @navbarHeight;
+}
+strong{font: normal 700 "calluna","Georgia";}
+
+em{font: italic 400 "calluna","Georgia";}
+
+
+
+h1{
+
+font: normal 900 1.7em/2em "calluna","Georgia";
+
+text-shadow: @textshadow;
+
+}
+
+h1#viernullvier{
+		font: normal 900 9em "calluna","Georgia";
+	color: rgba(60,65,62,0.71);
+	
+}
+
+h2{
+font: normal 700 1.6em/2em "calluna","Georgia";
+}
+h3{
+font: normal 700 1.5em/1.9em "calluna","Georgia";
+}
+h4, h5, h6 {
+font: normal 700 1.4em/1.8em "calluna","Georgia";
+
+}
+p{font: normal 400 1.2em/1.7em "calluna","Georgia";}
+a {
+  color: @linkcol;
+  .linkstyle;
+}
+
+a:hover {
+  color:@linkhovercol;
+  .linkstyle;
+}
+a:visited {
+  color: @linkvisitedcol;
+	.linkstyle;
+
+}
+a:active{
+	background-color: #c0c0c0;
+/*	.linkstyle;*/
+}
+
+/*li{
+	font: normal 400 1.2em/1.7em "calluna","Georgia";
+}
+li#navi {
+	font: normal 400 1em/1em "calluna","Georgia";
+}*/
+
+.navi a{
+	text-decoration: underline;
+}
+
+blockquote{
+	border-bottom-style: dotted;
+	border-bottom-color: #b0b0b0;
+	border: 1px dotted #c6c6c6;
+	font-style: italic;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 1em;
+}
+
+img{
+
+	margin-top: 2em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+#topnav{
+	border-bottom: 1px dotted #cecece;
+	margin-bottom: 3em;
+}
+
+#navfootbssepa{
+	margin-top: 3em;
+	border-top: 1px dotted #cecece;
+	
+}
+
+#fittext1, #fittext2{
+	text-shadow: @textshadow;
+/*	-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.1)), color-stop(50%, rgba(0,0,0,.2)), to(rgba(0,0,0,0.1))); */
+}
+
+.connect{
+	text-align: center;
+	padding-top: 35px;
+}
+img.connect{
+	
+	width: 32px;
+	height: 32px;
+}
+
+/*****************************************************************************
+/* PRINT CSS
+/* 
+**********************************************************/
+
+@media print {
+  * { 
+  background: transparent !important;
+   color: black !important;
+    filter:none !important;
+     -ms-filter: none !important;
+      }
+      
+    #contentprint{
+	position: fixed  !important;
+	top: 754px !important;
+	left: 30px !important;
+}
+   #sidenavprint{
+	position: fixed !important;
+	top: 80px !important;
+}
+#footprint{
+	position: fixed;
+	left: 391px !important;
+	top: 80px !important;
+}
+  body{
+	font-size:12pt; max-width:100%;
+	}
+  a, a:visited { 
+  text-decoration: underline;
+   }
+
+.span7{
+	
+	width: 1280px;
+}
+
+  hr { 
+  height: 1px; 
+  border:0; 
+  border-bottom:1px solid black; 
+  }
+  a[href]:after { 
+  content: " (" attr(href) ")";
+   }
+  abbr[title]:after { 
+  content: " (" attr(title) ")";
+   }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+	 content: "";
+	  }
+  pre, blockquote {
+	 border: 1px solid #999;
+	  padding-right: 1em;
+	   page-break-inside: avoid;
+	  }
+  tr, img { 
+  page-break-inside: avoid;
+   }
+  img { 
+  max-width: 100% !important;
+   }
+  @page :left { margin: 15mm 20mm 15mm 10mm; }
+  @page :right { margin: 15mm 10mm 15mm 20mm; }
+  p, h2, h3 { 
+  orphans: 3; widows: 3;
+   }
+  h2, h3 {
+	 page-break-before: always;
+	  }
+}
+
+/*****************************************************************************
+/* 
+/* OVERWRITING BOOTSTRAP.CSS
+**********************************************************/
+
+.navbar{
+	font: normal 900 "calluna","Georgia";
+}
+
+/*.navbar navbar-fixed-top{
+.navbarshadow
+}*/
+
+
+.hero-unit{
+	background-color: @white;
+}
+
+.modal{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.modal-backdrop {
+background-color: white;
+
+}
+.modal-backdrop, .modal-backdrop.fade.in {
+opacity: 0.95;
+filter: alpha(opacity=95);
+}
+
+/*****************************************************************************
+/* 
+/* MEDIA QUERIES
+**********************************************************/
+
+
+/* Landscape phones and down*/
+ @media (max-width: 480px) {}
+
+/* Landscape phone to portrait tablet*/
+
+ @media (max-width: 767px) {  }
+
+/*Portrait tablet to landscape and desktop*/
+ @media (min-width: 768px) and (max-width: 979px) { }
+
+/* Large desktop*/
+
+ @media (min-width: 980px) and (max-width: 1199px) {  }
+ 
+
+ @media (min-width: 1200px) {  }
+ 
+ 
+
+/*.btn-primary:active, .btn-primary.active {
+background-color: #004099 9;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+background-color: #778f8a;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+background-color: #383838;
+}
+.btn-primary {
+background-color: gray;
+background-image: linear-gradient(bottom, rgb(77,77,77) 1%, rgb(179,179,179) 53%);
+background-image: -o-linear-gradient(bottom, rgb(77,77,77) 1%, rgb(179,179,179) 53%);
+background-image: -moz-linear-gradient(bottom, rgb(77,77,77) 1%, rgb(179,179,179) 53%);
+background-image: -webkit-linear-gradient(bottom, rgb(77,77,77) 1%, rgb(179,179,179) 53%);
+background-image: -ms-linear-gradient(bottom, rgb(77,77,77) 1%, rgb(179,179,179) 53%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.01, rgb(77,77,77)),
+	color-stop(0.53, rgb(179,179,179))
+);
+background-repeat: repeat-x;
+
+}*/
+
+/*****************************************************************************
+/* CODEBLOCK
+/* OVERWRITING GIST EMBED.CSS and BOOTSTRAP.CSS
+**********************************************************/
+
+pre{
+overflow-x: auto;                 
+/*width: 99%;*/	
+	background-color: white;
+	border-style: none;
+		font-size: 1em;
+	
+}
+code{
+	background-color: white;
+	border-style: none;
+	font-size: 0.9em;
+	
+}
+
+.gist{
+background-color: white !important;
+font-size: 13px !important;
+/*overflow-x: auto;                 
+width: 99%;*/
+line-height: 1.5em !important;
+}
+.gist-file{ border: none !important;}
+.gist-meta{
+	background-color: white !important;
+  border: 1px solid #D2d2d2 !important;
+  padding: 12px !important;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+}
+.gist-data{
+	background-color: white !important;
+
+  padding: 15px !important;
+  border: 1px solid #D2d2d2 !important;
+  border-bottom: none !important;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+}
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+ul.posts {
+  list-style-type: none;
+}
+ul.posts li { line-height: 1.75em;}
+
+ul.posts span {
+    color: #aaa;
+    font-size: 80%;
+  }
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+  .site .footer {
+	font: normal 400 1em/1.5em "calluna","Georgia";
+    color: #666;
+    border-top: 1px dotted #eee;
+	margin-top: 2em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin-bottom: 2em;
+}
+
+/*.site li{
+	font: normal 400 1.2em/1.7em "calluna","Georgia";
+}*/
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+#post {
+}
+  /* standard */
+
+#post pre {
+    border: 1px solid #ddd;
+    background-color: #eef;
+    padding: 0 .4em;
+}
+
+#post ul, #post ol {
+    margin-left: 1.35em;
+  }
+#post code {
+    border: 1px solid #ddd;
+    background-color: #eef;
+    font-size: 85%;
+    padding: 0 .2em;
+  }
+#post pre code {border: none;}
+  /* terminal */
+#post pre.terminal {
+    border: 1px solid black;
+    background-color: #333;
+    color: white;
+    }
+#post pre.terminal code { background-color: #333; }
+#related { margin-top: 2em;}
+#related h2 {margin-bottom: 1em;}
